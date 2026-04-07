@@ -155,6 +155,9 @@
       <StringVectorProperty name="IMUGyroYColumn" command="SetIMUGyroYColumn" number_of_elements="1" panel_visibility="never" />
       <StringVectorProperty name="IMUGyroZColumn" command="SetIMUGyroZColumn" number_of_elements="1" panel_visibility="never" />
 
+      <StringVectorProperty name="IMUAccVectorColumn" command="SetIMUAccVectorColumn" number_of_elements="1" panel_visibility="never" />
+      <StringVectorProperty name="IMUGyroVectorColumn" command="SetIMUGyroVectorColumn" number_of_elements="1" panel_visibility="never" />
+
       <StringVectorProperty name="GNSSXColumn" command="SetGNSSXColumn" number_of_elements="1" panel_visibility="never" />
       <StringVectorProperty name="GNSSYColumn" command="SetGNSSYColumn" number_of_elements="1" panel_visibility="never" />
       <StringVectorProperty name="GNSSZColumn" command="SetGNSSZColumn" number_of_elements="1" panel_visibility="never" />
@@ -181,6 +184,8 @@
             <ColumnPair key="w_x" property_name="IMUGyroXColumn" toggle_property="UseIMU" />
             <ColumnPair key="w_y" property_name="IMUGyroYColumn" toggle_property="UseIMU" />
             <ColumnPair key="w_z" property_name="IMUGyroZColumn" toggle_property="UseIMU" />
+            <ColumnPair key="acc_vec" property_name="IMUAccVectorColumn" toggle_property="UseIMU" components="3" />
+            <ColumnPair key="w_vec" property_name="IMUGyroVectorColumn" toggle_property="UseIMU" components="3" />
             <ColumnPair key="X" property_name="GNSSXColumn" toggle_property="UseGNSS" />
             <ColumnPair key="Y" property_name="GNSSYColumn" toggle_property="UseGNSS" />
             <ColumnPair key="Z" property_name="GNSSZColumn" toggle_property="UseGNSS" />

@@ -323,10 +323,11 @@ int vtkNormalizeExternalSensorData::RequestData(vtkInformation* vtkNotUsed(reque
     std::string ax = ::GetColumnNameIfExists(inTable, this->IMUAccXColumn, IMU_ACC_X_ARRAY_NAME());
     std::string ay = ::GetColumnNameIfExists(inTable, this->IMUAccYColumn, IMU_ACC_Y_ARRAY_NAME());
     std::string az = ::GetColumnNameIfExists(inTable, this->IMUAccZColumn, IMU_ACC_Z_ARRAY_NAME());
+    std::string aVec = ::GetColumnNameIfExists(inTable, this->IMUAccVectorColumn, "");
 
     ::ConvertSensorChannels(output,
       inTable,
-      "",
+      aVec,
       { ax, ay, az },
       { IMU_ACC_X_ARRAY_NAME(), IMU_ACC_Y_ARRAY_NAME(), IMU_ACC_Z_ARRAY_NAME() },
       accelScale);
@@ -338,10 +339,11 @@ int vtkNormalizeExternalSensorData::RequestData(vtkInformation* vtkNotUsed(reque
     auto wx = ::GetColumnNameIfExists(inTable, this->IMUGyroXColumn, IMU_GYRO_X_ARRAY_NAME());
     auto wy = ::GetColumnNameIfExists(inTable, this->IMUGyroYColumn, IMU_GYRO_Y_ARRAY_NAME());
     auto wz = ::GetColumnNameIfExists(inTable, this->IMUGyroZColumn, IMU_GYRO_Z_ARRAY_NAME());
+    auto wVec = ::GetColumnNameIfExists(inTable, this->IMUGyroVectorColumn, "");
 
     ::ConvertSensorChannels(output,
       inTable,
-      "",
+      wVec,
       { wx, wy, wz },
       { IMU_GYRO_X_ARRAY_NAME(), IMU_GYRO_Y_ARRAY_NAME(), IMU_GYRO_Z_ARRAY_NAME() },
       gyroScale);

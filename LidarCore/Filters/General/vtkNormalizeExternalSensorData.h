@@ -187,6 +187,14 @@ public:
 
   ///@{
   /**
+   * IMU acceleration vector column name (a 3d vector maps to acc_x, acc_y, acc_z).
+   */
+  vtkSetMacro(IMUAccVectorColumn, std::string);
+  vtkGetMacro(IMUAccVectorColumn, std::string);
+  ///@}
+
+  ///@{
+  /**
    * IMU angular rate X column name (maps to w_x).
    */
   vtkSetMacro(IMUGyroXColumn, std::string);
@@ -207,6 +215,14 @@ public:
    */
   vtkSetMacro(IMUGyroZColumn, std::string);
   vtkGetMacro(IMUGyroZColumn, std::string);
+  ///@}
+
+  ///@{
+  /**
+   * IMU angular rate name (a 3d vector maps to w_x, w_y, w_z).
+   */
+  vtkSetMacro(IMUGyroVectorColumn, std::string);
+  vtkGetMacro(IMUGyroVectorColumn, std::string);
   ///@}
 
   ///@{
@@ -436,10 +452,12 @@ private:
   std::string IMUAccXColumn;
   std::string IMUAccYColumn;
   std::string IMUAccZColumn;
+  std::string IMUAccVectorColumn;
 
   std::string IMUGyroXColumn;
   std::string IMUGyroYColumn;
   std::string IMUGyroZColumn;
+  std::string IMUGyroVectorColumn;
 
   std::string GNSSXColumn;
   std::string GNSSYColumn;
