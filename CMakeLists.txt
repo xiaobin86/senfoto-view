@@ -43,7 +43,7 @@ set(lidarview_default_plugins
 )
 
 if (LIDARVIEW_USE_CURL)
-  list(APPEND lidarview_delayed_plugins
+  list(APPEND lidarview_default_plugins
     OusterPlugin
 )
 endif()
