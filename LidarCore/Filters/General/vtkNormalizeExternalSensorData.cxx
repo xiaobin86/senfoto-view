@@ -359,10 +359,11 @@ int vtkNormalizeExternalSensorData::RequestData(vtkInformation* vtkNotUsed(reque
     std::string px = ::GetColumnNameIfExists(inTable, this->GNSSXColumn, GNSS_POS_X_ARRAY_NAME());
     std::string py = ::GetColumnNameIfExists(inTable, this->GNSSYColumn, GNSS_POS_Y_ARRAY_NAME());
     std::string pz = ::GetColumnNameIfExists(inTable, this->GNSSZColumn, GNSS_POS_Z_ARRAY_NAME());
+    std::string pVec = ::GetColumnNameIfExists(inTable, this->GNSSVectorColumn, "");
 
     ::ConvertSensorChannels(output,
       inTable,
-      "",
+      pVec,
       { px, py, pz },
       { GNSS_POS_X_ARRAY_NAME(), GNSS_POS_Y_ARRAY_NAME(), GNSS_POS_Z_ARRAY_NAME() },
       posScale);
@@ -397,10 +398,11 @@ int vtkNormalizeExternalSensorData::RequestData(vtkInformation* vtkNotUsed(reque
     std::string px = ::GetColumnNameIfExists(inTable, this->GNSSXColumn, GNSS_POS_X_ARRAY_NAME());
     std::string py = ::GetColumnNameIfExists(inTable, this->GNSSYColumn, GNSS_POS_Y_ARRAY_NAME());
     std::string pz = ::GetColumnNameIfExists(inTable, this->GNSSZColumn, GNSS_POS_Z_ARRAY_NAME());
+    std::string pVec = ::GetColumnNameIfExists(inTable, this->GNSSVectorColumn, "");
 
     ::ConvertSensorChannels(output,
       inTable,
-      "",
+      pVec,
       { px, py, pz },
       { GNSS_POS_X_ARRAY_NAME(), GNSS_POS_Y_ARRAY_NAME(), GNSS_POS_Z_ARRAY_NAME() },
       posScale);
@@ -412,10 +414,11 @@ int vtkNormalizeExternalSensorData::RequestData(vtkInformation* vtkNotUsed(reque
     std::string rx = ::GetColumnNameIfExists(inTable, this->RollColumn, INS_ANGLE_RX_ARRAY_NAME());
     std::string ry = ::GetColumnNameIfExists(inTable, this->PitchColumn, INS_ANGLE_RY_ARRAY_NAME());
     std::string rz = ::GetColumnNameIfExists(inTable, this->YawColumn, INS_ANGLE_RZ_ARRAY_NAME());
+    std::string rVec = ::GetColumnNameIfExists(inTable, this->OrientationVectorColumn, "");
 
     ::ConvertSensorChannels(output,
       inTable,
-      "",
+      rVec,
       { rx, ry, rz },
       { INS_ANGLE_RX_ARRAY_NAME(), INS_ANGLE_RY_ARRAY_NAME(), INS_ANGLE_RZ_ARRAY_NAME() },
       angScale);

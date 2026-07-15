@@ -162,6 +162,9 @@
       <StringVectorProperty name="GNSSYColumn" command="SetGNSSYColumn" number_of_elements="1" panel_visibility="never" />
       <StringVectorProperty name="GNSSZColumn" command="SetGNSSZColumn" number_of_elements="1" panel_visibility="never" />
 
+      <StringVectorProperty name="GNSSVectorColumn" command="SetGNSSVectorColumn" number_of_elements="1" panel_visibility="never" />
+      <StringVectorProperty name="OrientationVectorColumn" command="SetOrientationVectorColumn" number_of_elements="1" panel_visibility="never" />
+
       <StringVectorProperty name="RollColumn" command="SetRollColumn" number_of_elements="1" panel_visibility="never" />
       <StringVectorProperty name="PitchColumn" command="SetPitchColumn" number_of_elements="1" panel_visibility="never" />
       <StringVectorProperty name="YawColumn" command="SetYawColumn" number_of_elements="1" panel_visibility="never" />
@@ -189,12 +192,15 @@
             <ColumnPair key="X" property_name="GNSSXColumn" toggle_property="UseGNSS" />
             <ColumnPair key="Y" property_name="GNSSYColumn" toggle_property="UseGNSS" />
             <ColumnPair key="Z" property_name="GNSSZColumn" toggle_property="UseGNSS" />
+            <ColumnPair key="gnss_vec" property_name="GNSSVectorColumn" toggle_property="UseGNSS" components="3" />
             <ColumnPair key="X" property_name="GNSSXColumn" toggle_property="UseINS" />
             <ColumnPair key="Y" property_name="GNSSYColumn" toggle_property="UseINS" />
             <ColumnPair key="Z" property_name="GNSSZColumn" toggle_property="UseINS" />
             <ColumnPair key="Rx(Roll)" property_name="RollColumn" toggle_property="UseINS" />
             <ColumnPair key="Ry(Pitch)" property_name="PitchColumn" toggle_property="UseINS" />
             <ColumnPair key="Rz(Yaw)" property_name="YawColumn" toggle_property="UseINS" />
+            <ColumnPair key="position_vec" property_name="GNSSVectorColumn" toggle_property="UseINS" components="3" />
+            <ColumnPair key="orientation_vec" property_name="OrientationVectorColumn" toggle_property="UseINS" components="3" />
             <ColumnPair key="odom" property_name="OdometryColumn" toggle_property="UseOdometry" />
           </ColumnSelectorMapping>
         </Hints>

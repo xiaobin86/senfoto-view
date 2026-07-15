@@ -251,6 +251,14 @@ public:
 
   ///@{
   /**
+   * GNSS position name (a 3d vector maps to X, Y, Z).
+   */
+  vtkSetMacro(GNSSVectorColumn, std::string);
+  vtkGetMacro(GNSSVectorColumn, std::string);
+  ///@}
+
+  ///@{
+  /**
    * Roll (Rx) column name (maps to Rx/roll).
    */
   vtkSetMacro(RollColumn, std::string);
@@ -271,6 +279,14 @@ public:
    */
   vtkSetMacro(YawColumn, std::string);
   vtkGetMacro(YawColumn, std::string);
+  ///@}
+
+  ///@{
+  /**
+   * INS orientation name (a 3d vector maps to Rx(Roll), Ry(Pitch), Rz(Yaw)).
+   */
+  vtkSetMacro(OrientationVectorColumn, std::string);
+  vtkGetMacro(OrientationVectorColumn, std::string);
   ///@}
 
   ///@{
@@ -462,6 +478,7 @@ private:
   std::string GNSSXColumn;
   std::string GNSSYColumn;
   std::string GNSSZColumn;
+  std::string GNSSVectorColumn;
 
   std::string GNSSXErrorColumn;
   std::string GNSSYErrorColumn;
@@ -470,6 +487,7 @@ private:
   std::string RollColumn;
   std::string PitchColumn;
   std::string YawColumn;
+  std::string OrientationVectorColumn;
 
   std::string RollErrorColumn;
   std::string YawErrorColumn;
