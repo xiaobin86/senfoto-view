@@ -211,7 +211,7 @@ bool ConvertSensorChannels(vtkTable* dst,
     return false;
   }
 
-  bool converted = false;
+  bool converted = true;
   for (size_t i = 0; i < scalarColumns.size(); ++i)
   {
     converted &= ::ConvertColumns(dst, src, scalarColumns[i], { dstNames[i] }, scale);
@@ -414,14 +414,36 @@ int vtkNormalizeExternalSensorData::RequestData(vtkInformation* vtkNotUsed(reque
     std::string rx = ::GetColumnNameIfExists(inTable, this->RollColumn, INS_ANGLE_RX_ARRAY_NAME());
     std::string ry = ::GetColumnNameIfExists(inTable, this->PitchColumn, INS_ANGLE_RY_ARRAY_NAME());
     std::string rz = ::GetColumnNameIfExists(inTable, this->YawColumn, INS_ANGLE_RZ_ARRAY_NAME());
-    std::string rVec = ::GetColumnNameIfExists(inTable, this->OrientationVectorColumn, "");
+    std::string orientationVec =
+      ::GetColumnNameIfExists(inTable, this->OrientationVectorColumn, "");
+    std::string qx =
+      ::GetColumnNameIfExists(inTable, this->QuaternionXColumn, INS_QUATERNION_X_ARRAY_NAME());
+    std::string qy =
+      ::GetColumnNameIfExists(inTable, this->QuaternionYColumn, INS_QUATERNION_Y_ARRAY_NAME());
+    std::string qz =
+      ::GetColumnNameIfExists(inTable, this->QuaternionZColumn, INS_QUATERNION_Z_ARRAY_NAME());
+    std::string qw =
+      ::GetColumnNameIfExists(inTable, this->QuaternionWColumn, INS_QUATERNION_W_ARRAY_NAME());
 
-    ::ConvertSensorChannels(output,
+    bool convertToRPY = ::ConvertSensorChannels(output,
       inTable,
-      rVec,
+      orientationVec,
       { rx, ry, rz },
       { INS_ANGLE_RX_ARRAY_NAME(), INS_ANGLE_RY_ARRAY_NAME(), INS_ANGLE_RZ_ARRAY_NAME() },
       angScale);
+    if (!convertToRPY)
+    {
+      vtkWarningMacro(<< "Normalize orientation to euler angle failed, try quaternion");
+      ::ConvertSensorChannels(output,
+        inTable,
+        orientationVec,
+        { qx, qy, qz, qw },
+        { INS_QUATERNION_X_ARRAY_NAME(),
+          INS_QUATERNION_Y_ARRAY_NAME(),
+          INS_QUATERNION_Z_ARRAY_NAME(),
+          INS_QUATERNION_W_ARRAY_NAME() },
+        1);
+    }
 
     if (this->UseConfidenceError)
     {

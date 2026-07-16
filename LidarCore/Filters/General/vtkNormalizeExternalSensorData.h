@@ -283,7 +283,41 @@ public:
 
   ///@{
   /**
-   * INS orientation name (a 3d vector maps to Rx(Roll), Ry(Pitch), Rz(Yaw)).
+   * Quaternion X column name (maps to q_x).
+   */
+  vtkSetMacro(QuaternionXColumn, std::string);
+  vtkGetMacro(QuaternionXColumn, std::string);
+  ///@}
+
+  ///@{
+  /**
+   * Quaternion Y column name (maps to q_y).
+   */
+  vtkSetMacro(QuaternionYColumn, std::string);
+  vtkGetMacro(QuaternionYColumn, std::string);
+  ///@}
+
+  ///@{
+  /**
+   * Quaternion Z column name (maps to q_z).
+   */
+  vtkSetMacro(QuaternionZColumn, std::string);
+  vtkGetMacro(QuaternionZColumn, std::string);
+  ///@}
+
+  ///@{
+  /**
+   * Quaternion W column name (maps to q_w).
+   */
+  vtkSetMacro(QuaternionWColumn, std::string);
+  vtkGetMacro(QuaternionWColumn, std::string);
+  ///@}
+
+  ///@{
+  /**
+   * INS orientation name
+   * a 3d vector maps to Rx(Roll), Ry(Pitch), Rz(Yaw))
+   * OR a 4d vector maps to quaternion q_x, q_y, q_z, q_w
    */
   vtkSetMacro(OrientationVectorColumn, std::string);
   vtkGetMacro(OrientationVectorColumn, std::string);
@@ -423,6 +457,10 @@ public:
   static const char* INS_ANGLE_RX_ARRAY_NAME() { return "Rx(Roll)"; }
   static const char* INS_ANGLE_RY_ARRAY_NAME() { return "Ry(Pitch)"; }
   static const char* INS_ANGLE_RZ_ARRAY_NAME() { return "Rz(Yaw)"; }
+  static const char* INS_QUATERNION_X_ARRAY_NAME() { return "q_x"; }
+  static const char* INS_QUATERNION_Y_ARRAY_NAME() { return "q_y"; }
+  static const char* INS_QUATERNION_Z_ARRAY_NAME() { return "q_z"; }
+  static const char* INS_QUATERNION_W_ARRAY_NAME() { return "q_w"; }
   static const char* GNSS_POS_X_ERROR_ARRAY_NAME() { return "errX"; }
   static const char* GNSS_POS_Y_ERROR_ARRAY_NAME() { return "errY"; }
   static const char* GNSS_POS_Z_ERROR_ARRAY_NAME() { return "errZ"; }
@@ -483,6 +521,11 @@ private:
   std::string GNSSXErrorColumn;
   std::string GNSSYErrorColumn;
   std::string GNSSZErrorColumn;
+
+  std::string QuaternionXColumn;
+  std::string QuaternionYColumn;
+  std::string QuaternionZColumn;
+  std::string QuaternionWColumn;
 
   std::string RollColumn;
   std::string PitchColumn;

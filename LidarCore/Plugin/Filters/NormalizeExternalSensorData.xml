@@ -169,6 +169,11 @@
       <StringVectorProperty name="PitchColumn" command="SetPitchColumn" number_of_elements="1" panel_visibility="never" />
       <StringVectorProperty name="YawColumn" command="SetYawColumn" number_of_elements="1" panel_visibility="never" />
 
+      <StringVectorProperty name="QuaternionXColumn" command="SetQuaternionXColumn" number_of_elements="1" panel_visibility="never" />
+      <StringVectorProperty name="QuaternionYColumn" command="SetQuaternionYColumn" number_of_elements="1" panel_visibility="never" />
+      <StringVectorProperty name="QuaternionZColumn" command="SetQuaternionZColumn" number_of_elements="1" panel_visibility="never" />
+      <StringVectorProperty name="QuaternionWColumn" command="SetQuaternionWColumn" number_of_elements="1" panel_visibility="never" />
+
       <StringVectorProperty name="OdometryColumn" command="SetOdometryColumn" number_of_elements="1" panel_visibility="never" />
 
       <StringVectorProperty name="TimeColumn" command="SetTimeColumn" number_of_elements="1" panel_visibility="never" />
@@ -199,6 +204,10 @@
             <ColumnPair key="Rx(Roll)" property_name="RollColumn" toggle_property="UseINS" />
             <ColumnPair key="Ry(Pitch)" property_name="PitchColumn" toggle_property="UseINS" />
             <ColumnPair key="Rz(Yaw)" property_name="YawColumn" toggle_property="UseINS" />
+            <ColumnPair key="q_x" property_name="QuaternionXColumn" toggle_property="UseINS" />
+            <ColumnPair key="q_y" property_name="QuaternionYColumn" toggle_property="UseINS" />
+            <ColumnPair key="q_z" property_name="QuaternionZColumn" toggle_property="UseINS" />
+            <ColumnPair key="q_w" property_name="QuaternionWColumn" toggle_property="UseINS" />
             <ColumnPair key="position_vec" property_name="GNSSVectorColumn" toggle_property="UseINS" components="3" />
             <ColumnPair key="orientation_vec" property_name="OrientationVectorColumn" toggle_property="UseINS" components="3" />
             <ColumnPair key="odom" property_name="OdometryColumn" toggle_property="UseOdometry" />
