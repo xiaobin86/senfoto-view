@@ -336,10 +336,13 @@ int vtkNormalizeExternalSensorData::RequestData(vtkInformation* vtkNotUsed(reque
     auto gyroUnit = static_cast<vtkNormalizeExternalSensorData::GyroUnit>(this->IMUGyroUnits);
     double gyroScale = ::ScaleFromGyroUnit(gyroUnit);
 
-    auto wx = ::GetColumnNameIfExists(inTable, this->IMUGyroXColumn, IMU_GYRO_X_ARRAY_NAME());
-    auto wy = ::GetColumnNameIfExists(inTable, this->IMUGyroYColumn, IMU_GYRO_Y_ARRAY_NAME());
-    auto wz = ::GetColumnNameIfExists(inTable, this->IMUGyroZColumn, IMU_GYRO_Z_ARRAY_NAME());
-    auto wVec = ::GetColumnNameIfExists(inTable, this->IMUGyroVectorColumn, "");
+    std::string wx =
+      ::GetColumnNameIfExists(inTable, this->IMUGyroXColumn, IMU_GYRO_X_ARRAY_NAME());
+    std::string wy =
+      ::GetColumnNameIfExists(inTable, this->IMUGyroYColumn, IMU_GYRO_Y_ARRAY_NAME());
+    std::string wz =
+      ::GetColumnNameIfExists(inTable, this->IMUGyroZColumn, IMU_GYRO_Z_ARRAY_NAME());
+    std::string wVec = ::GetColumnNameIfExists(inTable, this->IMUGyroVectorColumn, "");
 
     ::ConvertSensorChannels(output,
       inTable,

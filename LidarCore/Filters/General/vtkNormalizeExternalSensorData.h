@@ -259,7 +259,7 @@ public:
 
   ///@{
   /**
-   * Roll (Rx) column name (maps to Rx/roll).
+   * Roll (Rx) column name (maps to Rx(Roll)).
    */
   vtkSetMacro(RollColumn, std::string);
   vtkGetMacro(RollColumn, std::string);
@@ -267,7 +267,7 @@ public:
 
   ///@{
   /**
-   * Pitch (Ry) column name (maps to Ry/pitch).
+   * Pitch (Ry) column name (maps to Ry(pitch)).
    */
   vtkSetMacro(PitchColumn, std::string);
   vtkGetMacro(PitchColumn, std::string);
@@ -275,7 +275,7 @@ public:
 
   ///@{
   /**
-   * Yaw (Rz) column name (maps to Rz/yaw).
+   * Yaw (Rz) column name (maps to Rz(yaw)).
    */
   vtkSetMacro(YawColumn, std::string);
   vtkGetMacro(YawColumn, std::string);
