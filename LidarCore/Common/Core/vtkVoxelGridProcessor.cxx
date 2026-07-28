@@ -391,7 +391,6 @@ void vtkVoxelGridProcessor::InitializeData()
   vtkNew<vtkCellArray> cells;
   points->SetDataTypeToDouble();
   points->Resize(this->InitialNumberOfPoints);
-  cells->SetNumberOfCells(this->InitialNumberOfPoints);
   this->Output->SetPoints(points);
   this->Output->SetVerts(cells);
 
@@ -468,7 +467,6 @@ bool vtkVoxelGridProcessor::ResizeData()
       vtkErrorMacro("vtkVoxelGridProcessor::ResizeData : failed to resize the data");
       return false;
     }
-    this->Output->GetVerts()->SetNumberOfCells(this->CurrentDataSize + this->ResizeNumberOfPoints);
     this->CurrentDataSize += this->ResizeNumberOfPoints;
   }
   return true;
