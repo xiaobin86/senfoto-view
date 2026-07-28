@@ -109,8 +109,8 @@ int vtkThresholdFromFile::RequestData(vtkInformation* vtkNotUsed(request),
   vtkSmartPointer<vtkPoints> newPoints = vtkSmartPointer<vtkPoints>::New();
   newPoints->Allocate(numPoints);
 
-  vtkSmartPointer<vtkCellArray> verts = vtkSmartPointer<vtkCellArray>::New();
-  verts->Allocate(numPoints);
+  vtkNew<vtkCellArray> verts;
+  verts->AllocateEstimate(numPoints, 1); // allocate with 1 cell per point
 
   vtkPointData* pd = input->GetPointData();
   vtkPointData* outPD = output->GetPointData();
