@@ -237,6 +237,7 @@ void vtkVoxelGridProcessor::AddPoints(vtkDataSet* points)
 vtkSmartPointer<vtkPolyData> vtkVoxelGridProcessor::GetFilteredOutput(int minNumber)
 {
   vtkNew<vtkPoints> filteredPoints;
+  filteredPoints->SetDataTypeToDouble();
   vtkNew<vtkCellArray> filteredVerts;
 
   vtkSmartPointer<vtkPolyData> filteredOutput = vtkSmartPointer<vtkPolyData>::New();
@@ -390,7 +391,6 @@ void vtkVoxelGridProcessor::InitializeData()
   vtkNew<vtkCellArray> cells;
   points->SetDataTypeToDouble();
   points->Resize(this->InitialNumberOfPoints);
-  cells->SetNumberOfCells(this->InitialNumberOfPoints);
   this->Output->SetPoints(points);
   this->Output->SetVerts(cells);
 
@@ -467,7 +467,6 @@ bool vtkVoxelGridProcessor::ResizeData()
       vtkErrorMacro("vtkVoxelGridProcessor::ResizeData : failed to resize the data");
       return false;
     }
-    this->Output->GetVerts()->SetNumberOfCells(this->CurrentDataSize + this->ResizeNumberOfPoints);
     this->CurrentDataSize += this->ResizeNumberOfPoints;
   }
   return true;
