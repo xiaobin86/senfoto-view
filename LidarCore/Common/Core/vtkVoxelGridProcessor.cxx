@@ -237,6 +237,7 @@ void vtkVoxelGridProcessor::AddPoints(vtkDataSet* points)
 vtkSmartPointer<vtkPolyData> vtkVoxelGridProcessor::GetFilteredOutput(int minNumber)
 {
   vtkNew<vtkPoints> filteredPoints;
+  filteredPoints->SetDataTypeToDouble();
   vtkNew<vtkCellArray> filteredVerts;
 
   vtkSmartPointer<vtkPolyData> filteredOutput = vtkSmartPointer<vtkPolyData>::New();
