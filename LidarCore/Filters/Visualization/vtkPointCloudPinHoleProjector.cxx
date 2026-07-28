@@ -27,7 +27,7 @@
 #include <vtkPolyData.h>
 #include <vtkStreamingDemandDrivenPipeline.h>
 #include <vtkTransform.h>
-#include <vtkTransformPolyDataFilter.h>
+#include <vtkTransformFilter.h>
 
 #include <Eigen/Dense>
 
@@ -157,7 +157,7 @@ vtkSmartPointer<vtkImageData> vtkPointCloudPinHoleProjector::polyDataToImageData
 
   auto rotationTransform = vtkSmartPointer<vtkMatrixToHomogeneousTransform>::New();
   auto rotMatrix = vtkSmartPointer<vtkMatrix4x4>::New();
-  auto rotationMorpher = vtkSmartPointer<vtkTransformPolyDataFilter>::New();
+  auto rotationMorpher = vtkSmartPointer<vtkTransformFilter>::New();
 
   const double* rd = rot.data();
   double data[16] = {
@@ -165,7 +165,7 @@ vtkSmartPointer<vtkImageData> vtkPointCloudPinHoleProjector::polyDataToImageData
   };
 
   auto translationTransform = vtkSmartPointer<vtkTransform>::New();
-  auto translationMorpher = vtkSmartPointer<vtkTransformPolyDataFilter>::New();
+  auto translationMorpher = vtkSmartPointer<vtkTransformFilter>::New();
   translationTransform->Translate(this->GetCameraTranslation().data());
   translationTransform->Inverse();
   translationMorpher->SetTransform(translationTransform);
@@ -180,7 +180,7 @@ vtkSmartPointer<vtkImageData> vtkPointCloudPinHoleProjector::polyDataToImageData
   translationMorpher->Update();
   rotationMorpher->Update();
 
-  vtkPolyData* morphed = rotationMorpher->GetOutput();
+  vtkPolyData* morphed = rotationMorpher->GetPolyDataOutput();
 
   // Rasterization
   double point[3];

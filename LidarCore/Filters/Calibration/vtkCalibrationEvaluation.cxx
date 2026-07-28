@@ -35,7 +35,7 @@
 #include <vtkSmartPointer.h>
 #include <vtkTable.h>
 #include <vtkTransform.h>
-#include <vtkTransformPolyDataFilter.h>
+#include <vtkTransformFilter.h>
 
 #include <algorithm>
 #include <string>
@@ -337,7 +337,7 @@ int vtkCalibrationEvaluation::RequestData(vtkInformation* vtkNotUsed(request),
               sumTransform->RotateX(cand[0]);
               sumTransform->RotateY(cand[1]);
 
-              vtkNew<vtkTransformPolyDataFilter> tf;
+              vtkNew<vtkTransformFilter> tf;
               tf->SetTransform(sumTransform);
               tf->SetInputConnection(this->GetInputConnection(LIDAR_INPUT_PORT, 0));
 

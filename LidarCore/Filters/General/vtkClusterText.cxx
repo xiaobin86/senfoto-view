@@ -22,7 +22,7 @@
 #include <vtkStringArray.h>
 #include <vtkTable.h>
 #include <vtkTransform.h>
-#include <vtkTransformPolyDataFilter.h>
+#include <vtkTransformFilter.h>
 #include <vtkVectorText.h>
 
 #include <array>
@@ -102,12 +102,12 @@ int vtkClusterText::RequestData(vtkInformation* vtkNotUsed(request),
     transform->RotateY(-90);
     transform->Scale(this->TextScale, this->TextScale, this->TextScale);
 
-    vtkNew<vtkTransformPolyDataFilter> tfText;
+    vtkNew<vtkTransformFilter> tfText;
     tfText->SetInputConnection(text3D->GetOutputPort());
     tfText->SetTransform(transform);
     tfText->Update();
 
-    vtkSmartPointer<vtkPolyData> labelPoly = tfText->GetOutput();
+    vtkSmartPointer<vtkPolyData> labelPoly = tfText->GetPolyDataOutput();
     labelPoly->GetFieldData()->ShallowCopy(fd);
     output->SetBlock(blockId, labelPoly);
     std::string labelblockName("Cluster-" + std::to_string(clusterIdArr->GetValue(0)));

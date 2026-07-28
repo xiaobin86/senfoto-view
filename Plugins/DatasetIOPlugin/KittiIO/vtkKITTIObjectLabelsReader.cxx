@@ -14,7 +14,7 @@
 #include <vtkStreamingDemandDrivenPipeline.h>
 #include <vtkStringArray.h>
 #include <vtkTransform.h>
-#include <vtkTransformPolyDataFilter.h>
+#include <vtkTransformFilter.h>
 
 #include <Eigen/Geometry>
 #include <fstream>
@@ -99,12 +99,12 @@ vtkSmartPointer<vtkPolyData> ApplyEigenIsometryToPolyData(const Eigen::Isometry3
   tm->SetMatrix(m);
 
   // transform the bounding box
-  vtkNew<vtkTransformPolyDataFilter> transformFilter;
+  vtkNew<vtkTransformFilter> transformFilter;
   transformFilter->SetInputData(0, pd);
   transformFilter->SetTransform(tm);
   transformFilter->Update();
 
-  return transformFilter->GetOutput();
+  return transformFilter->GetPolyDataOutput();
 }
 
 /*

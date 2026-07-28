@@ -63,7 +63,7 @@
 #include <vtkStreamingDemandDrivenPipeline.h>
 #include <vtkStringArray.h>
 #include <vtkTransform.h>
-#include <vtkTransformPolyDataFilter.h>
+#include <vtkTransformFilter.h>
 #include <vtkUnsignedCharArray.h>
 #include <vtkUnsignedShortArray.h>
 #include <vtkXMLPolyDataReader.h>
@@ -1835,12 +1835,12 @@ vtkMotionDetector::ClusterStats vtkMotionDetector::ComputeClusterStats(
   transform->SetMatrix(matrix);
 
   // Transform cluster point cloud
-  vtkNew<vtkTransformPolyDataFilter> transformFilter;
+  vtkNew<vtkTransformFilter> transformFilter;
   transformFilter->SetTransform(transform->GetInverse());
   transformFilter->SetInputData(clusterPointsPolydata);
   transformFilter->Update();
   double bounds[6];
-  transformFilter->GetOutput()->GetBounds(bounds);
+  transformFilter->GetPolyDataOutput()->GetBounds(bounds);
 
   int nbClusterPoints = clusterPtIndices.size();
   clusterInfo.ClusterId = clusterId;
@@ -1882,14 +1882,14 @@ void vtkMotionDetector::CreateClustersOutput(vtkSmartPointer<vtkMultiBlockDataSe
     cubeSource->SetBounds(cluster.BoundingBox.GetVertices().data());
     cubeSource->SetCenter(cluster.BoundingBox.GetCenter().data());
     // Transform bounding box
-    vtkNew<vtkTransformPolyDataFilter> transformFilter;
+    vtkNew<vtkTransformFilter> transformFilter;
     vtkSmartPointer<vtkTransform> transform = vtkSmartPointer<vtkTransform>::New();
     transform->SetMatrix(cluster.BoundingBox.GetTransform().data());
     transformFilter->SetTransform(transform);
     transformFilter->SetInputData(source);
     transformFilter->SetInputConnection(cubeSource->GetOutputPort());
     transformFilter->Update();
-    source->ShallowCopy(transformFilter->GetOutput());
+    source->ShallowCopy(transformFilter->GetPolyDataOutput());
 
     std::string blockName("Cluster-" + std::to_string(cluster.ClusterId));
     clustersOutput->SetBlock(blockId, source);
