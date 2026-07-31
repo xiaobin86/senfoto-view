@@ -28,6 +28,7 @@
 #include <vtkStreamingDemandDrivenPipeline.h>
 #include <vtkTemporalTransforms.h>
 #include <vtkTransform.h>
+#include <vtkVersion.h>
 
 // Local includes
 #include "vtkAggregatePointsFromTrajectoryOnline.h"
@@ -485,7 +486,11 @@ int vtkAggregatePointsFromTrajectoryOnline::TransformAndAddPoints(PointCloudMap&
           pointcloud->GetFieldData(), transform, "BaseToLiDAR"))
     {
       vtkSmartPointer<vtkPoints> newPts = vtkSmartPointer<vtkPoints>::New();
+#if VTK_VERSION_NUMBER >= VTK_VERSION_CHECK(9, 7, 0)
+      newPts->Reserve(pointcloud->GetNumberOfPoints());
+#else
       newPts->Allocate(pointcloud->GetNumberOfPoints());
+#endif
       newPts->GetData()->SetName(pointcloud->GetPoints()->GetData()->GetName());
       transform->TransformPoints(pointcloud->GetPoints(), newPts);
       pointcloud->SetPoints(newPts);

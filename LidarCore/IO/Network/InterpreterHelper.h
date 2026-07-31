@@ -19,6 +19,7 @@
 #include <vtkPointData.h>
 #include <vtkPolyData.h>
 #include <vtkTable.h>
+#include <vtkVersion.h>
 
 #include "lvIONetworkModule.h"
 
@@ -75,7 +76,8 @@ T CombinedBytesLittleEndian(const RangeType* range, uint8_t size)
 /**
  * Convert a array of UTCTime to a timestamp in seconds.
  */
-uint64_t LVIONETWORK_EXPORT ConvertUTCToTimestamp(std::vector<uint8_t> utcTime, bool hasMonthOffset = true);
+uint64_t LVIONETWORK_EXPORT ConvertUTCToTimestamp(std::vector<uint8_t> utcTime,
+  bool hasMonthOffset = true);
 
 //------------------------------------------------------------------------------
 /*!
@@ -108,7 +110,11 @@ void InitArrayForPolyData(bool isAdvanced, T& array, const char* name, vtkIdType
   }
 
   array = T::New();
+#if VTK_VERSION_NUMBER >= VTK_VERSION_CHECK(9, 7, 0)
+  array->ReserveValues(prereservedNp);
+#else
   array->Allocate(prereservedNp);
+#endif
   array->SetName(name);
   if (np > 0)
   {

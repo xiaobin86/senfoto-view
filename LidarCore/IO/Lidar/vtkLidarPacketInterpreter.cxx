@@ -20,6 +20,7 @@
 #include <vtkLVUtilities.h>
 #include <vtkStringArray.h>
 #include <vtkTransform.h>
+#include <vtkVersion.h>
 
 #include <ctime>
 
@@ -102,7 +103,11 @@ bool vtkLidarPacketInterpreter::SplitFrame(bool force,
       {
         // Transform pointcloud from LiDAR coordinate to BASE coordinate
         vtkSmartPointer<vtkPoints> newPts = vtkSmartPointer<vtkPoints>::New();
+#if VTK_VERSION_NUMBER >= VTK_VERSION_CHECK(9, 7, 0)
+        newPts->Reserve(this->CurrentFrame->GetNumberOfPoints());
+#else
         newPts->Allocate(this->CurrentFrame->GetNumberOfPoints());
+#endif
         newPts->GetData()->SetName(this->CurrentFrame->GetPoints()->GetData()->GetName());
         transform->TransformPoints(this->CurrentFrame->GetPoints(), newPts);
         this->CurrentFrame->SetPoints(newPts);

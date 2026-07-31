@@ -22,6 +22,7 @@
 #include <vtkPointData.h>
 #include <vtkPoints.h>
 #include <vtkSmartPointer.h>
+#include <vtkVersion.h>
 
 namespace
 {
@@ -98,7 +99,11 @@ vtkSmartPointer<vtkPolyData> vtkTimeBasedLidarPacketInterpreter::CreateNewEmptyF
   // Initialize points
   vtkNew<vtkPoints> points;
   points->SetDataTypeToFloat();
+#if VTK_VERSION_NUMBER >= VTK_VERSION_CHECK(9, 7, 0)
+  points->Reserve(prereservedNbrOfPoints);
+#else
   points->Allocate(prereservedNbrOfPoints);
+#endif
   if (nbrOfPoints > 0)
   {
     points->SetNumberOfPoints(nbrOfPoints);
