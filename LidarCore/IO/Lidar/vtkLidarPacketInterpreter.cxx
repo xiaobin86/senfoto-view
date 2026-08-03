@@ -122,7 +122,7 @@ bool vtkLidarPacketInterpreter::SplitFrame(bool force,
 
     // add vertex to the polydata
     vtkNew<vtkCellArray> verts;
-    verts->AllocateEstimate(this->CurrentFrame->GetNumberOfPoints(), 1); // allocate with 1 point per cell
+    verts->AllocateEstimate(this->CurrentFrame->GetNumberOfPoints(), 1);
     for (vtkIdType i = 0; i < this->CurrentFrame->GetNumberOfPoints(); i++)
     {
       verts->InsertNextCell(1, &i);

@@ -328,7 +328,7 @@ int vtkCalibrationEvaluation::RequestData(vtkInformation* vtkNotUsed(request),
                 baseOri[2] + vDyaw,
                 basePos[0] + vDx,
                 basePos[1] + vDy,
-                basePos[2] + vDz};
+                basePos[2] + vDz };
 
               vtkNew<vtkTransform> sumTransform;
               sumTransform->PreMultiply();
