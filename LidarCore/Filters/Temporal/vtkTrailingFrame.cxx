@@ -118,7 +118,7 @@ int vtkTrailingFrame::RequestUpdateExtent(vtkInformation* vtkNotUsed(request),
   // Hence, no lidar data was stored in the .pcap.
   // It could also means that the user is trying to use
   // this filter in stream mode without the option.
-  if (this->TimeSteps.size() == 0)
+  if (this->TimeSteps.empty())
   {
     vtkGenericWarningMacro("No time steps are available, it could either mean:\n"
       << "- If you are in playback mode: the reader was not able parse the data "
@@ -288,7 +288,7 @@ int vtkTrailingFrame::ProcessReadingMode(vtkInformation* request,
   // Hence, no lidar data was stored in the .pcap.
   // It could also means that the user is tring to use
   // this filter in stream mode without the option.
-  if (this->TimeSteps.size() == 0)
+  if (this->TimeSteps.empty())
   {
     // Stop the pipeline loop
     request->Remove(vtkStreamingDemandDrivenPipeline::CONTINUE_EXECUTING());

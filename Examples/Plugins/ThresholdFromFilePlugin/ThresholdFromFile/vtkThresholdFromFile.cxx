@@ -139,9 +139,9 @@ int vtkThresholdFromFile::RequestData(vtkInformation* vtkNotUsed(request),
     {
       double point[3];
       input->GetPoint(ptId, point);
-      vtkIdType pts = newPoints->InsertNextPoint(point);
-      outPD->CopyData(pd, ptId, pts);
-      verts->InsertNextCell(1, &pts);
+      vtkIdType toId = newPoints->InsertNextPoint(point);
+      outPD->CopyData(pd, ptId, toId);
+      verts->InsertNextCell(1, &toId);
     }
   }
 

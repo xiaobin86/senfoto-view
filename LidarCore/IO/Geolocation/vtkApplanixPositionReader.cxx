@@ -87,7 +87,7 @@ vtkStandardNewMacro(vtkApplanixPositionReader)
 vtkApplanixPositionReader::vtkApplanixPositionReader()
 {
   this->Internal = new vtkInternal;
-  this->FileName = 0;
+  this->FileName = nullptr;
   this->BaseYaw = 0.0;
   this->BaseRoll = 0.0;
   this->BasePitch = 0.0;
