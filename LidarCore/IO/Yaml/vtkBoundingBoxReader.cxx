@@ -33,7 +33,7 @@
 #include <vtkStreamingDemandDrivenPipeline.h>
 #include <vtkStringArray.h>
 #include <vtkTransform.h>
-#include <vtkTransformPolyDataFilter.h>
+#include <vtkTransformFilter.h>
 
 #include <Eigen/Geometry>
 
@@ -111,11 +111,11 @@ vtkSmartPointer<vtkPolyData> CreateBoundingBox3D(const Eigen::Isometry3d& p,
   t->SetMatrix(m);
 
   // transform the bounding box
-  vtkNew<vtkTransformPolyDataFilter> transformFilter;
+  vtkNew<vtkTransformFilter> transformFilter;
   transformFilter->SetInputData(0, bb);
   transformFilter->SetTransform(t);
   transformFilter->Update();
-  return transformFilter->GetOutput();
+  return transformFilter->GetPolyDataOutput();
 }
 
 vtkSmartPointer<vtkPolyData> CreateBoundingCylinder(const Eigen::Vector3d& center,
@@ -145,12 +145,12 @@ vtkSmartPointer<vtkPolyData> CreateBoundingCylinder(const Eigen::Vector3d& cente
   t->Translate(center.data());
   t->RotateX(90.0);
 
-  vtkNew<vtkTransformPolyDataFilter> transformFilter;
+  vtkNew<vtkTransformFilter> transformFilter;
   transformFilter->SetInputData(0, bb);
   transformFilter->SetTransform(t);
   transformFilter->Update();
 
-  return transformFilter->GetOutput();
+  return transformFilter->GetPolyDataOutput();
 }
 }
 

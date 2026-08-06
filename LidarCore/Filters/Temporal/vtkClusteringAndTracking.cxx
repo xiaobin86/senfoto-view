@@ -52,7 +52,7 @@
 #include <vtkRemovePolyData.h>
 #include <vtkStringArray.h>
 #include <vtkTransform.h>
-#include <vtkTransformPolyDataFilter.h>
+#include <vtkTransformFilter.h>
 #include <vtkUnsignedCharArray.h>
 #include <vtkUnsignedShortArray.h>
 #include <vtkVectorText.h>
@@ -539,12 +539,12 @@ vtkClusteringAndTracking::ClusterStats vtkClusteringAndTracking::ComputeClusterS
     transform->SetMatrix(matrix);
 
     // Transform cluster point cloud
-    vtkNew<vtkTransformPolyDataFilter> transformFilter;
+    vtkNew<vtkTransformFilter> transformFilter;
     transformFilter->SetTransform(transform->GetInverse());
     transformFilter->SetInputData(clusterPointsPolydata);
     transformFilter->Update();
     double bounds[6];
-    transformFilter->GetOutput()->GetBounds(bounds);
+    transformFilter->GetPolyDataOutput()->GetBounds(bounds);
 
     clusterInfo.BoundingBox.SetTransform(matrix);
     clusterInfo.BoundingBox.SetVertices(
@@ -622,13 +622,13 @@ void vtkClusteringAndTracking::CreateClustersOutput(
     if (this->EnableClusterOrientation)
     {
       // Transform bounding box
-      vtkNew<vtkTransformPolyDataFilter> transformFilter;
+      vtkNew<vtkTransformFilter> transformFilter;
       vtkSmartPointer<vtkTransform> transform = vtkSmartPointer<vtkTransform>::New();
       transform->SetMatrix(cluster.BoundingBox.GetTransform().data());
       transformFilter->SetTransform(transform);
       transformFilter->SetInputConnection(clean->GetOutputPort());
       transformFilter->Update();
-      source->ShallowCopy(transformFilter->GetOutput());
+      source->ShallowCopy(transformFilter->GetPolyDataOutput());
     }
     else
     {

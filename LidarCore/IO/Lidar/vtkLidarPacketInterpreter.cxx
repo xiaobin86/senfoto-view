@@ -20,31 +20,14 @@
 #include <vtkLVUtilities.h>
 #include <vtkStringArray.h>
 #include <vtkTransform.h>
+#include <vtkVersion.h>
 
 #include <ctime>
-#include <sstream>
 
 namespace
 {
 constexpr const char* SPEED_FIELD_DATA_NAME[2] = { "RPM", "FPS" };
 constexpr const char* INFO_FIELD_DATA_NAME[2] = { "Vendor", "Model" };
-
-//-----------------------------------------------------------------------------
-vtkSmartPointer<vtkCellArray> NewVertexCells(vtkIdType numberOfVerts)
-{
-  vtkNew<vtkIdTypeArray> cells;
-  cells->SetNumberOfValues(numberOfVerts * 2);
-  vtkIdType* ids = cells->GetPointer(0);
-  for (vtkIdType i = 0; i < numberOfVerts; ++i)
-  {
-    ids[i * 2] = 1;
-    ids[i * 2 + 1] = i;
-  }
-
-  vtkSmartPointer<vtkCellArray> cellArray = vtkSmartPointer<vtkCellArray>::New();
-  cellArray->SetCells(numberOfVerts, cells.GetPointer());
-  return cellArray;
-}
 }
 
 //-----------------------------------------------------------------------------
@@ -120,7 +103,11 @@ bool vtkLidarPacketInterpreter::SplitFrame(bool force,
       {
         // Transform pointcloud from LiDAR coordinate to BASE coordinate
         vtkSmartPointer<vtkPoints> newPts = vtkSmartPointer<vtkPoints>::New();
+#if VTK_VERSION_NUMBER >= VTK_VERSION_CHECK(9, 7, 0)
+        newPts->Reserve(this->CurrentFrame->GetNumberOfPoints());
+#else
         newPts->Allocate(this->CurrentFrame->GetNumberOfPoints());
+#endif
         newPts->GetData()->SetName(this->CurrentFrame->GetPoints()->GetData()->GetName());
         transform->TransformPoints(this->CurrentFrame->GetPoints(), newPts);
         this->CurrentFrame->SetPoints(newPts);
@@ -134,7 +121,14 @@ bool vtkLidarPacketInterpreter::SplitFrame(bool force,
     }
 
     // add vertex to the polydata
-    this->CurrentFrame->SetVerts(::NewVertexCells(this->CurrentFrame->GetNumberOfPoints()));
+    vtkNew<vtkCellArray> verts;
+    verts->AllocateEstimate(this->CurrentFrame->GetNumberOfPoints(), 1);
+    for (vtkIdType i = 0; i < this->CurrentFrame->GetNumberOfPoints(); i++)
+    {
+      verts->InsertNextCell(1, &i);
+    }
+    this->CurrentFrame->SetVerts(verts);
+
     // free extra memory allocated
     this->CurrentFrame->Squeeze();
 

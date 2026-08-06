@@ -164,12 +164,12 @@ transform.Translate(0, 0, d / c)
 transform.RotateWXYZ(theta, v)
 transform.Update()
 
-transformPD = vtk.vtkTransformPolyDataFilter()
+transformPD = vtk.vtkTransformFilter()
 transformPD.SetTransform(transform)
 transformPD.SetInputData(pcinput.VTKObject)
 transformPD.Update()
 
-transformedInput = transformPD.GetOutput()
+transformedInput = transformPD.GetPolyDataOutput()
 
 correctedZ = vtk.vtkFloatArray()
 correctedZ.SetNumberOfComponents(1)
@@ -326,4 +326,3 @@ pointStatusLUT.IndexedColors = [0.6352941176470588, 0.0, 0.0, 0.615686274509804,
 smp.ColorBy(coloredPointsDisplay, ('POINTS', 'pointStatus'))
 
 smp.Render()
-

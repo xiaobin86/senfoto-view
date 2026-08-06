@@ -22,6 +22,7 @@
 #include <vtkPoints.h>
 #include <vtkStreamingDemandDrivenPipeline.h>
 #include <vtkTransform.h>
+#include <vtkVersion.h>
 
 #include <Eigen/Dense>
 #include <Eigen/Geometry>
@@ -117,7 +118,7 @@ int vtkTrailingFrame::RequestUpdateExtent(vtkInformation* vtkNotUsed(request),
   // Hence, no lidar data was stored in the .pcap.
   // It could also means that the user is trying to use
   // this filter in stream mode without the option.
-  if (this->TimeSteps.size() == 0)
+  if (this->TimeSteps.empty())
   {
     vtkGenericWarningMacro("No time steps are available, it could either mean:\n"
       << "- If you are in playback mode: the reader was not able parse the data "
@@ -287,7 +288,7 @@ int vtkTrailingFrame::ProcessReadingMode(vtkInformation* request,
   // Hence, no lidar data was stored in the .pcap.
   // It could also means that the user is tring to use
   // this filter in stream mode without the option.
-  if (this->TimeSteps.size() == 0)
+  if (this->TimeSteps.empty())
   {
     // Stop the pipeline loop
     request->Remove(vtkStreamingDemandDrivenPipeline::CONTINUE_EXECUTING());
@@ -436,7 +437,11 @@ int vtkTrailingFrame::CompensateTrajectory(vtkInformationVector** inputVector,
       vtkSmartPointer<vtkPolyData> newFrame = vtkSmartPointer<vtkPolyData>::New();
       vtkSmartPointer<vtkPoints> newPts = vtkSmartPointer<vtkPoints>::New();
       newFrame->DeepCopy(frame);
+#if VTK_VERSION_NUMBER >= VTK_VERSION_CHECK(9, 7, 0)
+      newPts->Reserve(newFrame->GetNumberOfPoints());
+#else
       newPts->Allocate(newFrame->GetNumberOfPoints());
+#endif
       newPts->GetData()->SetName(newFrame->GetPoints()->GetData()->GetName());
       transform->TransformPoints(newFrame->GetPoints(), newPts);
       newFrame->SetPoints(newPts);

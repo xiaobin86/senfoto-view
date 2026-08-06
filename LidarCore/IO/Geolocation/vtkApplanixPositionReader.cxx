@@ -38,6 +38,7 @@
 #include <vtkPointData.h>
 #include <vtkPolyLine.h>
 #include <vtkTransform.h>
+#include <vtkVersion.h>
 // #include <vtkTransformInterpolator.h>
 
 #include <boost/algorithm/string.hpp>
@@ -69,8 +70,8 @@ public:
 };
 
 //-----------------------------------------------------------------------------
-void vtkApplanixPositionReader::vtkInternal::SetMapping(
-  const std::string& fieldName, vtkNew<vtkDoubleArray>& array)
+void vtkApplanixPositionReader::vtkInternal::SetMapping(const std::string& fieldName,
+  vtkNew<vtkDoubleArray>& array)
 {
   FieldIndexMap::iterator field = this->Fields.find(fieldName);
   if (field != this->Fields.end())
@@ -86,7 +87,7 @@ vtkStandardNewMacro(vtkApplanixPositionReader)
 vtkApplanixPositionReader::vtkApplanixPositionReader()
 {
   this->Internal = new vtkInternal;
-  this->FileName = 0;
+  this->FileName = nullptr;
   this->BaseYaw = 0.0;
   this->BaseRoll = 0.0;
   this->BasePitch = 0.0;
@@ -111,8 +112,9 @@ vtkCustomTransformInterpolator* vtkApplanixPositionReader::GetInterpolator() con
 }
 
 //-----------------------------------------------------------------------------
-int vtkApplanixPositionReader::RequestData(
-  vtkInformation* vtkNotUsed(request), vtkInformationVector** vtkNotUsed(inputVector), vtkInformationVector* outputVector)
+int vtkApplanixPositionReader::RequestData(vtkInformation* vtkNotUsed(request),
+  vtkInformationVector** vtkNotUsed(inputVector),
+  vtkInformationVector* outputVector)
 {
   vtkPolyData* output = vtkPolyData::GetData(outputVector);
 
@@ -228,7 +230,8 @@ int vtkApplanixPositionReader::RequestData(
 
     // Assign values to data arrays
     for (FieldDataMap::iterator iter = this->Internal->FieldMapping.begin();
-         iter != this->Internal->FieldMapping.end(); ++iter)
+         iter != this->Internal->FieldMapping.end();
+         ++iter)
     {
       const double value = boost::lexical_cast<double>(fields[iter->first]);
       iter->second->InsertNextValue(value);
@@ -248,9 +251,14 @@ int vtkApplanixPositionReader::RequestData(
     return 0;
   }
 
-  // Build polyline and transform interpolator
+// Build polyline and transform interpolator
+#if VTK_VERSION_NUMBER >= VTK_VERSION_CHECK(9, 7, 0)
+  points->Reserve(count);
+  polyIds->Reserve(count);
+#else
   points->Allocate(count);
   polyIds->Allocate(count);
+#endif
 
   this->Internal->Interpolator->SetInterpolationTypeToLinear();
   this->Internal->Interpolator->Initialize();
@@ -313,7 +321,8 @@ int vtkApplanixPositionReader::RequestData(
 
   output->GetFieldData()->AddArray(zoneData.GetPointer());
   for (FieldDataMap::iterator iter = this->Internal->FieldMapping.begin();
-       iter != this->Internal->FieldMapping.end(); ++iter)
+       iter != this->Internal->FieldMapping.end();
+       ++iter)
   {
     output->GetPointData()->AddArray(iter->second);
   }

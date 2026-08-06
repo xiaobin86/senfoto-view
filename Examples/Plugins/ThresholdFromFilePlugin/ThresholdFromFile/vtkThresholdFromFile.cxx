@@ -25,6 +25,7 @@
 #include <vtkPointData.h>
 #include <vtkPoints.h>
 #include <vtkTable.h>
+#include <vtkVersion.h>
 
 #include <algorithm>
 
@@ -107,10 +108,14 @@ int vtkThresholdFromFile::RequestData(vtkInformation* vtkNotUsed(request),
   }
 
   vtkSmartPointer<vtkPoints> newPoints = vtkSmartPointer<vtkPoints>::New();
+#if VTK_VERSION_NUMBER >= VTK_VERSION_CHECK(9, 7, 0)
+  newPoints->Reserve(numPoints);
+#else
   newPoints->Allocate(numPoints);
+#endif
 
-  vtkSmartPointer<vtkCellArray> verts = vtkSmartPointer<vtkCellArray>::New();
-  verts->Allocate(numPoints);
+  vtkNew<vtkCellArray> verts;
+  verts->AllocateEstimate(numPoints, 1); // allocate with 1 cell per point
 
   vtkPointData* pd = input->GetPointData();
   vtkPointData* outPD = output->GetPointData();
@@ -134,9 +139,9 @@ int vtkThresholdFromFile::RequestData(vtkInformation* vtkNotUsed(request),
     {
       double point[3];
       input->GetPoint(ptId, point);
-      vtkIdType pts = newPoints->InsertNextPoint(point);
-      outPD->CopyData(pd, ptId, pts);
-      verts->InsertNextCell(1, &pts);
+      vtkIdType toId = newPoints->InsertNextPoint(point);
+      outPD->CopyData(pd, ptId, toId);
+      verts->InsertNextCell(1, &toId);
     }
   }
 

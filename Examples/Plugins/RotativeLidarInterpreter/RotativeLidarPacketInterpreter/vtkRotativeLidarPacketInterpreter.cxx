@@ -21,6 +21,7 @@
 #include <vtkDoubleArray.h>
 #include <vtkPointData.h>
 #include <vtkPoints.h>
+#include <vtkVersion.h>
 
 #include <filesystem>
 
@@ -102,7 +103,11 @@ vtkSmartPointer<vtkPolyData> vtkRotativeLidarPacketInterpreter::CreateNewEmptyFr
   // Initialize points
   vtkNew<vtkPoints> points;
   points->SetDataTypeToFloat();
+#if VTK_VERSION_NUMBER >= VTK_VERSION_CHECK(9, 7, 0)
+  points->Reserve(prereservedNbrOfPoints);
+#else
   points->Allocate(prereservedNbrOfPoints);
+#endif
   if (nbrOfPoints > 0)
   {
     points->SetNumberOfPoints(nbrOfPoints);
