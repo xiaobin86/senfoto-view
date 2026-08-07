@@ -119,81 +119,105 @@ double ScaleFromAngleUnit(vtkNormalizeExternalSensorData::AngleUnit u)
 }
 
 //-----------------------------------------------------------------------------
-vtkSmartPointer<vtkAbstractArray> CopyColumnWithScale(vtkTable* src,
+// Converts a numeric source column into one or more normalized scalar columns.
+// If dstNames contains one name, only the first component is copied.
+// If dstNames contains N names, the source must have N components and is split
+// into N scalar columns.
+bool ConvertColumns(vtkTable* dst,
+  vtkTable* src,
   const std::string& srcName,
-  const std::string& dstName,
+  const std::vector<std::string>& dstNames,
   double scale)
 {
-  if (!src || srcName.empty() || dstName.empty())
+  if (!src || srcName.empty() || dstNames.empty())
   {
-    return nullptr;
+    return false;
   }
+
   vtkAbstractArray* aa = src->GetColumnByName(srcName.c_str());
   if (!aa)
   {
-    return nullptr;
+    return false;
   }
-
-  vtkIdType n = aa->GetNumberOfTuples();
-
-  // If column is a numeric array (vtkDataArray or subclass)
-  if (auto dataArray = vtkDataArray::SafeDownCast(aa))
+  auto* dataArray = vtkDataArray::SafeDownCast(aa);
+  if (!dataArray)
   {
-    // Identify data type
-    const int dtype = dataArray->GetDataType();
-    const bool isFloatType = (dtype == VTK_FLOAT || dtype == VTK_DOUBLE);
-
-    // If scaling factor is 1.0 (pure copy), or already float/double type,
-    // preserve the original numeric type.
-    if (scale == 1.0 || isFloatType)
-    {
-      vtkSmartPointer<vtkDataArray> out;
-      out.TakeReference(vtkDataArray::CreateDataArray(dtype));
-      if (!out)
-      {
-        return nullptr;
-      }
-      out->SetName(dstName.c_str());
-      out->SetNumberOfComponents(1);
-      out->SetNumberOfTuples(n);
-      // Copy values with scale factor applied
-      for (vtkIdType i = 0; i < n; ++i)
-      {
-        out->SetTuple1(i, dataArray->GetTuple1(i) * scale);
-      }
-      return out;
-    }
-
-    // If input is integer-like and scale is not 1.0,
-    // promote to double to preserve fractional values
-    vtkSmartPointer<vtkDoubleArray> out = vtkSmartPointer<vtkDoubleArray>::New();
-    out->SetName(dstName.c_str());
-    out->SetNumberOfValues(n);
-    for (vtkIdType i = 0; i < n; ++i)
-    {
-      out->SetValue(i, dataArray->GetTuple1(i) * scale);
-    }
-    return out;
+    vtkLog(WARNING,
+      << "NormalizeExternalSensorData: column '" << srcName << "' is not a numeric array.");
+    return false;
   }
 
-  // If column is not a vtkDataArray (numeric), ignore it and warn.
-  vtkLog(WARNING,
-    << "NormalizeExternalSensorData: column '" << srcName
-    << "' is not numeric (vtkDataArray); ignoring.");
-  return nullptr;
-}
+  const int numOutputs = static_cast<int>(dstNames.size());
+  if (numOutputs != 1 && numOutputs != dataArray->GetNumberOfComponents())
+  {
+    vtkLog(WARNING,
+      << "NormalizeExternalSensorData: column '" << srcName << "' has "
+      << dataArray->GetNumberOfComponents() << " components but " << numOutputs
+      << " output names were requested.");
+    return false;
+  }
 
-//-----------------------------------------------------------------------------
-void CopyColumnWithScaleIfExists(vtkTable* dst,
-  vtkTable* src,
-  const std::string& srcName,
-  const std::string& outName,
-  double scale)
-{
-  if (auto arr = ::CopyColumnWithScale(src, srcName, outName, scale))
+  // If scaling factor is 1.0 (pure copy), or already float/double type,
+  // preserve the original numeric type.
+  const int dtype = dataArray->GetDataType();
+  const bool preserveType = scale == 1.0 || dtype == VTK_FLOAT || dtype == VTK_DOUBLE;
+  const int outType = preserveType ? dtype : VTK_DOUBLE;
+
+  // Pre-allocate all output arrays
+  std::vector<vtkSmartPointer<vtkDataArray>> outArrays(numOutputs);
+  const vtkIdType numTuples = dataArray->GetNumberOfTuples();
+  for (int idOutput = 0; idOutput < numOutputs; ++idOutput)
+  {
+    outArrays[idOutput].TakeReference(vtkDataArray::CreateDataArray(outType));
+    outArrays[idOutput]->SetName(dstNames[idOutput].c_str());
+    outArrays[idOutput]->SetNumberOfComponents(1);
+    outArrays[idOutput]->SetNumberOfTuples(numTuples);
+  }
+
+  std::vector<double> tuple(numOutputs);
+  for (vtkIdType i = 0; i < numTuples; ++i)
+  {
+    dataArray->GetTuple(i, tuple.data());
+    for (int idOutput = 0; idOutput < numOutputs; ++idOutput)
+    {
+      outArrays[idOutput]->SetTuple1(i, tuple[idOutput] * scale);
+    }
+  }
+
+  for (auto& arr : outArrays)
   {
     dst->AddColumn(arr);
   }
+  return true;
+}
+
+//-----------------------------------------------------------------------------
+bool ConvertSensorChannels(vtkTable* dst,
+  vtkTable* src,
+  const std::string& vectorColumn,
+  const std::vector<std::string>& scalarColumns,
+  const std::vector<std::string>& dstNames,
+  double scale)
+{
+  // If the input composes by a column of vector
+  if (!vectorColumn.empty())
+  {
+    return ::ConvertColumns(dst, src, vectorColumn, dstNames, scale);
+  }
+
+  // If the input composes by individual scalar columns.
+  if (scalarColumns.size() != dstNames.size())
+  {
+    return false;
+  }
+
+  bool converted = true;
+  for (size_t i = 0; i < scalarColumns.size(); ++i)
+  {
+    converted &= ::ConvertColumns(dst, src, scalarColumns[i], { dstNames[i] }, scale);
+  }
+
+  return converted;
 }
 
 //-----------------------------------------------------------------------------
@@ -299,22 +323,33 @@ int vtkNormalizeExternalSensorData::RequestData(vtkInformation* vtkNotUsed(reque
     std::string ax = ::GetColumnNameIfExists(inTable, this->IMUAccXColumn, IMU_ACC_X_ARRAY_NAME());
     std::string ay = ::GetColumnNameIfExists(inTable, this->IMUAccYColumn, IMU_ACC_Y_ARRAY_NAME());
     std::string az = ::GetColumnNameIfExists(inTable, this->IMUAccZColumn, IMU_ACC_Z_ARRAY_NAME());
+    std::string aVec = ::GetColumnNameIfExists(inTable, this->IMUAccVectorColumn, "");
 
-    ::CopyColumnWithScaleIfExists(output, inTable, ax, IMU_ACC_X_ARRAY_NAME(), accelScale);
-    ::CopyColumnWithScaleIfExists(output, inTable, ay, IMU_ACC_Y_ARRAY_NAME(), accelScale);
-    ::CopyColumnWithScaleIfExists(output, inTable, az, IMU_ACC_Z_ARRAY_NAME(), accelScale);
+    ::ConvertSensorChannels(output,
+      inTable,
+      aVec,
+      { ax, ay, az },
+      { IMU_ACC_X_ARRAY_NAME(), IMU_ACC_Y_ARRAY_NAME(), IMU_ACC_Z_ARRAY_NAME() },
+      accelScale);
 
     // Gyro (to rad/s)
     auto gyroUnit = static_cast<vtkNormalizeExternalSensorData::GyroUnit>(this->IMUGyroUnits);
     double gyroScale = ::ScaleFromGyroUnit(gyroUnit);
 
-    auto wx = ::GetColumnNameIfExists(inTable, this->IMUGyroXColumn, IMU_GYRO_X_ARRAY_NAME());
-    auto wy = ::GetColumnNameIfExists(inTable, this->IMUGyroYColumn, IMU_GYRO_Y_ARRAY_NAME());
-    auto wz = ::GetColumnNameIfExists(inTable, this->IMUGyroZColumn, IMU_GYRO_Z_ARRAY_NAME());
+    std::string wx =
+      ::GetColumnNameIfExists(inTable, this->IMUGyroXColumn, IMU_GYRO_X_ARRAY_NAME());
+    std::string wy =
+      ::GetColumnNameIfExists(inTable, this->IMUGyroYColumn, IMU_GYRO_Y_ARRAY_NAME());
+    std::string wz =
+      ::GetColumnNameIfExists(inTable, this->IMUGyroZColumn, IMU_GYRO_Z_ARRAY_NAME());
+    std::string wVec = ::GetColumnNameIfExists(inTable, this->IMUGyroVectorColumn, "");
 
-    ::CopyColumnWithScaleIfExists(output, inTable, wx, IMU_GYRO_X_ARRAY_NAME(), gyroScale);
-    ::CopyColumnWithScaleIfExists(output, inTable, wy, IMU_GYRO_Y_ARRAY_NAME(), gyroScale);
-    ::CopyColumnWithScaleIfExists(output, inTable, wz, IMU_GYRO_Z_ARRAY_NAME(), gyroScale);
+    ::ConvertSensorChannels(output,
+      inTable,
+      wVec,
+      { wx, wy, wz },
+      { IMU_GYRO_X_ARRAY_NAME(), IMU_GYRO_Y_ARRAY_NAME(), IMU_GYRO_Z_ARRAY_NAME() },
+      gyroScale);
   }
 
   if (this->UseGNSS)
@@ -327,10 +362,14 @@ int vtkNormalizeExternalSensorData::RequestData(vtkInformation* vtkNotUsed(reque
     std::string px = ::GetColumnNameIfExists(inTable, this->GNSSXColumn, GNSS_POS_X_ARRAY_NAME());
     std::string py = ::GetColumnNameIfExists(inTable, this->GNSSYColumn, GNSS_POS_Y_ARRAY_NAME());
     std::string pz = ::GetColumnNameIfExists(inTable, this->GNSSZColumn, GNSS_POS_Z_ARRAY_NAME());
+    std::string pVec = ::GetColumnNameIfExists(inTable, this->GNSSVectorColumn, "");
 
-    ::CopyColumnWithScaleIfExists(output, inTable, px, GNSS_POS_X_ARRAY_NAME(), posScale);
-    ::CopyColumnWithScaleIfExists(output, inTable, py, GNSS_POS_Y_ARRAY_NAME(), posScale);
-    ::CopyColumnWithScaleIfExists(output, inTable, pz, GNSS_POS_Z_ARRAY_NAME(), posScale);
+    ::ConvertSensorChannels(output,
+      inTable,
+      pVec,
+      { px, py, pz },
+      { GNSS_POS_X_ARRAY_NAME(), GNSS_POS_Y_ARRAY_NAME(), GNSS_POS_Z_ARRAY_NAME() },
+      posScale);
 
     if (this->UseConfidenceError)
     {
@@ -341,9 +380,14 @@ int vtkNormalizeExternalSensorData::RequestData(vtkInformation* vtkNotUsed(reque
       std::string pzError =
         ::GetColumnNameIfExists(inTable, this->GNSSZErrorColumn, GNSS_POS_Z_ERROR_ARRAY_NAME());
 
-      ::CopyColumnWithScaleIfExists(output, inTable, pxError, GNSS_POS_X_ERROR_ARRAY_NAME(), 1);
-      ::CopyColumnWithScaleIfExists(output, inTable, pyError, GNSS_POS_Y_ERROR_ARRAY_NAME(), 1);
-      ::CopyColumnWithScaleIfExists(output, inTable, pzError, GNSS_POS_Z_ERROR_ARRAY_NAME(), 1);
+      ::ConvertSensorChannels(output,
+        inTable,
+        "",
+        { pxError, pyError, pzError },
+        { GNSS_POS_X_ERROR_ARRAY_NAME(),
+          GNSS_POS_Y_ERROR_ARRAY_NAME(),
+          GNSS_POS_Z_ERROR_ARRAY_NAME() },
+        1);
     }
   }
 
@@ -357,10 +401,14 @@ int vtkNormalizeExternalSensorData::RequestData(vtkInformation* vtkNotUsed(reque
     std::string px = ::GetColumnNameIfExists(inTable, this->GNSSXColumn, GNSS_POS_X_ARRAY_NAME());
     std::string py = ::GetColumnNameIfExists(inTable, this->GNSSYColumn, GNSS_POS_Y_ARRAY_NAME());
     std::string pz = ::GetColumnNameIfExists(inTable, this->GNSSZColumn, GNSS_POS_Z_ARRAY_NAME());
+    std::string pVec = ::GetColumnNameIfExists(inTable, this->GNSSVectorColumn, "");
 
-    ::CopyColumnWithScaleIfExists(output, inTable, px, GNSS_POS_X_ARRAY_NAME(), posScale);
-    ::CopyColumnWithScaleIfExists(output, inTable, py, GNSS_POS_Y_ARRAY_NAME(), posScale);
-    ::CopyColumnWithScaleIfExists(output, inTable, pz, GNSS_POS_Z_ARRAY_NAME(), posScale);
+    ::ConvertSensorChannels(output,
+      inTable,
+      pVec,
+      { px, py, pz },
+      { GNSS_POS_X_ARRAY_NAME(), GNSS_POS_Y_ARRAY_NAME(), GNSS_POS_Z_ARRAY_NAME() },
+      posScale);
 
     // Euler angles (to radians)
     auto angUnit = static_cast<vtkNormalizeExternalSensorData::AngleUnit>(this->GNSSEulerUnits);
@@ -369,10 +417,36 @@ int vtkNormalizeExternalSensorData::RequestData(vtkInformation* vtkNotUsed(reque
     std::string rx = ::GetColumnNameIfExists(inTable, this->RollColumn, INS_ANGLE_RX_ARRAY_NAME());
     std::string ry = ::GetColumnNameIfExists(inTable, this->PitchColumn, INS_ANGLE_RY_ARRAY_NAME());
     std::string rz = ::GetColumnNameIfExists(inTable, this->YawColumn, INS_ANGLE_RZ_ARRAY_NAME());
+    std::string orientationVec =
+      ::GetColumnNameIfExists(inTable, this->OrientationVectorColumn, "");
+    std::string qx =
+      ::GetColumnNameIfExists(inTable, this->QuaternionXColumn, INS_QUATERNION_X_ARRAY_NAME());
+    std::string qy =
+      ::GetColumnNameIfExists(inTable, this->QuaternionYColumn, INS_QUATERNION_Y_ARRAY_NAME());
+    std::string qz =
+      ::GetColumnNameIfExists(inTable, this->QuaternionZColumn, INS_QUATERNION_Z_ARRAY_NAME());
+    std::string qw =
+      ::GetColumnNameIfExists(inTable, this->QuaternionWColumn, INS_QUATERNION_W_ARRAY_NAME());
 
-    ::CopyColumnWithScaleIfExists(output, inTable, rx, INS_ANGLE_RX_ARRAY_NAME(), angScale);
-    ::CopyColumnWithScaleIfExists(output, inTable, ry, INS_ANGLE_RY_ARRAY_NAME(), angScale);
-    ::CopyColumnWithScaleIfExists(output, inTable, rz, INS_ANGLE_RZ_ARRAY_NAME(), angScale);
+    bool convertToRPY = ::ConvertSensorChannels(output,
+      inTable,
+      orientationVec,
+      { rx, ry, rz },
+      { INS_ANGLE_RX_ARRAY_NAME(), INS_ANGLE_RY_ARRAY_NAME(), INS_ANGLE_RZ_ARRAY_NAME() },
+      angScale);
+    if (!convertToRPY)
+    {
+      vtkWarningMacro(<< "Normalize orientation to euler angle failed, try quaternion");
+      ::ConvertSensorChannels(output,
+        inTable,
+        orientationVec,
+        { qx, qy, qz, qw },
+        { INS_QUATERNION_X_ARRAY_NAME(),
+          INS_QUATERNION_Y_ARRAY_NAME(),
+          INS_QUATERNION_Z_ARRAY_NAME(),
+          INS_QUATERNION_W_ARRAY_NAME() },
+        1);
+    }
 
     if (this->UseConfidenceError)
     {
@@ -383,9 +457,14 @@ int vtkNormalizeExternalSensorData::RequestData(vtkInformation* vtkNotUsed(reque
       std::string pzError =
         ::GetColumnNameIfExists(inTable, this->GNSSZErrorColumn, GNSS_POS_Z_ERROR_ARRAY_NAME());
 
-      ::CopyColumnWithScaleIfExists(output, inTable, pxError, GNSS_POS_X_ERROR_ARRAY_NAME(), 1);
-      ::CopyColumnWithScaleIfExists(output, inTable, pyError, GNSS_POS_Y_ERROR_ARRAY_NAME(), 1);
-      ::CopyColumnWithScaleIfExists(output, inTable, pzError, GNSS_POS_Z_ERROR_ARRAY_NAME(), 1);
+      ::ConvertSensorChannels(output,
+        inTable,
+        "",
+        { pxError, pyError, pzError },
+        { GNSS_POS_X_ERROR_ARRAY_NAME(),
+          GNSS_POS_Y_ERROR_ARRAY_NAME(),
+          GNSS_POS_Z_ERROR_ARRAY_NAME() },
+        1);
 
       std::string rxError =
         ::GetColumnNameIfExists(inTable, this->RollErrorColumn, INS_ANGLE_RX_ERROR_ARRAY_NAME());
@@ -394,9 +473,14 @@ int vtkNormalizeExternalSensorData::RequestData(vtkInformation* vtkNotUsed(reque
       std::string rzError =
         ::GetColumnNameIfExists(inTable, this->YawErrorColumn, INS_ANGLE_RZ_ERROR_ARRAY_NAME());
 
-      ::CopyColumnWithScaleIfExists(output, inTable, rxError, INS_ANGLE_RX_ERROR_ARRAY_NAME(), 1);
-      ::CopyColumnWithScaleIfExists(output, inTable, ryError, INS_ANGLE_RY_ERROR_ARRAY_NAME(), 1);
-      ::CopyColumnWithScaleIfExists(output, inTable, rzError, INS_ANGLE_RZ_ERROR_ARRAY_NAME(), 1);
+      ::ConvertSensorChannels(output,
+        inTable,
+        "",
+        { rxError, ryError, rzError },
+        { INS_ANGLE_RX_ERROR_ARRAY_NAME(),
+          INS_ANGLE_RY_ERROR_ARRAY_NAME(),
+          INS_ANGLE_RZ_ERROR_ARRAY_NAME() },
+        1);
     }
   }
 
@@ -409,14 +493,14 @@ int vtkNormalizeExternalSensorData::RequestData(vtkInformation* vtkNotUsed(reque
     std::string od =
       ::GetColumnNameIfExists(inTable, this->OdometryColumn, ODOMETRY_DISTANCE_ARRAY_NAME());
 
-    ::CopyColumnWithScaleIfExists(output, inTable, od, ODOMETRY_DISTANCE_ARRAY_NAME(), odScale);
+    ::ConvertColumns(output, inTable, od, { ODOMETRY_DISTANCE_ARRAY_NAME() }, odScale);
   }
 
   // Time column pass-through (no units conversion).
   {
     std::string tname = ::GetColumnNameIfExists(inTable, this->TimeColumn, TIME_ARRAY_NAME());
 
-    ::CopyColumnWithScaleIfExists(output, inTable, tname, TIME_ARRAY_NAME(), 1.0);
+    ::ConvertColumns(output, inTable, tname, { TIME_ARRAY_NAME() }, 1.0);
   }
 
   if (output->GetNumberOfColumns() == 0)

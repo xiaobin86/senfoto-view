@@ -155,13 +155,24 @@
       <StringVectorProperty name="IMUGyroYColumn" command="SetIMUGyroYColumn" number_of_elements="1" panel_visibility="never" />
       <StringVectorProperty name="IMUGyroZColumn" command="SetIMUGyroZColumn" number_of_elements="1" panel_visibility="never" />
 
+      <StringVectorProperty name="IMUAccVectorColumn" command="SetIMUAccVectorColumn" number_of_elements="1" panel_visibility="never" />
+      <StringVectorProperty name="IMUGyroVectorColumn" command="SetIMUGyroVectorColumn" number_of_elements="1" panel_visibility="never" />
+
       <StringVectorProperty name="GNSSXColumn" command="SetGNSSXColumn" number_of_elements="1" panel_visibility="never" />
       <StringVectorProperty name="GNSSYColumn" command="SetGNSSYColumn" number_of_elements="1" panel_visibility="never" />
       <StringVectorProperty name="GNSSZColumn" command="SetGNSSZColumn" number_of_elements="1" panel_visibility="never" />
 
+      <StringVectorProperty name="GNSSVectorColumn" command="SetGNSSVectorColumn" number_of_elements="1" panel_visibility="never" />
+      <StringVectorProperty name="OrientationVectorColumn" command="SetOrientationVectorColumn" number_of_elements="1" panel_visibility="never" />
+
       <StringVectorProperty name="RollColumn" command="SetRollColumn" number_of_elements="1" panel_visibility="never" />
       <StringVectorProperty name="PitchColumn" command="SetPitchColumn" number_of_elements="1" panel_visibility="never" />
       <StringVectorProperty name="YawColumn" command="SetYawColumn" number_of_elements="1" panel_visibility="never" />
+
+      <StringVectorProperty name="QuaternionXColumn" command="SetQuaternionXColumn" number_of_elements="1" panel_visibility="never" />
+      <StringVectorProperty name="QuaternionYColumn" command="SetQuaternionYColumn" number_of_elements="1" panel_visibility="never" />
+      <StringVectorProperty name="QuaternionZColumn" command="SetQuaternionZColumn" number_of_elements="1" panel_visibility="never" />
+      <StringVectorProperty name="QuaternionWColumn" command="SetQuaternionWColumn" number_of_elements="1" panel_visibility="never" />
 
       <StringVectorProperty name="OdometryColumn" command="SetOdometryColumn" number_of_elements="1" panel_visibility="never" />
 
@@ -181,15 +192,24 @@
             <ColumnPair key="w_x" property_name="IMUGyroXColumn" toggle_property="UseIMU" />
             <ColumnPair key="w_y" property_name="IMUGyroYColumn" toggle_property="UseIMU" />
             <ColumnPair key="w_z" property_name="IMUGyroZColumn" toggle_property="UseIMU" />
+            <ColumnPair key="acc_vec" property_name="IMUAccVectorColumn" toggle_property="UseIMU" components="3" />
+            <ColumnPair key="w_vec" property_name="IMUGyroVectorColumn" toggle_property="UseIMU" components="3" />
             <ColumnPair key="X" property_name="GNSSXColumn" toggle_property="UseGNSS" />
             <ColumnPair key="Y" property_name="GNSSYColumn" toggle_property="UseGNSS" />
             <ColumnPair key="Z" property_name="GNSSZColumn" toggle_property="UseGNSS" />
+            <ColumnPair key="gnss_vec" property_name="GNSSVectorColumn" toggle_property="UseGNSS" components="3" />
             <ColumnPair key="X" property_name="GNSSXColumn" toggle_property="UseINS" />
             <ColumnPair key="Y" property_name="GNSSYColumn" toggle_property="UseINS" />
             <ColumnPair key="Z" property_name="GNSSZColumn" toggle_property="UseINS" />
             <ColumnPair key="Rx(Roll)" property_name="RollColumn" toggle_property="UseINS" />
             <ColumnPair key="Ry(Pitch)" property_name="PitchColumn" toggle_property="UseINS" />
             <ColumnPair key="Rz(Yaw)" property_name="YawColumn" toggle_property="UseINS" />
+            <ColumnPair key="q_x" property_name="QuaternionXColumn" toggle_property="UseINS" />
+            <ColumnPair key="q_y" property_name="QuaternionYColumn" toggle_property="UseINS" />
+            <ColumnPair key="q_z" property_name="QuaternionZColumn" toggle_property="UseINS" />
+            <ColumnPair key="q_w" property_name="QuaternionWColumn" toggle_property="UseINS" />
+            <ColumnPair key="position_vec" property_name="GNSSVectorColumn" toggle_property="UseINS" components="3" />
+            <ColumnPair key="orientation_vec" property_name="OrientationVectorColumn" toggle_property="UseINS" components="3" />
             <ColumnPair key="odom" property_name="OdometryColumn" toggle_property="UseOdometry" />
           </ColumnSelectorMapping>
         </Hints>

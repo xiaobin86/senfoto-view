@@ -187,6 +187,14 @@ public:
 
   ///@{
   /**
+   * IMU acceleration vector column name (a 3d vector maps to acc_x, acc_y, acc_z).
+   */
+  vtkSetMacro(IMUAccVectorColumn, std::string);
+  vtkGetMacro(IMUAccVectorColumn, std::string);
+  ///@}
+
+  ///@{
+  /**
    * IMU angular rate X column name (maps to w_x).
    */
   vtkSetMacro(IMUGyroXColumn, std::string);
@@ -207,6 +215,14 @@ public:
    */
   vtkSetMacro(IMUGyroZColumn, std::string);
   vtkGetMacro(IMUGyroZColumn, std::string);
+  ///@}
+
+  ///@{
+  /**
+   * IMU angular rate name (a 3d vector maps to w_x, w_y, w_z).
+   */
+  vtkSetMacro(IMUGyroVectorColumn, std::string);
+  vtkGetMacro(IMUGyroVectorColumn, std::string);
   ///@}
 
   ///@{
@@ -235,7 +251,15 @@ public:
 
   ///@{
   /**
-   * Roll (Rx) column name (maps to Rx/roll).
+   * GNSS position name (a 3d vector maps to X, Y, Z).
+   */
+  vtkSetMacro(GNSSVectorColumn, std::string);
+  vtkGetMacro(GNSSVectorColumn, std::string);
+  ///@}
+
+  ///@{
+  /**
+   * Roll (Rx) column name (maps to Rx(Roll)).
    */
   vtkSetMacro(RollColumn, std::string);
   vtkGetMacro(RollColumn, std::string);
@@ -243,7 +267,7 @@ public:
 
   ///@{
   /**
-   * Pitch (Ry) column name (maps to Ry/pitch).
+   * Pitch (Ry) column name (maps to Ry(pitch)).
    */
   vtkSetMacro(PitchColumn, std::string);
   vtkGetMacro(PitchColumn, std::string);
@@ -251,10 +275,52 @@ public:
 
   ///@{
   /**
-   * Yaw (Rz) column name (maps to Rz/yaw).
+   * Yaw (Rz) column name (maps to Rz(yaw)).
    */
   vtkSetMacro(YawColumn, std::string);
   vtkGetMacro(YawColumn, std::string);
+  ///@}
+
+  ///@{
+  /**
+   * Quaternion X column name (maps to q_x).
+   */
+  vtkSetMacro(QuaternionXColumn, std::string);
+  vtkGetMacro(QuaternionXColumn, std::string);
+  ///@}
+
+  ///@{
+  /**
+   * Quaternion Y column name (maps to q_y).
+   */
+  vtkSetMacro(QuaternionYColumn, std::string);
+  vtkGetMacro(QuaternionYColumn, std::string);
+  ///@}
+
+  ///@{
+  /**
+   * Quaternion Z column name (maps to q_z).
+   */
+  vtkSetMacro(QuaternionZColumn, std::string);
+  vtkGetMacro(QuaternionZColumn, std::string);
+  ///@}
+
+  ///@{
+  /**
+   * Quaternion W column name (maps to q_w).
+   */
+  vtkSetMacro(QuaternionWColumn, std::string);
+  vtkGetMacro(QuaternionWColumn, std::string);
+  ///@}
+
+  ///@{
+  /**
+   * INS orientation name
+   * a 3d vector maps to Rx(Roll), Ry(Pitch), Rz(Yaw))
+   * OR a 4d vector maps to quaternion q_x, q_y, q_z, q_w
+   */
+  vtkSetMacro(OrientationVectorColumn, std::string);
+  vtkGetMacro(OrientationVectorColumn, std::string);
   ///@}
 
   ///@{
@@ -391,6 +457,10 @@ public:
   static const char* INS_ANGLE_RX_ARRAY_NAME() { return "Rx(Roll)"; }
   static const char* INS_ANGLE_RY_ARRAY_NAME() { return "Ry(Pitch)"; }
   static const char* INS_ANGLE_RZ_ARRAY_NAME() { return "Rz(Yaw)"; }
+  static const char* INS_QUATERNION_X_ARRAY_NAME() { return "q_x"; }
+  static const char* INS_QUATERNION_Y_ARRAY_NAME() { return "q_y"; }
+  static const char* INS_QUATERNION_Z_ARRAY_NAME() { return "q_z"; }
+  static const char* INS_QUATERNION_W_ARRAY_NAME() { return "q_w"; }
   static const char* GNSS_POS_X_ERROR_ARRAY_NAME() { return "errX"; }
   static const char* GNSS_POS_Y_ERROR_ARRAY_NAME() { return "errY"; }
   static const char* GNSS_POS_Z_ERROR_ARRAY_NAME() { return "errZ"; }
@@ -436,22 +506,31 @@ private:
   std::string IMUAccXColumn;
   std::string IMUAccYColumn;
   std::string IMUAccZColumn;
+  std::string IMUAccVectorColumn;
 
   std::string IMUGyroXColumn;
   std::string IMUGyroYColumn;
   std::string IMUGyroZColumn;
+  std::string IMUGyroVectorColumn;
 
   std::string GNSSXColumn;
   std::string GNSSYColumn;
   std::string GNSSZColumn;
+  std::string GNSSVectorColumn;
 
   std::string GNSSXErrorColumn;
   std::string GNSSYErrorColumn;
   std::string GNSSZErrorColumn;
 
+  std::string QuaternionXColumn;
+  std::string QuaternionYColumn;
+  std::string QuaternionZColumn;
+  std::string QuaternionWColumn;
+
   std::string RollColumn;
   std::string PitchColumn;
   std::string YawColumn;
+  std::string OrientationVectorColumn;
 
   std::string RollErrorColumn;
   std::string YawErrorColumn;
