@@ -87,7 +87,7 @@ private:
   {
     std::string interfaceConfigFileName;
     std::string appLocation = pqCoreUtilities::getParaViewApplicationDirectory().toStdString();
-    std::vector<std::string> prefixes{ "share" };
+    std::vector<std::string> prefixes{ "share", "Resources" };
     vtkNew<vtkResourceFileLocator> locator;
     std::string basePath = locator->Locate(appLocation, prefixes, INTERFACE_CONFIGURATION_FILENAME);
     return vtksys::SystemTools::CollapseFullPath(INTERFACE_CONFIGURATION_FILENAME, basePath);
