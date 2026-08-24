@@ -1,0 +1,69 @@
+name: Build Windows
+
+# 在 GitHub 的 Windows runner 上自动编译 Senfoto (LidarView) 的 Windows 安装包 / 可执行文件。
+# 触发：push 到 develop 或 master，或手动在 Actions 页面点 Run workflow。
+on:
+  push:
+    branches: [develop, master]
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout senfoto-view（含子模块）
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Ninja
+        uses: jwlawson/actions-setup-ninja@v2
+
+      - name: Install Qt6
+        uses: jurplel/install-qt-action@v3
+        with:
+          version: '6.9.0'
+          host: 'windows'
+          target: 'desktop'
+          arch: 'win64_msvc2022_64'
+          modules: 'qtbase qtsvg qttools qtdeclarative qtimageformats'
+
+      - name: Locate Qt6_DIR
+        shell: bash
+        run: |
+          QT6=$(find "${{ runner.workspace }}" -name Qt6Config.cmake 2>/dev/null | head -1)
+          QT6_DIR=$(dirname "$QT6")
+          echo "Qt6_DIR=$QT6_DIR" >> "$GITHUB_ENV"
+          echo "Found Qt6_DIR=$QT6_DIR"
+
+      - name: Clone superbuild（Kitware 官方）
+        shell: bash
+        run: |
+          git clone --recursive https://gitlab.kitware.com/LidarView/lidarview-superbuild.git "${{ github.workspace }}/lidarview-superbuild"
+
+      - name: Configure（superbuild 指向本地 senfoto 源码）
+        shell: bash
+        run: |
+          cmake -S "${{ github.workspace }}/lidarview-superbuild" \
+                -B "${{ github.workspace }}/build" \
+                -GNinja \
+                -DCMAKE_BUILD_TYPE=Release \
+                -Dlidarview_SOURCE_SELECTION=source \
+                -Dlidarview_SOURCE_DIR="${{ github.workspace }}" \
+                -DQt6_DIR="$Qt6_DIR"
+
+      - name: Build
+        shell: bash
+        run: cmake --build "${{ github.workspace }}/build" -j
+
+      - name: Package（cpack，尽力执行）
+        shell: bash
+        run: |
+          cd "${{ github.workspace }}/build"
+          ctest -C Release -R cpack || true
+
+      - name: Upload artifact（LidarView.exe）
+        uses: actions/upload-artifact@v4
+        with:
+          name: senfoto-windows
+          path: ${{ github.workspace }}/build/install/bin/LidarView.exe

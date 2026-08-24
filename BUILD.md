@@ -175,6 +175,7 @@ ninja -C superbuild/lidarview/build -j8 install
 2. 安装 CMake、Ninja、**Qt6（必须预装）**，配置时传 `-DQt6_DIR=<...>/lib/cmake/Qt6`。
 3. 路径尽量短且靠近盘符根目录（如把 superbuild 源码放到 `C:\sb` 这样的短路径），避免 Windows 路径长度限制。
 4. 也可在 Git Bash 下直接运行仓库根目录的 `./build.sh`（它会自动定位 VS 的 `vcvars64.bat` 初始化 MSVC 环境后编译）；`./build.sh --package` 会额外用 cpack 生成 Windows 安装包。
+5. 不想用本地 Windows 也行：仓库内置 `.github/workflows/build-windows.yml`，push 到 GitHub 后会由 GitHub 的 Windows runner 自动编译并产出 `LidarView.exe`（在仓库 Actions 页面的 Artifacts 里下载）。
 4. 克隆、配置、编译步骤与上面一致，配置加上：
    ```
    -Dlidarview_SOURCE_SELECTION=source -Dlidarview_SOURCE_DIR=<lidarview 路径>
