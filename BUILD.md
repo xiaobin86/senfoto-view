@@ -98,20 +98,26 @@ cmake ../lidarview-superbuild -GNinja -DCMAKE_BUILD_TYPE=Release \
 
 ## 5. 编译
 
+> 以下命令在前面创建的 `build/` 目录下执行（第 4 步 `cd build` 之后的当前目录）。
+
 ```bash
 cmake --build . -j
 ```
 
 首次编译通常 20 分钟 ~ 2 小时（取决于核心数）。
-产物位于 `./install/`，可执行程序为 `./install/bin/LidarView`
+产物位于 `build/install/`（即当前 `build/` 目录下的 `./install/`），
+可执行程序为 `build/install/bin/LidarView`
 （Senfoto008 / LakiBeam 插件已随 LidarView 一并编译进插件，由本仓库 `CMakeLists.txt` 注册）。
 
 ---
 
 ## 6. 运行
 
+> 仍在 `build/` 目录下执行。
+
 ```bash
 ./install/bin/LidarView
+# 等价于 build/install/bin/LidarView
 ```
 
 若提示缺少共享库（Ubuntu 24.04），先执行第 2.3 节的运行期依赖安装。
@@ -119,6 +125,8 @@ cmake --build . -j
 ---
 
 ## 7. 增量编译（只改了插件/源码时）
+
+> 仍在 `build/` 目录下执行。`superbuild/lidarview/build` 也是相对于 `build/` 的路径。
 
 完整 `cmake --build . -j` 很慢。只改了 LidarView 源码（如 Senfoto 插件）时，
 直接重编 lidarview 子项目更快：
