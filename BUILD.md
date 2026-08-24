@@ -12,6 +12,26 @@
 
 ---
 
+## 0. 一键初始化（推荐）
+
+不想手动敲命令？仓库根目录提供了 `init.sh`，clone 之后进入仓库目录执行即可自动完成
+第 2~4 节的准备（克隆 superbuild、初始化子模块、安装 apt 依赖、cmake 配置）：
+
+```bash
+git clone -b develop --recursive https://github.com/xiaobin86/senfoto-view.git senfoto
+cd senfoto
+./init.sh
+# 初始化完成后开始编译
+cmake --build ../build -j
+```
+
+脚本会把 `lidarview-superbuild/` 和 `build/` 建在仓库的**同级目录**，
+并把 superbuild 指向本仓库源码（`-Dlidarview_SOURCE_SELECTION=source`），
+无需手动指定路径，也不依赖目录叫 `lidarview` 还是 `senfoto`。
+非 Debian/Ubuntu 系统会跳过 apt 依赖并提示你手动安装。
+
+---
+
 ## 1. 环境要求
 
 | 项目 | 要求 |
