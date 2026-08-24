@@ -33,8 +33,9 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Setup Ninja
-        uses: jwlawson/actions-setup-ninja@v2
+      - name: Install Ninja
+        shell: bash
+        run: choco install ninja -y
 
       - name: Install ccache
         shell: bash
