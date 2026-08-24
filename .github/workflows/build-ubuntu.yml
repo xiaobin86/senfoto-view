@@ -1,21 +1,21 @@
-name: Build Windows
+name: Build Ubuntu
 
-# 在自托管（self-hosted）Windows runner 上编译 Senfoto (LidarView) 的 Windows 可执行文件。
+# 在自托管（self-hosted）Ubuntu runner 上编译 Senfoto (LidarView) 的 Linux 可执行文件。
 # 触发：仅在 Actions 页面手动点 Run workflow（workflow_dispatch）。
 #
 # 方案 C（自托管 runner）：编译树 build/ 留在 runner 本机磁盘，跨 run 天然复用，
 # 无需 GitHub 缓存、无 10GB 缓存上限、不限分钟、不烧 GitHub 存储费。
-# 前置：在仓库 Settings → Actions → Runners 注册一台 Windows 自托管 runner，
-#       并预装 Visual Studio Build Tools(MSVC+WinSDK)、CMake、Ninja、Git
+# 前置：在仓库 Settings → Actions → Runners 注册一台 Linux 自托管 runner，
+#       并预装 cmake/ninja/build-essential 及 BUILD.md 列出的 X11/GL 等依赖、Git
 #       （Qt6 可由 superbuild 自行编译，或预装并传 -DQt6_DIR）。
-# 用 runs-on: [self-hosted, windows] 路由到该机器。
+# 用 runs-on: [self-hosted, linux] 路由到该机器。
 on:
   workflow_dispatch:
 
 jobs:
-  build-windows:
-    runs-on: [self-hosted, windows]
-    # 防失控：GitHub 单 job 上限 6h，这里留 30 分钟余量
+  build-ubuntu:
+    runs-on: [self-hosted, linux]
+    # 防失控：GitHub 单 job 上限 6h，留 30 分钟余量
     timeout-minutes: 330
 
     steps:
@@ -23,18 +23,29 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+          lfs: true
 
-      - name: Install Ninja
+      - name: Install system dependencies (Ubuntu)
         shell: bash
-        run: choco install ninja -y
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            cmake ninja-build pkg-config python3 chrpath git git-lfs \
+            build-essential byacc flex freeglut3-dev libbz2-dev libffi-dev \
+            libfontconfig1-dev libfreetype6-dev libnl-genl-3-dev libopengl0 \
+            libprotobuf-dev libx11-dev libx11-xcb-dev libxcb-glx0-dev libxcb-icccm4-dev \
+            libxcb-image0-dev libxcb-keysyms1-dev libxcb-randr0-dev libxcb-render-util0-dev \
+            libxcb-shape0-dev libxcb-shm0-dev libxcb-sync-dev libxcb-util-dev \
+            libxcb-xfixes0-dev libxcb-xinerama0-dev libxcb-xkb-dev libxcb1-dev libxext-dev \
+            libxfixes-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev libxrender-dev \
+             libxt-dev protobuf-compiler zlib1g-dev libglx-dev
 
       - name: Install Qt6
         uses: jurplel/install-qt-action@v3
         with:
           version: '6.9.0'
-          host: 'windows'
+          host: 'linux'
           target: 'desktop'
-          arch: 'win64_msvc2022_64'
           modules: 'qtbase qtsvg qttools qtdeclarative qtimageformats'
 
       - name: Locate Qt6_DIR
@@ -48,15 +59,13 @@ jobs:
       - name: Clone / update superbuild（Kitware 官方）
         shell: bash
         run: |
+          git lfs install
           SB="${{ github.workspace }}/lidarview-superbuild"
           if [ -d "$SB/.git" ]; then
             git -C "$SB" pull --recurse-submodules
           else
             git clone --recursive https://gitlab.kitware.com/LidarView/lidarview-superbuild.git "$SB"
           fi
-
-      - name: Set up MSVC dev environment
-        uses: ilammy/msvc-dev-cmd@v1
 
       - name: Configure（superbuild 指向本地 senfoto 源码）
         shell: bash
@@ -79,8 +88,8 @@ jobs:
           cd "${{ github.workspace }}/build"
           ctest -C Release -R cpack || true
 
-      - name: Upload artifact（LidarView.exe）
+      - name: Upload artifact（LidarView）
         uses: actions/upload-artifact@v4
         with:
-          name: senfoto-windows
-          path: ${{ github.workspace }}/build/install/bin/LidarView.exe
+          name: senfoto-ubuntu
+          path: ${{ github.workspace }}/build/install/bin/LidarView
