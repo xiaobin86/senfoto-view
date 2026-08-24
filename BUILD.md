@@ -60,7 +60,7 @@ sudo apt-get install -y libgomp1 libxcb-cursor0 libxcb-xinerama0 libxcb-xinput0 
 目录结构建议（三者平级）：
 
 ```
-work/
+senfoto-view/
 ├── lidarview/               # 本仓库：Senfoto 源码（来自 GitHub）
 ├── lidarview-superbuild/   # LidarView-Superbuild（来自 Kitware）
 └── build/                  # 编译目录
@@ -92,7 +92,7 @@ cmake ../lidarview-superbuild -GNinja -DCMAKE_BUILD_TYPE=Release \
 - `-DENABLE_hesaisdk=True`：启用 Hesai 解释器
 - `-DCMAKE_BUILD_TYPE=Debug` / `RelWithDebInfo`：默认 `Release`
 
-> 也可用 `ccmake ../lvsb` 或 `cmake-gui` 交互式配置。
+> 也可用 `ccmake ../lidarview-superbuild` 或 `cmake-gui` 交互式配置。
 
 ---
 
@@ -135,7 +135,7 @@ ninja -C superbuild/lidarview/build -j8 install
 
 1. 打开 **"VS20XX x64 Native Tools Command Prompt"**（MSVC 2019+）。
 2. 安装 CMake、Ninja、**Qt6（必须预装）**，配置时传 `-DQt6_DIR=<...>/lib/cmake/Qt6`。
-3. 路径尽量短且靠近盘符根目录（如 `C:\lvsb`），避免 Windows 路径长度限制。
+3. 路径尽量短且靠近盘符根目录（如把 superbuild 源码放到 `C:\sb` 这样的短路径），避免 Windows 路径长度限制。
 4. 克隆、配置、编译步骤与上面一致，配置加上：
    ```
    -Dlidarview_SOURCE_SELECTION=source -Dlidarview_SOURCE_DIR=<lidarview 路径>
