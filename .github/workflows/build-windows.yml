@@ -1,7 +1,17 @@
 name: Build Windows
 
-# 在 GitHub 的 Windows runner 上自动编译 Senfoto (LidarView) 的 Windows 安装包 / 可执行文件。
-# 触发：push 到 develop 或 master，或手动在 Actions 页面点 Run workflow。
+# 在 GitHub 托管的 Windows runner 上编译 Senfoto (LidarView) 的 Windows 可执行文件。
+# 触发：push 到 develop / master，或手动在 Actions 页面点 Run workflow。
+#
+# ⚠️ 关于「缓存」的现实约束（务必先读）：
+#   GitHub 单个 cache 条目上限约 10GB，而 LidarView superbuild 的完整编译目录
+#   （ParaView/VTK/Qt 等依赖）往往 20GB+，无法整体缓存。因此每次在「托管 runner」
+#   上仍会从零编译依赖。本 workflow 采用两道缓解：
+#     1) ccache：缓存目标文件（CCACHE_MAXSIZE=9G，控制在 cache 上限内），
+#        二次编译（尤其你自己的 LidarView 改动）显著加速；
+#     2) job 超时保护：单个 job 最长 5.5 小时，避免失控无限跑。
+#   若要做到「只增量编译依赖、分钟级重建」，请改用自托管 runner（持久化本地磁盘，
+#   让 build/ 目录跨 run 保留）。参见 BUILD.md / 与 GitLab 自托管讨论。
 on:
   push:
     branches: [develop, master]
@@ -10,6 +20,13 @@ on:
 jobs:
   build-windows:
     runs-on: windows-latest
+    # 防失控：GitHub 单 job 上限 6h，这里留 30 分钟余量
+    timeout-minutes: 330
+    env:
+      CCACHE_DIR: ${{ github.workspace }}/.ccache
+      CCACHE_MAXSIZE: 9G
+      CCACHE_COMPRESS: 1
+
     steps:
       - name: Checkout senfoto-view（含子模块）
         uses: actions/checkout@v4
@@ -18,6 +35,22 @@ jobs:
 
       - name: Setup Ninja
         uses: jwlawson/actions-setup-ninja@v2
+
+      - name: Install ccache
+        shell: bash
+        run: choco install ccache -y
+
+      - name: Verify ccache
+        shell: bash
+        run: ccache --version
+
+      - name: Restore ccache
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/.ccache
+          key: ccache-windows-v1-${{ github.run_id }}
+          restore-keys: |
+            ccache-windows-v1-
 
       - name: Install Qt6
         uses: jurplel/install-qt-action@v3
@@ -50,7 +83,9 @@ jobs:
                 -DCMAKE_BUILD_TYPE=Release \
                 -Dlidarview_SOURCE_SELECTION=source \
                 -Dlidarview_SOURCE_DIR="${{ github.workspace }}" \
-                -DQt6_DIR="$Qt6_DIR"
+                -DQt6_DIR="$Qt6_DIR" \
+                -DCMAKE_C_COMPILER_LAUNCHER=ccache \
+                -DCMAKE_CXX_COMPILER_LAUNCHER=ccache
 
       - name: Build
         shell: bash
