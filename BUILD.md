@@ -75,6 +75,12 @@ git clone -b develop --recursive https://github.com/xiaobin86/senfoto-view.git l
 git clone --recursive https://gitlab.kitware.com/LidarView/lidarview-superbuild.git
 ```
 
+> **目录上下文**：以上两条 `git clone` 都在 `senfoto-view/` 工作根目录下执行
+> （`git clone` 不会切换你的当前目录，执行后仍在 `senfoto-view/`）。
+> 注意：两条命令之间**不要先 `cd lidarview`**，否则 superbuild 会被克隆进
+> `lidarview/` 内部，破坏三者平级结构、导致后续 `cmake ../lidarview-superbuild` 找不到目录。
+> 若已 `cd` 进去，先 `cd ..` 回到 `senfoto-view/` 再继续。
+
 ---
 
 ## 4. 配置（指向本地源码）
