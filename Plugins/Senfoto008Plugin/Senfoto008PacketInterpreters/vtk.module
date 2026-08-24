@@ -1,0 +1,11 @@
+NAME
+  Senfoto008Plugin::Senfoto008PacketInterpreters
+LIBRARY_NAME
+  Senfoto008PacketInterpreters
+DEPENDS
+  LidarView::IOLidar
+  VTK::CommonCore
+PRIVATE_DEPENDS
+  VTK::CommonDataModel
+TEST_DEPENDS
+  LidarView::TestingCore

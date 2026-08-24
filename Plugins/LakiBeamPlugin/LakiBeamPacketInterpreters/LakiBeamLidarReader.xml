@@ -1,0 +1,54 @@
+<ServerManagerConfiguration>
+  <ProxyGroup name="sources">
+    <LidarReaderProxy name="LakiBeamLidarReader"
+                      class="vtkLidarReader"
+                      label="LakiBeam LiDAR Reader"
+                      base_proxygroup="internal_interpreter"
+                      base_proxyname="CommonLidarReader">
+
+      <Documentation short_help="Read LakiBeam LiDAR data files." long_help="Read LakiBeam LiDAR .pcap files.">
+        Read LakiBeam LiDAR (.pcap) data files.
+      </Documentation>
+
+      <IntVectorProperty name="LidarPort"
+                         command="SetLidarPort"
+                         override="1"
+                         default_values="2368"
+                         number_of_elements="1">
+        <Documentation>
+          Specify which packets are read. To read all packets set the value to -1
+        </Documentation>
+      </IntVectorProperty>
+
+      <SubProxy command="SetLidarInterpreter">
+        <Proxy name="PacketInterpreter"
+               proxygroup="internal_interpreter"
+               proxyname="LakiBeamPacketInterpreter" />
+        <ExposedProperties>
+          <PropertyGroup label="LiDAR Interpreter Options">
+            <Property name="TimeOffset" />
+            <Property name="IgnoreZeroDistances" panel_visibility="advanced" />
+            <Property name="IgnoreEmptyFrames" panel_visibility="advanced" />
+            <Property name="EnableAdvancedArrays" panel_visibility="advanced" />
+            <Property name="FramingMethod" panel_visibility="advanced" />
+            <Property name="FrameDuration" panel_visibility="advanced" />
+          </PropertyGroup>
+          <PropertyGroup label="LiDAR Transform">
+            <Property name="Position" panel_visibility="advanced" />
+            <Property name="Rotation" panel_visibility="advanced" />
+            <Property name="PassthroughTransformMode" panel_visibility="advanced" />
+          </PropertyGroup>
+          <Property name="Vendor" panel_visibility="never" />
+          <Property name="ModelName" panel_visibility="never" />
+        </ExposedProperties>
+      </SubProxy>
+
+      <Hints>
+        <LiveSource emulated_time="1" refresh_on_interaction="1" />
+        <ReaderFactory extensions="pcap" file_description="LakiBeam LiDAR files" />
+        <View type="None" port="1" />
+        <PipelineIcon name="SpreadSheetView" port="1" />
+      </Hints>
+    </LidarReaderProxy>
+  </ProxyGroup>
+</ServerManagerConfiguration>

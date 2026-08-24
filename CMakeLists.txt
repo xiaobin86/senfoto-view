@@ -37,6 +37,8 @@ set(lidarview_default_plugins
   DatasetIOPlugin
   VelodynePlugin
   LeishenPlugin
+  LakiBeamPlugin
+  Senfoto008Plugin
   LivoxPlugin
   RobosensePlugin
   HesaiPlugin

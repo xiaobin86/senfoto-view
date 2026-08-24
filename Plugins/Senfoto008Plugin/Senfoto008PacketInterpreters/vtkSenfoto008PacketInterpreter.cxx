@@ -1,0 +1,281 @@
+/*=========================================================================
+
+  Program:   LidarView
+  Module:    vtkSenfoto008PacketInterpreter.cxx
+
+  Copyright (c) Kitware Inc.
+  All rights reserved.
+  See LICENSE or http://www.apache.org/licenses/LICENSE-2.0 for details.
+
+  This software is distributed WITHOUT ANY WARRANTY; without even
+  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+  PURPOSE.  See the above copyright notice for more information.
+
+=========================================================================*/
+
+#include "vtkSenfoto008PacketInterpreter.h"
+#include "InterpreterHelper.h"
+
+#include "Senfoto008PacketFormat.h"
+
+#include <vtkDoubleArray.h>
+#include <vtkFloatArray.h>
+#include <vtkMath.h>
+#include <vtkObjectFactory.h>
+#include <vtkPointData.h>
+#include <vtkPoints.h>
+#include <vtkPolyData.h>
+#include <vtkUnsignedCharArray.h>
+
+#include <algorithm>
+#include <cmath>
+
+//-----------------------------------------------------------------------------
+class vtkSenfoto008PacketInterpreter::vtkInternals
+{
+public:
+  vtkSmartPointer<vtkPoints> Points;
+  vtkSmartPointer<vtkFloatArray> PointsX;
+  vtkSmartPointer<vtkFloatArray> PointsY;
+  vtkSmartPointer<vtkFloatArray> PointsZ;
+  vtkSmartPointer<vtkUnsignedCharArray> Intensity;
+  vtkSmartPointer<vtkUnsignedCharArray> LaserId;
+  vtkSmartPointer<vtkDoubleArray> Distance;
+  vtkSmartPointer<vtkDoubleArray> Azimuth;
+  vtkSmartPointer<vtkDoubleArray> Timestamp;
+
+  double LastAzimuth = 0.0;
+  bool HasLastAzimuth = false;
+  bool WarnedUnknownModel = false;
+};
+
+//-----------------------------------------------------------------------------
+vtkStandardNewMacro(vtkSenfoto008PacketInterpreter)
+
+//-----------------------------------------------------------------------------
+vtkSenfoto008PacketInterpreter::vtkSenfoto008PacketInterpreter()
+  : Internals(new vtkSenfoto008PacketInterpreter::vtkInternals())
+{
+  this->SetSensorVendor("Senfoto");
+  this->SetSensorModelName("008");
+
+  this->ResetCurrentFrame();
+}
+
+//-----------------------------------------------------------------------------
+vtkSenfoto008PacketInterpreter::~vtkSenfoto008PacketInterpreter() = default;
+
+//-----------------------------------------------------------------------------
+void vtkSenfoto008PacketInterpreter::Initialize()
+{
+  auto& internals = this->Internals;
+  internals->LastAzimuth = 0.0;
+  internals->HasLastAzimuth = false;
+  internals->WarnedUnknownModel = false;
+  Superclass::Initialize();
+}
+
+//-----------------------------------------------------------------------------
+bool vtkSenfoto008PacketInterpreter::IsLidarPacket(
+  unsigned char const* data, unsigned int dataLength)
+{
+  return senfoto008::IsValidPacket(data, static_cast<std::size_t>(dataLength));
+}
+
+//-----------------------------------------------------------------------------
+bool vtkSenfoto008PacketInterpreter::PreProcessPacket(
+  unsigned char const* data, unsigned int dataLength, double& outLidarDataTime)
+{
+  auto& internals = this->Internals;
+
+  if (!senfoto008::IsValidPacket(data, static_cast<std::size_t>(dataLength)))
+  {
+    return false;
+  }
+
+  const double currentAzimuth = senfoto008::GetBlockAzimuth(data, 0);
+  outLidarDataTime = senfoto008::GetPacketTimestamp(data);
+
+  bool isNewFrame = false;
+  if (internals->HasLastAzimuth && currentAzimuth < internals->LastAzimuth)
+  {
+    isNewFrame = true;
+  }
+
+  internals->LastAzimuth = currentAzimuth;
+  internals->HasLastAzimuth = true;
+
+  return isNewFrame;
+}
+
+//-----------------------------------------------------------------------------
+void vtkSenfoto008PacketInterpreter::ProcessPacket(
+  unsigned char const* data, unsigned int dataLength)
+{
+  auto& internals = this->Internals;
+
+  if (!senfoto008::IsValidPacket(data, static_cast<std::size_t>(dataLength)))
+  {
+    return;
+  }
+
+  const std::uint8_t lidarModel = senfoto008::GetLidarModel(data);
+  if (lidarModel != senfoto008::LIDAR_MODEL_48_LINE &&
+    lidarModel != senfoto008::LIDAR_MODEL_96_LINE)
+  {
+    if (!internals->WarnedUnknownModel)
+    {
+      vtkWarningMacro(
+        "Senfoto008: unknown Lidar_model 0x" << std::hex << static_cast<int>(lidarModel));
+      internals->WarnedUnknownModel = true;
+    }
+    return;
+  }
+
+  const double currentAzimuth = senfoto008::GetBlockAzimuth(data, 0);
+  if (internals->HasLastAzimuth && currentAzimuth < internals->LastAzimuth)
+  {
+    if (this->CurrentFrame && this->CurrentFrame->GetNumberOfPoints() > 0)
+    {
+      Superclass::SplitFrame();
+    }
+  }
+  internals->LastAzimuth = currentAzimuth;
+  internals->HasLastAzimuth = true;
+
+  const double packetTimestamp = senfoto008::GetPacketTimestamp(data);
+
+  if (lidarModel == senfoto008::LIDAR_MODEL_48_LINE)
+  {
+    const auto& verticalAngles = senfoto008::GetVerticalAngles48Line();
+    for (std::size_t blockIndex = 0; blockIndex < senfoto008::DATA_BLOCKS; ++blockIndex)
+    {
+      if (!senfoto008::IsValidDataBlock(data, blockIndex))
+      {
+        continue;
+      }
+      const double azimuth = senfoto008::GetBlockAzimuth(data, blockIndex);
+      for (std::size_t channelIndex = 0; channelIndex < senfoto008::CHANNELS_PER_BLOCK;
+           ++channelIndex)
+      {
+        const std::uint16_t distRaw =
+          senfoto008::GetChannelDistanceRaw(data, blockIndex, channelIndex);
+        if (distRaw == senfoto008::INVALID_DISTANCE)
+        {
+          continue;
+        }
+        const double distM = static_cast<double>(distRaw) * senfoto008::DISTANCE_SCALE_M;
+        const std::uint8_t intensity =
+          senfoto008::GetChannelIntensity(data, blockIndex, channelIndex);
+        const double elevationDeg = verticalAngles[channelIndex];
+        this->AddPoint(azimuth, elevationDeg, distM,
+          static_cast<std::uint8_t>(channelIndex), intensity, packetTimestamp);
+      }
+    }
+  }
+  else // 96-line single return
+  {
+    // Blocks are paired: (0,1), (2,3), (4,5), (6,7). Each pair shares an azimuth
+    // and contains laser IDs 0..47 then 48..95.
+    const auto& verticalAngles = senfoto008::GetVerticalAngles96Line();
+    for (std::size_t pairIndex = 0; pairIndex < senfoto008::DATA_BLOCKS / 2; ++pairIndex)
+    {
+      const std::size_t firstBlock = pairIndex * 2;
+      const std::size_t secondBlock = firstBlock + 1;
+      if (!senfoto008::IsValidDataBlock(data, firstBlock) ||
+        !senfoto008::IsValidDataBlock(data, secondBlock))
+      {
+        continue;
+      }
+      const double azimuth = senfoto008::GetBlockAzimuth(data, firstBlock);
+      for (std::size_t channelIndex = 0; channelIndex < senfoto008::CHANNELS_PER_BLOCK;
+           ++channelIndex)
+      {
+        const std::uint16_t distRawFirst =
+          senfoto008::GetChannelDistanceRaw(data, firstBlock, channelIndex);
+        if (distRawFirst != senfoto008::INVALID_DISTANCE)
+        {
+          const double distM = static_cast<double>(distRawFirst) * senfoto008::DISTANCE_SCALE_M;
+          const std::uint8_t laserId = static_cast<std::uint8_t>(channelIndex);
+          const std::uint8_t intensity =
+            senfoto008::GetChannelIntensity(data, firstBlock, channelIndex);
+          this->AddPoint(azimuth, verticalAngles[laserId], distM, laserId, intensity, packetTimestamp);
+        }
+
+        const std::uint16_t distRawSecond =
+          senfoto008::GetChannelDistanceRaw(data, secondBlock, channelIndex);
+        if (distRawSecond != senfoto008::INVALID_DISTANCE)
+        {
+          const double distM = static_cast<double>(distRawSecond) * senfoto008::DISTANCE_SCALE_M;
+          const std::uint8_t laserId =
+            static_cast<std::uint8_t>(channelIndex + senfoto008::CHANNELS_PER_BLOCK);
+          const std::uint8_t intensity =
+            senfoto008::GetChannelIntensity(data, secondBlock, channelIndex);
+          this->AddPoint(azimuth, verticalAngles[laserId], distM, laserId, intensity, packetTimestamp);
+        }
+      }
+    }
+  }
+}
+
+//-----------------------------------------------------------------------------
+void vtkSenfoto008PacketInterpreter::AddPoint(double azimuthDeg, double elevationDeg,
+  double distanceM, std::uint8_t laserId, std::uint8_t intensity, double timestamp)
+{
+  auto& internals = this->Internals;
+
+  const double azRad = vtkMath::RadiansFromDegrees(azimuthDeg);
+  const double elRad = vtkMath::RadiansFromDegrees(elevationDeg);
+  const double cosEl = std::cos(elRad);
+
+  const double pos[3] = { distanceM * cosEl * std::cos(azRad),
+    distanceM * cosEl * std::sin(azRad), distanceM * std::sin(elRad) };
+
+  internals->Points->InsertNextPoint(pos);
+  InsertNextValueIfNotNull(internals->PointsX, static_cast<float>(pos[0]));
+  InsertNextValueIfNotNull(internals->PointsY, static_cast<float>(pos[1]));
+  InsertNextValueIfNotNull(internals->PointsZ, static_cast<float>(pos[2]));
+  InsertNextValueIfNotNull(internals->Intensity, intensity);
+  InsertNextValueIfNotNull(internals->LaserId, laserId);
+  InsertNextValueIfNotNull(internals->Distance, distanceM);
+  InsertNextValueIfNotNull(internals->Azimuth, azimuthDeg);
+  InsertNextValueIfNotNull(internals->Timestamp, timestamp);
+}
+
+//-----------------------------------------------------------------------------
+vtkSmartPointer<vtkPolyData> vtkSenfoto008PacketInterpreter::CreateNewEmptyFrame(
+  vtkIdType nbrOfPoints, vtkIdType prereservedNbrOfPoints)
+{
+  const int defaultPrereservedNbrOfPointsPerFrame = 60000;
+  prereservedNbrOfPoints = std::max(
+    static_cast<int>(prereservedNbrOfPoints * 1.5), defaultPrereservedNbrOfPointsPerFrame);
+
+  vtkSmartPointer<vtkPolyData> polyData = vtkSmartPointer<vtkPolyData>::New();
+
+  vtkNew<vtkPoints> points;
+  points->SetDataTypeToFloat();
+  points->Allocate(prereservedNbrOfPoints);
+  if (nbrOfPoints > 0)
+  {
+    points->SetNumberOfPoints(nbrOfPoints);
+  }
+  points->GetData()->SetName("Points");
+  polyData->SetPoints(points.GetPointer());
+
+  auto& internals = this->Internals;
+  internals->Points = points.GetPointer();
+
+  // clang-format off
+  InitArrayForPolyData(true, internals->PointsX, "X", nbrOfPoints, prereservedNbrOfPoints, polyData, this->EnableAdvancedArrays);
+  InitArrayForPolyData(true, internals->PointsY, "Y", nbrOfPoints, prereservedNbrOfPoints, polyData, this->EnableAdvancedArrays);
+  InitArrayForPolyData(true, internals->PointsZ, "Z", nbrOfPoints, prereservedNbrOfPoints, polyData, this->EnableAdvancedArrays);
+  InitArrayForPolyData(false, internals->Intensity, "intensity", nbrOfPoints, prereservedNbrOfPoints, polyData);
+  InitArrayForPolyData(false, internals->LaserId, "laser_id", nbrOfPoints, prereservedNbrOfPoints, polyData);
+  InitArrayForPolyData(false, internals->Timestamp, "timestamp", nbrOfPoints, prereservedNbrOfPoints, polyData);
+  InitArrayForPolyData(false, internals->Distance, "distance_m", nbrOfPoints, prereservedNbrOfPoints, polyData);
+  InitArrayForPolyData(false, internals->Azimuth, "azimuth", nbrOfPoints, prereservedNbrOfPoints, polyData);
+  // clang-format on
+
+  polyData->GetPointData()->SetActiveScalars("intensity");
+  return polyData;
+}

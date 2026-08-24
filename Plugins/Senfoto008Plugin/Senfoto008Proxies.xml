@@ -1,0 +1,19 @@
+<ServerManagerConfiguration>
+  <ProxyGroup name="lidar_interpreters">
+    <Proxy name="Senfoto008"
+           base_proxygroup="internal_interpreter"
+           base_proxyname="BaseInterpreter">
+
+      <StringVectorProperty name="LidarReader"
+                            number_of_elements="1"
+                            override="1"
+                            default_values="Senfoto008LidarReader"
+                            information_only="1" />
+      <StringVectorProperty name="LidarStream"
+                            number_of_elements="1"
+                            override="1"
+                            default_values="Senfoto008LidarStream"
+                            information_only="1" />
+    </Proxy>
+  </ProxyGroup>
+</ServerManagerConfiguration>

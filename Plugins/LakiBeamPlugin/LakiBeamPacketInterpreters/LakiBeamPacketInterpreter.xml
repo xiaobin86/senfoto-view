@@ -1,0 +1,10 @@
+<ServerManagerConfiguration>
+  <ProxyGroup name="internal_interpreter">
+    <Proxy name="LakiBeamPacketInterpreter"
+           class="vtkLakiBeamPacketInterpreter"
+           label="LakiBeam Interpreter"
+           base_proxygroup="internal_interpreter"
+           base_proxyname="CommonLidarPacketInterpreter">
+    </Proxy>
+  </ProxyGroup>
+</ServerManagerConfiguration>

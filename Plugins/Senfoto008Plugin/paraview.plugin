@@ -1,0 +1,7 @@
+NAME
+  Senfoto008Plugin
+DESCRIPTION
+  Reader and stream for Senfoto 008 mechanical LiDAR
+REQUIRES_MODULES
+  VTK::CommonCore
+  LidarView::IOLidar

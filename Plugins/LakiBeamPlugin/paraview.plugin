@@ -1,0 +1,7 @@
+NAME
+  LakiBeamPlugin
+DESCRIPTION
+  Reader and other filters specific for RichBeam LakiBeam
+REQUIRES_MODULES
+  VTK::CommonCore
+  LidarView::IOLidar

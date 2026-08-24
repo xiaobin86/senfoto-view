@@ -1,0 +1,19 @@
+<ServerManagerConfiguration>
+  <ProxyGroup name="lidar_interpreters">
+    <Proxy name="LakiBeam"
+           base_proxygroup="internal_interpreter"
+           base_proxyname="BaseInterpreter">
+
+      <StringVectorProperty name="LidarReader"
+                            number_of_elements="1"
+                            override="1"
+                            default_values="LakiBeamLidarReader"
+                            information_only="1" />
+      <StringVectorProperty name="LidarStream"
+                            number_of_elements="1"
+                            override="1"
+                            default_values="LakiBeamLidarStream"
+                            information_only="1" />
+    </Proxy>
+  </ProxyGroup>
+</ServerManagerConfiguration>

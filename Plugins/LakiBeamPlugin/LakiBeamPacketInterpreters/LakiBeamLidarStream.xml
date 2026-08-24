@@ -1,0 +1,54 @@
+<ServerManagerConfiguration>
+  <ProxyGroup name="sources">
+    <LidarStreamProxy name="LakiBeamLidarStream"
+                      class="vtkLidarStream"
+                      label="LakiBeam LiDAR Stream"
+                      base_proxygroup="internal_interpreter"
+                      base_proxyname="CommonLidarStream">
+
+      <Documentation short_help="LakiBeam LiDAR data stream." long_help="LakiBeam LiDAR live source stream.">
+        LakiBeam LiDAR live source stream.
+      </Documentation>
+
+      <IntVectorProperty name="ListeningPort"
+                         animateable="0"
+                         command="SetListeningPort"
+                         override="1"
+                         default_values="2368"
+                         number_of_elements="1">
+        <Documentation>
+          Specify port on which to listen for packets.
+        </Documentation>
+      </IntVectorProperty>
+
+      <SubProxy command="SetLidarInterpreter">
+        <Proxy name="PacketInterpreter"
+               proxygroup="internal_interpreter"
+               proxyname="LakiBeamPacketInterpreter" />
+        <ExposedProperties>
+          <PropertyGroup label="LiDAR Interpreter Options">
+            <Property name="TimeOffset" />
+            <Property name="IgnoreZeroDistances" panel_visibility="advanced" />
+            <Property name="IgnoreEmptyFrames" panel_visibility="advanced" />
+            <Property name="EnableAdvancedArrays" panel_visibility="advanced" />
+            <Property name="FramingMethod" panel_visibility="advanced" />
+            <Property name="FrameDuration" panel_visibility="advanced" />
+          </PropertyGroup>
+          <PropertyGroup label="LiDAR Transform">
+            <Property name="Position" panel_visibility="advanced" />
+            <Property name="Rotation" panel_visibility="advanced" />
+            <Property name="PassthroughTransformMode" panel_visibility="advanced" />
+          </PropertyGroup>
+          <Property name="Vendor" panel_visibility="never" />
+          <Property name="ModelName" panel_visibility="never" />
+        </ExposedProperties>
+      </SubProxy>
+
+      <Hints>
+        <LiveSource refresh_on_interaction="1" />
+        <View type="None" port="1" />
+        <PipelineIcon name="SpreadSheetView" port="1" />
+      </Hints>
+    </LidarStreamProxy>
+  </ProxyGroup>
+</ServerManagerConfiguration>

@@ -1,0 +1,11 @@
+NAME
+  LakiBeamPlugin::LakiBeamPacketInterpreters
+LIBRARY_NAME
+  LakiBeamPacketInterpreters
+DEPENDS
+  LidarView::IOLidar
+  VTK::CommonCore
+PRIVATE_DEPENDS
+  VTK::CommonDataModel
+TEST_DEPENDS
+  LidarView::TestingCore

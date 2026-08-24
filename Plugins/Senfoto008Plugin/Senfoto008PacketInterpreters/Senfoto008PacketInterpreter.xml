@@ -1,0 +1,10 @@
+<ServerManagerConfiguration>
+  <ProxyGroup name="internal_interpreter">
+    <Proxy name="Senfoto008PacketInterpreter"
+           class="vtkSenfoto008PacketInterpreter"
+           label="Senfoto 008 Interpreter"
+           base_proxygroup="internal_interpreter"
+           base_proxyname="CommonLidarPacketInterpreter">
+    </Proxy>
+  </ProxyGroup>
+</ServerManagerConfiguration>
