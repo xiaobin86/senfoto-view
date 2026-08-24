@@ -66,33 +66,38 @@ constexpr std::uint16_t INVALID_DISTANCE = 0;
 constexpr double AZIMUTH_SCALE_DEG = 0.01;
 
 // 96-line vertical pitch angles, in degrees.
-// Source: manufacturer table (channel index 0..95 maps to laser ID 0..95).
+// Source: manufacturer table (laser ID 1..96, stored as index 0..95).
 inline const std::array<double, 96>& GetVerticalAngles96Line()
 {
-  static const std::array<double, 96> angles = [] {
-    std::array<double, 96> a{};
-    for (std::size_t i = 0; i < 95; ++i)
-    {
-      a[i] = static_cast<double>(i) * 0.95;
-    }
-    a[95] = 90.0;
-    return a;
-  }();
+  static const std::array<double, 96> angles = {
+    0.0,    0.95,   1.9,    2.85,   3.8,    4.75,   5.7,    6.65,   // 1-8
+    7.6,    8.55,   9.5,    10.45,  11.4,   12.35,  13.3,   14.25,  // 9-16
+    15.2,   16.15,  17.1,   18.05,  19.0,   19.95,  20.9,   21.85,  // 17-24
+    22.8,   23.75,  24.7,   25.65,  26.6,   27.55,  28.5,   29.45,  // 25-32
+    30.4,   31.35,  32.3,   33.24,  34.18,  35.12,  36.06,  37.0,   // 33-40
+    37.94,  38.88,  39.82,  40.76,  41.7,   42.64,  43.58,  44.52,  // 41-48
+    45.46,  46.4,   47.34,  48.28,  49.22,  50.16,  51.1,   52.04,  // 49-56
+    52.98,  53.92,  54.86,  55.8,   56.75,  57.7,   58.65,  59.6,   // 57-64
+    60.55,  61.5,   62.45,  63.4,   64.35,  65.3,   66.25,  67.2,   // 65-72
+    68.15,  69.1,   70.05,  71.0,   71.95,  72.9,   73.85,  74.8,   // 73-80
+    75.75,  76.7,   77.65,  78.6,   79.55,  80.5,   81.45,  82.4,   // 81-88
+    83.35,  84.3,   85.25,  86.2,   87.15,  88.1,   89.05,  90.0    // 89-96
+  };
   return angles;
 }
 
 // 48-line vertical pitch angles, in degrees.
-// Source: odd rows (1,3,5,...,95) of the manufacturer 96-line table.
+// Source: odd rows (laser ID 1,3,5,...,95) of the manufacturer 96-line table.
 inline const std::array<double, CHANNELS_PER_BLOCK>& GetVerticalAngles48Line()
 {
-  static const std::array<double, CHANNELS_PER_BLOCK> angles = [] {
-    std::array<double, CHANNELS_PER_BLOCK> a{};
-    for (std::size_t i = 0; i < CHANNELS_PER_BLOCK; ++i)
-    {
-      a[i] = static_cast<double>(i) * 1.9;
-    }
-    return a;
-  }();
+  static const std::array<double, CHANNELS_PER_BLOCK> angles = {
+     0.0,   1.9,    3.8,    5.7,    7.6,    9.5,   11.4,   13.3,   // 1-8
+    15.2,  17.1,   19.0,   20.9,   22.8,   24.7,   26.6,   28.5,   // 9-16
+    30.4,  32.3,   34.18,  36.06,  37.94,  39.82,  41.7,   43.58,  // 17-24
+    45.46, 47.34,  49.22,  51.1,   52.98,  54.86,  56.75,  58.65,  // 25-32
+    60.55, 62.45,  64.35,  66.25,  68.15,  70.05,  71.95,  73.85,  // 33-40
+    75.75, 77.65,  79.55,  81.45,  83.35,  85.25,  87.15,  89.05   // 41-48
+  };
   return angles;
 }
 
