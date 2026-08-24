@@ -135,6 +135,10 @@ cmake --build . -j
 可执行程序为 `build/install/bin/LidarView`
 （Senfoto008 / LakiBeam 插件已随 LidarView 一并编译进插件，由本仓库 `CMakeLists.txt` 注册）。
 
+> 嫌手敲麻烦可用仓库根目录的 `./build.sh` 做增量编译（支持 Ubuntu / Windows-GitBash）：
+> `./build.sh` 增量编译；`./build.sh --package` 额外打包；`./build.sh --clean` 重配全量构建。
+> 前提仍是已用 `./init.sh` 完成初始化（build/ 已配置好 cmake）。
+
 ---
 
 ## 6. 运行
@@ -170,6 +174,7 @@ ninja -C superbuild/lidarview/build -j8 install
 1. 打开 **"VS20XX x64 Native Tools Command Prompt"**（MSVC 2019+）。
 2. 安装 CMake、Ninja、**Qt6（必须预装）**，配置时传 `-DQt6_DIR=<...>/lib/cmake/Qt6`。
 3. 路径尽量短且靠近盘符根目录（如把 superbuild 源码放到 `C:\sb` 这样的短路径），避免 Windows 路径长度限制。
+4. 也可在 Git Bash 下直接运行仓库根目录的 `./build.sh`（它会自动定位 VS 的 `vcvars64.bat` 初始化 MSVC 环境后编译）；`./build.sh --package` 会额外用 cpack 生成 Windows 安装包。
 4. 克隆、配置、编译步骤与上面一致，配置加上：
    ```
    -Dlidarview_SOURCE_SELECTION=source -Dlidarview_SOURCE_DIR=<lidarview 路径>
