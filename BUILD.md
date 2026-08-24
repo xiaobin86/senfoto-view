@@ -61,9 +61,9 @@ sudo apt-get install -y libgomp1 libxcb-cursor0 libxcb-xinerama0 libxcb-xinput0 
 
 ```
 work/
-├── lidarview/      # 本仓库：Senfoto 源码（来自 GitHub）
-├── lvsb/           # LidarView-Superbuild（来自 Kitware）
-└── lvsb-build/     # 编译目录
+├── lidarview/               # 本仓库：Senfoto 源码（来自 GitHub）
+├── lidarview-superbuild/   # LidarView-Superbuild（来自 Kitware）
+└── build/                  # 编译目录
 ```
 
 ```bash
@@ -71,7 +71,8 @@ work/
 git clone -b develop --recursive https://github.com/xiaobin86/senfoto-view.git lidarview
 
 # 2) Superbuild：来自 Kitware 官方（本仓库未托管 superbuild，直接拉官方）
-git clone --recursive https://gitlab.kitware.com/LidarView/lidarview-superbuild.git lvsb
+#    不写末尾的目录名时，git 默认用仓库名 lidarview-superbuild 作为目录名
+git clone --recursive https://gitlab.kitware.com/LidarView/lidarview-superbuild.git
 ```
 
 ---
@@ -79,9 +80,9 @@ git clone --recursive https://gitlab.kitware.com/LidarView/lidarview-superbuild.
 ## 4. 配置（指向本地源码）
 
 ```bash
-mkdir lvsb-build && cd lvsb-build
+mkdir build && cd build
 
-cmake ../lvsb -GNinja -DCMAKE_BUILD_TYPE=Release \
+cmake ../lidarview-superbuild -GNinja -DCMAKE_BUILD_TYPE=Release \
   -Dlidarview_SOURCE_SELECTION=source \
   -Dlidarview_SOURCE_DIR=$(realpath ../lidarview)
 ```
