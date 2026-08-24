@@ -7,6 +7,7 @@ set(private_headers
 )
 
 vtk_module_add_module(LakiBeamPlugin::LakiBeamPacketInterpreters
+  FORCE_STATIC
   CLASSES ${classes}
   PRIVATE_HEADERS ${private_headers}
 )
