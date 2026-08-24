@@ -1,7 +1,8 @@
 name: Build Windows
 
 # 在 GitHub 托管的 Windows runner 上编译 Senfoto (LidarView) 的 Windows 可执行文件。
-# 触发：push 到 develop / master，或手动在 Actions 页面点 Run workflow。
+# 触发：仅在 Actions 页面手动点 Run workflow（workflow_dispatch）。
+# 已移除 on.push，避免每次 push 自动跑完整 superbuild 编译、烧 GitHub 免费分钟。
 #
 # ⚠️ 关于「缓存」的现实约束（务必先读）：
 #   GitHub 单个 cache 条目上限约 10GB，而 LidarView superbuild 的完整编译目录
@@ -13,8 +14,6 @@ name: Build Windows
 #   若要做到「只增量编译依赖、分钟级重建」，请改用自托管 runner（持久化本地磁盘，
 #   让 build/ 目录跨 run 保留）。参见 BUILD.md / 与 GitLab 自托管讨论。
 on:
-  push:
-    branches: [develop, master]
   workflow_dispatch:
 
 jobs:
