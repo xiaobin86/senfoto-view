@@ -264,9 +264,34 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
 }
 
 //-----------------------------------------------------------------------------
+bool vtkSenfoto008PacketInterpreter::IsAzimuthInRange(double azimuthDeg) const
+{
+  const double start = this->StartAngle;
+  const double end = this->EndAngle;
+  if (start <= end)
+  {
+    return azimuthDeg >= start && azimuthDeg <= end;
+  }
+  // Wrap-around FOV (e.g. 350 deg -> 10 deg)
+  return azimuthDeg >= start || azimuthDeg <= end;
+}
+
+//-----------------------------------------------------------------------------
 void vtkSenfoto008PacketInterpreter::AddPoint(double azimuthDeg, double elevationDeg,
   double distanceM, std::uint8_t laserId, std::uint8_t intensity, double timestamp)
 {
+  // Distance range filter (mirrors RoboSense Airy distance_section_.in())
+  if (distanceM < this->MinDistance ||
+    (this->MaxDistance > 0.0 && distanceM > this->MaxDistance))
+  {
+    return;
+  }
+  // Azimuth / FOV range filter (mirrors RoboSense Airy scan_section_.in())
+  if (!this->IsAzimuthInRange(azimuthDeg))
+  {
+    return;
+  }
+
   auto& internals = this->Internals;
 
   const double azRad = vtkMath::RadiansFromDegrees(azimuthDeg);
