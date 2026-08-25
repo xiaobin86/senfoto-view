@@ -4,7 +4,32 @@
            class="vtkSenfoto008PacketInterpreter"
            label="Senfoto 008 Interpreter"
            base_proxygroup="internal_interpreter"
-           base_proxyname="CommonLidarPacketInterpreter">
+            base_proxyname="CommonLidarPacketInterpreter">
+
+      <DoubleVectorProperty name="MinDistance"
+                            command="SetMinDistance"
+                            number_of_elements="1"
+                            default_values="0.0">
+        <Documentation>Minimum point distance in meters. Points closer than this are dropped.</Documentation>
+      </DoubleVectorProperty>
+      <DoubleVectorProperty name="MaxDistance"
+                            command="SetMaxDistance"
+                            number_of_elements="1"
+                            default_values="10000.0">
+        <Documentation>Maximum point distance in meters. Points farther than this are dropped (0 or very large = no upper limit).</Documentation>
+      </DoubleVectorProperty>
+      <DoubleVectorProperty name="StartAngle"
+                            command="SetStartAngle"
+                            number_of_elements="1"
+                            default_values="0.0">
+        <Documentation>Start of the azimuth FOV filter, in degrees [0,360].</Documentation>
+      </DoubleVectorProperty>
+      <DoubleVectorProperty name="EndAngle"
+                            command="SetEndAngle"
+                            number_of_elements="1"
+                            default_values="360.0">
+        <Documentation>End of the azimuth FOV filter, in degrees [0,360]. Supports wrap-around when EndAngle &lt; StartAngle.</Documentation>
+      </DoubleVectorProperty>
     </Proxy>
   </ProxyGroup>
 </ServerManagerConfiguration>

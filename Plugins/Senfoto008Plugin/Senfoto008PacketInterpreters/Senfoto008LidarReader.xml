@@ -33,6 +33,12 @@
             <Property name="FramingMethod" panel_visibility="advanced" />
             <Property name="FrameDuration" panel_visibility="advanced" />
           </PropertyGroup>
+          <PropertyGroup label="LiDAR Filtering">
+            <Property name="MinDistance" />
+            <Property name="MaxDistance" />
+            <Property name="StartAngle" />
+            <Property name="EndAngle" />
+          </PropertyGroup>
           <PropertyGroup label="LiDAR Transform">
             <Property name="Position" panel_visibility="advanced" />
             <Property name="Rotation" panel_visibility="advanced" />
