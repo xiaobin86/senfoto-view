@@ -79,8 +79,8 @@ jobs:
           cd "${{ github.workspace }}/build"
           ctest -C Release -R cpack || true
 
-      - name: Upload artifact（LidarView.exe）
+      - name: Upload artifact（SenFoToView.exe）
         uses: actions/upload-artifact@v4
         with:
           name: senfoto-windows
-          path: ${{ github.workspace }}/build/install/bin/LidarView.exe
+          path: ${{ github.workspace }}/build/install/bin/SenFoToView.exe

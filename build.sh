@@ -117,5 +117,5 @@ fi
 echo ""
 echo "=========================================="
 echo " 构建完成"
-echo " 产物: $BUILD_DIR/install/bin/LidarView"
+echo " 产物: $BUILD_DIR/install/bin/SenFoToView"
 echo "=========================================="
