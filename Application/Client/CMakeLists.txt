@@ -41,10 +41,10 @@ paraview_client_add(
   NAMESPACE         "LidarView"
   EXPORT            "LidarViewClient"
   VERSION           "${LIDARVIEW_VERSION_MAJOR}.${LIDARVIEW_VERSION_MINOR}.${LIDARVIEW_VERSION_PATCH}"
-  APPLICATION_NAME  "LidarView"
-  ORGANIZATION      "Kitware"
-  TITLE             "LidarView ${LIDARVIEW_VERSION_FULL}"
-  SPLASH_IMAGE      "${CMAKE_CURRENT_SOURCE_DIR}/Resources/Images/Splash.png"
+  APPLICATION_NAME  "SenFoToView"
+  ORGANIZATION      "SenFoToView"
+  TITLE             "SenFoToView ${LIDARVIEW_VERSION_FULL}"
+  SPLASH_IMAGE      "${CMAKE_CURRENT_SOURCE_DIR}/Resources/Images/About.png"
   BUNDLE_ICON       "${CMAKE_CURRENT_SOURCE_DIR}/Resources/Images/logo.icns"
   BUNDLE_PLIST      "${CMAKE_CURRENT_BINARY_DIR}/MacOSXBundleInfo.plist.in"
   APPLICATION_ICON  "${CMAKE_CURRENT_SOURCE_DIR}/Resources/Images/logo.ico"
@@ -62,6 +62,11 @@ paraview_client_add(
   RUNTIME_DESTINATION ${CMAKE_INSTALL_BINDIR}
   LIBRARY_DESTINATION ${CMAKE_INSTALL_LIBDIR}
 )
+
+# Rename the produced executable to SenFoToView (mirror 02.code's SenFoToView.exe)
+# while keeping the internal CMake target name "LidarView" so existing target
+# references (e.g. LidarView::LidarView used by tests) stay valid.
+set_target_properties(LidarView PROPERTIES OUTPUT_NAME "SenFoToView")
 
 target_include_directories(LidarView
   PRIVATE

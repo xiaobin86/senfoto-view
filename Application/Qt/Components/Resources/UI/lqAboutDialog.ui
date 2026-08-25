@@ -17,7 +17,7 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>About LidarView</string>
+   <string>About SenFoToView</string>
   </property>
   <property name="modal">
    <bool>true</bool>

@@ -91,7 +91,7 @@ void lqAboutDialog::AddClientInformation()
 
   QTreeWidget* tree = this->Ui->ClientInformation;
 
-  ::addItem(tree, tr("LidarView Version"), QString(LIDARVIEW_VERSION_FULL));
+  ::addItem(tree, tr("SenFoToView Version"), QString(LIDARVIEW_VERSION_FULL));
   ::addItem(tree, tr("ParaView Version"), QString(PARAVIEW_VERSION_FULL));
   ::addItem(tree, tr("VTK Version"), QString(vtkVersion::GetVTKVersionFull()));
   ::addItem(tree, tr("Qt Version"), QT_VERSION_STR);
@@ -153,6 +153,10 @@ void lqAboutDialog::AddClientInformation()
 void lqAboutDialog::AddInformationPanel()
 {
   auto text = QString(" \
+    <h1>%1</h1><br/> \
+    Copyright (c) 2013-2017, Velodyne Lidar,<br/> \
+    Copyright (c) 2016-2020, Kitware<br/> \
+    Provided by <a href=\"Your web site\">Your nice company name</a>, coded by <a href=\"https://www.kitware.com/\">Kitware</a>.<br/><br/> \
     Kitware is a leading provider of open-source software solutions for scientific computing and computer Vision. <br /> <br /> \
     We are the developers of LidarView, providing real-time interactive visualization of live captured 3D LiDAR \
     data from Lidar sensors, replay of this data and apply many types of algorithm on it to extract meaningful \
@@ -167,8 +171,8 @@ void lqAboutDialog::AddInformationPanel()
     high-quality software process. <br /> <br /> \
     Have a look at <a href=\"https://www.kitware.com/our-expertise/ \">our expertise</a> to see other open-source tools \
     that we develop, and for more information, please contact us: \
-    <a href=\"mailto:kitware@kitware.fr?subject=Contact+about+LidarView\">kitware@kitware.fr</a> \
-");
+     <a href=\"mailto:kitware@kitware.fr?subject=Contact+about+LidarView\">kitware@kitware.fr</a> \
+  ").arg(QApplication::applicationName());
 
   this->Ui->MoreInfoPanel->setText(text);
 }
