@@ -58,8 +58,6 @@ constexpr std::size_t BLOCK_CHANNEL_OFFSET = 4;
 // On the wire little-endian bytes are 0xEE 0xFF, which reads as 0xEEFF.
 constexpr std::uint16_t DATA_FLAG = 0xEEFF;
 
-// Distance scale: real_distance = raw * 0.01 m.
-constexpr double DISTANCE_SCALE_M = 0.01;
 constexpr std::uint16_t INVALID_DISTANCE = 0;
 
 // Azimuth scale: 0.01 degrees per LSB.
@@ -87,16 +85,17 @@ inline const std::array<double, 96>& GetVerticalAngles96Line()
 }
 
 // 48-line vertical pitch angles, in degrees.
-// Source: odd rows (laser ID 1,3,5,...,95) of the manufacturer 96-line table.
-inline const std::array<double, CHANNELS_PER_BLOCK>& GetVerticalAngles48Line()
+// Source: first 48 rows (laser ID 1..48) of the manufacturer SF.xml
+// calibration, identical to the first half of the 96-line table.
+inline const std::array<double, 48>& GetVerticalAngles48Line()
 {
-  static const std::array<double, CHANNELS_PER_BLOCK> angles = {
-     0.0,   1.9,    3.8,    5.7,    7.6,    9.5,   11.4,   13.3,   // 1-8
-    15.2,  17.1,   19.0,   20.9,   22.8,   24.7,   26.6,   28.5,   // 9-16
-    30.4,  32.3,   34.18,  36.06,  37.94,  39.82,  41.7,   43.58,  // 17-24
-    45.46, 47.34,  49.22,  51.1,   52.98,  54.86,  56.75,  58.65,  // 25-32
-    60.55, 62.45,  64.35,  66.25,  68.15,  70.05,  71.95,  73.85,  // 33-40
-    75.75, 77.65,  79.55,  81.45,  83.35,  85.25,  87.15,  89.05   // 41-48
+  static const std::array<double, 48> angles = {
+      0.0,   0.95,   1.9,    2.85,   3.8,    4.75,   5.7,    6.65,   // 1-8
+      7.6,   8.55,   9.5,    10.45,  11.4,   12.35,  13.3,   14.25,  // 9-16
+     15.2,  16.15,  17.1,   18.05,  19.0,   19.95,  20.9,   21.85,   // 17-24
+     22.8,  23.75,  24.7,   25.65,  26.6,   27.55,  28.5,   29.45,   // 25-32
+     30.4,  31.35,  32.3,   33.24,  34.18,  35.12,  36.06,  37.0,    // 33-40
+     37.94, 38.88,  39.82,  40.76,  41.7,   42.64,  43.58,  44.52   // 41-48
   };
   return angles;
 }
@@ -179,11 +178,20 @@ inline std::uint16_t GetChannelDistanceRaw(
 }
 
 //-----------------------------------------------------------------------------
+// SF008 distance encoding (matches SenFoTo reference getDisFromBytes):
+// the two distance bytes are read little-endian, then byte-swapped and
+// interpreted as a 12.4 fixed-point value, scaled by 0.15 m.
 inline double GetChannelDistance(
   const unsigned char* data, std::size_t blockIndex, std::size_t channelIndex)
 {
-  return static_cast<double>(GetChannelDistanceRaw(data, blockIndex, channelIndex)) *
-    DISTANCE_SCALE_M;
+  const std::uint16_t le = GetChannelDistanceRaw(data, blockIndex, channelIndex);
+  const std::uint16_t swapped =
+    static_cast<std::uint16_t>((le >> 8) | (le << 8));
+  const std::uint16_t high12Bits = (swapped >> 4) & 0xFFF;
+  const std::uint16_t low4Bits = swapped & 0xF;
+  const double result =
+    static_cast<double>(high12Bits) + static_cast<double>(low4Bits) / 16.0;
+  return result * 0.15;
 }
 
 //-----------------------------------------------------------------------------

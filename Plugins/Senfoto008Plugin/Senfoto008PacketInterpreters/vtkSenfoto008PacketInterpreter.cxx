@@ -30,6 +30,30 @@
 #include <algorithm>
 #include <cmath>
 
+namespace
+{
+// Replicates SenFoTo reference ComputeCorrectedValues azimuth correction for the
+// SF008 96-line path. Rotational positions are in 0.01-degree units; luminousMoment
+// is 0 for laser 0 and 1 otherwise; Laser_fire_cycle = 18 (from SF.xml calibration).
+// The inter-block delta is passed as an unsigned-short in the reference, so negative
+// deltas wrap exactly as they do there.
+double ComputeCorrectedAzimuthDeg(const int* rotUnits, const int* diffs,
+  int blockIdx, std::uint8_t laserId)
+{
+  constexpr int numBlocks = static_cast<int>(senfoto008::DATA_BLOCKS); // 8
+  const int diffIdx = (blockIdx == numBlocks - 1) ? numBlocks - 2 : blockIdx;
+  const std::uint16_t adj = static_cast<std::uint16_t>(diffs[diffIdx]);
+  const int firingWithinBlock = (laserId >= 48) ? 1 : 0;
+  const double luminousMoment = (laserId == 0) ? 0.0 : 1.0;
+  const double laserFireCycle = 18.0;
+  const double term = static_cast<double>(adj) *
+    (luminousMoment + firingWithinBlock * laserFireCycle) / (2.0 * laserFireCycle);
+  const unsigned int lastCorrect =
+    static_cast<unsigned int>(rotUnits[blockIdx] + term) % 36000;
+  return static_cast<double>(lastCorrect) / 100.0;
+}
+}
+
 //-----------------------------------------------------------------------------
 class vtkSenfoto008PacketInterpreter::vtkInternals
 {
@@ -164,7 +188,7 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
         {
           continue;
         }
-        const double distM = static_cast<double>(distRaw) * senfoto008::DISTANCE_SCALE_M;
+        const double distM = senfoto008::GetChannelDistance(data, blockIndex, channelIndex);
         const std::uint8_t intensity =
           senfoto008::GetChannelIntensity(data, blockIndex, channelIndex);
         const double elevationDeg = verticalAngles[channelIndex];
@@ -175,9 +199,24 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
   }
   else // 96-line single return
   {
-    // Blocks are paired: (0,1), (2,3), (4,5), (6,7). Each pair shares an azimuth
-    // and contains laser IDs 0..47 then 48..95.
     const auto& verticalAngles = senfoto008::GetVerticalAngles96Line();
+
+    // Precompute per-block rotational position (0.01-degree units) and the
+    // inter-block azimuth deltas, mirroring the SenFoTo reference
+    // (getRotationalPosition + diffs[] in ProcessPacket, HDL_FIRING_PER_PKT = 8).
+    constexpr int numBlocks = static_cast<int>(senfoto008::DATA_BLOCKS); // 8
+    int rotUnits[numBlocks];
+    for (int b = 0; b < numBlocks; ++b)
+    {
+      rotUnits[b] = static_cast<int>(
+        std::round(senfoto008::GetBlockAzimuth(data, b) * 100.0));
+    }
+    int diffs[numBlocks - 1];
+    for (int b = 0; b < numBlocks - 1; ++b)
+    {
+      diffs[b] = (36000 + 18000 + rotUnits[b + 1] - rotUnits[b]) % 36000 - 18000;
+    }
+
     for (std::size_t pairIndex = 0; pairIndex < senfoto008::DATA_BLOCKS / 2; ++pairIndex)
     {
       const std::size_t firstBlock = pairIndex * 2;
@@ -187,31 +226,37 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
       {
         continue;
       }
-      const double azimuth = senfoto008::GetBlockAzimuth(data, firstBlock);
+
       for (std::size_t channelIndex = 0; channelIndex < senfoto008::CHANNELS_PER_BLOCK;
            ++channelIndex)
       {
+        // First sub-block: lasers 0..47, firingWithinBlock = 0.
         const std::uint16_t distRawFirst =
           senfoto008::GetChannelDistanceRaw(data, firstBlock, channelIndex);
         if (distRawFirst != senfoto008::INVALID_DISTANCE)
         {
-          const double distM = static_cast<double>(distRawFirst) * senfoto008::DISTANCE_SCALE_M;
           const std::uint8_t laserId = static_cast<std::uint8_t>(channelIndex);
+          const double distM = senfoto008::GetChannelDistance(data, firstBlock, channelIndex);
           const std::uint8_t intensity =
             senfoto008::GetChannelIntensity(data, firstBlock, channelIndex);
-          this->AddPoint(azimuth, verticalAngles[laserId], distM, laserId, intensity, packetTimestamp);
+          const double azimuthDeg =
+            ComputeCorrectedAzimuthDeg(rotUnits, diffs, static_cast<int>(firstBlock), laserId);
+          this->AddPoint(azimuthDeg, verticalAngles[laserId], distM, laserId, intensity, packetTimestamp);
         }
 
+        // Second sub-block: lasers 48..95, firingWithinBlock = 1.
         const std::uint16_t distRawSecond =
           senfoto008::GetChannelDistanceRaw(data, secondBlock, channelIndex);
         if (distRawSecond != senfoto008::INVALID_DISTANCE)
         {
-          const double distM = static_cast<double>(distRawSecond) * senfoto008::DISTANCE_SCALE_M;
           const std::uint8_t laserId =
             static_cast<std::uint8_t>(channelIndex + senfoto008::CHANNELS_PER_BLOCK);
+          const double distM = senfoto008::GetChannelDistance(data, secondBlock, channelIndex);
           const std::uint8_t intensity =
             senfoto008::GetChannelIntensity(data, secondBlock, channelIndex);
-          this->AddPoint(azimuth, verticalAngles[laserId], distM, laserId, intensity, packetTimestamp);
+          const double azimuthDeg =
+            ComputeCorrectedAzimuthDeg(rotUnits, diffs, static_cast<int>(secondBlock), laserId);
+          this->AddPoint(azimuthDeg, verticalAngles[laserId], distM, laserId, intensity, packetTimestamp);
         }
       }
     }
@@ -229,7 +274,7 @@ void vtkSenfoto008PacketInterpreter::AddPoint(double azimuthDeg, double elevatio
   const double cosEl = std::cos(elRad);
 
   const double pos[3] = { distanceM * cosEl * std::cos(azRad),
-    distanceM * cosEl * std::sin(azRad), distanceM * std::sin(elRad) };
+    -distanceM * cosEl * std::sin(azRad), distanceM * std::sin(elRad) };
 
   internals->Points->InsertNextPoint(pos);
   InsertNextValueIfNotNull(internals->PointsX, static_cast<float>(pos[0]));
