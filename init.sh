@@ -86,21 +86,61 @@ esac
 command -v cmake >/dev/null 2>&1 || { echo "错误：未找到 cmake，请先安装（见 BUILD.md 第 2 节）" >&2; exit 1; }
 command -v ninja >/dev/null 2>&1 || { echo "错误：未找到 ninja，请先安装（见 BUILD.md 第 2 节）" >&2; exit 1; }
 
+# ---------- macOS 环境准备 ----------
+IS_MACOS=0
+case "$(uname -s)" in
+  Darwin*) IS_MACOS=1 ;;
+esac
+if [ "$IS_MACOS" -eq 1 ]; then
+  # 去掉 conda/miniforge/anaconda，避免与捆绑的 Python 3.12 冲突
+  PATH="$(echo "$PATH" | tr ':' '\n' | grep -v -iE 'miniforge|conda|anaconda' | tr '\n' ':' | sed 's/:$//')"
+  command -v brew >/dev/null 2>&1 && PATH="$(brew --prefix)/bin:$PATH"
+  [ -d "$HOME/Library/Python/3.9/bin" ] && PATH="$HOME/Library/Python/3.9/bin:$PATH"
+  QT6="${QT6:-$HOME/Qt/6.9.0/macos}"
+  [ -d "$QT6" ] || QT6="/Users/acelan/Qt/6.9.0/macos"
+  ICONV="$(brew --prefix libiconv 2>/dev/null)"; [ -z "$ICONV" ] && ICONV="/usr/local/opt/libiconv"
+  SDK="$(xcrun --sdk macosx --show-sdk-path 2>/dev/null)"; [ -z "$SDK" ] && SDK="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+  export PATH QT6 ICONV SDK
+  echo "==> macOS 环境: Qt6=$QT6  ICONV=$ICONV  SDK=$SDK"
+fi
+
 # ---------- 4. 配置 cmake（superbuild 指向本地 lidarview 源码） ----------
 if [ -f "$BUILD_DIR/CMakeCache.txt" ]; then
   echo "==> build/ 已配置 (CMakeCache.txt 存在)，跳过 cmake 配置"
 else
   echo "==> 创建并配置 build/ ..."
   mkdir -p "$BUILD_DIR"
-  if cmake -S "$SUPERBUILD_DIR" -B "$BUILD_DIR" -GNinja \
-    -DCMAKE_BUILD_TYPE=Release \
-    -Dlidarview_SOURCE_SELECTION=source \
-    -Dlidarview_SOURCE_DIR="$REPO_DIR"; then
+  if [ "$IS_MACOS" -eq 1 ]; then
+    cmake -S "$SUPERBUILD_DIR" -B "$BUILD_DIR" -GNinja \
+      -DCMAKE_BUILD_TYPE=Release \
+      -Dlidarview_SOURCE_SELECTION=source \
+      -Dlidarview_SOURCE_DIR="$REPO_DIR" \
+      -DCMAKE_PREFIX_PATH="$QT6;$ICONV" \
+      -DCMAKE_LIBRARY_PATH="$ICONV/lib" \
+      -DCMAKE_OSX_SYSROOT="$SDK"
+    configure_rc=$?
+  else
+    cmake -S "$SUPERBUILD_DIR" -B "$BUILD_DIR" -GNinja \
+      -DCMAKE_BUILD_TYPE=Release \
+      -Dlidarview_SOURCE_SELECTION=source \
+      -Dlidarview_SOURCE_DIR="$REPO_DIR"
+    configure_rc=$?
+  fi
+  if [ "$configure_rc" -eq 0 ]; then
     echo "==> cmake 配置完成"
   else
     echo "错误：cmake 配置失败，请查看上方输出" >&2
     exit 1
   fi
+fi
+
+# macOS：插件靠 install/lib 下的 @rpath/Qt*.framework 解析，需把系统 Qt 框架软链进去
+if [ "$IS_MACOS" -eq 1 ]; then
+  echo "==> macOS: 软链 Qt 框架到 install/lib (插件解析 @rpath/Qt*.framework 用) ..."
+  mkdir -p "$BUILD_DIR/install/lib"
+  for f in "$QT6/lib/"*.framework; do
+    [ -e "$f" ] && ln -sf "$f" "$BUILD_DIR/install/lib/" 2>/dev/null
+  done
 fi
 
 echo ""

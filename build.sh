@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# build.sh - Senfoto (LidarView) 一键构建脚本（支持 Ubuntu / Windows）
+# build.sh - Senfoto (LidarView) 一键构建脚本（支持 Ubuntu / Windows / macOS）
 #
 # 前提：已通过 ./init.sh（或手动）完成初始化，即 build/ 已配置好 cmake。
 #       本脚本只负责“编译最终产物”，不负责首次环境搭建。
@@ -15,6 +15,9 @@
 #   - Windows：在 Git Bash 下运行；脚本自动定位 VS 的 vcvars64.bat 初始化
 #              MSVC x64 环境后再编译（需已安装 Visual Studio + Qt6）。
 #              Windows 分支为尽力实现，请在实际 Windows + Git Bash 环境验证。
+#   - macOS：用系统 Qt6（superbuild 的 MUST_USE_SYSTEM）+ 本机 SDK 编译；
+#            构建后自动把 Qt 框架软链进 install/lib，供插件按 @rpath 解析；
+#            并清理 conda 环境以避免与捆绑 Python 3.12 冲突。
 #
 set -u
 
@@ -35,9 +38,30 @@ done
 
 # 平台检测
 IS_WINDOWS=0
+IS_MACOS=0
 case "$(uname -s)" in
   MINGW*|MSYS*|CYGWIN*|Windows_NT) IS_WINDOWS=1 ;;
+  Darwin*) IS_MACOS=1 ;;
 esac
+
+# macOS 环境准备：清理 conda、定位 CMake 3.31 / homebrew / Qt6 / SDK
+setup_macos() {
+  # 去掉 conda/miniforge/anaconda，避免与捆绑的 Python 3.12 冲突
+  PATH="$(echo "$PATH" | tr ':' '\n' | grep -v -iE 'miniforge|conda|anaconda' | tr '\n' ':' | sed 's/:$//')"
+  # pip 安装的 CMake 3.31（须优先于 homebrew 的 cmake 4.x，后者会破坏子工程）与 homebrew
+  command -v brew >/dev/null 2>&1 && PATH="$(brew --prefix)/bin:$PATH"
+  [ -d "$HOME/Library/Python/3.9/bin" ] && PATH="$HOME/Library/Python/3.9/bin:$PATH"
+  # Qt6 系统路径（可用环境变量 QT6 覆盖）
+  QT6="${QT6:-$HOME/Qt/6.9.0/macos}"
+  [ -d "$QT6" ] || QT6="/Users/acelan/Qt/6.9.0/macos"
+  # libiconv（homebrew）
+  ICONV="$(brew --prefix libiconv 2>/dev/null)"; [ -z "$ICONV" ] && ICONV="/usr/local/opt/libiconv"
+  # macOS SDK
+  SDK="$(xcrun --sdk macosx --show-sdk-path 2>/dev/null)"; [ -z "$SDK" ] && SDK="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+  export PATH QT6 ICONV SDK
+  echo "==> macOS 环境: Qt6=$QT6  ICONV=$ICONV  SDK=$SDK"
+}
+[ "$IS_MACOS" -eq 1 ] && setup_macos
 
 VCVARS_W=""
 
@@ -88,6 +112,14 @@ if [ "$CLEAN" -eq 1 ]; then
   rm -f "$BUILD_DIR/CMakeCache.txt"
   if [ "$IS_WINDOWS" -eq 1 ]; then
     run_in_vs_env "cmake -S \"$SUPERBUILD_DIR_W\" -B \"$BUILD_DIR_W\" -GNinja -DCMAKE_BUILD_TYPE=Release -Dlidarview_SOURCE_SELECTION=source -Dlidarview_SOURCE_DIR=\"$REPO_DIR_W\""
+  elif [ "$IS_MACOS" -eq 1 ]; then
+    cmake -S "$SUPERBUILD_DIR" -B "$BUILD_DIR" -GNinja \
+      -DCMAKE_BUILD_TYPE=Release \
+      -Dlidarview_SOURCE_SELECTION=source \
+      -Dlidarview_SOURCE_DIR="$REPO_DIR" \
+      -DCMAKE_PREFIX_PATH="$QT6;$ICONV" \
+      -DCMAKE_LIBRARY_PATH="$ICONV/lib" \
+      -DCMAKE_OSX_SYSROOT="$SDK"
   else
     cmake -S "$SUPERBUILD_DIR" -B "$BUILD_DIR" -GNinja \
       -DCMAKE_BUILD_TYPE=Release \
@@ -104,6 +136,15 @@ else
   cmake --build "$BUILD_DIR" -j
 fi
 
+# macOS：插件靠 install/lib 下的 @rpath/Qt*.framework 解析，需把系统 Qt 框架软链进去
+if [ "$IS_MACOS" -eq 1 ]; then
+  echo "==> macOS: 软链 Qt 框架到 install/lib (插件解析 @rpath/Qt*.framework 用) ..."
+  mkdir -p "$BUILD_DIR/install/lib"
+  for f in "$QT6/lib/"*.framework; do
+    [ -e "$f" ] && ln -sf "$f" "$BUILD_DIR/install/lib/" 2>/dev/null
+  done
+fi
+
 # ---------- 打包 ----------
 if [ "$PACKAGE" -eq 1 ]; then
   echo "==> 打包 (cpack) ..."
@@ -117,5 +158,11 @@ fi
 echo ""
 echo "=========================================="
 echo " 构建完成"
-echo " 产物: $BUILD_DIR/install/bin/SenFoToView"
+if [ "$IS_MACOS" -eq 1 ]; then
+  echo " 产物: $BUILD_DIR/install/Applications/SenFoToView.app"
+  echo " 启动: open $BUILD_DIR/install/Applications/SenFoToView.app"
+  echo "       (请勿在 conda 激活的终端直接运行二进制，会撞捆绑的 Python 3.12)"
+else
+  echo " 产物: $BUILD_DIR/install/bin/SenFoToView"
+fi
 echo "=========================================="
