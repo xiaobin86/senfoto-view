@@ -42,6 +42,28 @@ if (LIDARVIEW_USE_QT)
     ENABLE_WRAPPING           OFF)
 
   #--------------------------------------
+  # macOS: record the Qt framework directory into the installed binary's
+  # LC_RPATH. The superbuild builds Qt6 with MUST_USE_SYSTEM, so CMake does
+  # not embed it automatically; without this the app fails to launch with
+  # "no LC_RPATH's found" on a fresh build. Linux/Windows are unaffected.
+  #--------------------------------------
+  if (APPLE AND LIDARVIEW_USE_QT)
+    if (Qt6_DIR)
+      get_filename_component(_qt6_lib_dir "${Qt6_DIR}/../../../lib" ABSOLUTE)
+      list(APPEND CMAKE_INSTALL_RPATH "${_qt6_lib_dir}")
+    elseif (TARGET Qt6::Core)
+      get_target_property(_qt6core_loc Qt6::Core IMPORTED_LOCATION)
+      if (_qt6core_loc)
+        get_filename_component(_qt6_lib_dir "${_qt6core_loc}" DIRECTORY)
+        get_filename_component(_qt6_lib_dir "${_qt6_lib_dir}/../../.." ABSOLUTE)
+        list(APPEND CMAKE_INSTALL_RPATH "${_qt6_lib_dir}")
+      endif ()
+    endif ()
+    list(APPEND CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
+    set(CMAKE_INSTALL_RPATH_USE_LINK_PATH ON)
+  endif ()
+
+  #--------------------------------------
   # Build LidarView binary
   #--------------------------------------
   add_subdirectory(Client)
