@@ -48,7 +48,6 @@
 #include "lqSensorListWidget.h"
 #include "lqUpdateConfigurationReaction.h"
 
-#include <QDockWidget>
 #include <QLayout>
 #include <QMainWindow>
 #include <QMenu>
@@ -108,39 +107,6 @@ void lqLidarViewMenuBuilders::buildEditMenu(QMenu& menu, pqPropertiesPanel* prop
   auto* gridButton = new lqMeasurementGridReaction(ui.actionShowMeasurementGrid);
   QObject::connect(
     &menu, &QMenu::aboutToShow, gridButton, &lqMeasurementGridReaction::onRefreshButton);
-
-  // Checkable toggles for the Properties Panel and Pipeline Browser docks.
-  // Scoped to the LidarViewer mode via interface_modes_config.json (only listed
-  // under lidarViewer.menuEdit), so they appear only in the default lidar interface.
-  if (QMainWindow* mainWindow = qobject_cast<QMainWindow*>(menu.window()))
-  {
-    if (QDockWidget* propertiesDock = mainWindow->findChild<QDockWidget*>("propertiesDock"))
-    {
-      QObject::connect(ui.actionShowPropertiesPanel, &QAction::toggled, propertiesDock,
-        &QDockWidget::setVisible);
-      QObject::connect(propertiesDock, &QDockWidget::visibilityChanged,
-        ui.actionShowPropertiesPanel, &QAction::setChecked);
-      ui.actionShowPropertiesPanel->setChecked(propertiesDock->isVisible());
-    }
-    else
-    {
-      ui.actionShowPropertiesPanel->setEnabled(false);
-    }
-
-    if (QDockWidget* pipelineBrowserDock =
-          mainWindow->findChild<QDockWidget*>("pipelineBrowserDock"))
-    {
-      QObject::connect(ui.actionShowRenderPipeline, &QAction::toggled, pipelineBrowserDock,
-        &QDockWidget::setVisible);
-      QObject::connect(pipelineBrowserDock, &QDockWidget::visibilityChanged,
-        ui.actionShowRenderPipeline, &QAction::setChecked);
-      ui.actionShowRenderPipeline->setChecked(pipelineBrowserDock->isVisible());
-    }
-    else
-    {
-      ui.actionShowRenderPipeline->setEnabled(false);
-    }
-  }
 
   if (propertiesPanel)
   {
