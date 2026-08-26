@@ -24,11 +24,33 @@
    <property name="text">
     <string>Show Measurement Grid</string>
    </property>
-   <property name="shortcut">
-    <string>Ctrl+G</string>
+    <property name="shortcut">
+     <string>Ctrl+G</string>
+    </property>
+  </action>
+  <action name="actionShowPropertiesPanel">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>属性面板</string>
    </property>
   </action>
- </widget>
+  <action name="actionShowRenderPipeline">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>渲染管线</string>
+   </property>
+  </action>
+  </widget>
  <resources>
   <include location="../../../Components/Resources/pqComponents.qrc"/>
  </resources>
