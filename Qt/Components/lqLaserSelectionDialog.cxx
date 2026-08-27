@@ -261,7 +261,7 @@ void lqLaserSelectionDialog::onApply()
   // actually refreshes.
   if (vtkSMProxy* proxy = this->LidarSource->getProxy())
   {
-    proxy->MarkModified();
+    proxy->MarkModified(proxy);
   }
   Q_EMIT laserSelectionChanged();
 }
