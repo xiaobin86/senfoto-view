@@ -33,7 +33,12 @@ public:
 
 protected:
   vtkRadialDistanceDenoise();
-  ~vtkRadialDistanceDenoise() override = default;
+  ~vtkRadialDistanceDenoise() override
+  {
+    delete[] this->DistanceArrayName;
+    delete[] this->LaserIdArrayName;
+    delete[] this->AzimuthArrayName;
+  }
   int FillInputPortInformation(int port, vtkInformation* info) override;
   int RequestData(vtkInformation*, vtkInformationVector**, vtkInformationVector*) override;
 
