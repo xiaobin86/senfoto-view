@@ -238,19 +238,31 @@ void lqLaserSelectionDialog::onEnableDisableAll(int state)
 //-----------------------------------------------------------------------------
 void lqLaserSelectionDialog::onApply()
 {
-  if (!this->Interpreter)
+  if (!this->LidarSource)
   {
     return;
   }
+  // Re-resolve the interpreter in case it was re-created (e.g. a live stream
+  // re-initializes its interpreter after the dialog was built).
+  vtkLidarPacketInterpreter* interp = GetInterpreter(this->LidarSource);
+  if (!interp)
+  {
+    return;
+  }
+  this->Interpreter = interp;
   QVector<int> mask = this->getLaserSelectionSelector();
   for (int i = 0; i < mask.size(); ++i)
   {
-    this->Interpreter->SetLaserSelection(i, mask[i]);
+    interp->SetLaserSelection(i, mask[i]);
   }
-  // vtkLidarPacketInterpreter::SetLaserSelection already calls Modified() on the
-  // interpreter, and vtkLidarReader/vtkLidarStream connect OnInterpreterModifiedEvent
-  // to the interpreter's ModifiedEvent, so the new mask automatically triggers
-  // re-interpretation. No manual MarkModified call is needed.
+  // vtkLidarPacketInterpreter::SetLaserSelection calls Modified() on the interpreter,
+  // and vtkLidarReader/vtkLidarStream forward that to a re-interpretation via
+  // OnInterpreterModifiedEvent. Force the SM proxy to push/update so the view
+  // actually refreshes.
+  if (vtkSMProxy* proxy = this->LidarSource->getProxy())
+  {
+    proxy->MarkModified();
+  }
   Q_EMIT laserSelectionChanged();
 }
 

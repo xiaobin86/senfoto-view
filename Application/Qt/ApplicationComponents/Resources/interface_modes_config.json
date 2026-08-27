@@ -63,7 +63,8 @@
         "actionUpdateConfiguration",
         "actionToggleAdvancedArrays",
         "actionLoadPalette",
-        "actionDeleteAll"
+        "actionDeleteAll",
+        "actionLaserSelection"
       ],
       "colorToolBar": [
         "actionScalarBarVisibility",
@@ -175,7 +176,8 @@
         "actionAutoApply",
         "actionQuery",
         "actionPythonShell",
-        "actionDeleteAll"
+        "actionDeleteAll",
+        "actionLaserSelection"
       ],
       "colorToolBar": [
         "actionScalarBarVisibility",
@@ -285,7 +287,8 @@
         "actionAutoApply",
         "actionQuery",
         "actionPythonShell",
-        "actionDeleteAll"
+        "actionDeleteAll",
+        "actionLaserSelection"
       ],
       "toolbarBreaks": [
         "cameraToolbar"
