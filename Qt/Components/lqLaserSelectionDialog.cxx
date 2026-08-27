@@ -24,6 +24,10 @@
 #include <pqServerManagerModel.h>
 #include <pqSettings.h>
 
+#include <vtkLidarPacketInterpreter.h>
+#include <vtkLidarReader.h>
+#include <vtkLidarStream.h>
+#include <vtkSMProperty.h>
 #include <vtkSMPropertyHelper.h>
 #include <vtkSMProxy.h>
 
@@ -32,8 +36,9 @@ namespace
 constexpr int NUM_LASER_MAX = 96;
 
 // Resolve the client-side vtkLidarPacketInterpreter from a lidar source proxy.
-// The lidar reader/stream exposes its interpreter via the "PacketInterpreter"
-// property (see lqSensorWidget.cxx and lqHelper).
+// The most reliable way (used by vvLaserSelectionDialog and lqSensorWidget) is to
+// reach the reader/stream algorithm and call GetLidarInterpreter(). Resolving via
+// the "PacketInterpreter"/"Interpreter" SM sub-proxy is kept only as a fallback.
 vtkLidarPacketInterpreter* GetInterpreter(pqPipelineSource* src)
 {
   if (!src)
@@ -45,20 +50,36 @@ vtkLidarPacketInterpreter* GetInterpreter(pqPipelineSource* src)
   {
     return nullptr;
   }
-  // The lidar reader/stream exposes its interpreter via the "PacketInterpreter"
-  // property (see lqSensorWidget.cxx and lqHelper). The base LidarCore
-  // reader/stream use "Interpreter" (CommonLidarPacketInterpreter proxy), so try
-  // "PacketInterpreter" first and fall back to "Interpreter" for base sensors.
-  vtkSMProxy* interpProxy = vtkSMPropertyHelper(proxy, "PacketInterpreter").GetAsProxy();
-  if (!interpProxy)
+  vtkObjectBase* client = proxy->GetClientSideObject();
+  if (client)
   {
-    interpProxy = vtkSMPropertyHelper(proxy, "Interpreter").GetAsProxy();
+    if (vtkLidarReader* reader = vtkLidarReader::SafeDownCast(client))
+    {
+      return reader->GetLidarInterpreter();
+    }
+    if (vtkLidarStream* stream = vtkLidarStream::SafeDownCast(client))
+    {
+      return stream->GetLidarInterpreter();
+    }
   }
-  if (!interpProxy)
+  // Fallback: some lidar sources expose the interpreter as an SM sub-proxy.
+  // Check GetProperty() first to avoid vtkSMPropertyHelper's "Failed to locate
+  // property" warning spam for sources that do not have these properties.
+  if (vtkSMProperty* prop = proxy->GetProperty("PacketInterpreter"))
   {
-    return nullptr;
+    if (vtkSMProxy* interpProxy = vtkSMPropertyHelper(prop).GetAsProxy())
+    {
+      return vtkLidarPacketInterpreter::SafeDownCast(interpProxy->GetClientSideObject());
+    }
   }
-  return vtkLidarPacketInterpreter::SafeDownCast(interpProxy->GetClientSideObject());
+  if (vtkSMProperty* prop = proxy->GetProperty("Interpreter"))
+  {
+    if (vtkSMProxy* interpProxy = vtkSMPropertyHelper(prop).GetAsProxy())
+    {
+      return vtkLidarPacketInterpreter::SafeDownCast(interpProxy->GetClientSideObject());
+    }
+  }
+  return nullptr;
 }
 } // namespace
 
