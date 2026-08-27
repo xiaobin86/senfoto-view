@@ -20,6 +20,7 @@
 #include <vtkFieldData.h>
 #include <vtkIdTypeArray.h>
 #include <vtkLVUtilities.h>
+#include <vtkPointData.h>
 #include <vtkSelection.h>
 #include <vtkSelectionNode.h>
 #include <vtkStringArray.h>
