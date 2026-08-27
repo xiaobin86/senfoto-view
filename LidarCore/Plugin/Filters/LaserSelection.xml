@@ -1,0 +1,31 @@
+<ServerManagerConfiguration>
+  <ProxyGroup name="filters">
+    <SourceProxy name="LaserSelection" class="vtkLaserSelectionFilter"
+                 label="Laser Selection">
+      <Documentation
+        short_help="Filter the point cloud by lidar channel (laser_id)"
+        long_help="Keeps only the points whose per-point laser_id channel is enabled. Use the Laser Selection dialog to toggle channels.">
+        Filters the point cloud by lidar channel. Each point is kept or dropped based on the
+        per-point "laser_id" array and the enable mask indexed by it.
+      </Documentation>
+
+      <InputProperty name="Input" port_index="0" command="SetInputConnection">
+        <DataTypeDomain name="input_type"><DataType value="vtkPolyData"/></DataTypeDomain>
+      </InputProperty>
+
+      <OutputPort name="Output" index="0" />
+
+      <IntVectorProperty name="LaserSelection"
+                          command="SetLaserSelection"
+                          number_of_elements="1"
+                          default_values="1"
+                          repeat_command="1"
+                          use_index="1">
+        <Documentation>
+          Enable/disable individual lidar channels. Index 0 = laser_id 0. A value of 0
+          filters that channel out of the output point cloud.
+        </Documentation>
+      </IntVectorProperty>
+    </SourceProxy>
+  </ProxyGroup>
+</ServerManagerConfiguration>

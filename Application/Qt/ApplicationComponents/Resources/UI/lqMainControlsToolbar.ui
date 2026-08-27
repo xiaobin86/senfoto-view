@@ -172,19 +172,31 @@
     <string>Find data matching various criteria from the current source (v)</string>
    </property>
   </action>
-  <action name="actionPythonShell">
-   <property name="icon">
-    <iconset resource="../../../Components/Resources/lvComponents.qrc">
-     <normaloff>:/lvComponents/Icons/lvPythonShell.svg</normaloff>:/lvComponents/Icons/lvPythonShell.svg</iconset>
-   </property>
-   <property name="text">
-    <string>Open Python Shell view</string>
-   </property>
-   <property name="toolTip">
-    <string>Open Python Shell</string>
-   </property>
-  </action>
-  <addaction name="actionOpenPcap"/>
+   <action name="actionPythonShell">
+    <property name="icon">
+     <iconset resource="../../../Components/Resources/lvComponents.qrc">
+      <normaloff>:/lvComponents/Icons/lvPythonShell.svg</normaloff>:/lvComponents/Icons/lvPythonShell.svg</iconset>
+    </property>
+    <property name="text">
+     <string>Open Python Shell view</string>
+    </property>
+    <property name="toolTip">
+     <string>Open Python Shell</string>
+    </property>
+   </action>
+   <action name="actionLaserSelection">
+    <property name="icon">
+     <iconset resource="../../../Components/Resources/lvComponents.qrc">
+      <normaloff>:/lvComponents/Icons/lqLaserSelection.svg</normaloff>:/lvComponents/Icons/lqLaserSelection.svg</iconset>
+    </property>
+    <property name="toolTip">
+     <string>Select which laser lines are displayed in the point cloud</string>
+    </property>
+    <property name="statusTip">
+     <string>Laser Selection</string>
+    </property>
+   </action>
+   <addaction name="actionOpenPcap"/>
   <addaction name="actionSavePcap"/>
   <addaction name="actionOpenSensorStream"/>
   <addaction name="separator"/>
@@ -200,9 +212,10 @@
   <addaction name="actionLoadPalette"/>
   <addaction name="actionAutoApply"/>
   <addaction name="actionQuery"/>
-  <addaction name="actionPythonShell"/>
-  <addaction name="separator"/>
-  <addaction name="actionDeleteAll"/>
+   <addaction name="actionPythonShell"/>
+   <addaction name="actionLaserSelection"/>
+   <addaction name="separator"/>
+   <addaction name="actionDeleteAll"/>
  </widget>
  <resources>
   <include location="../../../Components/Resources/lvComponents.qrc"/>

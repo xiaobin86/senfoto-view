@@ -11,5 +11,6 @@
         <file>Icons/lvPythonShell.svg</file>
         <file>Icons/lvSaveAs.svg</file>
         <file>Icons/lvSavePcap.svg</file>
+        <file>Icons/lqLaserSelection.svg</file>
     </qresource>
 </RCC>

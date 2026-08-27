@@ -17,6 +17,7 @@
 #ifndef VTKLIDARPROVIDERINTERNAL_H
 #define VTKLIDARPROVIDERINTERNAL_H
 
+#include <vtkIntArray.h>
 #include <vtkNew.h>
 #include <vtkPolyData.h>
 #include <vtkSmartPointer.h>

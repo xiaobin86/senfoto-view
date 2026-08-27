@@ -8,6 +8,7 @@ set(classes
   lqLidarCameraToolbar
   lqLidarCoreManager
   lqLidarStreamColorByInitBehavior
+  lqLaserSelectionReaction
   lqLivePlayerWidget
   lqLiveSourceScalarColoringBehavior
   lqLiveVCRController # Should be in Components but has a dependency on lqSensorListWidget

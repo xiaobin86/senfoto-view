@@ -16,8 +16,13 @@
 #include "vtkLidarPacketInterpreter.h"
 
 #include <vtkDoubleArray.h>
+#include <vtkExtractSelection.h>
 #include <vtkFieldData.h>
+#include <vtkIdTypeArray.h>
 #include <vtkLVUtilities.h>
+#include <vtkPointData.h>
+#include <vtkSelection.h>
+#include <vtkSelectionNode.h>
 #include <vtkStringArray.h>
 #include <vtkTransform.h>
 #include <vtkVersion.h>
@@ -232,3 +237,5 @@ std::string vtkLidarPacketInterpreter::GetSensorInformation(bool vtkNotUsed(shor
 {
   return this->GetSensorVendor() + " - " + this->GetSensorModelName();
 }
+
+

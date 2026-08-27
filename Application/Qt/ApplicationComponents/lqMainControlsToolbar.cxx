@@ -28,6 +28,7 @@
 #include "vtkSMInterpretersManagerProxy.h"
 
 #include "lqEnableAdvancedArraysReaction.h"
+#include "lqLaserSelectionReaction.h"
 #include "lqOpenLidarReaction.h"
 #include "lqPythonShellReaction.h"
 #include "lqSavePcapReaction.h"
@@ -54,6 +55,15 @@ void lqMainControlsToolbar::constructor()
   new pqAutoApplyReaction(ui.actionAutoApply);
   new pqDataQueryReaction(ui.actionQuery);
   new lqPythonShellReaction(ui.actionPythonShell);
+  new lqLaserSelectionReaction(ui.actionLaserSelection);
+
+  // The main controls toolbar is icon-only. Give the Laser Selection button an
+  // icon (set in the .ui) and also show its text, so it is always visible even
+  // if the icon resource fails to load.
+  if (QToolButton* tb = qobject_cast<QToolButton*>(this->widgetForAction(ui.actionLaserSelection)))
+  {
+    tb->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+  }
 
   QToolButton* tb = qobject_cast<QToolButton*>(this->widgetForAction(ui.actionLoadPalette));
   if (tb)

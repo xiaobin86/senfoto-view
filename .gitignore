@@ -50,3 +50,6 @@ Thumbs.db
 ######################
 .*~
 /Documentation/html
+
+# Local sample data (large PCAP files, not tracked)
+/Examples/TestData/

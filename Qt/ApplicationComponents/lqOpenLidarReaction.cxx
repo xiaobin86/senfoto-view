@@ -18,7 +18,10 @@
 #include <QApplication>
 #include <QDebug>
 #include <QProgressDialog>
+#include <QSettings>
 #include <QString>
+
+#include <cstring>
 
 #include <vtkCommand.h>
 #include <vtkPVProgressHandler.h>
@@ -68,6 +71,54 @@ void InitAndDisplaySource(pqPipelineSource* source, vtkSMProxy* prototype, bool 
   pqView* view = pqActiveObjects::instance().activeView();
   controller->Show(source->getSourceProxy(), 0, view->getViewProxy());
   pqActiveObjects::instance().setActiveSource(source);
+}
+
+bool IsRadialDenoiseAutoAttachEnabled()
+{
+  return QSettings().value("LidarView/AutoAttachRadialDenoise", true).toBool();
+}
+
+void AutoAttachLaserSelection(pqPipelineSource* source)
+{
+  if (!source)
+  {
+    return;
+  }
+  pqObjectBuilder* builder = pqApplicationCore::instance()->getObjectBuilder();
+  pqPipelineSource* filter = builder->createFilter("filters", "LaserSelection", source);
+  if (!filter)
+  {
+    return;
+  }
+  filter->getProxy()->UpdateVTKObjects();
+  ::InitAndDisplaySource(filter, filter->getProxy(), true);
+}
+
+void AutoAttachRadialDenoise(pqPipelineSource* source)
+{
+  if (!source)
+  {
+    return;
+  }
+  // Chain after the laser-selection filter when present, so denoise runs on the
+  // selected points.
+  pqPipelineSource* input = source;
+  for (pqPipelineSource* consumer : source->getAllConsumers())
+  {
+    if (consumer->getProxy() && std::strcmp(consumer->getProxy()->GetXMLName(), "LaserSelection") == 0)
+    {
+      input = consumer;
+      break;
+    }
+  }
+  pqObjectBuilder* builder = pqApplicationCore::instance()->getObjectBuilder();
+  pqPipelineSource* filter = builder->createFilter("filters", "RadialDistanceDenoise", input);
+  if (!filter)
+  {
+    return;
+  }
+  filter->getProxy()->UpdateVTKObjects();
+  ::InitAndDisplaySource(filter, filter->getProxy(), true);
 }
 
 // Keep sending signals to the qt app when loading heavy file
@@ -179,6 +230,11 @@ bool lqOpenLidarReaction::openLidarPcap(const QString& filename,
   if (source)
   {
     ::InitAndDisplaySource(source, prototype, true);
+    ::AutoAttachLaserSelection(source);
+    if (QString(prototype->GetXMLName()).startsWith("Senfoto008") && IsRadialDenoiseAutoAttachEnabled())
+    {
+      AutoAttachRadialDenoise(source);
+    }
     lqRecentlyUsedPcapLoader::addPcapFileToRecentResources(server, filename, prototype);
   }
 
@@ -221,6 +277,11 @@ bool lqOpenLidarReaction::openLidarStream()
     return false;
   }
   ::InitAndDisplaySource(source, prototype, true);
+  ::AutoAttachLaserSelection(source);
+  if (QString(prototype->GetXMLName()).startsWith("Senfoto008") && IsRadialDenoiseAutoAttachEnabled())
+  {
+    AutoAttachRadialDenoise(source);
+  }
   return true;
 }
 

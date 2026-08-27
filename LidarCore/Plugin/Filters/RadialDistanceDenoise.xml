@@ -1,0 +1,65 @@
+<ServerManagerConfiguration>
+  <ProxyGroup name="filters">
+    <SourceProxy name="RadialDistanceDenoise" class="vtkRadialDistanceDenoise"
+                 label="Senfoto008 Radial Distance Denoise">
+      <Documentation
+        short_help="Two-level radial-distance denoise for Senfoto008 point clouds"
+        long_help="Level1: cross-frame radial distance diff keyed by (laser_id, azimuth bin). Level2: same-frame, same laser line, left-mid-right interpolation.">
+        Two-level radial-distance denoise for Senfoto008. Uses the fixed per-point arrays
+        distance_m (radial slant range), laser_id and azimuth (degrees). Level 1 compares each
+        point's radial distance with the previous frame at the same (laser_id, azimuth bin);
+        Level 2 compares each point on a laser line with the linear interpolation of its
+        left/right neighbors.
+      </Documentation>
+
+      <InputProperty name="Input" port_index="0" command="SetInputConnection">
+        <DataTypeDomain name="input_type"><DataType value="vtkPolyData"/></DataTypeDomain>
+      </InputProperty>
+
+      <OutputPort name="Output" index="0" />
+
+      <IntVectorProperty name="Level 1 enabled" command="SetLevel1Enabled"
+          number_of_elements="1" default_values="1">
+        <BooleanDomain name="bool"/>
+        <Documentation>Cross-frame (temporal) radial-distance denoise.</Documentation>
+      </IntVectorProperty>
+
+      <DoubleVectorProperty name="Level 1 threshold" command="SetLevel1Threshold"
+          number_of_elements="1" default_values="10.24">
+        <Documentation>Level 1 radial distance difference threshold (m).</Documentation>
+      </DoubleVectorProperty>
+
+      <IntVectorProperty name="Level 2 enabled" command="SetLevel2Enabled"
+          number_of_elements="1" default_values="1">
+        <BooleanDomain name="bool"/>
+        <Documentation>Same-frame (spatial) radial-distance denoise.</Documentation>
+      </IntVectorProperty>
+
+      <DoubleVectorProperty name="Level 2 threshold" command="SetLevel2Threshold"
+          number_of_elements="1" default_values="10.0">
+        <Documentation>Level 2 left/right interpolation deviation threshold (m).</Documentation>
+      </DoubleVectorProperty>
+
+      <IntVectorProperty name="Number of lasers" command="SetNumberOfLasers"
+          number_of_elements="1" default_values="96">
+        <IntRangeDomain name="range" min="1" max="512"/>
+        <Documentation>Number of laser lines; buckets are auto-extended to the max id seen.</Documentation>
+      </IntVectorProperty>
+
+      <DoubleVectorProperty name="Azimuth bin size" command="SetAzimuthBinSize"
+          number_of_elements="1" default_values="0.1">
+        <DoubleRangeDomain name="range" min="0.001" max="10"/>
+        <Documentation>Level 1 azimuth bin size in degrees for the (laser_id, bin) cache key.</Documentation>
+      </DoubleVectorProperty>
+
+      <PropertyGroup label="Radial Distance Denoise">
+        <Property name="Level 1 enabled"/>
+        <Property name="Level 1 threshold"/>
+        <Property name="Level 2 enabled"/>
+        <Property name="Level 2 threshold"/>
+        <Property name="Number of lasers"/>
+        <Property name="Azimuth bin size"/>
+      </PropertyGroup>
+    </SourceProxy>
+  </ProxyGroup>
+</ServerManagerConfiguration>
