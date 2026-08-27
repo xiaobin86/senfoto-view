@@ -55,6 +55,7 @@ typedef pqPythonDebugLeaksView DebugLeaksViewType;
 #include "lqLidarViewManager.h"
 #include "lqLidarViewMenuBuilders.h"
 #include "lqLiveSourceScalarColoringBehavior.h"
+#include "lqLaserSelectionReaction.h"
 #include "lqOpenLidarReaction.h"
 #include "lqRecentlyUsedPcapLoader.h"
 #include "lqStreamPCAPRecorder.h"
@@ -199,6 +200,9 @@ LidarViewMainWindow::LidarViewMainWindow()
   pqParaViewMenuBuilders::buildSourcesMenu(*this->Internals->menuSources, this);
   pqParaViewMenuBuilders::buildFiltersMenu(*this->Internals->menuFilters, this);
   pqParaViewMenuBuilders::buildToolsMenu(*this->Internals->menuTools);
+  QAction* actionLaserSelection = new QAction(tr("Laser Selection"), this);
+  this->Internals->menuTools->addAction(actionLaserSelection);
+  new lqLaserSelectionReaction(actionLaserSelection);
   pqParaViewMenuBuilders::buildMacrosMenu(*this->Internals->menuMacros);
   lqLidarViewMenuBuilders::buildHelpMenu(*this->Internals->menuHelpBase);
 
