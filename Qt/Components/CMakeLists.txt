@@ -1,6 +1,7 @@
 set(classes
   lqChooseLidarDialog
   lqInterpreterWidget
+  lqLaserSelectionDialog
   lqLidarConfigurationDialog
   lqLidarStateDialog
   lqSelectLidarFrameDialog
@@ -12,6 +13,7 @@ set(classes
 
 set(ui_files
   Resources/UI/lqChooseLidarDialog.ui
+  Resources/UI/lqLaserSelectionDialog.ui
   Resources/UI/lqLidarConfigurationDialog.ui
   Resources/UI/lqSelectLidarFrameDialog.ui
   Resources/UI/lqStreamRecordDialog.ui
