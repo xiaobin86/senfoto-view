@@ -36,7 +36,7 @@ cmake --build ../build -j
 
 | 项目 | 要求 |
 |------|------|
-| 操作系统 | Ubuntu 22.04 / 24.04（最稳，CI 同此）；或 Windows + MSVC 2019+ |
+| 操作系统 | Ubuntu 22.04 / 24.04（最稳，CI 同此）；Windows + MSVC 2019+；或 macOS 15+（Apple Silicon，需系统级 Qt6） |
 | 磁盘空间 | ≥ 50 GB 空闲（依赖下载 + 编译产物很大） |
 | 网络 | 需联网，superbuild 会下载 ParaView / Qt / boost 等数 GB 源码 |
 | 工具 | CMake ≥ 3.20.3、Ninja ≥ 1.8.2、GCC 11+（Ubuntu 22.04 自带即可）、pkg-config、Python 3、git、git-lfs（可选，仅跑测试需要） |
@@ -135,8 +135,9 @@ cmake --build . -j
 可执行程序为 `build/install/bin/SenFoToView`
 （Senfoto008 / LakiBeam 插件已随 LidarView 一并编译进插件，由本仓库 `CMakeLists.txt` 注册）。
 
-> 嫌手敲麻烦可用仓库根目录的 `./build.sh` 做增量编译（支持 Ubuntu / Windows-GitBash）：
+> 嫌手敲麻烦可用仓库根目录的 `./build.sh` 做增量编译（支持 Ubuntu / Windows-GitBash / macOS）：
 > `./build.sh` 增量编译；`./build.sh --package` 额外打包；`./build.sh --clean` 重配全量构建。
+> macOS 下脚本会自动锁定 CMake 3.31、定位 Qt6/SDK 并在构建后软链 Qt 框架（详见第 8 节）。
 > 前提仍是已用 `./init.sh` 完成初始化（build/ 已配置好 cmake）。
 
 ---
@@ -169,7 +170,85 @@ ninja -C superbuild/lidarview/build -j8 install
 
 ---
 
-## 8. Windows 简述
+## 8. macOS 构建（Apple Silicon / Intel）
+
+> 已在 macOS 15 (Sequoia) + Apple Silicon 上验证。仓库根目录的 `./build.sh` 与 `./init.sh`
+> 已内置 macOS 分支，会**自动完成本节的环境准备与 Qt 框架软链**，推荐直接走第 0 节的
+> `init.sh` + `build.sh`；下面内容供手动排错参考。
+
+### 8.1 前置依赖
+
+- **Xcode Command Line Tools**（提供编译器与 macOS SDK）：
+  ```bash
+  xcode-select --install
+  ```
+- **Homebrew**（用于 libiconv、ninja 等）：`/opt/homebrew` 或 `~/homebrew` 均可。
+- **Qt 6.9**：本仓库 superbuild 对 Qt6 为 `MUST_USE_SYSTEM`，**不能让 superbuild 自己编译 Qt6**，
+  必须预装系统级 Qt6。例如从 https://www.qt.io 安装到 `~/Qt/6.9.0/macos`，
+  或 `brew install qt@6` 后用 `brew --prefix qt@6` 取得路径。
+- **CMake 3.31**：不要用 Homebrew 的 CMake 4.x，它会破坏 ParaView 等子工程的配置。
+  建议 `pip install "cmake==3.31"` 装到 `~/Library/Python/3.9/bin`（脚本会自动优先用它）。
+
+### 8.2 关键配置项
+
+macOS 必须显式指定系统 Qt6 / libiconv / SDK，否则 superbuild 找不到 Qt：
+
+```bash
+QT6=$HOME/Qt/6.9.0/macos            # 或 $(brew --prefix qt@6)
+ICONV=$(brew --prefix libiconv)
+SDK=$(xcrun --sdk macosx --show-sdk-path)
+
+cmake ../lidarview-superbuild -GNinja -DCMAKE_BUILD_TYPE=Release \
+  -Dlidarview_SOURCE_SELECTION=source \
+  -Dlidarview_SOURCE_DIR=$(realpath ../lidarview) \
+  -DCMAKE_PREFIX_PATH="$QT6;$ICONV" \
+  -DCMAKE_LIBRARY_PATH="$ICONV/lib" \
+  -DCMAKE_OSX_SYSROOT="$SDK"
+```
+
+### 8.3 编译与 Qt 框架软链
+
+```bash
+cmake --build . -j
+```
+
+superbuild 不会把 Qt 框架拷进 `install/`；外部插件按 `@rpath/Qt*.framework` 解析，
+需在 `build/install/lib` 下建立指向系统 Qt 的框架软链，否则启动后插件加载失败：
+
+```bash
+mkdir -p build/install/lib
+for f in "$QT6/lib/"*.framework; do ln -sf "$f" build/install/lib/; done
+```
+
+> 上述软链、`LidarView.conf` 拷贝进 `SenFoToView.app`、以及 app 的 `@rpath` 修正
+> 都已写进仓库 CMake 逻辑（`Application/CMakeLists.txt`、
+> `Application/Client/CMakeLists.txt`），正常 `cmake --build` 会随 install 步骤自动完成，
+> 一般无需手动执行。
+
+### 8.4 运行（重要）
+
+- **不要在 conda / miniforge 激活的终端里直接运行二进制**：app 捆绑的是 Python 3.12，
+  conda 的 Python 3.14 会与之冲突导致崩溃（`SIGABRT`）。请用 `open` 启动，或在干净 PATH 下运行：
+  ```bash
+  open build/install/Applications/SenFoToView.app
+  ```
+- 二进制路径：`build/install/Applications/SenFoToView.app/Contents/MacOS/SenFoToView`
+- 首次启动若报 `failed to load required plugin`，通常是 `LidarView.conf` 未随 install 拷进
+  `SenFoToView.app/Contents/Resources/`，重新 `cmake --build . -j` 即可（CMake 已修复）。
+
+### 8.5 用 build.sh 一键编译
+
+```bash
+./build.sh            # 增量编译 + 自动软链 Qt 框架
+./build.sh --clean    # 删除 CMakeCache 并用 macOS 专用参数重新配置
+./build.sh --package  # 额外打包
+```
+
+脚本会自动清理 conda 环境、锁定 CMake 3.31、定位 Qt6/SDK，并在构建后做 Qt 框架软链。
+
+---
+
+## 9. Windows 简述
 
 1. 打开 **"VS20XX x64 Native Tools Command Prompt"**（MSVC 2019+）。
 2. 安装 CMake、Ninja、**Qt6（必须预装）**，配置时传 `-DQt6_DIR=<...>/lib/cmake/Qt6`。
@@ -183,7 +262,7 @@ ninja -C superbuild/lidarview/build -j8 install
 
 ---
 
-## 9. 常见问题
+## 10. 常见问题
 
 - **编译出的程序没有 Senfoto 设备？** 检查是否忘了 `-Dlidarview_SOURCE_SELECTION=source`，
   或克隆的不是 `develop` 分支。
