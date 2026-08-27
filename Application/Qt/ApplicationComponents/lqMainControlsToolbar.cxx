@@ -57,12 +57,12 @@ void lqMainControlsToolbar::constructor()
   new lqPythonShellReaction(ui.actionPythonShell);
   new lqLaserSelectionReaction(ui.actionLaserSelection);
 
-  // The main controls toolbar is icon-only; this action has no icon, so force
-  // its button to show text, otherwise it renders as a zero-size (invisible)
-  // button.
+  // The main controls toolbar is icon-only. Give the Laser Selection button an
+  // icon (set in the .ui) and also show its text, so it is always visible even
+  // if the icon resource fails to load.
   if (QToolButton* tb = qobject_cast<QToolButton*>(this->widgetForAction(ui.actionLaserSelection)))
   {
-    tb->setToolButtonStyle(Qt::ToolButtonTextOnly);
+    tb->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
   }
 
   QToolButton* tb = qobject_cast<QToolButton*>(this->widgetForAction(ui.actionLoadPalette));

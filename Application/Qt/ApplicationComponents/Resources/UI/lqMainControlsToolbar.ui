@@ -185,6 +185,10 @@
     </property>
    </action>
    <action name="actionLaserSelection">
+    <property name="icon">
+     <iconset resource="../../../Components/Resources/lvComponents.qrc">
+      <normaloff>:/lvComponents/Icons/lqLaserSelection.svg</normaloff>:/lvComponents/Icons/lqLaserSelection.svg</iconset>
+    </property>
     <property name="text">
      <string>Laser Selection</string>
     </property>
