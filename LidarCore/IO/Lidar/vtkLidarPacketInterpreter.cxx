@@ -137,9 +137,6 @@ bool vtkLidarPacketInterpreter::SplitFrame(bool force,
     // free extra memory allocated
     this->CurrentFrame->Squeeze();
 
-    // Filter the frame by the user's laser (channel) selection.
-    this->ApplyLaserSelection(this->CurrentFrame);
-
     // split the frame
     this->Frames.push_back(this->CurrentFrame);
     // create a new frame
@@ -241,94 +238,4 @@ std::string vtkLidarPacketInterpreter::GetSensorInformation(bool vtkNotUsed(shor
   return this->GetSensorVendor() + " - " + this->GetSensorModelName();
 }
 
-//-----------------------------------------------------------------------------
-vtkIntArray* vtkLidarPacketInterpreter::GetLaserSelection()
-{
-  return this->LaserSelection.GetPointer();
-}
 
-//-----------------------------------------------------------------------------
-void vtkLidarPacketInterpreter::SetLaserSelection(int index, int value)
-{
-  if (index < 0)
-  {
-    return;
-  }
-  if (index >= this->LaserSelection->GetNumberOfTuples())
-  {
-    const int oldSize = this->LaserSelection->GetNumberOfTuples();
-    this->LaserSelection->Resize(index + 1);
-    for (int i = oldSize; i <= index; ++i)
-    {
-      this->LaserSelection->InsertTuple1(i, 1);
-    }
-  }
-  this->LaserSelection->SetTuple1(index, value ? 1 : 0);
-  this->Modified();
-}
-
-//-----------------------------------------------------------------------------
-bool vtkLidarPacketInterpreter::IsLaserSelected(int laserId)
-{
-  if (laserId < 0 || laserId >= this->LaserSelection->GetNumberOfTuples())
-  {
-    return true;
-  }
-  return this->LaserSelection->GetValue(laserId) != 0;
-}
-
-//-----------------------------------------------------------------------------
-void vtkLidarPacketInterpreter::ApplyLaserSelection(vtkPolyData* frame)
-{
-  if (!frame)
-  {
-    return;
-  }
-  vtkDataArray* laserId = frame->GetPointData()->GetArray("laser_id");
-  if (this->LaserSelection->GetNumberOfTuples() == 0 || !laserId)
-  {
-    return;
-  }
-  bool anyDisabled = false;
-  for (vtkIdType i = 0; i < this->LaserSelection->GetNumberOfTuples(); ++i)
-  {
-    if (this->LaserSelection->GetValue(i) == 0)
-    {
-      anyDisabled = true;
-      break;
-    }
-  }
-  if (!anyDisabled)
-  {
-    return;
-  }
-
-  vtkNew<vtkIdTypeArray> kept;
-  kept->Allocate(laserId->GetNumberOfTuples());
-  for (vtkIdType i = 0; i < laserId->GetNumberOfTuples(); ++i)
-  {
-    const int id = static_cast<int>(laserId->GetTuple1(i));
-    if (this->IsLaserSelected(id))
-    {
-      kept->InsertNextValue(i);
-    }
-  }
-
-  vtkNew<vtkSelectionNode> selNode;
-  selNode->SetFieldType(vtkSelectionNode::POINT);
-  selNode->SetContentType(vtkSelectionNode::INDICES);
-  selNode->SetSelectionList(kept.GetPointer());
-  vtkNew<vtkSelection> selection;
-  selection->AddNode(selNode.GetPointer());
-
-  vtkNew<vtkExtractSelection> extract;
-  extract->SetInputData(0, frame);
-  extract->SetInputData(1, selection.GetPointer());
-  extract->Update();
-
-  vtkPolyData* extracted = vtkPolyData::SafeDownCast(extract->GetOutput());
-  if (extracted)
-  {
-    frame->ShallowCopy(extracted);
-  }
-}

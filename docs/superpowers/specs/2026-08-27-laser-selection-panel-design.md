@@ -17,111 +17,121 @@ This is a port of `SenFoToView/Ui/Widgets/vvLaserSelectionDialog.*` (old repo
 
 ## Decisions (confirmed with user)
 
-1. **Filtering mechanism:** Base-class post-processing. The base
-   `vtkLidarPacketInterpreter` owns a `LaserSelection` int array; a single hook
-   near frame finalization removes points whose `laser_id` is disabled. All
-   interpreters that emit a `laser_id` array benefit automatically.
-2. **Sensor scope:** All sensors (base-class approach).
-3. **UI entry point:** A "Laser Selection" item under the **Tools** menu.
+1. **Filtering mechanism:** A dedicated downstream VTK filter
+   `vtkLaserSelectionFilter` (in the `filters` SM group) that runs after the
+   reader/stream and drops points whose `laser_id` channel is disabled. This is
+   architecture-aligned (mirrors `vtkRadialDistanceDenoise`) and avoids touching
+   the core interpreter / frame-splitting path. **Chosen over** the earlier
+   approach-A design (a per-channel mask living on the base
+   `vtkLidarPacketInterpreter` applied in `SplitFrame()`), which was reverted
+   because the mask could not reliably reach the server-side interpreter that
+   actually splits frames.
+2. **Sensor scope:** All sensors (any source that emits a `laser_id` point array).
+3. **UI entry point:** A "Laser Selection" item under the **Tools** menu and a
+   toolbar button with an icon.
 4. **Persistence:** Yes — remember per-channel selection across sessions via
    `pqSettings`.
+5. **Auto-attach:** The `LaserSelection` filter is auto-attached to every lidar
+   source/stream opened via `lqOpenLidarReaction`, mirroring
+   `AutoAttachRadialDenoise`. Radial denoise (Senfoto008) chains *after* the
+   selection filter.
 
 ## Architecture
 
 ```
- LidarCore/IO/Lidar/vtkLidarPacketInterpreter
-   + vtkNew<vtkIntArray> LaserSelection            // size = GetNumberOfChannels()
-   + SetLaserSelection(int index, int value)
-   + vtkIntArray* GetLaserSelection()
-   + IsLaserSelected(int laserId)                  // helper
-   + ApplyLaserSelection(vtkPolyData*)             // removes deselected points
-   - hook in SplitFrame() before Frames.push_back  // single injection point
+  LidarCore/Filters/Processing/vtkLaserSelectionFilter   (filters SM group)
+    + vtkNew<vtkIntArray> LaserSelection            // mask, index = laser_id
+    + SetLaserSelection(int index, int value)
+    + vtkIntArray* GetLaserSelection()
+    - RequestData(): drops points whose laser_id is disabled (manual copy of
+      kept points + point data + vertex cells; no vtkExtractSelection dep)
 
- Qt/Components/lqLaserSelectionDialog(.h/.cxx/.ui)
-   - QTableWidget of channels (Channel, Vertical Corr., ...)
-   - getLaserSelectionSelector() -> QVector<int>
-   - setLidarSource(pqPipelineSource*)             // resolves interpreter
-   - on Apply -> interpreter->SetLaserSelection(...)
+  Qt/Components/lqLaserSelectionDialog(.h/.cxx/.ui)
+    - QTableWidget of channels (Channel, Vertical Corr., ...)
+    - getLaserSelectionSelector() -> QVector<int>
+    - setLidarSource(pqPipelineSource*)  // resolves the LaserSelection filter proxy
+    - on Apply -> push mask to the filter's "LaserSelection" SM property
 
- Qt/ApplicationComponents/lqLaserSelectionReaction(.h/.cxx)
-   - wraps QAction, opens the dialog
+  Qt/ApplicationComponents/lqLaserSelectionReaction(.h/.cxx)
+    - wraps QAction, opens the dialog
 
- Application/Client/LidarViewMainWindow.cxx
-   - after buildToolsMenu(): add QAction "Laser Selection"
-     -> new lqLaserSelectionReaction(action)
+  Qt/ApplicationComponents/lqOpenLidarReaction.cxx
+    - AutoAttachLaserSelection(source): creates the LaserSelection filter
+    - AutoAttachRadialDenoise(source): chains onto the LaserSelection filter
+
+  Application/Client/LidarViewMainWindow.cxx
+    - after buildToolsMenu(): add QAction "Laser Selection" + toolbar button
 ```
 
 ## Data flow
 
 1. User opens **Tools → Laser Selection**. `lqLaserSelectionReaction` shows
    `lqLaserSelectionDialog`.
-2. Dialog resolves the active LiDAR source via `pqServerManagerModel`, gets its
-   proxy, reads the `Interpreter` subproxy's client-side object
-   (`vtkLidarPacketInterpreter*`), and calls `GetNumberOfChannels()` to size the
-   table. (Pattern from `lqSensorWidget.cxx:409`.)
+2. The dialog resolves the active lidar source via `pqServerManagerModel`, finds
+   the auto-attached `LaserSelection` filter proxy among the source's consumers
+   (creating it if absent), and initializes the checkbox table — overlaying the
+   persisted `pqSettings` selection.
 3. User toggles channels, optionally checks "Apply in future sessions".
-4. On **Apply** the dialog calls
-   `interpreter->SetLaserSelection(channel, checked)` for each channel and
-   triggers an interpreter re-run / `Modified()`.
-5. `vtkLidarPacketInterpreter::SplitFrame()` (single hook at
-   `vtkLidarPacketInterpreter.cxx:136`) calls `ApplyLaserSelection(CurrentFrame)`
-   before `Frames.push_back`, dropping points whose `laser_id` is disabled.
-6. The updated frame flows to the render view — only selected laser lines show.
-7. If "Apply in future sessions", selection mask is written to `pqSettings`
-   under a `LidarPlugin/LaserSelection*` keyset (mirrors old dialog).
+4. On **Apply** the dialog builds the full mask and pushes it through the filter's
+   `LaserSelection` SM property (`repeat_command` + `use_index`, one element per
+   channel) via `vtkSMPropertyHelper`, then `UpdateVTKObjects()` +
+   `MarkModified()` so the server-side filter re-executes.
+5. `vtkLaserSelectionFilter::RequestData()` rebuilds the output polyData keeping
+   only points whose `laser_id` is enabled; the result flows downstream (and, for
+   Senfoto008, through the radial-denoiser that was chained after it) to the view.
+6. If "Apply in future sessions", the mask is written to `pqSettings` under a
+   `LidarPlugin/LaserSelection*` keyset (mirrors old dialog).
 
 ## Components / files to create or modify
 
 ### New files
-- `LidarCore/IO/Lidar/vtkLidarPacketInterpreter` — add members/methods
-  (in existing header/cxx, not a new file).
+- `LidarCore/Filters/Processing/vtkLaserSelectionFilter.h`
+- `LidarCore/Filters/Processing/vtkLaserSelectionFilter.cxx`
+- `LidarCore/Plugin/Filters/LaserSelection.xml` — `filters` group proxy
+- `LidarCore/Filters/Processing/Testing/Cxx/TestLaserSelectionFilter.cxx` — unit test
 - `Qt/Components/lqLaserSelectionDialog.h`
 - `Qt/Components/lqLaserSelectionDialog.cxx`
-- `Qt/Components/lqLaserSelectionDialog.ui`
+- `Qt/Components/Resources/UI/lqLaserSelectionDialog.ui`
 - `Qt/ApplicationComponents/lqLaserSelectionReaction.h`
 - `Qt/ApplicationComponents/lqLaserSelectionReaction.cxx`
 
 ### Modified files
-- `LidarCore/IO/Lidar/vtkLidarPacketInterpreter.h` — add `LaserSelection` array,
-  `SetLaserSelection`, `GetLaserSelection`, `IsLaserSelected`,
-  `ApplyLaserSelection` declarations.
-- `LidarCore/IO/Lidar/vtkLidarPacketInterpreter.cxx` — implement above; call
-  `ApplyLaserSelection` in `SplitFrame()` before `Frames.push_back`.
-- `Application/Client/LidarViewMainWindow.cxx` — add Tools-menu action and wire
-  `lqLaserSelectionReaction`.
+- `LidarCore/Filters/Processing/CMakeLists.txt` — add `vtkLaserSelectionFilter` to
+  `classes`.
+- `LidarCore/Plugin/CMakeLists.txt` — add `Filters/LaserSelection.xml` to the
+  `FiltersProcessing` XML list.
 - `Qt/Components/CMakeLists.txt` and `Qt/ApplicationComponents/CMakeLists.txt` —
   register new sources (and `.ui` if needed).
-- Possibly `LidarCore/IO/Lidar/CMakeLists.txt` if new public API needs wrapping
-  for ParaView/Python (mirror old `vtkLidarPacketInterpreterClientServer.cxx`
-  generation — confirm auto-wrapped).
+- `Qt/ApplicationComponents/lqOpenLidarReaction.cxx` — add `AutoAttachLaserSelection`
+  and chain `AutoAttachRadialDenoise` onto it.
+- `Application/Client/LidarViewMainWindow.cxx` — add Tools-menu action + toolbar
+  button and wire `lqLaserSelectionReaction`.
 
 ## Implementation details
 
-### Base interpreter (`vtkLidarPacketInterpreter`)
-- `vtkNew<vtkIntArray> LaserSelection;` default-initialized so every channel is
-  enabled (1). Resize to `GetNumberOfChannels()` lazily / when calibration is
-  known; default value 1.
-- `SetLaserSelection(int index, int value)`: bounds-check, set tuple, `Modified()`.
+### Filter (`vtkLaserSelectionFilter`)
+- Inherits `vtkPolyDataAlgorithm`, exported via `LVFILTERSPROCESSING_EXPORT`.
+- `vtkNew<vtkIntArray> LaserSelection;` initialized to 128 ones (all enabled).
+- `SetLaserSelection(int index, int value)`: lazily resize, set tuple, `Modified()`.
 - `GetLaserSelection()`: return pointer.
-- `IsLaserSelected(int laserId)`: return `LaserSelection` value for that id != 0,
-  with safe default (enabled) when out of range / not yet sized.
-- `ApplyLaserSelection(vtkPolyData* frame)`:
-  - If no channel is disabled, return early (zero-cost).
-  - Read the `"laser_id"` point array; build a mask of kept point ids.
-  - Produce a new `vtkPolyData` containing only kept points + their point data
-    (use `vtkExtractSelection` with a POINT id selection, or a manual copy).
-    Replace `frame` contents in place.
+- `RequestData()`:
+  - If no `laser_id` array, or nothing is disabled, `ShallowCopy(input)` (pass-through).
+  - Otherwise build the list of kept point indices, copy the kept points (and their
+    point data) into the output, and rebuild the vertex cells so each kept point
+    remains a standalone vertex. (Manual copy — avoids a `vtkExtractSelection`
+    dependency and any output-type ambiguity.)
 
 ### UI dialog (`lqLaserSelectionDialog`)
 - Port the old `.ui`: `QTableWidget` (checkbox column + Channel + correction
   columns), `Enable/Disable all` checkbox, `Toggle Selected`, `Display more
   corrections`, `Apply`, `Apply in future sessions`, OK/Cancel.
-- `setLidarSource(pqPipelineSource*)` resolves interpreter and sizes table to
-  `GetNumberOfChannels()`.
-- `getLaserSelectionSelector()` returns mask vector.
-- On Apply (or OK): write mask to interpreter, optionally save to `pqSettings`.
-- Connect to `pqServerManagerModel` sourceAdded/sourceRemoved so the dialog
-  tracks the active LiDAR source.
+- `setLidarSource(pqPipelineSource*)` resolves the `LaserSelection` filter via the
+  source's consumers (`getAllConsumers()`) and initializes the table.
+- `getLaserSelectionSelector()` returns mask vector (index = laser_id).
+- On Apply (or OK): find-or-create the filter, push the mask through its
+  `LaserSelection` SM property, `MarkModified`, optionally save to `pqSettings`.
+- Detects lidar sources via client-side `vtkLidarReader` / `vtkLidarStream` cast
+  (project-conventional), independent of how the filter proxy is resolved.
 
 ### Reaction + menu entry
 - `lqLaserSelectionReaction(QAction*)` — on trigger, construct and `show()` the
@@ -132,20 +142,21 @@ This is a port of `SenFoToView/Ui/Widgets/vvLaserSelectionDialog.*` (old repo
   this->Internals->menuTools->addAction(actionLaserSelection);
   new lqLaserSelectionReaction(actionLaserSelection);
   ```
+  A toolbar button with an icon is added alongside the other lidar tools.
 
 ## Error handling / edge cases
-- No active LiDAR source: dialog opens but Apply is a no-op (or disabled) until a
-  source is present.
-- Interpreter with no `laser_id` array: `ApplyLaserSelection` is a no-op (graceful
-  degradation). Senfoto008 already emits `laser_id`; other interpreters can be
-  extended later.
-- Channel count changes (different sensor/calibration): resize `LaserSelection`,
-  preserve previous settings where channel ids still valid.
-- Out-of-range `laserId`: treat as enabled (safe default).
+- No active LiDAR source / no `LaserSelection` filter yet: dialog creates the
+  filter on Apply.
+- Filter with no `laser_id` array: `RequestData` is a pass-through (graceful).
+- Out-of-range `laser_id`: treated as enabled (safe default).
+- Channel-count changes: the mask is indexed by `laser_id`; unknown/higher ids
+  default to enabled.
 
 ## Testing
-- **Unit:** small test in `LidarCore` verifying `ApplyLaserSelection` removes the
-  correct points given a known `laser_id` array and selection mask.
+- **Unit:** `LidarCore/Filters/Processing/Testing/Cxx/TestLaserSelectionFilter.cxx`
+  builds a polyData with `laser_id` `[0,1,2,0,1]`, disables channel 1, runs the
+  filter, and asserts 3 points remain (channel 1 removed). Compiles when
+  `BUILD_TESTING` is enabled.
 - **Manual:** build, open a Senfoto008 pcap/stream, open Tools → Laser Selection,
   uncheck several channels, Apply → only selected lines render. Toggle all / none
   works. Restart app → selection persisted.

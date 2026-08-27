@@ -145,21 +145,6 @@ public:
 
   virtual int GetNumberOfChannels() { return this->CalibrationReportedNumLasers; }
 
-  ///@{
-  /**
-   * Per-laser enable/disable mask, indexed by the channel id (the value of the
-   * per-point "laser_id" array). 1 = displayed, 0 = filtered out of produced frames.
-   */
-  virtual vtkIntArray* GetLaserSelection();
-  virtual void SetLaserSelection(int index, int value);
-  ///@}
-
-  /// Returns true if the given laser id should be kept (selected). Unknown ids are kept.
-  bool IsLaserSelected(int laserId);
-
-  /// Removes points whose "laser_id" is disabled. No-op if nothing is disabled.
-  void ApplyLaserSelection(vtkPolyData* frame);
-
   bool IsNewData() override;
 
   bool IsValidPacket(unsigned char const* data, unsigned int dataLength) override;
@@ -263,9 +248,6 @@ protected:
 
   //! Number of laser which can be shoot at the same time or at least in dt < epsilon
   int CalibrationReportedNumLasers = -1;
-
-  //! Per-laser enable/disable mask (1 = displayed, 0 = hidden).
-  vtkNew<vtkIntArray> LaserSelection;
 
   //! TimeOffset in seconds relative to the system clock
   double TimeOffset = 0.;

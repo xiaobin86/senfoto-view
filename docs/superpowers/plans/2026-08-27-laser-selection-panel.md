@@ -2,19 +2,22 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Add a "Laser Selection" Tools-menu panel that lets the user toggle which LiDAR laser channels are rendered in the point cloud, filtering out deselected lines, with selection persisted across sessions.
+**Goal:** Add a "Laser Selection" Tools-menu panel (plus a toolbar button) that lets the user toggle which LiDAR laser channels are rendered in the point cloud, filtering out deselected lines, with selection persisted across sessions.
 
-**Architecture:** The base `vtkLidarPacketInterpreter` (LidarCore) owns a per-channel `LaserSelection` mask and applies it at the single frame-finalization hook in `SplitFrame()` by removing points whose `laser_id` is disabled. A Qt dialog (`lqLaserSelectionDialog`) lists channels and writes the mask to the active source's interpreter; a `lqLaserSelectionReaction` opens it from the Tools menu. This reuses the existing LidarView `lq*Reaction` + `pqServerManagerModel` + `pqSettings` patterns.
+**Architecture:** A dedicated downstream VTK filter `vtkLaserSelectionFilter` (in the `filters` SM group, in `LidarCore/Filters/Processing`) runs after the reader/stream and removes points whose `laser_id` channel is disabled. The filter is auto-attached to every opened lidar source (mirroring `AutoAttachRadialDenoise`). A Qt dialog (`lqLaserSelectionDialog`) lists channels and pushes the mask to the filter's `LaserSelection` SM property; a `lqLaserSelectionReaction` opens it from the Tools menu. This reuses the existing LidarView `lq*Reaction` + `pqServerManagerModel` + `pqSettings` patterns.
 
 **Tech Stack:** C++17, VTK (LidarView fork), ParaView ServerManager / pq* Qt wrappers, Qt 5/6 Widgets, CMake (`vtk_module_add_module`).
 
 **Spec:** `docs/superpowers/specs/2026-08-27-laser-selection-panel-design.md`
 
+> **Note:** This plan was rewritten for *approach B* (a dedicated filter). The earlier approach-A plan (a per-channel mask on the base `vtkLidarPacketInterpreter` applied in `SplitFrame()`) was implemented and then reverted: the mask set on the client-side interpreter object did not propagate to the server-side interpreter that actually splits frames, so the view never changed. The filter approach pushes the mask through an SM property on a downstream filter, which reliably reaches the server.
+
 ## Global Constraints
 
-- Filtering is done in the base interpreter so ALL sensors that emit a `laser_id` point array benefit; no per-sensor edits.
-- The single injection point is `vtkLidarPacketInterpreter::SplitFrame()` just before `this->Frames.push_back(this->CurrentFrame)` (`LidarCore/IO/Lidar/vtkLidarPacketInterpreter.cxx:136`).
-- UI entry is a "Laser Selection" item under the Tools menu (built in `Application/Client/LidarViewMainWindow.cxx`, after `pqParaViewMenuBuilders::buildToolsMenu`).
+- Filtering is done by a dedicated `vtkLaserSelectionFilter` so the core interpreter / frame-splitting path is untouched; all sensors that emit a `laser_id` point array benefit automatically.
+- The filter is registered in the `filters` SM group; its `LaserSelection` property uses `repeat_command` + `use_index` with 128 explicit `default_values` (ParaView does NOT replicate a single scalar default across elements — list all 128).
+- The filter is auto-attached in `lqOpenLidarReaction` (`AutoAttachLaserSelection`); radial denoise (Senfoto008) chains after it.
+- UI entry is a "Laser Selection" item under the Tools menu and a toolbar button (built in `Application/Client/LidarViewMainWindow.cxx`, after `pqParaViewMenuBuilders::buildToolsMenu`).
 - Selection is persisted via `pqSettings` under `LidarPlugin/LaserSelection*` keys (mirrors old `vvLaserSelectionDialog`).
 - New Qt files follow existing layout: dialog in `Qt/Components` (+ `.ui` in `Qt/Components/Resources/UI`), reaction in `Qt/ApplicationComponents`.
 - LidarCore class methods are auto-wrapped by `vtk_module`; no manual ClientServer edits needed.
@@ -24,263 +27,117 @@
 ## File Structure
 
 **Created**
-- `LidarCore/IO/Lidar/vtkLidarPacketInterpreter.h` — *modified* (add API; not a new file)
-- `LidarCore/IO/Lidar/vtkLidarPacketInterpreter.cxx` — *modified* (implement + hook)
+- `LidarCore/Filters/Processing/vtkLaserSelectionFilter.h`
+- `LidarCore/Filters/Processing/vtkLaserSelectionFilter.cxx`
+- `LidarCore/Plugin/Filters/LaserSelection.xml`
+- `LidarCore/Filters/Processing/Testing/Cxx/TestLaserSelectionFilter.cxx`
 - `Qt/Components/lqLaserSelectionDialog.h`
 - `Qt/Components/lqLaserSelectionDialog.cxx`
 - `Qt/Components/Resources/UI/lqLaserSelectionDialog.ui`
 - `Qt/ApplicationComponents/lqLaserSelectionReaction.h`
 - `Qt/ApplicationComponents/lqLaserSelectionReaction.cxx`
-- `Qt/Components/CMakeLists.txt` — *modified* (register dialog + ui)
-- `Qt/ApplicationComponents/CMakeLists.txt` — *modified* (register reaction)
-- `Application/Client/LidarViewMainWindow.cxx` — *modified* (Tools menu action)
-- `LidarCore/Testing/Cxx/TestLaserSelection.cxx` — unit test
+
+**Modified**
+- `LidarCore/Filters/Processing/CMakeLists.txt` — add `vtkLaserSelectionFilter` to `classes`.
+- `LidarCore/Plugin/CMakeLists.txt` — add `Filters/LaserSelection.xml` to the `FiltersProcessing` XML list.
+- `Qt/Components/CMakeLists.txt` — register dialog + ui.
+- `Qt/ApplicationComponents/CMakeLists.txt` — register reaction.
+- `Qt/ApplicationComponents/lqOpenLidarReaction.cxx` — add `AutoAttachLaserSelection` + chain radial denoise.
+- `Application/Client/LidarViewMainWindow.cxx` — Tools menu action + toolbar button.
 
 **Responsibilities**
-- `vtkLidarPacketInterpreter`: owns mask, exposes `SetLaserSelection/GetLaserSelection/IsLaserSelected`, filters frames in `SplitFrame`.
-- `lqLaserSelectionDialog`: channel table UI; resolves active interpreter; writes mask; persists settings.
+- `vtkLaserSelectionFilter`: filters points by `laser_id` mask in `RequestData`.
+- `lqLaserSelectionDialog`: channel table UI; resolves the `LaserSelection` filter proxy; writes mask; persists settings.
 - `lqLaserSelectionReaction`: wires the QAction to the dialog (non-modal).
-- `LidarViewMainWindow`: adds the Tools-menu action.
+- `lqOpenLidarReaction`: auto-attaches the filter and chains denoise.
+- `LidarViewMainWindow`: adds the Tools-menu action + toolbar button.
 
 ---
 
-### Task 1: Base interpreter laser-selection API + filter hook
+### Task 1: `vtkLaserSelectionFilter` + XML + unit test
 
 **Files:**
-- Modify: `LidarCore/IO/Lidar/vtkLidarPacketInterpreter.h`
-- Modify: `LidarCore/IO/Lidar/vtkLidarPacketInterpreter.cxx` (around `SplitFrame`, line 48–143; push at line 136)
-- Test: `LidarCore/Testing/Cxx/TestLaserSelection.cxx`
+- Create: `LidarCore/Filters/Processing/vtkLaserSelectionFilter.h`
+- Create: `LidarCore/Filters/Processing/vtkLaserSelectionFilter.cxx`
+- Create: `LidarCore/Plugin/Filters/LaserSelection.xml`
+- Create: `LidarCore/Filters/Processing/Testing/Cxx/TestLaserSelectionFilter.cxx`
+- Modify: `LidarCore/Filters/Processing/CMakeLists.txt`
+- Modify: `LidarCore/Plugin/CMakeLists.txt`
 
 **Interfaces:**
-- Consumes: existing `SplitFrame()` / `Frames.push_back` flow; existing `laser_id` point array produced by interpreters.
+- Consumes: input `vtkPolyData` with a `laser_id` point array.
 - Produces:
-  - `vtkIntArray* vtkLidarPacketInterpreter::GetLaserSelection()`
-  - `void vtkLidarPacketInterpreter::SetLaserSelection(int index, int value)`
-  - `bool vtkLidarPacketInterpreter::IsLaserSelected(int laserId)`
-  - `void vtkLidarPacketInterpreter::ApplyLaserSelection(vtkPolyData* frame)` (public, used by test + SplitFrame)
+  - `void vtkLaserSelectionFilter::SetLaserSelection(int index, int value)`
+  - `vtkIntArray* vtkLaserSelectionFilter::GetLaserSelection()`
 
-- [ ] **Step 1: Write the failing unit test**
+- [ ] **Step 1: Create the filter header**
 
-`LidarCore/Testing/Cxx/TestLaserSelection.cxx`:
+`LidarCore/Filters/Processing/vtkLaserSelectionFilter.h`:
 ```cpp
-#include "vtkLidarPacketInterpreter.h"
-#include "vtkNew.h"
-#include "vtkPolyData.h"
-#include "vtkIntArray.h"
-#include "vtkPoints.h"
+#ifndef vtkLaserSelectionFilter_h
+#define vtkLaserSelectionFilter_h
 
-#include <vtkSMPTools.h> // not needed; placeholder-free test
+#include "lvFiltersProcessingModule.h"
+#include <vtkPolyDataAlgorithm.h>
 
-// Minimal concrete subclass so we can exercise the base filter.
-class TestInterpreter : public vtkLidarPacketInterpreter
+class LVFILTERSPROCESSING_EXPORT vtkLaserSelectionFilter : public vtkPolyDataAlgorithm
 {
 public:
-  vtkTypeMacro(TestInterpreter, vtkLidarPacketInterpreter);
-  static TestInterpreter* New();
-  bool PreProcessPacket(const unsigned char*, unsigned int, double&) override { return false; }
-  bool IsLidarPacket(const unsigned char*, unsigned int) override { return false; }
-  vtkSmartPointer<vtkPolyData> CreateNewEmptyFrame(vtkIdType, vtkIdType) override
-  {
-    return vtkSmartPointer<vtkPolyData>::New();
-  }
-  void ProcessPacketWrapped(const unsigned char*, unsigned int, double) override {}
-};
-vtkStandardNewMacro(TestInterpreter);
+  static vtkLaserSelectionFilter* New();
+  vtkTypeMacro(vtkLaserSelectionFilter, vtkPolyDataAlgorithm)
 
-int TestLaserSelection(int, char*[])
-{
-  vtkNew<TestInterpreter> interp;
+  void SetLaserSelection(int index, int value);
+  vtkIntArray* GetLaserSelection();
 
-  // Build a polydata with 5 points carrying laser_id [0,1,2,0,1].
-  vtkNew<vtkPolyData> pd;
-  vtkNew<vtkPoints> pts;
-  pts->SetNumberOfPoints(5);
-  pd->SetPoints(pts.GetPointer());
-  vtkNew<vtkIntArray> laserId;
-  laserId->SetName("laser_id");
-  laserId->SetNumberOfTuples(5);
-  int ids[5] = {0, 1, 2, 0, 1};
-  for (int i = 0; i < 5; ++i) laserId->SetTuple1(i, ids[i]);
-  pd->GetPointData()->AddArray(laserId.GetPointer());
+protected:
+  vtkLaserSelectionFilter();
+  ~vtkLaserSelectionFilter() override = default;
+  int RequestData(vtkInformation*, vtkInformationVector**, vtkInformationVector*) override;
 
-  // Disable channel 1 only.
-  interp->SetLaserSelection(1, 0);
-
-  interp->ApplyLaserSelection(pd.GetPointer());
-
-  vtkIntArray* out = vtkIntArray::SafeDownCast(pd->GetPointData()->GetArray("laser_id"));
-  if (!out) return 1;
-  if (out->GetNumberOfTuples() != 4) return 1; // 1 point (channel 1) removed
-  for (vtkIdType i = 0; i < out->GetNumberOfTuples(); ++i)
-  {
-    if (out->GetValue(i) == 1) return 1; // channel 1 must be gone
-  }
-  return 0;
-}
-```
-Add to `LidarCore/Testing/Cxx/CMakeLists.txt` (or the module test list) a `vtk_test_cxx`/`add_test` entry:
-```cmake
-vtk_test_cxx(
-  TestLaserSelection.cxx
-  TEST_NAME LidarCore::TestLaserSelection)
-```
-
-- [ ] **Step 2: Run test to verify it fails**
-
-Run (from build dir): `ctest -R LidarCore::TestLaserSelection -V`
-Expected: FAIL — `SetLaserSelection` / `ApplyLaserSelection` not defined / linker errors.
-
-- [ ] **Step 3: Add API to the header**
-
-In `vtkLidarPacketInterpreter.h`, in the public section near `GetNumberOfChannels()` (line 145), add:
-```cpp
-  ///@{
-  /**
-   * Per-laser enable/disable mask, indexed by the channel id (the value of the
-   * per-point "laser_id" array). 1 = displayed, 0 = filtered out of produced frames.
-   */
-  virtual vtkIntArray* GetLaserSelection();
-  virtual void SetLaserSelection(int index, int value);
-  ///@}
-
-  /// Returns true if the given laser id should be kept (selected). Unknown ids are kept.
-  bool IsLaserSelected(int laserId);
-
-  /// Removes points whose "laser_id" is disabled. No-op if nothing is disabled.
-  void ApplyLaserSelection(vtkPolyData* frame);
-```
-In the `protected:` / member section (near `CalibrationReportedNumLasers`, line 249), add:
-```cpp
-  //! Per-laser enable/disable mask (1 = displayed, 0 = hidden).
+private:
+  vtkLaserSelectionFilter(const vtkLaserSelectionFilter&) = delete;
+  void operator=(const vtkLaserSelectionFilter&) = delete;
   vtkNew<vtkIntArray> LaserSelection;
+};
+
+#endif
 ```
 
-- [ ] **Step 4: Implement in the cxx**
+- [ ] **Step 2: Implement the filter**
 
-At top of `vtkLidarPacketInterpreter.cxx`, add includes:
-```cpp
-#include "vtkSelection.h"
-#include "vtkSelectionNode.h"
-#include "vtkExtractSelection.h"
-#include "vtkIdTypeArray.h"
-```
-Add implementations (place after `GetSensorInformation` or near `GetNumberOfChannels`):
-```cpp
-//-----------------------------------------------------------------------------
-vtkIntArray* vtkLidarPacketInterpreter::GetLaserSelection()
-{
-  return this->LaserSelection.GetPointer();
-}
+`RequestData` reads `laser_id`, builds the kept-point index list, and copies the
+kept points + their point data into the output, rebuilding vertex cells. If no
+`laser_id` exists or nothing is disabled, `ShallowCopy(input)`. `SetLaserSelection`
+lazily resizes the mask and sets the tuple. Constructor initializes 128 ones.
 
-//-----------------------------------------------------------------------------
-void vtkLidarPacketInterpreter::SetLaserSelection(int index, int value)
-{
-  if (index < 0)
-  {
-    return;
-  }
-  if (index >= this->LaserSelection->GetNumberOfTuples())
-  {
-    const int oldSize = this->LaserSelection->GetNumberOfTuples();
-    this->LaserSelection->Resize(index + 1);
-    for (int i = oldSize; i <= index; ++i)
-    {
-      this->LaserSelection->InsertTuple1(i, 1);
-    }
-  }
-  this->LaserSelection->SetTuple1(index, value ? 1 : 0);
-  this->Modified();
-}
+- [ ] **Step 3: Create the SM XML**
 
-//-----------------------------------------------------------------------------
-bool vtkLidarPacketInterpreter::IsLaserSelected(int laserId)
-{
-  if (laserId < 0 || laserId >= this->LaserSelection->GetNumberOfTuples())
-  {
-    return true;
-  }
-  return this->LaserSelection->GetValue(laserId) != 0;
-}
-
-//-----------------------------------------------------------------------------
-void vtkLidarPacketInterpreter::ApplyLaserSelection(vtkPolyData* frame)
-{
-  if (!frame)
-  {
-    return;
-  }
-  vtkDataArray* laserId = frame->GetPointData()->GetArray("laser_id");
-  if (this->LaserSelection->GetNumberOfTuples() == 0 || !laserId)
-  {
-    return;
-  }
-  bool anyDisabled = false;
-  for (vtkIdType i = 0; i < this->LaserSelection->GetNumberOfTuples(); ++i)
-  {
-    if (this->LaserSelection->GetValue(i) == 0)
-    {
-      anyDisabled = true;
-      break;
-    }
-  }
-  if (!anyDisabled)
-  {
-    return;
-  }
-
-  vtkNew<vtkIdTypeArray> kept;
-  kept->Allocate(laserId->GetNumberOfTuples());
-  for (vtkIdType i = 0; i < laserId->GetNumberOfTuples(); ++i)
-  {
-    const int id = static_cast<int>(laserId->GetTuple1(i));
-    if (this->IsLaserSelected(id))
-    {
-      kept->InsertNextValue(i);
-    }
-  }
-
-  vtkNew<vtkSelectionNode> selNode;
-  selNode->SetFieldType(vtkSelectionNode::POINT);
-  selNode->SetContentType(vtkSelectionNode::INDICES);
-  selNode->SetSelectionList(kept.GetPointer());
-  vtkNew<vtkSelection> selection;
-  selection->AddNode(selNode.GetPointer());
-
-  vtkNew<vtkExtractSelection> extract;
-  extract->SetInputData(0, frame);
-  extract->SetInputData(1, selection.GetPointer());
-  extract->Update();
-
-  vtkPolyData* extracted = vtkPolyData::SafeDownCast(extract->GetOutput());
-  if (extracted)
-  {
-    frame->ShallowCopy(extracted);
-  }
-}
+`LidarCore/Plugin/Filters/LaserSelection.xml` — `SourceProxy name="LaserSelection"
+class="vtkLaserSelectionFilter"`, `Input`/`Output` ports, and:
+```xml
+<IntVectorProperty name="LaserSelection"
+                   command="SetLaserSelection"
+                   number_of_elements="1"
+                   default_values="1 1 1 ... (128 ones) ..."
+                   repeat_command="1"
+                   use_index="1">
+  <Documentation>Enable/disable individual lidar channels. Index 0 = laser_id 0.</Documentation>
+</IntVectorProperty>
 ```
 
-- [ ] **Step 5: Apply the hook in `SplitFrame()`**
+- [ ] **Step 4: Register in CMake**
+  - `LidarCore/Filters/Processing/CMakeLists.txt`: add `vtkLaserSelectionFilter` to `set(classes ...)`.
+  - `LidarCore/Plugin/CMakeLists.txt`: add `Filters/LaserSelection.xml` to `filters_processing_xml_files`.
 
-In `SplitFrame()` (`vtkLidarPacketInterpreter.cxx`), immediately before `this->Frames.push_back(this->CurrentFrame);` (line 136), insert:
-```cpp
-    // Filter the frame by the user's laser (channel) selection.
-    this->ApplyLaserSelection(this->CurrentFrame);
-```
+- [ ] **Step 5: Unit test**
 
-- [ ] **Step 6: Run test to verify it passes**
+`LidarCore/Filters/Processing/Testing/Cxx/TestLaserSelectionFilter.cxx` builds a
+polyData with `laser_id` `[0,1,2,0,1]`, calls `filter->SetLaserSelection(1, 0)`,
+`SetInputData` + `Update`, and asserts the output has 3 points and none carry
+`laser_id == 1`. Register in `LidarCore/Filters/Processing/Testing/Cxx/CMakeLists.txt`
+(`vtk_add_test_cxx` / `vtk_test_cxx_executable`).
 
-Run: `ctest -R LidarCore::TestLaserSelection -V`
-Expected: PASS.
-
-- [ ] **Step 7: Commit**
-
-```bash
-git add LidarCore/IO/Lidar/vtkLidarPacketInterpreter.h \
-        LidarCore/IO/Lidar/vtkLidarPacketInterpreter.cxx \
-        LidarCore/Testing/Cxx/TestLaserSelection.cxx \
-        LidarCore/Testing/Cxx/CMakeLists.txt
-git commit -m "feat: add per-laser selection mask + frame filter to base interpreter"
-```
+- [ ] **Step 6: Build + run test** (when `BUILD_TESTING` is on): `ctest -R lvFiltersProcessingCxxTests`.
 
 ---
 
@@ -290,367 +147,94 @@ git commit -m "feat: add per-laser selection mask + frame filter to base interpr
 - Create: `Qt/Components/lqLaserSelectionDialog.h`
 - Create: `Qt/Components/lqLaserSelectionDialog.cxx`
 - Create: `Qt/Components/Resources/UI/lqLaserSelectionDialog.ui`
-- Modify: `Qt/Components/CMakeLists.txt` (add to `classes` and `ui_files`)
+- Modify: `Qt/Components/CMakeLists.txt`
 
 **Interfaces:**
-- Consumes: `vtkLidarPacketInterpreter` (Task 1 API) via active `pqPipelineSource`; `pqServerManagerModel`; `pqSettings`.
+- Consumes: the `LaserSelection` filter proxy (via the active lidar source's
+  consumers), `pqServerManagerModel`, `pqSettings`.
 - Produces:
   - `lqLaserSelectionDialog(QWidget* parent = nullptr)`
-  - `void setLidarSource(pqPipelineSource* src)` — resolves interpreter, sizes table
+  - `void setLidarSource(pqPipelineSource* src)` — resolves the `LaserSelection` filter
   - `QVector<int> getLaserSelectionSelector()` — returns channel mask
-  - `void applySelection()` — writes mask to interpreter + (optional) settings
+  - `void onApply()` — pushes mask to the filter SM property + (optional) settings
 
-- [ ] **Step 1: Create the `.ui`** (`Qt/Components/Resources/UI/lqLaserSelectionDialog.ui`)
+- [ ] **Step 1: Create the `.ui`** (port of old `vvLaserSelectionDialog.ui`, class
+  renamed to `lqLaserSelectionDialog`; widgets `LaserTable`, `EnableDisableAll`,
+  `Toggle`, `DisplayMoreCorrections`, `saveCheckBox`, `apply`, `buttonBox`).
 
-Port of the old `vvLaserSelectionDialog.ui`, class renamed to `lqLaserSelectionDialog`. Keep widgets: `LaserTable` (QTableWidget), `EnableDisableAll` (QCheckBox), `Toggle` (QPushButton), `DisplayMoreCorrections` (QCheckBox), `saveCheckBox` (QCheckBox, "Apply in future sessions"), `apply` (QPushButton), `buttonBox` (QDialogButtonBox Ok/Cancel). Provide the full UI XML:
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<ui version="4.0">
- <class>lqLaserSelectionDialog</class>
- <widget class="QDialog" name="lqLaserSelectionDialog">
-  <property name="geometry"><rect><x>0</x><y>0</y><width>685</width><height>467</height></rect></property>
-  <property name="windowTitle"><string>Laser Selection</string></property>
-  <property name="modal"><bool>false</bool></property>
-  <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="3"><widget class="QPushButton" name="Toggle"><property name="text"><string>&amp;Toggle Selected</string></property></widget></item>
-   <item row="0" column="1"><widget class="QCheckBox" name="EnableDisableAll"><property name="text"><string>Enable/Disable all</string></property><property name="checked"><bool>true</bool></property><property name="tristate"><bool>false</bool></property></widget></item>
-   <item row="6" column="1" colspan="4"><widget class="QTableWidget" name="LaserTable"><property name="selectionBehavior"><enum>QAbstractItemView::SelectRows</enum></property><attribute name="horizontalHeaderStretchLastSection"><bool>true</bool></attribute><attribute name="verticalHeaderVisible"><bool>false</bool></attribute><column><property name="text"><string/></property></column><column><property name="text"><string>Channel (Firing Order)</string></property></column><column><property name="text"><string>Vertical Corr. (deg)</string></property></column></widget></item>
-   <item row="7" column="1"><widget class="QCheckBox" name="saveCheckBox"><property name="text"><string>Apply in future sessions</string></property></widget></item>
-   <item row="7" column="2"><widget class="QCheckBox" name="DisplayMoreCorrections"><property name="text"><string>Display more corrections</string></property></widget></item>
-   <item row="7" column="3"><widget class="QDialogButtonBox" name="buttonBox"><property name="standardButtons"><set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set></property></widget></item>
-   <item row="7" column="4"><widget class="QPushButton" name="apply"><property name="text"><string>Apply</string></property></widget></item>
-  </layout>
- </widget>
- <resources/>
- <connections>
-  <connection><sender>buttonBox</sender><signal>accepted()</signal><receiver>lqLaserSelectionDialog</receiver><slot>accept()</slot></connection>
-  <connection><sender>buttonBox</sender><signal>rejected()</signal><receiver>lqLaserSelectionDialog</receiver><slot>reject()</slot></connection>
- </connections>
-</ui>
-```
+- [ ] **Step 2: Create the header** — member `vtkSMProxy* LaserSelectionFilterProxy`
+  (the filter's SM proxy), `pqPipelineSource* LidarSource`.
 
-- [ ] **Step 2: Create the header** (`Qt/Components/lqLaserSelectionDialog.h`)
-```cpp
-#ifndef lqLaserSelectionDialog_h
-#define lqLaserSelectionDialog_h
+- [ ] **Step 3: Create the implementation**
+  - Detect lidar sources via client-side `vtkLidarReader` / `vtkLidarStream` cast.
+  - `setLidarSource` resolves the `LaserSelection` filter among
+    `src->getAllConsumers()` and initializes the checkbox table (overlay `pqSettings`).
+  - `onApply`: find-or-create the filter (`pqObjectBuilder::createFilter("filters",
+    "LaserSelection", src)`), push the full mask via
+    `vtkSMPropertyHelper(filterProxy, "LaserSelection").Set(mask.data(), mask.size())`,
+    `UpdateVTKObjects()` + `MarkModified(filterProxy)`.
+  - `accept()` also persists to `pqSettings` when "Apply in future sessions" is checked.
 
-#include <QDialog>
-#include <QVector>
+- [ ] **Step 4: Register in CMake** (`Qt/Components/CMakeLists.txt`: `classes` + `ui_files`).
 
-#include "vtkLidarPacketInterpreter.h"
-#include "pqPipelineSource.h"
-
-class QTableWidgetItem;
-class pqInternal; // Ui::lqLaserSelectionDialog + state
-
-class lqLaserSelectionDialog : public QDialog
-{
-  Q_OBJECT
-public:
-  lqLaserSelectionDialog(QWidget* p = nullptr);
-  ~lqLaserSelectionDialog() override;
-
-  QVector<int> getLaserSelectionSelector();
-  void setLidarSource(pqPipelineSource* src);
-
-public slots:
-  void onItemChanged(QTableWidgetItem*);
-  void onToggleSelected();
-  void onEnableDisableAll(int);
-  void onApply();
-  void accept() override;
-
-signals:
-  void laserSelectionChanged();
-
-private:
-  class pqInternal;
-  pqInternal* Internal;
-  vtkLidarPacketInterpreter* Interpreter = nullptr;
-  int CurrentNumLaser = 0;
-  void deleteSource(pqPipelineSource* src);
-};
-
-#endif
-```
-
-- [ ] **Step 3: Create the implementation** (`Qt/Components/lqLaserSelectionDialog.cxx`)
-
-Key helpers and slots (port of old logic, adapted):
-```cpp
-#include "lqLaserSelectionDialog.h"
-#include "ui_lqLaserSelectionDialog.h"
-
-#include <QCheckBox>
-#include <QTableWidget>
-#include <QTableWidgetItem>
-#include <pqServerManagerModel.h>
-#include <pqApplicationCore.h>
-#include <pqSettings.h>
-#include <vtkSMPropertyHelper.h>
-#include <vtkSMProxy.h>
-
-namespace
-{
-constexpr int NUM_LASER_MAX = 96;
-
-vtkLidarPacketInterpreter* GetInterpreter(pqPipelineSource* src)
-{
-  if (!src) return nullptr;
-  vtkSMProxy* proxy = src->getProxy();
-  vtkSMProxy* interpProxy = vtkSMPropertyHelper(proxy, "Interpreter").GetAsProxy();
-  if (!interpProxy) return nullptr;
-  return vtkLidarPacketInterpreter::SafeDownCast(interpProxy->GetClientSideObject());
-}
-} // namespace
-
-class lqLaserSelectionDialog::pqInternal : public Ui::lqLaserSelectionDialog
-{
-public:
-  pqInternal() = default;
-  QTableWidget* Table = nullptr;
-  int NumVisibleRows = NUM_LASER_MAX;
-};
-
-lqLaserSelectionDialog::lqLaserSelectionDialog(QWidget* p)
-  : QDialog(p)
-{
-  this->Internal = new pqInternal();
-  this->Internal->setupUi(this);
-  this->Internal->Table = this->Internal->LaserTable;
-  this->Internal->Table->setColumnCount(3);
-  for (int i = 0; i < NUM_LASER_MAX; ++i)
-  {
-    this->Internal->Table->insertRow(i);
-    auto* cb = new QTableWidgetItem();
-    cb->setCheckState(Qt::Checked);
-    cb->setFlags(Qt::ItemIsSelectable | Qt::ItemIsUserCheckable | Qt::ItemIsEnabled);
-    this->Internal->Table->setItem(i, 0, cb);
-    auto* ch = new QTableWidgetItem();
-    ch->setData(Qt::EditRole, i);
-    ch->setFlags(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
-    this->Internal->Table->setItem(i, 1, ch);
-    auto* vc = new QTableWidgetItem();
-    vc->setData(Qt::EditRole, 0.0);
-    vc->setFlags(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
-    this->Internal->Table->setItem(i, 2, vc);
-  }
-  connect(this->Internal->Table, SIGNAL(itemChanged(QTableWidgetItem*)), this,
-    SLOT(onItemChanged(QTableWidgetItem*)));
-  connect(this->Internal->Toggle, SIGNAL(clicked()), this, SLOT(onToggleSelected()));
-  connect(this->Internal->EnableDisableAll, SIGNAL(stateChanged(int)), this,
-    SLOT(onEnableDisableAll(int)));
-  connect(this->Internal->apply, SIGNAL(clicked()), this, SLOT(onApply()));
-
-  pqServerManagerModel* smmodel = pqApplicationCore::instance()->getServerManagerModel();
-  for (pqPipelineSource* src : smmodel->findItems<pqPipelineSource*>())
-  {
-    this->setLidarSource(src);
-  }
-}
-
-void lqLaserSelectionDialog::setLidarSource(pqPipelineSource* src)
-{
-  this->Interpreter = GetInterpreter(src);
-  if (this->Interpreter)
-  {
-    this->CurrentNumLaser = this->Interpreter->GetNumberOfChannels();
-  }
-}
-
-QVector<int> lqLaserSelectionDialog::getLaserSelectionSelector()
-{
-  QVector<int> result(CurrentNumLaser > 0 ? CurrentNumLaser : NUM_LASER_MAX, 1);
-  for (int i = 0; i < this->Internal->Table->rowCount(); ++i)
-  {
-    int channel = this->Internal->Table->item(i, 1)->data(Qt::EditRole).toInt();
-    if (channel >= 0 && channel < result.size())
-    {
-      result[channel] =
-        (this->Internal->Table->item(i, 0)->checkState() == Qt::Checked) ? 1 : 0;
-    }
-  }
-  return result;
-}
-
-void lqLaserSelectionDialog::onToggleSelected()
-{
-  for (QTableWidgetItem* it : this->Internal->Table->selectedItems())
-  {
-    if (it->column() == 0)
-      it->setCheckState(it->checkState() == Qt::Checked ? Qt::Unchecked : Qt::Checked);
-  }
-  emit laserSelectionChanged();
-}
-
-void lqLaserSelectionDialog::onItemChanged(QTableWidgetItem* vtkNotUsed(item))
-{
-  bool all = true, none = true;
-  for (int i = 0; i < this->Internal->Table->rowCount(); ++i)
-  {
-    bool c = this->Internal->Table->item(i, 0)->checkState() == Qt::Checked;
-    all = all && c;
-    none = none && !c;
-  }
-  this->Internal->EnableDisableAll->setCheckState(
-    all ? Qt::Checked : (none ? Qt::Unchecked : Qt::PartiallyChecked));
-}
-
-void lqLaserSelectionDialog::onEnableDisableAll(int state)
-{
-  if (state == Qt::PartiallyChecked) return;
-  for (int i = 0; i < this->Internal->Table->rowCount(); ++i)
-    this->Internal->Table->item(i, 0)->setCheckState(Qt::CheckState(state));
-}
-
-void lqLaserSelectionDialog::onApply()
-{
-  if (!this->Interpreter) return;
-  QVector<int> mask = this->getLaserSelectionSelector();
-  for (int i = 0; i < mask.size(); ++i)
-    this->Interpreter->SetLaserSelection(i, mask[i]);
-  // Force the reader/stream to re-interpret with the new mask.
-  if (pqPipelineSource* src = nullptr; false) { (void)src; }
-  emit laserSelectionChanged();
-}
-
-void lqLaserSelectionDialog::accept()
-{
-  this->onApply();
-  if (this->Internal->saveCheckBox->isChecked())
-  {
-    pqSettings* settings = pqApplicationCore::instance()->settings();
-    QVector<int> mask = this->getLaserSelectionSelector();
-    for (int i = 0; i < mask.size(); ++i)
-      settings->setValue(QString("LidarPlugin/LaserSelection%1").arg(i), mask[i] == 1);
-  }
-  QDialog::accept();
-}
-
-lqLaserSelectionDialog::~lqLaserSelectionDialog() { delete this->Internal; }
-```
-Note: after `SetLaserSelection`, trigger a pipeline re-run by calling
-`src->getProxy()->MarkModifiedFromProducer()` on the lidar source (resolve it from
-`pqServerManagerModel`); add that in `onApply`/`accept` once the source is stored.
-
-- [ ] **Step 4: Register in CMake**
-
-In `Qt/Components/CMakeLists.txt`, add `lqLaserSelectionDialog` to `set(classes ...)` and
-`Resources/UI/lqLaserSelectionDialog.ui` to `set(ui_files ...)`.
-
-- [ ] **Step 5: Build the Components module**
-
-From build dir: `cmake --build . --target LidarView::lqComponents` (or the generated target name).
-Expected: compiles, `ui_lqLaserSelectionDialog.h` generated, no errors.
-
-- [ ] **Step 6: Commit**
-```bash
-git add Qt/Components/lqLaserSelectionDialog.h Qt/Components/lqLaserSelectionDialog.cxx \
-        Qt/Components/Resources/UI/lqLaserSelectionDialog.ui Qt/Components/CMakeLists.txt
-git commit -m "feat: add lqLaserSelectionDialog channel-selection UI"
-```
+- [ ] **Step 5: Build the Components module.**
 
 ---
 
-### Task 3: `lqLaserSelectionReaction` + Tools menu entry
+### Task 3: `lqLaserSelectionReaction` + Tools menu + toolbar entry
 
 **Files:**
-- Create: `Qt/ApplicationComponents/lqLaserSelectionReaction.h`
-- Create: `Qt/ApplicationComponents/lqLaserSelectionReaction.cxx`
-- Modify: `Qt/ApplicationComponents/CMakeLists.txt` (add to `classes`)
-- Modify: `Application/Client/LidarViewMainWindow.cxx` (after `buildToolsMenu`, ~line 201)
+- Create: `Qt/ApplicationComponents/lqLaserSelectionReaction.h` / `.cxx`
+- Modify: `Qt/ApplicationComponents/CMakeLists.txt`
+- Modify: `Application/Client/LidarViewMainWindow.cxx`
 
-**Interfaces:**
-- Consumes: `lqLaserSelectionDialog` (Task 2); active main window.
-- Produces: `lqLaserSelectionReaction(QAction* parent)` — opens the dialog non-modally.
+- [ ] **Step 1-4:** reaction opens the dialog non-modally; add a Tools-menu
+  `QAction("Laser Selection")` wired to `lqLaserSelectionReaction`, plus a toolbar
+  button with an icon (added via `.qrc` / `lqResources.qrc`).
 
-- [ ] **Step 1: Create the header** (`Qt/ApplicationComponents/lqLaserSelectionReaction.h`)
-```cpp
-#ifndef lqLaserSelectionReaction_h
-#define lqLaserSelectionReaction_h
-
-#include <QAction>
-
-class lqLaserSelectionReaction : public QObject
-{
-  Q_OBJECT
-public:
-  lqLaserSelectionReaction(QAction* parent);
-};
-
-#endif
-```
-
-- [ ] **Step 2: Create the implementation** (`Qt/ApplicationComponents/lqLaserSelectionReaction.cxx`)
-```cpp
-#include "lqLaserSelectionReaction.h"
-#include "lqLaserSelectionDialog.h"
-
-#include <pqLidarViewManager.h>
-
-lqLaserSelectionReaction::lqLaserSelectionReaction(QAction* parent)
-{
-  QObject::connect(parent, SIGNAL(triggered()), this, SLOT(showDialog()));
-}
-
-void lqLaserSelectionReaction::showDialog()
-{
-  lqLaserSelectionDialog* dlg =
-    new lqLaserSelectionDialog(pqLidarViewManager::instance()->getMainWindow());
-  dlg->setAttribute(Qt::WA_DeleteOnClose);
-  dlg->show();
-}
-```
-Add the `showDialog` slot declaration to the header (`public slots: void showDialog();`).
-
-- [ ] **Step 3: Register in CMake**
-
-In `Qt/ApplicationComponents/CMakeLists.txt`, add `lqLaserSelectionReaction` to `set(classes ...)`.
-
-- [ ] **Step 4: Wire the Tools menu action**
-
-In `Application/Client/LidarViewMainWindow.cxx`, after the existing
-`pqParaViewMenuBuilders::buildToolsMenu(*this->Internals->menuTools);` (line 201), add:
-```cpp
-#include "lqLaserSelectionReaction.h"
-...
-  QAction* actionLaserSelection = new QAction(tr("Laser Selection"), this);
-  this->Internals->menuTools->addAction(actionLaserSelection);
-  new lqLaserSelectionReaction(actionLaserSelection);
-```
-(Place the `#include` with the other includes and the wiring right after `buildToolsMenu`.)
-
-- [ ] **Step 5: Build and smoke-test the app**
-
-Build the full app target. Launch: confirm **Tools → Laser Selection** opens the dialog.
-
-- [ ] **Step 6: Commit**
-```bash
-git add Qt/ApplicationComponents/lqLaserSelectionReaction.h \
-        Qt/ApplicationComponents/lqLaserSelectionReaction.cxx \
-        Qt/ApplicationComponents/CMakeLists.txt \
-        Application/Client/LidarViewMainWindow.cxx
-git commit -m "feat: add Laser Selection Tools-menu entry and reaction"
-```
+- [ ] **Step 5: Build and smoke-test** — confirm **Tools → Laser Selection** (and the
+  toolbar button) opens the dialog.
 
 ---
 
-### Task 4: Manual integration verification
+### Task 4: Auto-attach in `lqOpenLidarReaction`
 
-- [ ] **Step 1: Open a Senfoto008 source** (pcap or live stream) in the built app.
-- [ ] **Step 2: Tools → Laser Selection**, uncheck several channels, click **Apply**.
-  Verify only the selected laser lines render in the point cloud window.
-- [ ] **Step 3: Toggle all / none** via "Enable/Disable all" and "Toggle Selected"; confirm behavior.
-- [ ] **Step 4: Check "Apply in future sessions", Apply, restart app, reopen Tools → Laser Selection**;
-  verify previous channel selection is restored.
-- [ ] **Step 5: Run the unit test** `ctest -R LidarCore::TestLaserSelection` and confirm PASS.
-- [ ] **Step 6: Commit any fixups** if needed (separate commit, e.g. `fix: trigger pipeline re-run after laser selection`).
+**Files:**
+- Modify: `Qt/ApplicationComponents/lqOpenLidarReaction.cxx`
+
+- [ ] **Step 1:** Add `AutoAttachLaserSelection(pqPipelineSource* source)` creating
+  `builder->createFilter("filters", "LaserSelection", source)` and
+  `InitAndDisplaySource(filter, ...)`.
+- [ ] **Step 2:** In `openLidarReader` and `openLidarStream`, after
+  `InitAndDisplaySource(source)`, call `::AutoAttachLaserSelection(source)` before
+  the existing radial-denoise block.
+- [ ] **Step 3:** Update `AutoAttachRadialDenoise` to chain onto the `LaserSelection`
+  filter when present (find it among `source->getAllConsumers()`).
+- [ ] **Step 4: Build + manual verification** (Task 5 below).
+
+---
+
+### Task 5: Manual integration verification
+
+- [ ] **Step 1:** Open a Senfoto008 source (pcap or live stream) in the built app.
+- [ ] **Step 2:** Tools → Laser Selection, uncheck several channels, click **Apply**.
+  Verify only the selected laser lines render.
+- [ ] **Step 3:** Toggle all / none via "Enable/Disable all" and "Toggle Selected".
+- [ ] **Step 4:** Check "Apply in future sessions", Apply, restart, reopen — verify
+  previous selection restored.
+- [ ] **Step 5:** Run `ctest -R lvFiltersProcessingCxxTests` and confirm PASS.
 
 ---
 
 ## Self-Review Notes
 
-- Spec coverage: base filter (Task 1) ✓, dialog (Task 2) ✓, reaction + menu (Task 3) ✓, persistence (Task 2 `accept()`) ✓, all sensors via base (constraint) ✓, Tools menu (Task 3) ✓.
-- The `onApply` re-run trigger (`MarkModifiedFromProducer`) is called out explicitly to avoid a silent no-filter bug.
-- `vtkLidarPacketInterpreter` methods are auto-wrapped by `vtk_module`; no ClientServer edits required (confirmed: class is listed in `LidarCore/IO/Lidar/CMakeLists.txt`).
-- Type consistency: `SetLaserSelection(int,int)`, `GetLaserSelection()`, `IsLaserSelected(int)`, `ApplyLaserSelection(vtkPolyData*)` used identically across Task 1/2/3.
+- Spec coverage: dedicated filter (Task 1) ✓, dialog (Task 2) ✓, reaction + menu +
+  toolbar (Task 3) ✓, auto-attach + denoise chaining (Task 4) ✓, persistence (Task 2
+  `accept()`) ✓, all sensors via filter (constraint) ✓, Tools menu + toolbar (Task 3) ✓.
+- Pushing the mask through the filter's SM property (`repeat_command` + `use_index`)
+  is what reaches the server-side filter and actually changes the rendered cloud —
+  this is the key fix versus approach A (which set the mask on the client-side
+  interpreter and never propagated).
+- 128 explicit `default_values` are required: ParaView does not replicate a single
+  scalar default across `repeat_command` elements.
+- `vtkLidarPacketInterpreter` is intentionally left untouched (approach A reverted).

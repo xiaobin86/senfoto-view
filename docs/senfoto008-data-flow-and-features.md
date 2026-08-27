@@ -83,9 +83,10 @@ vtkLidarStream::RequestData()
 2. 应用传感器坐标变换（除非开启 `PassthroughTransformMode`）。
 3. 构建顶点单元格 `SetVerts()`。
 4. 调用 `Squeeze()` 回收多余内存。
-5. **调用 `ApplyLaserSelection(CurrentFrame)`**（激光通道选择在此生效，见 4.1）。
-6. 将 `CurrentFrame` 推入 `Frames` 缓冲区。
-7. 新建空帧继续接收数据。
+5. 将 `CurrentFrame` 推入 `Frames` 缓冲区。
+6. 新建空帧继续接收数据。
+
+> 注：激光通道选择（Laser Selection）已**不在** `SplitFrame()` 中生效。它现在由一个挂载在 source 下游的独立过滤器 `vtkLaserSelectionFilter` 完成（见 4.1）。
 
 随后 `GetLastFrameAvailable()` 返回 `Frames.back()`，这就是 Stage 1 的输出。
 
@@ -145,51 +146,58 @@ Qt/ApplicationComponents/lqOpenLidarReaction.cxx
 
 ### 4.1 激光通道选择（Laser Selection）
 
+> 实现方案（approach B）：激光通道选择是一个挂载在 source 下游的**独立 VTK 过滤器**
+> `vtkLaserSelectionFilter`（位于 `LidarCore/Filters/Processing`，注册在 `filters` SM 组），
+> 不再修改基类 `vtkLidarPacketInterpreter`。该过滤器读取每点的 `laser_id` 并丢弃被禁用的
+> 通道；掩码经由过滤器的 `LaserSelection` SM 属性推送，因此能可靠到达服务端并触发重算。
+> （早期方案 A 曾把掩码放在解释器基类、在 `SplitFrame()` 中 `ApplyLaserSelection`，但因客户端
+> 掩码无法传播到服务端解释器、视图不变，已回退。）
+
 #### 控制路径
 
 ```
 Qt/ApplicationComponents/lqLaserSelectionReaction.cxx/h
-  └─ showDialog()
-       └─ 打开 Qt/Components/lqLaserSelectionDialog
+  └─ onTriggered() -> 打开 Qt/Components/lqLaserSelectionDialog
 
 Qt/Components/lqLaserSelectionDialog.cxx/h
-  ├─ setLidarSource()      // 遍历 pqServerManagerModel 找到当前 lidar source 的 interpreter
-  └─ onApply() / accept()  // 把掩码写回 interpreter
-       └─ interpreter->SetLaserSelection(i, mask[i])
+  ├─ setLidarSource()      // 找到 source 的 LaserSelection 过滤器代理（消费者中查找）
+  └─ onApply() / accept()  // 把掩码写回过滤器
+       └─ vtkSMPropertyHelper(filterProxy, "LaserSelection").Set(mask)
+       └─ filterProxy->UpdateVTKObjects(); filterProxy->MarkModified(filterProxy)
+
+Qt/ApplicationComponents/lqOpenLidarReaction.cxx
+  └─ AutoAttachLaserSelection(source)   // 打开 pcap/stream 时自动挂载 LaserSelection 过滤器
+  └─ AutoAttachRadialDenoise(source)    // 径向去噪级联在 LaserSelection 过滤器之后
 ```
 
 #### 数据流生效点
 
-激光掩码在**帧最终化阶段、进入渲染之前**生效：
+激光掩码在**管线下游、渲染之前**生效（与径向去噪平级、且去噪级联在其后）：
 
 ```cpp
-// LidarCore/IO/Lidar/vtkLidarPacketInterpreter.cxx
-vtkLidarPacketInterpreter::SplitFrame()
+// LidarCore/Filters/Processing/vtkLaserSelectionFilter.cxx
+int vtkLaserSelectionFilter::RequestData(...)
 {
-    ...
-    this->ApplyLaserSelection(this->CurrentFrame);   // <-- 插入点
-    this->Frames.push_back(this->CurrentFrame);
-    ...
+    // 读取 "laser_id" 数组，构建被保留点的索引
+    // 拷贝保留点 + 点数据 + 顶点单元到输出（禁用通道被丢弃）
 }
 ```
 
 相关 API：
 
 ```cpp
-vtkIntArray* vtkLidarPacketInterpreter::GetLaserSelection();
-void vtkLidarPacketInterpreter::SetLaserSelection(int index, int value);
-bool vtkLidarPacketInterpreter::IsLaserSelected(int laserId);
-void vtkLidarPacketInterpreter::ApplyLaserSelection(vtkPolyData* frame);
+void vtkLaserSelectionFilter::SetLaserSelection(int index, int value);
+vtkIntArray* vtkLaserSelectionFilter::GetLaserSelection();
 ```
 
-`ApplyLaserSelection()` 的工作流程：
+`RequestData()` 的工作流程：
 
-1. 读取每点的 `"laser_id"` 数组。
-2. 根据 `IsLaserSelected()` 构建被保留点的 `vtkSelection`。
-3. 调用 `vtkExtractSelection` 提取子集。
-4. 通过 `frame->ShallowCopy(extracted)` 替换当前帧内容。
+1. 若不存在 `laser_id` 数组，或没有任何通道被禁用，则 `ShallowCopy(input)` 直接透传。
+2. 否则遍历每点，按 `laser_id` 查掩码，收集被保留点的索引。
+3. 将保留点及其点数据拷贝到输出，并重建顶点单元（每个保留点一个顶点），使禁用通道的点被剔除。
 
-因为 `SetLaserSelection()` 会触发 interpreter 的 `Modified()`，而 `vtkLidarReader`/`vtkLidarStream` 都监听了 interpreter 的 `ModifiedEvent`，所以用户调整通道后管线会自动重新执行，新掩码立即生效。
+因为掩码通过过滤器的 `LaserSelection` SM 属性（`repeat_command` + `use_index`）推送并
+`MarkModified()`，服务端过滤器会重新执行，新掩码立即在视图中生效。
 
 ---
 
@@ -284,11 +292,16 @@ Senfoto008 LidarReader / LidarStream
 │ vtkLidarPacketInterpreter::SplitFrame()│
 │   ├─ 加 field data / 坐标变换        │
 │   ├─ 构建顶点单元                    │
-│   ├─ ApplyLaserSelection() ◄─────────┼── 激光通道选择生效
 │   └─ Frames.push_back(CurrentFrame)  │
 └──────────────────────────────────────┘
          │
-         ▼ 如果数据源是 Senfoto008 且设置开启
+         ▼ 每个 lidar source 打开时自动挂载（AutoAttachLaserSelection）
+┌──────────────────────────────────────┐
+│ vtkLaserSelectionFilter              │
+│   └─ 按 laser_id 掩码剔除禁用通道    │ ◄── 激光通道选择生效
+└──────────────────────────────────────┘
+         │
+         ▼ 如果数据源是 Senfoto008 且设置开启（AutoAttachRadialDenoise 级联在其后）
 ┌──────────────────────────────────────┐
 │ lqOpenLidarReaction::                │
 │ AutoAttachRadialDenoise()            │
@@ -319,12 +332,12 @@ Senfoto008 LidarReader / LidarStream
 
 | 功能 | 生效阶段 | 生效文件 | 生效方式 |
 |---|---|---|---|
-| **激光通道选择** | Stage 1：数据解析 / 过滤 | `LidarCore/IO/Lidar/vtkLidarPacketInterpreter.cxx` 的 `SplitFrame()` → `ApplyLaserSelection()` | 在帧最终化时根据掩码提取子集，改变输出的 `vtkPolyData` |
-| **径向距差去噪** | Stage 1 与 Stage 2 之间 | `LidarCore/Filters/Processing/vtkRadialDistanceDenoise.cxx` | 作为外部 filter 挂载在 source 与 representation 之间，对 `vtkPolyData` 做二次过滤 |
+| **激光通道选择** | Stage 1 与 Stage 2 之间 | `LidarCore/Filters/Processing/vtkLaserSelectionFilter.cxx` | 作为外部 filter 挂载在 source 下游，按 `laser_id` 掩码剔除禁用通道 |
+| **径向距差去噪** | Stage 1 与 Stage 2 之间 | `LidarCore/Filters/Processing/vtkRadialDistanceDenoise.cxx` | 作为外部 filter 挂载在 `LaserSelection` 过滤器之后，对 `vtkPolyData` 做二次过滤 |
 
 也就是说：
 
-- **激光通道选择**发生在数据源头，直接决定哪些激光线的点会被产出。
-- **径向距差去噪**发生在管线中，对已经产出的点云做后处理，再交给渲染。
+- **激光通道选择**发生在管线下游（source 之外的独立 filter），决定哪些激光线的点进入后续管线与渲染。
+- **径向距差去噪**发生在管线中、且级联在激光通道选择之后，对已经过通道筛选的点云做后处理，再交给渲染。
 
-两者都是对 `vtkPolyData` 的修改，但一个在 source 内部、一个在 source 外部的 filter 中。
+两者都是挂在 source 外部、对 `vtkPolyData` 做修改的 filter；激光通道选择位于去噪之前。

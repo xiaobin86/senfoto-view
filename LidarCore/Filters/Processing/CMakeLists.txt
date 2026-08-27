@@ -6,7 +6,8 @@ set(classes
   vtkVoxelOverlapFilter
   vtkImagesOperations
   vtkComputeGeodeticCoordinates
-  vtkRadialDistanceDenoise)
+  vtkRadialDistanceDenoise
+  vtkLaserSelectionFilter)
 
 if (TARGET VTK::ImagingMorphological)
   list(APPEND classes vtkImageBasedClustering)

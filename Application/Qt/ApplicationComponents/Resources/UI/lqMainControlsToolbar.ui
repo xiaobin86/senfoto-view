@@ -189,9 +189,6 @@
      <iconset resource="../../../Components/Resources/lvComponents.qrc">
       <normaloff>:/lvComponents/Icons/lqLaserSelection.svg</normaloff>:/lvComponents/Icons/lqLaserSelection.svg</iconset>
     </property>
-    <property name="text">
-     <string>Laser Selection</string>
-    </property>
     <property name="toolTip">
      <string>Select which laser lines are displayed in the point cloud</string>
     </property>
