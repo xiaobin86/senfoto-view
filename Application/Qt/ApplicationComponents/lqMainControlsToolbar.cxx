@@ -28,6 +28,7 @@
 #include "vtkSMInterpretersManagerProxy.h"
 
 #include "lqEnableAdvancedArraysReaction.h"
+#include "lqLaserSelectionReaction.h"
 #include "lqOpenLidarReaction.h"
 #include "lqPythonShellReaction.h"
 #include "lqSavePcapReaction.h"
@@ -54,6 +55,7 @@ void lqMainControlsToolbar::constructor()
   new pqAutoApplyReaction(ui.actionAutoApply);
   new pqDataQueryReaction(ui.actionQuery);
   new lqPythonShellReaction(ui.actionPythonShell);
+  new lqLaserSelectionReaction(ui.actionLaserSelection);
 
   QToolButton* tb = qobject_cast<QToolButton*>(this->widgetForAction(ui.actionLoadPalette));
   if (tb)

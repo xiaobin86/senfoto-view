@@ -213,13 +213,6 @@ LidarViewMainWindow::LidarViewMainWindow()
   // Populate toolbars
   lqLidarViewMenuBuilders::buildToolbars(*this);
 
-  // Also surface the Laser Selection action on the main controls toolbar.
-  if (QToolBar* mainControlsToolbar =
-        this->findChild<QToolBar*>(QLatin1String("mainControlsToolbar")))
-  {
-    mainControlsToolbar->addAction(actionLaserSelection);
-  }
-
   // Setup the View menu. This must be setup after all toolbars and dockwidgets
   // have been created.
   pqParaViewMenuBuilders::buildViewMenu(*this->Internals->menuView, *this);
