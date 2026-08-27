@@ -13,3 +13,4 @@ DEPENDS
   ParaView::VTKExtensionsCore
 PRIVATE_DEPENDS
   LidarView::FiltersGeneral
+  VTK::FiltersExtraction
