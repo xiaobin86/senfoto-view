@@ -89,6 +89,7 @@ set(filters_processing_xml_files
   Filters/ImagesOperations.xml
   Filters/VoxelOverlapFilter.xml
   Filters/ComputeGeodeticCoordinates.xml
+  Filters/RadialDistanceDenoise.xml
 )
 
 if (TARGET VTK::ImagingMorphological)
