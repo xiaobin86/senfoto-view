@@ -98,29 +98,49 @@ lqLaserSelectionDialog::lqLaserSelectionDialog(QWidget* p)
     &QPushButton::clicked, this, &lqLaserSelectionDialog::onApply);
 
   // Resolve the active lidar source's interpreter and size the table.
+  // Only sources whose interpreter resolves non-null are kept; never overwrite a
+  // valid interpreter with a later non-lidar source (which would null it out).
   pqServerManagerModel* smmodel = pqApplicationCore::instance()->getServerManagerModel();
   for (pqPipelineSource* src : smmodel->findItems<pqPipelineSource*>())
   {
-    this->setLidarSource(src);
+    if (GetInterpreter(src))
+    {
+      this->setLidarSource(src);
+    }
   }
 }
 
 //-----------------------------------------------------------------------------
 void lqLaserSelectionDialog::setLidarSource(pqPipelineSource* src)
 {
-  this->LidarSource = src;
-  this->Interpreter = GetInterpreter(src);
-  if (this->Interpreter)
+  if (!src)
   {
-    this->CurrentNumLaser = this->Interpreter->GetNumberOfChannels();
+    return;
+  }
+  vtkLidarPacketInterpreter* interp = GetInterpreter(src);
+  if (!interp)
+  {
+    return;
+  }
+  this->LidarSource = src;
+  this->Interpreter = interp;
+  this->CurrentNumLaser = interp->GetNumberOfChannels();
+  // Size the table to the actual channel count (clamped to NUM_LASER_MAX).
+  // If the source has no known channel count, the default 96-row table stands.
+  if (this->CurrentNumLaser > 0)
+  {
+    this->Internal->Table->setRowCount(qMin(this->CurrentNumLaser, NUM_LASER_MAX));
   }
 }
 
 //-----------------------------------------------------------------------------
 QVector<int> lqLaserSelectionDialog::getLaserSelectionSelector()
 {
-  QVector<int> result(CurrentNumLaser > 0 ? CurrentNumLaser : NUM_LASER_MAX, 1);
-  for (int i = 0; i < this->Internal->Table->rowCount(); ++i)
+  const int numRows = this->Internal->Table->rowCount();
+  // Size the result to the actual number of table rows (which is CurrentNumLaser
+  // when a source is resolved, otherwise the default NUM_LASER_MAX).
+  QVector<int> result(numRows > 0 ? numRows : NUM_LASER_MAX, 1);
+  for (int i = 0; i < numRows; ++i)
   {
     int channel = this->Internal->Table->item(i, 1)->data(Qt::EditRole).toInt();
     if (channel >= 0 && channel < result.size())
@@ -184,11 +204,10 @@ void lqLaserSelectionDialog::onApply()
   {
     this->Interpreter->SetLaserSelection(i, mask[i]);
   }
-  // Force the reader/stream to re-interpret with the new mask.
-  if (this->LidarSource)
-  {
-    this->LidarSource->getProxy()->MarkModifiedFromProducer();
-  }
+  // vtkLidarPacketInterpreter::SetLaserSelection already calls Modified() on the
+  // interpreter, and vtkLidarReader/vtkLidarStream connect OnInterpreterModifiedEvent
+  // to the interpreter's ModifiedEvent, so the new mask automatically triggers
+  // re-interpretation. No manual MarkModified call is needed.
   Q_EMIT laserSelectionChanged();
 }
 
