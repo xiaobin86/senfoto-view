@@ -1,7 +1,7 @@
 #include "vtkRadialDistanceDenoise.h"
 #include <algorithm>
 #include <cmath>
-#include <unordered_map>
+#include <map>
 #include <vector>
 #include <vtkCellArray.h>
 #include <vtkCleanPolyData.h>
@@ -16,14 +16,6 @@
 
 constexpr int POINTS_INPUT_PORT = 0;
 constexpr int OUTPUT_PORT = 0;
-
-namespace
-{
-long long MakeKey(int laserId, int bin)
-{
-  return static_cast<long long>(laserId) * 100000LL + bin;
-}
-}
 
 vtkStandardNewMacro(vtkRadialDistanceDenoise)
 
@@ -50,6 +42,12 @@ int vtkRadialDistanceDenoise::RequestData(vtkInformation*,
   vtkPolyData* output = vtkPolyData::GetData(outputVector, OUTPUT_PORT);
   if (!input)
     return 0;
+
+  if (!this->DistanceArrayName || !this->LaserIdArrayName || !this->AzimuthArrayName)
+  {
+    output->ShallowCopy(input);
+    return 1;
+  }
 
   vtkDataArray* distArr = input->GetPointData()->GetArray(this->DistanceArrayName);
   vtkDataArray* laserArr = input->GetPointData()->GetArray(this->LaserIdArrayName);
@@ -91,7 +89,7 @@ int vtkRadialDistanceDenoise::RequestData(vtkInformation*,
   }
 
   // ===== 一级：跨帧、keyed by (laser_id, 方位角分箱) =====
-  std::unordered_map<long long, double> newPrev;
+  std::map<std::pair<int, int>, double> newPrev;
   if (this->Level1Enabled)
   {
     double binSize = this->AzimuthBinSize > 0.0 ? this->AzimuthBinSize : 0.1;
@@ -99,7 +97,7 @@ int vtkRadialDistanceDenoise::RequestData(vtkInformation*,
     {
       int lid = static_cast<int>(laserArr->GetTuple1(i));
       int bin = static_cast<int>(std::floor(azimArr->GetTuple1(i) / binSize));
-      long long key = MakeKey(lid, bin);
+      auto key = std::make_pair(lid, bin);
       double cur = distArr->GetTuple1(i);
       auto it = this->PrevRange.find(key);
       if (it != this->PrevRange.end() && std::fabs(it->second - cur) > this->Level1Threshold)

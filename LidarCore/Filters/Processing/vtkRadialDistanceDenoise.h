@@ -2,7 +2,7 @@
 #define vtkRadialDistanceDenoise_h
 
 #include "lvFiltersProcessingModule.h"
-#include <unordered_map>
+#include <map>
 #include <vtkPolyData.h>
 #include <vtkPolyDataAlgorithm.h>
 
@@ -55,6 +55,8 @@ private:
   double Level2Threshold = 10.0;
   int NumberOfLasers = 96;
   double AzimuthBinSize = 0.1;
-  std::unordered_map<long long, double> PrevRange;
+  // PrevRange is rebuilt per RequestData call. Level 1 denoising assumes frames are
+  // processed in chronological order and not re-executed on stale inputs.
+  std::map<std::pair<int, int>, double> PrevRange;
 };
 #endif
