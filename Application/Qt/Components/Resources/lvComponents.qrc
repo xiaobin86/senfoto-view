@@ -12,5 +12,6 @@
         <file>Icons/lvSaveAs.svg</file>
         <file>Icons/lvSavePcap.svg</file>
         <file>Icons/lqLaserSelection.svg</file>
+        <file>Icons/lqSpreadSheet.svg</file>
     </qresource>
 </RCC>

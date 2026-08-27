@@ -33,6 +33,11 @@
 #include <vtkLidarReader.h>
 #include <vtkLidarStream.h>
 
+#include <vtkAbstractArray.h>
+#include <vtkDoubleArray.h>
+#include <vtkLidarPacketInterpreter.h>
+#include <vtkTable.h>
+
 #include <vtkSMProperty.h>
 #include <vtkSMPropertyHelper.h>
 #include <vtkSMProxy.h>
@@ -89,22 +94,8 @@ lqLaserSelectionDialog::lqLaserSelectionDialog(QWidget* p)
   this->Internal->setupUi(this);
   this->Internal->Table = this->Internal->LaserTable;
   this->Internal->Table->setColumnCount(3);
-  for (int i = 0; i < NUM_LASER_MAX; ++i)
-  {
-    this->Internal->Table->insertRow(i);
-    auto* cb = new QTableWidgetItem();
-    cb->setCheckState(Qt::Checked);
-    cb->setFlags(Qt::ItemIsSelectable | Qt::ItemIsUserCheckable | Qt::ItemIsEnabled);
-    this->Internal->Table->setItem(i, 0, cb);
-    auto* ch = new QTableWidgetItem();
-    ch->setData(Qt::EditRole, i);
-    ch->setFlags(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
-    this->Internal->Table->setItem(i, 1, ch);
-    auto* vc = new QTableWidgetItem();
-    vc->setData(Qt::EditRole, 0.0);
-    vc->setFlags(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
-    this->Internal->Table->setItem(i, 2, vc);
-  }
+  this->Internal->Table->setHorizontalHeaderLabels(
+    QStringList() << "Enable" << "Channel" << "Pitch Angle (°)");
 
   QObject::connect(this->Internal->Table,
     &QTableWidget::itemChanged, this, &lqLaserSelectionDialog::onItemChanged);
@@ -137,27 +128,75 @@ void lqLaserSelectionDialog::setLidarSource(pqPipelineSource* src)
   this->LidarSource = src;
   this->LaserSelectionFilterProxy = GetLaserSelectionFilterProxy(src);
 
+  this->Internal->Table->blockSignals(true);
+
+  vtkLidarPacketInterpreter* interp = nullptr;
+  vtkObjectBase* client = src->getProxy() ? src->getProxy()->GetClientSideObject() : nullptr;
+  if (auto* r = vtkLidarReader::SafeDownCast(client))
+  {
+    interp = r->GetLidarInterpreter();
+  }
+  else if (auto* s = vtkLidarStream::SafeDownCast(client))
+  {
+    interp = s->GetLidarInterpreter();
+  }
+
+  if (interp)
+  {
+    this->setWindowTitle(
+      QString("Laser Selection - %1").arg(interp->GetSensorModelName().c_str()));
+  }
+
+  int nChannels = interp ? interp->GetNumberOfChannels() : 0;
+  if (nChannels <= 0)
+  {
+    nChannels = NUM_LASER_MAX;
+  }
+
+  vtkTable* calib = interp ? interp->GetCalibrationTable() : nullptr;
+  vtkAbstractArray* vcCol = calib ? calib->GetColumnByName("verticalCorrection") : nullptr;
+
+  this->Internal->Table->setRowCount(nChannels);
+  for (int i = 0; i < nChannels; ++i)
+  {
+    auto* cb = new QTableWidgetItem();
+    cb->setFlags(Qt::ItemIsSelectable | Qt::ItemIsUserCheckable | Qt::ItemIsEnabled);
+    cb->setCheckState(Qt::Checked);
+    this->Internal->Table->setItem(i, 0, cb);
+
+    auto* ch = new QTableWidgetItem();
+    ch->setData(Qt::EditRole, i);
+    ch->setFlags(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
+    this->Internal->Table->setItem(i, 1, ch);
+
+    auto* vc = new QTableWidgetItem();
+    double angle = 0.0;
+    if (vcCol && i < vcCol->GetNumberOfTuples())
+    {
+      angle = vtkDoubleArray::SafeDownCast(vcCol)->GetTuple1(i);
+    }
+    vc->setData(Qt::EditRole, angle);
+    vc->setFlags(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
+    this->Internal->Table->setItem(i, 2, vc);
+  }
+
   const bool haveProp =
     this->LaserSelectionFilterProxy && this->LaserSelectionFilterProxy->GetProperty("LaserSelection");
   pqSettings* settings = pqApplicationCore::instance()->settings();
-  const int numRows = this->Internal->Table->rowCount();
-  for (int i = 0; i < numRows; ++i)
+  for (int i = 0; i < nChannels; ++i)
   {
     bool enabled = true;
     if (haveProp)
     {
-      // Reflect the filter's real current state (server-side truth).
       vtkSMPropertyHelper propHelper(this->LaserSelectionFilterProxy, "LaserSelection");
       const vtkIdType n = propHelper.GetNumberOfElements();
       if (i < n)
       {
         enabled = propHelper.GetAsInt(i) != 0;
       }
-      // channels beyond the filter's configured count stay enabled by default.
     }
     else
     {
-      // No filter attached yet: only fall back to the persisted selection.
       const QVariant v = settings->value(QString("LidarPlugin/LaserSelection%1").arg(i));
       if (v.isValid())
       {
@@ -166,6 +205,7 @@ void lqLaserSelectionDialog::setLidarSource(pqPipelineSource* src)
     }
     this->Internal->Table->item(i, 0)->setCheckState(enabled ? Qt::Checked : Qt::Unchecked);
   }
+  this->Internal->Table->blockSignals(false);
 }
 
 //-----------------------------------------------------------------------------
@@ -190,7 +230,12 @@ void lqLaserSelectionDialog::onItemChanged(QTableWidgetItem* vtkNotUsed(item))
   bool all = true, none = true;
   for (int i = 0; i < this->Internal->Table->rowCount(); ++i)
   {
-    const bool c = this->Internal->Table->item(i, 0)->checkState() == Qt::Checked;
+    QTableWidgetItem* it = this->Internal->Table->item(i, 0);
+    if (!it)
+    {
+      continue;
+    }
+    const bool c = it->checkState() == Qt::Checked;
     all = all && c;
     none = none && !c;
   }

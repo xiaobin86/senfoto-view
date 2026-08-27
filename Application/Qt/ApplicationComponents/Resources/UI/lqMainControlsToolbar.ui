@@ -195,11 +195,27 @@
     <property name="statusTip">
      <string>Laser Selection</string>
     </property>
-   </action>
-   <addaction name="actionOpenPcap"/>
+    </action>
+    <action name="actionSpreadSheet">
+     <property name="icon">
+      <iconset resource="../../../Components/Resources/lvComponents.qrc">
+       <normaloff>:/lvComponents/Icons/lqSpreadSheet.svg</normaloff>:/lvComponents/Icons/lqSpreadSheet.svg</iconset>
+     </property>
+     <property name="text">
+      <string>Spreadsheet</string>
+     </property>
+     <property name="toolTip">
+      <string>Show the point cloud data in a spreadsheet view</string>
+     </property>
+     <property name="statusTip">
+      <string>Spreadsheet View</string>
+     </property>
+    </action>
+    <addaction name="actionOpenPcap"/>
   <addaction name="actionSavePcap"/>
   <addaction name="actionOpenSensorStream"/>
   <addaction name="separator"/>
+  <addaction name="actionSpreadSheet"/>
   <addaction name="actionToggleAdvancedArrays"/>
   <addaction name="actionUpdateConfiguration"/>
   <addaction name="separator"/>
@@ -212,10 +228,10 @@
   <addaction name="actionLoadPalette"/>
   <addaction name="actionAutoApply"/>
   <addaction name="actionQuery"/>
-   <addaction name="actionPythonShell"/>
-   <addaction name="actionLaserSelection"/>
-   <addaction name="separator"/>
-   <addaction name="actionDeleteAll"/>
+  <addaction name="actionPythonShell"/>
+  <addaction name="actionLaserSelection"/>
+  <addaction name="separator"/>
+  <addaction name="actionDeleteAll"/>
  </widget>
  <resources>
   <include location="../../../Components/Resources/lvComponents.qrc"/>

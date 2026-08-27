@@ -21,6 +21,7 @@
 #include <vtkDoubleArray.h>
 #include <vtkFloatArray.h>
 #include <vtkMath.h>
+#include <vtkNew.h>
 #include <vtkObjectFactory.h>
 #include <vtkPointData.h>
 #include <vtkPoints.h>
@@ -52,7 +53,40 @@ double ComputeCorrectedAzimuthDeg(const int* rotUnits, const int* diffs,
     static_cast<unsigned int>(rotUnits[blockIdx] + term) % 36000;
   return static_cast<double>(lastCorrect) / 100.0;
 }
+
+const std::array<double, 96>& GetVerticalAngles96Line()
+{
+  static const std::array<double, 96> angles = {
+    0.0,    0.95,   1.9,    2.85,   3.8,    4.75,   5.7,    6.65,
+    7.6,    8.55,   9.5,    10.45,  11.4,   12.35,  13.3,   14.25,
+    15.2,   16.15,  17.1,   18.05,  19.0,   19.95,  20.9,   21.85,
+    22.8,   23.75,  24.7,   25.65,  26.6,   27.55,  28.5,   29.45,
+    30.4,   31.35,  32.3,   33.24,  34.18,  35.12,  36.06,  37.0,
+    37.94,  38.88,  39.82,  40.76,  41.7,   42.64,  43.58,  44.52,
+    45.46,  46.4,   47.34,  48.28,  49.22,  50.16,  51.1,   52.04,
+    52.98,  53.92,  54.86,  55.8,   56.75,  57.7,   58.65,  59.6,
+    60.55,  61.5,   62.45,  63.4,   64.35,  65.3,   66.25,  67.2,
+    68.15,  69.1,   70.05,  71.0,   71.95,  72.9,   73.85,  74.8,
+    75.75,  76.7,   77.65,  78.6,   79.55,  80.5,   81.45,  82.4,
+    83.35,  84.3,   85.25,  86.2,   87.15,  88.1,   89.05,  90.0
+  };
+  return angles;
 }
+
+const std::array<double, 48>& GetVerticalAngles48Line()
+{
+  static const std::array<double, 48> angles = {
+      0.0,   0.95,   1.9,    2.85,   3.8,    4.75,   5.7,    6.65,
+      7.6,   8.55,   9.5,    10.45,  11.4,   12.35,  13.3,   14.25,
+      15.2,  16.15,  17.1,   18.05,  19.0,   19.95,  20.9,   21.85,
+      22.8,  23.75,  24.7,    25.65,  26.6,   27.55,  28.5,   29.45,
+      30.4,  31.35,  32.3,   33.24,  34.18,  35.12,  36.06,  37.0,
+      37.94, 38.88,  39.82,  40.76,  41.7,   42.64,  43.58,  44.52
+  };
+  return angles;
+}
+
+} // namespace
 
 //-----------------------------------------------------------------------------
 class vtkSenfoto008PacketInterpreter::vtkInternals
@@ -156,6 +190,11 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
     return;
   }
 
+  this->SetCalibrationForModel(lidarModel);
+
+  vtkDoubleArray* vcArr = vtkDoubleArray::SafeDownCast(
+    this->CalibrationData->GetColumnByName("verticalCorrection"));
+
   const double currentAzimuth = senfoto008::GetBlockAzimuth(data, 0);
   if (internals->HasLastAzimuth && currentAzimuth < internals->LastAzimuth)
   {
@@ -171,7 +210,6 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
 
   if (lidarModel == senfoto008::LIDAR_MODEL_48_LINE)
   {
-    const auto& verticalAngles = senfoto008::GetVerticalAngles48Line();
     for (std::size_t blockIndex = 0; blockIndex < senfoto008::DATA_BLOCKS; ++blockIndex)
     {
       if (!senfoto008::IsValidDataBlock(data, blockIndex))
@@ -191,7 +229,8 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
         const double distM = senfoto008::GetChannelDistance(data, blockIndex, channelIndex);
         const std::uint8_t intensity =
           senfoto008::GetChannelIntensity(data, blockIndex, channelIndex);
-        const double elevationDeg = verticalAngles[channelIndex];
+        const double elevationDeg =
+          vcArr ? vcArr->GetTuple1(static_cast<vtkIdType>(channelIndex)) : 0.0;
         this->AddPoint(azimuth, elevationDeg, distM,
           static_cast<std::uint8_t>(channelIndex), intensity, packetTimestamp);
       }
@@ -199,8 +238,6 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
   }
   else // 96-line single return
   {
-    const auto& verticalAngles = senfoto008::GetVerticalAngles96Line();
-
     // Precompute per-block rotational position (0.01-degree units) and the
     // inter-block azimuth deltas, mirroring the SenFoTo reference
     // (getRotationalPosition + diffs[] in ProcessPacket, HDL_FIRING_PER_PKT = 8).
@@ -241,7 +278,7 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
             senfoto008::GetChannelIntensity(data, firstBlock, channelIndex);
           const double azimuthDeg =
             ComputeCorrectedAzimuthDeg(rotUnits, diffs, static_cast<int>(firstBlock), laserId);
-          this->AddPoint(azimuthDeg, verticalAngles[laserId], distM, laserId, intensity, packetTimestamp);
+          this->AddPoint(azimuthDeg, vcArr ? vcArr->GetTuple1(static_cast<vtkIdType>(laserId)) : 0.0, distM, laserId, intensity, packetTimestamp);
         }
 
         // Second sub-block: lasers 48..95, firingWithinBlock = 1.
@@ -256,7 +293,7 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
             senfoto008::GetChannelIntensity(data, secondBlock, channelIndex);
           const double azimuthDeg =
             ComputeCorrectedAzimuthDeg(rotUnits, diffs, static_cast<int>(secondBlock), laserId);
-          this->AddPoint(azimuthDeg, verticalAngles[laserId], distM, laserId, intensity, packetTimestamp);
+          this->AddPoint(azimuthDeg, vcArr ? vcArr->GetTuple1(static_cast<vtkIdType>(laserId)) : 0.0, distM, laserId, intensity, packetTimestamp);
         }
       }
     }
@@ -348,4 +385,34 @@ vtkSmartPointer<vtkPolyData> vtkSenfoto008PacketInterpreter::CreateNewEmptyFrame
 
   polyData->GetPointData()->SetActiveScalars("intensity");
   return polyData;
+}
+
+//-----------------------------------------------------------------------------
+void vtkSenfoto008PacketInterpreter::SetCalibrationForModel(std::uint8_t lidarModel)
+{
+  if (this->CalibrationReportedNumLasers > 0 &&
+      this->CalibrationData->GetColumnByName("verticalCorrection") != nullptr)
+  {
+    return;
+  }
+  auto fill = [this](const auto& angles) {
+    this->CalibrationReportedNumLasers = static_cast<int>(angles.size());
+    vtkNew<vtkDoubleArray> vc;
+    vc->SetName("verticalCorrection");
+    vc->SetNumberOfComponents(1);
+    vc->SetNumberOfTuples(static_cast<vtkIdType>(angles.size()));
+    for (std::size_t i = 0; i < angles.size(); ++i)
+    {
+      vc->SetTuple1(static_cast<vtkIdType>(i), angles[i]);
+    }
+    this->CalibrationData->AddColumn(vc);
+  };
+  if (lidarModel == senfoto008::LIDAR_MODEL_48_LINE)
+  {
+    fill(GetVerticalAngles48Line());
+  }
+  else
+  {
+    fill(GetVerticalAngles96Line());
+  }
 }

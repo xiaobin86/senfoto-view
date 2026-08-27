@@ -84,6 +84,8 @@ private:
 
   bool IsAzimuthInRange(double azimuthDeg) const;
 
+  void SetCalibrationForModel(std::uint8_t lidarModel);
+
   double MinDistance = 0.0;
   double MaxDistance = 10000.0;
   double StartAngle = 0.0;

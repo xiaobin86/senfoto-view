@@ -25,8 +25,12 @@
 #include <pqSaveDataReaction.h>
 #include <pqUndoRedoReaction.h>
 
+#include <pqCoreUtilities.h>
+#include <QMainWindow>
+
 #include "vtkSMInterpretersManagerProxy.h"
 
+#include "lqDockableSpreadSheetReaction.h"
 #include "lqEnableAdvancedArraysReaction.h"
 #include "lqLaserSelectionReaction.h"
 #include "lqOpenLidarReaction.h"
@@ -56,6 +60,13 @@ void lqMainControlsToolbar::constructor()
   new pqDataQueryReaction(ui.actionQuery);
   new lqPythonShellReaction(ui.actionPythonShell);
   new lqLaserSelectionReaction(ui.actionLaserSelection);
+
+  QMainWindow* mainWindow = qobject_cast<QMainWindow*>(this->parent());
+  if (!mainWindow)
+  {
+    mainWindow = qobject_cast<QMainWindow*>(pqCoreUtilities::mainWidget());
+  }
+  new lqDockableSpreadSheetReaction(ui.actionSpreadSheet, mainWindow);
 
   // The main controls toolbar is icon-only. Give the Laser Selection button an
   // icon (set in the .ui) and also show its text, so it is always visible even
