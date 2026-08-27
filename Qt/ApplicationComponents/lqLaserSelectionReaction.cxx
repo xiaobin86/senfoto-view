@@ -16,7 +16,7 @@
 #include "lqLaserSelectionReaction.h"
 
 #include "lqLaserSelectionDialog.h"
-#include "lqLidarViewManager.h"
+#include "lqLidarCoreManager.h"
 
 #include <QAction>
 
@@ -31,7 +31,7 @@ lqLaserSelectionReaction::lqLaserSelectionReaction(QAction* parent)
 void lqLaserSelectionReaction::showDialog()
 {
   lqLaserSelectionDialog* dlg =
-    new lqLaserSelectionDialog(lqLidarViewManager::instance()->getMainWindow());
+    new lqLaserSelectionDialog(lqLidarCoreManager::getMainWindow());
   dlg->setAttribute(Qt::WA_DeleteOnClose);
   dlg->show();
 }

@@ -45,7 +45,15 @@ vtkLidarPacketInterpreter* GetInterpreter(pqPipelineSource* src)
   {
     return nullptr;
   }
+  // The lidar reader/stream exposes its interpreter via the "PacketInterpreter"
+  // property (see lqSensorWidget.cxx and lqHelper). The base LidarCore
+  // reader/stream use "Interpreter" (CommonLidarPacketInterpreter proxy), so try
+  // "PacketInterpreter" first and fall back to "Interpreter" for base sensors.
   vtkSMProxy* interpProxy = vtkSMPropertyHelper(proxy, "PacketInterpreter").GetAsProxy();
+  if (!interpProxy)
+  {
+    interpProxy = vtkSMPropertyHelper(proxy, "Interpreter").GetAsProxy();
+  }
   if (!interpProxy)
   {
     return nullptr;
@@ -125,21 +133,35 @@ void lqLaserSelectionDialog::setLidarSource(pqPipelineSource* src)
   this->LidarSource = src;
   this->Interpreter = interp;
   this->CurrentNumLaser = interp->GetNumberOfChannels();
-  // Size the table to the actual channel count (clamped to NUM_LASER_MAX).
-  // If the source has no known channel count, the default 96-row table stands.
-  if (this->CurrentNumLaser > 0)
+  // Keep the full NUM_LASER_MAX-row table so that, for sensors where laser_id
+  // can exceed GetNumberOfChannels() (e.g. dual-return offsets), every channel
+  // 0..NUM_LASER_MAX-1 remains toggleable and maps into the selection mask.
+
+  // Read back the persisted selection so "Apply in future sessions" takes
+  // effect immediately (applied to the interpreter, not only visually).
+  pqSettings* settings = pqApplicationCore::instance()->settings();
+  const int numRows = this->Internal->Table->rowCount();
+  for (int i = 0; i < numRows; ++i)
   {
-    this->Internal->Table->setRowCount(qMin(this->CurrentNumLaser, NUM_LASER_MAX));
+    int channel = this->Internal->Table->item(i, 1)->data(Qt::EditRole).toInt();
+    if (channel < 0 || channel >= NUM_LASER_MAX)
+    {
+      continue;
+    }
+    const bool enabled =
+      settings->value(QString("LidarPlugin/LaserSelection%1").arg(channel), true).toBool();
+    this->Internal->Table->item(i, 0)->setCheckState(enabled ? Qt::Checked : Qt::Unchecked);
+    this->Interpreter->SetLaserSelection(channel, enabled ? 1 : 0);
   }
 }
 
 //-----------------------------------------------------------------------------
 QVector<int> lqLaserSelectionDialog::getLaserSelectionSelector()
 {
+  // Size the result to NUM_LASER_MAX so every possible channel index maps into
+  // the mask, regardless of the sensor's reported channel count.
+  QVector<int> result(NUM_LASER_MAX, 1);
   const int numRows = this->Internal->Table->rowCount();
-  // Size the result to the actual number of table rows (which is CurrentNumLaser
-  // when a source is resolved, otherwise the default NUM_LASER_MAX).
-  QVector<int> result(numRows > 0 ? numRows : NUM_LASER_MAX, 1);
   for (int i = 0; i < numRows; ++i)
   {
     int channel = this->Internal->Table->item(i, 1)->data(Qt::EditRole).toInt();
