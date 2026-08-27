@@ -24,22 +24,19 @@
 #include <pqServerManagerModel.h>
 #include <pqSettings.h>
 
-#include <vtkLidarPacketInterpreter.h>
-#include <vtkLidarReader.h>
-#include <vtkLidarStream.h>
 #include <vtkSMProperty.h>
 #include <vtkSMPropertyHelper.h>
 #include <vtkSMProxy.h>
 
 namespace
 {
-constexpr int NUM_LASER_MAX = 96;
+constexpr int NUM_LASER_MAX = 128;
 
-// Resolve the client-side vtkLidarPacketInterpreter from a lidar source proxy.
-// The most reliable way (used by vvLaserSelectionDialog and lqSensorWidget) is to
-// reach the reader/stream algorithm and call GetLidarInterpreter(). Resolving via
-// the "PacketInterpreter"/"Interpreter" SM sub-proxy is kept only as a fallback.
-vtkLidarPacketInterpreter* GetInterpreter(pqPipelineSource* src)
+// Resolve the interpreter SUB-PROXY (SM) from a lidar source. Returns null when
+// the source is not a lidar source (i.e. has no interpreter sub-proxy).
+// Pushing the mask through this proxy is what makes it reach the server-side
+// interpreter and actually re-split the produced frames.
+vtkSMProxy* GetInterpreterProxy(pqPipelineSource* src)
 {
   if (!src)
   {
@@ -50,33 +47,18 @@ vtkLidarPacketInterpreter* GetInterpreter(pqPipelineSource* src)
   {
     return nullptr;
   }
-  vtkObjectBase* client = proxy->GetClientSideObject();
-  if (client)
-  {
-    if (vtkLidarReader* reader = vtkLidarReader::SafeDownCast(client))
-    {
-      return reader->GetLidarInterpreter();
-    }
-    if (vtkLidarStream* stream = vtkLidarStream::SafeDownCast(client))
-    {
-      return stream->GetLidarInterpreter();
-    }
-  }
-  // Fallback: some lidar sources expose the interpreter as an SM sub-proxy.
-  // Check GetProperty() first to avoid vtkSMPropertyHelper's "Failed to locate
-  // property" warning spam for sources that do not have these properties.
   if (vtkSMProperty* prop = proxy->GetProperty("PacketInterpreter"))
   {
     if (vtkSMProxy* interpProxy = vtkSMPropertyHelper(prop).GetAsProxy())
     {
-      return vtkLidarPacketInterpreter::SafeDownCast(interpProxy->GetClientSideObject());
+      return interpProxy;
     }
   }
   if (vtkSMProperty* prop = proxy->GetProperty("Interpreter"))
   {
     if (vtkSMProxy* interpProxy = vtkSMPropertyHelper(prop).GetAsProxy())
     {
-      return vtkLidarPacketInterpreter::SafeDownCast(interpProxy->GetClientSideObject());
+      return interpProxy;
     }
   }
   return nullptr;
@@ -126,13 +108,11 @@ lqLaserSelectionDialog::lqLaserSelectionDialog(QWidget* p)
   QObject::connect(this->Internal->apply,
     &QPushButton::clicked, this, &lqLaserSelectionDialog::onApply);
 
-  // Resolve the active lidar source's interpreter and size the table.
-  // Only sources whose interpreter resolves non-null are kept; never overwrite a
-  // valid interpreter with a later non-lidar source (which would null it out).
+  // Resolve the active lidar source's interpreter and initialize the table.
   pqServerManagerModel* smmodel = pqApplicationCore::instance()->getServerManagerModel();
   for (pqPipelineSource* src : smmodel->findItems<pqPipelineSource*>())
   {
-    if (GetInterpreter(src))
+    if (GetInterpreterProxy(src))
     {
       this->setLidarSource(src);
     }
@@ -146,53 +126,64 @@ void lqLaserSelectionDialog::setLidarSource(pqPipelineSource* src)
   {
     return;
   }
-  vtkLidarPacketInterpreter* interp = GetInterpreter(src);
-  if (!interp)
+  vtkSMProxy* interpProxy = GetInterpreterProxy(src);
+  if (!interpProxy)
   {
     return;
   }
   this->LidarSource = src;
-  this->Interpreter = interp;
-  this->CurrentNumLaser = interp->GetNumberOfChannels();
-  // Keep the full NUM_LASER_MAX-row table so that, for sensors where laser_id
-  // can exceed GetNumberOfChannels() (e.g. dual-return offsets), every channel
-  // 0..NUM_LASER_MAX-1 remains toggleable and maps into the selection mask.
+  this->InterpreterProxy = interpProxy;
 
-  // Read back the persisted selection so "Apply in future sessions" takes
-  // effect immediately (applied to the interpreter, not only visually).
+  // Initialize the checkboxes from the current SM property (server-side truth),
+  // overlaid by any persisted per-session selection stored in pqSettings.
+  const bool haveProp = (interpProxy->GetProperty("LaserSelection") != nullptr);
+  vtkSMPropertyHelper propHelper(interpProxy, "LaserSelection");
   pqSettings* settings = pqApplicationCore::instance()->settings();
   const int numRows = this->Internal->Table->rowCount();
   for (int i = 0; i < numRows; ++i)
   {
-    int channel = this->Internal->Table->item(i, 1)->data(Qt::EditRole).toInt();
-    if (channel < 0 || channel >= NUM_LASER_MAX)
+    bool enabled = true;
+    if (haveProp && i < propHelper.GetNumberOfElements())
     {
-      continue;
+      enabled = propHelper.GetAsInt(i) != 0;
     }
-    const bool enabled =
-      settings->value(QString("LidarPlugin/LaserSelection%1").arg(channel), true).toBool();
+    const QVariant v = settings->value(QString("LidarPlugin/LaserSelection%1").arg(i));
+    if (v.isValid())
+    {
+      enabled = v.toBool();
+    }
     this->Internal->Table->item(i, 0)->setCheckState(enabled ? Qt::Checked : Qt::Unchecked);
-    this->Interpreter->SetLaserSelection(channel, enabled ? 1 : 0);
   }
 }
 
 //-----------------------------------------------------------------------------
 QVector<int> lqLaserSelectionDialog::getLaserSelectionSelector()
 {
-  // Size the result to NUM_LASER_MAX so every possible channel index maps into
-  // the mask, regardless of the sensor's reported channel count.
   QVector<int> result(NUM_LASER_MAX, 1);
   const int numRows = this->Internal->Table->rowCount();
   for (int i = 0; i < numRows; ++i)
   {
-    int channel = this->Internal->Table->item(i, 1)->data(Qt::EditRole).toInt();
+    const int channel = this->Internal->Table->item(i, 1)->data(Qt::EditRole).toInt();
     if (channel >= 0 && channel < result.size())
     {
-      result[channel] =
-        (this->Internal->Table->item(i, 0)->checkState() == Qt::Checked) ? 1 : 0;
+      result[channel] = (this->Internal->Table->item(i, 0)->checkState() == Qt::Checked) ? 1 : 0;
     }
   }
   return result;
+}
+
+//-----------------------------------------------------------------------------
+void lqLaserSelectionDialog::onItemChanged(QTableWidgetItem* vtkNotUsed(item))
+{
+  bool all = true, none = true;
+  for (int i = 0; i < this->Internal->Table->rowCount(); ++i)
+  {
+    const bool c = this->Internal->Table->item(i, 0)->checkState() == Qt::Checked;
+    all = all && c;
+    none = none && !c;
+  }
+  this->Internal->EnableDisableAll->setCheckState(
+    all ? Qt::Checked : (none ? Qt::Unchecked : Qt::PartiallyChecked));
 }
 
 //-----------------------------------------------------------------------------
@@ -206,20 +197,6 @@ void lqLaserSelectionDialog::onToggleSelected()
     }
   }
   Q_EMIT laserSelectionChanged();
-}
-
-//-----------------------------------------------------------------------------
-void lqLaserSelectionDialog::onItemChanged(QTableWidgetItem* vtkNotUsed(item))
-{
-  bool all = true, none = true;
-  for (int i = 0; i < this->Internal->Table->rowCount(); ++i)
-  {
-    bool c = this->Internal->Table->item(i, 0)->checkState() == Qt::Checked;
-    all = all && c;
-    none = none && !c;
-  }
-  this->Internal->EnableDisableAll->setCheckState(
-    all ? Qt::Checked : (none ? Qt::Unchecked : Qt::PartiallyChecked));
 }
 
 //-----------------------------------------------------------------------------
@@ -238,27 +215,31 @@ void lqLaserSelectionDialog::onEnableDisableAll(int state)
 //-----------------------------------------------------------------------------
 void lqLaserSelectionDialog::onApply()
 {
-  if (!this->LidarSource)
+  if (!this->LidarSource || !this->InterpreterProxy)
   {
     return;
   }
-  // Re-resolve the interpreter in case it was re-created (e.g. a live stream
-  // re-initializes its interpreter after the dialog was built).
-  vtkLidarPacketInterpreter* interp = GetInterpreter(this->LidarSource);
-  if (!interp)
-  {
-    return;
-  }
-  this->Interpreter = interp;
+  // Build the full mask and push it through the SM property so it reaches the
+  // server-side interpreter (which is the object that actually splits frames).
   QVector<int> mask = this->getLaserSelectionSelector();
-  for (int i = 0; i < mask.size(); ++i)
+  vtkSMPropertyHelper propHelper(this->InterpreterProxy, "LaserSelection");
+  const int nElem = propHelper.GetNumberOfElements();
+  if (nElem == mask.size())
   {
-    interp->SetLaserSelection(i, mask[i]);
+    propHelper.Set(mask.data(), mask.size());
   }
-  // vtkLidarPacketInterpreter::SetLaserSelection calls Modified() on the interpreter,
-  // and vtkLidarReader/vtkLidarStream forward that to a re-interpretation via
-  // OnInterpreterModifiedEvent. Force the SM proxy to push/update so the view
-  // actually refreshes.
+  else
+  {
+    QVector<int> m(nElem, 1);
+    for (int i = 0; i < mask.size() && i < nElem; ++i)
+    {
+      m[i] = mask[i];
+    }
+    propHelper.Set(m.data(), nElem);
+  }
+  this->InterpreterProxy->UpdateVTKObjects();
+
+  // Force the owning reader/stream proxy to re-execute and refresh the view.
   if (vtkSMProxy* proxy = this->LidarSource->getProxy())
   {
     proxy->MarkModified(proxy);

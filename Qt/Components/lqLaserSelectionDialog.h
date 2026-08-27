@@ -17,19 +17,21 @@
 #define lqLaserSelectionDialog_h
 
 #include "lqComponentsModule.h"
-#include "vtkLidarPacketInterpreter.h"
 #include "pqPipelineSource.h"
 
 #include <QDialog>
 #include <QVector>
 
+class vtkSMProxy;
 class QTableWidgetItem;
 
 /**
  * lqLaserSelectionDialog allows the user to enable/disable individual lidar
- * channels (lasers) of the active lidar source. The selection mask is written
- * to the source's vtkLidarPacketInterpreter through the Task 1 API:
- *   SetLaserSelection(int, int) / IsLaserSelected(int) / GetLaserSelection().
+ * channels (lasers) of the active lidar source. The selection mask is pushed
+ * to the source's interpreter sub-proxy through the "LaserSelection" SM
+ * property (which forwards, per channel, to vtkLidarPacketInterpreter::
+ * SetLaserSelection(int index, int value)). Pushing via SM is required so the
+ * mask reaches the server-side interpreter and the pipeline re-splits frames.
  */
 class LQCOMPONENTS_EXPORT lqLaserSelectionDialog : public QDialog
 {
@@ -40,10 +42,10 @@ public:
   lqLaserSelectionDialog(QWidget* p = nullptr);
   ~lqLaserSelectionDialog() override;
 
-  /// Returns the channel mask (1 = enabled, 0 = disabled), indexed by firing order.
+  /// Returns the channel mask (1 = enabled, 0 = disabled), indexed by laser_id.
   QVector<int> getLaserSelectionSelector();
 
-  /// Resolves the interpreter from the active lidar source and sizes the table.
+  /// Resolves the interpreter sub-proxy from the active lidar source.
   void setLidarSource(pqPipelineSource* src);
 
 public Q_SLOTS:
@@ -61,8 +63,7 @@ private:
   pqInternal* Internal;
 
   pqPipelineSource* LidarSource = nullptr;
-  vtkLidarPacketInterpreter* Interpreter = nullptr;
-  int CurrentNumLaser = 0;
+  vtkSMProxy* InterpreterProxy = nullptr;
 };
 
 #endif // !lqLaserSelectionDialog_h
