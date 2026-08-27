@@ -18,6 +18,7 @@
 #include <QApplication>
 #include <QDebug>
 #include <QProgressDialog>
+#include <QSettings>
 #include <QString>
 
 #include <vtkCommand.h>
@@ -68,6 +69,27 @@ void InitAndDisplaySource(pqPipelineSource* source, vtkSMProxy* prototype, bool 
   pqView* view = pqActiveObjects::instance().activeView();
   controller->Show(source->getSourceProxy(), 0, view->getViewProxy());
   pqActiveObjects::instance().setActiveSource(source);
+}
+
+bool IsRadialDenoiseAutoAttachEnabled()
+{
+  return QSettings().value("LidarView/AutoAttachRadialDenoise", true).toBool();
+}
+
+void AutoAttachRadialDenoise(pqPipelineSource* source)
+{
+  if (!source)
+  {
+    return;
+  }
+  pqObjectBuilder* builder = pqApplicationCore::instance()->getObjectBuilder();
+  pqPipelineSource* filter = builder->createFilter("filters", "RadialDistanceDenoise", source);
+  if (!filter)
+  {
+    return;
+  }
+  filter->getProxy()->UpdateVTKObjects();
+  ::InitAndDisplaySource(filter, filter->getProxy(), true);
 }
 
 // Keep sending signals to the qt app when loading heavy file
@@ -179,6 +201,10 @@ bool lqOpenLidarReaction::openLidarPcap(const QString& filename,
   if (source)
   {
     ::InitAndDisplaySource(source, prototype, true);
+    if (QString(prototype->GetXMLName()).startsWith("Senfoto008") && IsRadialDenoiseAutoAttachEnabled())
+    {
+      AutoAttachRadialDenoise(source);
+    }
     lqRecentlyUsedPcapLoader::addPcapFileToRecentResources(server, filename, prototype);
   }
 
@@ -221,6 +247,10 @@ bool lqOpenLidarReaction::openLidarStream()
     return false;
   }
   ::InitAndDisplaySource(source, prototype, true);
+  if (QString(prototype->GetXMLName()).startsWith("Senfoto008") && IsRadialDenoiseAutoAttachEnabled())
+  {
+    AutoAttachRadialDenoise(source);
+  }
   return true;
 }
 
