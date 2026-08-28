@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "name": "Mac",
+      "compileCommands": "../build/superbuild/lidarview/build/compile_commands.json",
+      "intelliSenseMode": "macos-clang-arm64",
+      "compilerPath": "/usr/bin/clang"
+    }
+  ],
+  "version": 4
+}

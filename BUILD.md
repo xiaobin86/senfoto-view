@@ -270,3 +270,38 @@ for f in "$QT6/lib/"*.framework; do ln -sf "$f" build/install/lib/; done
 - **子模块拉取失败？** 确认网络可访问 `gitlab.kitware.com`，或手动
   `cd lidarview && git submodule update --init --recursive`。
 - **更多排错**：见 superbuild 仓库 `Documentation/faq.md`、`Documentation/install_qt.md`。
+
+---
+
+## 11. VSCode / IntelliSense 配置（代码跳转）
+
+VSCode 的 C/C++ 插件默认不认识 Qt / ParaView / VTK 的头文件，导致
+“转到定义”跳不进 `QtCore` 等、且满屏红色波浪线。解决办法是让它读取构建时
+生成的 **`compile_commands.json`**（里面记录了每个源文件真实的包含路径）。
+
+> 前提：已按上面步骤完成构建（`build/` 目录存在）。
+
+**一次性生成 `compile_commands.json`**（只重跑 cmake 配置、不重编，约 10 秒）：
+
+```bash
+cd build
+cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ./superbuild/lidarview/build
+```
+
+生成的文件位于 `build/superbuild/lidarview/build/compile_commands.json`。
+
+**仓库已内置配置**：本仓库在源码根目录带了 `.vscode/c_cpp_properties.json`，
+其中 `compileCommands` 用的是**相对路径** `../build/superbuild/lidarview/build/compile_commands.json`
+（基于“在源码根目录打开 VSCode”的约定，构建目录是源码根目录的同级 `../build`）。
+所以新电脑只要：
+
+1. 克隆并按本指南构建；
+2. 执行上面那条 `cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ...`；
+3. 在 VSCode 里 `Ctrl+Shift+P` → `Developer: Reload Window`。
+
+之后 “转到定义 / 查看引用 / 悬浮文档” 等都能正常使用。
+
+> 注意：`compile_commands.json` 是**构建产物**（不在版本库里、会随构建变化），
+> 换机器或执行过 `./build.sh --clean` 后需重新生成一次上面的命令。
+> 若你在 VSCode 里打开的是外层目录而非源码根目录，请相应调整该相对路径。
+

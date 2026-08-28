@@ -11,27 +11,27 @@
 
 先建立一张「地图」，后面提到文件时你才知道它在哪、为什么在那。
 
-| 目录 | 作用 | 你会在哪里遇到它 |
-|---|---|---|
-| `Application/` | **应用程序外壳**：主窗口、可执行入口、面向最终用户的 GUI 组装 | 改主窗口、加菜单/工具栏入口、注册 app 级资源 |
-| `Application/Client/` | 主窗口 `LidarViewMainWindow` 及其 `.ui`，lidar 专用的 source/filter XML | 在 Tools 菜单加 action、改主窗口布局 |
-| `Application/Qt/` | app 专属的 Qt 组件（工具栏、菜单构建器、界面模式管理） | 改主工具栏、改界面模式切换逻辑 |
-| `LidarCore/` | **核心数据与分析能力**：VTK 算法、IO、LidarCorePlugin | 写 filter、写 reader/stream 基础类、注册 ServerManager XML |
-| `LidarCore/IO/Lidar/` | lidar 数据 IO：reader、stream、解释器基类 | 理解数据怎么进来（`vtkLidarReader` 等） |
-| `LidarCore/Filters/Processing/` | 所有点云处理 filter（去噪、通道选择等） | 写新的点云处理 filter |
-| `LidarCore/Plugin/` | LidarCorePlugin 的 ServerManager XML 与资源 | 注册 filter/reader 的 XML 到 ParaView |
-| `LidarCore/Remoting/ServerManager/` | source/reader 的服务器端代理（`vtkSMLidarReaderProxy` 等） | 一般不需要改，理解管线代理即可 |
-| `Qt/` | **通用 Qt 组件**：与 ParaView 紧密耦合的 UI 模块 | 写对话框、Reaction、属性控件 |
-| `Qt/ApplicationComponents/` | 通用 Reactions 与工具栏（如 `lqOpenLidarReaction`、`lqDockableSpreadSheetReaction`） | 加自动挂载逻辑、加 Reaction |
-| `Qt/Components/` | 通用对话框与控件（如 `lqLaserSelectionDialog`） | 写功能面板/对话框 |
-| `Plugins/` | **设备/厂商插件**：每种雷达一个独立插件 | 新增雷达类型 |
-| `Plugins/Senfoto008Plugin/` | Senfoto008 雷达插件（本文案例 4.1） | 参考模板 |
-| `Examples/` | 官方参考样例（必读） | 照抄正确写法 |
-| `Examples/Plugins/` | 各种插件示例：新解释器、Filter、时间切片等 | 写新功能前先找同类型样板 |
-| `CMake/` | 构建辅助脚本 | 一般不用改 |
-| `Testing/` | 顶层测试 | 加测试时参考 |
-| `Utilities/` | Doxygen / Sphinx 等文档工具 | 不用管 |
-| `docs/` | 项目文档（本文所在处） | — |
+| 目录                                  | 作用                                                                         | 你会在哪里遇到它                                          |
+| ----------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------- |
+| `Application/`                      | **应用程序外壳**：主窗口、可执行入口、面向最终用户的 GUI 组装                                        | 改主窗口、加菜单/工具栏入口、注册 app 级资源                         |
+| `Application/Client/`               | 主窗口 `LidarViewMainWindow` 及其 `.ui`，lidar 专用的 source/filter XML             | 在 Tools 菜单加 action、改主窗口布局                         |
+| `Application/Qt/`                   | app 专属的 Qt 组件（工具栏、菜单构建器、界面模式管理）                                            | 改主工具栏、改界面模式切换逻辑                                   |
+| `LidarCore/`                        | **核心数据与分析能力**：VTK 算法、IO、LidarCorePlugin                                    | 写 filter、写 reader/stream 基础类、注册 ServerManager XML |
+| `LidarCore/IO/Lidar/`               | lidar 数据 IO：reader、stream、解释器基类                                            | 理解数据怎么进来（`vtkLidarReader` 等）                      |
+| `LidarCore/Filters/Processing/`     | 所有点云处理 filter（去噪、通道选择等）                                                    | 写新的点云处理 filter                                    |
+| `LidarCore/Plugin/`                 | LidarCorePlugin 的 ServerManager XML 与资源                                    | 注册 filter/reader 的 XML 到 ParaView                 |
+| `LidarCore/Remoting/ServerManager/` | source/reader 的服务器端代理（`vtkSMLidarReaderProxy` 等）                           | 一般不需要改，理解管线代理即可                                   |
+| `Qt/`                               | **通用 Qt 组件**：与 ParaView 紧密耦合的 UI 模块                                        | 写对话框、Reaction、属性控件                                |
+| `Qt/ApplicationComponents/`         | 通用 Reactions 与工具栏（如 `lqOpenLidarReaction`、`lqDockableSpreadSheetReaction`） | 加自动挂载逻辑、加 Reaction                                |
+| `Qt/Components/`                    | 通用对话框与控件（如 `lqLaserSelectionDialog`）                                       | 写功能面板/对话框                                         |
+| `Plugins/`                          | **设备/厂商插件**：每种雷达一个独立插件                                                     | 新增雷达类型                                            |
+| `Plugins/Senfoto008Plugin/`         | Senfoto008 雷达插件（本文案例 4.1）                                                  | 参考模板                                              |
+| `Examples/`                         | 官方参考样例（必读）                                                                 | 照抄正确写法                                            |
+| `Examples/Plugins/`                 | 各种插件示例：新解释器、Filter、时间切片等                                                   | 写新功能前先找同类型样板                                      |
+| `CMake/`                            | 构建辅助脚本                                                                     | 一般不用改                                             |
+| `Testing/`                          | 顶层测试                                                                       | 加测试时参考                                            |
+| `Utilities/`                        | Doxygen / Sphinx 等文档工具                                                     | 不用管                                               |
+| `docs/`                             | 项目文档（本文所在处）                                                                | —                                                 |
 
 **一句话记忆**：`LidarCore` 管「数据和算法」，`Qt` 管「界面组件」，`Plugins` 管「设备」，`Application` 管「把前面三者拼成一个产品」。
 
