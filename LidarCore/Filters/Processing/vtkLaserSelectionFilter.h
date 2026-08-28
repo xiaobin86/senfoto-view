@@ -1,3 +1,11 @@
+// ============================================================
+// 功能：SenFoToView 新增功能 —— 激光通道选择（LaserSelection）filter 类声明；
+//        按逐点 laser_id 数组 + 使能掩码，剔除被禁用的激光通道。
+// 作者：acelan
+// 新建时间：2026-08-28
+// 修改时间：2026-08-28
+// ============================================================
+
 #ifndef vtkLaserSelectionFilter_h
 #define vtkLaserSelectionFilter_h
 

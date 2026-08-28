@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  功能：SenFoToView 新增功能 —— 激光通道选择对话框的 Qt Designer 布局
+        （通道表 + 全选/反选/应用按钮）。
+  作者：acelan
+  新建时间：2026-08-28
+  修改时间：2026-08-28
+-->
 <ui version="4.0">
  <class>lqLaserSelectionDialog</class>
  <widget class="QDialog" name="lqLaserSelectionDialog">

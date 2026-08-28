@@ -1,3 +1,11 @@
+<!--
+  功能：SenFoToView 新增功能 —— 注册 RadialDistanceDenoise ParaView 代理
+        （数组选择、阈值/开关/分箱等属性）。
+  作者：acelan
+  新建时间：2026-08-28
+  修改时间：2026-08-28
+-->
+
 <ServerManagerConfiguration>
   <ProxyGroup name="filters">
     <SourceProxy name="RadialDistanceDenoise" class="vtkRadialDistanceDenoise"

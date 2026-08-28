@@ -1,3 +1,12 @@
+// ============================================================
+// 功能：SenFoToView 新增功能 —— 径向距离去噪（RadialDistanceDenoise）filter
+//        类声明；基于逐点 distance_m / laser_id / azimuth，以二级（分组+排序+
+//        插值）与一级（按 laser_id+方位角分箱 的跨帧缓存）两级策略剔除离群点。
+// 作者：acelan
+// 新建时间：2026-08-28
+// 修改时间：2026-08-28
+// ============================================================
+
 #ifndef vtkRadialDistanceDenoise_h
 #define vtkRadialDistanceDenoise_h
 

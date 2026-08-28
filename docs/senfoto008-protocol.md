@@ -1,3 +1,10 @@
+<!--
+  功能：SenFoToView 新增功能文档 —— Senfoto008 雷达线协议（Wire Protocol）参考。
+  作者：acelan
+  新建时间：2026-08-28
+  修改时间：2026-08-28
+-->
+
 # Senfoto 008 (SF008) 雷达线协议参考 / Wire Protocol Reference
 
 > 反编译自参考实现 `02.Code/SenFoToPlugins/VelodynePlugin`（VelodynePlugin 解释器）

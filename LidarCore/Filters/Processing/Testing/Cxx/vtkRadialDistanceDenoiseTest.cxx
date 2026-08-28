@@ -1,3 +1,11 @@
+// ============================================================
+// 功能：SenFoToView 新增功能 —— vtkRadialDistanceDenoise 单元测试；
+//        覆盖二级尖峰、斜坡保留、一级跨帧等场景。
+// 作者：acelan
+// 新建时间：2026-08-28
+// 修改时间：2026-08-28
+// ============================================================
+
 #include "vtkRadialDistanceDenoise.h"
 #include <iostream>
 #include <vtkCellArray.h>

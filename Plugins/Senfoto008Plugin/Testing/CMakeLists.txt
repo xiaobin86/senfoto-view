@@ -1,3 +1,9 @@
+# ============================================================
+# 功能：SenFoToView 新增功能 —— 注册 Senfoto008 插件的测试可执行文件
+#        （TestSenfoto008PacketInterpreter）。
+# 作者：acelan
+# ============================================================
+
 set(testing_libraries
   Senfoto008Plugin::Senfoto008PacketInterpreters
   LidarView::TestingCore

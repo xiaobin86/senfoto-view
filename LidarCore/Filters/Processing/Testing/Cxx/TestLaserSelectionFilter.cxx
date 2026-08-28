@@ -1,3 +1,11 @@
+// ============================================================
+// 功能：SenFoToView 新增功能 —— vtkLaserSelectionFilter 单元测试
+//        （按 laser_id 掩码剔除禁用通道）。
+// 作者：acelan
+// 新建时间：2026-08-28
+// 修改时间：2026-08-28
+// ============================================================
+
 #include "vtkLaserSelectionFilter.h"
 
 #include <vtkCellArray.h>

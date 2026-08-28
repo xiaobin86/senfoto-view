@@ -1,3 +1,11 @@
+<!--
+  功能：SenFoToView 新增功能 —— ParaView/LidarView Server Manager 配置；
+        注册 Senfoto008 PCAP 文件读取器代理（数据源）。
+  作者：acelan
+  新建时间：2026-08-28
+  修改时间：2026-08-28
+-->
+
 <ServerManagerConfiguration>
   <ProxyGroup name="sources">
     <LidarReaderProxy name="Senfoto008LidarReader"

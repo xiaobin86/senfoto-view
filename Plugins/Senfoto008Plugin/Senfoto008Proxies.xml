@@ -1,3 +1,11 @@
+<!--
+  功能：SenFoToView 新增功能 —— 汇总注册 Senfoto008 插件相关 ParaView 代理
+        （解释器、读取器、直播源）。
+  作者：acelan
+  新建时间：2026-08-28
+  修改时间：2026-08-28
+-->
+
 <ServerManagerConfiguration>
   <ProxyGroup name="lidar_interpreters">
     <Proxy name="Senfoto008"

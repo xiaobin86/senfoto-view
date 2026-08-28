@@ -1,3 +1,9 @@
+# ============================================================
+# 功能：SenFoToView 新增功能 —— 编译 Senfoto008 数据包解释器模块
+#        （vtkSenfoto008PacketInterpreter 及格式头文件）。
+# 作者：acelan
+# ============================================================
+
 set(classes
   vtkSenfoto008PacketInterpreter
 )
