@@ -218,6 +218,7 @@
   <addaction name="actionSpreadSheet"/>
   <addaction name="actionToggleAdvancedArrays"/>
   <addaction name="actionUpdateConfiguration"/>
+  <addaction name="actionLaserSelection"/>
   <addaction name="separator"/>
   <addaction name="actionOpenData"/>
   <addaction name="actionSaveData"/>
@@ -229,7 +230,6 @@
   <addaction name="actionAutoApply"/>
   <addaction name="actionQuery"/>
   <addaction name="actionPythonShell"/>
-  <addaction name="actionLaserSelection"/>
   <addaction name="separator"/>
   <addaction name="actionDeleteAll"/>
  </widget>
