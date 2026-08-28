@@ -34,6 +34,62 @@ As a [Paraview](https://www.paraview.org/) based application, LidarView can effo
 ![LidarView](Application/Client/Resources/Images/LidarViewExample.png)
     Lidar data processed by [Kitware's SLAM](#slam) within LidarView
 
+# Senfoto 叉子 · 开发者快速开始
+
+本仓库是 [LidarView](https://www.paraview.org/) 的 **Senfoto 派生版**，在 LidarView 基础上集成了
+Senfoto008 / LakiBeam 等自研激光雷达插件，编译产物名为 **SenFoToView**。
+
+> ⚠️ 必须克隆 **`develop`** 分支并拉取子模块：Senfoto 插件只提交在 `develop`，`master` 上没有。
+
+## 一键初始化（推荐）
+
+```bash
+git clone -b develop --recursive https://github.com/xiaobin86/senfoto-view.git senfoto
+cd senfoto
+./init.sh        # 克隆 lidarview-superbuild、初始化子模块、装依赖、配置 cmake
+./build.sh        # 增量编译
+```
+
+`init.sh` 会把 `lidarview-superbuild/` 与 `build/` 建在仓库**同级目录**，并把 superbuild 指向本仓库源码
+（`-Dlidarview_SOURCE_SELECTION=source`，否则会拉 Kitware 的 master，不含 Senfoto 插件）。
+
+## 前置条件
+
+| 项 | 要求 |
+|----|------|
+| 操作系统 | Ubuntu 22.04 / 24.04；Windows + MSVC 2019+；macOS 15+（Apple Silicon，**需系统级 Qt6**） |
+| 分支 | 必须 `develop` + `--recursive` 子模块 |
+| 工具 | CMake ≥ 3.20.3（**macOS 请用 3.31，不要用 Homebrew 的 4.x**）、Ninja、Qt6（macOS 必须系统级） |
+
+> 完整环境与排错见 **[BUILD.md](./BUILD.md)**（含 macOS / Windows 专节、以及第 11 节 VSCode 配置）。
+
+## 运行
+
+- Linux：`../build/install/bin/SenFoToView`
+- macOS：`open ../build/install/Applications/SenFoToView.app`
+  （**不要在 conda 激活的终端直接运行**，会撞捆绑的 Python 3.12 导致崩溃）
+
+## 代码导航 / 开发环境（VSCode）
+
+仓库已内置 `.vscode/c_cpp_properties.json`，配合构建生成的 `compile_commands.json` 即可实现
+“转到定义 / 查看引用 / 悬浮文档” 等跳转（Qt / ParaView / VTK 头文件均可跳转）。
+新机器只需按 **[BUILD.md 第 11 节](./BUILD.md)** 跑一次：
+
+```bash
+cd build
+cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ./superbuild/lidarview/build
+```
+
+然后 VSCode `Ctrl+Shift+P` → `Developer: Reload Window`。
+
+## 架构与「如何加功能」
+
+- **项目架构 + 数据/UI 两条链路 + 4 个加功能案例（新增插件 / filter / 面板 / 工具栏）**：
+  [`docs/senfoto008-data-flow-and-features.md`](./docs/senfoto008-data-flow-and-features.md)
+- 通用开发指南：[`docs/lidarview-development-guide.md`](./docs/lidarview-development-guide.md)
+- 新增雷达插件模板：[`docs/adding-a-lidar-sensor-plugin.md`](./docs/adding-a-lidar-sensor-plugin.md)
+- LidarView 原始架构：[`docs/lidarview-architecture.md`](./docs/lidarview-architecture.md)
+
 # Features
 
 - Input from live sensor stream or recorded `.pcap` file
@@ -61,7 +117,9 @@ More detailed installation instructions are available on the [`LVCore/Documentat
 
 ## Build from source
 
-Detailed Instructions to build and package LidarView are available under [LidarView-superbuild README](https://gitlab.kitware.com/LidarView/lidarview-superbuild/-/blob/master/README.md).
+**本叉子（Senfoto）的构建步骤见本地 [BUILD.md](./BUILD.md)**（涵盖 Ubuntu / Windows / macOS，
+以及 VSCode IntelliSense 配置）。上游 LidarView 的通用构建与打包说明见
+[LidarView-superbuild README](https://gitlab.kitware.com/LidarView/lidarview-superbuild/-/blob/master/README.md)。
 
 # How to use
 
