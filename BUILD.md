@@ -293,6 +293,9 @@ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ./superbuild/lidarview/build
 **仓库已内置配置**：本仓库在源码根目录带了 `.vscode/c_cpp_properties.json`，
 其中 `compileCommands` 用的是**相对路径** `../build/superbuild/lidarview/build/compile_commands.json`
 （基于“在源码根目录打开 VSCode”的约定，构建目录是源码根目录的同级 `../build`）。
+`compilerPath` 与 `intelliSenseMode` 均设为 `"${default}"`，由 VSCode 在每台机器上**自动检测**
+编译器与平台模式（macOS→clang/arm64、Linux→gcc、Windows→MSVC），因此同一份配置
+在三种平台下都可直接使用，无需按平台改路径。
 所以新电脑只要：
 
 1. 克隆并按本指南构建；

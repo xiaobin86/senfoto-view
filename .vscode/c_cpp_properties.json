@@ -1,10 +1,10 @@
 {
   "configurations": [
     {
-      "name": "Mac",
+      "name": "SenfotoView",
       "compileCommands": "../build/superbuild/lidarview/build/compile_commands.json",
-      "intelliSenseMode": "macos-clang-arm64",
-      "compilerPath": "/usr/bin/clang"
+      "compilerPath": "${default}",
+      "intelliSenseMode": "${default}"
     }
   ],
   "version": 4
