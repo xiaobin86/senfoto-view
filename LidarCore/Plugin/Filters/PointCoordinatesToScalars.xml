@@ -1,0 +1,49 @@
+<!--
+  功能：SenFoToView 新增功能 —— 注册 PointCoordinatesToScalars ParaView 代理。
+  作者：acelan
+  新建时间：2026-08-29
+  修改时间：2026-08-29
+-->
+
+<ServerManagerConfiguration>
+  <ProxyGroup name="filters">
+    <SourceProxy name="PointCoordinatesToScalars" class="vtkPointCoordinatesToScalars"
+                 label="Point Coordinates To Scalars">
+      <Documentation
+        short_help="Generate X/Y/Z scalar arrays from point coordinates for coloring."
+        long_help="Creates per-point scalar arrays named X, Y and Z from the point coordinates, so the point cloud can be colored by coordinate in the display color widget.">
+        Generate scalar arrays X, Y, Z from point coordinates.
+      </Documentation>
+
+      <InputProperty name="Input" port_index="0" command="SetInputConnection">
+        <DataTypeDomain name="input_type"><DataType value="vtkPolyData"/></DataTypeDomain>
+      </InputProperty>
+
+      <OutputPort name="Output" index="0" />
+
+      <IntVectorProperty name="Generate X" command="SetGenerateX"
+          number_of_elements="1" default_values="1">
+        <BooleanDomain name="bool"/>
+        <Documentation>Generate scalar array X from point x coordinate.</Documentation>
+      </IntVectorProperty>
+
+      <IntVectorProperty name="Generate Y" command="SetGenerateY"
+          number_of_elements="1" default_values="1">
+        <BooleanDomain name="bool"/>
+        <Documentation>Generate scalar array Y from point y coordinate.</Documentation>
+      </IntVectorProperty>
+
+      <IntVectorProperty name="Generate Z" command="SetGenerateZ"
+          number_of_elements="1" default_values="1">
+        <BooleanDomain name="bool"/>
+        <Documentation>Generate scalar array Z from point z coordinate.</Documentation>
+      </IntVectorProperty>
+
+      <PropertyGroup label="Point Coordinates To Scalars">
+        <Property name="Generate X"/>
+        <Property name="Generate Y"/>
+        <Property name="Generate Z"/>
+      </PropertyGroup>
+    </SourceProxy>
+  </ProxyGroup>
+</ServerManagerConfiguration>

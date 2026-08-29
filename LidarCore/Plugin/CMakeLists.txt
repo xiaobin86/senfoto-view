@@ -91,6 +91,7 @@ set(filters_processing_xml_files
   Filters/ComputeGeodeticCoordinates.xml
   Filters/RadialDistanceDenoise.xml
   Filters/LaserSelection.xml
+  Filters/PointCoordinatesToScalars.xml
 )
 
 if (TARGET VTK::ImagingMorphological)

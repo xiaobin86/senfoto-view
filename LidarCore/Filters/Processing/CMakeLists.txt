@@ -7,7 +7,8 @@ set(classes
   vtkImagesOperations
   vtkComputeGeodeticCoordinates
   vtkRadialDistanceDenoise
-  vtkLaserSelectionFilter)
+  vtkLaserSelectionFilter
+  vtkPointCoordinatesToScalars)
 
 if (TARGET VTK::ImagingMorphological)
   list(APPEND classes vtkImageBasedClustering)

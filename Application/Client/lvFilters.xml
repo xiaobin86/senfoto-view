@@ -3,6 +3,7 @@
   <!-- This section list all categories/toolbar filters. Filters should be duplicated in the next section -->
   <Category name="Common" menu_label="&amp;Common" preserve_order="1">
     <Proxy group="filters" name="Calculator" />
+    <Proxy group="filters" name="PointCoordinatesToScalars" />
     <Proxy group="filters" name="ClipPoints" />
     <Proxy group="filters" name="ThresholdPoints" />
     <Proxy group="filters" name="ExtractPointSelection" />
@@ -72,6 +73,7 @@
   <Proxy group="filters" name="ConvertToPointCloud" />
   <Proxy group="filters" name="Coordinates" />
   <Proxy group="filters" name="Curvatures" />
+  <Proxy group="filters" name="PointCoordinatesToScalars" />
   <Proxy group="filters" name="Cut" icon=":/pqWidgets/Icons/pqSlice.svg" />
   <Proxy group="filters" name="DataSetSurfaceFilter" />
   <Proxy group="filters" name="DataSetTriangleFilter" />
