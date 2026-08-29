@@ -1,7 +1,8 @@
 <!--
   功能：SenFoToView 用户使用说明，涵盖启动、加载雷达实时流/PCAP/点云文件、
         界面操作、染色（含按 X/Y/Z 坐标染色）、SenFoToView 特色功能
-        （激光通道选择、径向距离去噪、距离/方位角范围过滤）、常用工具与导出。
+        （激光通道选择、径向距离去噪、距离/方位角范围过滤）、视图与测量工具
+        （SpreadSheet、Measurement Grid、Ruler、Grid Source）、常用工具与导出。
   作者：acelan
   新建时间：2026-08-29
   修改时间：2026-08-29
@@ -143,18 +144,69 @@ Senfoto008 解释器支持在数据解析阶段按距离和方位角过滤：
 
 > 该过滤在解释器内完成，可减轻下游 filter 与渲染的压力。
 
-## 6. 常用工具
+## 6. 视图与测量工具
 
-| 功能 | 操作路径 |
-|------|----------|
-| 显示/隐藏网格 | 工具栏 **Show Grid** |
-| 显示/隐藏色标 | 工具栏 **Scalar Bar Visibility** |
-| 选择点 | 工具栏 **Select Points**，然后在视图中框选 |
-| 激光通道选择 | 菜单 **Tools → Laser Selection** |
-| 径向距离去噪 | Senfoto008 数据自动挂载；其他数据可手动添加 **Filters → Common → Senfoto008 Radial Distance Denoise** |
-| 按坐标生成 X/Y/Z 数组 | **Filters → Common → Point Coordinates To Scalars** |
-| 录制 PCAP | 选中 live source 后，右键选择 **Record** |
-| 截图 | 工具栏 **Save Screenshot** |
+### 6.1 SpreadSheet 视图（数据表格）
+
+SpreadSheet 视图以表格形式展示当前点云每个点的属性数据，便于查看 `intensity`、`distance_m`、`laser_id`、`timestamp`、`X`、`Y`、`Z` 等数组值。
+
+**打开方式：**
+
+- 点击主工具栏 **SpreadSheet** 图标（表格图标）。
+- 或菜单 **View → SpreadSheet View**（如可用）。
+
+**使用方法：**
+
+1. 点击按钮后，右侧会弹出一个 dock 窗口，显示当前选中 representation 的逐点数据。
+2. 在 **Pipeline Browser** 中切换选中的 source/filter，表格会同步更新。
+3. 使用表格列头的右键菜单可隐藏/显示特定列。
+4. 与 3D 视图联动：在 3D 视图中框选点时，表格会高亮对应行；反之在表格中选择行时，3D 视图中也会高亮对应点。
+
+> 提示：SpreadSheet 视图对大数据集可能较占资源，查看完成后可再次点击按钮关闭 dock。
+
+### 6.2 测量网格（Measurement Grid）
+
+测量网格是铺在地面（XY 平面）上的参考网格，用于直观判断点云尺度和位置。
+
+**显示/隐藏方式：**
+
+- 点击工具栏或 **Edit** 菜单中的 **Show Measurement Grid** 按钮。
+- 该按钮为切换状态：按一次显示网格，再按一次隐藏。
+
+> 注意：测量网格仅在 **LidarGridView** 视图模式下可用。如果按钮为灰色，请确认当前视图是否为 LidarGridView。
+
+### 6.3 标尺（Ruler）
+
+标尺工具用于在 3D 视图中测量两点之间的距离。
+
+**打开方式：**
+
+- 点击工具栏中的 **Ruler** 图标。
+- 通常提供两种模式：
+  - **2D Ruler**：在正交投影下测量屏幕上两点的距离。
+  - **3D Ruler**：测量场景中两个 3D 表面点之间的距离。
+
+**使用方法：**
+
+1. 点击 **Ruler** 按钮，使其处于激活/勾选状态。
+2. 按住 **Ctrl** 键，在 3D 视图中点击鼠标左键确定第一个点。
+3. 再次按住 **Ctrl** 键点击鼠标左键确定第二个点。
+4. 视图中会显示一条标尺线段及距离标注。
+5. 再次点击 **Ruler** 按钮可退出测量模式。
+
+> 2D Ruler 仅在正交投影（Camera Parallel Projection）下可用；3D Ruler 在透视/正交模式下均可用。
+
+### 6.4 自定义网格源（Grid Source）
+
+如果需要更灵活地生成参考网格平面（例如调整网格大小、原点、法向），可使用 **Grid Source**：
+
+1. 点击菜单 **Sources → Grid Source**。
+2. 在属性面板中调整：
+   - `GridNbTicks`：网格刻度数
+   - `Scale`：每个刻度的长度
+   - `Origin`：网格原点
+   - `Normal`：网格法向
+3. 点击 **Apply**，网格会作为独立 source 显示在视图中。
 
 ## 7. 导出数据
 
