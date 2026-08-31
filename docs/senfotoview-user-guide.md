@@ -215,6 +215,25 @@ SpreadSheet 视图以表格形式展示当前点云每个点的属性数据，�
 3. 选择格式：CSV、PLY、PCD、LAS、VTK 等。
 4. 设置输出路径并保存。
 
+### 7.1 导出选中的点（选区 → CSV）
+
+将 3D 视图中框选的点区域导出为 CSV：
+
+1. **框选点**：在 3D 视图左上角选择工具中切换到 **Select Frustum Points**（框选），
+   按住鼠标拖出矩形框住目标区域；也可用 **Select Polygon Points**（多边形圈选）。
+   选中后目标点会高亮显示。
+2. **提取选区**：菜单 **Filters → (Alphabetical) → Extract Selection**，
+   在属性面板点击 **Apply**。Pipeline Browser 中会出现 `ExtractSelection1`，
+   它只包含选中的点。
+3. **保存 CSV**：选中 `ExtractSelection1`，点击工具栏 **Save Data**，
+   文件类型选择 **CSV**（*.csv）；在确认对话框中将
+   **Field Association 设为 Point Data**，这样 `intensity`、`laser_id`、`distance_m`、
+   `azimuth` 等点属性会一并导出为列。
+4. CSV 首列为点坐标（X, Y, Z），后续列为该数据集的全部点属性数组。
+
+> 提示：不落盘只查看的话，第 2 步之后点工具栏 **SpreadSheet** 即可；
+> `SelectionOnly` 开启时表格显示的就是当前选区。
+
 ## 8. 常见问题
 
 **Q：启动后崩溃或提示 Python 错误**
