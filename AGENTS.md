@@ -56,3 +56,40 @@ CMake（`CMakeLists.txt`）：置于文件最顶部。
 ```
 
 其它文本文件（如 `.md`、`.json`）若需标注，参照上述字段，使用对应注释语法；JSON 等不支持注释的格式不要强行插入。
+
+## 界面布局持久化文件与验证前清理（必做）
+
+Qt 界面默认布局（dock 位置/大小、工具栏、窗口尺寸）会被 **ParaView 的 `pqPersistentMainWindowStateBehavior`** 持久化（`LidarViewMainWindow.cxx` 中 `pqParaViewBehaviors` 默认启用）：
+
+- **存储文件**：`~/.config/SenFoToView/SenFoToView.ini`（QSettings IniFormat，非 plist）
+- **关键段**：`[MainWindow]`，含 `Layout=@ByteArray(...)`（dock/工具栏布局）和 `Size`（窗口尺寸）
+- **行为**：app **退出时写入**、**启动时恢复**，会覆盖 `LidarViewMainWindow.ui`、`interface_modes_config.json` 里的新默认值
+
+### 规则
+
+凡修改了布局相关默认值（如 `LidarViewMainWindow.ui` 的 `dockWidgetArea`、`LidarViewMainWindow.cxx` 的 `tabifyDockWidget`/`resizeDocks`、`interface_modes_config.json`），**验证效果前必须先清理该 ini 的 `[MainWindow]` 段**，否则看到的是旧布局缓存，会误判改动无效。
+
+### 清理方法（app 必须先退出）
+
+```bash
+python3 -c "
+import configparser
+p = '/Users/acelan/.config/SenFoToView/SenFoToView.ini'
+c = configparser.RawConfigParser(strict=False, allow_unnamed_section=True)
+c.optionxform = str
+c.read(p, encoding='utf-8')
+c.remove_section('MainWindow')
+with open(p, 'w', encoding='utf-8') as f:
+    c.write(f, space_around_delimiters=False)
+print('ini 已清理')
+"
+```
+
+### 验证前构建注意
+
+本项目是 superbuild，改完源码需两步（只跑第一步会用旧副本）：
+
+```bash
+ninja -C ../build/superbuild/lidarview/build   # 内层编译 → bin/SenFoToView.app
+ninja -C ../build superbuild/lidarview         # install 步骤 → build/install/Applications/SenFoToView.app（日常启动的副本）
+```
