@@ -18,7 +18,7 @@
 //        将原始 UDP/MSOP 包解码为点云（位置/强度/时间戳等）。
 // 作者：acelan
 // 新建时间：2026-08-28
-// 修改时间：2026-08-28
+// 修改时间：2026-08-31
 // ============================================================
 
 #include "vtkSenfoto008PacketInterpreter.h"
@@ -41,6 +41,13 @@
 
 namespace
 {
+// FOV 盲区（方位角接缝）防护参数，借鉴 RoboSense Airy 的 rs_driver
+// TwoInOneBlockIterator（block_iterator.hpp）：相邻块方位角跳变超过 1° 视为
+// 传感器跳过了接缝盲区，用"标称块间隔"替换实测差值，避免异常跳变传入
+// 逐激光方位角插值（SF008 实测每圈在 0° 附近有一次 ~10° 的包内跳变）。
+constexpr int AZ_JUMP_THRESHOLD = 100; // 1°，0.01° 单位
+constexpr int NOMINAL_PAIR_DIFF = 40;  // 相邻块对标称差 0.4°；块对内两块共享 az（差 0）
+
 // Replicates SenFoTo reference ComputeCorrectedValues azimuth correction for the
 // SF008 96-line path. Rotational positions are in 0.01-degree units; luminousMoment
 // is 0 for laser 0 and 1 otherwise; Laser_fire_cycle = 18 (from SF.xml calibration).
@@ -50,8 +57,11 @@ double ComputeCorrectedAzimuthDeg(const int* rotUnits, const int* diffs,
   int blockIdx, std::uint8_t laserId)
 {
   constexpr int numBlocks = static_cast<int>(senfoto008::DATA_BLOCKS); // 8
-  const int diffIdx = (blockIdx == numBlocks - 1) ? numBlocks - 2 : blockIdx;
-  const std::uint16_t adj = static_cast<std::uint16_t>(diffs[diffIdx]);
+  // 包尾块对（blockIdx=7）的"下一块"在下一包里，包内 diffs[6] 是块对内差（恒 0），
+  // 直接回退会让插值修正项丢失（实测 48-95 线 az 步长呈 0.19°/0.61° 交替）。
+  // 与 rs_driver TwoInOneBlockIterator 一致：包尾块对使用对间标称差。
+  const std::uint16_t adj = static_cast<std::uint16_t>(
+    blockIdx == numBlocks - 1 ? NOMINAL_PAIR_DIFF : diffs[blockIdx]);
   const int firingWithinBlock = (laserId >= 48) ? 1 : 0;
   const double luminousMoment = (laserId == 0) ? 0.0 : 1.0;
   const double laserFireCycle = 18.0;
@@ -64,6 +74,10 @@ double ComputeCorrectedAzimuthDeg(const int* rotUnits, const int* diffs,
 
 const std::array<double, 96>& GetVerticalAngles96Line()
 {
+  // SF008 垂直角表（来源 SF.xml vertCorrection，已硬编码；注意步进非严格等差，
+  // 0.94~0.95 渐变，勿用 i×0.95 近似核对——index 33 起偏差可达 0.25°）。
+  // 参考：RoboSense Airy 实测标定（-0.04°→88.81°，~0.92°/通道）见
+  // docs/senfoto008-protocol.md §10。
   static const std::array<double, 96> angles = {
     0.0,    0.95,   1.9,    2.85,   3.8,    4.75,   5.7,    6.65,
     7.6,    8.55,   9.5,    10.45,  11.4,   12.35,  13.3,   14.25,
@@ -83,6 +97,7 @@ const std::array<double, 96>& GetVerticalAngles96Line()
 
 const std::array<double, 48>& GetVerticalAngles48Line()
 {
+  // 48 线 = 96 线表的前 48 行
   static const std::array<double, 48> angles = {
       0.0,   0.95,   1.9,    2.85,   3.8,    4.75,   5.7,    6.65,
       7.6,   8.55,   9.5,    10.45,  11.4,   12.35,  13.3,   14.25,
@@ -92,6 +107,43 @@ const std::array<double, 48>& GetVerticalAngles48Line()
       37.94, 38.88,  39.82,  40.76,  41.7,   42.64,  43.58,  44.52
   };
   return angles;
+}
+
+// 水平角修正表（度，每通道，借鉴 Airy horizAdjust：az_final = az + horiz[chan]）。
+// 【打墙自标定 2026-09-01】来源 Examples/TestData/test.csv（墙面选区导出，
+// laser 55-74 共 1750 点）：竖直平面 TLS 拟合 + 逐线方位角残差中位数（MAD 剔离群，
+// 迭代收敛）。laser 55-69 残差 48-104mm 可信；70 低置信；71/72/74 点大部分不在
+// 墙面（残差 300-660mm，疑似混入其它物体）故保持 0；73 仅 1 点。
+// 未覆盖的通道（0-54、75-95）待补充打墙数据后继续填充。
+const std::array<double, 96>& GetHorizontalCorrections()
+{
+  static const std::array<double, 96> corrections = {
+    //  0-7                                              8-15
+    0, 0, 0, 0, 0, 0, 0, 0,                             0, 0, 0, 0, 0, 0, 0, 0,
+    // 16-23                                             24-31
+    0, 0, 0, 0, 0, 0, 0, 0,                             0, 0, 0, 0, 0, 0, 0, 0,
+    // 32-39                                             40-47
+    0, 0, 0, 0, 0, 0, 0, 0,                             0, 0, 0, 0, 0, 0, 0, 0,
+    // 48-55
+    0, 0, 0, 0, 0, 0, 0,
+    +0.5407, // 55 (5 pts, RMS 49mm)
+    // 56-63
+    +0.5514, +0.7152, +0.9040, +0.9193, +1.0139, +1.1118, +1.0704, +0.9346,
+    // 64-71
+    +0.4078, +0.8515, +1.1563, +1.3558, +1.2464, +1.0497,
+    -0.5719, // 70 (低置信, RMS 104mm)
+    0,       // 71 (点不在墙面, RMS 628mm)
+    // 72-79
+    0,       // 72 (同上, RMS 656mm)
+    0,       // 73 (仅 1 点)
+    0,       // 74 (同上, RMS 299mm)
+    0, 0, 0, 0,
+    // 80-87
+    0, 0, 0, 0, 0, 0, 0, 0,
+    // 88-95
+    0, 0, 0, 0, 0, 0, 0, 0
+  };
+  return corrections;
 }
 
 } // namespace
@@ -259,7 +311,13 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
     int diffs[numBlocks - 1];
     for (int b = 0; b < numBlocks - 1; ++b)
     {
-      diffs[b] = (36000 + 18000 + rotUnits[b + 1] - rotUnits[b]) % 36000 - 18000;
+      int diff = (36000 + 18000 + rotUnits[b + 1] - rotUnits[b]) % 36000 - 18000;
+      // 盲区防护：|差值| > 1° 说明跨过了接缝，改用标称间隔（块对内 0、块对间 0.4°）
+      if (diff > AZ_JUMP_THRESHOLD || diff < -AZ_JUMP_THRESHOLD)
+      {
+        diff = (b % 2 == 0) ? 0 : NOMINAL_PAIR_DIFF;
+      }
+      diffs[b] = diff;
     }
 
     for (std::size_t pairIndex = 0; pairIndex < senfoto008::DATA_BLOCKS / 2; ++pairIndex)
@@ -325,6 +383,9 @@ bool vtkSenfoto008PacketInterpreter::IsAzimuthInRange(double azimuthDeg) const
 void vtkSenfoto008PacketInterpreter::AddPoint(double azimuthDeg, double elevationDeg,
   double distanceM, std::uint8_t laserId, std::uint8_t intensity, double timestamp)
 {
+  // 【实验】水平角修正（借鉴 Airy horizAdjust）：az += horiz[laserId]
+  azimuthDeg += GetHorizontalCorrections()[laserId];
+
   // Distance range filter (mirrors RoboSense Airy distance_section_.in())
   if (distanceM < this->MinDistance ||
     (this->MaxDistance > 0.0 && distanceM > this->MaxDistance))
