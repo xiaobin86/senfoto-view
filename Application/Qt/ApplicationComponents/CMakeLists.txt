@@ -7,6 +7,7 @@ set(classes
   lqLidarViewMenuBuilders
   lqMainControlsToolbar
   lqMenuSaveAsReaction
+  lqPointCloudAutoRepresentationBehavior
   lqStatusBar
   lqViewFrameActionsImplementation
   lqWelcomeDialog

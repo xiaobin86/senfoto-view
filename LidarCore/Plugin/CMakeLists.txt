@@ -68,6 +68,7 @@ set(filters_general_xml_files
   Filters/RPMText.xml
   Filters/SelectPointsByScalars.xml
   Filters/NormalizeExternalSensorData.xml
+  Filters/VertexGlyph.xml
 )
 
 if (ParaView_VERSION_PATCH LESS "20251022")

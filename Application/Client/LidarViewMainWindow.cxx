@@ -57,6 +57,7 @@ typedef pqPythonDebugLeaksView DebugLeaksViewType;
 #include "lqLiveSourceScalarColoringBehavior.h"
 #include "lqLaserSelectionReaction.h"
 #include "lqOpenLidarReaction.h"
+#include "lqPointCloudAutoRepresentationBehavior.h"
 #include "lqRecentlyUsedPcapLoader.h"
 #include "lqStreamPCAPRecorder.h"
 #include "lqViewFrameActionsImplementation.h"
@@ -234,6 +235,7 @@ LidarViewMainWindow::LidarViewMainWindow()
 
   new lqCommandLineOptionsBehavior(this);
   new lqLiveSourceScalarColoringBehavior(this);
+  new lqPointCloudAutoRepresentationBehavior(this);
 
   // To register ParaView interfaces.
   pqInterfaceTracker* pgm = pqApplicationCore::instance()->interfaceTracker();

@@ -1,0 +1,29 @@
+<!--
+  功能：将仅含顶点（vertex）的点云 polydata 转换为每个点都带 vtkVertex cell 的
+        polydata，使标准 Points representation 能正常渲染。
+  作者：acelan
+  新建时间：2026-08-31
+  修改时间：2026-08-31
+-->
+
+<ServerManagerConfiguration>
+  <ProxyGroup name="filters">
+    <SourceProxy name="VertexGlyph" class="vtkVertexGlyphFilter"
+                 label="Vertex Glyph">
+      <Documentation
+        short_help="Create a vertex cell for every point"
+        long_help="Creates a vtkVertex cell for every point in the input polydata. Use this when the standard Points representation does not display a point cloud that has no cells (e.g. a PLY file with only vertex elements).">
+        Creates a vtkVertex cell for every point in the input polydata. This is
+        useful for point clouds loaded from formats such as PLY that only contain
+        vertex positions and no cells, so that the standard Points representation
+        can render them.
+      </Documentation>
+
+      <InputProperty name="Input" port_index="0" command="SetInputConnection">
+        <DataTypeDomain name="input_type"><DataType value="vtkPolyData"/></DataTypeDomain>
+      </InputProperty>
+
+      <OutputPort name="Output" index="0" />
+    </SourceProxy>
+  </ProxyGroup>
+</ServerManagerConfiguration>
