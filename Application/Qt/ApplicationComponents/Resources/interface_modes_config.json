@@ -59,6 +59,8 @@
       "mainControlsToolbar": [
         "actionOpenPcap",
         "actionSavePcap",
+        "actionOpenData",
+        "actionSaveData",
         "actionOpenSensorStream",
         "actionUpdateConfiguration",
         "actionToggleAdvancedArrays",
@@ -93,7 +95,8 @@
   "pointCloudTool": {
     "dockWidgets": [
       "pipelineBrowserDock",
-      "propertiesDock"
+      "propertiesDock",
+      "displayPropertiesDock"
     ],
     "menus": {
       "hide": [],
