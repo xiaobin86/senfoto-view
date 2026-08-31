@@ -93,3 +93,13 @@ print('ini 已清理')
 ninja -C ../build/superbuild/lidarview/build   # 内层编译 → bin/SenFoToView.app
 ninja -C ../build superbuild/lidarview         # install 步骤 → build/install/Applications/SenFoToView.app（日常启动的副本）
 ```
+
+### 编译缓存（ccache）
+
+内层构建已配置 ccache launcher（`CMAKE_C/CXX_COMPILER_LAUNCHER=ccache`，缓存上限 10G）。
+若 superbuild 重新 configure 导致缓存失效，重跑：
+
+```bash
+cmake -S . -B ../build/superbuild/lidarview/build \
+  -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache
+```
