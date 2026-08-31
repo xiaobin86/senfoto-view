@@ -10,7 +10,6 @@
 #include <algorithm>
 #include <cmath>
 #include <map>
-#include <sstream>
 #include <vector>
 #include <vtkCellArray.h>
 #include <vtkCleanPolyData.h>
@@ -18,7 +17,6 @@
 #include <vtkIdTypeArray.h>
 #include <vtkInformation.h>
 #include <vtkNew.h>
-#include <vtkOutputWindow.h>
 #include <vtkPointData.h>
 #include <vtkPolyData.h>
 #include <vtkRemovePolyData.h>
@@ -111,18 +109,7 @@ int vtkRadialDistanceDenoise::RequestData(vtkInformation*,
       double cur = distArr->GetTuple1(i);
       auto it = this->PrevRange.find(key);
       if (it != this->PrevRange.end() && std::fabs(it->second - cur) > this->Level1Threshold)
-      {
         drop[i] = 1;
-        if (this->PrintLevel1Drops)
-        {
-          std::ostringstream msg;
-          msg << "L1 drop pt#" << i << " laser_id=" << lid << " az="
-            << azimArr->GetTuple1(i) << "deg bin=" << bin << " : d_m(当前点)="
-            << cur << " | d_m(对比点,上帧同箱)=" << it->second << " | diff="
-            << std::fabs(it->second - cur) << " m > threshold " << this->Level1Threshold;
-          vtkOutputWindow::GetInstance()->DisplayText(msg.str().c_str());
-        }
-      }
       newPrev[key] = cur; // 双回波取末次；新帧覆盖旧基准
     }
     this->PrevRange.swap(newPrev);
