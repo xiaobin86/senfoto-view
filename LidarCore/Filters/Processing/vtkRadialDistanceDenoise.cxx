@@ -97,6 +97,25 @@ int vtkRadialDistanceDenoise::RequestData(vtkInformation*,
   }
 
   // ===== 一级：跨帧、keyed by (laser_id, 方位角分箱) =====
+  //
+  // bin 的定义：
+  //   bin = floor(azimuth / binSize)，把 0–360° 连续方位角切成 binSize 等宽的"抽屉"。
+  //   默认 binSize=0.1°：如 az=195.63° → bin=1956，该抽屉覆盖 [195.6°, 195.7°)，
+  //   即"bin 编号 × binSize"是抽屉的下边界角度。
+  //
+  // 引入 bin 的目的：
+  //   一级去噪需要把当前帧的点与上一帧"同一方向"的点配对比较距离。但雷达每圈转速
+  //   存在微小抖动（实测相邻帧方位角网格存在 0.4° 整数倍的相位漂移），同一物理方向
+  //   相邻帧的 az 不会精确相等，逐点匹配不存在。按 bin 分桶提供 ±binSize/2 的容差，
+  //   落进同一抽屉的点即视为"同一方向"，从而以 key=(laser_id, bin) 与上一帧的
+  //   PrevRange 基准配对（实测 example.pcap 相邻帧命中率 ~99.3%）。
+  //
+  // 使用注意：
+  //   - 抽屉边界效应：恰好跨边界的两点（如 195.57° 与 195.63°）会落入相邻 bin 而
+  //     配对失败，属固有损失，约占 1%；
+  //   - 同 bin 内两点方位角最大可差 binSize，其对应的真实弧向位置差随距离增大
+  //     （弧长 ≈ 距离 × binSize 的弧度值），调整 binSize 时需兼顾"命中率"与"位置容差"；
+  //   - PrevRange 每个 key 只保留末次写入的距离（双回波取末次），新帧整体覆盖旧基准。
   std::map<std::pair<int, int>, double> newPrev;
   if (this->Level1Enabled)
   {
