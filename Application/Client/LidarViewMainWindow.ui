@@ -124,7 +124,7 @@
         <string>Pipeline Browser</string>
       </property>
       <attribute name="dockWidgetArea">
-        <number>2</number>
+        <number>1</number>
       </attribute>
       <widget class="pqPipelineBrowserWidget" name="pipelineBrowser"/>
     </widget>
@@ -148,7 +148,7 @@
         <string>Properties</string>
       </property>
       <attribute name="dockWidgetArea">
-        <number>2</number>
+        <number>1</number>
       </attribute>
       <widget class="pqPropertiesPanel" name="propertiesPanel"/>
     </widget>
@@ -181,7 +181,7 @@
         <string>Display</string>
       </property>
       <attribute name="dockWidgetArea">
-        <number>2</number>
+        <number>1</number>
       </attribute>
       <widget class="pqPropertiesPanel" name="displayPropertiesPanel">
         <property name="panelMode" stdset="0">
@@ -197,7 +197,7 @@
         <string>View</string>
       </property>
       <attribute name="dockWidgetArea">
-        <number>2</number>
+        <number>1</number>
       </attribute>
       <widget class="pqPropertiesPanel" name="viewPropertiesPanel">
         <property name="panelMode" stdset="0">

@@ -145,8 +145,7 @@ LidarViewMainWindow::LidarViewMainWindow()
   // Bottom dock widgets
   this->tabifyDockWidget(this->Internals->outputWidgetDock, this->Internals->timeManagerDock);
 
-  // Right dock widgets
-  this->tabifyDockWidget(this->Internals->colorMapEditorDock, this->Internals->pipelineBrowserDock);
+  // Left dock widgets
   this->tabifyDockWidget(this->Internals->propertiesDock, this->Internals->viewPropertiesDock);
   this->tabifyDockWidget(this->Internals->propertiesDock, this->Internals->displayPropertiesDock);
   this->tabifyDockWidget(this->Internals->propertiesDock, this->Internals->comparativePanelDock);
