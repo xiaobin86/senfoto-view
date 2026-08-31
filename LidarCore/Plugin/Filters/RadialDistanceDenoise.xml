@@ -3,7 +3,7 @@
         （数组选择、阈值/开关/分箱等属性）。
   作者：acelan
   新建时间：2026-08-28
-  修改时间：2026-08-28
+  修改时间：2026-08-31
 -->
 
 <ServerManagerConfiguration>
@@ -60,6 +60,12 @@
         <Documentation>Level 1 azimuth bin size in degrees for the (laser_id, bin) cache key.</Documentation>
       </DoubleVectorProperty>
 
+      <IntVectorProperty name="Print level 1 drops" command="SetPrintLevel1Drops"
+          number_of_elements="1" default_values="1">
+        <BooleanDomain name="bool"/>
+        <Documentation>Print each Level-1 dropped point with its distance and the previous-frame reference distance to the Output Messages.</Documentation>
+      </IntVectorProperty>
+
       <PropertyGroup label="Radial Distance Denoise">
         <Property name="Level 1 enabled"/>
         <Property name="Level 1 threshold"/>
@@ -67,6 +73,7 @@
         <Property name="Level 2 threshold"/>
         <Property name="Number of lasers"/>
         <Property name="Azimuth bin size"/>
+        <Property name="Print level 1 drops"/>
       </PropertyGroup>
     </SourceProxy>
   </ProxyGroup>

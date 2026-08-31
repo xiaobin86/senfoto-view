@@ -4,7 +4,7 @@
 //        插值）与一级（按 laser_id+方位角分箱 的跨帧缓存）两级策略剔除离群点。
 // 作者：acelan
 // 新建时间：2026-08-28
-// 修改时间：2026-08-28
+// 修改时间：2026-08-31
 // ============================================================
 
 #ifndef vtkRadialDistanceDenoise_h
@@ -33,6 +33,8 @@ public:
   vtkGetMacro(NumberOfLasers, int);
   vtkSetMacro(AzimuthBinSize, double);
   vtkGetMacro(AzimuthBinSize, double);
+  vtkSetMacro(PrintLevel1Drops, bool);
+  vtkGetMacro(PrintLevel1Drops, bool);
   vtkSetStringMacro(DistanceArrayName);
   vtkGetStringMacro(DistanceArrayName);
   vtkSetStringMacro(LaserIdArrayName);
@@ -62,6 +64,7 @@ private:
   double Level1Threshold = 10.24;
   bool Level2Enabled = true;
   double Level2Threshold = 10.0;
+  bool PrintLevel1Drops = true;
   int NumberOfLasers = 96;
   double AzimuthBinSize = 0.1;
   // PrevRange is rebuilt per RequestData call. Level 1 denoising assumes frames are
