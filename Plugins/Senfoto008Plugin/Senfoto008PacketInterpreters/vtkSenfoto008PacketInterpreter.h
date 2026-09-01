@@ -18,7 +18,7 @@
 //        将 Senfoto008 原始网络包解析为 VTK 点云。
 // 作者：acelan
 // 新建时间：2026-08-28
-// 修改时间：2026-08-28
+// 修改时间：2026-09-01
 // ============================================================
 
 #ifndef vtkSenfoto008PacketInterpreter_h
@@ -72,6 +72,13 @@ public:
    * and calling SplitFrame when a revolution wraps.
    */
   void ProcessPacket(unsigned char const* data, unsigned int dataLength) override;
+
+  /**
+   * Tracks the block-level azimuth sequence and returns true when the block
+   * crosses the revolution seam (azimuth wrap). Mirrors rs_driver's
+   * SplitStrategyByAngle at block granularity.
+   */
+  bool CheckBlockWrap(double blockAz);
 
 protected:
   /**

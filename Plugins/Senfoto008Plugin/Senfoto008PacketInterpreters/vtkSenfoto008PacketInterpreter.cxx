@@ -18,7 +18,7 @@
 //        将原始 UDP/MSOP 包解码为点云（位置/强度/时间戳等）。
 // 作者：acelan
 // 新建时间：2026-08-28
-// 修改时间：2026-08-31
+// 修改时间：2026-09-01
 // ============================================================
 
 #include "vtkSenfoto008PacketInterpreter.h"
@@ -110,25 +110,29 @@ const std::array<double, 48>& GetVerticalAngles48Line()
 }
 
 // 水平角修正表（度，每通道，借鉴 Airy horizAdjust：az_final = az + horiz[chan]）。
-// 【打墙自标定 2026-09-01】来源 Examples/TestData/test.csv（墙面选区导出，
-// laser 55-74 共 1750 点）：竖直平面 TLS 拟合 + 逐线方位角残差中位数（MAD 剔离群，
-// 迭代收敛）。laser 55-69 残差 48-104mm 可信；70 低置信；71/72/74 点大部分不在
-// 墙面（残差 300-660mm，疑似混入其它物体）故保持 0；73 仅 1 点。
-// 未覆盖的通道（0-54、75-95）待补充打墙数据后继续填充。
+// 【打墙自标定】两个来源：
+//   - test.csv（laser 55-74，墙面选区）：55-69 残差 48-104mm 可信；70 低置信；
+//     71/72/74 混入其它物体置 0；73 仅 1 点
+//   - plan.csv（laser 0-27，墙面选区）：1-23 残差 86-120mm 可信；0 混点、
+//     24-27 在墙顶以外的面，置 0
+// 未覆盖的通道（28-54、75-95）待补充打墙数据后继续填充。
 const std::array<double, 96>& GetHorizontalCorrections()
 {
   static const std::array<double, 96> corrections = {
-    //  0-7                                              8-15
-    0, 0, 0, 0, 0, 0, 0, 0,                             0, 0, 0, 0, 0, 0, 0, 0,
-    // 16-23                                             24-31
-    0, 0, 0, 0, 0, 0, 0, 0,                             0, 0, 0, 0, 0, 0, 0, 0,
-    // 32-39                                             40-47
-    0, 0, 0, 0, 0, 0, 0, 0,                             0, 0, 0, 0, 0, 0, 0, 0,
-    // 48-55
+    //  0-7   （0 混点置 0；1-7 来自 plan.csv）
+    0, -0.2516, -0.2390, -0.2507, -0.2084, -0.2258, -0.1904, -0.3620,
+    // 8-15
+    -0.1928, -0.1635, -0.3694, -0.3266, -0.3616, -0.3022, -0.1541, -0.1532,
+    // 16-23
+    -0.1022, -0.3075, -0.0637, -0.1913, -0.2661, -0.0821, +0.2179, +0.4142,
+    // 24-31  （24-27 在墙顶以外的面，置 0）
+    0, 0, 0, 0, 0, 0, 0, 0,
+    // 32-39                                           40-47
+    0, 0, 0, 0, 0, 0, 0, 0,                           0, 0, 0, 0, 0, 0, 0, 0,
+    // 48-54
     0, 0, 0, 0, 0, 0, 0,
-    +0.5407, // 55 (5 pts, RMS 49mm)
-    // 56-63
-    +0.5514, +0.7152, +0.9040, +0.9193, +1.0139, +1.1118, +1.0704, +0.9346,
+    // 55-63（test.csv）
+    +0.5407, +0.5514, +0.7152, +0.9040, +0.9193, +1.0139, +1.1118, +1.0704, +0.9346,
     // 64-71
     +0.4078, +0.8515, +1.1563, +1.3558, +1.2464, +1.0497,
     -0.5719, // 70 (低置信, RMS 104mm)
@@ -162,8 +166,10 @@ public:
   vtkSmartPointer<vtkDoubleArray> Azimuth;
   vtkSmartPointer<vtkDoubleArray> Timestamp;
 
-  double LastAzimuth = 0.0;
-  bool HasLastAzimuth = false;
+  double LastBlockAz = 0.0;        // 上一块的方位角（回放/实时用）
+  bool HasLastBlockAz = false;
+  double PreLastBlockAz = 0.0;     // 上一块的方位角（帧索引预扫描用，与回放状态独立）
+  bool HasPreLastBlockAz = false;
   bool WarnedUnknownModel = false;
 };
 
@@ -187,8 +193,10 @@ vtkSenfoto008PacketInterpreter::~vtkSenfoto008PacketInterpreter() = default;
 void vtkSenfoto008PacketInterpreter::Initialize()
 {
   auto& internals = this->Internals;
-  internals->LastAzimuth = 0.0;
-  internals->HasLastAzimuth = false;
+  internals->LastBlockAz = 0.0;
+  internals->HasLastBlockAz = false;
+  internals->PreLastBlockAz = 0.0;
+  internals->HasPreLastBlockAz = false;
   internals->WarnedUnknownModel = false;
   Superclass::Initialize();
 }
@@ -198,6 +206,16 @@ bool vtkSenfoto008PacketInterpreter::IsLidarPacket(
   unsigned char const* data, unsigned int dataLength)
 {
   return senfoto008::IsValidPacket(data, static_cast<std::size_t>(dataLength));
+}
+
+//-----------------------------------------------------------------------------
+bool vtkSenfoto008PacketInterpreter::CheckBlockWrap(double blockAz)
+{
+  auto& internals = this->Internals;
+  const bool wrap = internals->HasLastBlockAz && blockAz < internals->LastBlockAz;
+  internals->LastBlockAz = blockAz;
+  internals->HasLastBlockAz = true;
+  return wrap;
 }
 
 //-----------------------------------------------------------------------------
@@ -211,18 +229,22 @@ bool vtkSenfoto008PacketInterpreter::PreProcessPacket(
     return false;
   }
 
-  const double currentAzimuth = senfoto008::GetBlockAzimuth(data, 0);
   outLidarDataTime = senfoto008::GetPacketTimestamp(data);
 
+  // 块级回绕检测（与 ProcessPacket 的拆帧判定一致，保证帧索引与回放边界一致）；
+  // 一旦本包内任一块发生回绕，即认为新帧从本包开始。走完全部块以维持状态连续。
   bool isNewFrame = false;
-  if (internals->HasLastAzimuth && currentAzimuth < internals->LastAzimuth)
+  for (std::size_t b = 0; b < senfoto008::DATA_BLOCKS; ++b)
   {
-    isNewFrame = true;
+    const double az = senfoto008::GetBlockAzimuth(data, b);
+    const bool wrap = internals->HasPreLastBlockAz && az < internals->PreLastBlockAz;
+    internals->PreLastBlockAz = az;
+    internals->HasPreLastBlockAz = true;
+    if (wrap)
+    {
+      isNewFrame = true;
+    }
   }
-
-  internals->LastAzimuth = currentAzimuth;
-  internals->HasLastAzimuth = true;
-
   return isNewFrame;
 }
 
@@ -255,16 +277,24 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
   vtkDoubleArray* vcArr = vtkDoubleArray::SafeDownCast(
     this->CalibrationData->GetColumnByName("verticalCorrection"));
 
-  const double currentAzimuth = senfoto008::GetBlockAzimuth(data, 0);
-  if (internals->HasLastAzimuth && currentAzimuth < internals->LastAzimuth)
+  // 块级拆帧（借鉴 Airy SplitStrategyByAngle，粒度从包细化到块，0.2°）。
+  // 预扫描 8 个块的方位角：回绕处之后的块属于新一圈。
+  double blockAzimuths[senfoto008::DATA_BLOCKS] = {};
+  int wrapIdx = -1;
+  for (std::size_t b = 0; b < senfoto008::DATA_BLOCKS; ++b)
   {
-    if (this->CurrentFrame && this->CurrentFrame->GetNumberOfPoints() > 0)
+    blockAzimuths[b] = senfoto008::GetBlockAzimuth(data, b);
+    if (wrapIdx < 0 && this->CheckBlockWrap(blockAzimuths[b]))
     {
-      Superclass::SplitFrame();
+      wrapIdx = static_cast<int>(b);
     }
   }
-  internals->LastAzimuth = currentAzimuth;
-  internals->HasLastAzimuth = true;
+  if (wrapIdx >= 0 && this->CurrentFrame && this->CurrentFrame->GetNumberOfPoints() > 0)
+  {
+    Superclass::SplitFrame();
+  }
+  // wrapIdx > 0 时，本包前 wrapIdx 个块在物理上属于上一圈。帧索引以包为粒度，
+  // 回放无法把它们归还给上一帧，为保持帧首尾干净予以丢弃（约占单圈 0.06%）。
 
   const double packetTimestamp = senfoto008::GetPacketTimestamp(data);
 
@@ -272,11 +302,15 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
   {
     for (std::size_t blockIndex = 0; blockIndex < senfoto008::DATA_BLOCKS; ++blockIndex)
     {
+      if (wrapIdx >= 0 && static_cast<int>(blockIndex) < wrapIdx)
+      {
+        continue;
+      }
       if (!senfoto008::IsValidDataBlock(data, blockIndex))
       {
         continue;
       }
-      const double azimuth = senfoto008::GetBlockAzimuth(data, blockIndex);
+      const double azimuth = blockAzimuths[blockIndex];
       for (std::size_t channelIndex = 0; channelIndex < senfoto008::CHANNELS_PER_BLOCK;
            ++channelIndex)
       {
@@ -324,6 +358,10 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
     {
       const std::size_t firstBlock = pairIndex * 2;
       const std::size_t secondBlock = firstBlock + 1;
+      if (wrapIdx >= 0 && static_cast<int>(firstBlock) < wrapIdx)
+      {
+        continue;
+      }
       if (!senfoto008::IsValidDataBlock(data, firstBlock) ||
         !senfoto008::IsValidDataBlock(data, secondBlock))
       {
