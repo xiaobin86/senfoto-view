@@ -18,6 +18,7 @@
 
 #include <QDebug>
 #include <QMessageBox>
+#include <QRadioButton>
 
 //-----------------------------------------------------------------------------
 lqSelectLidarFrameDialog::lqSelectLidarFrameDialog(int nbFrame,
@@ -43,6 +44,16 @@ lqSelectLidarFrameDialog::lqSelectLidarFrameDialog(int nbFrame,
       this->ui->FrameRangeRadioButton->setChecked(true);
       break;
   }
+
+  // 防呆：帧范围输入框仅在 Frame Range 模式下可用，避免在其它模式下
+  // 填写的数值被忽略（ALL_FRAMES 会导出全部，让人误以为范围未生效）。
+  auto updateRangeInputs = [this](bool rangeMode) {
+    this->ui->StartFrameSpinBox->setEnabled(rangeMode);
+    this->ui->StopFrameSpinBox->setEnabled(rangeMode);
+  };
+  QObject::connect(this->ui->FrameRangeRadioButton, &QRadioButton::toggled, this,
+    updateRangeInputs);
+  updateRangeInputs(this->ui->FrameRangeRadioButton->isChecked());
 }
 
 //-----------------------------------------------------------------------------

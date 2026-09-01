@@ -23,12 +23,15 @@
 #include <vtkSMSourceProxy.h>
 
 #include <QFileInfo>
+#include <QMessageBox>
 #include <QProgressDialog>
 
 #include <pqActiveObjects.h>
 #include <pqCoreUtilities.h>
 #include <pqOutputPort.h>
 #include <pqPipelineSource.h>
+
+#include <vtkSMViewProxy.h>
 
 #include "lqSelectLidarFrameDialog.h"
 #include "vtkSMLidarReaderProxy.h"
@@ -84,6 +87,9 @@ void lqSavePcapReaction::onTriggered()
     nbFrame, pqCoreUtilities::mainWidget(), lqSelectLidarFrameDialog::ALL_FRAMES);
   if (dialog.exec())
   {
+    qInfo() << "lqSavePcapReaction: frame mode"
+            << static_cast<int>(dialog.frameMode()) << "start" << dialog.StartFrame()
+            << "stop" << dialog.StopFrame() << "of" << nbFrame;
     if (dialog.frameMode() == lqSelectLidarFrameDialog::FRAME_RANGE)
     {
       std::stringstream ss;
@@ -91,7 +97,39 @@ void lqSavePcapReaction::onTriggered()
          << dialog.StopFrame() << ")";
       this->BaseName = ss.str().c_str();
     }
-    this->saveFrame(lidar->getProxy(), dialog.StartFrame(), dialog.StopFrame());
+  int startFrame = dialog.StartFrame();
+  int stopFrame = dialog.StopFrame();
+  if (dialog.frameMode() == lqSelectLidarFrameDialog::CURRENT_FRAME)
+  {
+    // Resolve the currently displayed frame index: SaveFrames takes frame
+    // indices and its parameters are unsigned, so the dialog's -1 sentinel
+    // would wrap and always fail the bounds check.
+    double viewTime = 0.0;
+    if (auto* view = pqActiveObjects::instance().activeView())
+    {
+      viewTime = vtkSMPropertyHelper(view->getViewProxy(), "ViewTime").GetAsDouble();
+    }
+    startFrame = 0;
+    stopFrame = 0;
+    if (tsv)
+    {
+      const unsigned int n = tsv->GetNumberOfElements();
+      for (unsigned int i = 0; i < n; ++i)
+      {
+        if (tsv->GetElement(i) <= viewTime + 1e-6)
+        {
+          startFrame = stopFrame = static_cast<int>(i);
+        }
+        else
+        {
+          break;
+        }
+      }
+    }
+    qInfo() << "lqSavePcapReaction: current frame resolved to" << startFrame
+            << "(view time" << viewTime << ")";
+  }
+  this->saveFrame(lidar->getProxy(), startFrame, stopFrame);
   }
 }
 
@@ -110,6 +148,25 @@ bool lqSavePcapReaction::saveFrame(vtkSMProxy* lidar, int start, int stop)
   }
 
   QString filename = this->FolderPath + "/" + this->BaseName + "." + this->Extension;
+
+  // Self-overwrite protection: SaveFrames() opens the source pcap for reading
+  // and then the output file for writing. Writing to the source path truncates
+  // the source file before any packet is written (data loss).
+  std::string sourceFileName =
+    vtkSMPropertyHelper(lidarProxy, "FileName").GetAsString();
+  if (!sourceFileName.empty() &&
+    QFileInfo(filename).absoluteFilePath() ==
+    QFileInfo(QString::fromStdString(sourceFileName)).absoluteFilePath())
+  {
+    QMessageBox::warning(pqCoreUtilities::mainWidget(), "Export pcap",
+      "The output file is the same as the source pcap.\n"
+      "Exporting would destroy the source file.\n"
+      "Please choose a different file name.");
+    return false;
+  }
+
   lidarProxy->SaveFrames(start, stop, filename.toStdString());
+  qInfo() << "lqSavePcapReaction: exporting pcap to" << filename
+          << "(session stream call)";
   return true;
 }
