@@ -349,8 +349,9 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
           const double distM = senfoto008::GetChannelDistance(data, firstBlock, channelIndex);
           const std::uint8_t intensity =
             senfoto008::GetChannelIntensity(data, firstBlock, channelIndex);
-          const double azimuthDeg =
-            ComputeCorrectedAzimuthDeg(rotUnits, diffs, static_cast<int>(firstBlock), laserId);
+          const double azimuthDeg = this->EnableAzimuthCorrection
+            ? ComputeCorrectedAzimuthDeg(rotUnits, diffs, static_cast<int>(firstBlock), laserId)
+            : blockAzimuths[firstBlock];
           this->AddPoint(azimuthDeg, vcArr ? vcArr->GetTuple1(static_cast<vtkIdType>(laserId)) : 0.0, distM, laserId, intensity, packetTimestamp);
         }
 
@@ -364,8 +365,9 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
           const double distM = senfoto008::GetChannelDistance(data, secondBlock, channelIndex);
           const std::uint8_t intensity =
             senfoto008::GetChannelIntensity(data, secondBlock, channelIndex);
-          const double azimuthDeg =
-            ComputeCorrectedAzimuthDeg(rotUnits, diffs, static_cast<int>(secondBlock), laserId);
+          const double azimuthDeg = this->EnableAzimuthCorrection
+            ? ComputeCorrectedAzimuthDeg(rotUnits, diffs, static_cast<int>(secondBlock), laserId)
+            : blockAzimuths[secondBlock];
           this->AddPoint(azimuthDeg, vcArr ? vcArr->GetTuple1(static_cast<vtkIdType>(laserId)) : 0.0, distM, laserId, intensity, packetTimestamp);
         }
       }

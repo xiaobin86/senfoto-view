@@ -49,6 +49,10 @@ public:
   vtkSetMacro(EndAngle, double);
   vtkGetMacro(EndAngle, double);
 
+  // --- 96-line azimuth firing-sequence correction toggle ---
+  vtkSetMacro(EnableAzimuthCorrection, bool);
+  vtkGetMacro(EnableAzimuthCorrection, bool);
+
   /**
    * Initializes the lidar configuration.
    */
@@ -105,6 +109,7 @@ private:
   double MaxDistance = 10000.0;
   double StartAngle = 0.0;
   double EndAngle = 360.0;
+  bool EnableAzimuthCorrection = true;
 
   class vtkInternals;
   std::unique_ptr<vtkInternals> Internals;

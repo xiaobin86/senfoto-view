@@ -2,6 +2,8 @@
 # 功能：SenFoToView 新增功能 —— Senfoto008 插件构建入口；
 #        通过 paraview_add_plugin 编译并安装该插件及其 Server Manager XML。
 # 作者：acelan
+# 新建时间：2026-08-28
+# 修改时间：2026-09-01
 # ============================================================
 
 paraview_add_plugin(Senfoto008Plugin
@@ -17,6 +19,4 @@ paraview_add_plugin(Senfoto008Plugin
 )
 
 option(BUILD_TESTING "Enable testing" OFF)
-if (BUILD_TESTING)
-  add_subdirectory(Testing)
-endif ()
+add_subdirectory(Testing)

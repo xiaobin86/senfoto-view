@@ -3,7 +3,7 @@
         （MinDistance/MaxDistance 等）。
   作者：acelan
   新建时间：2026-08-28
-  修改时间：2026-08-28
+  修改时间：2026-09-01
 -->
 
 <ServerManagerConfiguration>
@@ -38,6 +38,23 @@
                             default_values="360.0">
         <Documentation>End of the azimuth FOV filter, in degrees [0,360]. Supports wrap-around when EndAngle &lt; StartAngle.</Documentation>
       </DoubleVectorProperty>
+
+      <IntVectorProperty name="EnableAzimuthCorrection"
+                         command="SetEnableAzimuthCorrection"
+                         animateable="0"
+                         default_values="1"
+                         number_of_elements="1">
+        <BooleanDomain name="bool" />
+        <Documentation>
+          Enable the 96-line firing-sequence azimuth correction.
+          When enabled, the second sub-block of each block pair (lasers 48-95)
+          receives an interpolated azimuth offset based on the inter-pair azimuth
+          difference and the LaserFireCycle calibration, which accounts for sensor
+          rotation between the two sub-blocks. Uncheck this for non-rotating or
+          fixed-azimuth debug data where the block header azimuth should be used
+          directly for all lasers.
+        </Documentation>
+      </IntVectorProperty>
     </Proxy>
   </ProxyGroup>
 </ServerManagerConfiguration>

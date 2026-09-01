@@ -3,7 +3,7 @@
         注册 Senfoto008 PCAP 文件读取器代理（数据源）。
   作者：acelan
   新建时间：2026-08-28
-  修改时间：2026-08-28
+  修改时间：2026-09-01
 -->
 
 <ServerManagerConfiguration>
@@ -38,6 +38,7 @@
             <Property name="IgnoreZeroDistances" panel_visibility="advanced" />
             <Property name="IgnoreEmptyFrames" panel_visibility="advanced" />
             <Property name="EnableAdvancedArrays" panel_visibility="advanced" />
+            <Property name="EnableAzimuthCorrection" />
             <Property name="FramingMethod" panel_visibility="advanced" />
             <Property name="FrameDuration" panel_visibility="advanced" />
           </PropertyGroup>
