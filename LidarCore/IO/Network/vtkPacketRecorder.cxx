@@ -53,13 +53,25 @@ public:
   //------------------------------------------------------------------------------
   void RecordingLoop(const std::string& filename)
   {
-    std::unique_ptr<Tins::PacketWriter> tinsWriter =
-      std::make_unique<Tins::PacketWriter>(filename, Tins::DataLinkType<Tins::EthernetII>());
-
-    Tins::Packet packet;
-    while (this->DataQueue->Dequeue(packet))
+    // The writer thread must not let exceptions escape: an uncaught throw here
+    // (e.g. Tins::PacketWriter::init failing to create the output file)
+    // terminates the whole process. Report through the VTK error channel instead.
+    try
     {
-      tinsWriter->write(packet);
+      std::unique_ptr<Tins::PacketWriter> tinsWriter =
+        std::make_unique<Tins::PacketWriter>(filename, Tins::DataLinkType<Tins::EthernetII>());
+
+      Tins::Packet packet;
+      while (this->DataQueue->Dequeue(packet))
+      {
+        tinsWriter->write(packet);
+      }
+    }
+    catch (const std::exception& ex)
+    {
+      // vtkInternals is not a vtkObject, so use the object-less output route.
+      vtkGenericWarningMacro("Recording aborted: failed to write to '" << filename
+        << "': " << ex.what());
     }
   }
 };

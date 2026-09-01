@@ -116,8 +116,12 @@ void lqStreamPCAPRecorder::startWriterProxy()
   this->LastRecordingFileName = this->BaseRecordingFileName + "-" + dateSuffix + ".pcap";
 
   QString recordingCompletePath(this->RecordingFilePath + "/" + this->LastRecordingFileName);
-  const char* filename = recordingCompletePath.toUtf8().constData();
-  vtkSMPropertyHelper(this->RecorderProxy, "RecordingFileName").Set(filename);
+  // Keep the UTF-8 bytes alive for the whole call: binding a const char* to a
+  // temporary toUtf8() leaves a dangling pointer, so the SM property may copy
+  // freed memory and the writer thread ends up opening a corrupted path.
+  const QByteArray pathBytes = recordingCompletePath.toUtf8();
+  vtkSMPropertyHelper(this->RecorderProxy, "RecordingFileName")
+    .Set(pathBytes.constData());
   this->RecorderProxy->UpdateProperty("RecordingFileName", true);
   this->RecorderProxy->InvokeCommand("StartRecording");
 }
