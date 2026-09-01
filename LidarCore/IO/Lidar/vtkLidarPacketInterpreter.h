@@ -46,7 +46,10 @@
 enum FramingMethod_t
 {
   INTERPRETER_FRAMING = 0,        // the interpreter in charge of the framing
-  NETWORK_PACKET_TIME_FRAMING = 1 // interpreter not in charge
+  NETWORK_PACKET_TIME_FRAMING = 1, // interpreter not in charge
+  // SenFoToView: one UDP packet per frame. For fixed-azimuth (non-rotating)
+  // debug sensors where azimuth-based revolution detection cannot apply.
+  PER_PACKET_FRAMING = 2
 };
 
 class LVIOLIDAR_EXPORT vtkLidarPacketInterpreter : public vtkInterpreter

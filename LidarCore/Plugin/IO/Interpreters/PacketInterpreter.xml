@@ -84,6 +84,7 @@
         <EnumerationDomain name="enum">
           <Entry value="0" text="Interpreter provided (default)" />
           <Entry value="1" text="Time (Network Packet Time)" />
+          <Entry value="2" text="One UDP packet per frame" />
         </EnumerationDomain>
         <Documentation>
           Method to use to compute frames (frames are not intrinsic to the data).
@@ -91,6 +92,9 @@
           Historically this is the first method that was implemented.
           *Time* method: the limit between frames is when network packet time
           is equal to 0.0 seconds modulo FrameDuration seconds.
+          *One UDP packet per frame* (SenFoToView): every packet becomes one frame.
+          Intended for fixed-azimuth (non-rotating) debug sensors where
+          azimuth-based revolution detection cannot apply.
         </Documentation>
       </IntVectorProperty>
 

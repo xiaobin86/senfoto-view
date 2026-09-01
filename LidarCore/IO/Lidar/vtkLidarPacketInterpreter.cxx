@@ -195,6 +195,17 @@ void vtkLidarPacketInterpreter::ProcessPacketWrapped(unsigned char const* data,
     this->LastNetworkTimeFrameNumber = currentFrameNumber;
   }
 
+  // SenFoToView: one UDP packet per frame - every packet is a frame boundary.
+  // The split happens BEFORE interpreting the packet (same order as the Time
+  // method): the empty current frame is skipped (SplitFrame without force), so
+  // each completed frame contains exactly the points of one packet; the last
+  // packet's frame is finalized by the caller (force split).
+  if (this->IsLidarPacket(data, dataLength) &&
+    this->FramingMethod == FramingMethod_t::PER_PACKET_FRAMING)
+  {
+    this->SplitFrame(false, FramingMethod_t::PER_PACKET_FRAMING);
+  }
+
   // Interpreter the packet
   this->ProcessPacket(data, dataLength);
 }
@@ -223,6 +234,14 @@ bool vtkLidarPacketInterpreter::PreProcessPacketWrapped(unsigned char const* dat
         return true;
       }
       break;
+    }
+
+    // SenFoToView: one UDP packet per frame - the frame index treats every
+    // packet as the start of a new frame, matching the replay-time split.
+    case FramingMethod_t::PER_PACKET_FRAMING:
+    {
+      outLidarDataTime = packetNetworkTime;
+      return true;
     }
 
     default:

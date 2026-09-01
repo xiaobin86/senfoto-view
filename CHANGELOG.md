@@ -5,6 +5,31 @@
 
 ---
 
+## 2026-09-01 批次：流录制崩溃修复 + 块级拆帧 + pcap 导出加固
+
+- `f440134` fix(stream): 流录制崩溃修复
+  - 问题：点击"录制帧"选完路径确定后整个进程 crash（SIGABRT）
+  - 根因 1：`lqStreamPCAPRecorder::startWriterProxy` 中 `toUtf8().constData()` 悬垂指针，
+    SM 属性拷贝到垃圾路径 → `Tins::PacketWriter::init(乱码)` 抛异常
+  - 根因 2：录制写线程无 try/catch → 未捕获异常 → `std::terminate` → abort
+  - 方案：QByteArray 保活；RecordingLoop 整体 try/catch，失败走 `vtkGenericWarningMacro`
+  - 附带：用户提供的崩溃报告（Thread 15 tins init → cxa_throw → terminate）直接定位
+- `3444dc4` fix(senfoto008): 块级拆帧（对齐 Airy `SplitStrategyByAngle`）
+  - 问题：帧边界滞后 1 包（1.6°），帧尾混入下一圈越界点
+  - 方案：回绕检测细化到块粒度（0.2°），跨 0° 包的越界块丢弃（~0.06%/圈），
+    帧索引与回放使用同一块级检测
+- `e94bc26` fix(ui): pcap 导出加固
+  - 同名自覆盖防护：导出默认名=源文件名时写出会截断源文件（曾导致 127MB 源 pcap 丢失）
+  - CURRENT_FRAME 修复：`-1` 哨兵传入 unsigned 参数必然失败边界检查 → 解析当前显示帧索引
+  - 对话框防呆：帧范围输入框仅 Frame Range 模式可用（此前 ALL_FRAMES 下填值被静默忽略，
+    曾导致"填了 10 帧却全量导出"）
+  - 增加导出诊断日志（mode/start/stop/目标路径）
+  - 注：曾实现"直接调用客户端 VTK 对象"绕过 CS 流层静默吞调用，经验证回退保留原流路径；
+    若 CURRENT_FRAME 再现静默失败可恢复该改动
+- `e48cd4f` docs: changelog 政策（AGENTS.md）+ 历史批次回填
+
+---
+
 ## 2026-09-01 批次：SF008 解码对齐 Airy + Airy 标定参考 + ccache
 
 - `7f914a5` fix(senfoto008): 方位角解码对齐 Airy 参考实现
