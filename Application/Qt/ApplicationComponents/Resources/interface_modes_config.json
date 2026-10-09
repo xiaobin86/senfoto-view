@@ -77,6 +77,10 @@
         "actionRescaleTemporalRange"
       ],
       "cameraToolbar": [
+        "actionResetCamera",
+        "actionResetCameraClosest",
+        "actionZoomToData",
+        "actionZoomClosestToData",
         "actionPositiveX",
         "actionNegativeX",
         "actionPositiveY",
@@ -87,7 +91,10 @@
         "actionRotate90degCCW"
       ],
       "axesToolbar": [
-        "actionShowOrientationAxes"
+        "actionShowOrientationAxes",
+        "actionShowCenterAxes",
+        "actionResetCenter",
+        "actionPickCenter"
       ]
     },
     "automaticallyShowScalarBars": false,
