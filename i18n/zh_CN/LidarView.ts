@@ -6,7 +6,7 @@
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Client/LidarViewMainWindow.ui" line="17"/>
         <source>SenFoToView</source>
-        <translation type="unfinished"></translation>
+        <translation>SenFotoView 图像</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Client/LidarViewMainWindow.ui" line="48"/>
@@ -106,7 +106,7 @@
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Client/LidarViewMainWindow.ui" line="232"/>
         <source>OutputMessages</source>
-        <translation type="unfinished"></translation>
+        <translation>输出消息</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Client/LidarViewMainWindow.ui" line="241"/>
@@ -144,7 +144,7 @@
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/Components/Resources/UI/lqAboutDialog.ui" line="55"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/Components/Resources/UI/lqAboutDialog.ui" line="66"/>
@@ -154,27 +154,27 @@
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/Components/Resources/UI/lqAboutDialog.ui" line="94"/>
         <source>Item</source>
-        <translation type="unfinished"></translation>
+        <translation>项目</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/Components/Resources/UI/lqAboutDialog.ui" line="99"/>
         <source>Description</source>
-        <translation type="unfinished"></translation>
+        <translation>说明</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/Components/Resources/UI/lqAboutDialog.ui" line="126"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://www.kitware.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:palette(link);&quot;&gt;www.kitware.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href="http://www.kitware.com/"&gt;&lt;span style=" text-decoration: underline; color:palette(link);"&gt;www.kitware.com (中文(简体) ).&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/Components/Resources/UI/lqAboutDialog.ui" line="136"/>
         <source>&lt;html&gt;&lt;b&gt;Version: &lt;i&gt;3.x.x&lt;/i&gt;&lt;/b&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;b&gt;版本 :&lt;i&gt;3.x.x&lt;/i&gt;&lt;/b&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/Components/Resources/UI/lqAboutDialog.ui" line="149"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lidarview.kitware.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:palette(link);&quot;&gt;lidarview.kitware.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href="https://lidarview.kitware.com/"&gt;&lt;span style=" text-decoration: underline; color:palette(link);"&gt;lidarview.kitware.com (中文(简体) ).&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/Components/Resources/UI/lqAboutDialog.ui" line="167"/>
@@ -313,7 +313,7 @@
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/Components/lqAboutDialog.cxx" line="196"/>
         <source>Client Information:
 </source>
-        <translation type="unfinished"></translation>
+        <translation>客户信息 :</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/Components/lqAboutDialog.cxx" line="207"/>
@@ -351,7 +351,7 @@
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/ApplicationComponents/Resources/UI/lqEditMenuBuilder.ui" line="28"/>
         <source>Ctrl+G</source>
-        <translation type="unfinished"></translation>
+        <translation>缩略语+G</translation>
     </message>
 </context>
 <context>
@@ -379,7 +379,7 @@
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/ApplicationComponents/Resources/UI/lqFileMenuBuilder.ui" line="23"/>
         <source>Ctrl+P</source>
-        <translation type="unfinished"></translation>
+        <translation>缩写+P</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/ApplicationComponents/Resources/UI/lqFileMenuBuilder.ui" line="32"/>
@@ -394,7 +394,7 @@
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/ApplicationComponents/Resources/UI/lqFileMenuBuilder.ui" line="44"/>
         <source>Ctrl+S</source>
-        <translation type="unfinished"></translation>
+        <translation>缩写+S</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/ApplicationComponents/Resources/UI/lqFileMenuBuilder.ui" line="53"/>

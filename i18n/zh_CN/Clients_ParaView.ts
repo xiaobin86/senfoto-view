@@ -121,7 +121,7 @@
     <message>
         <location filename="../Clients/ParaView/ParaViewMainWindow.ui" line="310"/>
         <source>OSPRay support not available!</source>
-        <translation type="unfinished"></translation>
+        <translation>OSPRay 支持不可用 !</translation>
     </message>
     <message>
         <location filename="../Clients/ParaView/ParaViewMainWindow.ui" line="325"/>
@@ -146,7 +146,7 @@
     <message>
         <location filename="../Clients/ParaView/ParaViewMainWindow.ui" line="376"/>
         <source>OutputMessages</source>
-        <translation type="unfinished"></translation>
+        <translation>输出消息</translation>
     </message>
     <message>
         <location filename="../Clients/ParaView/ParaViewMainWindow.ui" line="391"/>
@@ -156,7 +156,7 @@
     <message>
         <location filename="../Clients/ParaView/ParaViewMainWindow.ui" line="407"/>
         <source>Python support not available!</source>
-        <translation type="unfinished"></translation>
+        <translation>Python 支持不可用 !</translation>
     </message>
     <message>
         <location filename="../Clients/ParaView/ParaViewMainWindow.ui" line="422"/>
