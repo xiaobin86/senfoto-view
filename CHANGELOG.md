@@ -5,6 +5,19 @@
 
 ---
 
+## 2026-10-09 批次：全量中文汉化 + 隐藏模式切换按钮
+
+- `f9d2cc0a` feat(i18n): 全量 zh_CN 机器翻译（约 1.1 万条）+ 翻译/校对脚本
+  - 8 个 ParaView 目录 + LidarView 自有，共约 10,607 条去重译文；`paraview_zh_CN.qm` 由 150 条增至 11,395 条（约 1.7 MB）
+  - 背景：免费在线 MT（Google/有道）被限流/封禁后，改用**离线 Argos Translate**（en→zh）批量翻译（无限流、约 31 条/秒）
+  - 新增 `i18n/translate_zh.py`（多后端、占位符/HTML/加速键保护、术语表、磁盘缓存可续跑）；`i18n/qa_zh.py`（校对筛查）
+  - 校对第一轮：修复 HTML 标签被翻译损坏（改为「只译文本节点、标签原样」）、术语（protractor→量角器、sin→正弦、camera→相机）等；问题由 40 降至 11（剩余为无害的符号/专有名词）
+- `32064e75` feat(ui): 隐藏 Point Cloud/Advanced 模式切换按钮
+  - `interface_modes_config.json` 的 `interfaceControlsToolbar` 白名单三个模式均只保留 `actionLidarViewerSetup`
+  - 注意：此改动会禁用工具栏上的模式切换（无法再切到 Point Cloud/Advanced）
+
+---
+
 ## 2026-10-09 批次：中文汉化 + 主工具栏/播放器行 UI 增强
 
 - `09dbec9f` docs: 将 MEMORY.md 项目扩展到合并进 AGENTS.md
