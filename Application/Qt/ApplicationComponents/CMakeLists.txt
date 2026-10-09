@@ -9,6 +9,7 @@ set(classes
   lqMenuSaveAsReaction
   lqPointCloudAutoRepresentationBehavior
   lqStatusBar
+  lqTrailingFrameReaction
   lqViewFrameActionsImplementation
   lqWelcomeDialog
 )

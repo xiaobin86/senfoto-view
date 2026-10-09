@@ -49,6 +49,7 @@ typedef pqPythonDebugLeaksView DebugLeaksViewType;
 #include <QList>
 #include <QMessageBox>
 #include <QMimeData>
+#include <QSpinBox>
 #include <QToolBar>
 
 #include "lqCommandLineOptionsBehavior.h"
@@ -60,6 +61,7 @@ typedef pqPythonDebugLeaksView DebugLeaksViewType;
 #include "lqPointCloudAutoRepresentationBehavior.h"
 #include "lqRecentlyUsedPcapLoader.h"
 #include "lqStreamPCAPRecorder.h"
+#include "lqTrailingFrameReaction.h"
 #include "lqViewFrameActionsImplementation.h"
 #include "lqWelcomeDialog.h"
 
@@ -167,6 +169,13 @@ LidarViewMainWindow::LidarViewMainWindow()
     "PYTHON_SHELL_PANEL", this->Internals->pythonShellDock);
   pqApplicationCore::instance()->registerManager(
     "LIDAR_PLAYER_PANEL", this->Internals->lidarPlayerDock);
+
+  // The "TF" (trailing frame) spin box lives in the lidar player panel.
+  if (QSpinBox* trailingFrameSpinBox =
+        this->Internals->lidarPlayerDock->findChild<QSpinBox*>("TrailingFrameSpinBox"))
+  {
+    new lqTrailingFrameReaction(trailingFrameSpinBox, this);
+  }
 
   QStringList preamble = { "from paraview.simple import *", "from lidarview.simple import *" };
   // Create pythonshell

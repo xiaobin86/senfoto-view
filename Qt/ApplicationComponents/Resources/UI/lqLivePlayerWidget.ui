@@ -168,6 +168,20 @@
      </property>
     </widget>
    </item>
+   <item>
+    <widget class="QLabel" name="TrailingFrameLabel">
+     <property name="text">
+      <string>TF</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QSpinBox" name="TrailingFrameSpinBox">
+     <property name="toolTip">
+      <string>Number of trailing frames (0 = disabled)</string>
+     </property>
+    </widget>
+   </item>
   </layout>
  </widget>
  <customwidgets>
