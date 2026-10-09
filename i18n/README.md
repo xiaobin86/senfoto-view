@@ -2,6 +2,8 @@
 
 本目录为 LidarView fork（SenFoToView）的界面汉化工作区，基于 **ParaView 6.1 官方 i18n 机制**。
 
+> 完整架构说明与「修改/补充翻译」操作指南见 **`docs/senfotoview-i18n-zh-cn.md`**（存档）。
+
 > 现状：**骨架 + 小规模验证**。已完成 zh_CN 目录骨架与构建/投放管道，仅注入少量冒烟翻译用于验证。
 > 全量翻译、LidarView 自有字符串、superbuild 持久化见文末「后续阶段」。
 
