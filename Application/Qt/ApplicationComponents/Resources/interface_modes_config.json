@@ -95,6 +95,9 @@
         "actionShowCenterAxes",
         "actionResetCenter",
         "actionPickCenter"
+      ],
+      "interfaceControlsToolbar": [
+        "actionLidarViewerSetup"
       ]
     },
     "automaticallyShowScalarBars": false,
@@ -199,6 +202,9 @@
         "actionResetRange",
         "actionRescaleCustomRange",
         "actionRescaleVisibleRange"
+      ],
+      "interfaceControlsToolbar": [
+        "actionLidarViewerSetup"
       ]
     },
     "automaticallyShowScalarBars": true,
@@ -308,6 +314,9 @@
       ],
       "toolbarBreaks": [
         "cameraToolbar"
+      ],
+      "interfaceControlsToolbar": [
+        "actionLidarViewerSetup"
       ]
     },
     "automaticallyShowScalarBars": true,
