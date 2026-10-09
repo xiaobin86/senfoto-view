@@ -16,12 +16,14 @@
 #include "lqMainControlsToolbar.h"
 #include "ui_lqMainControlsToolbar.h"
 
+#include <QActionGroup>
 #include <QToolButton>
 
 #include <pqAutoApplyReaction.h>
 #include <pqDataQueryReaction.h>
 #include <pqDeleteReaction.h>
 #include <pqLoadDataReaction.h>
+#include <pqRenderViewSelectionReaction.h>
 #include <pqSaveDataReaction.h>
 #include <pqUndoRedoReaction.h>
 
@@ -60,6 +62,13 @@ void lqMainControlsToolbar::constructor()
   new pqDataQueryReaction(ui.actionQuery);
   new lqPythonShellReaction(ui.actionPythonShell);
   new lqLaserSelectionReaction(ui.actionLaserSelection);
+
+  // Box selection of points ("Select Points Through"): rubber-band select all points
+  // inside the drawn rectangle in the active render view.
+  QActionGroup* selectionGroup = new QActionGroup(this);
+  selectionGroup->setExclusive(true);
+  new pqRenderViewSelectionReaction(ui.actionBoxSelectPoints, nullptr,
+    pqRenderViewSelectionReaction::SELECT_FRUSTUM_POINTS, selectionGroup);
 
   QMainWindow* mainWindow = qobject_cast<QMainWindow*>(this->parent());
   if (!mainWindow)

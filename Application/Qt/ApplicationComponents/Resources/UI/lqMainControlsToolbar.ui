@@ -211,7 +211,25 @@
       <string>Spreadsheet View</string>
      </property>
     </action>
-    <addaction name="actionOpenPcap"/>
+      <action name="actionBoxSelectPoints">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/pqWidgets/Icons/pqFrustumSelectionPoint.svg</normaloff>:/pqWidgets/Icons/pqFrustumSelectionPoint.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Box Select Points</string>
+   </property>
+   <property name="toolTip">
+    <string>Box Select Points (Select Points Through)</string>
+   </property>
+   <property name="statusTip">
+    <string>Select the points inside a drawn rectangle</string>
+   </property>
+  </action>
+<addaction name="actionOpenPcap"/>
   <addaction name="actionSavePcap"/>
   <addaction name="actionOpenSensorStream"/>
   <addaction name="separator"/>
@@ -219,6 +237,7 @@
   <addaction name="actionToggleAdvancedArrays"/>
   <addaction name="actionUpdateConfiguration"/>
   <addaction name="actionLaserSelection"/>
+  <addaction name="actionBoxSelectPoints"/>
   <addaction name="separator"/>
   <addaction name="actionOpenData"/>
   <addaction name="actionSaveData"/>

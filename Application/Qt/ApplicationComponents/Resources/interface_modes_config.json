@@ -67,6 +67,7 @@
         "actionLoadPalette",
         "actionDeleteAll",
         "actionLaserSelection",
+        "actionBoxSelectPoints",
         "actionSpreadSheet"
       ],
       "colorToolBar": [
@@ -182,6 +183,7 @@
         "actionPythonShell",
         "actionDeleteAll",
         "actionLaserSelection",
+        "actionBoxSelectPoints",
         "actionSpreadSheet"
       ],
       "colorToolBar": [
@@ -294,6 +296,7 @@
         "actionPythonShell",
         "actionDeleteAll",
         "actionLaserSelection",
+        "actionBoxSelectPoints",
         "actionSpreadSheet"
       ],
       "toolbarBreaks": [
