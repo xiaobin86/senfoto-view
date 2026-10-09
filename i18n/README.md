@@ -50,7 +50,7 @@ i18n/
 ├── build-zh-cn.sh       # 合并 .ts → paraview_zh_CN.qm，并收集 Qt qm、投放
 ├── .gitignore           # 忽略 out/
 ├── out/                 # 构建产物（不入库）
-└── zh_CN/               # 8 个 zh_CN 目录文件（骨架，大部分 type="unfinished"）
+└── zh_CN/               # 9 个目录文件（8 个 ParaView 官方骨架 + 1 个 LidarView 自有）
     ├── Qt_Core.ts
     ├── Qt_Components.ts
     ├── Qt_ApplicationComponents.ts
@@ -58,8 +58,14 @@ i18n/
     ├── Qt_Python.ts
     ├── Clients_ParaView.ts
     ├── Clients_ParaView-XMLs.ts
-    └── ServerManager-XMLs.ts
+    ├── ServerManager-XMLs.ts
+    └── LidarView.ts      # SenFoToView 自有 UI（菜单/工具栏/主窗口/欢迎页/关于框）
 ```
+
+`LidarView.ts` 由 `lupdate` 从 `Application/` 的 `.cxx/.h/.ui` 提取（context 为类名，
+如 `LidarViewMainWindow`、`lqFileMenuBuilder`、`lqMainControlsToolbar`…），并附加
+`ServerManagerXML` context 的客户端菜单分类标签（来自 `lvFilters.xml`/`lvSources.xml`
+的 `menu_label`）。**主菜单栏、工具栏、主窗口、欢迎/关于对话框的中文由此文件提供。**
 
 `zh_CN/*.ts` 由官方 `en/*.ts` 模板复制而来，仅把 `<TS version="2.1">` 改为
 `<TS version="2.1" language="zh_CN">`，并注入少量冒烟翻译（见第 5 节）。
@@ -118,11 +124,18 @@ PV_TRANSLATIONS_LOCALE=zh_CN /mnt/d/work/senfoto-view/build/install/bin/SenFoToV
 术语建议（待评审）：点云 = point cloud，激光雷达 = LiDAR，帧 = frame，
 渲染视图 = Render View，管线浏览器 = Pipeline Browser，属性 = Properties。
 
-## 7. 后续阶段（未包含在本骨架中）
+## 7. 后续阶段
 
-- **P1 全量翻译**：对 8 个目录的 11.5k 条字符串做机器翻译 + 术语校对（可用脚本批量调用翻译服务/LLM）。
-- **P2 LidarView 自有字符串**：用 `lupdate` 提取 `Application/` + `lvFilters.xml`/`lvSources.xml`
-  及自有 `Plugins/*.xml`，生成 `Clients_SenFoToView*.ts` 并翻译，合并进 `paraview_zh_CN.qm`。
+- **P1 全量翻译**：对 8 个 ParaView 目录的 11.5k 条字符串做机器翻译 + 术语校对
+  （当前仅 150 条冒烟；大量 ParaView 属性/过滤器字符串仍为英文）。
+- **P2 LidarView 自有字符串** —— **本轮已完成主界面部分**：
+  - 已提取并翻译 136 条自有 UI 字符串（`LidarView.ts`）+ 7 条菜单分类标签。
+  - 效果：主菜单栏（文件/编辑/视图/帮助）、工具栏提示、主窗口面板标题、欢迎/关于对话框已中文化。
+  - 仍未覆盖：`Plugins/*` 各插件的过滤器/属性 **label**（`<SourceProxy label>` /
+    `<Property>` 的 label，海量）——如需可复用 ParaView 的
+    `CMake/XML_translations_header_generator.py` 批量提取后再翻译。
+  - 刷新 `LidarView.ts` 的源字符串：用 `lupdate` 对 `Application/` 建 `.pro` 后更新；
+    或启用 `Application/Client/CMakeLists.txt` 的 `paraview_client_add(... TRANSLATION_TARGET ... TRANSLATE_XML ON)`。
 - **P3 superbuild 持久化**：将 `zh_CN` 纳入翻译项目、把 `zh_CN` 加入 `paraview_languages`
   （见 `lidarview-superbuild/pvsb/projects/paraview.bundle.common.cmake`），随构建自动产出 `.qm`。
 
