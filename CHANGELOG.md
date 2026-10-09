@@ -5,6 +5,28 @@
 
 ---
 
+## 2026-10-09 批次：中文汉化 + 主工具栏/播放器行 UI 增强
+
+- `09dbec9f` docs: 将 MEMORY.md 项目扩展到合并进 AGENTS.md
+  - 把工作区根 `MEMORY.md` 的架构/扩展方式记忆并入 `AGENTS.md` 统一管理
+- `307ca71c` feat(i18n): 添加 zh_CN 汉化骨架、lconvert 构建脚本与 .qm 投放流程
+  - 从 ParaView 官方 en 模板生成 8 个 `zh_CN` 目录（含少量冒烟翻译）；`i18n/build-zh-cn.sh` 用 `lconvert` 合并为 `paraview_zh_CN.qm` 并投放，无需重编译
+  - 关键点：ParaView 靠资源目录下的 `doc/` 反推 translations 目录，脚本补建空 `doc/`
+- `d10c6b98` feat(i18n): 汉化自有菜单/工具栏/主窗口（LidarView.ts 136 条 + 菜单分类）
+  - 用 `lupdate` 提取 `Application/` 自有字符串并翻译；主菜单栏/工具栏/面板标题/欢迎/关于框中文化
+- `e74bd1e1` docs(i18n): 存档汉化架构与翻译修改指南（`docs/senfotoview-i18n-zh-cn.md`）
+- `244fdf67` feat(ui): 主工具栏新增框选点按钮（Select Points Through）
+  - 接入 `pqRenderViewSelectionReaction::SELECT_FRUSTUM_POINTS`，三个界面模式白名单均可见
+- `856748a4` feat(ui): lidarViewer 模式显示相机复位/缩放与中心轴动作
+  - `interface_modes_config.json` 的 lidarViewer `cameraToolbar`/`axesToolbar` 白名单补充相应动作
+- `90416751` feat(ui): 播放器行新增 Trailing Frame(TF) 数值控件
+  - `lqLivePlayerWidget` 增加 "TF" + QSpinBox；新增 `lqTrailingFrameReaction` 对活动雷达源应用 `TrailingFrame` 过滤器，0=关闭
+- `ed7d88c0` feat(ui): 点云默认点大小改为 1
+  - `lqPointCloudAutoRepresentationBehavior` 的 PLY Points 表示 `PointSize` 由 2.0 改为 1.0
+- `42c06071` Merge branch 'feat/i18n-zh-cn' into feat/box-select-points-toolbar（合并后一并并入 develop）
+
+---
+
 ## 2026-09-01 批次：流录制崩溃修复 + 块级拆帧 + pcap 导出加固
 
 - `f440134` fix(stream): 流录制崩溃修复
