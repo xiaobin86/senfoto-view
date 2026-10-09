@@ -19,7 +19,7 @@
 //       对所有界面模式生效。
 // 作者：acelan
 // 新建时间：2026-08-31
-// 修改时间：2026-08-31
+// 修改时间：2026-10-09
 // ============================================================
 
 #include "lqPointCloudAutoRepresentationBehavior.h"
@@ -138,11 +138,10 @@ void lqPointCloudAutoRepresentationBehavior::onSourceAdded(pqPipelineSource* sou
     reprProxy->UpdateVTKObjects();
   }
 
-  // Use a reasonable point size for meter-scale clouds.
   vtkSMProperty* sizeProp = reprProxy->GetProperty("PointSize");
   if (sizeProp)
   {
-    vtkSMPropertyHelper(sizeProp).Set(2.0);
+    vtkSMPropertyHelper(sizeProp).Set(1.0);
     reprProxy->UpdateVTKObjects();
   }
 
