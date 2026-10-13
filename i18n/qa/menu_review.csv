@@ -1,0 +1,591 @@
+file,context,source,translation
+LidarView.ts,LidarViewMainWindow,&Edit,编辑(&E)
+LidarView.ts,LidarViewMainWindow,&File,文件(&F)
+LidarView.ts,LidarViewMainWindow,&Filters,过滤器(&F)
+LidarView.ts,LidarViewMainWindow,&Help,帮助(&H)
+LidarView.ts,LidarViewMainWindow,&Macros,宏(&M)
+LidarView.ts,LidarViewMainWindow,&Sources,源(&S)
+LidarView.ts,LidarViewMainWindow,&Tools,工具(&T)
+LidarView.ts,LidarViewMainWindow,&View,视图(&V)
+LidarView.ts,LidarViewMainWindow,Color Map Editor,颜色映射编辑器
+LidarView.ts,LidarViewMainWindow,Comparative View Inspector,对比视图检查器
+LidarView.ts,LidarViewMainWindow,Display,显示
+LidarView.ts,LidarViewMainWindow,Find Data,查找数据
+LidarView.ts,LidarViewMainWindow,Information,信息
+LidarView.ts,LidarViewMainWindow,Laser Selection,激光线选择
+LidarView.ts,LidarViewMainWindow,LiDAR Player,LiDAR 播放器
+LidarView.ts,LidarViewMainWindow,Memory Inspector,内存检查器
+LidarView.ts,LidarViewMainWindow,Output Messages,输出消息
+LidarView.ts,LidarViewMainWindow,OutputMessages,输出消息
+LidarView.ts,LidarViewMainWindow,Pipeline Browser,管线浏览器
+LidarView.ts,LidarViewMainWindow,Properties,属性
+LidarView.ts,LidarViewMainWindow,Python Shell,Python 控制台
+LidarView.ts,LidarViewMainWindow,Python support not available!,Python 支持不可用！
+LidarView.ts,LidarViewMainWindow,SenFoToView,SenFotoView 图像
+LidarView.ts,LidarViewMainWindow,Time Manager,时间管理器
+LidarView.ts,LidarViewMainWindow,View,视图
+Qt_ApplicationComponents.ts,MainWindow,&About,关于(&A)
+Qt_ApplicationComponents.ts,MainWindow,&File,文件(&F)
+Qt_ApplicationComponents.ts,MainWindow,&Help,帮助(&H)
+Qt_ApplicationComponents.ts,MainWindow,Ctrl+Q,Ctrl+Q
+Qt_ApplicationComponents.ts,MainWindow,E&xit,退出(&X)
+Qt_ApplicationComponents.ts,MainWindow,ParaView - The Beast  UNLEASHED !!!,(原始内容存档于2018-07-21). ParaView - The Beast UNLEASHED!.
+LidarView.ts,lqEditMenuBuilder,&Edit,编辑(&E)
+LidarView.ts,lqEditMenuBuilder,Change LiDAR &Configuration...,更改 LiDAR 配置(&C)...
+LidarView.ts,lqEditMenuBuilder,Ctrl+G,Ctrl+G
+LidarView.ts,lqEditMenuBuilder,Show Measurement Grid,显示测量网格
+LidarView.ts,lqFileMenuBuilder,&File,文件(&F)
+LidarView.ts,lqFileMenuBuilder,&Open Pcap File...,打开 Pcap 文件(&O)...
+LidarView.ts,lqFileMenuBuilder,&Open...,打开(&O)...
+LidarView.ts,lqFileMenuBuilder,&Save as...,另存为(&S)...
+LidarView.ts,lqFileMenuBuilder,Ctrl+P,Ctrl+P
+LidarView.ts,lqFileMenuBuilder,Ctrl+S,Ctrl+S
+LidarView.ts,lqFileMenuBuilder,Open Pcap File,打开 Pcap 文件
+LidarView.ts,lqFileMenuBuilder,Open Sensor &Stream...,打开传感器数据流(&S)...
+LidarView.ts,lqFileMenuBuilder,Save Data...,保存数据...
+LidarView.ts,lqFileMenuBuilder,Save to Pcap File,保存为 Pcap 文件
+LidarView.ts,lqFileMenuBuilder,Save to Pcap File...,保存为 Pcap 文件...
+LidarView.ts,lqHelpMenuBuilder,&Help,帮助(&H)
+LidarView.ts,lqHelpMenuBuilder,&More About ParaView...,更多关于 ParaView(&M)...
+LidarView.ts,lqHelpMenuBuilder,About...,关于...
+LidarView.ts,lqHelpMenuBuilder,How To SLAM,如何使用 SLAM
+LidarView.ts,lqHelpMenuBuilder,LidarView / ParaView Community Support,LidarView / ParaView 社区支持
+LidarView.ts,lqHelpMenuBuilder,LidarView Release Notes,LidarView 发行说明
+LidarView.ts,lqHelpMenuBuilder,LidarView Web Site,LidarView 网站
+LidarView.ts,lqHelpMenuBuilder,ParaView Guide,ParaView 指南
+LidarView.ts,lqHelpMenuBuilder,ParaView Online Tutorials,ParaView 在线教程
+LidarView.ts,lqHelpMenuBuilder,ParaView Web Site,ParaView 网站
+LidarView.ts,lqHelpMenuBuilder,Professional Support,专业支持
+LidarView.ts,lqHelpMenuBuilder,Report a bug,报告问题
+LidarView.ts,lqInterfaceControlsToolbar,Advanced Mode,高级模式
+LidarView.ts,lqInterfaceControlsToolbar,Lidar Viewer,雷达查看器
+LidarView.ts,lqInterfaceControlsToolbar,Point Cloud Tool,点云工具
+LidarView.ts,lqInterfaceControlsToolbar,User Interface Controls,用户界面控制
+LidarView.ts,lqMainControlsToolbar,&Redo,重做(&R)
+LidarView.ts,lqMainControlsToolbar,&Undo,撤销(&U)
+LidarView.ts,lqMainControlsToolbar,Apply changes to parameters automatically,自动应用参数更改
+LidarView.ts,lqMainControlsToolbar,Auto Apply,自动应用
+LidarView.ts,lqMainControlsToolbar,Chaneg LiDAR &Configuration...,更改 LiDAR 配置(&C)...
+LidarView.ts,lqMainControlsToolbar,Find Data...,查找数据...
+LidarView.ts,lqMainControlsToolbar,Laser Selection,激光线选择
+LidarView.ts,lqMainControlsToolbar,Load Palette,加载调色板
+LidarView.ts,lqMainControlsToolbar,Load a color palette,加载颜色调色板
+LidarView.ts,lqMainControlsToolbar,Main Controls,主控制
+LidarView.ts,lqMainControlsToolbar,Open,打开
+LidarView.ts,lqMainControlsToolbar,Open Pcap File,打开 Pcap 文件
+LidarView.ts,lqMainControlsToolbar,Open Pcap File...,打开 Pcap 文件...
+LidarView.ts,lqMainControlsToolbar,Open Python Shell,打开 Python 控制台
+LidarView.ts,lqMainControlsToolbar,Open Python Shell view,打开 Python 控制台视图
+LidarView.ts,lqMainControlsToolbar,Open Sensor Stream,打开传感器数据流
+LidarView.ts,lqMainControlsToolbar,Open Sensor Stream...,打开传感器数据流...
+LidarView.ts,lqMainControlsToolbar,Open...,打开...
+LidarView.ts,lqMainControlsToolbar,Reset Session,重置会话
+LidarView.ts,lqMainControlsToolbar,Save Data...,保存数据...
+LidarView.ts,lqMainControlsToolbar,Save to Pcap File,保存为 Pcap 文件
+LidarView.ts,lqMainControlsToolbar,Save to Pcap File...,保存为 Pcap 文件...
+LidarView.ts,lqMainControlsToolbar,Select which laser lines are displayed in the point cloud,选择点云中显示的激光线
+LidarView.ts,lqMainControlsToolbar,Show the point cloud data in a spreadsheet view,在表格视图中显示点云数据
+LidarView.ts,lqMainControlsToolbar,Spreadsheet,表格
+LidarView.ts,lqMainControlsToolbar,Spreadsheet View,表格视图
+Qt_ApplicationComponents.ts,pqAnimatedExportReaction,Abort,中止
+Qt_ApplicationComponents.ts,pqAnimatedExportReaction,Export Animated Scene ...,导出动画场景...
+Qt_ApplicationComponents.ts,pqAnimatedExportReaction,Export animated scene progress,导出动画场景进度
+Qt_ApplicationComponents.ts,pqAnimatedExportReaction,Saving animated scene ...,保存动画场景...
+Qt_ApplicationComponents.ts,pqAnimationTimeToolbar,Current Time Controls,当前时间控制
+Qt_ApplicationComponents.ts,pqAxesToolbar,Center Axes Controls,中轴控件
+Qt_ApplicationComponents.ts,pqAxesToolbar,Hide center axes,隐藏中轴
+Qt_ApplicationComponents.ts,pqAxesToolbar,Hide orientation axes,隐藏方向轴
+Qt_ApplicationComponents.ts,pqAxesToolbar,Mouse press to pick center of rotation,鼠标按下选择旋转中心
+Qt_ApplicationComponents.ts,pqAxesToolbar,Pick Center,选择中心
+Qt_ApplicationComponents.ts,pqAxesToolbar,Reset Center,重设中心
+Qt_ApplicationComponents.ts,pqAxesToolbar,Reset center of rotation,重置旋转中心
+Qt_ApplicationComponents.ts,pqAxesToolbar,Show Center,显示中心
+Qt_ApplicationComponents.ts,pqAxesToolbar,Show Orientation Axes,显示方向轴
+Qt_ApplicationComponents.ts,pqAxesToolbar,Show center axes,显示中心轴
+Qt_ApplicationComponents.ts,pqAxesToolbar,Show orientation axes,显示方向轴
+Qt_ApplicationComponents.ts,pqAxesToolbar,Show/Hide center of rotation,显示/隐藏旋转中心
+Qt_ApplicationComponents.ts,pqAxesToolbar,Show/Hide orientation axes,显示/隐藏方向轴
+Qt_ApplicationComponents.ts,pqAxesToolbar,update center of rotation,更新旋转中心
+Qt_ApplicationComponents.ts,pqBlockContextMenu,%1 Blocks,%1 块
+Qt_ApplicationComponents.ts,pqBlockContextMenu,Block '%1',块 “%1 ”
+Qt_ApplicationComponents.ts,pqBlockContextMenu,Hide Block,隐藏块
+Qt_ApplicationComponents.ts,pqBlockContextMenu,Opacity:,不透明 :
+Qt_ApplicationComponents.ts,pqBlockContextMenu,Set Block Color,设置块颜色
+Qt_ApplicationComponents.ts,pqBlockContextMenu,Set Block Opacity,设置块不透明
+Qt_ApplicationComponents.ts,pqBlockContextMenu,Show All Blocks,显示全部块
+Qt_ApplicationComponents.ts,pqBlockContextMenu,Show Only Block,只显示块
+Qt_ApplicationComponents.ts,pqBlockContextMenu,Unset Block Color,未设置块颜色
+Qt_ApplicationComponents.ts,pqBlockContextMenu,Unset Block Opacity,未设置块不透明
+Qt_ApplicationComponents.ts,pqCameraToolbar,&Isometric,声音(&I)
+Qt_ApplicationComponents.ts,pqCameraToolbar,&Reset,电子集(&R)
+Qt_ApplicationComponents.ts,pqCameraToolbar,+X,+X
+Qt_ApplicationComponents.ts,pqCameraToolbar,+Y,+Y 组合键
+Qt_ApplicationComponents.ts,pqCameraToolbar,+Z,+Z 组合键
+Qt_ApplicationComponents.ts,pqCameraToolbar,-X,- 十号
+Qt_ApplicationComponents.ts,pqCameraToolbar,-Y,-对
+Qt_ApplicationComponents.ts,pqCameraToolbar,-Z,-Z
+Qt_ApplicationComponents.ts,pqCameraToolbar,Apply isometric view,应用同位素视图
+Qt_ApplicationComponents.ts,pqCameraToolbar,Camera Controls,相机控制器
+Qt_ApplicationComponents.ts,pqCameraToolbar,RCC,驻地协调员
+Qt_ApplicationComponents.ts,pqCameraToolbar,Reset Camera,重置相机
+Qt_ApplicationComponents.ts,pqCameraToolbar,Reset Camera Closest,重置相机最关闭
+Qt_ApplicationComponents.ts,pqCameraToolbar,Rotate 90° clockwise,顺时针旋转 90°
+Qt_ApplicationComponents.ts,pqCameraToolbar,Rotate 90° counterclockwise,逆时针旋转 90°
+Qt_ApplicationComponents.ts,pqCameraToolbar,Set view direction to +X,设定查看方向为 QQ
+Qt_ApplicationComponents.ts,pqCameraToolbar,Set view direction to +Y,将视图方向设置为 +Y
+Qt_ApplicationComponents.ts,pqCameraToolbar,Set view direction to +Z,设定视图方向为 +Z
+Qt_ApplicationComponents.ts,pqCameraToolbar,Set view direction to -X,设定查看方向为 - X
+Qt_ApplicationComponents.ts,pqCameraToolbar,Set view direction to -Y,设定视图方向为 -Y
+Qt_ApplicationComponents.ts,pqCameraToolbar,Set view direction to -Z,设定查看方向为 -Z
+Qt_ApplicationComponents.ts,pqCameraToolbar,ZCTD,津巴布韦
+Qt_ApplicationComponents.ts,pqCameraToolbar,ZTD,ZTD 读取
+Qt_ApplicationComponents.ts,pqCameraToolbar,Zoom Closest To Data,缩放最接近数据
+Qt_ApplicationComponents.ts,pqCameraToolbar,Zoom To Data,缩放到数据
+Qt_ApplicationComponents.ts,pqCameraToolbar,Zoom to Box,缩放到框
+Qt_ApplicationComponents.ts,pqCatalystConnectReaction,Connect...,连接...
+Qt_ApplicationComponents.ts,pqCatalystConnectReaction,Disconnect,断开连接
+Qt_ApplicationComponents.ts,pqCatalystExportReaction,All files,所有文件
+Qt_ApplicationComponents.ts,pqCatalystExportReaction,Catalyst state file,催化状态文件
+Qt_ApplicationComponents.ts,pqCatalystExportReaction,Needs Python support,需要 Python 支持
+Qt_ApplicationComponents.ts,pqCatalystExportReaction,Save Catalyst State Options,保存催化状态选项
+Qt_ApplicationComponents.ts,pqCatalystExportReaction,Save Catalyst State:,保存催化剂状态 :
+Qt_ApplicationComponents.ts,pqCatalystMenu,Connect...,连接...
+Qt_ApplicationComponents.ts,pqCatalystMenu,Continue,继续
+Qt_ApplicationComponents.ts,pqCatalystMenu,Pause Simulation,暂停模拟
+Qt_ApplicationComponents.ts,pqCatalystMenu,Remove Breakpoint,删除断点
+Qt_ApplicationComponents.ts,pqCatalystMenu,Set Breakpoint,设置断点
+Qt_ApplicationComponents.ts,pqChangeFileNameReaction,Change File operation aborted,更改文件操作已中止
+Qt_ApplicationComponents.ts,pqChangeFileNameReaction,No reader associated to the selected source was found!,未找到与选定来源相关的阅读器 !
+Qt_ApplicationComponents.ts,pqChangePipelineInputReaction,Change Input for %1,更改%1 的输入
+Qt_ApplicationComponents.ts,pqChooseColorPresetReaction,Apply color preset,应用颜色预设
+Clients_ParaView.ts,pqClientMainWindow,&Catalyst,Catalyst(&C)
+Clients_ParaView.ts,pqClientMainWindow,&Edit,编辑(&E)
+Clients_ParaView.ts,pqClientMainWindow,&File,文件(&F)
+Clients_ParaView.ts,pqClientMainWindow,&Help,帮助(&H)
+Clients_ParaView.ts,pqClientMainWindow,&Macros,宏(&M)
+Clients_ParaView.ts,pqClientMainWindow,&Sources,源(&S)
+Clients_ParaView.ts,pqClientMainWindow,&Tools,工具(&T)
+Clients_ParaView.ts,pqClientMainWindow,&View,视图(&V)
+Clients_ParaView.ts,pqClientMainWindow,Collaboration Panel,协作面板
+Clients_ParaView.ts,pqClientMainWindow,Color Map Editor,颜色映射编辑器
+Clients_ParaView.ts,pqClientMainWindow,Comparative View Inspector,对比视图检查器
+Clients_ParaView.ts,pqClientMainWindow,Display,显示
+Clients_ParaView.ts,pqClientMainWindow,E&xtractors,提取器(&X)
+Clients_ParaView.ts,pqClientMainWindow,Fi&lters,过滤器(&L)
+Clients_ParaView.ts,pqClientMainWindow,Find Data,查找数据
+Clients_ParaView.ts,pqClientMainWindow,Information,信息
+Clients_ParaView.ts,pqClientMainWindow,Light Inspector,光照检查器
+Clients_ParaView.ts,pqClientMainWindow,MainWindow,主窗口
+Clients_ParaView.ts,pqClientMainWindow,Material Editor,材质编辑器
+Clients_ParaView.ts,pqClientMainWindow,Memory Inspector,内存检查器
+Clients_ParaView.ts,pqClientMainWindow,MultiBlock Inspector,多块检查器
+Clients_ParaView.ts,pqClientMainWindow,OSPRay support not available!,OSPRay 支持不可用 !
+Clients_ParaView.ts,pqClientMainWindow,Output Messages,输出消息
+Clients_ParaView.ts,pqClientMainWindow,OutputMessages,输出消息
+Clients_ParaView.ts,pqClientMainWindow,Pipeline Browser,管线浏览器
+Clients_ParaView.ts,pqClientMainWindow,Properties,属性
+Clients_ParaView.ts,pqClientMainWindow,Python Shell,Python 控制台
+Clients_ParaView.ts,pqClientMainWindow,Python support not available!,Python 支持不可用 !
+Clients_ParaView.ts,pqClientMainWindow,Selection Editor,选择编辑器
+Clients_ParaView.ts,pqClientMainWindow,Statistics Inspector,统计检查器
+Clients_ParaView.ts,pqClientMainWindow,Time Manager,时间管理器
+Clients_ParaView.ts,pqClientMainWindow,View,视图
+Qt_ApplicationComponents.ts,pqColorToolbar,Active Variable Controls,活动变量控制
+Qt_ApplicationComponents.ts,pqColorToolbar,Choose Preset Color Map,选择预设的颜色映射
+Qt_ApplicationComponents.ts,pqColorToolbar,Edit Color Legend Properties,编辑颜色图例属性
+Qt_ApplicationComponents.ts,pqColorToolbar,Edit Color Map,编辑颜色映射
+Qt_ApplicationComponents.ts,pqColorToolbar,Load Palette,装入调色板
+Qt_ApplicationComponents.ts,pqColorToolbar,Load a color palette,装入颜色调色板
+Qt_ApplicationComponents.ts,pqColorToolbar,Rescale Custom Range,调整自定义范围
+Qt_ApplicationComponents.ts,pqColorToolbar,Rescale Temporal Range,调整时间范围
+Qt_ApplicationComponents.ts,pqColorToolbar,Rescale Visible Range,调整可见范围
+Qt_ApplicationComponents.ts,pqColorToolbar,Rescale to Custom Data Range,调整到自定义数据区域
+Qt_ApplicationComponents.ts,pqColorToolbar,Rescale to Data Range,调整到数据区域
+Qt_ApplicationComponents.ts,pqColorToolbar,Rescale to Visible Data Range,调整到可见数据区域
+Qt_ApplicationComponents.ts,pqColorToolbar,Rescale to data range over all timesteps,调整到所有时间段的数据范围
+Qt_ApplicationComponents.ts,pqColorToolbar,Reset Range,重置范围
+Qt_ApplicationComponents.ts,pqColorToolbar,Show Color Legend,显示颜色图例
+Qt_ApplicationComponents.ts,pqColorToolbar,Toggle Color Legend Visibility,切换色彩图例可见度
+Qt_ApplicationComponents.ts,pqColorToolbar,Use Separate Color Map,使用单独的颜色映射
+Qt_ApplicationComponents.ts,pqCopyReaction,Copy Properties,复制属性
+Qt_ApplicationComponents.ts,pqCreateCustomFilterReaction,Create Custom Filter Error,创建自定义过滤器错误
+Qt_ApplicationComponents.ts,pqCustomViewpointsToolbar,Add current viewpoint as custom viewpoint,将当前视图添加为自定义视图
+Qt_ApplicationComponents.ts,pqCustomViewpointsToolbar,Configure custom viewpoints,配置自定义视图
+Qt_ApplicationComponents.ts,pqCustomViewpointsToolbar,Custom Viewpoints Toolbar,自定义视图点工具栏
+Qt_ApplicationComponents.ts,pqDefaultContextMenu,Change coloring,更改颜色
+Qt_ApplicationComponents.ts,pqDefaultContextMenu,Color By,颜色由
+Qt_ApplicationComponents.ts,pqDefaultContextMenu,Edit Color,编辑颜色
+Qt_ApplicationComponents.ts,pqDefaultContextMenu,Hide,隐藏
+Qt_ApplicationComponents.ts,pqDefaultContextMenu,Link Camera...,链接相机...
+Qt_ApplicationComponents.ts,pqDefaultContextMenu,Representation,代表权
+Qt_ApplicationComponents.ts,pqDefaultContextMenu,Representation Type Changed,代表类型已更改
+Qt_ApplicationComponents.ts,pqDefaultContextMenu,Show All Blocks,显示全部块
+Qt_ApplicationComponents.ts,pqDefaultContextMenu,Show Frame Decorations,显示框架装饰
+Qt_ApplicationComponents.ts,pqDefaultContextMenu,Solid Color,固体颜色
+Qt_ApplicationComponents.ts,pqDefaultContextMenu,Unlink Camera,解锁相机
+Qt_ApplicationComponents.ts,pqDefaultContextMenu,Visibility Changed,可见度变化
+Qt_ApplicationComponents.ts,pqDeleteReaction,Delete %1,删除%1
+Qt_ApplicationComponents.ts,pqDeleteReaction,Delete All?,全部删除?
+Qt_ApplicationComponents.ts,pqDeleteReaction,Delete Selection,删除选择
+Qt_ApplicationComponents.ts,pqDesktopServicesReaction,Missing file,缺少文件
+Qt_ApplicationComponents.ts,pqEditCameraReaction,Adjust Camera,调整相机
+Qt_ApplicationComponents.ts,pqEditColorMapReaction,Block,块
+Qt_ApplicationComponents.ts,pqEditColorMapReaction,Change,变动
+Qt_ApplicationComponents.ts,pqEditColorMapReaction,Pick,选择
+Qt_ApplicationComponents.ts,pqEditColorMapReaction,Solid Color,固体颜色
+Qt_ApplicationComponents.ts,pqEditMenu,Apply,应用
+Qt_ApplicationComponents.ts,pqEditMenu,Reset,重置
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,&Copy,声音(&C)
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,&Copy Screenshot to Clipboard,opy 屏幕截图到剪贴板(&C)
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,&Delete,删除(&D)
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,&Edit,编辑(&E)
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,&Paste,图像(&P)
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,&Redo,江户(&R)
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,&Undo,无(&U)
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Camera Redo,重装相机
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Camera Undo,相机撤消
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Change &Input...,更改 nput...(&I)
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Change File,更改文件
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Change File...,更改文件...
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Change Input...,更改输入...
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Change a Filter's Input,更改过滤器输入
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Change the main window title,更改主窗口标题
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Copy Pipeline,复制管道
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Copy Screenshot to Clipboard,将屏幕截图复制到剪贴板
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Copy properties,复制属性
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,"Ctrl+,","Ctrl+,"
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Ctrl+B,Ctrl+B
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Ctrl+F,Ctrl+F
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Ctrl+G,Ctrl+G
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Ctrl+R,Ctrl+R
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Ctrl+Y,Ctrl+Y
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Ctrl+Z,Ctrl+Z
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Delete,删除
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Delete Downstream Pipeline,删除下游管道
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Delete selection and all downstream filters,删除选择和所有下游过滤器
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Disregard this source/filter's time from animations,从动画中忽略这个源/过滤器的时间
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Find Data,查找数据
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Find Data...,查找数据...
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Find data matching various criteria from the current source.,从当前来源查找匹配各种标准的数据 。
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Hide All,全部隐藏
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Ignore Time,忽略时间
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Paste Pipeline,粘贴管道
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Paste copied pipeline,粘贴复制的管道
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Paste copied properties,粘贴复制的属性
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Pops up a search dialog if focus is on an item list,"如果焦点位于项目列表上, 则打开搜索对话框"
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Rename Window,重命名窗口
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Rename selected source (or filter),重命名选中的源( 或过滤器)
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Rename...,重命名...
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Reset Session,重置会话
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Reset to Default Settings,重置为默认设置
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Reset user settings to default.,重置用户设置为默认值 。
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Search in item list,在项目列表中搜索
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Settings,设置
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Settings...,设置...
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Show All,全部显示
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,Show all sources in selected view,在选中视图中显示所有源
+Qt_ApplicationComponents.ts,pqEditMenuBuilder,V,V
+Qt_ApplicationComponents.ts,pqEditScalarBarReaction,Edit Color Legend Properties,编辑颜色图例属性
+Qt_ApplicationComponents.ts,pqExportReaction,Export Options,导出选项
+Qt_ApplicationComponents.ts,pqExportReaction,Export View:,导出视图 :
+Qt_ApplicationComponents.ts,pqExtractorsMenuReaction,Create Extract Generator '%1',创建提取生成器 “%1 ”
+Qt_ApplicationComponents.ts,pqExtractorsMenuReaction,Requires an input,需要输入
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,&Connect...,连接...(&C)
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,&Disconnect,断开连接(&D)
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,&File,文件(&F)
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,&Load State...,加载状态...(&L)
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,&Open...,打开...(&O)
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,&Recent Files,最近文件(&R)
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,&Save State...,保存状态...(&S)
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Connect,连接
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Ctrl+O,Ctrl+O
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Ctrl+Q,Ctrl+Q
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Ctrl+S,Ctrl+S
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Disconnect,断开连接
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,E&xit,退出(&X)
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Exit,退出
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Export Scene...,导出场景...
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,F5,F5
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Import Scene...,导入场景...
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Load Path Tracer Materials...,装入路径跟踪材料...
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Load Window Arrangement...,装入窗口安排...
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Load an Appearance Materials file,装入外观材料文件
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Load window arrangement from a file,从文件装入窗口安排
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Open,打开
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Reload Files,重新装入文件
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Reload data files in case they were changed externally.,"重新装入数据文件, 以防外部更改 。"
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Save &Animation...,保存动画...(&A)
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Save &Geometry...,保存几何...(&G)
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Save Catalyst State...,保存催化剂状态...
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Save Data...,保存数据...
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Save Extracts...,保存摘录...
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Save Screenshot...,保存屏幕截图...
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Save Window Arrangement...,保存窗口安排...
+Qt_ApplicationComponents.ts,pqFileMenuBuilder,Save window arrangement to a file,将窗口安排保存到文件
+Qt_ApplicationComponents.ts,pqFiltersMenuReaction,Create '%1',创建 “%1 ”
+Qt_ApplicationComponents.ts,pqHelpMenu,About...,关于...
+Qt_ApplicationComponents.ts,pqHelpMenu,Bug Report,错误报告
+Qt_ApplicationComponents.ts,pqHelpMenu,Example Visualizations,示例可视化
+Qt_ApplicationComponents.ts,pqHelpMenu,Getting Started with ParaView,以 ParaView 开始
+Qt_ApplicationComponents.ts,pqHelpMenu,Online Blogs,在线博客
+Qt_ApplicationComponents.ts,pqHelpMenu,Online Tutorials,在线教学
+Qt_ApplicationComponents.ts,pqHelpMenu,ParaView Classroom Tutorials,ParaView 课堂教学
+Qt_ApplicationComponents.ts,pqHelpMenu,ParaView Community Support,ParaView 社区支助
+Qt_ApplicationComponents.ts,pqHelpMenu,ParaView Guide,ParaView 指南
+Qt_ApplicationComponents.ts,pqHelpMenu,ParaView Self-directed Tutorial,ParaView 自导教程
+Qt_ApplicationComponents.ts,pqHelpMenu,ParaView Web Site,ParaView 网页
+Qt_ApplicationComponents.ts,pqHelpMenu,Professional Support,专业支助
+Qt_ApplicationComponents.ts,pqHelpMenu,Professional Training,专业培训
+Qt_ApplicationComponents.ts,pqHelpMenu,"Reader, Filter, and Writer Reference",阅读器、过滤器和 Writer 引用
+Qt_ApplicationComponents.ts,pqHelpMenu,Release Notes,发布注释
+Qt_ApplicationComponents.ts,pqHelpReaction,%1 Online Help,%1 在线帮助
+Qt_ApplicationComponents.ts,pqIgnoreSourceTimeReaction,Toggle Ignore Time,切换忽略时间
+Qt_ApplicationComponents.ts,pqImportReaction,Import Options,导入选项
+Qt_ApplicationComponents.ts,pqImportReaction,Import:,导入 :
+Qt_ApplicationComponents.ts,pqLightToolbar,Enable/Disable Light Kit,启用/ 禁用灯具
+Qt_ApplicationComponents.ts,pqLightToolbar,Light controls,光控
+Qt_ApplicationComponents.ts,pqLoadDataReaction,Create 'Reader',创建“ 阅读器 ”
+Qt_ApplicationComponents.ts,pqLoadDataReaction,Open File:,打开文件 :
+Qt_ApplicationComponents.ts,pqLoadMaterialsReaction,Load Materials:,装入材料 :
+Qt_ApplicationComponents.ts,pqLoadMaterialsReaction,OSPRay Material Files,OSPRay 材料文件
+Qt_ApplicationComponents.ts,pqLoadMaterialsReaction,Wavefront Material Files,波前材料文件
+Qt_ApplicationComponents.ts,pqLoadPaletteReaction,Color Palette,颜色调色板
+Qt_ApplicationComponents.ts,pqLoadPaletteReaction,Edit Current Palette ...,编辑当前调色板...
+Qt_ApplicationComponents.ts,pqLoadPaletteReaction,Load color palette,装入调色板
+Qt_ApplicationComponents.ts,pqLoadStateReaction,%1 does not contain state data.,%1 不包含状态数据 。
+Qt_ApplicationComponents.ts,pqLoadStateReaction,Load State File,装入状态文件
+Qt_ApplicationComponents.ts,pqLoadStateReaction,Load State Options,装入状态选项
+Qt_ApplicationComponents.ts,pqMacroReaction,All Files,所有文件
+Qt_ApplicationComponents.ts,pqMacroReaction,Open Python File to create a Macro:,打开 Python 文件创建宏 :
+Qt_ApplicationComponents.ts,pqMacroReaction,Python Files,Python 文件
+Qt_ApplicationComponents.ts,pqMacrosMenu,All macros will be deleted. Are you sure?,所有宏将被删除 。 你确定吗?
+Qt_ApplicationComponents.ts,pqMacrosMenu,Are you sure?,你确定吗?
+Qt_ApplicationComponents.ts,pqMacrosMenu,Delete All,删除全部
+Qt_ApplicationComponents.ts,pqMacrosMenu,Delete Macro(s),删除宏
+Qt_ApplicationComponents.ts,pqMacrosMenu,Edit Macros,编辑宏
+Qt_ApplicationComponents.ts,pqMacrosMenu,Import new macro...,导入新宏...
+Qt_ApplicationComponents.ts,pqMacrosMenu,Manage Macros,管理宏
+Qt_ApplicationComponents.ts,pqMacrosMenu,Selected macros will be deleted:,选中的宏将被删除 :
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,&Connect...,连接...(&C)
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,&Disconnect,断开连接(&D)
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,&Redo,江户(&R)
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,&Undo,无(&U)
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Apply changes to parameters automatically,自动对参数应用更改
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Auto Apply,自动应用
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Connect,连接
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Disconnect,断开连接
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Find Data...,查找数据...
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Load State,装入状态
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Load State...,装入状态...
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Main Controls,主控件
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Open,打开
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Open...,打开...
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Reset Session,重置会话
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Save Catalyst State,保存催化剂状态
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Save Catalyst State...,保存催化剂状态...
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Save Data...,保存数据...
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Save Extracts,保存摘录
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Save Extracts...,保存摘录...
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Save State,保存状态
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Save State...,保存状态...
+Qt_ApplicationComponents.ts,pqMainWindowEventBehavior,Do you want to save the state before exiting %1?,您想要在退出%1 之前保存状态吗 ?
+Qt_ApplicationComponents.ts,pqMainWindowEventBehavior,Exit %1,退出%1
+Qt_ApplicationComponents.ts,pqMainWindowEventBehavior,Read PNG or state file?,读 PNG 还是状态文件?
+Qt_ApplicationComponents.ts,pqManageLinksReaction,Link Manager,链接管理器
+Qt_Core.ts,pqMenuReactionUtils,Requirements not met,未满足的要求
+Qt_Core.ts,pqMenuReactionUtils,Requires a %1 attribute array,需要%1 属性数组
+Qt_Core.ts,pqMenuReactionUtils,Requires an attribute array,需要属性数组
+Qt_Core.ts,pqMenuReactionUtils,or %1,或%1 个
+Qt_Core.ts,pqMenuReactionUtils,with %1 component(s),带有%1 组件
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,&Copy,声音(&C)
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,&Create Custom Filter...,重置自定义过滤器...(&C)
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,&Delete,删除(&D)
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,&Hide All,页:1(&H)
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,&Open,笔(&O)
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,&Paste,图像(&P)
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,&Show All,怎么样(&S)
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Add Filter,添加过滤器
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Change &Input...,更改 nput...(&I)
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Change File,更改文件
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Change Input...,更改输入...
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Change a Filter's Input,更改过滤器输入
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Copy Pipeline,复制管道
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Copy Properties,复制属性
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Delete,删除
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Delete Downstream Pipeline,删除下游管道
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Delete selection and all downstream filters,删除选择和所有下游过滤器
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Disregard this source/filter's time from animations,从动画中忽略这个源/过滤器的时间
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Hide all source outputs in the pipeline,在管道中隐藏全部源输出
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Ignore Time,忽略时间
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Link with selection,与选择的链接
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Open,打开
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Paste Pipeline,粘贴管道
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Paste Properties,粘贴属性
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Reload Files,重新装入文件
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Reload data files in case they were changed externally.,"重新装入数据文件, 以防外部更改 。"
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Rename,重命名
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Rename currently selected source,重命名当前选中的源
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,Show all source outputs in the pipeline,显示管道中的所有源输出
+Qt_ApplicationComponents.ts,pqPreviewMenuManager,Custom ...,自定义...
+Qt_ApplicationComponents.ts,pqPreviewMenuManager,Requested resolution too big for window,请求解析度大于窗口
+Qt_ApplicationComponents.ts,pqProxyGroupMenuManager,&Alphabetical,易发性(&A)
+Qt_ApplicationComponents.ts,pqProxyGroupMenuManager,&Favorites,收藏夹(&F)
+Qt_ApplicationComponents.ts,pqProxyGroupMenuManager,&Miscellaneous,杂项(&M)
+Qt_ApplicationComponents.ts,pqProxyGroupMenuManager,&OldFavorites,旧收藏夹(&O)
+Qt_ApplicationComponents.ts,pqProxyGroupMenuManager,&Recent,百分点(&R)
+Qt_ApplicationComponents.ts,pqProxyGroupMenuManager,Add to Favorites,添加到收藏
+Qt_ApplicationComponents.ts,pqProxyGroupMenuManager,Search...	Alt+Space,搜索... 备选案文+ 空间
+Qt_ApplicationComponents.ts,pqProxyGroupMenuManager,Search...	Ctrl+Space,搜索... Ctrl+ 空间
+Qt_Components.ts,pqRecentFilesMenu,Disconnect from current server?,从当前服务器断开连接吗 ?
+Qt_ApplicationComponents.ts,pqReloadFilesReaction,Find new files,查找新文件
+Qt_ApplicationComponents.ts,pqReloadFilesReaction,Reload Options,重新装入选项
+Qt_ApplicationComponents.ts,pqReloadFilesReaction,Reload existing file(s),重新装入已有文件
+Qt_ApplicationComponents.ts,pqRenameProxyReaction,New name:,新名称 :
+Qt_ApplicationComponents.ts,pqRenameProxyReaction,Proxy,代理服务器
+Qt_ApplicationComponents.ts,pqRenameProxyReaction,Rename,重命名
+Qt_ApplicationComponents.ts,pqRenameProxyReaction,View,视图
+Qt_ApplicationComponents.ts,pqRepresentationToolbar,Representation Toolbar,表示工具栏
+Qt_ApplicationComponents.ts,pqRescaleScalarRangeReaction,Block,块
+Qt_ApplicationComponents.ts,pqRescaleScalarRangeReaction,Reset,重置
+Qt_ApplicationComponents.ts,pqRescaleScalarRangeReaction,Reset Transfer Function Ranges To Visible Data Range,将转移函数区域重置到可见数据区域
+Qt_ApplicationComponents.ts,pqRescaleScalarRangeReaction,Transfer Function Ranges To Custom Range,向自定义区域转移函数范围
+Qt_ApplicationComponents.ts,pqRescaleScalarRangeReaction,Transfer Function Ranges Using Data Range,使用数据区域传输函数范围
+Qt_ApplicationComponents.ts,pqRescaleScalarRangeReaction,Transfer Function Ranges Using Temporal Data Range,使用临时数据范围传输函数范围
+Qt_ApplicationComponents.ts,pqResetDefaultSettingsReaction,Backups failed!,备份失败 !
+Qt_ApplicationComponents.ts,pqResetDefaultSettingsReaction,Failed to generate backup files. Do you want to continue?,生成备份文件失败 。 你想继续吗?
+Qt_ApplicationComponents.ts,pqResetDefaultSettingsReaction,Following backup files have been generated:,已生成备份文件 :
+Qt_ApplicationComponents.ts,pqResetDefaultSettingsReaction,Please restart %1 for the changes to take effect.,请重新启动%1 以生效更改 。
+Qt_ApplicationComponents.ts,pqResetDefaultSettingsReaction,Reset custom settings to default.,重置自定义设置为默认值 。
+Qt_ApplicationComponents.ts,pqResetDefaultSettingsReaction,Reset to Default Settings,重置为默认设置
+Qt_ApplicationComponents.ts,pqResetDefaultSettingsReaction,Settings reset to default,设置重设为默认
+Qt_ApplicationComponents.ts,pqResetDefaultSettingsReaction,Yes,是
+Qt_ApplicationComponents.ts,pqResetDefaultSettingsReaction,"Yes, and backup current settings","是, 并备份当前设置"
+Qt_ApplicationComponents.ts,pqSaveAnimationGeometryReaction,Abort,中止
+Qt_ApplicationComponents.ts,pqSaveAnimationGeometryReaction,Save Animation Geometry,保存动画几何
+Qt_ApplicationComponents.ts,pqSaveAnimationGeometryReaction,Save geometry progress,保存几何进度
+Qt_ApplicationComponents.ts,pqSaveAnimationGeometryReaction,Saving Geometry ...,保存几何...
+Qt_ApplicationComponents.ts,pqSaveAnimationReaction,Abort,中止
+Qt_ApplicationComponents.ts,pqSaveAnimationReaction,Save Animation Options,保存动画选项
+Qt_ApplicationComponents.ts,pqSaveAnimationReaction,Save animation progress,保存动画进度
+Qt_ApplicationComponents.ts,pqSaveAnimationReaction,Saving Animation ...,保存动画...
+Qt_ApplicationComponents.ts,pqSaveDataReaction,Configure Writer (%1),配置 Writer (%1)
+Qt_ApplicationComponents.ts,pqSaveDataReaction,Save File:,保存文件 :
+Qt_ApplicationComponents.ts,pqSaveDataReaction,Serial Writer Warning,串行作家警告
+Qt_ApplicationComponents.ts,pqSaveExtractsReaction,Save Extracts Options,保存摘录选项
+Qt_ApplicationComponents.ts,pqSaveExtractsReaction,Saving Extracts ...,保存摘录...
+Qt_ApplicationComponents.ts,pqSaveScreenshotReaction,Save Screenshot Options,保存截图选项
+Qt_ApplicationComponents.ts,pqSaveScreenshotReaction,View content has been copied to the clipboard.,视图内容已被复制到剪贴板 。
+Qt_ApplicationComponents.ts,pqSaveStateReaction,Empty state generated.,生成空状态 。
+Qt_ApplicationComponents.ts,pqSaveStateReaction,Failed to save %1,保存%1 失败
+Qt_ApplicationComponents.ts,pqSaveStateReaction,Failed to save state in %1,保存状态于%1 失败
+Qt_ApplicationComponents.ts,pqSaveStateReaction,Python State Options,Python 状态选项
+Qt_ApplicationComponents.ts,pqSaveStateReaction,Save State File,保存状态文件
+Qt_ApplicationComponents.ts,pqSaveStateReaction,Unable to read python state options.,无法读取 Python 状态选项 。
+Qt_ApplicationComponents.ts,pqScalarBarVisibilityReaction,Block,块
+Qt_ApplicationComponents.ts,pqScalarBarVisibilityReaction,Color Legend Visibility,颜色图例可见度
+Qt_ApplicationComponents.ts,pqScalarBarVisibilityReaction,Number of annotations warning,注释警告次数
+Qt_ApplicationComponents.ts,pqScalarBarVisibilityReaction,Toggle,切换
+Qt_ApplicationComponents.ts,pqServerConnectReaction,Are you sure you want to continue?,你确定要继续吗?
+Qt_ApplicationComponents.ts,pqServerConnectReaction,Disconnect from current server?,从当前服务器断开连接吗 ?
+Qt_ApplicationComponents.ts,pqServerDisconnectReaction,Disconnect from current server?,从当前服务器断开连接吗 ?
+Qt_ApplicationComponents.ts,pqSetMainWindowTitleReaction,New title:,新标题 :
+Qt_ApplicationComponents.ts,pqSetMainWindowTitleReaction,Rename Window,重命名窗口
+Qt_ApplicationComponents.ts,pqShowHideAllReaction,Hide All,全部隐藏
+Qt_ApplicationComponents.ts,pqShowHideAllReaction,Show All,全部显示
+Qt_ApplicationComponents.ts,pqSourcesMenuReaction,Are you sure?,你确定吗?
+Qt_ApplicationComponents.ts,pqSourcesMenuReaction,Create '%1',创建 “%1 ”
+Qt_ApplicationComponents.ts,pqSourcesMenuReaction,Creating '%1'. Do you want to continue?,正在创建 “%1 ” 。 你想继续吗?
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Add selection (Ctrl),添加选择( Ctrl)
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Adjust Camera,调整相机
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Camera Redo,重装相机
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Camera Undo,相机撤消
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Capture to Clipboard or File,抓取到剪贴板或文件
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Change Interaction Mode,更改交互模式
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Clear selection,清除选择
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Convert To,转换为
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Convert To ...,转换为...
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Create,创建
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Grow selection,增加选择
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Interactive Select Cell Data On,交互式选择单元格数据
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Interactive Select Cells On,交互式选择单元格
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Interactive Select Point Data On,交互式选择点数据
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Interactive Select Points On,交互式选择点打开
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Polygon Selection (d),多边形选择(d)
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Rectangle Selection (s),矩形选择(s)
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Rename,重命名
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Select Block (b),选择块 (b)
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Select Blocks Through (n),通过 (n) 选择块
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Select Cells On (s),选择打开的单元格
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Select Cells Through (f),通过 (f) 选择单元格
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Select Cells With Polygon,选择带有多边形的单元格
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Select Points On (d),选择(d)上的点
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Select Points Through (g),通过 (g) 选择点
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Select Points With Polygon,选择带多边形的点
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Shrink selection,缩小选择
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Subtract selection (Shift),减号选择( Shift)
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,Toggle selection (Ctrl+Shift),切换选择( Ctrl+Shift)
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,d,d
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,f,f
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,g,g
+Qt_ApplicationComponents.ts,pqStandardViewFrameActionsImplementation,s,s
+Qt_ApplicationComponents.ts,pqTestingReaction,All Files,所有文件
+Qt_ApplicationComponents.ts,pqTestingReaction,Play Test,播放测试
+Qt_ApplicationComponents.ts,pqTestingReaction,Python Files,Python 文件
+Qt_ApplicationComponents.ts,pqTestingReaction,Record Test,记录测试
+Qt_ApplicationComponents.ts,pqTestingReaction,XML Files,XML 文件
+Qt_ApplicationComponents.ts,pqToolsMenu,Add Camera Link...,添加相机链接...
+Qt_ApplicationComponents.ts,pqToolsMenu,Configure Filter Categories,配置过滤器类别
+Qt_ApplicationComponents.ts,pqToolsMenu,Create Custom Filter...,创建自定义过滤器...
+Qt_ApplicationComponents.ts,pqToolsMenu,Customize Shortcuts...,自定义快捷键...
+Qt_ApplicationComponents.ts,pqToolsMenu,Link with Selection,链接选择
+Qt_ApplicationComponents.ts,pqToolsMenu,Lock View Size,锁定视图大小
+Qt_ApplicationComponents.ts,pqToolsMenu,Lock View Size Custom...,锁定视图大小自定义...
+Qt_ApplicationComponents.ts,pqToolsMenu,Log Viewer,日志查看器
+Qt_ApplicationComponents.ts,pqToolsMenu,Manage Custom Filters...,管理自定义过滤器...
+Qt_ApplicationComponents.ts,pqToolsMenu,Manage Expressions,管理表达式
+Qt_ApplicationComponents.ts,pqToolsMenu,Manage Links...,管理链接...
+Qt_ApplicationComponents.ts,pqToolsMenu,Manage Plugins...,管理插件...
+Qt_ApplicationComponents.ts,pqToolsMenu,Play Test...,播放测试...
+Qt_ApplicationComponents.ts,pqToolsMenu,Python Script Editor,Python 脚本编辑器
+Qt_ApplicationComponents.ts,pqToolsMenu,Record Test...,记录测试...
+Qt_ApplicationComponents.ts,pqToolsMenu,Start Trace,开始追踪
+Qt_ApplicationComponents.ts,pqToolsMenu,Stop Trace,停止追踪
+Qt_ApplicationComponents.ts,pqToolsMenu,Timer Log,计时器日志
+Qt_ApplicationComponents.ts,pqTraceReaction,Recording python trace...,正在记录蟒蛇追踪...
+Qt_ApplicationComponents.ts,pqTraceReaction,Trace Options,跟踪选项
+Qt_ApplicationComponents.ts,pqTraceReaction,Trace and Auto Save incompatibility.,追踪和自动保存不兼容 。
+Qt_ApplicationComponents.ts,pqUndoRedoReaction,&Redo,江户(&R)
+Qt_ApplicationComponents.ts,pqUndoRedoReaction,&Undo,无(&U)
+Qt_ApplicationComponents.ts,pqUndoRedoReaction,Can't Redo,无法重做
+Qt_ApplicationComponents.ts,pqUndoRedoReaction,Can't Undo,不能撤销
+Qt_ApplicationComponents.ts,pqUndoRedoReaction,Redo,重装
+Qt_ApplicationComponents.ts,pqUndoRedoReaction,Undo,撤销
+Qt_ApplicationComponents.ts,pqVCRToolbar,&First Frame,irst 框架(&F)
+Qt_ApplicationComponents.ts,pqVCRToolbar,&Last Frame,Ast 框架(&L)
+Qt_ApplicationComponents.ts,pqVCRToolbar,&Next Frame,ext 框架(&N)
+Qt_ApplicationComponents.ts,pqVCRToolbar,&Play,铺(&P)
+Qt_ApplicationComponents.ts,pqVCRToolbar,&Reverse,永远(&R)
+Qt_ApplicationComponents.ts,pqVCRToolbar,First Frame (%1),第一个框架 (%1)
+Qt_ApplicationComponents.ts,pqVCRToolbar,L&oop,罗普(&O)
+Qt_ApplicationComponents.ts,pqVCRToolbar,Last Frame (%1),最后一个框架 (%1)
+Qt_ApplicationComponents.ts,pqVCRToolbar,Loop,循环
+Qt_ApplicationComponents.ts,pqVCRToolbar,Pa&use,页(&U)
+Qt_ApplicationComponents.ts,pqVCRToolbar,Play,播放
+Qt_ApplicationComponents.ts,pqVCRToolbar,Pre&vious Frame,珍贵的框架(&V)
+Qt_ApplicationComponents.ts,pqVCRToolbar,Reverse,反转
+Qt_ApplicationComponents.ts,pqVCRToolbar,VCR Controls,VCR 控制器
+Qt_ApplicationComponents.ts,pqViewMenuManager,Both,两者
+Qt_ApplicationComponents.ts,pqViewMenuManager,Equalize Views,平衡视图
+Qt_ApplicationComponents.ts,pqViewMenuManager,Equalize layout so views are evenly sized horizontally,"均匀布局, 视图水平大小均匀"
+Qt_ApplicationComponents.ts,pqViewMenuManager,Equalize layout so views are evenly sized vertically,"均匀布局, 视图垂直均匀大小"
+Qt_ApplicationComponents.ts,pqViewMenuManager,Full Screen (active view),全屏( 活动视图)
+Qt_ApplicationComponents.ts,pqViewMenuManager,Full Screen (layout),全屏( 播放)
+Qt_ApplicationComponents.ts,pqViewMenuManager,Horizontally,水平
+Qt_ApplicationComponents.ts,pqViewMenuManager,Preview,预览
+Qt_ApplicationComponents.ts,pqViewMenuManager,Show Frame Decorations,显示框架装饰
+Qt_ApplicationComponents.ts,pqViewMenuManager,Toggle Lock Panels,切换锁定面板
+Qt_ApplicationComponents.ts,pqViewMenuManager,Toggle locking of dockable panels so they cannot be moved,"切换可停靠面板的锁定, 使其无法移动"
+Qt_ApplicationComponents.ts,pqViewMenuManager,Toolbars,工具栏
+Qt_ApplicationComponents.ts,pqViewMenuManager,Vertically,垂直
+LidarView.ts,pqmacrosToolbar,Macros Toolbars,宏工具栏
+Qt_ApplicationComponents.ts,pqmacrosToolbar,Macros Toolbars,宏工具栏

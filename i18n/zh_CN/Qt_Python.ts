@@ -29,7 +29,7 @@
     <message>
         <location filename="../Qt/Python/pqPythonEditorActions.cxx" line="38"/>
         <source>&amp;New</source>
-        <translation>黄(&amp;N)</translation>
+        <translation>新建(&amp;N)</translation>
     </message>
     <message>
         <location filename="../Qt/Python/pqPythonEditorActions.cxx" line="41"/>
@@ -39,7 +39,7 @@
     <message>
         <location filename="../Qt/Python/pqPythonEditorActions.cxx" line="44"/>
         <source>&amp;Open...</source>
-        <translation>笔...(&amp;O)</translation>
+        <translation>打开...(&amp;O)</translation>
     </message>
     <message>
         <location filename="../Qt/Python/pqPythonEditorActions.cxx" line="47"/>
@@ -49,7 +49,7 @@
     <message>
         <location filename="../Qt/Python/pqPythonEditorActions.cxx" line="50"/>
         <source>&amp;Save</source>
-        <translation>备注(&amp;S)</translation>
+        <translation>保存(&amp;S)</translation>
     </message>
     <message>
         <location filename="../Qt/Python/pqPythonEditorActions.cxx" line="53"/>
@@ -130,7 +130,7 @@
     <message>
         <location filename="../Qt/Python/pqPythonEditorActions.cxx" line="95"/>
         <source>Redo</source>
-        <translation>重装</translation>
+        <translation>重做</translation>
     </message>
     <message>
         <location filename="../Qt/Python/pqPythonEditorActions.cxx" line="98"/>
@@ -160,7 +160,7 @@
     <message>
         <location filename="../Qt/Python/pqPythonEditorActions.cxx" line="117"/>
         <source>C&amp;lose</source>
-        <translation>库斯(&amp;L)</translation>
+        <translation>关闭(&amp;L)</translation>
     </message>
     <message>
         <location filename="../Qt/Python/pqPythonEditorActions.cxx" line="120"/>
@@ -319,7 +319,7 @@
     <message>
         <location filename="../Qt/Python/pqPythonScriptEditor.cxx" line="174"/>
         <source>&amp;Scripts</source>
-        <translation>线索(&amp;S)</translation>
+        <translation>脚本(&amp;S)</translation>
     </message>
     <message>
         <location filename="../Qt/Python/pqPythonScriptEditor.cxx" line="179"/>

@@ -59,7 +59,7 @@
     <message>
         <location filename="../Qt/Core/Resources/UI/pqOutputWidget.ui" line="83"/>
         <source>Always open for new messages</source>
-        <translation>总是打开新信件</translation>
+        <translation>总是为新消息打开</translation>
     </message>
     <message>
         <location filename="../Qt/Core/Resources/UI/pqOutputWidget.ui" line="93"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../Qt/Core/Resources/UI/pqOutputWidget.ui" line="107"/>
         <source>Filter Messages</source>
-        <translation>过滤信件</translation>
+        <translation>过滤消息</translation>
     </message>
     <message>
         <location filename="../Qt/Core/Resources/UI/pqOutputWidget.ui" line="114"/>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../Qt/Core/Resources/UI/pqPluginEULADialog.ui" line="16"/>
         <source>End User License Agreement</source>
-        <translation>终止用户许可证协议</translation>
+        <translation>最终用户许可协议</translation>
     </message>
     <message>
         <location filename="../Qt/Core/Resources/UI/pqPluginEULADialog.ui" line="25"/>
@@ -96,7 +96,7 @@
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;EULA for plugin&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt; &lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;p, li { 白- 空格 : pre- wrap;}&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;"&gt; &lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-weight:600;"&gt;插件的 EULA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt; &lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;p, li { white-space : pre- wrap;}&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;"&gt; &lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-weight:600;"&gt;插件的 EULA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -151,7 +151,7 @@ p, li { white-space: pre-wrap; }
         <location filename="../Qt/Core/pqApplicationCore.cxx" line="773"/>
         <source>paraview</source>
         <comment>Cannot set up help engine from %1</comment>
-        <translation>参数</translation>
+        <translation>paraview</translation>
     </message>
     <message>
         <location filename="../Qt/Core/pqApplicationCore.cxx" line="828"/>
@@ -242,12 +242,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/Core/pqCoreConfiguration.cxx" line="153"/>
         <source>Positional arguments may be used to pass either data (--data), state (--state), or script (--script) files. `.pvsm` files are treated as state files, `.py` are treated as scripts and all others are treated as data files.</source>
-        <translation>位置参数可用于传递数据(--data),状态(-state),或脚本(-script)文件. `.pvsm ' 文件被视为国家文件,`.py ' 文件被视为脚本,所有其他文件则被视为数据文件。</translation>
+        <translation>位置参数可用于传递数据(--data),状态(-state),或脚本(-script)文件. `.pvsm ' 文件被视为状态文件,`.py ' 文件被视为脚本,所有其他文件则被视为数据文件。</translation>
     </message>
     <message>
         <location filename="../Qt/Core/pqCoreConfiguration.cxx" line="179"/>
         <source>Connect to Catalyst Live session at the specified port number.</source>
-        <translation>在指定的端口号码上连接到催化剂Live会话.</translation>
+        <translation>在指定的端口号码上连接到Catalyst剂Live会话.</translation>
     </message>
 </context>
 <context>
@@ -312,18 +312,18 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/Core/Resources/UI/pqFileDialog.ui" line="173"/>
         <source>Favorites</source>
-        <translation>爱好</translation>
+        <translation>收藏夹</translation>
     </message>
     <message>
         <location filename="../Qt/Core/Resources/UI/pqFileDialog.ui" line="186"/>
         <source>Add current directory to favorites</source>
-        <translation>将当前目录添加到最爱</translation>
+        <translation>将当前目录添加到收藏夹</translation>
     </message>
     <message>
         <location filename="../Qt/Core/Resources/UI/pqFileDialog.ui" line="206"/>
         <location filename="../Qt/Core/pqFileDialog.cxx" line="710"/>
         <source>Clear favorites</source>
-        <translation>清除最爱</translation>
+        <translation>清除收藏夹</translation>
     </message>
     <message>
         <location filename="../Qt/Core/Resources/UI/pqFileDialog.ui" line="249"/>
@@ -359,7 +359,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/Core/Resources/UI/pqFileDialog.ui" line="421"/>
         <source>OK</source>
-        <translation>确定</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../Qt/Core/Resources/UI/pqFileDialog.ui" line="431"/>
@@ -420,7 +420,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/Core/pqFileDialog.cxx" line="592"/>
         <source>Add to favorites</source>
-        <translation>添加到最爱</translation>
+        <translation>添加到收藏夹</translation>
     </message>
     <message>
         <location filename="../Qt/Core/pqFileDialog.cxx" line="607"/>
@@ -456,7 +456,7 @@ Are you sure you want to continue ?</source>
     <message>
         <location filename="../Qt/Core/pqFileDialog.cxx" line="732"/>
         <source>Remove from favorites</source>
-        <translation>从最爱中删除</translation>
+        <translation>从收藏夹中删除</translation>
     </message>
     <message>
         <location filename="../Qt/Core/pqFileDialog.cxx" line="737"/>
@@ -495,7 +495,7 @@ Do you want to replace it?</source>
     <message>
         <location filename="../Qt/Core/pqFileDialogFavoriteModel.cxx" line="267"/>
         <source>Favorites</source>
-        <translation>爱好</translation>
+        <translation>收藏夹</translation>
     </message>
 </context>
 <context>
@@ -521,7 +521,7 @@ Do you want to replace it?</source>
     <message>
         <location filename="../Qt/Core/pqFileDialogModel.cxx" line="101"/>
         <source>%1 TB</source>
-        <translation>%1 肺结核</translation>
+        <translation>%1 TB</translation>
     </message>
     <message>
         <location filename="../Qt/Core/pqFileDialogModel.cxx" line="106"/>
@@ -749,12 +749,12 @@ Do you want to replace it?</source>
     <message>
         <location filename="../Qt/Core/pqPluginManager.cxx" line="341"/>
         <source>Decline</source>
-        <translation>缩写</translation>
+        <translation>拒绝</translation>
     </message>
     <message>
         <location filename="../Qt/Core/pqPluginManager.cxx" line="344"/>
         <source>End User License Agreement for &apos;%1&apos;</source>
-        <translation>“%1” 的结束用户许可协议</translation>
+        <translation>“%1”的最终用户许可协议</translation>
     </message>
 </context>
 <context>

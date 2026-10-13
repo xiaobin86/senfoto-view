@@ -256,6 +256,12 @@ grep -c '<translation>[^<]' /tmp/check.ts     # 已翻译条数
 **术语建议**（待评审）：点云=point cloud；激光雷达=LiDAR；帧=frame；渲染视图=Render View；
 管线浏览器=Pipeline Browser；属性=Properties；滤波器=Filter；数据流=Stream；抓包文件=Pcap File。
 
+**专有名词规则（必守）**：`ParaView`、`LidarView`、`SenFoToView`、`Kitware`、`VTK`、`Qt`、`Python`
+一律保留英文，**不翻译、不音译**。曾出现 `ParaView→帕拉维尤/参数`、`VTK→维塔克`、
+`SenFoToView→SenFotoView 图像` 等误译，已修正。
+**过滤器/读卡器/插件显示名**（`<SourceProxy>` 的 label，`filters`/`sources` 组）同样保留英文。
+`i18n/translate_zh.py` 用私有区占位符在译前遮蔽这些专有名词、译后还原；`i18n/qa-report-zh.md` 记录复核。
+
 ---
 
 ## 7. 故障排查

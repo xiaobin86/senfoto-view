@@ -1,0 +1,318 @@
+group,name,label(显示名),current_zh,file
+sources,GlyphSource2D,2D Glyph,2D 格莱弗,sources_filterssources.xml
+sources,VectorText,3D Text,3D 文本,sources_renderingfreetype.xml
+sources,PixieAdiosReader,ADIOS Pixie Reader,,AdiosReaderPixie.xml
+sources,PixieAdiosStream,ADIOS Pixie Stream Source,,AdiosReaderPixie.xml
+sources,ADIOS2CoreImageReader,ADIOS2CoreImageReader,ADIOS2 核心图像读取器,proxies_adios2_core.xml
+sources,ADIOS2VTXReader,ADIOS2VTXReader,ADIOS2VTX 读取器,proxies_adios2_vtx.xml
+sources,AMRGaussianPulseSource,AMR GaussianPulse Source,AMR 高斯普尔斯源代码,sources_filtersamr.xml
+sources,AMReXGridReader,AMReX/BoxLib Grid Reader,AMREX/ BoxLib 网格阅读器,readers_pv_ioamr.xml
+sources,AMReXParticlesReader,AMReX/BoxLib Particles Reader,AMREX/ BoxLib 粒子读取器,readers_pv_ioamr.xml
+sources,AVSucdSeriesReader,AVS UCD Reader,AVS UCD 读取器,readers_iogeometry.xml
+sources,AdaptiveCosmoCore,AdaptiveCosmoCore,,AdaptiveCosmoReader.xml
+sources,AnalyzeReader,Analyze reader,,AnalyzeNIfTISM.xml
+sources,TimeToTextConvertorSource,Annotate Time,注释时间,general_sources.xml
+sources,ApplanixPositionReader,Applanix Position Reader,,ApplanixPositionReader.xml
+sources,ArduPilotDataFlashLogReader,ArduPilot DataFlash Log Reader,,ArduPilotDataFlashLogReader.xml
+sources,ArrowSource,Arrow,箭头,sources_filterssources.xml
+sources,AvmeshReader,Avmesh Reader,Avmesh 阅读器,readers_ioavmesh.xml
+sources,Axes,Axes,轴,sources_filtersgeneral.xml
+sources,BDFReader,BDF Reader,BDF 阅读器,general_readers.xml
+sources,byureader,BYU Reader,BYU 阅读器,readers_iogeometry.xml
+sources,BlockSelectionSource,BlockSelectionSource,,extraction_filters.xml
+sources,BlockSelectorsSelectionSource,BlockSelectorsSelectionSource,,extraction_filters.xml
+sources,BoundingBoxReader,Bounding Box Reader,,BoundingBoxReader.xml
+sources,CubeSource,Box,专栏,sources_filterssources.xml
+sources,CDISeriesReader,CDIReader,,CDIReader.xml
+sources,CGNSSeriesReader,CGNS Series Reader,CGNS系列阅读器,readers_iocgns.xml
+sources,CMLMoleculeReader,CML Molecule Reader,CML 分子读取器,readers_iochemistry.xml
+sources,CONVERGECFDCGNSReader,CONVERGECFD CGNS Reader,CGNS 阅读器,readers_iocgns.xml
+sources,CONVERGECFDReader,CONVERGECFDReader,,readers_ioconvergecfd.xml
+sources,CSVReader,CSV Reader,CSV 读取器,readers_ioinfovis.xml
+sources,CartisoStream,Cartiso Stream,,AdiosReaderStaging.xml
+sources,CellGridSource,Cell Grid Source,单元格网格来源,filters_filterscellgrid.xml
+sources,Cesium3DTiles Reader,Cesium3DTiles Reader,,proxies_cesium3dtiles.xml
+sources,CityGML Reader,CityGML Reader,城市GML 阅读器,proxies_citygml.xml
+sources,CompositeCellGridReader,Composite CellGrid Reader,复合细胞Grid阅读器,readers_iocellgrid.xml
+sources,CompositeDataIDSelectionSource,CompositeDataIDSelectionSource,,extraction_filters.xml
+sources,Conduit,Conduit,管道,proxies_conduit.xml
+sources,ConeSource,Cone,锥形,sources_filterssources.xml
+sources,CosmoReader,CosmoReader,,CosmoReader.xml
+sources,CylinderSource,Cylinder,圆柱,sources_filterssources.xml
+sources,DEMReader,DEM Reader,DEM 阅读器,readers_pv_ioimage.xml
+sources,DICOMReaderSingle,DICOM Reader (Single File),DICOM 阅读器( 单个文件),readers_pv_ioimage.xml
+sources,DICOMReader,DICOM Reader (directory),DICOM 阅读器(指南),readers_pv_ioimage.xml
+sources,DataObjectGenerator,Data Object Generator,数据对象生成器,sources_filterscore.xml
+sources,DataMineBlockModelReader,DataMineBlockModelReader,,DatamineReaders.xml
+sources,DataMineDrillHoleReader,DataMineDrillHoleReader,,DatamineReaders.xml
+sources,DataMineDummyReader,DataMineDummyReader,,DatamineReaders.xml
+sources,DataMinePerimeterReader,DataMinePerimeterReader,,DatamineReaders.xml
+sources,DataMinePointReader,DataMinePointReader,,DatamineReaders.xml
+sources,DataMineWireFrameReader,DataMineWireFrameReader,,DatamineReaders.xml
+sources,DiskSource,Disk,磁盘,sources_filterssources.xml
+sources,DistributedTrivialProducer,DistributedTrivialProducer,,core_sources.xml
+sources,EAMDataReader,EAM Data Reader,,readers_atmosphere.xml
+sources,EnzoParticlesReader,ENZO AMR Particles Reader,ENZO AMR 粒子读取器,readers_pv_ioamr.xml
+sources,ERFReader,ERF HDF5 data reader,ERF HDF5 数据读取器,readers_ioerf.xml
+sources,EllipseSource,Ellipse,椭圆,sources_filterssources.xml
+sources,EmulatedTimeDummySource,EmulatedTimeDummySource,,EmulatedTimeDummySource.xml
+sources,EnSightGoldCombinedReader,EnSight Gold Combined Reader,,EnSightGoldCombinedReader.xml
+sources,ensightMS,EnSight Master Server Reader,EnSight 主服务器阅读器,readers_pv_ioensight.xml
+sources,ensight,EnSight Reader,视觉阅读器,readers_pv_ioensight.xml
+sources,EnSightSOSGoldReader,EnSight SOS Gold Reader,,EnSightGoldCombinedReader.xml
+sources,EnzoReader,Enzo Reader,恩佐阅读器,readers_pv_ioamr.xml
+sources,ExodusIIReader,ExodusIIReader,,readers_ioexodus.xml
+sources,ExplicitUnstructuredGeneratorSource,ExplicitStructuredGrid Generator Source,,ExplicitStructuredGrid.xml
+sources,ExternalSensorReader,External Sensor Reader,,ExternalSensorReader.xml
+sources,FDSReader,FDS Reader,FDS 阅读器,readers_iofds.xml
+sources,FlashParticlesReader,FLASH AMR Particles Reader,FLASH AMR 粒子读取器,readers_pv_ioamr.xml
+sources,FacetReader,FacetReader,,readers_filtershybrid.xml
+sources,FastUniformGrid,Fast Uniform Grid,快制服网格,general_sources.xml
+sources,FidesJSONReader,FidesJSONReader,编辑员JSON阅读器,proxies_fides.xml
+sources,FidesFileReader,FidesReader,读取器,proxies_fides.xml
+sources,FlashReader,Flash Reader,闪光阅读器,readers_pv_ioamr.xml
+sources,FLUENTCFFReader,Fluent CFF Case Reader,流利的 CFF 语言 大小写阅读器,readers_iofluentcff.xml
+sources,FLUENTReader,Fluent Case Reader,流利的大小写阅读器,readers_iogeometry.xml
+sources,FrustumSelectionSource,FrustumSelectionSource,,extraction_filters.xml
+sources,GDALRasterReader,GDAL Raster Reader,GDAL 拉斯特阅读器,proxies_gdal.xml
+sources,GDALVectorReader,GDAL Vector Reader,GDAL 矢量阅读器,proxies_gdal.xml
+sources,GMVSeriesReader,GMV Reader,,GMVReaderSM.xml
+sources,gaussiancubereader,Gaussian Cube Reader,高斯立方体读取器,readers_iochemistry.xml
+sources,GenericIOMultiBlockReader,GenericIOMultiBlockReader,,GenericIOReader.xml
+sources,GenericIOReader,GenericIOReader,,GenericIOReader.xml
+sources,GeoMapFetcher,Geographical Map Fetcher,,GeographicalMapServerManager.xml
+sources,GlobalIDSelectionSource,GlobalIDSelectionSource,,extraction_filters.xml
+sources,GmshReader,Gmsh Reader,,GmshIO.xml
+sources,GridSource,Grid Source,,GridSource.xml
+sources,H5PartReader,H5PartReader,,readers_ioh5part.xml
+sources,H5RageReader,HDF5 Rage Reader,HDF5 Rage 阅读器,readers_ioh5rage.xml
+sources,HDRReader,HDR Reader,HDR 阅读器,readers_pv_ioimage.xml
+sources,HelixSource,Helix Source,,helix.xml
+sources,HierarchicalFractal,Hierarchical Fractal,等级分形,general_sources.xml
+sources,HierarchicalDataIDSelectionSource,HierarchicalDataIDSelectionSource,,extraction_filters.xml
+sources,HyperTreeGridSource,Hyper Tree Grid,超树网格,sources_filterssources.xml
+sources,RandomHyperTreeGridSource,Hyper Tree Grid (Random),超树网格( Random),sources_filterssources.xml
+sources,HyperTreeGridReader,HyperTreeGrid Reader,HyperTreeGrid 阅读器,readers_ioxml.xml
+sources,IDSelectionSource,IDSelectionSource,,extraction_filters.xml
+sources,IGESReader,IGES Reader,,readers_ioocct.xml
+sources,IOSSCellGridReader,IOSS Cell-Grid Reader,IOSS 单元格图像阅读器,readers_ioioss.xml
+sources,IOSSReader,IOSS Reader,IOSS 阅读器,readers_ioioss.xml
+sources,ImageReader,Image Reader,图像阅读器,readers_pv_ioimage.xml
+sources,InSituExodusReader,InSitu Exodus II Reader,,InSituExodus.xml
+sources,JPEGSeriesReader,JPEG Series Reader,JPEG 系列阅读器,readers_pv_ioimage.xml
+sources,KITTILabel,KITTIObjectLabelsReader,,KITTIObjectLabelsReader.xml
+sources,LANLX3DReader,LANLX3DReader,LANLX3 雷达,readers_lanlx3d.xml
+sources,LASReader,LAS Reader,,proxies_las.xml
+sources,LSDynaReader,LSDynaReader,,readers_lsdyna.xml
+sources,LegacyExodusIIReader,Legacy Exodus II Reader,,LegacyExodusReader.xml
+sources,LegacyExodusRestartReader,Legacy Restarted Sim Exodus Reader,,LegacyExodusReader.xml
+sources,LegacyVTKFileReader,Legacy VTK Reader,遗产 VTK 阅读器,readers_ioparallel.xml
+sources,LidarKITTIDataSetReader,Lidar KITTI DataSet Reader,,LidarKITTIDataSetReader.xml
+sources,LineSource,Line,行线,sources_filterssources.xml
+sources,LiveProgrammableSource,Live Programmable Source,现场可编程源,python_sources.xml
+sources,LiveSourceDummy,Live Souce (dummy),,LiveSourceDummy.xml
+sources,LocationSelectionSource,LocationSelectionSource,,extraction_filters.xml
+sources,LogoSource,Logo,日志,sources_remotingviews.xml
+sources,MFIXReader,MFIXReader,,readers_iogeometry.xml
+sources,MRCSeriesReader,MRC Series Reader,MRC 系列阅读器,readers_pv_ioimage.xml
+sources,ImageMandelbrotSource,Mandelbrot,曼德尔布罗特,sources_imagingsources.xml
+sources,MetaImageReader,Meta File Series Reader,Meta 文件系列阅读器,readers_pv_ioimage.xml
+sources,MotionFXCFGReader,MotionFX CFG Reader,,proxies_motionfx.xml
+sources,MultiResGenericIO,MultiResGenericIO,,MultiResolutionGenericIOReader.xml
+sources,MySphere,MySphere,,MySphereSource.xml
+sources,NIfTIReader,NIfTI Volume reader,,AnalyzeNIfTISM.xml
+sources,Nek5000Reader,Nek5000Reader,,readers_ioparallel.xml
+sources,NetCDFCAMReader,NetCDF CAM reader,NetCDF CAM 阅读器,readers_ionetcdf.xml
+sources,MPASReader,NetCDF MPAS reader,NetCDF MPAS 阅读器,readers_ionetcdf.xml
+sources,NetCDFPOPReader,NetCDF POP reader,净CDF 持久性有机污染物读取器,readers_ionetcdf.xml
+sources,netCDFReader,NetCDF Reader,NetCDF 阅读器,readers_ionetcdf.xml
+sources,NetCDFUGRIDReader,NetCDF UGRID reader,NetCDF UGRID 读取器,readers_ionetcdf.xml
+sources,NetworkImageSource,NetworkImageSource,,rendering_sources.xml
+sources,NrrdReader,Nrrd Reader,Nrrd 阅读器,readers_pv_ioimage.xml
+sources,OMETIFFReader,OME TIFF Reader,OME TIFF 阅读器,readers_pv_ioimage.xml
+sources,OMFReader,OMFReader,OMF 阅读器,proxies_omf.xml
+sources,offreader,Object File Format OFF Reader,对象文件格式关闭阅读器,readers_iogeometry.xml
+sources,OpenCVVideoReader,OpenCVVideoReader,,OpenCVVideoReader.xml
+sources,OpenFOAMReader,OpenFOAMReader,,readers_ioparallel.xml
+sources,OpenVDBReader,OpenVDB Reader,,readers_ioopenvdb.xml
+sources,OutlineSource,Outline Source,大纲来源,sources_filterssources.xml
+sources,PCAPImageReader,PCAP Image Reader,,PCAPImageReader.xml
+sources,PDALReader,PDAL Reader,PDAL 阅读器,proxies_pdal.xml
+sources,PDALe57Reader,PDAL e57 Reader,,ReaderE57PDAL.xml
+sources,pdbreader,PDB Reader,PDB 阅读器,readers_iogeometry.xml
+sources,PFBReader,PFB reader,,ParFlowIO.xml
+sources,PIOReader,PIO Reader,PIO 阅读器,readers_iopio.xml
+sources,Plot3DMetaReader,PLOT3D Meta-File Reader,PLOT3D 元文件阅读器,readers_ioparallel.xml
+sources,P3DReader,PLOT3D Reader,POT3D 读取器,readers_ioparallel.xml
+sources,PLYReader,PLY Reader,PLY 阅读器,readers_ioply.xml
+sources,PNGSeriesReader,PNG Series Reader,PNG 系列阅读器,readers_pv_ioimage.xml
+sources,MyPNGReader,PNG reader,,readers.xml
+sources,PNGReaderFromXMLOnlyPlugin,PNG reader,,ReaderXMLOnly.xml
+sources,PTSReader,PTS Reader,PTS 阅读器,readers_iogeometry.xml
+sources,PVDReader,PVD Reader,PVD 阅读器,readers_pv_iocore.xml
+sources,PVTrivialProducer,PVTrivialProducer,,core_sources.xml
+sources,PVTrivialProducer2,PVTrivialProducer2,,core_sources.xml
+sources,PacMan,PacMan,,PacMan.xml
+sources,ParFlowReader,ParFlow Reader,,ParFlowIO.xml
+sources,PNetCDFPOPReader,Parallel NetCDF POP reader,平行的 NetCDF 持久性有机污染物读取器,readers_ioparallelnetcdf.xml
+sources,ParametricSource,Parametric Source,,ParametricSource.xml
+sources,ParametricSurfaces,Parametric Surfaces,,ParametricSurfaces.xml
+sources,ParticleReader,Particles Reader,文章阅读器,readers_iogeometry.xml
+sources,pvtkfile,Partitioned Legacy VTK Reader,分割的遗产 VTK 阅读器,readers_ioparallel.xml
+sources,PartitionedDataSetCollectionSource,PartitionedDataSetCollection Source,分区数据集集源,sources_filterssources.xml
+sources,PedigreeIDSelectionSource,PedigreeIDSelectionSource,,extraction_filters.xml
+sources,PhastaReader,Phasta Reader,法斯塔阅读器,general_readers.xml
+sources,PlaneSource,Plane,飞机,sources_filterssources.xml
+sources,PointSource,Point Source,点源,sources_filterssources.xml
+sources,PolyLineSource,Poly Line Source,聚线源,sources_filterssources.xml
+sources,PolyPointSource,Poly Point Source,聚点源,sources_filterssources.xml
+sources,SESAMEReader,Prism: SESAME Reader,,PrismReaders.xml
+sources,ProgrammableSource,Programmable Source,可编程源,python_sources.xml
+sources,Protractor,Protractor,量角器,sources_filterssources.xml
+sources,RTXMLPolyDataReader,RTXMLPolyDataReader,,readers_ioxml.xml
+sources,RandomPoints,Random Streaming Points,,StreamingParticles.xml
+sources,ExodusRestartReader,Restarted Sim Exodus Reader,重新启动 Sim Exodus 阅读器,readers_ioexodus.xml
+sources,SPCTHRestartReader,Restarted Sim Spy Plot Reader,重新启动 Sim Spy 绘图阅读器,readers_pv_iospcth.xml
+sources,Ruler,Ruler,标尺,sources_filterssources.xml
+sources,SAVGReader,SAVG Reader,SAVG 读取器,readers_savg.xml
+sources,SEPReader,SEP Reader,SEP 阅读器,readers_pv_ioimage.xml
+sources,SLACReader,SLAC Data Reader,SLAC 数据阅读器,readers_ionetcdf.xml
+sources,SLACParticleReader,SLAC Particle Data Reader,SLAC 粒子数据读取器,readers_ionetcdf.xml
+sources,STEPReader,STEP Reader,,readers_ioocct.xml
+sources,stlreader,STL Reader,STL 阅读器,readers_iogeometry.xml
+sources,SegY Reader,SegY Reader,SegY 阅读器,proxies_segy.xml
+sources,SelectionQuerySource,SelectionQuerySource,,extraction_filters.xml
+sources,ShearedWavelet,Sheared Wavelet,,vtkNonOrthogonalSource.xml
+sources,SkyboxMovie,Skybox Movie,,XRInterfaceSkyboxMovieRepresentation.xml
+sources,SpatioTemporalHarmonicsSource,Spatio Temporal Harmonics Uniform Grid,Spatio Timor 谐音统一网格,sources_filterssources.xml
+sources,SphereSource,Sphere,球体,sources_filterssources.xml
+sources,SplineSource,SplineSource,,sources_filterssources.xml
+sources,spcthreader,Spy Plot Reader,间谍绘图阅读器,readers_pv_iospcth.xml
+sources,SuperquadricSource,Superquadric,超级方块,sources_filterssources.xml
+sources,TIFFReader,TIFF Reader,TIFF 读取器,readers_pv_ioimage.xml
+sources,TIFFSeriesReader,TIFF Series Reader,TIFF 系列阅读器,readers_pv_ioimage.xml
+sources,TruchasReader,TRUCHAS Reader,TRUCHAS 阅读器,readers_iotruchas.xml
+sources,TecplotReader,Tecplot Reader,Tecplot 阅读器,readers_iogeometry.xml
+sources,TecplotTableReaderCore,Tecplot Table Reader,Tecplot 表格阅读器,readers_iotecplottable.xml
+sources,TemporalCache,Temporal Cache Source,临时缓存来源,filters_filtershybrid.xml
+sources,TemporalTransformsReader,Temporal Transforms Reader,,TemporalTransformsReader.xml
+sources,Test3DWidget,Test3DWidget,,sources_filterssources.xml
+sources,TextSource,Text,文本,general_sources.xml
+sources,ThresholdSelectionSource,ThresholdSelectionSource,,extraction_filters.xml
+sources,TimeSource,Time Source,时间来源,sources_filtersgeneral.xml
+sources,TrivialProducer,TrivialProducer,,core_sources.xml
+sources,UnstructuredCellTypes,Unstructured Cell Types,无结构单元格类型,sources_filterssources.xml
+sources,UnstructuredPOPReader,Unstructured NetCDF POP reader,无结构的 NetCDF 持久性有机污染物读取器,general_readers.xml
+sources,VASPAnimationReader,VASP Animation Reader,VASP 动画阅读器,readers_iochemistry.xml
+sources,VASPTessellationReader,VASP Tessellation Reader,VASP Tessellation 阅读器,readers_iochemistry.xml
+sources,VDFReader,VDF Reader,,VDFReader.xml
+sources,VPICReader,VPIC Reader,VPIC 阅读器,readers_iovpic.xml
+sources,vrmlreader,VRML Reader,VRML 阅读器,general_readers.xml
+sources,HDFReader,VTKHDF Reader,VTKHDF 读取器,readers_iohdf.xml
+sources,ValueSelectionSource,ValueSelectionSource,,extraction_filters.xml
+sources,VelodyneAMRReader,Velodyne AMR Reader,Velodyne AMR 阅读器,readers_pv_ioamr.xml
+sources,VisItANSYSReader,VisIt ANSYS Reader,Visit ANSYS 阅读器,visit_readers.xml
+sources,VisItAUXFileReader,VisIt AUXFile Reader,VisIt AUXFile 阅读器,visit_readers.xml
+sources,VisItBOVReader,VisIt BOV Reader,VisIt BOV 读取器,visit_readers.xml
+sources,VisItCEAucdReader,VisIt CEA ucd Reader,VisIt CEA ucd 阅读器,visit_readers.xml
+sources,VisItCMATReader,VisIt CMAT Reader,VisIt CMAT 读取器,visit_readers.xml
+sources,VisItCTRLReader,VisIt CTRL Reader,VisIt CTRL 读取器,visit_readers.xml
+sources,VisItChomboReader,VisIt Chombo Reader,VisIt Chombo 阅读器,visit_readers.xml
+sources,VisItClawReader,VisIt Claw Reader,VisIt Claw 阅读器,visit_readers.xml
+sources,VisItCurve2DReader,VisIt Curve2D Reader,VisIt 曲线2D 读取器,visit_readers.xml
+sources,VisItDDCMDReader,VisIt DDCMD Reader,VisIt DDCMD 阅读器,visit_readers.xml
+sources,VisItDyna3DReader,VisIt Dyna3D Reader,VisIt Dyna3D 读取器,visit_readers.xml
+sources,VisItExtrudedVolReader,VisIt Extruded Vol Reader,VisIt 已删除的 Vol 阅读器,visit_readers.xml
+sources,VisItFLASHReader,VisIt FLASH Reader,VisIt FLASH 阅读器,visit_readers.xml
+sources,VisItFluentReader,VisIt Fluent Reader,VisIt 流利阅读器,visit_readers.xml
+sources,VisItGGCMReader,VisIt GGCM Reader,VisIt GGCM 读取器,visit_readers.xml
+sources,VisItGTCReader,VisIt GTC Reader,VisIt GTC 读取器,visit_readers.xml
+sources,VisItGULPReader,VisIt GULP Reader,VisIt GULP 读取器,visit_readers.xml
+sources,VisItGadgetReader,VisIt Gadget Reader,VisIt Gadget 阅读器,visit_readers.xml
+sources,VisItH5NimrodReader,VisIt H5Nimrod Reader,VisIt H5Nimrod 读取器,visit_readers.xml
+sources,VisItImageReader,VisIt Image Reader,VisIt 图像阅读器,visit_readers.xml
+sources,VisItLAMMPSDumpReader,VisIt LAMMPS Dump Reader,VisIt LAMMPS 垃圾堆阅读器,visit_readers.xml
+sources,VisItLAMMPSStructureReader,VisIt LAMMPS Structure Reader,VisIt LAMMPS 结构读取器,visit_readers.xml
+sources,VisItLinesReader,VisIt Lines Reader,VisIt 线条阅读器,visit_readers.xml
+sources,VisItM3DReader,VisIt M3D Reader,VisIt M3D 读取器,visit_readers.xml
+sources,VisItM3DC1Reader,VisIt M3DC1 Reader,VisIt M3DC1 读取器,visit_readers.xml
+sources,VisItMFIXReader,VisIt MFIX Reader,VisIt MFIX 读取器,visit_readers.xml
+sources,VisItMFIXCDFReader,VisIt MFIXCDF Reader,VisIt MFIXCDF 阅读器,visit_readers.xml
+sources,VisItMM5Reader,VisIt MM5 Reader,VisIt MM5 读取器,visit_readers.xml
+sources,VisItMirandaReader,VisIt Miranda Reader,VisIt Miranda 阅读器,visit_readers.xml
+sources,VisItNASTRANReader,VisIt NASTRAN Reader,Visit 纳斯特兰阅读器,visit_readers.xml
+sources,VisItNek5000Reader,VisIt Nek5000 Reader,VisIT Nek5000 阅读器,visit_readers.xml
+sources,VisItNetCDFADAPTReader,VisIt NetCDF ADAPT Reader,VisIt NetCDF ADAPT 阅读器,visit_readers.xml
+sources,VisItNetCDFCCSM_MTSDReader,VisIt NetCDF CCSM_MTSD Reader,VisIt NetCDF CCSM MTSD 阅读器,visit_readers.xml
+sources,VisItNetCDFCCSM_STSDReader,VisIt NetCDF CCSM_STSD Reader,VisIt NetCDF CCSM STSD 阅读器,visit_readers.xml
+sources,VisItNetCDFFVCOMParticleReader,VisIt NetCDF FVCOM Particle Reader,VisIt NetCDF FVCOM 粒子读取器,visit_readers.xml
+sources,VisItNetCDFFVCOM_MTMDReader,VisIt NetCDF FVCOM_MTMD Reader,VisIt NetCDF FVCOM MTMD 阅读器,visit_readers.xml
+sources,VisItNetCDFFVCOM_MTSDReader,VisIt NetCDF FVCOM_MTSD Reader,VisIt NetCDF FVCOM MTSD 阅读器,visit_readers.xml
+sources,VisItNetCDFFVCOM_STSDReader,VisIt NetCDF FVCOM_STSD Reader,VisIt NetCDF FVCOM STSD 阅读器,visit_readers.xml
+sources,VisItNetCDFLODIParticleReader,VisIt NetCDF LODI Particle Reader,VisIt NetCDF LODI 粒子读取器,visit_readers.xml
+sources,VisItNetCDFLODIReader,VisIt NetCDF LODI Reader,VisIt NetCDF LODI 阅读器,visit_readers.xml
+sources,VisItOVERFLOWReader,VisIt OVERFLOW Reader,VisIt 覆盖阅读器,visit_readers.xml
+sources,VisItOpenFOAMReader,VisIt OpenFOAM Reader,VisIt 打开FOAM 阅读器,visit_readers.xml
+sources,VisItPATRANReader,VisIt PATRAN Reader,VisIt PATRAN 阅读器,visit_readers.xml
+sources,VisItPFLOTRANReader,VisIt PFLOTRAN Reader,VisIt PFLOTRAN 阅读器,visit_readers.xml
+sources,VisItPLOT2DReader,VisIt PLOT2D Reader,VisIt PLOT2D 读取器,visit_readers.xml
+sources,VisItPLOT3DReader,VisIt PLOT3D Reader,VisIt PLOT3D 读取器,visit_readers.xml
+sources,VisItParaDisTecplotReader,VisIt ParaDiS Tecplot Reader,VisIt ParaDis Tecplot 读取器,visit_readers.xml
+sources,VisItParaDisReader,VisIt ParaDis Reader,VisIt 帕拉迪斯阅读器,visit_readers.xml
+sources,VisItPixieReader,VisIt Pixie Reader,VisIt 小精灵阅读器,visit_readers.xml
+sources,VisItPoint3DReader,VisIt Point3D Reader,VisIt 点3D 读取器,visit_readers.xml
+sources,VisItProteinDataBankReader,VisIt Protein Data Bank Reader,VisIt 蛋白质数据库阅读器,visit_readers.xml
+sources,VisItRAWReader,VisIt RAW Reader,VisIt RAW 阅读器,visit_readers.xml
+sources,VisItSAMRAIReader,VisIt SAMRAI Reader,VisIt SAMRAI 阅读器,visit_readers.xml
+sources,VisItSARReader,VisIt SAR Reader,VisIt SAR 读取器,visit_readers.xml
+sources,VisItSASReader,VisIt SAS Reader,VisIt SAS 读取器,visit_readers.xml
+sources,VisItSpheralReader,VisIt Spheral Reader,VisIt 密码读取器,visit_readers.xml
+sources,VisItTFTReader,VisIt TFT Reader,VisIt TFT 阅读器,visit_readers.xml
+sources,VisItTSurfReader,VisIt TSurf Reader,VisIt TSurf 阅读器,visit_readers.xml
+sources,VisItTecplotBinaryReader,VisIt Tecplot Binary Reader,VisIt Tecplot 二进制读取器,visit_readers.xml
+sources,VisItTecplotReader,VisIt Tecplot Reader,VisIt Tecplot 读取器,visit_readers.xml
+sources,VisItTetradReader,VisIt Tetrad Reader,VisIt 三角阅读器,visit_readers.xml
+sources,VisItUNICReader,VisIt UNIC Reader,VisIt 联合国新闻中心阅读器,visit_readers.xml
+sources,VisItVASPCHGCARReader,VisIt VASP CHGCAR Reader,VisIt VASP CHGCAR 阅读器,visit_readers.xml
+sources,VisItVASPOUTCARReader,VisIt VASP OUTCAR Reader,VisIt VASP 外车阅读器,visit_readers.xml
+sources,VisItVASPPOSCARReader,VisIt VASP POSCAR Reader,VisIt VASP POSCAR 读取器,visit_readers.xml
+sources,VisItVelodyneReader,VisIt Velodyne Reader,VisIt Velodyne 阅读器,visit_readers.xml
+sources,VisItVsReader,VisIt Vs Reader,VisIt Vs 阅读器,visit_readers.xml
+sources,VisItXYZReader,VisIt XYZ Reader,VisIt XYZ 阅读器,visit_readers.xml
+sources,VisItXmdvReader,VisIt Xmdv Reader,VisIt Xmdv 读取器,visit_readers.xml
+sources,VisItBoxlib3DReader,VisItBoxlib3DReader,,visit_boxlib3d_reader.xml
+sources,VisItMiliReader,VisItMiliReader,,visit_mili_reader.xml
+sources,VisItSiloReader,VisItSiloReader,,visit_silo_reader.xml
+sources,objreader,Wavefront OBJ Reader,波前 OBJ 阅读器,readers_iogeometry.xml
+sources,RTAnalyticSource,Wavelet,浪头,sources_imagingcore.xml
+sources,WebPage,Web Page,,XRInterfaceWebPageRepresentation.xml
+sources,WindBladeReader,WindBlade reader,风标读取器,readers_iogeometry.xml
+sources,XdmfReader,XDMF Reader,XDMF 读取器,proxies_xdmf2.xml
+sources,XMLHierarchicalBoxDataReader,XML Hierarchical Box Data reader,XML 分级框数据读取器,readers_ioxml.xml
+sources,XMLImageDataReader,XML Image Data Reader,XML 图像数据阅读器,readers_ioxml.xml
+sources,XMLMultiBlockDataReader,XML MultiBlock Data Reader,XML 多块块数据读取器,readers_ioxml.xml
+sources,XMLPartitionedDataSetCollectionReader,XML Partitioned Dataset Collection Reader,XML 分区数据集收藏阅读器,readers_ioxml.xml
+sources,XMLPartitionedDataSetReader,XML Partitioned Dataset Reader,XML 分区数据集阅读器,readers_ioxml.xml
+sources,XMLPHyperTreeGridReader,XML Partitioned HyperTree Grid Reader,XML 分区的超透视网格阅读器,readers_ioxml.xml
+sources,XMLPImageDataReader,XML Partitioned Image Data Reader,XML 分区图像数据阅读器,readers_ioxml.xml
+sources,XMLPPolyDataReader,XML Partitioned Polydata Reader,XML 分区多数据阅读器,readers_ioxml.xml
+sources,XMLPRectilinearGridReader,XML Partitioned Rectilinear Grid Reader,XML 分区的矩形网格阅读器,readers_ioxml.xml
+sources,XMLPStructuredGridReader,XML Partitioned Structured Grid Reader,XML 分割结构网格阅读器,readers_ioxml.xml
+sources,XMLPTableReader,XML Partitioned Table Reader,XML 分区的表格阅读器,readers_ioxml.xml
+sources,XMLPUnstructuredGridReader,XML Partitioned Unstructured Grid Reader,XML 分区无结构的网格阅读器,readers_ioxml.xml
+sources,XMLPolyDataReader,XML PolyData Reader,XML 多边数据阅读器,readers_ioxml.xml
+sources,XMLRectilinearGridReader,XML Rectilinear Grid Reader,XML 矩形网格读取器,readers_ioxml.xml
+sources,XMLStructuredGridReader,XML Structured Grid Reader,XML 结构网格阅读器,readers_ioxml.xml
+sources,XMLTableReader,XML Table Reader,XML 表格阅读器,readers_ioxml.xml
+sources,XMLUniformGridAMRReader,XML UniformGrid AMR Reader,XML 统一红色AMR 读取器,readers_ioxml.xml
+sources,XMLUnstructuredGridReader,XML Unstructured Grid Reader,XML 无结构的网格阅读器,readers_ioxml.xml
+sources,xyzreader,XYZ Reader,XYZ 阅读器,readers_iochemistry.xml
+sources,Xdmf3ReaderS,Xdmf3ReaderS,,proxies_xdmf3.xml
+sources,Xdmf3ReaderT,Xdmf3ReaderT,,proxies_xdmf3.xml
+sources,glTF 2.0 Reader,glTF Reader,glTF 读取器,readers_iogeometry.xml
+sources,CFSReader,openCFS HDF5 reader,,CFSReader.xml
+sources,OpenPMDReader,openPMD Reader,打开PMD 阅读器,readers_openpmd.xml
+sources,ProStarReader,proSTAR (STARCD) Reader,ProSTAR (STARCD) 读取器,readers_iogeometry.xml
+sources,spcthhistoryreader,spcth history reader,spcth 历史阅读器,readers_pv_iospcth.xml
+sources,vtkGenIOReader,vtkGenIOReader,,vtkGenIOReader.xml
+sources,vtkPVoronoiReader,vtkPVoronoiReader,,VoronoiReader.xml

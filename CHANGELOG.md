@@ -5,6 +5,27 @@
 
 ---
 
+## 2026-10-13 批次：汉化修正（专有名词/术语/错误机器翻译）+ 规范文档 + TrailingFrame 输入端口修复
+
+- fix(i18n): 修正 zh_CN 大规模机器翻译错误（约 1700 条）
+  - 专有名词一律保留英文：`ParaView`/`VTK`/`LidarView`/`SenFoToView`/`Kitware`/`Qt`/`Python`（曾音译为帕拉维尤/维塔克等）
+  - 过滤器/读卡器/插件显示名保留英文：还原 409 个 filters + 317 个 sources（Clip/Clean/Contour 等）
+  - 术语系统性修正：representation→表示、normal→法向、property→属性、scalar→标量、origin→原点、
+    index→索引、clip→裁剪、bond→键、face→面、streamline→流线、assembly→装配、host→主机、mesh→网格 等
+  - 快捷键/功能键/单字母函数名（Ctrl+*/F1-12、sin/cos/sqrt/mag…、环境变量）不翻译；修正
+    `annulus→废墟/圆环`、`Skybox→天盘`、`Stride→弦乐`、`Number of Bins→宾数`、`End User→终止用户`、
+    `Catalyst→催化`、`%1 TB→肺结核`、`messages→信件`、HTML/CSS 与 URL 占位残留 等
+  - `i18n/translate_zh.py`：新增专有名词译前遮蔽/译后还原 + `TERM_FIX`；`i18n/qa_zh.py`：新增
+    `PROPER_NOUN`/`SHORTCUT`/`SUSPECT` 守则检测
+- docs(i18n): 新增 `docs/senfotoview-i18n-plan.md`（实现方案 + 翻译规范 + 避坑清单）；
+  更新 `i18n/README.md`、`i18n/qa-report-zh.md`、`docs/senfotoview-i18n-zh-cn.md`；
+  `AGENTS.md` 增「汉化（i18n）翻译规范（必守）」小节
+- fix(ui): `lqTrailingFrameReaction` 按代理定义解析 `TrailingFrame` 的输入端口名（`LIDAR Frame`），
+  修复直接用 `createFilter(group,name,source)` 时输入端口 0 未连接、`vtkTrailingFrame` 报错的问题
+- feat(ui): `interface_modes_config.json` 的 `lidarViewer` 模式 Edit 菜单加入 `actionEditSettings`（Settings…）
+
+---
+
 ## 2026-10-09 批次：全量中文汉化 + 隐藏模式切换按钮
 
 - `f9d2cc0a` feat(i18n): 全量 zh_CN 机器翻译（约 1.1 万条）+ 翻译/校对脚本

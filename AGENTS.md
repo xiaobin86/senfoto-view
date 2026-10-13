@@ -153,3 +153,18 @@ LidarView 是**基于 ParaView 的自定义客户端**（ParaView-based custom a
 - Filter：`<ProxyGroup name="filters"><SourceProxy class="vtkXxx" name="Xxx" label="...">` + `<InputProperty>`/`<IntVectorProperty>`/`<DoubleVectorProperty>`/`<ProxyProperty>` + `<PropertyGroup label=...>` + `<Hints><ShowInMenu icon=.../>`。
 - Reader：用 `<LidarReaderProxy>`（可多 `OutputPort`），继承 `CommonLidarReader`（`base_proxygroup/base_proxyname`）。
 - 顶层 plugin 可直接 `paraview_add_plugin(... SERVER_MANAGER_XML <file>)`；或 per-module 用 `paraview_add_server_manager_xmls(MODULE <vtk target> XMLS <files>)`（`LidarCore/Plugin/CMakeLists.txt` 的 `lidarcoreplugin_add_module_xml` 宏即此模式）。
+
+## 汉化（i18n）翻译规范（必守）
+
+> 完整方案/规范/避坑见 **`docs/senfotoview-i18n-plan.md`**；架构见 `docs/senfotoview-i18n-zh-cn.md`；
+> 工作目录 `lidarview/i18n/`。改动 `.ts` 后 `./i18n/build-zh-cn.sh` 重投 `.qm`，**无需重编译**。
+
+1. **专有名词保留英文**：`ParaView`、`LidarView`、`SenFoToView`、`Kitware`、`VTK`、`Qt`、`Python`
+   一律原样，不翻译、不音译。（曾误译 `ParaView→帕拉维尤/参数`、`VTK→维塔克`。）
+2. **过滤器/读卡器/插件显示名保留英文**：`<SourceProxy>` 的 `label`（`filters`/`sources` 组）与插件名保持英文。
+3. **快捷键/功能键不翻译**：`Ctrl+/Alt+/Shift+/Meta+*`、`F1-F12` 译文必须等于源串。
+4. **占位符/HTML/加速键保护**：保留 `%1/%L1/{…}` 数量与顺序；HTML 只译文本节点；`&X` 加速键保留。
+5. **单字母/轴/按键标签保持原样**（`x/X/P/N`、`-Z` 等），勿经词表翻译。
+6. **术语统一**：见 `docs/senfotoview-i18n-plan.md` §6。
+7. **机器翻译必须用带专有名词遮蔽的 `i18n/translate_zh.py`**；改完跑 `python3 i18n/qa_zh.py 'i18n/zh_CN/*.ts'`
+   复核（其 `PROPER_NOUN`/`SHORTCUT`/`SUSPECT` 即守则检测）。

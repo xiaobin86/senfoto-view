@@ -42,7 +42,7 @@
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqAnglePropertyWidget.ui" line="154"/>
         <source>Note: Use &apos;1&apos;/&apos;C&apos;/&apos;2&apos; to place P1/Center/P2 on a mesh respectively. Combine with &apos;Ctrl&apos; to snap to the closest mesh point.
 Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X / Y / Z axis respectively.</source>
-        <translation>注:使用'1'/'C'/'2'将P1/Center/P2分别放置在网格上. 与“ Ctrl” 组合, 以快到最接近的网点 。 使用"X"/"Y"/"Z"分别限制运动到X/Y/Z轴.</translation>
+        <translation>注:使用'1'/'C'/'2'将P1/Center/P2分别放置在网格上. 与“ Ctrl” 组合, 以快到最接近的网格 。 使用"X"/"Y"/"Z"分别限制运动到X/Y/Z轴.</translation>
     </message>
 </context>
 <context>
@@ -65,12 +65,12 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqAnnulusPropertyWidget.ui" line="47"/>
         <source>Enable/disable the ability to translate the bounding box by moving it with the mouse.</source>
-        <translation>启用/ 取消通过鼠标移动来翻译边框的能力 。</translation>
+        <translation>启用/ 取消通过鼠标移动来平移边框的能力 。</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqAnnulusPropertyWidget.ui" line="50"/>
         <source>Outline Translation</source>
-        <translation>大纲翻译</translation>
+        <translation>大纲平移</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqAnnulusPropertyWidget.ui" line="57"/>
@@ -105,7 +105,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqAnnulusPropertyWidget.ui" line="134"/>
         <source>Use the X-axis as the annulus&apos;s axis.</source>
-        <translation>使用 X 轴作为废除轴 。</translation>
+        <translation>以 X 轴作为圆环的轴</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqAnnulusPropertyWidget.ui" line="137"/>
@@ -115,7 +115,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqAnnulusPropertyWidget.ui" line="144"/>
         <source>Use the Y-axis as the annulus&apos;s axis.</source>
-        <translation>用Y轴作为废墟的轴.</translation>
+        <translation>用Y轴作为圆环的轴.</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqAnnulusPropertyWidget.ui" line="147"/>
@@ -125,7 +125,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqAnnulusPropertyWidget.ui" line="154"/>
         <source>Use the Z-axis as the annulus&apos;s axis.</source>
-        <translation>用Z轴作为废墟轴.</translation>
+        <translation>用Z轴作为圆环轴.</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqAnnulusPropertyWidget.ui" line="157"/>
@@ -135,7 +135,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqAnnulusPropertyWidget.ui" line="164"/>
         <source>Use the camera&apos;s view direction as the axis of the annulus.</source>
-        <translation>使用相机的视线方向作为废墟的轴线.</translation>
+        <translation>使用相机的视线方向作为圆环的轴线.</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqAnnulusPropertyWidget.ui" line="167"/>
@@ -145,7 +145,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqAnnulusPropertyWidget.ui" line="174"/>
         <source>Reset the camera to look along the annulus&apos;s axis.</source>
-        <translation>重置相机以查看废墟轴线。</translation>
+        <translation>重置相机以查看圆环轴线。</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqAnnulusPropertyWidget.ui" line="177"/>
@@ -155,7 +155,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqAnnulusPropertyWidget.ui" line="184"/>
         <source>Reset the annulus&apos;s properties based on the data bounds.</source>
-        <translation>根据数据边界重置取消us的属性 。</translation>
+        <translation>根据数据边界重置圆环属性</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqAnnulusPropertyWidget.ui" line="187"/>
@@ -183,7 +183,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqBackgroundEditorWidget.ui" line="41"/>
         <source>Skybox</source>
-        <translation>天盘</translation>
+        <translation>天空盒</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqBackgroundEditorWidget.ui" line="62"/>
@@ -232,7 +232,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqBoxPropertyWidget.ui" line="85"/>
         <source>Translate</source>
-        <translation>翻译</translation>
+        <translation>平移</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqBoxPropertyWidget.ui" line="116"/>
@@ -317,12 +317,12 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqBoxPropertyWidget.ui" line="291"/>
         <source>Enable translation of the 3d box widget.</source>
-        <translation>启用3d 框部件的翻译 。</translation>
+        <translation>启用3d 框部件的平移 。</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqBoxPropertyWidget.ui" line="294"/>
         <source>Translation</source>
-        <translation>翻译</translation>
+        <translation>平移</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqBoxPropertyWidget.ui" line="301"/>
@@ -342,7 +342,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqBoxPropertyWidget.ui" line="314"/>
         <source>Face Movement</source>
-        <translation>面部移动</translation>
+        <translation>面移动</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqBoxPropertyWidget.ui" line="323"/>
@@ -390,7 +390,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCameraManipulatorWidget.ui" line="89"/>
         <source>Ctrl +</source>
-        <translation>Ctrl + 缩写</translation>
+        <translation>Ctrl +</translation>
     </message>
 </context>
 <context>
@@ -658,7 +658,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqColorOpacityEditorWidget.ui" line="53"/>
         <source>Number of Bins:</source>
-        <translation>宾数 :</translation>
+        <translation>箱数：</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqColorOpacityEditorWidget.ui" line="85"/>
@@ -751,7 +751,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqColorOpacityEditorWidget.ui" line="294"/>
         <source>Use Log Scale When Mapping Data To Colors</source>
-        <translation>绘制数据到颜色时使用日志缩放</translation>
+        <translation>映射数据到颜色时使用对数刻度</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqColorOpacityEditorWidget.ui" line="307"/>
@@ -824,12 +824,12 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqConePropertyWidget.ui" line="47"/>
         <source>Enable/disable the ability to translate the bounding box by moving it with the mouse.</source>
-        <translation>启用/ 取消通过鼠标移动来翻译边框的能力 。</translation>
+        <translation>启用/ 取消通过鼠标移动来平移边框的能力 。</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqConePropertyWidget.ui" line="50"/>
         <source>Outline Translation</source>
-        <translation>大纲翻译</translation>
+        <translation>大纲平移</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqConePropertyWidget.ui" line="57"/>
@@ -854,7 +854,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqConePropertyWidget.ui" line="107"/>
         <source>Origin</source>
-        <translation>来源</translation>
+        <translation>原点</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqConePropertyWidget.ui" line="124"/>
@@ -937,7 +937,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="87"/>
         <source>Note: Use &apos;P&apos; to pick a &quot;Point&quot; on the mesh or &apos;Ctrl+P&apos; to snap to the closest mesh point. Use &apos;N&apos; to align a vector with a surface &quot;Normal&quot; ( &apos;Ctrl+N&apos; to snap to the closest mesh point&apos;s normal), if availiable. Use &apos;T&apos; (&apos;Ctrl+T&apos;) to point an axis &quot;Toward&quot; the clicked point (or its nearest mesh point).</source>
-        <translation>注意:使用“ P” 来选择网格或“ Ctrl+P” 上的“ 点” 来抓取最接近的网格 。 使用“ N” 使矢量与表面“ 正常” (“ Ctrl+N ” ) 对齐, 如果可用 。 使用“ T” (“ Ctrl+T ”) 来指向轴“ 走向” 点击点( 或其最近的网点) 。</translation>
+        <translation>注意:使用“ P” 来选择网格或“ Ctrl+P” 上的“ 点” 来抓取最接近的网格 。 使用“ N” 使矢量与表面“ 法向” (“ Ctrl+N ” ) 对齐, 如果可用 。 使用“ T” (“ Ctrl+T ”) 来指向轴“ 走向” 点击点( 或其最近的网点) 。</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="90"/>
@@ -972,14 +972,14 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="145"/>
         <source>◉Z</source>
-        <translation>兹</translation>
+        <translation>◉Z</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="157"/>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="207"/>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="217"/>
         <source>Click the button to the right of an axis to normalize manually-entered values to a unit-length vector. The axis values do not auto-update the widget because the normalization required would prevent you from entering a desired direction.</source>
-        <translation>单击轴右侧的按钮,使手动输入的值正常化为单位长矢量。 轴值不会自动更新部件, 因为所需的正常化会妨碍您进入想要的方向 。</translation>
+        <translation>单击轴右侧的按钮,使手动输入的值法向化为单位长矢量。 轴值不会自动更新部件, 因为所需的法向化会妨碍您进入想要的方向 。</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="160"/>
@@ -989,7 +989,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="179"/>
         <source>Origin</source>
-        <translation>来源</translation>
+        <translation>原点</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="210"/>
@@ -1026,7 +1026,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="457"/>
         <source>Align axes to world axes</source>
-        <translation>对齐轴与世界轴</translation>
+        <translation>将轴对齐到世界轴</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="460"/>
@@ -1036,27 +1036,27 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="465"/>
         <source>Align to Camera (In ⨂)</source>
-        <translation>与相机对齐( in QQ)</translation>
+        <translation>与相机对齐（朝内 ⨂）</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="468"/>
         <source>Align the locked (or nearest otherwise) axis to the camera normal, pointing into the screen.</source>
-        <translation>将锁定的(或其他最接近的)轴与相机正常对齐,指向屏幕.</translation>
+        <translation>将锁定的(或其他最接近的)轴与相机法向对齐,指向屏幕.</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="473"/>
         <source>Align to Camera (Out ⨀)</source>
-        <translation>与相机对齐( 出 )</translation>
+        <translation>与相机对齐（朝外 ⨀）</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="476"/>
         <source>Align the locked (or nearest otherwise) axis to the camera normal, pointing out of the screen.</source>
-        <translation>将锁定的(或最近的)轴线与相机正常对齐,指向屏幕外.</translation>
+        <translation>将锁定的(或最近的)轴线与相机法向对齐,指向屏幕外.</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="481"/>
         <source>Recenter On Bounds</source>
-        <translation>越近越好</translation>
+        <translation>居中于边界</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="484"/>
@@ -1076,37 +1076,37 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="497"/>
         <source>Align to world X</source>
-        <translation>适应世界X</translation>
+        <translation>对齐到世界 X 轴</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="500"/>
         <source>Align to the world coordinate X axis.</source>
-        <translation>向世界协调 X轴.</translation>
+        <translation>对齐到世界坐标 X 轴。</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="505"/>
         <source>Align to world Y</source>
-        <translation>与世界对齐 Y</translation>
+        <translation>对齐到世界 Y 轴</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="508"/>
         <source>Align to the world coordinate Y axis.</source>
-        <translation>向世界协调Y轴.</translation>
+        <translation>对齐到世界坐标 Y 轴。</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="513"/>
         <source>Align to world Z</source>
-        <translation>对齐世界 Z</translation>
+        <translation>对齐到世界 Z 轴</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="516"/>
         <source>Align to the world coordinate Z axis.</source>
-        <translation>与世界一致协调Z轴.</translation>
+        <translation>对齐到世界坐标 Z 轴。</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="521"/>
         <source>Make camera normal to axis</source>
-        <translation>使相机正常到轴</translation>
+        <translation>使相机垂直于轴</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCoordinateFramePropertyWidget.ui" line="524"/>
@@ -1134,7 +1134,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCustomResolutionDialog.ui" line="41"/>
         <source>x</source>
-        <translation>页:1</translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCustomResolutionDialog.ui" line="48"/>
@@ -1144,7 +1144,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCustomResolutionDialog.ui" line="57"/>
         <source>Resolution</source>
-        <translation>决议</translation>
+        <translation>分辨率</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCustomResolutionDialog.ui" line="87"/>
@@ -1177,12 +1177,12 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCylinderPropertyWidget.ui" line="46"/>
         <source>Enable/disable the ability to translate the bounding box by moving it with the mouse.</source>
-        <translation>启用/ 取消通过鼠标移动来翻译边框的能力 。</translation>
+        <translation>启用/ 取消通过鼠标移动来平移边框的能力 。</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCylinderPropertyWidget.ui" line="49"/>
         <source>Outline Translation</source>
-        <translation>大纲翻译</translation>
+        <translation>大纲平移</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCylinderPropertyWidget.ui" line="56"/>
@@ -1345,57 +1345,57 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDisplaySizedImplicitPlanePropertyWidget.ui" line="83"/>
         <source>Normal</source>
-        <translation>常规</translation>
+        <translation>法向</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDisplaySizedImplicitPlanePropertyWidget.ui" line="93"/>
         <source>Origin</source>
-        <translation>来源</translation>
+        <translation>原点</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDisplaySizedImplicitPlanePropertyWidget.ui" line="123"/>
         <source>Note: Use &apos;P&apos; to pick &apos;%1&apos; on mesh or &apos;Ctrl+P&apos; to snap to the closest mesh point. Also, use &apos;N&apos; to pick &quot;Normal&quot; on mesh or &apos;Ctrl+N&apos; to snap to the closest mesh point normal, if it&apos;s available.</source>
-        <translation>注意: 使用“ P” 在网格或“ Ctrl+P” 上选择 “%1 ” , 以获取最接近的网格点 。 另外,在网格或"Ctrl+N"上,使用"N"来选择"正常"(Normal),以在有可用的情况下,向最接近的网点正常状态断裂.</translation>
+        <translation>注意: 使用“ P” 在网格或“ Ctrl+P” 上选择 “%1 ” , 以获取最接近的网格点 。 另外,在网格或"Ctrl+N"上,使用"N"来选择"法向"(Normal),以在有可用的情况下,向最接近的网点法向状态断裂.</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDisplaySizedImplicitPlanePropertyWidget.ui" line="150"/>
         <source>Set the normal to the camera&apos;s view direction.</source>
-        <translation>设定正常到相机的视线方向.</translation>
+        <translation>设定法向到相机的视线方向.</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDisplaySizedImplicitPlanePropertyWidget.ui" line="153"/>
         <source>Camera Normal</source>
-        <translation>摄像头正常</translation>
+        <translation>相机法向</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDisplaySizedImplicitPlanePropertyWidget.ui" line="160"/>
         <source>Set the normal to the x-axis.</source>
-        <translation>将正常设置为x轴.</translation>
+        <translation>将法向设置为x轴.</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDisplaySizedImplicitPlanePropertyWidget.ui" line="163"/>
         <source>&amp;X Normal</source>
-        <translation>常规(&amp;X)</translation>
+        <translation>法向(&amp;X)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDisplaySizedImplicitPlanePropertyWidget.ui" line="170"/>
         <source>Set the normal to the z-axis.</source>
-        <translation>将正常设置为z轴.</translation>
+        <translation>将法向设置为z轴.</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDisplaySizedImplicitPlanePropertyWidget.ui" line="173"/>
         <source>&amp;Z Normal</source>
-        <translation>常规(&amp;Z)</translation>
+        <translation>法向(&amp;Z)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDisplaySizedImplicitPlanePropertyWidget.ui" line="180"/>
         <source>Set the normal to the y-axis.</source>
-        <translation>将正常设置为y轴.</translation>
+        <translation>将法向设置为y轴.</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDisplaySizedImplicitPlanePropertyWidget.ui" line="183"/>
         <source>&amp;Y Normal</source>
-        <translation>常规(&amp;Y)</translation>
+        <translation>法向(&amp;Y)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDisplaySizedImplicitPlanePropertyWidget.ui" line="190"/>
@@ -1415,7 +1415,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDisplaySizedImplicitPlanePropertyWidget.ui" line="203"/>
         <source>Reset Camera to Normal</source>
-        <translation>将相机重置到正常状态</translation>
+        <translation>将相机重置到法向状态</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDisplaySizedImplicitPlanePropertyWidget.ui" line="210"/>
@@ -1465,7 +1465,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos; to constrain the movement to the X
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Helvetica&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Create View&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt; &lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;p, li { 白- 空格 : pre- wrap;}&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Helvetica'; font-size:9pt; font-weight:400; font-style:normal;"&gt; &lt;p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-weight:600;"&gt;创建视图&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt; &lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;p, li { white-space : pre- wrap;}&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Helvetica'; font-size:9pt; font-weight:400; font-style:normal;"&gt; &lt;p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-weight:600;"&gt;创建视图&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -1554,12 +1554,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFindDataWidget.ui" line="154"/>
         <source>Freeze</source>
-        <translation>别动</translation>
+        <translation>冻结</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFindDataWidget.ui" line="164"/>
         <source>Extract</source>
-        <translation>摘录</translation>
+        <translation>提取</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFindDataWidget.ui" line="174"/>
@@ -1765,7 +1765,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFrustumPropertyWidget.ui" line="100"/>
         <source>Origin</source>
-        <translation>来源</translation>
+        <translation>原点</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFrustumPropertyWidget.ui" line="117"/>
@@ -1798,7 +1798,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqHandlePropertyWidget.ui" line="66"/>
         <source>Note: Use &apos;P&apos; to pick &apos;%1&apos; on mesh or &apos;Ctrl+P&apos; to snap to the closest mesh point</source>
-        <translation>注意: 在网格或“ Ctrl+P” 上使用“ P” 来选择 “%1 ” 来抓取最接近的网点</translation>
+        <translation>注意: 在网格或“ Ctrl+P” 上使用“ P” 来选择 “%1 ” 来抓取最接近的网格</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqHandlePropertyWidget.ui" line="79"/>
@@ -1831,7 +1831,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqImageCompressorWidget.ui" line="41"/>
         <source>LZ4</source>
-        <translation>LZ4 坐标</translation>
+        <translation>LZ4</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqImageCompressorWidget.ui" line="46"/>
@@ -1941,57 +1941,57 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqImplicitPlanePropertyWidget.ui" line="49"/>
         <source>Normal</source>
-        <translation>常规</translation>
+        <translation>法向</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqImplicitPlanePropertyWidget.ui" line="59"/>
         <source>Origin</source>
-        <translation>来源</translation>
+        <translation>原点</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqImplicitPlanePropertyWidget.ui" line="89"/>
         <source>Note: Use &apos;P&apos; to pick &apos;%1&apos; on mesh or &apos;Ctrl+P&apos; to snap to the closest mesh point</source>
-        <translation>注意: 在网格或“ Ctrl+P” 上使用“ P” 来选择 “%1 ” 来抓取最接近的网点</translation>
+        <translation>注意: 在网格或“ Ctrl+P” 上使用“ P” 来选择 “%1 ” 来抓取最接近的网格</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqImplicitPlanePropertyWidget.ui" line="107"/>
         <source>Set the normal to the camera&apos;s view direction.</source>
-        <translation>设定正常到相机的视线方向.</translation>
+        <translation>设定法向到相机的视线方向.</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqImplicitPlanePropertyWidget.ui" line="110"/>
         <source>Camera Normal</source>
-        <translation>摄像头正常</translation>
+        <translation>相机法向</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqImplicitPlanePropertyWidget.ui" line="117"/>
         <source>Set the normal to the x-axis.</source>
-        <translation>将正常设置为x轴.</translation>
+        <translation>将法向设置为x轴.</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqImplicitPlanePropertyWidget.ui" line="120"/>
         <source>&amp;X Normal</source>
-        <translation>常规(&amp;X)</translation>
+        <translation>法向(&amp;X)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqImplicitPlanePropertyWidget.ui" line="127"/>
         <source>Set the normal to the z-axis.</source>
-        <translation>将正常设置为z轴.</translation>
+        <translation>将法向设置为z轴.</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqImplicitPlanePropertyWidget.ui" line="130"/>
         <source>&amp;Z Normal</source>
-        <translation>常规(&amp;Z)</translation>
+        <translation>法向(&amp;Z)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqImplicitPlanePropertyWidget.ui" line="137"/>
         <source>Set the normal to the y-axis.</source>
-        <translation>将正常设置为y轴.</translation>
+        <translation>将法向设置为y轴.</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqImplicitPlanePropertyWidget.ui" line="140"/>
         <source>&amp;Y Normal</source>
-        <translation>常规(&amp;Y)</translation>
+        <translation>法向(&amp;Y)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqImplicitPlanePropertyWidget.ui" line="147"/>
@@ -2011,7 +2011,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqImplicitPlanePropertyWidget.ui" line="160"/>
         <source>Reset Camera to Normal</source>
-        <translation>将相机重置到正常状态</translation>
+        <translation>将相机重置到法向状态</translation>
     </message>
 </context>
 <context>
@@ -2019,12 +2019,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqLightPropertyWidget.ui" line="34"/>
         <source>Focal Point</source>
-        <translation>联络点</translation>
+        <translation>焦点</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqLightPropertyWidget.ui" line="47"/>
         <source>Light Position</source>
-        <translation>浅位置</translation>
+        <translation>光源位置</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqLightPropertyWidget.ui" line="60"/>
@@ -2057,7 +2057,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqLinePropertyWidget.ui" line="87"/>
         <source>X</source>
-        <translation>页:1</translation>
+        <translation>X</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqLinePropertyWidget.ui" line="94"/>
@@ -2077,7 +2077,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqLinePropertyWidget.ui" line="107"/>
         <source>Z</source>
-        <translation>页:1</translation>
+        <translation>Z</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqLinePropertyWidget.ui" line="114"/>
@@ -2105,7 +2105,7 @@ p, li { white-space: pre-wrap; }
 Use &apos;1&apos;/&apos;Ctrl+1&apos; for point 1 and &apos;2&apos;/&apos;Ctrl+2&apos; for point 2.
 Use &apos;N&apos; to place P1 on the mesh and make P1-P2 be the normal at the surface.
 Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos;/&apos;L&apos; to constrain the movement to the X / Y / Z / Line axis respectively.</source>
-        <translation>注:使用“ P” 将交替点放置在网格或“ Ctrl+P” 上,以向最近的网格点靠拢。 使用"1"/"Ctrl+1"表示第1点,"2"/"Ctrl+2"表示第2点,使用"N"将P1放置在网格上,使P1-P2成为表面的正常状态. 使用"X"/"Y"/"Z"/"L"分别限制运动到X/Y/Z/线轴.</translation>
+        <translation>注:使用“ P” 将交替点放置在网格或“ Ctrl+P” 上,以向最近的网格点靠拢。 使用"1"/"Ctrl+1"表示第1点,"2"/"Ctrl+2"表示第2点,使用"N"将P1放置在网格上,使P1-P2成为表面的法向状态. 使用"X"/"Y"/"Z"/"L"分别限制运动到X/Y/Z/线轴.</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqLinePropertyWidget.ui" line="207"/>
@@ -2143,12 +2143,12 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos;/&apos;L&apos; to constrain the mov
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDefaultMainWindow.ui" line="46"/>
         <source>E&amp;xit</source>
-        <translation>爱(&amp;X)</translation>
+        <translation>退出(&amp;X)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDefaultMainWindow.ui" line="49"/>
         <source>Ctrl+Q</source>
-        <translation>(简体中文)</translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqDefaultMainWindow.ui" line="54"/>
@@ -2191,12 +2191,12 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos;/&apos;L&apos; to constrain the mov
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqMoleculePropertyWidget.ui" line="92"/>
         <source>Show Bonds</source>
-        <translation>显示债券</translation>
+        <translation>显示化学键</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqMoleculePropertyWidget.ui" line="109"/>
         <source>Bonds Radius</source>
-        <translation>债券半径</translation>
+        <translation>键半径</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqMoleculePropertyWidget.ui" line="125"/>
@@ -2211,7 +2211,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos;/&apos;L&apos; to constrain the mov
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqMoleculePropertyWidget.ui" line="159"/>
         <source>Bonds color</source>
-        <translation>债券颜色</translation>
+        <translation>键颜色</translation>
     </message>
 </context>
 <context>
@@ -2316,7 +2316,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos;/&apos;L&apos; to constrain the mov
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqQuickLaunchDialogExtended.ui" line="16"/>
         <source>Quick Launch</source>
-        <translation>快速发射</translation>
+        <translation>快速启动</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqQuickLaunchDialogExtended.ui" line="22"/>
@@ -2351,7 +2351,7 @@ Use &apos;X&apos;/&apos;Y&apos;/&apos;Z&apos;/&apos;L&apos; to constrain the mov
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqQuickLaunchDialogExtended.ui" line="83"/>
         <source>Requirements (if unmet)</source>
-        <translation>所需经费(如未满足)</translation>
+        <translation>要求（若未满足）</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqQuickLaunchDialogExtended.ui" line="99"/>
@@ -2525,12 +2525,12 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqSeriesEditorPropertyWidget.ui" line="72"/>
         <source>Solid</source>
-        <translation>固态</translation>
+        <translation>实线</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqSeriesEditorPropertyWidget.ui" line="77"/>
         <source>Dash</source>
-        <translation>达希</translation>
+        <translation>虚线</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqSeriesEditorPropertyWidget.ui" line="82"/>
@@ -2540,7 +2540,7 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqSeriesEditorPropertyWidget.ui" line="87"/>
         <source>Dash Dot</source>
-        <translation>达什点</translation>
+        <translation>点划线</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqSeriesEditorPropertyWidget.ui" line="92"/>
@@ -2648,7 +2648,7 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqSpherePropertyWidget.ui" line="57"/>
         <source>Normal</source>
-        <translation>常规</translation>
+        <translation>法向</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqSpherePropertyWidget.ui" line="73"/>
@@ -2703,7 +2703,7 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqSplinePropertyWidget.ui" line="126"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Use &lt;span style=&quot; font-weight:600;&quot;&gt;P&lt;/span&gt; to place selected point on mesh or &lt;span style=&quot; font-weight:600;&quot;&gt;Ctrl+P&lt;/span&gt; to snap the selected point to closest mesh point. Use &lt;span style=&quot; font-weight:600;&quot;&gt;1 &lt;/span&gt;/ &lt;span style=&quot; font-weight:600;&quot;&gt;Ctrl+1&lt;/span&gt; for first point and &lt;span style=&quot; font-weight:600;&quot;&gt;2 &lt;/span&gt;/ &lt;span style=&quot; font-weight:600;&quot;&gt;Ctrl+2&lt;/span&gt; for the last point.&lt;br/&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Click&lt;/span&gt; to select a point, &lt;span style=&quot; font-weight:600;&quot;&gt;Shift+Click&lt;/span&gt; to remove a point, &lt;span style=&quot; font-weight:600;&quot;&gt;Ctrl+Click&lt;/span&gt; to insert a point on the line, &lt;span style=&quot; font-weight:600;&quot;&gt;Alt+Click&lt;/span&gt; to add a point after the selected extremity.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;使用&lt;span style=" font-weight:600;"&gt;P&lt;/span&gt;将选定的点放置在网格上或&lt;span style=" font-weight:600;"&gt;缩写+P&lt;/span&gt;将选定的点按到最接近网点。 使用&lt;span style=" font-weight:600;"&gt;1 &lt;/span&gt;/ &lt;span style=" font-weight:600;"&gt;缩写+1&lt;/span&gt;第一点和&lt;span style=" font-weight:600;"&gt;2 &lt;/span&gt;/ &lt;span style=" font-weight:600;"&gt;缩写+2&lt;/span&gt;最后一点。&lt;br/&gt;&lt;span style=" font-weight:600;"&gt;单击&lt;/span&gt;选择一个点,&lt;span style=" font-weight:600;"&gt;移动+ 单击&lt;/span&gt;要删除一个点,&lt;span style=" font-weight:600;"&gt;缩略语+ 单击&lt;/span&gt;在线上插入一个点,&lt;span style=" font-weight:600;"&gt;备选案文+ 单击&lt;/span&gt;以在选定的极点后添加点。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;使用&lt;span style=" font-weight:600;"&gt;P&lt;/span&gt;将选定的点放置在网格上或&lt;span style=" font-weight:600;"&gt;Ctrl+P&lt;/span&gt;将选定的点按到最接近网格。 使用&lt;span style=" font-weight:600;"&gt;1 &lt;/span&gt;/ &lt;span style=" font-weight:600;"&gt;Ctrl+1&lt;/span&gt;第一点和&lt;span style=" font-weight:600;"&gt;2 &lt;/span&gt;/ &lt;span style=" font-weight:600;"&gt;Ctrl+2&lt;/span&gt;最后一点。&lt;br/&gt;&lt;span style=" font-weight:600;"&gt;单击&lt;/span&gt;选择一个点,&lt;span style=" font-weight:600;"&gt;Shift+ 单击&lt;/span&gt;要删除一个点,&lt;span style=" font-weight:600;"&gt;Ctrl+ 单击&lt;/span&gt;在线上插入一个点,&lt;span style=" font-weight:600;"&gt;Alt+ 单击&lt;/span&gt;以在选定的极点后添加点。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqSplinePropertyWidget.ui" line="136"/>
@@ -2784,12 +2784,12 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqTimeManagerWidget.ui" line="83"/>
         <source>Number of frames</source>
-        <translation>框数</translation>
+        <translation>帧数</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqTimeManagerWidget.ui" line="124"/>
         <source>Stride</source>
-        <translation>弦乐</translation>
+        <translation>步长</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqTimeManagerWidget.ui" line="160"/>
@@ -2843,7 +2843,7 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqViewResolutionPropertyWidget.ui" line="35"/>
         <source>x</source>
-        <translation>页:1</translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqViewResolutionPropertyWidget.ui" line="42"/>
@@ -2891,7 +2891,7 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqYoungsMaterialPropertyWidget.ui" line="35"/>
         <source>Normal Array</source>
-        <translation>普通阵列</translation>
+        <translation>法向阵列</translation>
     </message>
 </context>
 <context>
@@ -2904,17 +2904,17 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqAnglePropertyWidget.cxx" line="84"/>
         <source>Ctrl+1</source>
-        <translation>缩写+1</translation>
+        <translation>Ctrl+1</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqAnglePropertyWidget.cxx" line="97"/>
         <source>C</source>
-        <translation>C级</translation>
+        <translation>C</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqAnglePropertyWidget.cxx" line="101"/>
         <source>Ctrl+C</source>
-        <translation>Ctrl+C 常规</translation>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqAnglePropertyWidget.cxx" line="113"/>
@@ -2924,7 +2924,7 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqAnglePropertyWidget.cxx" line="117"/>
         <source>Ctrl+2</source>
-        <translation>缩写+2</translation>
+        <translation>Ctrl+2</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqAnglePropertyWidget.cxx" line="177"/>
@@ -2960,42 +2960,42 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqAnimationShortcutWidget.cxx" line="88"/>
         <source>Create a new animation track</source>
-        <translation>创建新动画音轨</translation>
+        <translation>创建新动画轨道</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqAnimationShortcutWidget.cxx" line="96"/>
         <source>Edit the animation track</source>
-        <translation>编辑动画音轨</translation>
+        <translation>编辑动画轨道</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqAnimationShortcutWidget.cxx" line="100"/>
         <source>Remove the animation track</source>
-        <translation>删除动画音轨</translation>
+        <translation>删除动画轨道</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqAnimationShortcutWidget.cxx" line="118"/>
         <source>Remove Animation Track</source>
-        <translation>删除动画音轨</translation>
+        <translation>删除动画轨道</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqAnimationShortcutWidget.cxx" line="129"/>
         <source>Add Animation Track</source>
-        <translation>添加动画音轨</translation>
+        <translation>添加动画轨道</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqAnimationShortcutWidget.cxx" line="144"/>
         <source>Animation Keyframes</source>
-        <translation>动画键框</translation>
+        <translation>动画关键帧</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqAnimationShortcutWidget.cxx" line="154"/>
         <source>No. frames:</source>
-        <translation>框数 :</translation>
+        <translation>帧数 :</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqAnimationShortcutWidget.cxx" line="160"/>
         <source>Duration (s):</source>
-        <translation>持续时间:</translation>
+        <translation>持续时间：</translation>
     </message>
 </context>
 <context>
@@ -3198,7 +3198,7 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCameraToolbar.ui" line="30"/>
         <source>&amp;Reset</source>
-        <translation>电子集(&amp;R)</translation>
+        <translation>重置(&amp;R)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCameraToolbar.ui" line="33"/>
@@ -3264,7 +3264,7 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCameraToolbar.ui" line="138"/>
         <source>-Z</source>
-        <translation>- Z - Z - 说吧</translation>
+        <translation>-Z</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCameraToolbar.ui" line="141"/>
@@ -3275,13 +3275,13 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCameraToolbar.ui" line="156"/>
         <source>&amp;Isometric</source>
-        <translation>声音(&amp;I)</translation>
+        <translation>等轴测(&amp;I)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCameraToolbar.ui" line="159"/>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCameraToolbar.ui" line="162"/>
         <source>Apply isometric view</source>
-        <translation>应用同位素视图</translation>
+        <translation>应用等轴测视图</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCameraToolbar.ui" line="177"/>
@@ -3304,7 +3304,7 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCameraToolbar.ui" line="218"/>
         <source>ZTD</source>
-        <translation>ZTD 读取</translation>
+        <translation>ZTD</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCameraToolbar.ui" line="221"/>
@@ -3314,7 +3314,7 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCameraToolbar.ui" line="230"/>
         <source>ZCTD</source>
-        <translation>津巴布韦</translation>
+        <translation>ZCTD</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCameraToolbar.ui" line="233"/>
@@ -3324,7 +3324,7 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCameraToolbar.ui" line="242"/>
         <source>RCC</source>
-        <translation>驻地协调员</translation>
+        <translation>RCC</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqCameraToolbar.ui" line="245"/>
@@ -3356,12 +3356,12 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqCatalystExportReaction.cxx" line="47"/>
         <source>Catalyst state file</source>
-        <translation>催化状态文件</translation>
+        <translation>Catalyst状态文件</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqCatalystExportReaction.cxx" line="51"/>
         <source>Save Catalyst State:</source>
-        <translation>保存催化剂状态 :</translation>
+        <translation>保存Catalyst剂状态 :</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqCatalystExportReaction.cxx" line="49"/>
@@ -3371,7 +3371,7 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqCatalystExportReaction.cxx" line="79"/>
         <source>Save Catalyst State Options</source>
-        <translation>保存催化状态选项</translation>
+        <translation>保存Catalyst状态选项</translation>
     </message>
 </context>
 <context>
@@ -3531,7 +3531,7 @@ Esc to cancel</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqColorMapEditor.cxx" line="162"/>
         <source>Representation</source>
-        <translation>代表权</translation>
+        <translation>表示权</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqColorMapEditor.cxx" line="163"/>
@@ -3803,32 +3803,32 @@ It may be part of a plugin that is not loaded.</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqCoordinateFramePropertyWidget.cxx" line="231"/>
         <source>P</source>
-        <translation>页:1</translation>
+        <translation>P</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqCoordinateFramePropertyWidget.cxx" line="237"/>
         <source>Ctrl+P</source>
-        <translation>缩写+P</translation>
+        <translation>Ctrl+P</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqCoordinateFramePropertyWidget.cxx" line="244"/>
         <source>N</source>
-        <translation>无</translation>
+        <translation>N</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqCoordinateFramePropertyWidget.cxx" line="250"/>
         <source>Ctrl+N</source>
-        <translation>缩写+N</translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqCoordinateFramePropertyWidget.cxx" line="257"/>
         <source>T</source>
-        <translation>T级</translation>
+        <translation>T</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqCoordinateFramePropertyWidget.cxx" line="263"/>
         <source>Ctrl+T</source>
-        <translation>缩写+T</translation>
+        <translation>Ctrl+T</translation>
     </message>
 </context>
 <context>
@@ -3986,7 +3986,7 @@ Then, launch the creation wizard.</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqDefaultContextMenu.cxx" line="99"/>
         <source>Representation</source>
-        <translation>代表权</translation>
+        <translation>表示权</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqDefaultContextMenu.cxx" line="122"/>
@@ -4032,7 +4032,7 @@ Then, launch the creation wizard.</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqDefaultContextMenu.cxx" line="292"/>
         <source>Representation Type Changed</source>
-        <translation>代表类型已更改</translation>
+        <translation>表示类型已更改</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqDefaultContextMenu.cxx" line="308"/>
@@ -4146,27 +4146,27 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqDisplaySizedImplicitPlanePropertyWidget.cxx" line="74"/>
         <source>Origin</source>
-        <translation>来源</translation>
+        <translation>原点</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqDisplaySizedImplicitPlanePropertyWidget.cxx" line="141"/>
         <source>P</source>
-        <translation>页:1</translation>
+        <translation>P</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqDisplaySizedImplicitPlanePropertyWidget.cxx" line="147"/>
         <source>Ctrl+P</source>
-        <translation>缩写+P</translation>
+        <translation>Ctrl+P</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqDisplaySizedImplicitPlanePropertyWidget.cxx" line="154"/>
         <source>N</source>
-        <translation>无</translation>
+        <translation>N</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqDisplaySizedImplicitPlanePropertyWidget.cxx" line="160"/>
         <source>Ctrl+N</source>
-        <translation>缩写+N</translation>
+        <translation>Ctrl+N</translation>
     </message>
 </context>
 <context>
@@ -4296,7 +4296,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="25"/>
         <source>Ctrl+Z</source>
-        <translation>缩写+Z</translation>
+        <translation>Ctrl+Z</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="37"/>
@@ -4306,7 +4306,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="40"/>
         <source>Ctrl+Y</source>
-        <translation>缩写+Y</translation>
+        <translation>Ctrl+Y</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="49"/>
@@ -4316,7 +4316,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="52"/>
         <source>Ctrl+B</source>
-        <translation>缩写+B</translation>
+        <translation>Ctrl+B</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="61"/>
@@ -4326,7 +4326,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="64"/>
         <source>Ctrl+G</source>
-        <translation>缩略语+G</translation>
+        <translation>Ctrl+G</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="69"/>
@@ -4442,7 +4442,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="206"/>
         <source>Ctrl+R</source>
-        <translation>缩写+R</translation>
+        <translation>Ctrl+R</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="215"/>
@@ -4484,7 +4484,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="259"/>
         <source>Ctrl+,</source>
-        <translation>Ctrl+ , (中文(简体) ).</translation>
+        <translation>Ctrl+,</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="268"/>
@@ -4504,7 +4504,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="277"/>
         <source>V</source>
-        <translation>五</translation>
+        <translation>V</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="282"/>
@@ -4520,7 +4520,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="291"/>
         <source>Ctrl+F</source>
-        <translation>缩写+F</translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="300"/>
@@ -4705,12 +4705,12 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="16"/>
         <source>&amp;Recent Files</source>
-        <translation>中间文件(&amp;R)</translation>
+        <translation>最近文件(&amp;R)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="25"/>
         <source>&amp;Connect...</source>
-        <translation>欧内特...(&amp;C)</translation>
+        <translation>连接...(&amp;C)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="28"/>
@@ -4720,7 +4720,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="37"/>
         <source>&amp;Disconnect</source>
-        <translation>正在连接(&amp;D)</translation>
+        <translation>断开连接(&amp;D)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="40"/>
@@ -4735,7 +4735,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="58"/>
         <source>Save &amp;Animation...</source>
-        <translation>保存节奏...(&amp;A)</translation>
+        <translation>保存动画...(&amp;A)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="70"/>
@@ -4745,22 +4745,22 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="73"/>
         <source>Ctrl+S</source>
-        <translation>缩写+S</translation>
+        <translation>Ctrl+S</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="85"/>
         <source>&amp;Load State...</source>
-        <translation>胶州...(&amp;L)</translation>
+        <translation>加载状态...(&amp;L)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="97"/>
         <source>&amp;Save State...</source>
-        <translation>州立大学...(&amp;S)</translation>
+        <translation>保存状态...(&amp;S)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="106"/>
         <source>Save Catalyst State...</source>
-        <translation>保存催化剂状态...</translation>
+        <translation>保存Catalyst剂状态...</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="111"/>
@@ -4781,12 +4781,12 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="132"/>
         <source>F5</source>
-        <translation>F5 导弹</translation>
+        <translation>F5</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="141"/>
         <source>&amp;Open...</source>
-        <translation>笔...(&amp;O)</translation>
+        <translation>打开...(&amp;O)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="144"/>
@@ -4796,12 +4796,12 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="147"/>
         <source>Ctrl+O</source>
-        <translation>Ctrl+O 数据</translation>
+        <translation>Ctrl+O</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="159"/>
         <source>E&amp;xit</source>
-        <translation>爱(&amp;X)</translation>
+        <translation>退出(&amp;X)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="162"/>
@@ -4811,7 +4811,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="165"/>
         <source>Ctrl+Q</source>
-        <translation>(简体中文)</translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqFileMenuBuilder.ui" line="174"/>
@@ -4922,7 +4922,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqFontPropertyWidget.cxx" line="241"/>
         <source>Right</source>
-        <translation>对</translation>
+        <translation>Right</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqFontPropertyWidget.cxx" line="259"/>
@@ -4953,12 +4953,12 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqHandlePropertyWidget.cxx" line="74"/>
         <source>P</source>
-        <translation>页:1</translation>
+        <translation>P</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqHandlePropertyWidget.cxx" line="80"/>
         <source>Ctrl+P</source>
-        <translation>缩写+P</translation>
+        <translation>Ctrl+P</translation>
     </message>
 </context>
 <context>
@@ -5068,17 +5068,17 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqImplicitPlanePropertyWidget.cxx" line="74"/>
         <source>Origin</source>
-        <translation>来源</translation>
+        <translation>原点</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqImplicitPlanePropertyWidget.cxx" line="126"/>
         <source>P</source>
-        <translation>页:1</translation>
+        <translation>P</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqImplicitPlanePropertyWidget.cxx" line="132"/>
         <source>Ctrl+P</source>
-        <translation>缩写+P</translation>
+        <translation>Ctrl+P</translation>
     </message>
 </context>
 <context>
@@ -5120,12 +5120,12 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqLinePropertyWidget.cxx" line="114"/>
         <source>P</source>
-        <translation>页:1</translation>
+        <translation>P</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqLinePropertyWidget.cxx" line="120"/>
         <source>Ctrl+P</source>
-        <translation>缩写+P</translation>
+        <translation>Ctrl+P</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqLinePropertyWidget.cxx" line="125"/>
@@ -5135,7 +5135,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqLinePropertyWidget.cxx" line="131"/>
         <source>Ctrl+1</source>
-        <translation>缩写+1</translation>
+        <translation>Ctrl+1</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqLinePropertyWidget.cxx" line="136"/>
@@ -5145,12 +5145,12 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqLinePropertyWidget.cxx" line="142"/>
         <source>Ctrl+2</source>
-        <translation>缩写+2</translation>
+        <translation>Ctrl+2</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqLinePropertyWidget.cxx" line="148"/>
         <source>N</source>
-        <translation>无</translation>
+        <translation>N</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqLinePropertyWidget.cxx" line="204"/>
@@ -5311,7 +5311,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqMainControlsToolbar.ui" line="54"/>
         <source>&amp;Connect...</source>
-        <translation>欧内特...(&amp;C)</translation>
+        <translation>连接...(&amp;C)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqMainControlsToolbar.ui" line="57"/>
@@ -5321,7 +5321,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqMainControlsToolbar.ui" line="66"/>
         <source>&amp;Disconnect</source>
-        <translation>正在连接(&amp;D)</translation>
+        <translation>断开连接(&amp;D)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqMainControlsToolbar.ui" line="69"/>
@@ -5398,12 +5398,12 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqMainControlsToolbar.ui" line="181"/>
         <source>Save Catalyst State...</source>
-        <translation>保存催化剂状态...</translation>
+        <translation>保存Catalyst剂状态...</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqMainControlsToolbar.ui" line="184"/>
         <source>Save Catalyst State</source>
-        <translation>保存催化剂状态</translation>
+        <translation>保存Catalyst剂状态</translation>
     </message>
 </context>
 <context>
@@ -5504,7 +5504,7 @@ Do you want to open this file as a state file?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqParaViewMenuBuilders.cxx" line="454"/>
         <source>&amp;Hide All</source>
-        <translation>页:1(&amp;H)</translation>
+        <translation>首页(&amp;H)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqParaViewMenuBuilders.cxx" line="456"/>
@@ -5663,7 +5663,7 @@ Do you want to open this file as a state file?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqProxyGroupMenuManager.cxx" line="596"/>
         <source>Search...	Alt+Space</source>
-        <translation>搜索... 备选案文+ 空间</translation>
+        <translation>搜索... Alt+ 空间</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqProxyGroupMenuManager.cxx" line="599"/>
@@ -5678,22 +5678,22 @@ Do you want to open this file as a state file?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqProxyGroupMenuManager.cxx" line="626"/>
         <source>&amp;Miscellaneous</source>
-        <translation>单体(&amp;M)</translation>
+        <translation>杂项(&amp;M)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqProxyGroupMenuManager.cxx" line="770"/>
         <source>Add to Favorites</source>
-        <translation>添加到爱好</translation>
+        <translation>添加到收藏</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqProxyGroupMenuManager.cxx" line="164"/>
         <source>&amp;Favorites</source>
-        <translation>贪婪(&amp;F)</translation>
+        <translation>收藏夹(&amp;F)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqProxyGroupMenuManager.cxx" line="614"/>
         <source>&amp;OldFavorites</source>
-        <translation>爱的人(&amp;O)</translation>
+        <translation>旧收藏夹(&amp;O)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqProxyGroupMenuManager.cxx" line="622"/>
@@ -6178,12 +6178,12 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqSpherePropertyWidget.cxx" line="90"/>
         <source>P</source>
-        <translation>页:1</translation>
+        <translation>P</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqSpherePropertyWidget.cxx" line="96"/>
         <source>Ctrl+P</source>
-        <translation>缩写+P</translation>
+        <translation>Ctrl+P</translation>
     </message>
 </context>
 <context>
@@ -6191,12 +6191,12 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqSplinePropertyWidget.cxx" line="333"/>
         <source>P</source>
-        <translation>页:1</translation>
+        <translation>P</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqSplinePropertyWidget.cxx" line="338"/>
         <source>Ctrl+P</source>
-        <translation>缩写+P</translation>
+        <translation>Ctrl+P</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqSplinePropertyWidget.cxx" line="342"/>
@@ -6206,7 +6206,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqSplinePropertyWidget.cxx" line="348"/>
         <source>Ctrl+1</source>
-        <translation>缩写+1</translation>
+        <translation>Ctrl+1</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqSplinePropertyWidget.cxx" line="353"/>
@@ -6216,7 +6216,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqSplinePropertyWidget.cxx" line="359"/>
         <source>Ctrl+2</source>
-        <translation>缩写+2</translation>
+        <translation>Ctrl+2</translation>
     </message>
 </context>
 <context>
@@ -6244,7 +6244,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqSpreadSheetViewDecorator.ui" line="88"/>
         <source>Switches between scientific and fixed-point representation</source>
-        <translation>科学和固定点代表之间的切换</translation>
+        <translation>科学和固定点表示之间的切换</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqSpreadSheetViewDecorator.ui" line="91"/>
@@ -6301,22 +6301,22 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqStandardViewFrameActionsImplementation.cxx" line="100"/>
         <source>s</source>
-        <translation>编号</translation>
+        <translation>s</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqStandardViewFrameActionsImplementation.cxx" line="101"/>
         <source>d</source>
-        <translation>D. 国家</translation>
+        <translation>d</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqStandardViewFrameActionsImplementation.cxx" line="102"/>
         <source>f</source>
-        <translation>f 时值</translation>
+        <translation>f</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqStandardViewFrameActionsImplementation.cxx" line="103"/>
         <source>g</source>
-        <translation>(单位:千美元)</translation>
+        <translation>g</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqStandardViewFrameActionsImplementation.cxx" line="184"/>
@@ -6361,7 +6361,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqStandardViewFrameActionsImplementation.cxx" line="328"/>
         <source>Camera Redo</source>
-        <translation>重装相机</translation>
+        <translation>重做相机</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqStandardViewFrameActionsImplementation.cxx" line="341"/>
@@ -6552,7 +6552,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqTimelineView.cxx" line="60"/>
         <source>Select proxy to animate</source>
-        <translation>选择动画代理</translation>
+        <translation>选择要动画的代理</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqTimelineView.cxx" line="63"/>
@@ -6562,7 +6562,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqTimelineView.cxx" line="70"/>
         <source>Select property to animate</source>
-        <translation>选择动画属性</translation>
+        <translation>选择要动画的属性</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqTimelineView.cxx" line="84"/>
@@ -6574,17 +6574,17 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqTimelineView.cxx" line="114"/>
         <source>Follow Path</source>
-        <translation>跟踪路径</translation>
+        <translation>跟随路径</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqTimelineView.cxx" line="116"/>
         <source>Follow Data</source>
-        <translation>跟踪数据</translation>
+        <translation>跟随数据</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqTimelineView.cxx" line="118"/>
         <source>Interpolate cameras</source>
-        <translation>内插相机</translation>
+        <translation>插值相机</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqTimelineView.cxx" line="268"/>
@@ -6608,22 +6608,22 @@ Otherwise, generate NumberOfFrames time entries.</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqTimelineWidget.cxx" line="119"/>
         <source>Time Sources</source>
-        <translation>时间来源</translation>
+        <translation>时间源</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqTimelineWidget.cxx" line="124"/>
         <source>Check / Uncheck to enable all animation tracks.</source>
-        <translation>检查/ 取消检查以启用所有动画音轨 。</translation>
+        <translation>勾选/取消勾选以启用所有动画轨道。</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqTimelineWidget.cxx" line="166"/>
         <source>Remove Animation Track</source>
-        <translation>删除动画音轨</translation>
+        <translation>删除动画轨道</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqTimelineWidget.cxx" line="239"/>
         <source>Add Animation Track</source>
-        <translation>添加动画音轨</translation>
+        <translation>添加动画轨道</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqTimelineWidget.cxx" line="316"/>
@@ -6805,7 +6805,7 @@ Otherwise, generate NumberOfFrames time entries.</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqUndoRedoReaction.cxx" line="99"/>
         <source>Redo</source>
-        <translation>重装</translation>
+        <translation>重做</translation>
     </message>
 </context>
 <context>
@@ -6818,37 +6818,37 @@ Otherwise, generate NumberOfFrames time entries.</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqVCRToolbar.ui" line="27"/>
         <source>&amp;Play</source>
-        <translation>铺(&amp;P)</translation>
+        <translation>播放(&amp;P)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqVCRToolbar.ui" line="38"/>
         <source>&amp;Reverse</source>
-        <translation>永远(&amp;R)</translation>
+        <translation>反转(&amp;R)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqVCRToolbar.ui" line="50"/>
         <source>Pre&amp;vious Frame</source>
-        <translation>珍贵的框架(&amp;V)</translation>
+        <translation>上一帧(&amp;V)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqVCRToolbar.ui" line="64"/>
         <source>&amp;First Frame</source>
-        <translation>irst 框架(&amp;F)</translation>
+        <translation>第一帧(&amp;F)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqVCRToolbar.ui" line="75"/>
         <source>&amp;Next Frame</source>
-        <translation>ext 框架(&amp;N)</translation>
+        <translation>下一帧(&amp;N)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqVCRToolbar.ui" line="86"/>
         <source>&amp;Last Frame</source>
-        <translation>Ast 框架(&amp;L)</translation>
+        <translation>最后一帧(&amp;L)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqVCRToolbar.ui" line="100"/>
         <source>L&amp;oop</source>
-        <translation>罗普(&amp;O)</translation>
+        <translation>循环(&amp;O)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqVCRToolbar.ui" line="103"/>
@@ -6860,12 +6860,12 @@ Otherwise, generate NumberOfFrames time entries.</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqVCRToolbar.cxx" line="75"/>
         <source>First Frame (%1)</source>
-        <translation>第一个框架 (%1)</translation>
+        <translation>第一帧 (%1)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqVCRToolbar.cxx" line="77"/>
         <source>Last Frame (%1)</source>
-        <translation>最后一个框架 (%1)</translation>
+        <translation>最后一帧 (%1)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqVCRToolbar.cxx" line="84"/>
@@ -6880,7 +6880,7 @@ Otherwise, generate NumberOfFrames time entries.</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqVCRToolbar.cxx" line="94"/>
         <source>Pa&amp;use</source>
-        <translation>页(&amp;U)</translation>
+        <translation>暂停(&amp;U)</translation>
     </message>
 </context>
 <context>

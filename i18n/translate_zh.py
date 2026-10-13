@@ -46,7 +46,27 @@ GLOSSARY = {
     "Protractor": "量角器", "sin": "正弦", "Sine": "正弦", "Reset Camera": "重置相机",
     "Reposition protractor to view": "重新放置量角器到视图",
 }
-TERM_FIX = {"推进器": "量角器", "罪恶": "正弦", "线性三角": "正弦三角函数"}
+TERM_FIX = {"推进器": "量角器", "罪恶": "正弦", "线性三角": "正弦三角函数",
+            "帕拉维尤": "ParaView", "维塔克语Name": "VTK"}
+
+# 专有名词：一律保留英文，不翻译/不音译（译前用私有区占位符遮蔽，译后还原）
+PROPER_NOUNS = ["ParaView", "LidarView", "SenFoToView", "Kitware", "VTK", "Qt", "Python"]
+
+
+def _mask_proper(text):
+    repl = {}
+    for i, t in enumerate(PROPER_NOUNS):
+        token = "\ue000%d\ue001" % i
+        if t in text:
+            text = text.replace(t, token)
+            repl[token] = t
+    return text, repl
+
+
+def _unmask_proper(text, repl):
+    for token, t in repl.items():
+        text = text.replace(token, t)
+    return text
 
 
 def _http(url, data=None, headers=None):
@@ -128,13 +148,17 @@ def preprocess(src):
         accel = m.group(1).upper()
         text = src[:m.start()] + src[m.end():]
     text = text.replace('\n', ' ')
-    return text, accel
+    text, repl = _mask_proper(text)
+    return text, (accel, repl)
 
 
-def postprocess(out, accel):
-    out = _fix(out).strip()
+def postprocess(out, meta):
+    accel, repl = meta
+    out = _fix(out)
+    out = _unmask_proper(out, repl)
     for a, b in TERM_FIX.items():
         out = out.replace(a, b)
+    out = out.strip()
     if accel and out:
         out = "%s(&%s)" % (out, accel)
     return out
@@ -172,12 +196,12 @@ def translate_unique(sources):
 
     def work(s):
         global _done
-        pre, accel = preprocess(s)
+        pre, meta = preprocess(s)
         o = mt_src(pre)
-        val = postprocess(o, accel) if o is not None else None
-        base = GLOSSARY.get(pre.strip())
+        val = postprocess(o, meta) if o is not None else None
+        base = GLOSSARY.get(s.strip())
         if base:
-            val = base + (("(&%s)" % accel) if accel else "")
+            val = base + (("(&%s)" % meta[0]) if meta[0] else "")
         with _lock:
             if val is not None:
                 cache[s] = val

@@ -123,8 +123,18 @@ PV_TRANSLATIONS_LOCALE=zh_CN /mnt/d/work/senfoto-view/build/install/bin/SenFoToV
    # 或借助该仓库的 files_update 目标后迁回已翻译内容。
    ```
 
-术语建议（待评审）：点云 = point cloud，激光雷达 = LiDAR，帧 = frame，
-渲染视图 = Render View，管线浏览器 = Pipeline Browser，属性 = Properties。
+### 术语与专有名词规则
+
+**专有名词（一律保留英文，不翻译、不音译）**：
+`ParaView`、`LidarView`、`SenFoToView`、`Kitware`、`VTK`、`Qt`、`Python`。
+（曾出现 `ParaView→帕拉维尤`、`ParaView→参数`、`VTK→维塔克`、`SenFoToView→SenFotoView 图像`
+等误译，均已修正；`translate_zh.py` 已在译前用私有区占位符遮蔽这些词、译后还原。）
+
+**过滤器/读卡器/插件显示名（保留英文）**：所有 `<SourceProxy>` 的 `label`（`filters`/`sources` 组）
+按专有名词处理，保持英文（已还原 409 个过滤器 + 317 个源；插件名 `Senfoto008Plugin` 等本就为英文）。
+
+**术语建议**：点云 = point cloud，激光雷达 = LiDAR，帧 = frame，渲染视图 = Render View，
+管线浏览器 = Pipeline Browser，属性 = Properties，收藏夹 = Favorites，加载 = Load。
 
 ## 7. 后续阶段
 

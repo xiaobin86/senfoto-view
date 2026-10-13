@@ -51,7 +51,7 @@
     <message>
         <location filename="../Qt/Widgets/Resources/UI/pqSeriesGeneratorDialog.ui" line="117"/>
         <source>Common Ratio:</source>
-        <translation>共同比率 :</translation>
+        <translation>公比：</translation>
     </message>
     <message>
         <location filename="../Qt/Widgets/Resources/UI/pqSeriesGeneratorDialog.ui" line="124"/>
@@ -131,7 +131,7 @@
     <message>
         <location filename="../Qt/Widgets/pqSeriesGeneratorDialog.cxx" line="194"/>
         <source>&amp;Generate</source>
-        <translation>神经质(&amp;G)</translation>
+        <translation>生成(&amp;G)</translation>
     </message>
 </context>
 <context>

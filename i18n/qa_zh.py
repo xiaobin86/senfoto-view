@@ -3,7 +3,7 @@
 # 功能：汉化校对辅助 —— 自动筛查 i18n/zh_CN/*.ts 的可疑译文并导出审核清单。
 # 作者：acelan
 # 新建时间：2026-10-09
-# 修改时间：2026-10-09
+# 修改时间：2026-10-13
 # ============================================================
 import argparse
 import csv
@@ -30,7 +30,18 @@ SUSPECT = {
     "重置镜头": "camera 误译为「镜头」，应为「相机」",
     "身体": "body 误译（HTML 场景）",
     "清晰排序": "Clear sorting 误译，应为「清除排序」",
+    "帕拉维尤": "ParaView 专有名词被音译，应保留英文",
+    "维塔克": "VTK 专有名词被音译，应保留英文",
+    "页:1": "单字母标签被词表误命中（如 x/P）",
+    "缩写": "快捷键被翻译（如 Ctrl+P→缩写+P）",
+    "缩略语": "快捷键被翻译（如 Ctrl+G→缩略语+G）",
+    "导弹": "F5 等功能键被误译（如 F5→F5 导弹）",
 }
+
+# 专有名词：必须原样保留英文，不翻译/不音译
+PROPER_NOUNS = ["ParaView", "LidarView", "SenFoToView", "Kitware", "VTK", "Qt", "Python"]
+# 快捷键/功能键：译文必须等于源串
+SHORTCUT_RE = re.compile(r'^(?:(?:Ctrl|Alt|Shift|Meta|Super)\+[A-Za-z0-9,]+|F\d{1,2})$')
 
 
 def flags_for(src, tr):
@@ -52,6 +63,12 @@ def flags_for(src, tr):
     for bad in SUSPECT:
         if bad in tr:
             out.append("SUSPECT:" + bad)
+    for t in PROPER_NOUNS:
+        if re.search(r'(?<![A-Za-z])' + re.escape(t) + r'(?![A-Za-z])', src) and not re.search(re.escape(t), tr, re.I):
+            out.append("PROPER_NOUN:" + t)
+            break
+    if SHORTCUT_RE.match(src.strip()) and tr.strip() != src.strip():
+        out.append("SHORTCUT")
     return out
 
 

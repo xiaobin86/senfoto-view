@@ -1,0 +1,410 @@
+group,name,label(显示名),current_zh,file
+filters,AMRConnectivity,AMR Connectivity,AMR 连接,amr_filters.xml
+filters,AMRDualContour,AMR Contour,AMR 轮廓,amr_filters.xml
+filters,AMRDualClip,AMR Dual Clip,AMR 双剪切,amr_filters.xml
+filters,AMRFragmentIntegration,AMR Fragment Integration,AMR 分裂整合,amr_filters.xml
+filters,AMRFragmentsFilter,AMR Fragments Filter,AMR 碎片过滤器,amr_filters.xml
+filters,ANLHaloFinder,ANL Halo Finder,,ANLHaloFinder.xml
+filters,ANLSubhaloFinder,ANL Subhalo Finder,,ANLSubHaloFinder.xml
+filters,AdaptiveResampleToImage,Adaptive Resample To Image,适应性反射到图像,filters_filtersparalleldiy2.xml
+filters,AdaptiveOutlierRemoval,Adaptive outlier removal,,AdaptiveOutlierRemoval.xml
+filters,AggregateDataSet,Aggregate Dataset,汇总数据集,filters_filtersparallel.xml
+filters,AggregatePointsFromTrajectoryOffline,Aggregate Points From Trajectory (offline),,AggregatePointsFromTrajectoryOffline.xml
+filters,AggregatePointsFromTrajectoryOnline,Aggregate Points From Trajectory (online),,AggregatePointsFromTrajectoryOnline.xml
+filters,AlignImageOrigin,Align Image Origins,对齐图像来源,filters_filtersparallel.xml
+filters,AnalyzeMaterialClusters,Analyze Material Clusters,,DigitalRockPhysics.xml
+filters,AngularPeriodicFilter,Angular Periodic Filter,角周期过滤器,filters_filtersparallel.xml
+filters,AnimateModes,Animate Modes,动画模式,filters_filtersgeneral.xml
+filters,AnnotateAttributeData,Annotate Attribute Data,注释属性数据,python_filters.xml
+filters,AnnotateGlobalData,Annotate Global Data,注释全球数据,general_filters.xml
+filters,AnnotateSelection,Annotate Selection,注释选择,general_filters.xml
+filters,TimeToTextConvertor,Annotate Time Filter,注释时间过滤器,general_filters.xml
+filters,AppendAttributes,Append Attributes,附加属性,filters_filterscore.xml
+filters,Append,Append Datasets,附加数据集,filters_filterscore.xml
+filters,AppendPolyData,Append Geometry,附加几何,filters_filterscore.xml
+filters,AppendMolecule,Append Molecule,附加分子,filters_filterscore.xml
+filters,AppendReductionFilter,Append Reduce,附加减少,misc_filters.xml
+filters,AppendSelections,AppendSelections,,extraction_filters.xml
+filters,ArrowGlyphFilter,ArrowGlyphFilter,,vtkArrowGlyphFilter.xml
+filters,AssociateTableToTemporalDataset,AssociateTableToTemporalDataset,,AssociateTableToTemporalDataset.xml
+filters,AverageSelectedPoints,AverageSelectedPoints,,AverageSelectedPoints.xml
+filters,AxisAlignedReflect,Axis-Aligned Reflect,轴对齐反射,filters_filtersgeneral.xml
+filters,AxisAlignedSlice,Axis-Aligned Slice,轴对齐切片,general_filters.xml
+filters,AxisAlignedTransform,Axis-Aligned Transform,轴对齐变换,filters_filtersgeneral.xml
+filters,BandFiltering,Band filtering,,DSPFilters.xml
+filters,BirdEyeViewSnap,BirdEyeViewSnap,,BirdEyeViewSnap.xml
+filters,BlockIds,Block Ids,块编号,filters_filtersgeneral.xml
+filters,BoundaryMeshQuality,Boundary Mesh Quality,边界网格质量,filters_filtersverdict.xml
+filters,RulerFilter,Bounding Ruler,界标,general_filters.xml
+filters,Calculator,Calculator,计算器,general_filters.xml
+filters,CalibrationFromPoses,CalibrationFromPoses,,CalibrationFromPoses.xml
+filters,CameraProjector,Camera Projector,,CameraProjector.xml
+filters,CameraMapper,CameraMapper,,CameraMapper.xml
+filters,CellCenters,Cell Centers,单元格中心,filters_filtersgeneral.xml
+filters,CellDataToPointData,Cell Data to Point Data,单元格数据到点数据,filters_filtersparallel.xml
+filters,CellGridToUnstructuredGrid,Cell Grid To Unstructured Grid,单元格网格到无结构网格,filters_filterscellgrid.xml
+filters,CellGridTransform,Cell Grid Transform,单元格网格转换,filters_filterscellgrid.xml
+filters,CellGridWarp,Cell Grid Warp,单元格网格扭曲,filters_filterscellgrid.xml
+filters,CellQuality,Cell Quality,单元格质量,filters_filtersverdict.xml
+filters,CellSize,Cell Size,单元格大小,filters_filtersparallelverdict.xml
+filters,CellGridCenters,CellGrid Centers,细胞Grid中心,filters_filterscellgrid.xml
+filters,ComputeCellGridElevation,CellGrid Elevation,细胞加速,filters_filterscellgrid.xml
+filters,CellGridPointProbe,CellGrid Probe,细胞Grid 探测器,filters_filterscellgrid.xml
+filters,CleanPolyData,Clean,干净,filters_filterscore.xml
+filters,CleanUnstructuredGridCells,Clean Cells to Grid,清理单元格到网格,general_filters.xml
+filters,CleanUnstructuredGrid,Clean to Grid,清理到网格,general_filters.xml
+filters,ClientServerMoveData,ClientServerMoveData,,filters_filtersrendering.xml
+filters,Clip,Clip,剪辑,general_filters.xml
+filters,ClipClosedSurface,Clip Closed Surface,剪切封闭表面,general_filters.xml
+filters,GenericClip,Clip Generic Dataset,剪切通用数据集,filters_filtersgeneric.xml
+filters,ClipPoints,Clip Points,,ClipPoints.xml
+filters,ClusterText,Cluster information,,ClusterText.xml
+filters,ClusteringAndTracking,Clustering and Tracking,,ClusteringAndTracking.xml
+filters,ClustersPointsUDPSender,Clusters Points UDP Sender,,ClustersPointsUDPSender.xml
+filters,ColorByArray,Color By Array,按矩阵排列的颜色,filters_imagingcore.xml
+filters,CellDerivatives,Compute Derivatives,计算衍生工具,filters_filtersgeneral.xml
+filters,ComputeGeodeticCoordinates,Compute Geodetic Coordinates,,ComputeGeodeticCoordinates.xml
+filters,ComputeMoleculeBonds,Compute Molecule Bonds,计算分子键,filters_domainschemistry.xml
+filters,ComputeMoments,Compute Moments,,MomentInvariants.xml
+filters,ComputeNormalAdaptive,Compute Normal Adaptive,,ComputeNormalAdaptive.xml
+filters,ComputeQuartiles,Compute Quartiles,计算等号,filters_filtersstatistics.xml
+filters,ComputeCellGridSides,Compute Sides,计算边,filters_filterscellgrid.xml
+filters,ComputeVolume,Compute Volume,计算音量,ComputeVolume.xml
+filters,ConnectedSurfaceProperties,Connected Surface Properties,已连接的表面属性,general_filters.xml
+filters,PVConnectivityFilter,Connectivity,连接,filters_filterscore.xml
+filters,ContingencyStatistics,Contingency Statistics,应急统计,statistics_filters.xml
+filters,Contour,Contour,轮廓,general_filters.xml
+filters,GenericContour,Contour Generic Dataset,轮廓通用数据集,filters_filtersgeneric.xml
+filters,AMRToMultiBlock,Convert AMR dataset to Multi-block,将AMR 数据集转换为多块,amr_filters.xml
+filters,PointSetToMolecule,Convert Into Molecule,转换成分子,filters_domainschemistry.xml
+filters,ConvertPolyhedra,Convert Polyhedral Cells,转换多面体单元格,general_filters.xml
+filters,ConvertToCellGrid,Convert To Cell Grid,转换为单元格网格,filters_filterscellgrid.xml
+filters,ConvertToMultiBlock,Convert To MultiBlock,转换为多块,filters_filterscore.xml
+filters,ConvertToPartitionedDataSetCollection,Convert To PartitionedDataSetCollection,转换为分区数据集,filters_filterscore.xml
+filters,ConvertToPointCloud,Convert To Point Cloud,转换为点云,filters_filterspoints.xml
+filters,ConvertSelection,ConvertSelection,,extraction_filters.xml
+filters,Coordinates,Coordinates,坐标,filters_filtersgeneral.xml
+filters,CountCellFaces,Count Cell Faces,数单元格面,filters_filtersgeneral.xml
+filters,CountCellVertices,Count Cell Vertices,计算单元格参数,filters_filtersgeneral.xml
+filters,CriticalTime,Critical Time,关键时间,filters_filterstemporal.xml
+filters,ImageClip,Crop,作物,filters_imagingcore.xml
+filters,CurbDetector,Curb Detector,,CurbDetector.xml
+filters,CurbDetectorOffline,Curb Detector (offline),,CurbDetectorOffline.xml
+filters,Curvatures,Curvature,曲线,filters_filtersgeneral.xml
+filters,D3,D3,D3级,filters_filtersparallel.xml
+filters,DBSCANClustering,DBSCANClustering,,DBSCANClustering.xml
+filters,DSPTableFFT,DSP Table FFT,,DSPFilters.xml
+filters,DateToNumeric,DateToNumeric,,filters_filtersgeneral.xml
+filters,DecimatePro,Decimate,决定,filters_filterscore.xml
+filters,DecimatePolyline,Decimate Polyline,十进制多线,filters_filterscore.xml
+filters,DeflectNormals,Deflect Normals,脱光常数,filters_filtersgeneral.xml
+filters,Delaunay2D,Delaunay 2D,德劳奈2D,filters_filterscore.xml
+filters,Delaunay3D,Delaunay 3D,德劳奈3D,filters_filterscore.xml
+filters,DescriptiveStatistics,Descriptive Statistics,描述性统计,statistics_filters.xml
+filters,DetectedClusterUDPSender,Detected Cluster UDP Sender,,DetectedClusterUDPSender.xml
+filters,DistributePoints,Distribute Points,分布点,filters_filtersparallelmpi.xml
+filters,EAMProjectToSphere,EAM Project To Sphere,,filters_atmosphere.xml
+filters,ElevationFilter,Elevation,升迁,filters_filterscore.xml
+filters,EnvironmentAnnotation,Environment Annotation,环境说明,misc_filters.xml
+filters,EqualizerFilter,Equalizer Filter,平衡器过滤器,general_filters.xml
+filters,EuclideanCompare,EuclideanCompare,,EuclideanCompare.xml
+filters,CalibrationEvaluation,Evaluate Calibration,,CalibrationEvaluation.xml
+filters,EvenlySpacedStreamlines2D,Evenly Spaced Streamlines 2D,均匀间距精简 2D,filters_filtersflowpaths.xml
+filters,ExplicitStructuredGridCrop,ExplicitStructuredGrid Crop,,ExplicitStructuredGrid.xml
+filters,ExplicitStructuredGridSurfaceFilter,ExplicitStructuredGrid Extract Surface,,ExplicitStructuredGrid.xml
+filters,ExplicitStructuredGridPythonExtractor,ExplicitStructuredGrid Slice and Cells Extractor,,ExplicitStructuredGridPythonExtractor.xml
+filters,ExplicitStructuredGridToUnstructuredGrid,ExplicitStructuredGrid To UnstructuredGrid,,ExplicitStructuredGrid.xml
+filters,ExplodeMaterialClusters,Explode Material Clusters,,DigitalRockPhysics.xml
+filters,ExplodeDataSet,ExplodeDataSet,,filters_filtersgeneral.xml
+filters,ExtractHierarchicalDataSets,Extract AMR Blocks,提取 AMR 块,filters_filtersextraction.xml
+filters,AttributeDataToTableFilter,Extract Attributes,提取属性,misc_filters.xml
+filters,ExtractBagPlots,Extract Bag Plots,,BagPlotViewsAndFilters.xml
+filters,ExtractBlock,Extract Block,提取块,filters_filtersextraction.xml
+filters,CTHPart,Extract CTH Parts,提取 CHT 部件,filters_filtersparallel.xml
+filters,ExtractCellsAlongLine,Extract Cells Along Line,提取单元格沿线,extraction_filters.xml
+filters,ExtractCellsAlongLineCustom,Extract Cells Along Lines Custom Source,沿行提取单元格自定义源,extraction_filters.xml
+filters,ExtractGeometry,Extract Cells By Region,按区域提取单元格,filters_filtersextraction.xml
+filters,ExtractCellsByType,Extract Cells By Type,按类型提取单元格,extraction_filters.xml
+filters,ExtractComponent,Extract Component,提取组件,general_filters.xml
+filters,ExtractEdges,Extract Edges,提取边缘,filters_filtersextraction.xml
+filters,ExtractEnclosedPoints,Extract Enclosed Points,提取封装点,points.xml
+filters,GenericGeometryFilter,Extract Generic Dataset Surface,提取通用数据集表面,filters_filtersgeneric.xml
+filters,ExtractGhostCells,Extract Ghost Cells,提取幽灵单元格,general_filters.xml
+filters,ExtractLocation,Extract Location,提取位置,general_filters.xml
+filters,ExtractParticlesOverTime,Extract Particles Over Time,随时间推移提取粒子,filters_filtersextraction.xml
+filters,ExtractPointSelection,Extract Point Selection,,ExtractPointSelection.xml
+filters,DataSetRegionSurfaceFilter,Extract Region Surface,提取区域表面,filters_filtersgeometry.xml
+filters,ExtractSelection,Extract Selection,提取选择,extraction_filters.xml
+filters,PVExtractSelection,Extract Selection (internal),提取选择( 内部),extraction_filters.xml
+filters,ExtractGrid,Extract Subset,提取子集,general_filters.xml
+filters,ExtractSubsetWithSeed,Extract Subset With Seed,以种子提取子集,filters_filtersparalleldiy2.xml
+filters,DataSetSurfaceFilter,Extract Surface,提取表面,filters_filtersgeometry.xml
+filters,ExtractTimeSteps,Extract Time Steps,提取时间步骤,filters_filtersextraction.xml
+filters,ExtractStatisticalModelTables,ExtractStatisticalModelTables,,statistics_filters.xml
+filters,FastMarchingGeodesicDistanceField,Fast-Marching Geodesic Distance-Field From Binary Field,,GeodesicMeasurement.xml
+filters,FeatureEdges,Feature Edges,特征边缘,filters_filterscore.xml
+filters,FeatureEdgesRegionIds,Feature Edges Region Ids,地貌边缘区 编号,filters_filterscore.xml
+filters,FieldArraysFromFile,Field Arrays From File,来自文件的字段矩阵,filters_pv_iocore.xml
+filters,FieldDataToDataSetAttribute,Field Data to Attribute,属性的字段数据,filters_filterscore.xml
+filters,FiniteElementFieldDistributor,Finite Element Field Distributor,有限元素字段分配器,filters_filtersgeneral.xml
+filters,FlyingEdges2D,Flying Edges 2D,,AcceleratedAlgorithms.xml
+filters,FlyingEdges3D,Flying Edges 3D,,AcceleratedAlgorithms.xml
+filters,FlyingEdgesPlaneCutter,Flying Edges Plane Cutter,,AcceleratedAlgorithms.xml
+filters,ForceStaticMesh,Force Static Mesh,强制静态网格,filters_filterstemporal.xml
+filters,ForceTime,Force Time,强制时间,filters_filtershybrid.xml
+filters,GaussianSplatter,Gaussian Resampling,高斯复标,filters_imaginghybrid.xml
+filters,QuadraturePointsGenerator,Generate Quadrature Points,生成四方点,filters_filtersgeneral.xml
+filters,QuadratureSchemeDictionaryGenerator,Generate Quadrature Scheme Dictionary,生成四方方案词典,filters_filtersgeneral.xml
+filters,GenerateStatistics,Generate Statistics,生成统计,statistics_filters.xml
+filters,GenerateTimeSteps,Generate Time Steps,生成时间步骤,filters_filtershybrid.xml
+filters,GeodesicMeasurement,Geodesic Measurement,,GeodesicMeasurement.xml
+filters,GeoMapConvert,Geographical Map Conversion,,GeographicalMapServerManager.xml
+filters,GeoMapFetcherMeshFilter,Geographical Map Mesh Fetcher,,GeographicalMapServerManager.xml
+filters,GeometryFilter,GeometryFilter,,filters_filtersrendering.xml
+filters,GhostCells,GhostCells,,parallel_diy_filters.xml
+filters,GlobalPointAndCellIds,Global Point And Cell Ids,全球点和单元格编号,parallel_diy_filters.xml
+filters,Glyph,Glyph,格莱弗,general_filters.xml
+filters,GlyphWithCustomSource,Glyph With Custom Source,带有自定义来源的格言,general_filters.xml
+filters,Gradient,Gradient,渐变,general_filters.xml
+filters,GradientMagnitude,Gradient Magnitude,渐变宽度,filters_imaginggeneral.xml
+filters,GroupDataSets,Group Datasets,组数据集,filters_filtersgeneral.xml
+filters,GroupTimeSteps,Group Time Steps,分组时间步骤,filters_filtersgeneral.xml
+filters,ExtractHistogram,Histogram,直方图,misc_filters.xml
+filters,ExtractHistogram2D,Histogram 2D,直方图 2D,misc_filters.xml
+filters,HyperTreeGridAxisReflection,HyperTreeGrid Axis Reflection,,filters_filtershypertree.xml
+filters,HyperTreeGridCellCenters,HyperTreeGrid Cell Centers,,filters_filtershypertree.xml
+filters,HyperTreeGridDepthLimiter,HyperTreeGrid Depth Limiter,HyperTreeGrid 深度限制器,filters_filtershypertree.xml
+filters,HyperTreeGridEvaluateCoarse,HyperTreeGrid Evaluate Coarse,HyperTreeGrid 评价粗糙,filters_filtershypertree.xml
+filters,HyperTreeGridFeatureEdges,HyperTreeGrid Feature Edges Filter,,filters_filtershypertree.xml
+filters,HyperTreeGridGenerateFields,HyperTreeGrid Generate Fields,HyperTreeGrid 生成字段,filters_filtershypertree.xml
+filters,HyperTreeGridGeometry,HyperTreeGrid Geometry Filter,HyperTreeGrid 几何过滤器,filters_filtershypertree.xml
+filters,HyperTreeGridGhostCellsGenerator,HyperTreeGrid Ghost Cells Generator,,filters_filtersparallel.xml
+filters,HyperTreeGridRedistribute,HyperTreeGrid Redistribute,HyperTreeGrid 重分配,filters_filtersparallelmpi.xml
+filters,HyperTreeGridToDualGrid,HyperTreeGrid To Dual Grid,HyperTreeGrid 到双网格,filters_filtershypertree.xml
+filters,HyperTreeGridToUnstructuredGrid,HyperTreeGrid To UnstructuredGrid,HyperTreeGrid 到无结构化Grid,filters_filtershypertree.xml
+filters,HyperTreeGridVisibleLeavesSize,HyperTreeGrid Visible Leaves Size,,filters_filtershypertree.xml
+filters,INSTableToPoses,INSTableToPoses,,INSTableToPoses.xml
+filters,ImageAccumulate,Image Accumulate,,filters_imagingstatistics.xml
+filters,ImageBasedClustering,Image Based Clustering,,ImageBasedClustering.xml
+filters,ImageDataToAMR,Image Data To AMR,图像数据到 AMR,filters_filtersamr.xml
+filters,ImageDataToUniformGrid,Image Data To Uniform Grid,图像数据到统一网格,filters_filtersgeometry.xml
+filters,ImageDataToPointSet,Image Data to Point Set,到点集的图像数据,filters_filtersgeneral.xml
+filters,ImageShrink,Image Shrink,图像收缩,filters_imagingcore.xml
+filters,ImageDataToExplicitStructuredGrid,ImageData To ExplicitStructuredGrid,,ExplicitStructuredGrid.xml
+filters,ImagesOperations,Images Operations,,ImagesOperations.xml
+filters,InSituParticlePath,InSituParticlePath,,general_mpi_filters.xml
+filters,IntegrateAttributes,Integrate Variables,整合变量,filters_filtersparallel.xml
+filters,QuadraturePointInterpolator,Interpolate to Quadrature Points,内插到四方点,filters_filtersgeneral.xml
+filters,IntersectFragments,Intersect Fragments,间断裂,material_interface_filters.xml
+filters,IsoVolume,Iso Volume,伊索音量,general_filters.xml
+filters,KMeans,K Means,K 含义,statistics_filters.xml
+filters,KalmanTracker,Kalman Tracker,,KalmanTracker.xml
+filters,LANLHaloFinder,LANL FOF/SOD Halo Finder,,LANLHaloFinder.xml
+filters,LagrangianParticleTracker,Lagrangian Particle Tracker,,LagrangianParticleTracker.xml
+filters,LagrangianSeedHelper,Lagrangian Seed Helper,,LagrangianParticleTracker.xml
+filters,LagrangianSeedHelperWithCustomSeeds,Lagrangian Seed Helper With Custom Seeds,,LagrangianParticleTracker.xml
+filters,LagrangianSurfaceHelper,Lagrangian Surface Helper,,LagrangianParticleTracker.xml
+filters,LaplacianInfilling,LaplacianInfilling,,LaplacianInfilling.xml
+filters,LaserSelection,Laser Selection,,LaserSelection.xml
+filters,LegacyGhostCellsGenerator,Legacy Ghost Cells Generator,,LegacyGhostCellsGenerator.xml
+filters,LegacyParticlePath,LegacyParticlePath,,flowpaths_filters.xml
+filters,LegacyStreakLine,LegacyStreakLine,,flowpaths_filters.xml
+filters,LidarKITTIDataSetWriter,LidarKITTIDataSetWriter,,LidarKITTIDataSetWriter.xml
+filters,LidarRawSignalImage,LidarRawSignalImage,,LidarRawSignalImage.xml
+filters,LinearCellExtrusionFilter,Linear Cell Extrusion,线性单元格突变,general_filters.xml
+filters,LinearExtrusionFilter,Linear Extrusion,线性切变,general_filters.xml
+filters,LoopSubdivisionFilter,Loop Subdivision,循环分区,filters_filtersmodeling.xml
+filters,MLSPosesSmoothing,MLSPosesSmoothing,,MLSPosesSmoothing.xml
+filters,MPIMoveData,MPIMoveData,,filters_filtersrendering.xml
+filters,MaskPoints,Mask Points,遮盖点,filters_filtersparallel.xml
+filters,MaterialInterfaceFilter,Material Interface Filter,材料接口过滤器,material_interface_filters.xml
+filters,MeanPowerSpectralDensity,Mean Power Spectral Density,,DSPFilters.xml
+filters,Median,Median,中间,filters_imaginggeneral.xml
+filters,MergeBlocks,Merge Blocks,合并块,misc_filters.xml
+filters,MergeReduceTables,Merge Reduce Tables,,DSPFilters.xml
+filters,MergeTime,Merge Time,合并时间,filters_filtersgeneral.xml
+filters,MergeVectorComponents,Merge Vector Components,合并矢量组件,general_filters.xml
+filters,MeshQuality,Mesh Quality,网格质量,filters_filtersverdict.xml
+filters,MinMax,MinMax,,misc_filters.xml
+filters,MinkowskiFilter,MinkowskiFilter,,MinkowskiFilter.xml
+filters,MoleculeToLines,Molecule To Lines,分子到线,filters_domainschemistry.xml
+filters,MomentGlyphs,Moment Glyphs,,Moments.xml
+filters,MomentInvariants,Moment Invariants,,MomentInvariants.xml
+filters,MomentVectors,Moment Vectors,,Moments.xml
+filters,MooseXfemClip,MooseXfemClip,,MooseXfemClip.xml
+filters,MotionDetector,Motion Detector,,MotionDetector.xml
+filters,MultiDimensionBrowser,Multi Dimension Browser,,DSPFilters.xml
+filters,MulticorrelativeStatistics,Multicorrelative Statistics,多亲属统计,statistics_filters.xml
+filters,MyElevationFilter,MyElevation,,MyElevationFilter.xml
+filters,MyOtherElevationFilter,MyOtherElevation,,filters.xml
+filters,MyPropertyWidgetsFilter,MyPropertyWidgets,,PropertyWidgetsFilter.xml
+filters,MySliceFilter,MySlice,,OverrideXMLOnly.xml
+filters,NearestNeighborImageColorizer,Nearest Neighbor Image Colorizer,,NearestNeighborImageColorizer.xml
+filters,NormalizeExternalSensorData,Normalize External Sensor Data,,NormalizeExternalSensorData.xml
+filters,OMETIFFChannelCalculator,OME TIFF Channel Calculator,OME TIFF 通道计算器,general_filters.xml
+filters,ONNXPrediction,ONNX Prediction,,ONNXPlugin.xml
+filters,OTDensityMap,OT Density Map,OT 密度图,proxies_openturns.xml
+filters,OTKernelSmoothing,OT Kernel Smoothing,OT 内核平滑,proxies_openturns.xml
+filters,OctreeImageToPointSet,Octree Image to PointSet,十进制图像到点集,general_filters.xml
+filters,OpenCVImageMapper,OpenCVImageMapper,,OpenCVImageMapper.xml
+filters,OutlineFilter,Outline,大纲,filters_filtersparallel.xml
+filters,OutlineCornerFilter,Outline Corners,轮廓角,filters_filtersparallel.xml
+filters,StructuredGridOutlineFilter,Outline Curvilinear DataSet,大纲曲线数据集,filters_filterscore.xml
+filters,GenericOutlineFilter,Outline Generic DataSet,大纲通用数据集,filters_filtersgeneric.xml
+filters,OverlappingAMRLevelIds,Overlapping AMR Level Ids,重叠 AMR 级别,filters_filtersgeneral.xml
+filters,OverlappingCellsDetector,Overlapping Cells Detector,重叠单元格检测器,filters_filtersparalleldiy2.xml
+filters,PCANormalEstimation,PCA Normal Estimation,PCA 正常估计,filters_filterspoints.xml
+filters,ParallelComputeMoments,Parallel Compute Moments,,ParallelMomentInvariants.xml
+filters,ParticlePath,ParticlePath,,filters_filtersflowpaths.xml
+filters,ParticleTracer,ParticleTracer,,filters_filtersflowpaths.xml
+filters,PartitionBalancer,PartitionBalancer,,filters_filtersparallel.xml
+filters,PassThrough,Pass Through,通过,filters_filtersgeneral.xml
+filters,PassArrays,PassArrays,,filters_filtersgeneral.xml
+filters,PerlinNoise,Perlin Noise,佩林噪声,filters_filtersgeneral.xml
+filters,PlaneFitter,Plane Fitter,,PlaneFitter.xml
+filters,PlaneGlyphs,Plane Glyphs,,SLACToolsSM.xml
+filters,PlaneProjector,PlaneProjector,,PlaneProjector.xml
+filters,PlotAttributes,Plot Data,绘图数据,filters_filtersgeneral.xml
+filters,PlotDataOverTime,Plot Data Over Time,通过时间绘制数据,filters_filtersparallel.xml
+filters,ExtractFieldDataOverTime,Plot Global Variables Over Time,逐时绘制全局变量,filters_filtersparallel.xml
+filters,PlotOnSortedLines,Plot On Sorted Lines,在排序的行上绘图,general_filters.xml
+filters,ProbeLine,Plot Over Line,横线绘图,parallel_diy_filters.xml
+filters,ProbeCustomLines,Plot Over Lines From Custom Source,从自定义来源对行进行绘图,filters_filtersparalleldiy2.xml
+filters,ExtractSelectionOverTime,Plot Selection Over Time,逐时绘图选择,filters_filtersparallel.xml
+filters,PointAndCellIds,Point And Cell Ids,点和单元格编号,filters_filterscore.xml
+filters,PointCoordinatesToScalars,Point Coordinates To Scalars,,PointCoordinatesToScalars.xml
+filters,PointDataToCellData,Point Data to Cell Data,点数据到单元格数据,filters_filterscore.xml
+filters,PointDatasetInterpolator,Point Dataset Interpolator,点数据集内插器,points.xml
+filters,PointInterpolatorBase,Point Interpolator,点内插器,points.xml
+filters,PointLineInterpolator,Point Line Interpolator,点线内插符,points.xml
+filters,PointPlaneInterpolator,Point Plane Interpolator,喷射器,points.xml
+filters,PointVolumeInterpolator,Point Volume Interpolator,积分内插符,points.xml
+filters,PointCloudLinearProjector,PointCloud Linear Projector,,PointCloudLinearProjector.xml
+filters,PointCloudPinHoleProjector,PointCloud PinHole Projector,,PointCloudPinHoleProjector.xml
+filters,PointSetToOctreeImage,PointSet To Octree Image,点到八角形图像,general_filters.xml
+filters,PointsMatchingTransformFilter,Points Matching Transform,匹配变换的点,filters_filterscore.xml
+filters,PolylineLength,Polyline Length,多线长度,filters_filterscore.xml
+filters,PCAStatistics,Principal Component Analysis,主要构成部分分析,statistics_filters.xml
+filters,ProbePoint,Probe Location,勘探地点,filters_filtersparallel.xml
+filters,ProcessIds,Process Ids,进程编号,parallel_filters.xml
+filters,ProcessingSample,Processing Sample,,ProcessingSample.xml
+filters,ProgrammableAnnotation,Programmable Annotation,可编程注释,python_filters.xml
+filters,ProgrammableFilter,Programmable Filter,可编程过滤器,python_filters.xml
+filters,ProgrammableFilterPropertiesTest,Programmable Filter Properties Test,,ProgrammableFilterPropertiesTest.xml
+filters,ImageColorProjector,Project Image Colors to Point Cloud,,ImageColorProjector.xml
+filters,ProjectSpectrumMagnitude,Project Spectrum Magnitude,,DSPFilters.xml
+filters,PythonAnnotation,Python Annotation,Python 注释,python_filters.xml
+filters,PythonCalculator,Python Calculator,Python 计算器,python_filters.xml
+filters,QuadricClustering,Quadric Clustering,四方组合,filters_filterscore.xml
+filters,QuadricDecimation,Quadric Decimation,四方十进制,filters_filterscore.xml
+filters,RPMText,RPM Info,,RPMText.xml
+filters,RandomAttributeGenerator,Random Attributes,随机属性,filters_filtersgeneral.xml
+filters,BrownianPoints,Random Vectors,随机矢量,filters_filtersgeneral.xml
+filters,RansacPlaneModel,RansacPlaneModel,,RansacPlaneModel.xml
+filters,RectilinearGridToPointSet,Rectilinear Data to Point Set,到点集的直线数据,filters_filtersgeneral.xml
+filters,RectilinearGridConnectivity,Rectilinear Grid Connectivity,直线网格连接,general_filters.xml
+filters,RectilinearGridGeometryFilter,RectilinearGridGeometryFilter,,filters_filtersgeometry.xml
+filters,RedistributeDataSet,Redistribute DataSet,重分配数据集,filters_filtersparalleldiy2.xml
+filters,ReductionFilter,ReductionFilter,,misc_filters.xml
+filters,ReflectionFilter,Reflect,,filters_filtersparallel.xml
+filters,RemoveGhostInformation,Remove Ghost Information,删除幽灵信息,parallel_filters.xml
+filters,RenameArrays,RenameArrays,重命名箭头,filters_filterscore.xml
+filters,AMRResampleFilter,Resample AMR,重新模拟 AMR,amr_filters.xml
+filters,ResampleToHyperTreeGrid,Resample To Hyper Tree Grid,,HyperTreeGridFilters.xml
+filters,ResampleToImage,Resample To Image,重样到图像,filters_filterscore.xml
+filters,ResampleToLine,Resample To Line,复标为行,parallel_diy_filters.xml
+filters,ResampleWithDataset,Resample With Dataset,以数据集重现,filters_filterscore.xml
+filters,ReverseSense,Reverse Sense,反向语气,filters_filterscore.xml
+filters,RibbonFilter,Ribbon,丝带,filters_filtersmodeling.xml
+filters,RotationalExtrusionFilter,Rotational Extrusion,旋转突袭,filters_filtersmodeling.xml
+filters,SPHDatasetInterpolator,SPH Dataset Interpolator,SPH 数据集内存器,points.xml
+filters,SPHInterpolatorBase,SPH Interpolator,SPH 内奸者,points.xml
+filters,SPHLineInterpolator,SPH Line Interpolator,SPH 线内插器,points.xml
+filters,SPHPlaneInterpolator,SPH Plane Interpolator,SPH 计划,points.xml
+filters,SPHVolumeInterpolator,SPH Volume Interpolator,SPH 卷内插器,points.xml
+filters,SamplePlaneSource,Sample Plane Source,,SLACToolsSM.xml
+filters,ScatterPlot,Scatter Plot,散点绘图,filters_filtersgeneral.xml
+filters,SelectPointsByScalars,Select Points By Scalars,,SelectPointsByScalars.xml
+filters,RadialDistanceDenoise,Senfoto008 Radial Distance Denoise,,RadialDistanceDenoise.xml
+filters,SeparateCloudKnn,Separate Cloud Knn,,SeparateCloudKnn.xml
+filters,ShrinkFilter,Shrink,收缩,filters_filtersgeneral.xml
+filters,Cut,Slice,切开,general_filters.xml
+filters,SliceAlongPolyLine,Slice Along PolyLine,沿着多线线切片,general_filters.xml
+filters,GenericCut,Slice Generic Dataset,切片通用数据集,filters_filtersgeneric.xml
+filters,SliceWithPlane,Slice With Plane,用飞机切片,general_filters.xml
+filters,SmoothPolyDataFilter,Smooth,平滑,filters_filterscore.xml
+filters,SoundQuantitiesCalculator,Sound Quantities Calculator,,DSPFilters.xml
+filters,SpatioTemporalHarmonics,SpatioTemporalHarmonics,,filters_filtersgeneral.xml
+filters,Spectrogram,Spectrogram,,DSPFilters.xml
+filters,StitchImageDataWithGhosts,StitchImageDataWithGhosts,,parallel_diy_filters.xml
+filters,StreakLine,StreakLine,,filters_filtersflowpaths.xml
+filters,StreamTracer,Stream Tracer,流跟踪器,filters_filtersflowpaths.xml
+filters,GenericStreamTracer,Stream Tracer For Generic Datasets,通用数据集流跟踪器,filters_filtersgeneric.xml
+filters,ArbitrarySourceStreamTracer,Stream Tracer With Custom Source,自定义源代码流跟踪器,filters_filtersflowpaths.xml
+filters,Subdivide,Subdivide,潜离,filters_filtersmodeling.xml
+filters,IntegrateFlowThroughSurface,Surface Flow,表面流动,general_filters.xml
+filters,SurfaceNormals,Surface Normals,表面常态,filters_filtersparallel.xml
+filters,SurfaceTangents,Surface Tangents,表面切线,filters_filterscore.xml
+filters,SurfaceVectors,Surface Vectors,表面矢量,general_filters.xml
+filters,SynchronizeTime,Synchronize Time,同步时间,filters_filtersgeneral.xml
+filters,TableFFT,Table FFT,表格 FFT,filters_filtersgeneral.xml
+filters,TableToPolyData,Table To Points,表格到点,filters_filtersgeneral.xml
+filters,TableToStructuredGrid,Table To Structured Grid,表格到结构网格,general_filters.xml
+filters,TemporalArrayOperator,Temporal Array Operator,时序矩阵运算符,filters_filtershybrid.xml
+filters,TemporalCache,Temporal Cache,临时缓存,filters_filtershybrid.xml
+filters,TemporalInterpolator,Temporal Interpolator,临时内插器,filters_filtersparallel.xml
+filters,TemporalMultiplexing,Temporal Multiplexing,,DSPFilters.xml
+filters,ParticlePathLines,Temporal Particles To Pathlines,时间粒子到路径线,filters_filtersgeneral.xml
+filters,TemporalRanges,Temporal Ranges,,SLACToolsSM.xml
+filters,TemporalShiftScale,Temporal Shift Scale,时间变化缩放,filters_filtershybrid.xml
+filters,TemporalSmoothing,Temporal Smoothing,时间平滑,filters_filterstemporal.xml
+filters,TemporalSnapToTimeStep,Temporal Snap-to-Time-Step,时空同步,filters_filtershybrid.xml
+filters,TemporalStatistics,Temporal Statistics,时间统计,filters_filtersgeneral.xml
+filters,TemporalTransformsApplier,Temporal Transforms Applier,,TemporalTransformsApplier.xml
+filters,TemporalTransformsRemapper,Temporal Transforms Remapper,,TemporalTransformsRemapper.xml
+filters,TensorGlyph,Tensor Glyph,日语格莱弗,filters_filterscore.xml
+filters,TensorPrincipalInvariants,TensorPrincipalInvariants,,filters_filterstensors.xml
+filters,TessellatorFilter,Tessellate,泰瑟莱特,filters_filtersgeneral.xml
+filters,GenericTessellator,Tessellate Generic Dataset,Tessellate 通用数据集,filters_filtersgeneric.xml
+filters,DataSetTriangleFilter,Tetrahedralize,铁丝网,filters_filtersgeneral.xml
+filters,TextureMapToCylinder,Texture Map to Cylinder,纹理映射到圆柱形,filters_filterstexture.xml
+filters,TextureMapToPlane,Texture Map to Plane,纹理映射到平面图,filters_filterstexture.xml
+filters,TextureMapToSphere,Texture Map to Sphere,纹理映射到球体,filters_filtersparallel.xml
+filters,ThickenCells,Thicken Layered Cells,,ThickenLayeredCells.xml
+filters,Threshold,Threshold,阈值,general_filters.xml
+filters,ThresholdPoints,Threshold Points,,ThresholdPoints.xml
+filters,ThresholdTable,Threshold Table,阈值表,general_filters.xml
+filters,ThresholdFromFile,ThresholdFromFile,,ThresholdFromFile.xml
+filters,TimeStepProgressFilter,Time Step Progress Bar,时间步进栏,general_filters.xml
+filters,TrailingFrame,Trailing Frame,,TrailingFrame.xml
+filters,TransformFilter,Transform,变形,filters_filtersgeneral.xml
+filters,TransposeTable,Transpose Table,转换表格,general_filters.xml
+filters,Stripper,Triangle Strips,三角条,filters_filterscore.xml
+filters,TriangleFilter,Triangulate,三边形,filters_filterscore.xml
+filters,TubeFilter,Tube,管头,filters_filterscore.xml
+filters,UDPPing,UDP Ping,,UDPPing.xml
+filters,UDPPointSender,UDP Point Sender,,UDPPointSender.xml
+filters,UnstructuredGridToExplicitStructuredGrid,UnstructuredGrid To ExplicitStructuredGrid,,ExplicitStructuredGrid.xml
+filters,VTKmAverageToPoints,VTKm Cell Data to Point Data,,VTKmSM.xml
+filters,VTKmCleanGrid,VTKm Clean Unstructured Grid,,VTKmSM.xml
+filters,VTKmClip,VTKm Clip,,VTKmSM.xml
+filters,VTKmContour,VTKm Contour,,VTKmSM.xml
+filters,VTKmExternalFaces,VTKm External Faces,,VTKmSM.xml
+filters,VTKmGradient,VTKm Gradient,,VTKmSM.xml
+filters,VTKmHistogramSampling,VTKm Histogram Sampling,,VTKmSM.xml
+filters,VTKmLevelOfDetail,VTKm Level Of Detail,,VTKmSM.xml
+filters,VTKmAverageToCells,VTKm Point Data to Cell Data,,VTKmSM.xml
+filters,VTKmThreshold,VTKm Threshold,,VTKmSM.xml
+filters,VTKmWarpScalar,VTKm Warp By Scalar,,VTKmSM.xml
+filters,VTKmWarpVector,VTKm Warp By Vector,,VTKmSM.xml
+filters,ValidateCells,Validate Cells,校验单元格,filters_filtersgeneral.xml
+filters,VertexGlyph,Vertex Glyph,,VertexGlyph.xml
+filters,VolumeOfRevolution,Volume Of Revolution,革命数量,filters_filtersmodeling.xml
+filters,PMergeConnected,Voronoi Merge Connected,,MergeConnected.xml
+filters,VortexCores,Vortex Cores,阀门芯片,filters_filtersflowpaths.xml
+filters,VoxelGridFilter,Voxel Grid Filter,,VoxelGridFilter.xml
+filters,VoxelOverlapFilter,VoxelOverlapFilter,,VoxelOverlapFilter.xml
+filters,WarpScalar,Warp By Scalar,由 Scalar 旋转,filters_filtersgeneral.xml
+filters,WarpVector,Warp By Vector,由矢量旋转,filters_filtersgeneral.xml
+filters,YieldCriteria,YieldCriteria,,filters_filterstensors.xml
+filters,YoungsMaterialInterface,Youngs Material Interface,年轻人材料界面,filters_filtersgeneral.xml

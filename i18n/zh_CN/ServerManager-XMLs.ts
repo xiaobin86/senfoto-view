@@ -3747,7 +3747,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItXmdvReader
         <location filename="../build/translationSourcesparaview_server_manager.h" line="325"/>
         <source>VisIt Claw Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt Claw 阅读器</translation>
+        <translation>VisIt Claw Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="328"/>
@@ -3765,7 +3765,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItXmdvReader
         <location filename="../build/translationSourcesparaview_server_manager.h" line="334"/>
         <source>VisIt GGCM Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt GGCM 读取器</translation>
+        <translation>VisIt GGCM Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="337"/>
@@ -3783,7 +3783,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItXmdvReader
         <location filename="../build/translationSourcesparaview_server_manager.h" line="343"/>
         <source>VisIt GULP Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt GULP 读取器</translation>
+        <translation>VisIt GULP Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="346"/>
@@ -3801,7 +3801,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItXmdvReader
         <location filename="../build/translationSourcesparaview_server_manager.h" line="352"/>
         <source>VisIt H5Nimrod Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt H5Nimrod 读取器</translation>
+        <translation>VisIt H5Nimrod Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="355"/>
@@ -3819,7 +3819,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItXmdvReader
         <location filename="../build/translationSourcesparaview_server_manager.h" line="361"/>
         <source>VisIt LAMMPS Structure Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt LAMMPS 结构读取器</translation>
+        <translation>VisIt LAMMPS Structure Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="364"/>
@@ -3837,7 +3837,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItXmdvReader
         <location filename="../build/translationSourcesparaview_server_manager.h" line="370"/>
         <source>VisIt LAMMPS Dump Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt LAMMPS 垃圾堆阅读器</translation>
+        <translation>VisIt LAMMPS Dump Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="145"/>
@@ -3861,7 +3861,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="406"/>
         <source>VisIt M3D Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt M3D 读取器</translation>
+        <translation>VisIt M3D Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="409"/>
@@ -3879,7 +3879,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="415"/>
         <source>VisIt M3DC1 Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt M3DC1 读取器</translation>
+        <translation>VisIt M3DC1 Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="421"/>
@@ -3891,7 +3891,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="424"/>
         <source>VisIt MFIX Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt MFIX 读取器</translation>
+        <translation>VisIt MFIX Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="427"/>
@@ -3909,7 +3909,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="433"/>
         <source>VisIt MFIXCDF Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt MFIXCDF 阅读器</translation>
+        <translation>VisIt MFIXCDF Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="436"/>
@@ -3927,7 +3927,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="442"/>
         <source>VisIt Miranda Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt Miranda 阅读器</translation>
+        <translation>VisIt Miranda Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="445"/>
@@ -3945,7 +3945,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="451"/>
         <source>VisIt MM5 Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt MM5 读取器</translation>
+        <translation>VisIt MM5 Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="454"/>
@@ -3963,7 +3963,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="460"/>
         <source>VisIt NetCDF LODI Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt NetCDF LODI 阅读器</translation>
+        <translation>VisIt NetCDF LODI Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="466"/>
@@ -3975,7 +3975,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="469"/>
         <source>VisIt NetCDF LODI Particle Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt NetCDF LODI 粒子读取器</translation>
+        <translation>VisIt NetCDF LODI Particle Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="475"/>
@@ -3987,19 +3987,19 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="478"/>
         <source>VisIt NetCDF FVCOM_MTMD Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt NetCDF FVCOM MTMD 阅读器</translation>
+        <translation>VisIt NetCDF FVCOM_MTMD Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="487"/>
         <source>VisIt NetCDF FVCOM_MTSD Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt NetCDF FVCOM MTSD 阅读器</translation>
+        <translation>VisIt NetCDF FVCOM_MTSD Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="496"/>
         <source>VisIt NetCDF FVCOM Particle Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt NetCDF FVCOM 粒子读取器</translation>
+        <translation>VisIt NetCDF FVCOM Particle Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="502"/>
@@ -4011,13 +4011,13 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="505"/>
         <source>VisIt NetCDF CCSM_MTSD Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt NetCDF CCSM MTSD 阅读器</translation>
+        <translation>VisIt NetCDF CCSM_MTSD Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="514"/>
         <source>VisIt Nek5000 Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIT Nek5000 阅读器</translation>
+        <translation>VisIt Nek5000 Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="517"/>
@@ -4035,7 +4035,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="523"/>
         <source>VisIt OpenFOAM Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt 打开FOAM 阅读器</translation>
+        <translation>VisIt OpenFOAM Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="526"/>
@@ -4053,13 +4053,13 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="532"/>
         <source>VisIt PFLOTRAN Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt PFLOTRAN 阅读器</translation>
+        <translation>VisIt PFLOTRAN Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="538"/>
         <source>VisIt Pixie Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt 小精灵阅读器</translation>
+        <translation>VisIt Pixie Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="544"/>
@@ -4072,20 +4072,20 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1420"/>
         <source>VisIt PLOT2D Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt PLOT2D 读取器</translation>
+        <translation>VisIt PLOT2D Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="556"/>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1708"/>
         <source>VisIt SAMRAI Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt SAMRAI 阅读器</translation>
+        <translation>VisIt SAMRAI Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="565"/>
         <source>VisIt SAS Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt SAS 读取器</translation>
+        <translation>VisIt SAS Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="568"/>
@@ -4103,7 +4103,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="574"/>
         <source>VisIt Tetrad Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt 三角阅读器</translation>
+        <translation>VisIt Tetrad Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="577"/>
@@ -4121,7 +4121,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="583"/>
         <source>VisIt VASP OUTCAR Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt VASP 外车阅读器</translation>
+        <translation>VisIt VASP OUTCAR Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="586"/>
@@ -4133,7 +4133,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="592"/>
         <source>VisIt VASP CHGCAR Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt VASP CHGCAR 阅读器</translation>
+        <translation>VisIt VASP CHGCAR Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="595"/>
@@ -4145,7 +4145,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="601"/>
         <source>VisIt XYZ Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt XYZ 阅读器</translation>
+        <translation>VisIt XYZ Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="604"/>
@@ -4157,7 +4157,7 @@ Real source: Utilities/VisItBridge/databases/visit_readers.xml - VisItLAMMPSDump
         <location filename="../build/translationSourcesparaview_server_manager.h" line="607"/>
         <source>VisIt NetCDF ADAPT Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt NetCDF ADAPT 阅读器</translation>
+        <translation>VisIt NetCDF ADAPT Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="379"/>
@@ -5192,175 +5192,175 @@ Real source: Remoting/Application/Resources/readers_iocgns.xml - CONVERGECFDCGNS
         <location filename="../build/translationSourcesparaview_server_manager.h" line="643"/>
         <source>VisIt ANSYS Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>Visit ANSYS 阅读器</translation>
+        <translation>VisIt ANSYS Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="679"/>
         <source>VisIt AUXFile Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt AUXFile 阅读器</translation>
+        <translation>VisIt AUXFile Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="712"/>
         <source>VisIt BOV Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt BOV 读取器</translation>
+        <translation>VisIt BOV Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="748"/>
         <source>VisIt NetCDF CCSM_STSD Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt NetCDF CCSM STSD 阅读器</translation>
+        <translation>VisIt NetCDF CCSM_STSD Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="784"/>
         <source>VisIt CEA ucd Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt CEA ucd 阅读器</translation>
+        <translation>VisIt CEA ucd Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="817"/>
         <source>VisIt CMAT Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt CMAT 读取器</translation>
+        <translation>VisIt CMAT Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="853"/>
         <source>VisIt CTRL Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt CTRL 读取器</translation>
+        <translation>VisIt CTRL Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="889"/>
         <source>VisIt Chombo Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt Chombo 阅读器</translation>
+        <translation>VisIt Chombo Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="925"/>
         <source>VisIt Curve2D Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt 曲线2D 读取器</translation>
+        <translation>VisIt Curve2D Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="961"/>
         <source>VisIt DDCMD Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt DDCMD 阅读器</translation>
+        <translation>VisIt DDCMD Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="997"/>
         <source>VisIt Dyna3D Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt Dyna3D 读取器</translation>
+        <translation>VisIt Dyna3D Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1033"/>
         <source>VisIt Extruded Vol Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt 已删除的 Vol 阅读器</translation>
+        <translation>VisIt Extruded Vol Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1066"/>
         <source>VisIt FLASH Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt FLASH 阅读器</translation>
+        <translation>VisIt FLASH Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1102"/>
         <source>VisIt NetCDF FVCOM_STSD Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt NetCDF FVCOM STSD 阅读器</translation>
+        <translation>VisIt NetCDF FVCOM_STSD Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1138"/>
         <source>VisIt Fluent Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt 流利阅读器</translation>
+        <translation>VisIt Fluent Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1174"/>
         <source>VisIt GTC Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt GTC 读取器</translation>
+        <translation>VisIt GTC Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1207"/>
         <source>VisIt Gadget Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt Gadget 阅读器</translation>
+        <translation>VisIt Gadget Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1243"/>
         <source>VisIt Image Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt 图像阅读器</translation>
+        <translation>VisIt Image Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1279"/>
         <source>VisIt Lines Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt 线条阅读器</translation>
+        <translation>VisIt Lines Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1312"/>
         <source>VisIt NASTRAN Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>Visit 纳斯特兰阅读器</translation>
+        <translation>VisIt NASTRAN Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1348"/>
         <source>VisIt OVERFLOW Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt 覆盖阅读器</translation>
+        <translation>VisIt OVERFLOW Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1384"/>
         <source>VisIt PATRAN Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt PATRAN 阅读器</translation>
+        <translation>VisIt PATRAN Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1456"/>
         <source>VisIt PLOT3D Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt PLOT3D 读取器</translation>
+        <translation>VisIt PLOT3D Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1492"/>
         <source>VisIt VASP POSCAR Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt VASP POSCAR 读取器</translation>
+        <translation>VisIt VASP POSCAR Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1528"/>
         <source>VisIt ParaDis Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt 帕拉迪斯阅读器</translation>
+        <translation>VisIt ParaDis Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1564"/>
         <source>VisIt ParaDiS Tecplot Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt ParaDis Tecplot 读取器</translation>
+        <translation>VisIt ParaDiS Tecplot Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1600"/>
         <source>VisIt Point3D Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt 点3D 读取器</translation>
+        <translation>VisIt Point3D Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1636"/>
         <source>VisIt Protein Data Bank Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt 蛋白质数据库阅读器</translation>
+        <translation>VisIt Protein Data Bank Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1672"/>
         <source>VisIt RAW Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt RAW 阅读器</translation>
+        <translation>VisIt RAW Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1711"/>
@@ -5372,37 +5372,37 @@ Real source: Remoting/Application/Resources/readers_iocgns.xml - CONVERGECFDCGNS
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1744"/>
         <source>VisIt SAR Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt SAR 读取器</translation>
+        <translation>VisIt SAR Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1780"/>
         <source>VisIt Spheral Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt 密码读取器</translation>
+        <translation>VisIt Spheral Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1816"/>
         <source>VisIt TFT Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt TFT 阅读器</translation>
+        <translation>VisIt TFT Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1852"/>
         <source>VisIt TSurf Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt TSurf 阅读器</translation>
+        <translation>VisIt TSurf Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1885"/>
         <source>VisIt Tecplot Binary Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt Tecplot 二进制读取器</translation>
+        <translation>VisIt Tecplot Binary Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1921"/>
         <source>VisIt Tecplot Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt Tecplot 读取器</translation>
+        <translation>VisIt Tecplot Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1924"/>
@@ -5414,13 +5414,13 @@ Real source: Remoting/Application/Resources/readers_iocgns.xml - CONVERGECFDCGNS
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1957"/>
         <source>VisIt UNIC Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt 联合国新闻中心阅读器</translation>
+        <translation>VisIt UNIC Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1993"/>
         <source>VisIt Velodyne Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt Velodyne 阅读器</translation>
+        <translation>VisIt Velodyne Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="1999"/>
@@ -5432,13 +5432,13 @@ Real source: Remoting/Application/Resources/readers_iocgns.xml - CONVERGECFDCGNS
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2029"/>
         <source>VisIt Vs Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt Vs 阅读器</translation>
+        <translation>VisIt Vs Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2065"/>
         <source>VisIt Xmdv Reader</source>
         <extracomment>Real source: Utilities/VisItBridge/databases/visit_readers.xml - Utilities/VisItBridge/databases/visit_readers.xml</extracomment>
-        <translation>VisIt Xmdv 读取器</translation>
+        <translation>VisIt Xmdv Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2101"/>
@@ -7792,7 +7792,7 @@ Real source: Remoting/Application/Resources/filters_filtersextraction.xml - Extr
 Real source: Remoting/Application/Resources/writers_ioioss.xml - IOSSWriter
 ----------
 Real source: VTKExtensions/IOImport/Resources/importers_pv_ioimport.xml - MetaImporter</extracomment>
-        <translation>大会</translation>
+        <translation>装配</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2689"/>
@@ -7904,7 +7904,7 @@ Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2713"/>
         <source>Extract Cells Along Line</source>
         <extracomment>Real source: VTKExtensions/Extraction/Resources/extraction_filters.xml - VTKExtensions/Extraction/Resources/extraction_filters.xml</extracomment>
-        <translation>提取单元格沿线</translation>
+        <translation>Extract Cells Along Line</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2716"/>
@@ -8068,7 +8068,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - HighRes
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2752"/>
         <source>Extract Cells Along Lines Custom Source</source>
         <extracomment>Real source: VTKExtensions/Extraction/Resources/extraction_filters.xml - VTKExtensions/Extraction/Resources/extraction_filters.xml</extracomment>
-        <translation>沿行提取单元格自定义源</translation>
+        <translation>Extract Cells Along Lines Custom Source</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2755"/>
@@ -8151,7 +8151,7 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Pr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2770"/>
         <source>Extract Selection (internal)</source>
         <extracomment>Real source: VTKExtensions/Extraction/Resources/extraction_filters.xml - VTKExtensions/Extraction/Resources/extraction_filters.xml</extracomment>
-        <translation>提取选择( 内部)</translation>
+        <translation>Extract Selection (internal)</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2773"/>
@@ -8325,7 +8325,7 @@ Real source: Remoting/Application/Resources/readers_ionetcdf.xml - netCDFReader<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2830"/>
         <source>Extract Selection</source>
         <extracomment>Real source: VTKExtensions/Extraction/Resources/extraction_filters.xml - VTKExtensions/Extraction/Resources/extraction_filters.xml</extracomment>
-        <translation>提取选择</translation>
+        <translation>Extract Selection</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2833"/>
@@ -8362,13 +8362,13 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - DecimatePr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2857"/>
         <source>If this property is set to 1 the output preserves the topology of its input and adds an insidedness array to mark which cells are inside or out. If 0 then the output is an unstructured grid which contains only the subset of cells that are inside.</source>
         <extracomment>Real source: VTKExtensions/Extraction/Resources/extraction_filters.xml - ExtractSelection</extracomment>
-        <translation>如果将这个属性设定为 1,输出会保留其输入的地形,并添加一个侧面阵列,以标记哪个单元格在内部或外部。 如果 0 , 输出是一个无结构的网格, 它只包含内部的细胞子集。</translation>
+        <translation>如果将这个属性设定为 1,输出会保留其输入的地形,并添加一个侧面阵列,以标记哪个单元格在内部或外部。 如果 0 , 输出是一个无结构的网格, 它只包含内部的单元格子集。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2875"/>
         <source>Extract Cells By Type</source>
         <extracomment>Real source: VTKExtensions/Extraction/Resources/extraction_filters.xml - VTKExtensions/Extraction/Resources/extraction_filters.xml</extracomment>
-        <translation>按类型提取单元格</translation>
+        <translation>Extract Cells By Type</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2878"/>
@@ -8799,7 +8799,7 @@ Real source: VTKExtensions/Extraction/Resources/extraction_filters.xml - Selecti
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3073"/>
         <source>The list of blocks that will be added to the selection produced by the selection source. The blocks are identified using their composite index (flat index).</source>
         <extracomment>Real source: VTKExtensions/Extraction/Resources/extraction_filters.xml - BlockSelectionSource</extracomment>
-        <translation>将添加到选择源所产生的选择中的块列表 。 区块用其综合指数(平面指数)加以识别。</translation>
+        <translation>将添加到选择源所产生的选择中的块列表 。 区块用其综合索引(平面索引)加以识别。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3076"/>
@@ -8893,7 +8893,7 @@ Real source: Remoting/Application/Resources/utilities.xml - FindDataHelper</extr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3088"/>
         <source>Block Selectors Assembly Name</source>
         <extracomment>Real source: VTKExtensions/Extraction/Resources/extraction_filters.xml - BlockSelectorsSelectionSource</extracomment>
-        <translation>块选择器大会名称</translation>
+        <translation>块选择器装配名称</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3091"/>
@@ -9063,7 +9063,7 @@ Real source: Remoting/Application/Resources/utilities.xml - DoubleArray</extraco
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3169"/>
         <source>The list of IDs that will be added to the selection produced by the selection source. This takes 3-tuple of values as (flat-index, process number, id).</source>
         <extracomment>Real source: VTKExtensions/Extraction/Resources/extraction_filters.xml - CompositeDataIDSelectionSource</extracomment>
-        <translation>将添加到选择源产生的选择中的ID列表. 这需要3图值作为(平面指数,过程号,id).</translation>
+        <translation>将添加到选择源产生的选择中的ID列表. 这需要3图值作为(平面索引,过程号,id).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3172"/>
@@ -9081,7 +9081,7 @@ Real source: Remoting/Application/Resources/utilities.xml - DoubleArray</extraco
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3181"/>
         <source>The list of IDs that will be added to the selection produced by the selection source. This takes 3-tuple of values as (level, index, id).</source>
         <extracomment>Real source: VTKExtensions/Extraction/Resources/extraction_filters.xml - HierarchicalDataIDSelectionSource</extracomment>
-        <translation>将添加到选择源产生的选择中的ID列表. 这需要三图值作为(水平,指数,id).</translation>
+        <translation>将添加到选择源产生的选择中的ID列表. 这需要三图值作为(水平,索引,id).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3184"/>
@@ -9141,7 +9141,7 @@ Real source: Remoting/Application/Resources/utilities.xml - DoubleArray</extraco
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3214"/>
         <source>Extract Attributes</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_filters.xml - VTKExtensions/Misc/Resources/misc_filters.xml</extracomment>
-        <translation>提取属性</translation>
+        <translation>Extract Attributes</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3217"/>
@@ -9235,7 +9235,7 @@ Real source: VTKExtensions/IOCore/Resources/writers_pv_iocore.xml - CSV</extraco
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3247"/>
         <source>Merge Blocks</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_filters.xml - VTKExtensions/Misc/Resources/misc_filters.xml</extracomment>
-        <translation>合并块</translation>
+        <translation>Merge Blocks</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3250"/>
@@ -9331,7 +9331,7 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - stlreader</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3277"/>
         <source>Merge points within a distance specified by the **Tolerance** property.</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_filters.xml - MergeBlocks</extracomment>
-        <translation>在** 容忍** 属性指定的距离内合并点。</translation>
+        <translation>在** 容差** 属性指定的距离内合并点。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3280"/>
@@ -9405,7 +9405,7 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Ov
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_filters.xml - MergeBlocks
 ----------
 Real source: VTKExtensions/Misc/Resources/misc_filters.xml - AppendReductionFilter</extracomment>
-        <translation>如果启用了** Morge Points** ,则设置合并点的容忍度。</translation>
+        <translation>如果启用了** Morge Points** ,则设置合并点的容差度。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3286"/>
@@ -9417,19 +9417,19 @@ Real source: VTKExtensions/Misc/Resources/misc_filters.xml - AppendReductionFilt
 Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - CleanUnstructuredGrid
 ----------
 Real source: Remoting/Application/Resources/filters_filterscore.xml - CleanPolyData</extracomment>
-        <translation>容忍是绝对的</translation>
+        <translation>容差是绝对的</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3289"/>
         <source>This property determines whether to treat the **Tolerance** property as absolute (points closer than Tolerance are merged) or relative (points closer than a fraction of the input data&apos;s bounding box diagonal length) when performing point merging.</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_filters.xml - MergeBlocks</extracomment>
-        <translation>此属性决定了在执行点合并时是将**容忍**属性视为绝对(比容忍点更接近合并)还是相对(比输入数据边框对角长度的一小部分更接近).</translation>
+        <translation>此属性决定了在执行点合并时是将**容差**属性视为绝对(比容差点更接近合并)还是相对(比输入数据边框对角长度的一小部分更接近).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3292"/>
         <source>Environment Annotation</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_filters.xml - VTKExtensions/Misc/Resources/misc_filters.xml</extracomment>
-        <translation>环境说明</translation>
+        <translation>Environment Annotation</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3295"/>
@@ -9561,7 +9561,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Annota
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_filters.xml - VTKExtensions/Misc/Resources/misc_filters.xml
 ----------
 Real source: Remoting/Views/Resources/views_remotingviews.xml - PlotMatrixView</extracomment>
-        <translation>直方图</translation>
+        <translation>Histogram</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3370"/>
@@ -9676,7 +9676,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - TableFF
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3418"/>
         <source>Controls whether the values in the output are normalized, i.e., the count in each bin is divided by the sum of counts in each bin.</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_filters.xml - ExtractHistogram</extracomment>
-        <translation>控制输出中的值是否正常化,即每个 bin 中的计数除以每个 bin 中的计数之和.</translation>
+        <translation>控制输出中的值是否法向化,即每个 bin 中的计数除以每个 bin 中的计数之和.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3421"/>
@@ -9743,7 +9743,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Histog
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3451"/>
         <source>Append Reduce</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_filters.xml - VTKExtensions/Misc/Resources/misc_filters.xml</extracomment>
-        <translation>附加减少</translation>
+        <translation>Append Reduce</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3457"/>
@@ -9890,13 +9890,13 @@ Real source: VTKExtensions/IOGeneral/Resources/general_writers.xml - PPLYWriter<
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_filters.xml - ReductionFilter
 ----------
 Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>通过</translation>
+        <translation>Pass Through</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3547"/>
         <source>Histogram 2D</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_filters.xml - VTKExtensions/Misc/Resources/misc_filters.xml</extracomment>
-        <translation>直方图 2D</translation>
+        <translation>Histogram 2D</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3553"/>
@@ -10037,7 +10037,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Unifor
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3676"/>
         <source>The origin of the output histogram image. These are used only when UseInputRangesForOutputBounds is set to false.</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_filters.xml - ExtractHistogram2D</extracomment>
-        <translation>输出直方图图像的来源 。 仅在使用输入区域(User Input Ranges ForOutputBounds)设定为虚假时才使用。</translation>
+        <translation>输出直方图图像的原点 。 仅在使用输入区域(User Input Ranges ForOutputBounds)设定为虚假时才使用。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3679"/>
@@ -10077,7 +10077,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphW
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_utilities.xml - Transform2
 ----------
 Real source: VTKExtensions/Misc/Resources/misc_utilities.xml - Transform3</extracomment>
-        <translation>翻译</translation>
+        <translation>平移</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3697"/>
@@ -10282,7 +10282,7 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
 Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml
 ----------
 Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - TransformFilter</extracomment>
-        <translation>变形</translation>
+        <translation>Transform</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3742"/>
@@ -10464,7 +10464,7 @@ Real source: Remoting/Views/Resources/rendering.xml - TextActor
 Real source: Remoting/Views/Resources/rendering.xml - Light
 ----------
 Real source: Remoting/Animation/Resources/animation.xml - CameraKeyFrame</extracomment>
-        <translation>立场</translation>
+        <translation>位置</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3748"/>
@@ -10499,7 +10499,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - AxisAli
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3772"/>
         <source>Origin of rotation</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_utilities.xml - RotateAroundOriginTransform</extracomment>
-        <translation>轮换来源</translation>
+        <translation>轮换原点</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3775"/>
@@ -10534,7 +10534,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - CTHPar
 Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml
 ----------
 Real source: Remoting/Application/Resources/proxies_interactionwidgets.xml - BoundedPlanePointPlacer</extracomment>
-        <translation>飞机</translation>
+        <translation>Plane</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3784"/>
@@ -10647,7 +10647,7 @@ Real source: Remoting/Application/Resources/filters_plotonintersectioncurves.xml
 Real source: Remoting/Application/Resources/sources_filterssources.xml - PlaneSource
 ----------
 Real source: Remoting/Application/Resources/filters_filterstexture.xml - TextureMapToPlane</extracomment>
-        <translation>来源</translation>
+        <translation>原点</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3790"/>
@@ -10656,7 +10656,7 @@ Real source: Remoting/Application/Resources/filters_filterstexture.xml - Texture
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_utilities.xml - Plane
 ----------
 Real source: VTKExtensions/Misc/Resources/misc_utilities.xml - Axis Aligned Plane</extracomment>
-        <translation>设定飞机的来源 。</translation>
+        <translation>设定飞机的原点 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3793"/>
@@ -10698,7 +10698,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - WarpSca
 Real source: Remoting/Application/Resources/filters_plotonintersectioncurves.xml - PlotOnIntersectionCurves
 ----------
 Real source: Remoting/Application/Resources/sources_filterssources.xml - EllipseSource</extracomment>
-        <translation>常规</translation>
+        <translation>法向</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3796"/>
@@ -10743,7 +10743,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - MaskPo
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_utilities.xml - Plane
 ----------
 Real source: VTKExtensions/Misc/Resources/misc_utilities.xml - Axis Aligned Plane</extracomment>
-        <translation>设定值以抵消来源 。 来源由指定的数字按正常方向翻译.</translation>
+        <translation>设定值以抵消来源 。 来源由指定的数字按法向方向平移.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3805"/>
@@ -10893,7 +10893,7 @@ Real source: VTKExtensions/Misc/Resources/misc_utilities.xml - Box</extracomment
 Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml
 ----------
 Real source: Remoting/Application/Resources/proxies_interactionwidgets.xml - BoundedPlanePointPlacer</extracomment>
-        <translation>专栏</translation>
+        <translation>Box</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3979"/>
@@ -10905,7 +10905,7 @@ Real source: Remoting/Application/Resources/proxies_interactionwidgets.xml - Bou
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_utilities.xml - VTKExtensions/Misc/Resources/misc_utilities.xml
 ----------
 Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>圆柱</translation>
+        <translation>Cylinder</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3985"/>
@@ -11125,7 +11125,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - FixedRa
 Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml
 ----------
 Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - PerlinNoise</extracomment>
-        <translation>佩林噪声</translation>
+        <translation>Perlin Noise</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4183"/>
@@ -11290,7 +11290,7 @@ Real source: VTKExtensions/FiltersMaterialInterface/Resources/material_interface
 Real source: Remoting/Application/Resources/utilities.xml - Remoting/Application/Resources/utilities.xml
 ----------
 Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>球体</translation>
+        <translation>Sphere</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4300"/>
@@ -11421,7 +11421,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeometry.xml - DataSe
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4402"/>
         <source>Nonlinear faces are approximated with flat polygons. This parameter controls how many times to subdivide nonlinear surface cells. Higher subdivisions generate closer approximations but take more memory and rendering time. Subdivision is recursive, so the number of output polygons can grow exponentially with this parameter.</source>
         <extracomment>Real source: VTKExtensions/FiltersRendering/Resources/filters_filtersrendering.xml - GeometryFilter</extracomment>
-        <translation>非线性面部与扁平多边形相近. 此参数控制了多少次以细分非线性表面细胞. 更高的分区产生更近的近似,但需要更多的内存和渲染时间. 子分区是递归性的,因此输出多边形的数量可以随这个参数成指数增长.</translation>
+        <translation>非线性面与扁平多边形相近. 此参数控制了多少次以细分非线性表面单元格. 更高的分区产生更近的近似,但需要更多的内存和渲染时间. 子分区是递归性的,因此输出多边形的数量可以随这个参数成指数增长.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4405"/>
@@ -11433,7 +11433,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeometry.xml - DataSe
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4408"/>
         <source>If on, the output polygonal dataset will have a cell data array that holds the cell index of the original 3D cell that produced each output cell. This is useful for cell picking.</source>
         <extracomment>Real source: VTKExtensions/FiltersRendering/Resources/filters_filtersrendering.xml - GeometryFilter</extracomment>
-        <translation>如果打开,输出多边形数据集将有一个单元格数据数组,该数组将持有每个输出单元格的原3D单元格的单元格索引。 这对选择细胞有用。</translation>
+        <translation>如果打开,输出多边形数据集将有一个单元格数据数组,该数组将持有每个输出单元格的原3D单元格的单元格索引。 这对选择单元格有用。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4411"/>
@@ -11445,13 +11445,13 @@ Real source: Remoting/Application/Resources/filters_filtersgeometry.xml - DataSe
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4414"/>
         <source>If on, the output polygonal dataset will have a point data array that holds the point index of the original 3D vertex that produced each output vertex. This is useful for picking.</source>
         <extracomment>Real source: VTKExtensions/FiltersRendering/Resources/filters_filtersrendering.xml - GeometryFilter</extracomment>
-        <translation>如果启用,输出多边形数据集将有一个点数据阵列,该阵列将持有产生每个输出顶点的原始3D顶点的点指数. 这是有用的选择。</translation>
+        <translation>如果启用,输出多边形数据集将有一个点数据阵列,该阵列将持有产生每个输出顶点的原始3D顶点的点索引. 这是有用的选择。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4417"/>
         <source>Equalizer Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/2dwidgets_remotingviews.xml - Remoting/Views/Resources/2dwidgets_remotingviews.xml</extracomment>
-        <translation>平衡器部件代表</translation>
+        <translation>平衡器部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4420"/>
@@ -11896,7 +11896,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Equali
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4447"/>
         <source>Handle Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>处理部件代表</translation>
+        <translation>处理部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4456"/>
@@ -12109,7 +12109,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - LightWidgetR
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - HandleRepresentation
 ----------
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - LightRepresentation</extracomment>
-        <translation>世界立场信息</translation>
+        <translation>世界位置信息</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4471"/>
@@ -12124,7 +12124,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - LightWidgetR
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - HandleRepresentation
 ----------
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - LightRepresentation</extracomment>
-        <translation>世界立场</translation>
+        <translation>世界位置</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4474"/>
@@ -12202,7 +12202,7 @@ Real source: Remoting/Views/Resources/utilities_remotingviews.xml - ColorPalette
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4477"/>
         <source>Light Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>亮部件代表</translation>
+        <translation>亮部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4489"/>
@@ -12214,7 +12214,7 @@ Real source: Remoting/Views/Resources/utilities_remotingviews.xml - ColorPalette
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - LightRepresentation
 ----------
 Real source: Remoting/Views/Resources/rendering.xml - Light</extracomment>
-        <translation>立场</translation>
+        <translation>位置</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4501"/>
@@ -12226,7 +12226,7 @@ Real source: Remoting/Views/Resources/rendering.xml - Light</extracomment>
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - LightRepresentation
 ----------
 Real source: Remoting/Views/Resources/rendering.xml - Light</extracomment>
-        <translation>联络点信息</translation>
+        <translation>焦点信息</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4504"/>
@@ -12242,7 +12242,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - LightReprese
 Real source: Remoting/Views/Resources/rendering.xml - Light
 ----------
 Real source: Remoting/Animation/Resources/animation.xml - CameraKeyFrame</extracomment>
-        <translation>联络点</translation>
+        <translation>焦点</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4507"/>
@@ -12288,7 +12288,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - LightReprese
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4522"/>
         <source>Line Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>线条部件代表</translation>
+        <translation>线条部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4537"/>
@@ -12330,7 +12330,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - DistanceWidg
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - DistanceRepresentation2D
 ----------
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - LineRepresentation</extracomment>
-        <translation>第1点 世界立场</translation>
+        <translation>第1点 世界位置</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4546"/>
@@ -12360,7 +12360,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - DistanceWidg
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - DistanceRepresentation2D
 ----------
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - LineRepresentation</extracomment>
-        <translation>第2点 世界立场</translation>
+        <translation>第2点 世界位置</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4552"/>
@@ -12501,13 +12501,13 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - LineSou
 Real source: Remoting/Application/Resources/sources_filterssources.xml - SplineSource
 ----------
 Real source: Remoting/Application/Resources/sources_filterssources.xml - HighResLineSource</extracomment>
-        <translation>决议</translation>
+        <translation>分辨率</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4609"/>
         <source>Implicit Plane Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>隐形图件代表</translation>
+        <translation>隐形图件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4621"/>
@@ -12606,7 +12606,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitAnnu
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitPlaneRepresentation
 ----------
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - DisplaySizedImplicitPlaneRepresentation</extracomment>
-        <translation>大纲翻译</translation>
+        <translation>大纲平移</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4633"/>
@@ -12639,7 +12639,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitPlan
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - DisplaySizedImplicitPlaneRepresentation
 ----------
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - CoordinateFrameRepresentation</extracomment>
-        <translation>来源信息</translation>
+        <translation>原点信息</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4639"/>
@@ -12654,7 +12654,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - DisplaySized
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitPlaneRepresentation
 ----------
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - DisplaySizedImplicitPlaneRepresentation</extracomment>
-        <translation>常规信息</translation>
+        <translation>法向信息</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4645"/>
@@ -12870,7 +12870,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - DisplaySized
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4741"/>
         <source>Coordinate Frame Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>坐标框架部件代表</translation>
+        <translation>坐标框架部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4762"/>
@@ -12915,7 +12915,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - CoordinateFr
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - CoordinateFrameWidgetRepresentation
 ----------
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - CoordinateFrameRepresentation</extracomment>
-        <translation>使用相机正常</translation>
+        <translation>使用相机法向</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4795"/>
@@ -12972,7 +12972,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - CoordinateFr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4813"/>
         <source>Distance Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>远程部件代表</translation>
+        <translation>远程部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4822"/>
@@ -13056,13 +13056,13 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - FourLinesRep
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4852"/>
         <source>Box Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>框形部件代表</translation>
+        <translation>框形部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4855"/>
         <source>Representation proxy for the box widget. This includes the widget/representation proxies for the box 3D widget.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - BoxWidgetRepresentation</extracomment>
-        <translation>框部件的代理代表 。 这包括框 3D 部件的部件/代表符。</translation>
+        <translation>框部件的代理表示 。 这包括框 3D 部件的部件/表示符。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4867"/>
@@ -13077,7 +13077,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - FourLinesRep
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - BoxWidgetRepresentation
 ----------
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - BoxWidget2</extracomment>
-        <translation>翻译已启用</translation>
+        <translation>平移已启用</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4912"/>
@@ -13110,7 +13110,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - BoxWidget2</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4921"/>
         <source>Sphere Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>球形部件代表</translation>
+        <translation>球形部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4924"/>
@@ -13119,7 +13119,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - BoxWidget2</
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - SphereWidgetRepresentation
 ----------
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitCylinderWidgetRepresentation</extracomment>
-        <translation>球体部件的代表代理 。 这包括球体3D部件的部件/代表代号。</translation>
+        <translation>球体部件的表示代理 。 这包括球体3D部件的部件/表示代号。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4942"/>
@@ -13157,7 +13157,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Select
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - PVMoleculeRepresentation
 ----------
 Real source: Remoting/Views/Resources/utilities_remotingviews.xml - Property</extracomment>
-        <translation>代表权</translation>
+        <translation>表示权</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4948"/>
@@ -13334,7 +13334,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitAnnu
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5272"/>
         <source>Slider Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>滑动部件代表</translation>
+        <translation>滑动部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5287"/>
@@ -13382,13 +13382,13 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - SliderRepres
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5308"/>
         <source>Poly Line Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>复线部件代表</translation>
+        <translation>复线部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5311"/>
         <source>Representation proxy for the poly line widget. This includes the widget/representation proxies for the sphere 3D widget.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - PolyLineWidgetRepresentation</extracomment>
-        <translation>复线部件的代表代理 。 这包括球体3D部件的部件/代表代号。</translation>
+        <translation>复线部件的表示代理 。 这包括球体3D部件的部件/表示代号。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5329"/>
@@ -13479,13 +13479,13 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - PolyLineRepr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5356"/>
         <source>Spline Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>Spline 部件代表</translation>
+        <translation>Spline 部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5359"/>
         <source>Representation proxy for the spline widget. This includes the widget/representation proxies for the sphere 3D widget.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - SplineWidgetRepresentation</extracomment>
-        <translation>示意图部件的代表代理 。 这包括球体3D部件的部件/代表代号。</translation>
+        <translation>示意图部件的表示代理 。 这包括球体3D部件的部件/表示代号。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5377"/>
@@ -13503,13 +13503,13 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - PolyLineRepr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5407"/>
         <source>Contour Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>轮廓部件代表</translation>
+        <translation>轮廓部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5410"/>
         <source>Representation proxy for the Contour widget. This includes the widget/representation proxies for the sphere 3D widget.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ContourWidgetRepresentation</extracomment>
-        <translation>Contour 部件的代表代理 。 这包括球体3D部件的部件/代表代号。</translation>
+        <translation>Contour 部件的表示代理 。 这包括球体3D部件的部件/表示代号。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5428"/>
@@ -13527,7 +13527,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - OrientedGlyp
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ContourWidgetRepresentation
 ----------
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - OrientedGlyphContourRepresentation</extracomment>
-        <translation>线条内插符</translation>
+        <translation>线条插值器</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5434"/>
@@ -13635,13 +13635,13 @@ Real source: Remoting/Live/Resources/live_utilities.xml - LiveInsituLink</extrac
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5476"/>
         <source>Scalar Bar Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>斯卡拉尔栏部件代表</translation>
+        <translation>斯卡拉尔栏部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5479"/>
         <source>ScalarBarWidgetRepresentation is a representation for a scalar bar including a widget to control the position and orientation of the scalar bar.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ScalarBarWidgetRepresentation</extracomment>
-        <translation>Scalar BarWidget Representation 是用来代表一个Scalar 栏,包括用来控制Scalar 栏的位置和方向的部件.</translation>
+        <translation>Scalar BarWidget Representation 是用来表示一个Scalar 栏,包括用来控制Scalar 栏的位置和方向的部件.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5491"/>
@@ -13665,7 +13665,7 @@ Real source: Remoting/Live/Resources/live_utilities.xml - LiveInsituLink</extrac
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5500"/>
         <source>If the user manually toggles the scalar bar visibility, we keep that information in the scalar bar representation, and will never / always show it until the scalar bar button is toggled again on this array.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ScalarBarWidgetRepresentation</extracomment>
-        <translation>如果用户手动切换scalar bar的能见度,我们将这些信息保存在scalar bar 代表符中,并且永远不会/永远显示它,直到在此阵列上再次切换scalar bar 按钮.</translation>
+        <translation>如果用户手动切换scalar bar的能见度,我们将这些信息保存在scalar bar 表示符中,并且永远不会/永远显示它,直到在此阵列上再次切换scalar bar 按钮.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5509"/>
@@ -14076,7 +14076,7 @@ Real source: Remoting/Views/Resources/utilities_remotingviews.xml - ScalarBarAct
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5617"/>
         <source>Scalar Bar Length</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ScalarBarWidgetRepresentation</extracomment>
-        <translation>斯卡尔栏长度</translation>
+        <translation>标量栏长度</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5620"/>
@@ -14719,7 +14719,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_sources.xml - VTKExt
 Real source: VTKExtensions/FiltersGeneral/Resources/general_sources.xml - TextSource
 ----------
 Real source: Remoting/Application/Resources/sources_renderingfreetype.xml - VectorText</extracomment>
-        <translation>文本</translation>
+        <translation>Text</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5749"/>
@@ -15564,7 +15564,7 @@ Real source: Remoting/Views/Resources/rendering.xml - TextPropertyBase</extracom
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - ProgressBarSourceRepresentation</extracomment>
-        <translation>进步栏部件代表</translation>
+        <translation>进步栏部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5866"/>
@@ -15612,19 +15612,19 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Progre
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - LogoSourceRepresentation</extracomment>
-        <translation>Logo 部件代表</translation>
+        <translation>Logo 部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5923"/>
         <source>LogoWidgetRepresentation is a representation for a logo widget</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - LogoWidgetRepresentation</extracomment>
-        <translation>LogoWidget 代表是一个标志部件的表示</translation>
+        <translation>LogoWidget 表示是一个标志部件的表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5977"/>
         <source>Oriented Glyph Contour Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>定向格莱弗轮廓代表</translation>
+        <translation>定向字形轮廓表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5980"/>
@@ -15642,13 +15642,13 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - LogoSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6022"/>
         <source>Spline Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>组合代表</translation>
+        <translation>组合表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6025"/>
         <source>Proxy for vtkSplineRepresentation. Don&apos;t use directly since it&apos;s not coupled with the widget. Use \&quot;SplineWidgetRepresentation\&quot; instead which include this representation as well as the widget to modify the representation.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - SplineRepresentation</extracomment>
-        <translation>VtkSpline代表作的代理服务器. 不要直接使用,因为它没有与部件结合。 使用 \\“ SplineWidgetRepresentation\ ” 代替, 包括此表示以及修改表示的部件 。</translation>
+        <translation>VtkSpline表示作的代理服务器. 不要直接使用,因为它没有与部件结合。 使用 \\“ SplineWidgetRepresentation\ ” 代替, 包括此表示以及修改表示的部件 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6055"/>
@@ -15708,25 +15708,25 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - HandleRepres
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6070"/>
         <source>Poly Line Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>多元线代表</translation>
+        <translation>多元线表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6073"/>
         <source>Representation for poly line source.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - PolyLineRepresentation</extracomment>
-        <translation>代表多线源.</translation>
+        <translation>表示多线源.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6118"/>
         <source>Slider Representation3D</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>幻灯片代表3D</translation>
+        <translation>幻灯片表示3D</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6142"/>
         <source>Sphere Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>球形代表</translation>
+        <translation>球形表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6145"/>
@@ -15837,7 +15837,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - DisplaySized
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6229"/>
         <source>Box Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>代表</translation>
+        <translation>表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6232"/>
@@ -15855,7 +15855,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - DisplaySized
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6274"/>
         <source>Implicit Cylinder Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>隐形圆柱形代表</translation>
+        <translation>隐形圆柱形表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6277"/>
@@ -15873,7 +15873,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - DisplaySized
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6304"/>
         <source>The axis of rotation for the cylinder. If the axis is not specified as a unit vector, it will be normalized.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitCylinderRepresentation</extracomment>
-        <translation>圆柱旋转的轴. 如果轴未指定为单位矢量,则会正常化.</translation>
+        <translation>圆柱旋转的轴. 如果轴未指定为单位矢量,则会法向化.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6313"/>
@@ -15909,7 +15909,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - DisplaySized
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitConeRepresentation
 ----------
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitAnnulusRepresentation</extracomment>
-        <translation>启用/ 取消通过鼠标移动来翻译边框的能力 。</translation>
+        <translation>启用/ 取消通过鼠标移动来平移边框的能力 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6346"/>
@@ -15939,13 +15939,13 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitAnnu
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6682"/>
         <source>Distance Representation2D</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>远距离代表2D</translation>
+        <translation>远距离表示2D</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6703"/>
         <source>Implicit Plane Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>隐性代表制</translation>
+        <translation>隐性表示制</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6748"/>
@@ -15957,37 +15957,37 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitAnnu
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6820"/>
         <source>Coordinate Frame Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>坐标框架代表</translation>
+        <translation>坐标框架表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6880"/>
         <source>Line Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>代表性</translation>
+        <translation>表示性</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6955"/>
         <source>Handle Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>处理代表</translation>
+        <translation>处理表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6979"/>
         <source>Light Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>轻型代表</translation>
+        <translation>轻型表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7012"/>
         <source>Scalar Bar Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>斯卡拉律师代表处</translation>
+        <translation>斯卡拉律师表示处</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7021"/>
         <source>Specify the anchor position (bottom-left corner of the scalar bar) in normalized viewport coordinates in range [0, 1]. This is used only when **Window Location** is set to **AnyLocation**.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ScalarBarRepresentation</extracomment>
-        <translation>指定在 [0, 1] 范围内的正常视点坐标中的锚点位置(scalar bar左下角)。 只有在** Window 位置** 被设定为** AnyLocation ** 时才使用此功能.</translation>
+        <translation>指定在 [0, 1] 范围内的法向视点坐标中的锚点位置(scalar bar左下角)。 只有在** Window 位置** 被设定为** AnyLocation ** 时才使用此功能.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7030"/>
@@ -16014,7 +16014,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitAnnu
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ScalarBarRepresentation
 ----------
 Real source: Remoting/Views/Resources/utilities_remotingviews.xml - Remoting/Views/Resources/utilities_remotingviews.xml</extracomment>
-        <translation>斯卡尔酒吧演员</translation>
+        <translation>标量酒吧演员</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7057"/>
@@ -16068,13 +16068,13 @@ Real source: Remoting/Views/Resources/utilities_remotingviews.xml - Remoting/Vie
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7126"/>
         <source>Progress Bar Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>进步律师代表</translation>
+        <translation>进步律师表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7156"/>
         <source>Logo Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>标志代表</translation>
+        <translation>标志表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7186"/>
@@ -16194,7 +16194,7 @@ Real source: Remoting/Views/Resources/utilities_remotingviews.xml - Remoting/Vie
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7318"/>
         <source>Set whether to allow this 3D widget to be interactively translated.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - BoxWidget2</extracomment>
-        <translation>设定是否允许交互翻译此 3D 部件 。</translation>
+        <translation>设定是否允许交互平移此 3D 部件 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7324"/>
@@ -16212,7 +16212,7 @@ Real source: Remoting/Views/Resources/utilities_remotingviews.xml - Remoting/Vie
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7336"/>
         <source>Set whether to allow interactive face movement to be performed on this 3D widget.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - BoxWidget2</extracomment>
-        <translation>设定是否允许在此 3D 部件上进行交互面部移动 。</translation>
+        <translation>设定是否允许在此 3D 部件上进行交互面移动 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7339"/>
@@ -16248,7 +16248,7 @@ Real source: Remoting/Views/Resources/utilities_remotingviews.xml - Remoting/Vie
 Real source: Remoting/Views/Resources/utilities_remotingviews.xml - Remoting/Views/Resources/utilities_remotingviews.xml
 ----------
 Real source: Remoting/Animation/Resources/animation.xml - Remoting/Animation/Resources/animation.xml</extracomment>
-        <translation>巴布亚新几内亚</translation>
+        <translation>PNG</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="8806"/>
@@ -16848,7 +16848,7 @@ Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2476"/>
         <source>Preserve Property Values</source>
         <extracomment>Real source: Remoting/Settings/Resources/utilities_settings.xml - GeneralSettings</extracomment>
-        <translation>保存财产价值</translation>
+        <translation>保存属性价值</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2248"/>
@@ -16872,7 +16872,7 @@ Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3493"/>
         <source>If true, the filter will merge coincidental points (only if the ghost cell array doesn&apos;t exist).</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_filters.xml - AppendReductionFilter</extracomment>
-        <translation>如果为真,过滤器会合并巧合点(只有在幽灵细胞阵列不存在的情况下).</translation>
+        <translation>如果为真,过滤器会合并巧合点(只有在幽灵单元格阵列不存在的情况下).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4024"/>
@@ -16886,25 +16886,25 @@ Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4036"/>
         <source>Set the center of the annulus.</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_utilities.xml - Annulus</extracomment>
-        <translation>设置废墟的中心 。</translation>
+        <translation>设置圆环的中心 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4042"/>
         <source>Set the axis of the annulus. The created annulus is infinite in both directions</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_utilities.xml - Annulus</extracomment>
-        <translation>设定废墟的轴 。 创造的废除是无限双向的</translation>
+        <translation>设定圆环的轴 。 创造的圆环是无限双向的</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4048"/>
         <source>Set the inner radius of the annulus.</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_utilities.xml - Annulus</extracomment>
-        <translation>设定废墟的内部半径 。</translation>
+        <translation>设定圆环的内部半径 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4054"/>
         <source>Set the outer radius of the annulus.</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_utilities.xml - Annulus</extracomment>
-        <translation>设定废墟的外部半径 。</translation>
+        <translation>设定圆环的外部半径 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4057"/>
@@ -17018,13 +17018,13 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitFrus
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5053"/>
         <source>Implicit Cone Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>隐形锥形部件代表</translation>
+        <translation>隐形锥形部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5056"/>
         <source>Representation proxy for the cone widget. This includes the widget/representation proxies for the cone 3D widget.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitConeWidgetRepresentation</extracomment>
-        <translation>锥形部件的代表代理 。 这包括锥形3D部件的部件/代表代词。</translation>
+        <translation>锥形部件的表示代理 。 这包括锥形3D部件的部件/表示代词。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5095"/>
@@ -17048,13 +17048,13 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitCone
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5125"/>
         <source>Implicit Annulus Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>隐含的 Annulus 部件代表</translation>
+        <translation>隐含的 Annulus 部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5128"/>
         <source>Representation proxy for the annulus widget.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitAnnulusWidgetRepresentation</extracomment>
-        <translation>取消部件的代理代表 。</translation>
+        <translation>取消部件的代理表示 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5167"/>
@@ -17087,13 +17087,13 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitAnnu
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5203"/>
         <source>Implicit Frustum Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>隐形的 Frustum 部件代表</translation>
+        <translation>隐形的 Frustum 部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5206"/>
         <source>Representation proxy for the frustum widget.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitFrustumWidgetRepresentation</extracomment>
-        <translation>frustum 部件的代表代理 。</translation>
+        <translation>frustum 部件的表示代理 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="5242"/>
@@ -17135,7 +17135,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitFrus
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6373"/>
         <source>Implicit Cone Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>隐形锥体代表</translation>
+        <translation>隐形锥体表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6376"/>
@@ -17153,7 +17153,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitFrus
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6403"/>
         <source>The orientation axis of the cone. If the axis is not specified as a unit vector, it will be normalized.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitConeRepresentation</extracomment>
-        <translation>圆锥的定向轴. 如果轴未指定为单位矢量,则会正常化.</translation>
+        <translation>圆锥的定向轴. 如果轴未指定为单位矢量,则会法向化.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6412"/>
@@ -17183,7 +17183,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitFrus
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6472"/>
         <source>Implicit Frustum Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>隐性弗鲁斯塔姆代表</translation>
+        <translation>隐性弗鲁斯塔姆表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6475"/>
@@ -17204,7 +17204,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitFrus
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6490"/>
         <source>Bounds of the widget representation.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitFrustumRepresentation</extracomment>
-        <translation>部件代表的边界 。</translation>
+        <translation>部件表示的边界 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6499"/>
@@ -17240,7 +17240,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitFrus
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6565"/>
         <source>Implicit Annulus Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>隐性代表</translation>
+        <translation>隐性表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6568"/>
@@ -17279,7 +17279,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitAnnu
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6604"/>
         <source>The orientation axis of the annulus. If the axis is not specified as a unit vector, it will be normalized.</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - ImplicitAnnulusRepresentation</extracomment>
-        <translation>废墟的方向轴 。 如果轴未指定为单位矢量,则会正常化.</translation>
+        <translation>圆环的方向轴 。 如果轴未指定为单位矢量,则会法向化.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6613"/>
@@ -17348,7 +17348,7 @@ Real source: Remoting/Views/Resources/extractors_remotingviews.xml - JPG</extrac
         <location filename="../build/translationSourcesparaview_server_manager.h" line="8884"/>
         <source>JPG</source>
         <extracomment>Real source: Remoting/Views/Resources/extractors_remotingviews.xml - Remoting/Views/Resources/extractors_remotingviews.xml</extracomment>
-        <translation>联合采购小组</translation>
+        <translation>JPG</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="8968"/>
@@ -17535,7 +17535,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeRende
 Real source: Remoting/Views/Resources/views_remotingviews.xml - RenderView
 ----------
 Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeRenderView</extracomment>
-        <translation>相机联络点信息</translation>
+        <translation>相机焦点信息</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15895"/>
@@ -17547,7 +17547,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeRende
 Real source: Remoting/Views/Resources/views_remotingviews.xml - RenderView
 ----------
 Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeRenderView</extracomment>
-        <translation>相机联络点</translation>
+        <translation>相机焦点</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15898"/>
@@ -17607,7 +17607,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeRende
 Real source: Remoting/Views/Resources/views_remotingviews.xml - RenderView
 ----------
 Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeRenderView</extracomment>
-        <translation>相机向上查看信息</translation>
+        <translation>相机视图向上信息</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15913"/>
@@ -17619,7 +17619,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeRende
 Real source: Remoting/Views/Resources/views_remotingviews.xml - RenderView
 ----------
 Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeRenderView</extracomment>
-        <translation>相机向上查看</translation>
+        <translation>相机视图向上</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15916"/>
@@ -17943,7 +17943,7 @@ Real source: Remoting/Views/Resources/rendering.xml - Light</extracomment>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="16123"/>
         <source>Show/hide interior lines between cells. Only valid for multi cell text.</source>
         <extracomment>Real source: Remoting/Views/Resources/rendering.xml - TextPropertyBase</extracomment>
-        <translation>显示/隐藏细胞间的内线. 只对多单元格文本有效。</translation>
+        <translation>显示/隐藏单元格间的内线. 只对多单元格文本有效。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="16129"/>
@@ -18091,7 +18091,7 @@ Real source: Remoting/Views/Resources/rendering.xml - Light</extracomment>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="16231"/>
         <source>Light Position</source>
         <extracomment>Real source: Remoting/Views/Resources/rendering.xml - Light</extracomment>
-        <translation>浅位置</translation>
+        <translation>光源位置</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="16243"/>
@@ -18109,7 +18109,7 @@ Real source: Remoting/Views/Resources/rendering.xml - Light</extracomment>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="16258"/>
         <source>Logo</source>
         <extracomment>Real source: Remoting/Views/Resources/sources_remotingviews.xml - Remoting/Views/Resources/sources_remotingviews.xml</extracomment>
-        <translation>日志</translation>
+        <translation>Logo</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="16264"/>
@@ -19225,7 +19225,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - RenderView</extr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="16840"/>
         <source>IO</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - Remoting/Views/Resources/utilities_remotingviews.xml</extracomment>
-        <translation>木卫一</translation>
+        <translation>IO</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="16843"/>
@@ -19339,7 +19339,7 @@ Real source: VTKExtensions/Points/Resources/points.xml - ExtractEnclosedPoints</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="16894"/>
         <source>Color used when solid coloring surfaces and faces.</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - ColorPalette</extracomment>
-        <translation>固体色调表面和面部时使用的颜色.</translation>
+        <translation>固体色调表面和面时使用的颜色.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="16897"/>
@@ -19363,7 +19363,7 @@ Real source: VTKExtensions/Points/Resources/points.xml - ExtractEnclosedPoints</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="16906"/>
         <source>Color used for the edges when using &apos;Surface With Edges&apos; representation.</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - ColorPalette</extracomment>
-        <translation>边缘使用“ 有边缘的沙面” 代表时使用的颜色 。</translation>
+        <translation>边缘使用“ 有边缘的沙面” 表示时使用的颜色 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="16912"/>
@@ -19994,7 +19994,7 @@ Real source: Remoting/Views/Resources/utilities_remotingviews.xml - TransferFunc
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - PVLookupTable
 ----------
 Real source: Remoting/Views/Resources/utilities_remotingviews.xml - PiecewiseFunction</extracomment>
-        <translation>允许复制刻度</translation>
+        <translation>允许复制标量</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="17182"/>
@@ -20031,7 +20031,7 @@ Real source: Remoting/Views/Resources/utilities_remotingviews.xml - PiecewiseFun
         <location filename="../build/translationSourcesparaview_server_manager.h" line="17197"/>
         <source>Indexed Opacities</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - PVLookupTable</extracomment>
-        <translation>指数化</translation>
+        <translation>索引化</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="17200"/>
@@ -20111,7 +20111,7 @@ Real source: Remoting/Views/Resources/utilities_remotingviews.xml - PiecewiseFun
         <location filename="../build/translationSourcesparaview_server_manager.h" line="17326"/>
         <source>The dimensions of the image that represents this 2D transfer function.</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - TransferFunction2D</extracomment>
-        <translation>代表此二维传输函数的图像尺寸 。</translation>
+        <translation>表示此二维传输函数的图像尺寸 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="17332"/>
@@ -20179,7 +20179,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PolyPoi
         <location filename="../build/translationSourcesparaview_server_manager.h" line="17383"/>
         <source>Show labels with the visible data range for the arrays this color legend represents.</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - ScalarBarActor</extracomment>
-        <translation>显示此色彩图例所代表的数组的可见数据范围的标签 。</translation>
+        <translation>显示此色彩图例所表示的数组的可见数据范围的标签 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="17389"/>
@@ -20843,7 +20843,7 @@ Real source: Remoting/Views/Resources/utilities_remotingviews.xml - GridAxes3DAc
         <location filename="../build/translationSourcesparaview_server_manager.h" line="17968"/>
         <source>Property</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - GridAxes3DActor</extracomment>
-        <translation>财产</translation>
+        <translation>属性</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7510"/>
@@ -20982,7 +20982,7 @@ Real source: Remoting/Views/Resources/utilities_remotingviews.xml - GridAxes3DAc
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18043"/>
         <source>Set the mask to select the axes to label. The axes labelled will be a subset of the axes selected depending on which faces are also being rendered.</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - GridAxes3DActor</extracomment>
-        <translation>设置遮罩以选择要标签的轴 。 标注的轴将是所选轴的子集,视其面部是否也正在渲染.</translation>
+        <translation>设置遮罩以选择要标签的轴 。 标注的轴将是所选轴的子集,视其面是否也正在渲染.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7531"/>
@@ -21537,7 +21537,7 @@ Real source: Remoting/Views/Resources/utilities_remotingviews.xml - GridAxes3DAc
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18361"/>
         <source>If data is being translated, you can show the original data bounds for the axes instead of the translated bounds by setting the DataPosition to match the translation applied to the dataset.</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - GridAxes3DActor</extracomment>
-        <translation>如果正在翻译数据,则可以通过设置DataPosition来显示用于数据集的翻译的原始数据界限,而不是翻译的界限。</translation>
+        <translation>如果正在平移数据,则可以通过设置DataPosition来显示用于数据集的平移的原始数据界限,而不是平移的界限。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18364"/>
@@ -21718,7 +21718,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - RenderView</extr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18559"/>
         <source>Set the offset of right axis from the border. This number is expressed in pixels, and represents the approximate distance of the axes from the sides of the renderer.</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - LegendGridActor</extracomment>
-        <translation>从边框设置右轴的偏移 。 这个数字以像素表示,代表轴与渲染器侧面的大约距离.</translation>
+        <translation>从边框设置右轴的偏移 。 这个数字以像素表示,表示轴与渲染器侧面的大约距离.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18562"/>
@@ -21731,7 +21731,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - RenderView</extr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18565"/>
         <source>Set the offset of top axis from the border. This number is expressed in pixels, and represents the approximate distance of the axes from the sides of the renderer.</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - LegendGridActor</extracomment>
-        <translation>从边框设置顶轴的偏移 。 这个数字以像素表示,代表轴与渲染器侧面的大约距离.</translation>
+        <translation>从边框设置顶轴的偏移 。 这个数字以像素表示,表示轴与渲染器侧面的大约距离.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18568"/>
@@ -21744,7 +21744,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - RenderView</extr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18571"/>
         <source>Set the offset of left axis from the border. This number is expressed in pixels, and represents the approximate distance of the axes from the sides of the renderer.</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - LegendGridActor</extracomment>
-        <translation>设置边框左轴的偏移 。 这个数字以像素表示,代表轴与渲染器侧面的大约距离.</translation>
+        <translation>设置边框左轴的偏移 。 这个数字以像素表示,表示轴与渲染器侧面的大约距离.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18574"/>
@@ -21757,7 +21757,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - RenderView</extr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18577"/>
         <source>Set the offset of bottom axis from the border. This number is expressed in pixels, and represents the approximate distance of the axes from the sides of the renderer.</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - LegendGridActor</extracomment>
-        <translation>从边框设置底轴的偏移 。 这个数字以像素表示,代表轴与渲染器侧面的大约距离.</translation>
+        <translation>从边框设置底轴的偏移 。 这个数字以像素表示,表示轴与渲染器侧面的大约距离.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18580"/>
@@ -21899,7 +21899,7 @@ Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml 
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - PVRepresentationBase
 ----------
 Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>表面常态</translation>
+        <translation>Surface Normals</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="9304"/>
@@ -22224,7 +22224,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23386"/>
         <source>Field Arrays From File</source>
         <extracomment>Real source: VTKExtensions/IOCore/Resources/filters_pv_iocore.xml - VTKExtensions/IOCore/Resources/filters_pv_iocore.xml</extracomment>
-        <translation>来自文件的字段矩阵</translation>
+        <translation>Field Arrays From File</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31096"/>
@@ -22299,7 +22299,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - ResampleWi
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29410"/>
         <source>Axis-Aligned Slice</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>轴对齐切片</translation>
+        <translation>Axis-Aligned Slice</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29413"/>
@@ -22336,7 +22336,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - ResampleWi
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29464"/>
         <source>The values in this property specify a list of current slice offset values. This can be used to create multiple slices with different centers. Each entry represents a new slice with its center shifted by the offset value. The &apos;Values Range&apos; information is the range based on the global bounding box, not necessarily on the current slice geometry configuration. **These offset values are added to the global offset value set through the \&quot;Offset\&quot; property.**</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - AxisAlignedSlice</extracomment>
-        <translation>此属性中的值指定当前切片偏移值列表 。 这可用于创建多个具有不同中心的切片. 每个条目代表一个新的切片,其中心被抵消值所转移. 'Values Range'信息是基于全局边框的距离,并不一定基于当前切片几何配置. ** 这些抵消值被添加到通过\“Offset\”属性设定的全球抵消值中。 **</translation>
+        <translation>此属性中的值指定当前切片偏移值列表 。 这可用于创建多个具有不同中心的切片. 每个条目表示一个新的切片,其中心被抵消值所转移. 'Values Range'信息是基于全局边框的距离,并不一定基于当前切片几何配置. ** 这些抵消值被添加到通过\“Offset\”属性设定的全球抵消值中。 **</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29467"/>
@@ -22354,7 +22354,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - ResampleWi
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30202"/>
         <source>Connected Surface Properties</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>已连接的表面属性</translation>
+        <translation>Connected Surface Properties</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30559"/>
@@ -22372,7 +22372,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - ResampleWi
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30625"/>
         <source>Stitches images that are separated by one voxel, effectively generating ghost points at the new interfaces between the input images. Setting NumberOfGhosts to n stitches the images and generates n-1 layers of ghost cells. The inputs CANNOT have any cell data, or the filter will not run.</source>
         <extracomment>Real source: VTKExtensions/FiltersParallelDIY2/Resources/parallel_diy_filters.xml - StitchImageDataWithGhosts</extracomment>
-        <translation>Stitches的图像被一个voxel分隔,在输入图像之间的新界面上有效生成幽灵点. 设置 NumberOfGhosts 来缝合图像并生成 n-1 层的幽灵细胞 。 输入的 CANNOT 有单元格数据, 否则过滤器不会运行 。</translation>
+        <translation>Stitches的图像被一个voxel分隔,在输入图像之间的新界面上有效生成幽灵点. 设置 NumberOfGhosts 来缝合图像并生成 n-1 层的幽灵单元格 。 输入的 CANNOT 有单元格数据, 否则过滤器不会运行 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30628"/>
@@ -22390,19 +22390,19 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - ResampleWi
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30763"/>
         <source>Global Point And Cell Ids</source>
         <extracomment>Real source: VTKExtensions/FiltersParallelDIY2/Resources/parallel_diy_filters.xml - VTKExtensions/FiltersParallelDIY2/Resources/parallel_diy_filters.xml</extracomment>
-        <translation>全球点和单元格编号</translation>
+        <translation>Global Point And Cell Ids</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30766"/>
         <source>Generate global point and cell ids. Global ids are unique ids where the same point (or cell) will be assigned the same id even if the point (or cell) is duplicated among multiple blocks or ranks. This filter also flags duplicated points as ghost points. Note that if the input is an HyperTree Grid, this filter only generates global cell ids.</source>
         <extracomment>Real source: VTKExtensions/FiltersParallelDIY2/Resources/parallel_diy_filters.xml - GlobalPointAndCellIds</extracomment>
-        <translation>生成全局点和细胞ID. 全球ids是独一无二的ids,即使点(或单元格)在多个块或排位中重复,同一点(或单元格)也会被分配到同一个id. 此过滤器还标记重复的点作为幽灵点. 注意,如果输入是HyperTree Grid,此过滤器只生成全局细胞ID.</translation>
+        <translation>生成全局点和单元格ID. 全球ids是独一无二的ids,即使点(或单元格)在多个块或排位中重复,同一点(或单元格)也会被分配到同一个id. 此过滤器还标记重复的点作为幽灵点. 注意,如果输入是HyperTree Grid,此过滤器只生成全局单元格ID.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30787"/>
         <source>Process Ids</source>
         <extracomment>Real source: VTKExtensions/FiltersParallel/Resources/parallel_filters.xml - VTKExtensions/FiltersParallel/Resources/parallel_filters.xml</extracomment>
-        <translation>进程编号</translation>
+        <translation>Process Ids</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30790"/>
@@ -22414,19 +22414,19 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - ResampleWi
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30823"/>
         <source>Removes ghost cells, point data and cell data ghost arrays. In the case of HyperTree Grid input, this filter removes the cell data ghost array and masks the ghost cells.</source>
         <extracomment>Real source: VTKExtensions/FiltersParallel/Resources/parallel_filters.xml - RemoveGhostInformation</extracomment>
-        <translation>删除幽灵细胞,点数据和细胞数据幽灵阵列. 在HyperTree Grid输入中,这个过滤器去除细胞数据鬼阵列,并遮掩鬼细胞.</translation>
+        <translation>删除幽灵单元格,点数据和单元格数据幽灵阵列. 在HyperTree Grid输入中,这个过滤器去除单元格数据鬼阵列,并遮掩鬼单元格.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30835"/>
         <source>This property specifies the input to the remove ghost information filter. This filter operates on unstructured grids and polydata since it removes the ghost cells. It also supports HTGs, in which case it simply masks ghost cells.</source>
         <extracomment>Real source: VTKExtensions/FiltersParallel/Resources/parallel_filters.xml - RemoveGhostInformation</extracomment>
-        <translation>此属性指定对删除的幽灵信息过滤器的输入 。 这个滤波器在无结构的网格和多数据上运行,因为它移除了鬼细胞. 它还支持HTGs,在这种情况下它只是遮盖幽灵细胞.</translation>
+        <translation>此属性指定对删除的幽灵信息过滤器的输入 。 这个滤波器在无结构的网格和多数据上运行,因为它移除了鬼单元格. 它还支持HTGs,在这种情况下它只是遮盖幽灵单元格.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31018"/>
         <source>Legacy Particle Path</source>
         <extracomment>Real source: VTKExtensions/FiltersFlowPaths/Resources/flowpaths_filters.xml - VTKExtensions/FiltersFlowPaths/Resources/flowpaths_filters.xml</extracomment>
-        <translation>遗产粒子路径</translation>
+        <translation>旧版粒子路径</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31021"/>
@@ -22465,31 +22465,31 @@ Real source: VTKExtensions/FiltersFlowPaths/Resources/flowpaths_filters.xml - Le
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34447"/>
         <source>Decimation strategy that uses the eulerian distance between 3 consecutive points to compute its error.</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - DecimationDistanceStrategy</extracomment>
-        <translation>使用连续3个点之间的eulerian距离来计算其错误的十进制策略.</translation>
+        <translation>使用连续3个点之间的eulerian距离来计算其错误的精简策略.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34450"/>
         <source>Decimation Angle Strategy</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - Remoting/Application/Resources/utilities.xml</extracomment>
-        <translation>十进制角度战略</translation>
+        <translation>精简角度战略</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34453"/>
         <source>Decimation strategy that uses the angle between 3 consecutive points to compute its error.</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - DecimationAngleStrategy</extracomment>
-        <translation>使用连续3个点之间的角度来计算其错误的十进制策略.</translation>
+        <translation>使用连续3个点之间的角度来计算其错误的精简策略.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34456"/>
         <source>Decimation Custom Field Strategy</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - Remoting/Application/Resources/utilities.xml</extracomment>
-        <translation>十进制自定义字段策略</translation>
+        <translation>精简自定义字段策略</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34459"/>
         <source>Decimation strategy that uses the values stored in a custom PointData array as a metric for its decimation. The name of this array must be passed through the FieldName property.</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - DecimationCustomFieldStrategy</extracomment>
-        <translation>使用自定义 PointData 阵列中存储的值作为该阵列毁灭量的度量的十进制策略 。 此数组的名称必须传递到 FieldName 属性 。</translation>
+        <translation>使用自定义 PointData 阵列中存储的值作为该阵列毁灭量的度量的精简策略 。 此数组的名称必须传递到 FieldName 属性 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34465"/>
@@ -22507,20 +22507,20 @@ Real source: VTKExtensions/FiltersFlowPaths/Resources/flowpaths_filters.xml - Le
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34897"/>
         <source>Compute Sides</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - Remoting/Application/Resources/filters_filterscellgrid.xml</extracomment>
-        <translation>计算边</translation>
+        <translation>Compute Sides</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34918"/>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34930"/>
         <source>Set this property to true to include the original input cells in the output if they are of dimension 2 or lower (i.e., surface, edges, or vertices). If false, then only the computed sides will be output. As an example, if an input has hexahedra and triangle cells, this filter will output quadrilateral sides and triangle cells when PreserveRenderableInputs is true and only quadrilateral sides when PreserveRenderableInputs is false.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - ComputeCellGridSides</extracomment>
-        <translation>设定此属性为真, 以包含输出中的原始输入单元格, 如果它们为尺寸 2 或更低( 即表面、 边缘或顶点) 。 如果错误, 那么只有计算过的边才会输出 。 举例来说,如果一个输入有六面体和三角细胞,这个过滤器会输出四边形和三角形的单元格,当可保存性输入是真实的,并且只有在可保存性输入是虚假的时才会输出四边形.</translation>
+        <translation>设定此属性为真, 以包含输出中的原始输入单元格, 如果它们为尺寸 2 或更低( 即表面、 边缘或顶点) 。 如果错误, 那么只有计算过的边才会输出 。 举例来说,如果一个输入有六面体和三角单元格,这个过滤器会输出四边形和三角形的单元格,当可保存性输入是真实的,并且只有在可保存性输入是虚假的时才会输出四边形.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34924"/>
         <source>Set this property to true to avoid generating sides for input cells or sides that can be rendered as they are. If false, then sides will be output even for cells/sides that are surfaces or edges. As an example, if an input has hexahedra and triangle cells, this filter will generate quadrilateral sides (for the hexahedra) and edge sides (for the triangles) if OmitSidesForRenderableInputs is true, but only quadrilateral sides (for the hexahedra) if OmitSidesForRenderableInputs is false. Note that this is independent of whether some input cells are preserved or not.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - ComputeCellGridSides</extracomment>
-        <translation>设置此属性为真, 以避免生成侧面用于输入单元格或侧面可按原样渲染 。 如果虚假,则侧面甚至会输出为表面或边缘的细胞/侧面. 举例来说,如果一个输入有六面体和三角细胞,如果OmitSidesForRenderable Inputs是真的,这个滤波器将产生四边(对六面体)和边缘(对三角体),但如果OmitSidesForRenderable Inputs是假的,则只有四边(对六面体). 注意这与某些输入单元格是否保存无关.</translation>
+        <translation>设置此属性为真, 以避免生成侧面用于输入单元格或侧面可按原样渲染 。 如果虚假,则侧面甚至会输出为表面或边缘的单元格/侧面. 举例来说,如果一个输入有六面体和三角单元格,如果OmitSidesForRenderable Inputs是真的,这个滤波器将产生四边(对六面体)和边缘(对三角体),但如果OmitSidesForRenderable Inputs是假的,则只有四边(对六面体). 注意这与某些输入单元格是否保存无关.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34927"/>
@@ -22532,20 +22532,20 @@ Real source: VTKExtensions/FiltersFlowPaths/Resources/flowpaths_filters.xml - Le
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34951"/>
         <source>CellGrid Elevation</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - Remoting/Application/Resources/filters_filterscellgrid.xml</extracomment>
-        <translation>细胞加速</translation>
+        <translation>CellGrid Elevation</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34954"/>
         <source>This filter adds a cell-attribute named Elevation that represents the distance from either (1) a point, (2) a line, or (3) a plane.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - ComputeCellGridElevation</extracomment>
-        <translation>这种滤波器增加了一个名为Elevation的细胞属性,它代表了距离(1)一个点,(2)一个线,或者(3)一个平面的距离.</translation>
+        <translation>这种滤波器增加了一个名为Elevation的单元格属性,它表示了距离(1)一个点,(2)一个线,或者(3)一个平面的距离.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34957"/>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34960"/>
         <source>Add a new attribute representing elevation.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - ComputeCellGridElevation</extracomment>
-        <translation>添加代表高地的新属性 。</translation>
+        <translation>添加表示高地的新属性 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34969"/>
@@ -22599,7 +22599,7 @@ Real source: VTKExtensions/FiltersFlowPaths/Resources/flowpaths_filters.xml - Le
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35005"/>
         <source>CellGrid Probe</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - Remoting/Application/Resources/filters_filterscellgrid.xml</extracomment>
-        <translation>细胞Grid 探测器</translation>
+        <translation>CellGrid Probe</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35011"/>
@@ -22618,7 +22618,7 @@ Real source: VTKExtensions/FiltersFlowPaths/Resources/flowpaths_filters.xml - Le
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35029"/>
         <source>CellGrid Attribute</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGridPointProbe</extracomment>
-        <translation>细胞格属性</translation>
+        <translation>单元格格属性</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35035"/>
@@ -22630,25 +22630,25 @@ Real source: VTKExtensions/FiltersFlowPaths/Resources/flowpaths_filters.xml - Le
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35380"/>
         <source>Decimation Strategy</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - DecimatePolyline</extracomment>
-        <translation>十进制战略</translation>
+        <translation>精简战略</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35383"/>
         <source>This property determines which decimation strategy to use for the poly line decimation.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - DecimatePolyline</extracomment>
-        <translation>这一财产决定了用于多线性破坏的毁灭策略。</translation>
+        <translation>这一属性精简了用于多线性破坏的毁灭策略。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42697"/>
         <source>Critical Time</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterstemporal.xml - Remoting/Application/Resources/filters_filterstemporal.xml</extracomment>
-        <translation>关键时间</translation>
+        <translation>Critical Time</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42700"/>
         <source>Given an input that changes over time and a point/cell array, the **Critical Time** filter generates a new point/cell array containing time step values. These values correspond to the time at which a specified threshold criterion has been met for the selected input array, at each point/cell respectively. The name of this array is the same of the selected array with &apos;_critical_time&apos; appended at the end. Other point/cell arrays are discarded. This filter processes all available time steps. If the criterion is never met for a given point/cell, a NaN value is assigned. The output of this filter is not temporal.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterstemporal.xml - CriticalTime</extracomment>
-        <translation>鉴于一个随时间变化的输入和一个点/细胞阵列,**关键时间**过滤器会产生一个新的点/细胞阵列,包含时间步值. 这些值分别对应每个点/单元格中选定输入数组达到特定阈值标准的时间. 此数组的名称与所选数组的名称相同,末端附有“ 临界 时间”。 其他点/细胞阵列被丢弃. 此过滤处理所有可用的时间步骤 。 如果某一点/细胞从未达到标准,则指定一个NaN值。 此过滤器的输出不是时间性 。</translation>
+        <translation>鉴于一个随时间变化的输入和一个点/单元格阵列,**关键时间**过滤器会产生一个新的点/单元格阵列,包含时间步值. 这些值分别对应每个点/单元格中选定输入数组达到特定阈值标准的时间. 此数组的名称与所选数组的名称相同,末端附有“ 临界 时间”。 其他点/单元格阵列被丢弃. 此过滤处理所有可用的时间步骤 。 如果某一点/单元格从未达到标准,则指定一个NaN值。 此过滤器的输出不是时间性 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42703"/>
@@ -22720,13 +22720,13 @@ Real source: VTKExtensions/FiltersFlowPaths/Resources/flowpaths_filters.xml - Le
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42790"/>
         <source>Temporal Smoothing</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterstemporal.xml - Remoting/Application/Resources/filters_filterstemporal.xml</extracomment>
-        <translation>时间平滑</translation>
+        <translation>Temporal Smoothing</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42793"/>
         <source>Given an input that changes over time, Temporal Smoothing will provide an average of each point and cell data values over a temporal window centered on a requested time step. Because of this, the input&apos;s topology is assumed to not change over time, and so the number and order of its points and cells should stay the same. In order to provide comparable results for different time steps, the temporal window must be the same size. To enforce this the filter clips its input available time steps to allow the full window size to fit. If an out-of-bound time step is requested, the filter will use the closest available time step. Note that updating this filter will trigger upstream updates for each time steps of the window, which could be expensive.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterstemporal.xml - TemporalSmoothing</extracomment>
-        <translation>鉴于一个随时间而变化的输入,Tempolar Slipping将在一个以请求的时间步骤为中心的时间窗口上提供每个点和单元格数据值的平均值. 由于这个原因,输入的地形假设不会随时间变化,因此其积分和细胞的数量和顺序应该保持不变. 为了提供不同时间步骤的可比结果,时间窗口必须相同大小. 要执行此功能, 过滤器会剪辑其可用的输入时间步骤, 以适应整个窗口大小 。 如果请求一个出界时间步骤,过滤器将使用最接近可用的时间步骤. 请注意,更新此过滤器将触发窗口每个时间步骤的上游更新,费用可能很高.</translation>
+        <translation>鉴于一个随时间而变化的输入,Tempolar Slipping将在一个以请求的时间步骤为中心的时间窗口上提供每个点和单元格数据值的平均值. 由于这个原因,输入的地形假设不会随时间变化,因此其积分和单元格的数量和顺序应该保持不变. 为了提供不同时间步骤的可比结果,时间窗口必须相同大小. 要执行此功能, 过滤器会裁剪其可用的输入时间步骤, 以适应整个窗口大小 。 如果请求一个出界时间步骤,过滤器将使用最接近可用的时间步骤. 请注意,更新此过滤器将触发窗口每个时间步骤的上游更新,费用可能很高.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42796"/>
@@ -22762,7 +22762,7 @@ Real source: VTKExtensions/FiltersFlowPaths/Resources/flowpaths_filters.xml - Le
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43792"/>
         <source>Composite CellGrid Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iocellgrid.xml - Remoting/Application/Resources/readers_iocellgrid.xml</extracomment>
-        <translation>复合细胞Grid阅读器</translation>
+        <translation>Composite CellGrid Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43795"/>
@@ -22890,7 +22890,7 @@ Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="52387"/>
         <source>IOSS Cell-Grid Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioioss.xml - Remoting/Application/Resources/readers_ioioss.xml</extracomment>
-        <translation>IOSS 单元格图像阅读器</translation>
+        <translation>IOSS Cell-Grid Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="52390"/>
@@ -22908,7 +22908,7 @@ Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53317"/>
         <source>openPMD Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_openpmd.xml - Remoting/Application/Resources/readers_openpmd.xml</extracomment>
-        <translation>打开PMD 阅读器</translation>
+        <translation>openPMD Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53320"/>
@@ -23086,7 +23086,7 @@ Real source: Remoting/Views/Resources/utilities_remotingviews.xml - LegendGridAc
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11011"/>
         <source>Rectilinear Grid Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>直线网格代表</translation>
+        <translation>直线网格表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11014"/>
@@ -23233,7 +23233,7 @@ Real source: Remoting/Animation/Resources/animation.xml - SaveAnimation</extraco
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18727"/>
         <source>Proxy used to pick a point of a surface mesh.</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - PickingHelper</extracomment>
-        <translation>代用法用来选择表面网点.</translation>
+        <translation>代用法用来选择表面网格.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18730"/>
@@ -23251,7 +23251,7 @@ Real source: Remoting/Animation/Resources/animation.xml - SaveAnimation</extraco
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18736"/>
         <source>Snap On Mesh Point</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - PickingHelper</extracomment>
-        <translation>在网点上对齐</translation>
+        <translation>在网格上对齐</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18739"/>
@@ -23378,7 +23378,7 @@ Real source: Remoting/Animation/Resources/animation.xml - SaveAnimation</extraco
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18907"/>
         <source>Embed ParaView State</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - PNG</extracomment>
-        <translation>嵌入帕拉维尤状态</translation>
+        <translation>嵌入 ParaView 状态</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18910"/>
@@ -23535,7 +23535,7 @@ Real source: Remoting/Application/Resources/writers_iohdf.xml - VTKHDF</extracom
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - Remoting/Views/Resources/utilities_remotingviews.xml
 ----------
 Real source: Remoting/Animation/Resources/animation.xml - Remoting/Animation/Resources/animation.xml</extracomment>
-        <translation>简讯</translation>
+        <translation>JPEG</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18925"/>
@@ -23580,7 +23580,7 @@ Real source: Remoting/Animation/Resources/animation_oggtheora.xml - OggTheora</e
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - Remoting/Views/Resources/utilities_remotingviews.xml
 ----------
 Real source: Remoting/Animation/Resources/animation.xml - Remoting/Animation/Resources/animation.xml</extracomment>
-        <translation>临时</translation>
+        <translation>TIFF</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18946"/>
@@ -23610,7 +23610,7 @@ Real source: Remoting/Animation/Resources/animation_ffmpeg.xml - FFMPEG</extraco
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - Remoting/Views/Resources/utilities_remotingviews.xml
 ----------
 Real source: Remoting/Animation/Resources/animation.xml - Remoting/Animation/Resources/animation.xml</extracomment>
-        <translation>银行</translation>
+        <translation>BMP</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18961"/>
@@ -23622,7 +23622,7 @@ Real source: Remoting/Animation/Resources/animation.xml - Remoting/Animation/Res
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18967"/>
         <source>VTK</source>
         <extracomment>Real source: Remoting/Views/Resources/utilities_remotingviews.xml - Remoting/Views/Resources/utilities_remotingviews.xml</extracomment>
-        <translation>维塔克语Name</translation>
+        <translation>VTK</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="18970"/>
@@ -23793,7 +23793,7 @@ Real source: Remoting/Views/Resources/viewsinternal_remotingviews.xml - Comparat
 Real source: Remoting/Views/Resources/viewsinternal_remotingviews.xml - ComparativeViewBase
 ----------
 Real source: Remoting/Animation/Resources/writers_animation.xml - XMLPVAnimationWriter</extracomment>
-        <translation>代表</translation>
+        <translation>表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="19024"/>
@@ -23817,7 +23817,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeRende
 Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeXYChartView
 ----------
 Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeXYBarChartView</extracomment>
-        <translation>个人价格指数</translation>
+        <translation>PPI</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="19030"/>
@@ -25161,13 +25161,13 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeXYBar
 Real source: Remoting/Views/Resources/views_remotingviews.xml - RenderView
 ----------
 Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeRenderView</extracomment>
-        <translation>隐藏代表</translation>
+        <translation>隐藏表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="19675"/>
         <source>This property is meant for adding/removing representation secretly. e.g. 2D widgets etc. This property is not saved in states nor it recorded by undo-redo.</source>
         <extracomment>Real source: Remoting/Views/Resources/viewsinternal_remotingviews.xml - XYChartViewBase</extracomment>
-        <translation>这一财产是用来秘密增加/撤销代表。 例如2D部件等. 这种财产没有在州内保存,也没有通过撤销重写来记录.</translation>
+        <translation>这一财产是用来秘密增加/撤销表示。 例如2D部件等. 这种财产没有在州内保存,也没有通过撤销重写来记录.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="19678"/>
@@ -26492,7 +26492,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeRende
         <location filename="../build/translationSourcesparaview_server_manager.h" line="20575"/>
         <source>This property is meant for adding/removing representation secretly. e.g. 3D widgets etc. This property is not saved in states nor it recorded by undo-redo.</source>
         <extracomment>Real source: Remoting/Views/Resources/views_remotingviews.xml - RenderView</extracomment>
-        <translation>这一财产是用来秘密增加/撤销代表。 例如3D部件等. 这种财产没有在州内保存,也没有通过撤销重写来记录.</translation>
+        <translation>这一财产是用来秘密增加/撤销表示。 例如3D部件等. 这种财产没有在州内保存,也没有通过撤销重写来记录.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="20578"/>
@@ -26507,7 +26507,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeRende
         <location filename="../build/translationSourcesparaview_server_manager.h" line="20581"/>
         <source>This property is meant for adding/removing props secretly. e.g. 3D widgets etc. This property is not saved in states nor it recorded by undo-redo.</source>
         <extracomment>Real source: Remoting/Views/Resources/views_remotingviews.xml - RenderView</extracomment>
-        <translation>此属性意在暗中添加/移除道具. 例如3D部件等. 这种财产没有在州内保存,也没有通过撤销重写来记录.</translation>
+        <translation>此属性意在暗中添加/移除道具. 例如3D部件等. 这种属性没有在州内保存,也没有通过撤销重写来记录.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="20584"/>
@@ -26614,7 +26614,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeRende
         <location filename="../build/translationSourcesparaview_server_manager.h" line="20740"/>
         <source>Set the most conservative clipping range.</source>
         <extracomment>Real source: Remoting/Views/Resources/views_remotingviews.xml - RenderView</extracomment>
-        <translation>设定最保守的剪辑范围 。</translation>
+        <translation>设定最保守的裁剪范围 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="20743"/>
@@ -27620,7 +27620,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - ParallelCoordina
         <location filename="../build/translationSourcesparaview_server_manager.h" line="21637"/>
         <source>Generation of the cell connectivity.</source>
         <extracomment>Real source: Remoting/Views/Resources/views_remotingviews.xml - SpreadSheetView</extracomment>
-        <translation>生成细胞连接.</translation>
+        <translation>生成单元格连接.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="21640"/>
@@ -27726,7 +27726,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - DataLa
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - MoleculeRepresentation
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - PVMoleculeRepresentation</extracomment>
-        <translation>设定此代表的可见度 。</translation>
+        <translation>设定此表示的可见度 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7378"/>
@@ -27893,7 +27893,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Progre
 Real source: Remoting/ViewsPython/Resources/rendering_remotingpython.xml - PythonRepresentation
 ----------
 Real source: Remoting/ViewsPython/Resources/rendering_remotingpython.xml - PythonView</extracomment>
-        <translation>通常 UseCache 和 CacheKey 由 View 更新, 并基于视图所显示的内容进行表达式缓存 。 然而,在某些情况下,我们可能想迫使一个代表处缓存,而不论观点如何(例如比较观点)。 在这种情况下,这些Ivars可以设置。 如果强制CacheKey是真的,它会覆盖UseCache和缓存Key. 取而代之的是使用强制卡切Key.</translation>
+        <translation>通常 UseCache 和 CacheKey 由 View 更新, 并基于视图所显示的内容进行表达式缓存 。 然而,在某些情况下,我们可能想迫使一个表示处缓存,而不论观点如何(例如比较观点)。 在这种情况下,这些Ivars可以设置。 如果强制CacheKey是真的,它会覆盖UseCache和缓存Key. 取而代之的是使用强制卡切Key.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7384"/>
@@ -28010,7 +28010,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - PVMole
 Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - PVCellGridRepresentationBase
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - PVMoleculeRepresentation</extracomment>
-        <translation>列出可用代表类型的财产。 这被域名用于\"Representation\"以正确设置可用的类型列表.</translation>
+        <translation>列出可用表示类型的财产。 这被域名用于\"Representation\"以正确设置可用的类型列表.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="9160"/>
@@ -28617,7 +28617,7 @@ Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml 
         <location filename="../build/translationSourcesparaview_server_manager.h" line="9295"/>
         <source>Select Normal Array</source>
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - PVRepresentationBase</extracomment>
-        <translation>选择普通阵列</translation>
+        <translation>选择法向阵列</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="9298"/>
@@ -28695,7 +28695,7 @@ Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml 
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - PVRepresentationBase
 ----------
 Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - SurfaceRepresentationBase</extracomment>
-        <translation>普通纹理</translation>
+        <translation>法向纹理</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="9346"/>
@@ -28704,7 +28704,7 @@ Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml 
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - PVRepresentationBase
 ----------
 Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - SurfaceRepresentationBase</extracomment>
-        <translation>正常缩放</translation>
+        <translation>法向缩放</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="9349"/>
@@ -28713,7 +28713,7 @@ Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml 
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - PVRepresentationBase
 ----------
 Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - SurfaceRepresentationBase</extracomment>
-        <translation>服装普通纹理</translation>
+        <translation>服装法向纹理</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="9352"/>
@@ -28722,7 +28722,7 @@ Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml 
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - PVRepresentationBase
 ----------
 Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - SurfaceRepresentationBase</extracomment>
-        <translation>外套正常缩放</translation>
+        <translation>外套法向缩放</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="9355"/>
@@ -28845,7 +28845,7 @@ Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml 
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - PVRepresentationBase
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - SurfaceRepresentation</extracomment>
-        <translation>背面代表</translation>
+        <translation>背面表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="9388"/>
@@ -28989,7 +28989,7 @@ Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml 
 Real source: VTKExtensions/AMR/Resources/amr_filters.xml - AMRDualContour
 ----------
 Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>三边形</translation>
+        <translation>Triangulate</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="9436"/>
@@ -29119,7 +29119,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="9517"/>
         <source>Glyph Parameters</source>
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - PVRepresentationBase</extracomment>
-        <translation>格莱弗参数</translation>
+        <translation>字形参数</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="9520"/>
@@ -29268,7 +29268,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Glyph
 Real source: Remoting/Application/Resources/filters_filterscore.xml - TensorGlyph
 ----------
 Real source: Remoting/Application/Resources/sources_filterssources.xml - GlyphSource2D</extracomment>
-        <translation>格莱弗类型</translation>
+        <translation>字形类型</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="9553"/>
@@ -29277,7 +29277,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - GlyphSo
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - PVRepresentationBase
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - Glyph3DRepresentation</extracomment>
-        <translation>使用格言表</translation>
+        <translation>使用字形表</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="9556"/>
@@ -29936,7 +29936,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Geomet
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10822"/>
         <source>Unstructured Grid Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>无结构的网格代表</translation>
+        <translation>无结构的网格表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10825"/>
@@ -30005,7 +30005,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - AMRRep
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - UniformGridVolumeRepresentation
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - UnstructuredGridVolumeRepresentation</extracomment>
-        <translation>斯卡尔不透明单元距离</translation>
+        <translation>标量不透明单元距离</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10846"/>
@@ -30099,7 +30099,7 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Ad
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10864"/>
         <source>Cell Grid Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>单元格网格代表</translation>
+        <translation>单元格网格表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10867"/>
@@ -30111,7 +30111,7 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Ad
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10876"/>
         <source>Structured Grid Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>结构网格代表制</translation>
+        <translation>结构网格表示制</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10879"/>
@@ -30123,7 +30123,7 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Ad
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10906"/>
         <source>Uniform Grid Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>统一网格代表</translation>
+        <translation>统一网格表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10909"/>
@@ -30306,7 +30306,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Rectil
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - RectilinearGridRepresentation
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - UniformGridVolumeRepresentation</extracomment>
-        <translation>作物来源</translation>
+        <translation>裁剪原点</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10990"/>
@@ -30324,7 +30324,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Unifor
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10999"/>
         <source>Slice Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - UniformGridRepresentation</extracomment>
-        <translation>切片代表</translation>
+        <translation>切片表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11002"/>
@@ -30354,13 +30354,13 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - ImageS
 Real source: VTKExtensions/IOImage/Resources/writers_pv_ioimage.xml - JSONImageWriter
 ----------
 Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>切开</translation>
+        <translation>Slice</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11101"/>
         <source>AMR Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>AMR 代表权</translation>
+        <translation>AMR 表示权</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11104"/>
@@ -30399,26 +30399,26 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - AMRRep
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11140"/>
         <source>AMR Outline Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - AMRRepresentation</extracomment>
-        <translation>AMR 代表大纲</translation>
+        <translation>AMR 表示大纲</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11143"/>
         <source>Hyper Tree Grid Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>超树格代表</translation>
+        <translation>超树格表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11146"/>
         <source>Representation to show Hyper Tree Grids in the render view based on the Composite Representation.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - HyperTreeGridRepresentation</extracomment>
-        <translation>在渲染视图中显示基于复合代表的超树网格的代表。</translation>
+        <translation>在渲染视图中显示基于复合表示的超树网格的表示。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11155"/>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11236"/>
         <source>Fast Hyper Tree Grid Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>快超树网格代表</translation>
+        <translation>快超树网格表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11158"/>
@@ -30433,7 +30433,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - AMRRep
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - FastHyperTreeGridRepresentation
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>适应性十进制</translation>
+        <translation>适应性精简</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11170"/>
@@ -30550,13 +30550,13 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGr
 Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - AxisAlignedTransform
 ----------
 Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - RotationalExtrusionFilter</extracomment>
-        <translation>翻译</translation>
+        <translation>平移</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11233"/>
         <source>Extends standard HTG Representation by adding Fast2DHyperTreeGridRepresentation as a new type of representation.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>通过加入Fast2DHyperTreeGridRepresentation作为新型代表来扩展标准HTG代表.</translation>
+        <translation>通过加入Fast2DHyperTreeGridRepresentation作为新型表示来扩展标准HTG表示.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11239"/>
@@ -30568,13 +30568,13 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Rotati
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11245"/>
         <source>Structured Grid Volume Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>结构网格量代表</translation>
+        <translation>结构网格量表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11248"/>
         <source>Uniform Grid Volume Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>统一网格数量代表</translation>
+        <translation>统一网格数量表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11251"/>
@@ -30775,7 +30775,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Cut</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11494"/>
         <source>This property specifies the cropping origin.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - UniformGridVolumeRepresentation</extracomment>
-        <translation>该财产指定了种植来源。</translation>
+        <translation>该属性指定了种植来源。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11500"/>
@@ -30791,13 +30791,13 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Cut</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11986"/>
         <source>Surface LIC Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>地面LIC 代表</translation>
+        <translation>地面LIC 表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11515"/>
         <source>Representation proxy for Surface LIC.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - SurfaceLICRepresentation</extracomment>
-        <translation>Surface LLC的代理代表.</translation>
+        <translation>Surface LLC的代理表示.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11518"/>
@@ -30878,7 +30878,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoti
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - SurfaceLICRepresentation
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>向量正常化</translation>
+        <translation>向量法向化</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="11536"/>
@@ -31316,7 +31316,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - WarpVec
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12106"/>
         <source>Outline Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>代表性大纲</translation>
+        <translation>表示性大纲</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12109"/>
@@ -31328,7 +31328,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - WarpVec
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12112"/>
         <source>Feature Edges Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>特征边缘代表</translation>
+        <translation>特征边缘表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12115"/>
@@ -31340,7 +31340,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - WarpVec
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12118"/>
         <source>Point Gaussian Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>高斯山代表点</translation>
+        <translation>高斯山表示点</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12163"/>
@@ -31574,7 +31574,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12523"/>
         <source>Image Slice Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>图像切片代表</translation>
+        <translation>图像切片表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12526"/>
@@ -31631,7 +31631,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_writers.xml - PLYWriter</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12622"/>
         <source>Cell Grid Surface Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>细胞网格表面显示</translation>
+        <translation>单元格网格表面显示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12625"/>
@@ -31643,7 +31643,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_writers.xml - PLYWriter</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13012"/>
         <source>Surface Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>地面代表</translation>
+        <translation>地面表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10210"/>
@@ -31667,7 +31667,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Glyph3
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13039"/>
         <source>Glyph3D Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>Glyph3D 代表权</translation>
+        <translation>Glyph3D 表示权</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13054"/>
@@ -31842,7 +31842,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphW
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13171"/>
         <source>When true, culling pass and level of details are enabled. The culling pass detects points outside the frustum view and LOD displays decimated geometry based on the distance between the camera and the instance. This allows to render a higher number of glyphs at interactive rate. This feature works only with OpenGL driver &gt;= 4.0.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Glyph3DRepresentation</extracomment>
-        <translation>当属实时,会启用拼接的通过和详细程度. 弯曲的传球探测到frustum视图外的点,LOD则根据相机和实例之间的距离显示被毁灭的几何. 这样就可以以交互速率使格言数量更高. 此功能仅与 OpenGL 驱动程序 QQ 4. 0 工作.</translation>
+        <translation>当属实时,会启用拼接的通过和详细程度. 弯曲的传球探测到frustum视图外的点,LOD则根据相机和实例之间的距离显示被毁灭的几何. 这样就可以以交互速率使字形数量更高. 此功能仅与 OpenGL 驱动程序 QQ 4. 0 工作.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13183"/>
@@ -31869,7 +31869,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Ruler</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13195"/>
         <source>When true, each level of detail has its own color based on its index. It can be useful to correctly configure the levels of details.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Glyph3DRepresentation</extracomment>
-        <translation>当属实时,每个层次的细节都有基于其指数的自身颜色. 正确配置细节水平可能是有用的.</translation>
+        <translation>当属实时,每个层次的细节都有基于其索引的自身颜色. 正确配置细节水平可能是有用的.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13198"/>
@@ -31948,7 +31948,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Parall
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - BoxChartRepresentation
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - PlotMatrixRepresentationBase</extracomment>
-        <translation>甄选代表</translation>
+        <translation>甄选表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7372"/>
@@ -31969,7 +31969,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Select
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGridSurfaceRepresentation
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - SelectionRepresentation</extracomment>
-        <translation>获得/设定代表的知名度.</translation>
+        <translation>获得/设定表示的知名度.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10123"/>
@@ -32017,13 +32017,13 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Select
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13384"/>
         <source>Label Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - SelectionRepresentation</extracomment>
-        <translation>标签代表</translation>
+        <translation>标签表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7369"/>
         <source>Grid Axes Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/annotations_remotingviews.xml - Remoting/Views/Resources/annotations_remotingviews.xml</extracomment>
-        <translation>网格轴代表</translation>
+        <translation>网格轴表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7390"/>
@@ -32057,13 +32057,13 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Select
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - PVMoleculeRepresentation</extracomment>
-        <translation>分子代表制</translation>
+        <translation>分子表示制</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13525"/>
         <source>Representation for a vtkMolecule.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - MoleculeRepresentation</extracomment>
-        <translation>代表一个vtkMolecule。</translation>
+        <translation>表示一个vtkMolecule。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13531"/>
@@ -32142,13 +32142,13 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - PVMole
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - MoleculeRepresentation
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - PVMoleculeRepresentation</extracomment>
-        <translation>债券</translation>
+        <translation>键</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13594"/>
         <source>Set the visibility for the bonds.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - MoleculeRepresentation</extracomment>
-        <translation>设定债券的可见度 。</translation>
+        <translation>设定键的可见度 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13597"/>
@@ -32163,7 +32163,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - PVMole
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13600"/>
         <source>The bond radius, in Angstrom.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - MoleculeRepresentation</extracomment>
-        <translation>债券半径,在Angstrom。</translation>
+        <translation>键半径,在Angstrom。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13603"/>
@@ -32172,7 +32172,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - PVMole
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - MoleculeRepresentation
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - PVMoleculeRepresentation</extracomment>
-        <translation>债券的多气缸</translation>
+        <translation>键的多气缸</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13606"/>
@@ -32187,13 +32187,13 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - PVMole
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - MoleculeRepresentation
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - PVMoleculeRepresentation</extracomment>
-        <translation>债券颜色模式</translation>
+        <translation>键颜色模式</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13612"/>
         <source>Use atom color for bonds. If disabled, use the custom bond color.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - MoleculeRepresentation</extracomment>
-        <translation>将原子颜色用于债券 。 如果禁用,请使用自定义的债券颜色。</translation>
+        <translation>将原子颜色用于键 。 如果禁用,请使用自定义的键颜色。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13615"/>
@@ -32208,13 +32208,13 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - PVMole
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13618"/>
         <source>Sets the color for the bonds.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - MoleculeRepresentation</extracomment>
-        <translation>设置债券的颜色。</translation>
+        <translation>设置键的颜色。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13636"/>
         <source>PV Molecule Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>PV 分子代表</translation>
+        <translation>PV 分子表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13639"/>
@@ -32232,7 +32232,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - PVMole
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13738"/>
         <source>Representation to show text in Chart views</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - ChartTextRepresentation</extracomment>
-        <translation>在图视图中显示文本的代表</translation>
+        <translation>在图视图中显示文本的表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13744"/>
@@ -32307,7 +32307,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - PlotMa
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - SpreadSheetRepresentation
 ----------
 Real source: Remoting/ViewsPython/Resources/rendering_remotingpython.xml - PythonRepresentation</extracomment>
-        <translation>显显代表.</translation>
+        <translation>显显表示.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13765"/>
@@ -32353,7 +32353,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - TextSo
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - ChartTextRepresentation
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - ChartLogoRepresentation</extracomment>
-        <translation>文本框左下角以像素表示的正常位置。</translation>
+        <translation>文本框左下角以像素表示的法向位置。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13795"/>
@@ -32389,7 +32389,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - TextSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13849"/>
         <source>Representation used by ImageChartView.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - ImageChartRepresentation</extracomment>
-        <translation>(原始内容存档于2018-09-25). ImageChartView使用的代表作.</translation>
+        <translation>(原始内容存档于2018-09-25). ImageChartView使用的表示作.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13948"/>
@@ -32435,7 +32435,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - LogoSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="14029"/>
         <source>XY Chart Representation Base</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>XY 图表代表基础</translation>
+        <translation>XY 图表表示基础</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="14032"/>
@@ -32755,13 +32755,13 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - PlotMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="14404"/>
         <source>Parallel Coordinates Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>平行坐标代表</translation>
+        <translation>平行坐标表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="14407"/>
         <source>Representation used by ParallelCoordinatesChartView.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - ParallelCoordinatesRepresentation</extracomment>
-        <translation>《平行协调图》使用的代表性。</translation>
+        <translation>《平行协调图》使用的表示性。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="14518"/>
@@ -32864,7 +32864,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - XYBarC
         <location filename="../build/translationSourcesparaview_server_manager.h" line="14569"/>
         <source>Representation used by BoxChartView.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - BoxChartRepresentation</extracomment>
-        <translation>BoxChartView使用的代表作.</translation>
+        <translation>BoxChartView使用的表示作.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="14680"/>
@@ -32907,7 +32907,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeXYBar
         <location filename="../build/translationSourcesparaview_server_manager.h" line="14905"/>
         <source>Representation used by PlotMatrixView.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - PlotMatrixRepresentation</extracomment>
-        <translation>PlotMatrixView使用的代表作.</translation>
+        <translation>PlotMatrixView使用的表示作.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="14827"/>
@@ -33006,7 +33006,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - ComparativeXYBar
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - XYChartRepresentation
 ----------
 Real source: Remoting/Views/Resources/representations_remotingviews.xml - XYPointChartRepresentation</extracomment>
-        <translation>XY ChartView使用的代表作.</translation>
+        <translation>XY ChartView使用的表示作.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="14956"/>
@@ -33182,7 +33182,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - XYPoin
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15244"/>
         <source>Representation used by XYBarChartView.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - XYBarChartRepresentation</extracomment>
-        <translation>XYBar ChartView使用的代表作.</translation>
+        <translation>XYBar ChartView使用的表示作.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15265"/>
@@ -33207,7 +33207,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - XYPoin
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15325"/>
         <source>Internal property. Please don&apos;t touch this.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - SpreadSheetRepresentation</extracomment>
-        <translation>内部财产。 请不要碰这个。</translation>
+        <translation>内部属性。 请不要碰这个。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15328"/>
@@ -33267,7 +33267,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - XYPoin
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15502"/>
         <source>Representation proxy used to show a ruler.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - RulerSourceRepresentation</extracomment>
-        <translation>代表代理用于显示标尺.</translation>
+        <translation>表示代理用于显示标尺.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15523"/>
@@ -33363,7 +33363,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Protra
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15619"/>
         <source>Representation proxy used to show an angle. The angle is defined by 3 points and the representation shows 2 lines as well as the angle value formed by these 2 lines as a label.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - ProtractorRepresentation</extracomment>
-        <translation>代表代理用于显示一个角度. 角度由3点定义,表示式显示2行以及这两行作为标签形成的角度值.</translation>
+        <translation>表示代理用于显示一个角度. 角度由3点定义,表示式显示2行以及这两行作为标签形成的角度值.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15640"/>
@@ -33405,7 +33405,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Protra
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15697"/>
         <source>Representation proxy used to show ProgressBar.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - ProgressBarSourceRepresentation</extracomment>
-        <translation>代表代理用于显示进步列.</translation>
+        <translation>表示代理用于显示进步列.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15724"/>
@@ -33417,13 +33417,13 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Protra
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15751"/>
         <source>Logo Source Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>数据源代表</translation>
+        <translation>数据源表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15754"/>
         <source>Representation proxy used to show a Logo.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - LogoSourceRepresentation</extracomment>
-        <translation>代表代理用于显示一个 Logo 。</translation>
+        <translation>表示代理用于显示一个 Logo 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15760"/>
@@ -33472,7 +33472,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Protra
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15823"/>
         <source>Representation for a frustum</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - FrustumWidget</extracomment>
-        <translation>基金会代表</translation>
+        <translation>基金会表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15829"/>
@@ -33514,7 +33514,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Compos
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15859"/>
         <source>Composite Multi Slice Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>复合多切片代表</translation>
+        <translation>复合多切片表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15865"/>
@@ -33550,19 +33550,19 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - Compos
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7678"/>
         <source>Polar Axes Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/annotations_remotingviews.xml - Remoting/Views/Resources/annotations_remotingviews.xml</extracomment>
-        <translation>极轴代表</translation>
+        <translation>极轴表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7681"/>
         <source>PolarAxesRepresentation is a representation of Polar axes on any kind of dataset.</source>
         <extracomment>Real source: Remoting/Views/Resources/annotations_remotingviews.xml - PolarAxesRepresentation</extracomment>
-        <translation>极地轴代表(PolarAxes Representation)是极地轴在任何类型的数据集上的表示.</translation>
+        <translation>极地轴表示(PolarAxes Representation)是极地轴在任何类型的数据集上的表示.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7693"/>
         <source>Set the visibility of the representation.</source>
         <extracomment>Real source: Remoting/Views/Resources/annotations_remotingviews.xml - PolarAxesRepresentation</extracomment>
-        <translation>设定代表的知名度.</translation>
+        <translation>设定表示的知名度.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7771"/>
@@ -34378,7 +34378,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Ellipse
         <location filename="../build/translationSourcesparaview_server_manager.h" line="8536"/>
         <source>View Angle LOD Threshold</source>
         <extracomment>Real source: Remoting/Views/Resources/annotations_remotingviews.xml - PolarAxesRepresentation</extracomment>
-        <translation>查看角度 LOD 阈值</translation>
+        <translation>视角 LOD 阈值</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="8515"/>
@@ -34874,7 +34874,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10261"/>
         <source>Options for normalizing the point coordinates. The points are sent to the GPU as float data which can result in resolution issues due to the limited precision of float. VTK includes a variety of methods to normalize the point coordinates prior to sending them to the GPU. Auto shift scale is a good setting that should work for most datasets. Focal point shift scale works based on the current camera viewpoint which makes it the most robust setting but it will renormalize the data occasionally as the camera&apos;s settings change which requires reuploading the data to the GPU so there may be a performance cost.</source>
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - SurfaceRepresentationBase</extracomment>
-        <translation>点坐标正常化的选项 。 这些点作为浮点数据发送到GPU,由于浮点精度有限,可以导致解答问题. VTK包括多种方法,在将点坐标发送到GPU前使点坐标正常化. 自动移位尺度是一个很好的设置,应该对大多数数据集有效. 焦点移位尺度工作基于当前相机视角,这使得它成为最稳健的设置,但随着相机设置的改变,它偶尔会使数据重新正常化,这需要将数据重新加载到GPU,这样可能会产生性能成本.</translation>
+        <translation>点坐标法向化的选项 。 这些点作为浮点数据发送到GPU,由于浮点精度有限,可以导致解答问题. VTK包括多种方法,在将点坐标发送到GPU前使点坐标法向化. 自动移位尺度是一个很好的设置,应该对大多数数据集有效. 焦点移位尺度工作基于当前相机视角,这使得它成为最稳健的设置,但随着相机设置的改变,它偶尔会使数据重新法向化,这需要将数据重新加载到GPU,这样可能会产生性能成本.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10264"/>
@@ -34892,13 +34892,13 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10273"/>
         <source>Normal Array</source>
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - SurfaceRepresentationBase</extracomment>
-        <translation>普通阵列</translation>
+        <translation>法向阵列</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10276"/>
         <source>Set the normal array used for smooth shading.</source>
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - SurfaceRepresentationBase</extracomment>
-        <translation>设定用于平滑阴影的普通阵列 。</translation>
+        <translation>设定用于平滑阴影的法向阵列 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10282"/>
@@ -34910,7 +34910,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10285"/>
         <source>Set the tangent coordinates array used for normal mapping.</source>
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - SurfaceRepresentationBase</extracomment>
-        <translation>设置用于普通绘图的正切坐标数组 。</translation>
+        <translation>设置用于法向绘图的正切坐标数组 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10309"/>
@@ -34934,7 +34934,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10327"/>
         <source>Set the index of refraction of the base layer.</source>
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - SurfaceRepresentationBase</extracomment>
-        <translation>设置基层折射指数。</translation>
+        <translation>设置基层折射索引。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10333"/>
@@ -34988,7 +34988,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10387"/>
         <source>Should mipmaps be used for textures. Mipmaps are espcially useful when working with large detailed textures or situations where you might be viewing a texture map from far away.</source>
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - SurfaceRepresentationBase</extracomment>
-        <translation>应使用缩写来表达纹理 。 在处理大细纹理时,或者在您可能从远处查看纹理图的情况下,Mipmaps非常有用。</translation>
+        <translation>应使用Mipmap来表达纹理 。 在处理大细纹理时,或者在您可能从远处查看纹理图的情况下,Mipmaps非常有用。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10393"/>
@@ -35024,25 +35024,25 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10423"/>
         <source>Set the normal mapping texture.</source>
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - SurfaceRepresentationBase</extracomment>
-        <translation>设置正常的映射纹理 。</translation>
+        <translation>设置法向的映射纹理 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10429"/>
         <source>Set the scale of normal mapping deviation.</source>
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - SurfaceRepresentationBase</extracomment>
-        <translation>设定正常映射偏差的规模 。</translation>
+        <translation>设定法向映射偏差的规模 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10435"/>
         <source>Set the coat normal mapping texture.</source>
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - SurfaceRepresentationBase</extracomment>
-        <translation>设置外衣正常的映射纹理 。</translation>
+        <translation>设置外衣法向的映射纹理 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10441"/>
         <source>Set the scale of coat normal mapping deviation.</source>
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - SurfaceRepresentationBase</extracomment>
-        <translation>设定外衣正常映射偏差的尺度 。</translation>
+        <translation>设定外衣法向映射偏差的尺度 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10447"/>
@@ -35188,7 +35188,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="22663"/>
         <source>Python Representation</source>
         <extracomment>Real source: Remoting/ViewsPython/Resources/rendering_remotingpython.xml - Remoting/ViewsPython/Resources/rendering_remotingpython.xml</extracomment>
-        <translation>Python 代表机构</translation>
+        <translation>Python 表示机构</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="22687"/>
@@ -35298,7 +35298,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PlaneSo
 Real source: VTKExtensions/Points/Resources/points.xml - BoundedVolumeSource
 ----------
 Real source: Remoting/Application/Resources/filters_filtersparallelverdict.xml - Remoting/Application/Resources/filters_filtersparallelverdict.xml</extracomment>
-        <translation>单元格大小</translation>
+        <translation>Cell Size</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="22744"/>
@@ -35313,13 +35313,13 @@ Real source: VTKExtensions/Points/Resources/points.xml - BoundedVolumeSource</ex
         <location filename="../build/translationSourcesparaview_server_manager.h" line="22750"/>
         <source>Specify the center of the plane. Works in conjunction with the plane normal to position the plane. Don&apos;t use this method to define the plane. Instead, use it to move the plane to a new center point.</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - BoundedPlaneSource</extracomment>
-        <translation>指定平面的中心。 配合平面正常进行定位. 不要用这种方法来定义飞机. 相反,用它来将飞机移动到一个新的中心点.</translation>
+        <translation>指定平面的中心。 配合平面法向进行定位. 不要用这种方法来定义飞机. 相反,用它来将飞机移动到一个新的中心点.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="22759"/>
         <source>Specify the plane normal. Works in conjunction with the plane center to orient the plane. Don&apos;t use this method to define the plane. Instead, use it to rotate the plane around the current center point.</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - BoundedPlaneSource</extracomment>
-        <translation>指定平面正常。 与飞机中心配合,为飞机定位. 不要用这种方法来定义飞机. 相反,用它来围绕目前的中心点旋转平面.</translation>
+        <translation>指定平面法向。 与飞机中心配合,为飞机定位. 不要用这种方法来定义飞机. 相反,用它来围绕目前的中心点旋转平面.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="22765"/>
@@ -35337,7 +35337,7 @@ Real source: VTKExtensions/Points/Resources/points.xml - BoundedVolumeSource</ex
         <location filename="../build/translationSourcesparaview_server_manager.h" line="22801"/>
         <source>Set the origin for the volume.</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - BoundedVolumeSource</extracomment>
-        <translation>设置音量的来源 。</translation>
+        <translation>设置音量的原点 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="22810"/>
@@ -35374,13 +35374,13 @@ Real source: VTKExtensions/Points/Resources/points.xml - BoundedVolumeSource</ex
         <location filename="../build/translationSourcesparaview_server_manager.h" line="22864"/>
         <source>This is an interpolation kernel that returns the weights for all points found in the ellipsoid defined by radius R in combination with local data (normals and/or scalars).</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - EllipsoidalGaussianKernel</extracomment>
-        <translation>这是一个内核内插,它返回半径R定义的椭圆形中所有点的权重,结合局部数据(正常和/或scalars).</translation>
+        <translation>这是一个内核内插,它返回半径R定义的椭圆形中所有点的权重,结合局部数据(法向和/或scalars).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="22867"/>
         <source>Use Normals</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - EllipsoidalGaussianKernel</extracomment>
-        <translation>使用常规</translation>
+        <translation>使用法向</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="22870"/>
@@ -35392,7 +35392,7 @@ Real source: VTKExtensions/Points/Resources/points.xml - BoundedVolumeSource</ex
         <location filename="../build/translationSourcesparaview_server_manager.h" line="22873"/>
         <source>Use Scalars</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - EllipsoidalGaussianKernel</extracomment>
-        <translation>使用斯卡尔</translation>
+        <translation>使用标量</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="22876"/>
@@ -35434,7 +35434,7 @@ Real source: VTKExtensions/Points/Resources/points.xml - GaussianKernel</extraco
         <location filename="../build/translationSourcesparaview_server_manager.h" line="22894"/>
         <source>Specify the eccentricity of the ellipsoidal Gaussian. A value=1.0 produces a spherical distribution. Values less than 1 produce a needle like distribution (in the direction of the normal); values greater than 1 produce a pancake like distribution (orthogonal to the normal).</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - EllipsoidalGaussianKernel</extracomment>
-        <translation>指定椭圆高斯的偏心性。 A值=1.0产生球状分布. 小于1的值产生像分布的针头(在正常方向);大于1的值产生像分布的煎饼(正对正常).</translation>
+        <translation>指定椭圆高斯的偏心性。 A值=1.0产生球状分布. 小于1的值产生像分布的针头(在法向方向);大于1的值产生像分布的煎饼(正对法向).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="22897"/>
@@ -35642,13 +35642,13 @@ Real source: VTKExtensions/Points/Resources/points.xml - SPHWendlandQuinticKerne
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23029"/>
         <source>Extract Enclosed Points</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - VTKExtensions/Points/Resources/points.xml</extracomment>
-        <translation>提取封装点</translation>
+        <translation>Extract Enclosed Points</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23032"/>
         <source>Evaluates all points in the input dataset to determine whether they are contained within an enclosing surface, defined by the **Surface**. The filter assumes that the surface is closed and manifold. To force a check to ensure these preconditions are met set the **CheckSurface** property.</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - ExtractEnclosedPoints</extracomment>
-        <translation>评估输入数据集中的所有点,以确定它们是否包含在**Surface**定义的附着面中。 滤波器假设表面是封闭的和多面的. 为了强制检查以确保这些先决条件得到满足,设置了**CheckSurface**财产。</translation>
+        <translation>评估输入数据集中的所有点,以确定它们是否包含在**Surface**定义的附着面中。 滤波器假设表面是封闭的和多面的. 为了强制检查以确保这些先决条件得到满足,设置了**CheckSurface**属性。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23035"/>
@@ -35678,7 +35678,7 @@ Real source: VTKExtensions/Points/Resources/points.xml - SPHWendlandQuinticKerne
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23056"/>
         <source>Specify the tolerance on the intersection. The tolerance is expressed as a fraction of the diagonal of the bounding box of the enclosing surface.</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - ExtractEnclosedPoints</extracomment>
-        <translation>指定十字路口的容忍度。 容忍度表示为附着面的边框对角的一小部分。</translation>
+        <translation>指定十字路口的容差度。 容差度表示为附着面的边框对角的一小部分。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23059"/>
@@ -35717,13 +35717,13 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - MaskPo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23074"/>
         <source>If checked, then the outputs will contain a poly-vertex cell. This takes a lot more memory, however certain filters many requires cells to be present to function properly.</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - ExtractEnclosedPoints</extracomment>
-        <translation>如果选中的话, 输出将包含一个多顶点单元格 。 这需要更多的内存,尽管某些过滤器需要很多细胞才能正常运行.</translation>
+        <translation>如果选中的话, 输出将包含一个多顶点单元格 。 这需要更多的内存,尽管某些过滤器需要很多单元格才能正常运行.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23077"/>
         <source>SPH Interpolator</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - VTKExtensions/Points/Resources/points.xml</extracomment>
-        <translation>SPH 内奸者</translation>
+        <translation>SPH Interpolator</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23080"/>
@@ -36012,7 +36012,7 @@ Real source: Remoting/Application/Resources/utilities.xml - Remoting/Application
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23200"/>
         <source>SPH Line Interpolator</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - VTKExtensions/Points/Resources/points.xml</extracomment>
-        <translation>SPH 线内插器</translation>
+        <translation>SPH Line Interpolator</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23203"/>
@@ -36063,7 +36063,7 @@ Real source: VTKExtensions/Points/Resources/points.xml - PointDatasetInterpolato
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23215"/>
         <source>SPH Plane Interpolator</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - VTKExtensions/Points/Resources/points.xml</extracomment>
-        <translation>SPH 计划</translation>
+        <translation>SPH Plane Interpolator</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23218"/>
@@ -36084,7 +36084,7 @@ Real source: VTKExtensions/Points/Resources/points.xml - PointPlaneInterpolator<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23230"/>
         <source>SPH Volume Interpolator</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - VTKExtensions/Points/Resources/points.xml</extracomment>
-        <translation>SPH 卷内插器</translation>
+        <translation>SPH Volume Interpolator</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23233"/>
@@ -36108,7 +36108,7 @@ Real source: VTKExtensions/Points/Resources/points.xml - PointVolumeInterpolator
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23245"/>
         <source>SPH Dataset Interpolator</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - VTKExtensions/Points/Resources/points.xml</extracomment>
-        <translation>SPH 数据集内存器</translation>
+        <translation>SPH Dataset Interpolator</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23257"/>
@@ -36126,7 +36126,7 @@ Real source: VTKExtensions/Points/Resources/points.xml - PointVolumeInterpolator
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23266"/>
         <source>Point Interpolator</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - VTKExtensions/Points/Resources/points.xml</extracomment>
-        <translation>点内插器</translation>
+        <translation>Point Interpolator</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23269"/>
@@ -36162,25 +36162,25 @@ Real source: VTKExtensions/Points/Resources/points.xml - PointDatasetInterpolato
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23329"/>
         <source>Point Line Interpolator</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - VTKExtensions/Points/Resources/points.xml</extracomment>
-        <translation>点线内插符</translation>
+        <translation>Point Line Interpolator</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23344"/>
         <source>Point Plane Interpolator</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - VTKExtensions/Points/Resources/points.xml</extracomment>
-        <translation>喷射器</translation>
+        <translation>Point Plane Interpolator</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23359"/>
         <source>Point Volume Interpolator</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - VTKExtensions/Points/Resources/points.xml</extracomment>
-        <translation>积分内插符</translation>
+        <translation>Point Volume Interpolator</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23374"/>
         <source>Point Dataset Interpolator</source>
         <extracomment>Real source: VTKExtensions/Points/Resources/points.xml - VTKExtensions/Points/Resources/points.xml</extracomment>
-        <translation>点数据集内插器</translation>
+        <translation>Point Dataset Interpolator</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23389"/>
@@ -36325,7 +36325,7 @@ Real source: VTKExtensions/IOCore/Resources/writers_pv_iocore.xml - StringWriter
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23440"/>
         <source>PVD Reader</source>
         <extracomment>Real source: VTKExtensions/IOCore/Resources/readers_pv_iocore.xml - VTKExtensions/IOCore/Resources/readers_pv_iocore.xml</extracomment>
-        <translation>PVD 阅读器</translation>
+        <translation>PVD Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23443"/>
@@ -36797,7 +36797,7 @@ Real source: Remoting/Application/Resources/writers_ioxml.xml - VTH</extracommen
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23557"/>
         <source>The compression algorithm used to compress binary data (appended mode only). None offers fastest write, LZ4 offers the fastest compressed write, ZLib offers balanced performance, LZMA offers smallest compressed filesize.</source>
         <extracomment>Real source: VTKExtensions/IOCore/Resources/writers_pv_iocore.xml - XMLPVDWriter</extracomment>
-        <translation>用于压缩二进制数据的压缩算法(仅应用模式). 无提供最快的写法,LZ4提供最快的压缩写法,ZLib提供平衡性能,LZMA提供最小的压缩文件化.</translation>
+        <translation>用于压缩二进制数据的压缩算法(仅应用模式). 无提供最快的写法,LZ4提供最快的压缩写法,ZLib提供平衡性能,LZMA提供最小的压缩文件大小.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23563"/>
@@ -36809,7 +36809,7 @@ Real source: Remoting/Application/Resources/writers_ioxml.xml - VTH</extracommen
 Real source: Remoting/Application/Resources/writers_ioxml.xml - XMLDataObjectWriterCore
 ----------
 Real source: Remoting/Application/Resources/writers_ioxml.xml - HyperTreeGridWriter</extracomment>
-        <translation>一个压缩性能参数从1(较快/更大的压缩文件ize)到9(较慢/较小的压缩文件ize).</translation>
+        <translation>一个压缩性能参数从1(较快/更大的压缩文件大小)到9(较慢/较小的压缩文件大小).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23566"/>
@@ -37209,7 +37209,7 @@ Real source: VTKExtensions/IOCore/Resources/writers_pv_iocore.xml - CSV</extraco
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23743"/>
         <source>CSV</source>
         <extracomment>Real source: VTKExtensions/IOCore/Resources/writers_pv_iocore.xml - VTKExtensions/IOCore/Resources/writers_pv_iocore.xml</extracomment>
-        <translation>简历</translation>
+        <translation>CSV</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23746"/>
@@ -37311,7 +37311,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12952"/>
         <source>Cell Grid Surface With Edges Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>带有边缘代表的单元格网格表面</translation>
+        <translation>带有边缘表示的单元格网格表面</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12955"/>
@@ -37329,13 +37329,13 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12964"/>
         <source>Cell Grid Surface With Edges And Vertices Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>带有边缘和Vertices代表的细胞网格表面</translation>
+        <translation>带有边缘和Vertices表示的单元格网格表面</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12967"/>
         <source>Representation to show surfaces, edges, and vertices of a cell-grid in a 3D render view.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGridSurfaceWithEdgesAndVerticesRepresentation</extracomment>
-        <translation>在3D渲染视图中显示细胞网的表面、边缘和顶点。</translation>
+        <translation>在3D渲染视图中显示单元格网的表面、边缘和顶点。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12973"/>
@@ -37347,7 +37347,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12976"/>
         <source>Cell Grid All Edges Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>单元格网格全部边缘代表</translation>
+        <translation>单元格网格全部边缘表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12979"/>
@@ -37359,7 +37359,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12985"/>
         <source>Fixed to EdgesOfInputs for this representation.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGridAllEdgesRepresentation</extracomment>
-        <translation>固定到边际输入 用于此代表。</translation>
+        <translation>固定到边际输入 用于此表示。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="12991"/>
@@ -37383,7 +37383,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13003"/>
         <source>Fixed to VerticesOfInputs for this representation.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - CellGridAllCornersRepresentation</extracomment>
-        <translation>固定为 VerticesOf Informes 用于这一代表。</translation>
+        <translation>固定为 VerticesOf Informes 用于这一表示。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13009"/>
@@ -37482,7 +37482,7 @@ Real source: Remoting/Views/Resources/views_remotingviews.xml - RenderView</extr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23806"/>
         <source>Spy Plot Reader</source>
         <extracomment>Real source: VTKExtensions/IOSPCTH/Resources/readers_pv_iospcth.xml - VTKExtensions/IOSPCTH/Resources/readers_pv_iospcth.xml</extracomment>
-        <translation>间谍绘图阅读器</translation>
+        <translation>Spy Plot Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23809"/>
@@ -37641,7 +37641,7 @@ Real source: VTKExtensions/IOSPCTH/Resources/readers_pv_iospcth.xml - SPCTHResta
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23896"/>
         <source>Restarted Sim Spy Plot Reader</source>
         <extracomment>Real source: VTKExtensions/IOSPCTH/Resources/readers_pv_iospcth.xml - VTKExtensions/IOSPCTH/Resources/readers_pv_iospcth.xml</extracomment>
-        <translation>重新启动 Sim Spy 绘图阅读器</translation>
+        <translation>Restarted Sim Spy Plot Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23899"/>
@@ -37698,13 +37698,13 @@ Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusResta
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23953"/>
         <source>spcth history reader</source>
         <extracomment>Real source: VTKExtensions/IOSPCTH/Resources/readers_pv_iospcth.xml - VTKExtensions/IOSPCTH/Resources/readers_pv_iospcth.xml</extracomment>
-        <translation>spcth 历史阅读器</translation>
+        <translation>spcth history reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23959"/>
         <source>Reads an spcth history file where each row translates into a single time step and the columns are points, materials and properties.</source>
         <extracomment>Real source: VTKExtensions/IOSPCTH/Resources/readers_pv_iospcth.xml - spcthhistoryreader</extracomment>
-        <translation>读取一个 spcth 历史文件,其中每行翻译为单个时间步,列为点,材料和属性.</translation>
+        <translation>读取一个 spcth 历史文件,其中每行对应为单个时间步,列为点,材料和属性.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23962"/>
@@ -37737,7 +37737,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - vrmlreader<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23977"/>
         <source>Delimeter</source>
         <extracomment>Real source: VTKExtensions/IOSPCTH/Resources/readers_pv_iospcth.xml - spcthhistoryreader</extracomment>
-        <translation>缩略语</translation>
+        <translation>分隔符</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="23980"/>
@@ -37815,7 +37815,7 @@ Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - PNGReader
 Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - ImageReader
 ----------
 Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - PNGSeriesReader</extracomment>
-        <translation>数据来源</translation>
+        <translation>数据原点</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24016"/>
@@ -38062,7 +38062,7 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - ParticleRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24475"/>
         <source>TIFF Reader</source>
         <extracomment>Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml</extracomment>
-        <translation>TIFF 读取器</translation>
+        <translation>TIFF Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24130"/>
@@ -38180,7 +38180,7 @@ Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - TIFFSeries
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24706"/>
         <source>HDR Reader</source>
         <extracomment>Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml</extracomment>
-        <translation>HDR 阅读器</translation>
+        <translation>HDR Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24184"/>
@@ -38210,7 +38210,7 @@ Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - TIFFSeries
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24205"/>
         <source>Image Reader</source>
         <extracomment>Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml</extracomment>
-        <translation>图像阅读器</translation>
+        <translation>Image Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24208"/>
@@ -38372,7 +38372,7 @@ Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - TIFFSeries
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24277"/>
         <source>OME TIFF Reader</source>
         <extracomment>Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml</extracomment>
-        <translation>OME TIFF 阅读器</translation>
+        <translation>OME TIFF Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24280"/>
@@ -38415,13 +38415,13 @@ Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - TIFFSeries
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24325"/>
         <source>PNG Series Reader</source>
         <extracomment>Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml</extracomment>
-        <translation>PNG 系列阅读器</translation>
+        <translation>PNG Series Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24370"/>
         <source>JPEG Series Reader</source>
         <extracomment>Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml</extracomment>
-        <translation>JPEG 系列阅读器</translation>
+        <translation>JPEG Series Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24373"/>
@@ -38445,7 +38445,7 @@ Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - TIFFSeries
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24406"/>
         <source>MRC Series Reader</source>
         <extracomment>Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml</extracomment>
-        <translation>MRC 系列阅读器</translation>
+        <translation>MRC Series Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24409"/>
@@ -38469,7 +38469,7 @@ Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - TIFFSeries
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24433"/>
         <source>TIFF Series Reader</source>
         <extracomment>Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml</extracomment>
-        <translation>TIFF 系列阅读器</translation>
+        <translation>TIFF Series Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24436"/>
@@ -38493,7 +38493,7 @@ Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - TIFFSeries
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24493"/>
         <source>Meta File Series Reader</source>
         <extracomment>Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml</extracomment>
-        <translation>Meta 文件系列阅读器</translation>
+        <translation>Meta File Series Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24496"/>
@@ -38523,7 +38523,7 @@ Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - TIFFSeries
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24523"/>
         <source>DEM Reader</source>
         <extracomment>Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml</extracomment>
-        <translation>DEM 阅读器</translation>
+        <translation>DEM Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24526"/>
@@ -38553,7 +38553,7 @@ Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - TIFFSeries
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24541"/>
         <source>Nrrd Reader</source>
         <extracomment>Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml</extracomment>
-        <translation>Nrrd 阅读器</translation>
+        <translation>Nrrd Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24544"/>
@@ -38598,7 +38598,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - Unstructure
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24565"/>
         <source>DICOM Reader (Single File)</source>
         <extracomment>Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml</extracomment>
-        <translation>DICOM 阅读器( 单个文件)</translation>
+        <translation>DICOM Reader (Single File)</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24568"/>
@@ -38628,7 +38628,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - Unstructure
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24583"/>
         <source>DICOM Reader (directory)</source>
         <extracomment>Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml</extracomment>
-        <translation>DICOM 阅读器(指南)</translation>
+        <translation>DICOM Reader (directory)</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24586"/>
@@ -38658,7 +38658,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - Unstructure
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24601"/>
         <source>SEP Reader</source>
         <extracomment>Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml</extracomment>
-        <translation>SEP 阅读器</translation>
+        <translation>SEP Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24607"/>
@@ -39024,7 +39024,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Generic
 Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - RibbonFilter
 ----------
 Real source: Remoting/Application/Resources/filters_filterstemporal.xml - CriticalTime</extracomment>
-        <translation>斯卡尔</translation>
+        <translation>标量</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24790"/>
@@ -39117,7 +39117,7 @@ Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusResta
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24862"/>
         <source>Some simulations overload the Exodus time steps to represent mode shapes. In this case, it does not make sense to iterate over the \&quot;time steps\&quot;, because they are not meant to be played in order. Rather, each represents the vibration at a different \&quot;mode.\&quot; Setting the value of this property to 1 changes the semantics of the reader to not report the time steps to downstream filters.</source>
         <extracomment>Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusIIReaderCore</extracomment>
-        <translation>一些模拟超载了Exodus时间步骤来表示模式形状. 在这种情况下,在\"时间步骤\"上推移是没有道理的,因为这些步骤并不是要按顺序演奏的. 换句话说,每个都代表不同模式的振动 设置此属性的值为 1 , 将读取器的语义更改为不报告下游过滤的时间步骤 。</translation>
+        <translation>一些模拟超载了Exodus时间步骤来表示模式形状. 在这种情况下,在\"时间步骤\"上推移是没有道理的,因为这些步骤并不是要按顺序演奏的. 换句话说,每个都表示不同模式的振动 设置此属性的值为 1 , 将读取器的语义更改为不报告下游过滤的时间步骤 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24865"/>
@@ -39191,7 +39191,7 @@ Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusIIRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24889"/>
         <source>If on, the reader will ignore the time value reported at each time step, using the index of the time step as the time value. This is useful for Exodus files where different time steps are overloaded to represent different aspects of a data set rather than the data set at different time values.</source>
         <extracomment>Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusIIReaderCore</extracomment>
-        <translation>如果继续使用,读者会忽略每个时段报告的时间值,使用时段的索引作为时间值. 这对于Exodus文件很有用,因为不同的时间步骤超载来代表数据集的不同方面,而不是不同时间值的数据集.</translation>
+        <translation>如果继续使用,读者会忽略每个时段报告的时间值,使用时段的索引作为时间值. 这对于Exodus文件很有用,因为不同的时间步骤超载来表示数据集的不同方面,而不是不同时间值的数据集.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24892"/>
@@ -39309,7 +39309,7 @@ Real source: Remoting/Application/Resources/writers_ioioss.xml - IOSSWriter</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24925"/>
         <source>Use this property to select which blocks of elements (cells) should be loaded. All elements (cells) in the same block will have the same interpolant (tetrahedral, triangular, trilinear hexahedral, etc.) and have the same variables defined over them.</source>
         <extracomment>Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusIIReaderCore</extracomment>
-        <translation>使用此属性选择要加载哪些元素( 单元格) 块 。 同一区块中的所有元素(细胞)将具有相同的内插(三角形,三角形,三线形六面体等),并在它们上方有相同的变量定义.</translation>
+        <translation>使用此属性选择要加载哪些元素( 单元格) 块 。 同一区块中的所有元素(单元格)将具有相同的内插(三角形,三角形,三线形六面体等),并在它们上方有相同的变量定义.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24928"/>
@@ -39402,7 +39402,7 @@ Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusResta
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24961"/>
         <source>Use this property to select which variables defined over edges should be loaded. Edges are oriented boundaries of one or more higher-dimensional cells also present in the mesh. Edge variables specify a single value per entry in some edge block.</source>
         <extracomment>Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusIIReaderCore</extracomment>
-        <translation>使用此属性选择在边缘上定义的变量应该加载 。 边缘是网格中也存在的一个或多个更高维的细胞的面向边界. 边缘变量指定了某个边缘块中每个条目的单个值.</translation>
+        <translation>使用此属性选择在边缘上定义的变量应该加载 。 边缘是网格中也存在的一个或多个更高维的单元格的面向边界. 边缘变量指定了某个边缘块中每个条目的单个值.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24964"/>
@@ -39415,7 +39415,7 @@ Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusResta
 Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusIIReader
 ----------
 Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusRestartReader</extracomment>
-        <translation>面部变量信息</translation>
+        <translation>面变量信息</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24967"/>
@@ -39433,7 +39433,7 @@ Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusResta
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24973"/>
         <source>Use this property to select which variables defined over faces should be loaded. Faces are oriented boundaries of one or more higher-dimensional cells also present in the mesh. Face variables specify a single value per entry in some face block.</source>
         <extracomment>Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusIIReaderCore</extracomment>
-        <translation>使用此属性来选择在面部上定义的变量应加载 。 面是网格中也存在的一个或多个更高维的细胞的定向边界. 面额变量指定一些面额块中每个条目的单个值.</translation>
+        <translation>使用此属性来选择在面上定义的变量应加载 。 面是网格中也存在的一个或多个更高维的单元格的定向边界. 面额变量指定一些面额块中每个条目的单个值.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24976"/>
@@ -39557,7 +39557,7 @@ Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusResta
         <location filename="../build/translationSourcesparaview_server_manager.h" line="25021"/>
         <source>Specify which maps defined over faces in the mesh should be loaded. A face map is a renumbering of all the faces (across all the face blocks of a file) from their offset in the file to some arbitrary integers, usually specifying a unique global ID across a set of files.</source>
         <extracomment>Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusIIReaderCore</extracomment>
-        <translation>指定要装入网格中在面部上定义的地图 。 面部映射(face map)是对所有面部(在文件的所有面部块之间)从文件的抵消到一些任意整数的重新编号,通常在一组文件之间指定一个独特的全局ID.</translation>
+        <translation>指定要装入网格中在面上定义的地图 。 面映射(face map)是对所有面(在文件的所有面块之间)从文件的抵消到一些任意整数的重新编号,通常在一组文件之间指定一个独特的全局ID.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="25024"/>
@@ -40212,7 +40212,7 @@ Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusResta
         <location filename="../build/translationSourcesparaview_server_manager.h" line="25243"/>
         <source>The Exodus reader loads Exodus II files and produces an unstructured grid output. The default file extensions are .g, .e, .ex2, .ex2v2, .exo, .gen, .exoII, .exii, .frq, .0, .00, .000, and .0000. The file format is described fully at: http://endo.sandia.gov/SEACAS/Documentation/exodusII.pdf. Each Exodus file contains a single set of points with 2-D or 3-D coordinates plus one or more blocks, sets, and maps. Block group elements (or their bounding edges or faces) of the same type together. Sets select subsets (across all the blocks in a file) of elements, sides of elements (which may be of mixed dimensionality), bounding faces of volumetric elements, or bounding edges of volumetric or areal elements. Each block or set may have multiple result variables, each of which defines a value per element, per timestep. The elements (cells), faces of elements (when enumerated in face blocks), edges of elements (when enumerated in edge blocks), and nodes (points) in a file may be assigned an arbitrary integer number by an element map, face map, edge map, or node map, respectively. Usually, only a single map of each type exists and is employed to assign a unique global ID to entities across multiple files which partition a large mesh for a distributed-memory calculation. However here may be multiply maps of each type and there are no constraints which force the integers to be unique. The connectivity of elements is constant across all of the timesteps in any single Exodus II file. However, multiple files which specify a single time-evolution of a mesh may be used to represent meshes which exhibit changes in connectivity infrequently. Field variable mode_shape[0] represents the time step (t_index) if HasModeShapes is not set or the ModeShape otherwise. This is a distributed reader.</source>
         <extracomment>Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - ExodusIIReader</extracomment>
-        <translation>Exodus阅读器加载Exodus II文件并产生无结构的网格输出. 默认文件扩展名有:.g,.e,.ex2,.ex2v2,.exo,.gen,.exoII,.exii,.frq,0,.00,000,和.000. 文件格式在http://endo.sandia.gov/SEACAS/Documentation/exodusII.pdf中作了全面描述。 每个Exodus文件包含一组单一的点,带有2-D或3-D坐标加上一个或多个块,集,和地图. 类同的块状元素(或其边缘或面)一起. 设定选择元素的子集(在文件中的所有块之间),元素的侧面(可能是混合维度),量子元素的边框,或者量子元素或质子元素的边框. 每个块或组合可能具有多个结果变量,每个变量都定义每个元素的值,每个时间步. 元素(单元格),元素的面部(当在面块中列出时),元素的边缘(当在边缘块中列出时),和一个文件中的节点(点),可以被元素图,面图,边缘图,或节点图分别指定任意的整数. 通常,每个类型都只有一个地图,用来为多个文件的实体分配一个独特的全球ID,这些实体将一个大网格分割出来,用于分布式计算。 然而,这里可能包含每种类型的乘法地图,没有限制迫使整数是独一无二的。 元素的互联互通在任何单一的Exodus II文件中贯穿所有的时间段都是恒定的. 然而,可使用多个文件来指定网格的单一时间演变,以代表互联互通不经常出现变化的网格。 字段变量模式 形状[0] 表示如果 HasMode 形状没有设置或者模式形状没有设置时步(t index) 。 这是一个分布式的读者。</translation>
+        <translation>Exodus阅读器加载Exodus II文件并产生无结构的网格输出. 默认文件扩展名有:.g,.e,.ex2,.ex2v2,.exo,.gen,.exoII,.exii,.frq,0,.00,000,和.000. 文件格式在http://endo.sandia.gov/SEACAS/Documentation/exodusII.pdf中作了全面描述。 每个Exodus文件包含一组单一的点,带有2-D或3-D坐标加上一个或多个块,集,和地图. 类同的块状元素(或其边缘或面)一起. 设定选择元素的子集(在文件中的所有块之间),元素的侧面(可能是混合维度),量子元素的边框,或者量子元素或质子元素的边框. 每个块或组合可能具有多个结果变量,每个变量都定义每个元素的值,每个时间步. 元素(单元格),元素的面部(当在面块中列出时),元素的边缘(当在边缘块中列出时),和一个文件中的节点(点),可以被元素图,面图,边缘图,或节点图分别指定任意的整数. 通常,每个类型都只有一个地图,用来为多个文件的实体分配一个独特的全球ID,这些实体将一个大网格分割出来,用于分布式计算。 然而,这里可能包含每种类型的乘法地图,没有限制迫使整数是独一无二的。 元素的互联互通在任何单一的Exodus II文件中贯穿所有的时间段都是恒定的. 然而,可使用多个文件来指定网格的单一时间演变,以表示互联互通不经常出现变化的网格。 字段变量模式 形状[0] 表示如果 HasMode 形状没有设置或者模式形状没有设置时步(t index) 。 这是一个分布式的读者。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="25255"/>
@@ -40284,7 +40284,7 @@ Real source: Remoting/Application/Resources/utilities.xml - TimeKeeper</extracom
         <location filename="../build/translationSourcesparaview_server_manager.h" line="25474"/>
         <source>Restarted Sim Exodus Reader</source>
         <extracomment>Real source: VTKExtensions/IOExodus/Resources/readers_ioexodus.xml - VTKExtensions/IOExodus/Resources/readers_ioexodus.xml</extracomment>
-        <translation>重新启动 Sim Exodus 阅读器</translation>
+        <translation>Restarted Sim Exodus Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="25477"/>
@@ -40341,7 +40341,7 @@ Real source: Remoting/Application/Resources/utilities.xml - ExodusIIWriter</extr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="25726"/>
         <source>In certain cases like Catalyst we know that metadata doesn&apos;t exist and we want to ignore that warning.</source>
         <extracomment>Real source: VTKExtensions/IOExodus/Resources/writers_ioexodus.xml - ExodusIIWriter</extracomment>
-        <translation>在某些情况下,如催化器 我们知道元数据不存在, 我们希望忽略这个警告。</translation>
+        <translation>在某些情况下,如Catalyst器 我们知道元数据不存在, 我们希望忽略这个警告。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26803"/>
@@ -40555,7 +40555,7 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Strea
 Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - StreamTracer
 ----------
 Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - ArbitrarySourceStreamTracer</extracomment>
-        <translation>此属性决定了内插符用来评价速度矢量字段的单元格定位符.</translation>
+        <translation>此属性决定了插值器用来评价速度矢量字段的单元格定位符.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31309"/>
@@ -40637,13 +40637,13 @@ Real source: Remoting/Application/Resources/proxies_xdmf3.xml - Xdmf3Writer</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36220"/>
         <source>Set the radius used to snap to the closest cell when **Snap To Cell With Closest Point** is enabled. This value is ignored when **Compute Tolerance** is enabled, in which case the snapping radius is automatically computed from the source bounds.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - ResampleWithDataset</extracomment>
-        <translation>设定在启用 ** Snap to cell With closest Point ** 时用于向最接近的单元格坐标的半径 。 当启用 ** 计算容忍度** 时, 此值会被忽略, 在这种情况下, 剪切半径会自动从源边界计算 。</translation>
+        <translation>设定在启用 ** Snap to cell With closest Point ** 时用于向最接近的单元格坐标的半径 。 当启用 ** 计算容差度** 时, 此值会被忽略, 在这种情况下, 剪切半径会自动从源边界计算 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37828"/>
         <source>The Axis Aligned Transform filter operates on any type of data set or hyper tree grid and applies a transformation that is constrained to be axis-aligned. The output type is the same as the input. Transforms are applied in the following order: scaling is done first, then rotation, and then translation.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - AxisAlignedTransform</extracomment>
-        <translation>轴对调变换滤波器在任何类型的数据集或超树网格上运行,并应用一个受限制的变换以轴对调. 输出类型与输入类型相同. 变形按以下顺序应用:先进行缩放,再旋转,再进行翻译.</translation>
+        <translation>轴对调变换滤波器在任何类型的数据集或超树网格上运行,并应用一个受限制的变换以轴对调. 输出类型与输入类型相同. 变形按以下顺序应用:先进行缩放,再旋转,再进行平移.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39259"/>
@@ -40709,7 +40709,7 @@ Real source: Remoting/Application/Resources/proxies_xdmf3.xml - Xdmf3Writer</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39325"/>
         <source>Computes the shortest path on the input mesh. The output is a polyline representing the geodesic path between the selected start and end point (or cell). The path can depend on a given scalar field. On distributed data, the path will be computed independently on each node.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - ShortestPath</extracomment>
-        <translation>计算输入网格上最短的路径。 输出是代表选定起点和终点(或单元格)之间大地测量路径的多线. 路径可以依赖于给定的scalar字段. 在分布式数据上,路径将在每个节点上独立计算.</translation>
+        <translation>计算输入网格上最短的路径。 输出是表示选定起点和终点(或单元格)之间大地测量路径的多线. 路径可以依赖于给定的scalar字段. 在分布式数据上,路径将在每个节点上独立计算.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39328"/>
@@ -40813,7 +40813,7 @@ Real source: Remoting/Application/Resources/proxies_xdmf3.xml - Xdmf3Writer</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40861"/>
         <source>Particle Pathlines takes any dataset as input, it extracts the point locations of all cells over time to build up a polyline trail. The point number (index) is used as the &apos;key&apos; if the points are randomly changing their respective order in the points list, then you should specify a scalar that represents the unique ID. This is intended to handle the output of a filter such as the TemporalStreamTracer. Partitioned datasets are supported: all partitions feed into the same trail map keyed by particle ID, so particles migrating between partitions continue their trails.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ParticlePathLines</extracomment>
-        <translation>粒子路径线将任何数据集作为输入,它会随着时间的推移提取所有单元格的点位置来建立多线跟踪. 如果点数在点数列表中随机改变各自的顺序,则点数(index)被用作"键",那么您应该指定一个代表唯一ID的scalar. 这是用来处理像TempolarStream Tracer这样的过滤器的输出. 分区数据集得到支持:所有分区都以粒子ID键入同一路径图,因此分区间迁移的粒子继续其路径.</translation>
+        <translation>粒子路径线将任何数据集作为输入,它会随着时间的推移提取所有单元格的点位置来建立多线跟踪. 如果点数在点数列表中随机改变各自的顺序,则点数(index)被用作"键",那么您应该指定一个表示唯一ID的scalar. 这是用来处理像TempolarStream Tracer这样的过滤器的输出. 分区数据集得到支持:所有分区都以粒子ID键入同一路径图,因此分区间迁移的粒子继续其路径.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41188"/>
@@ -40831,7 +40831,7 @@ Real source: Remoting/Application/Resources/proxies_xdmf3.xml - Xdmf3Writer</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47476"/>
         <source>This property indicates whether to load the primary grid or the dual grid. The primary MPAS grid is defined as a Voronoi diagram of points on a sphere, and the simulation data are defined in those cell regions of that Voronoi diagram. MPAS also defines the dual grid, which is naturally a Delaunay tesselation of the points. When this option is true, the primary Voronoi diagram is loaded, and the field data are the cells of these regions. When this option is false (the default), the dual Delaunay tesselation is loaded and the field data is on the points. Note that switching between the dual and primary grid switches the point/cell semantics. Thus, when UsePrimaryGrid is turned on, the selection of point arrays actually affects cell arrays and vice versa.</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ionetcdf.xml - MPASReader</extracomment>
-        <translation>此属性表示是装入主网格还是双网格. 初级MPAS网格被定义为一个球体上的点数图,模拟数据被定义在该图中的单元格区域. MPAS还定义了双网格,这自然是Delaunay对点的编码. 当此选项属实时, 主 Voronoi 图表会加载, 并且字段数据是这些区域的单元格 。 当此选项是虚假的(默认的)时,会加载Delaunay双音符,并且字段数据位于点上. 注意双网格和主网格之间的切换开关点/细胞语义. 因此,在打开User PrimaryGrid时,点数组的选择实际上会影响单元格数组,反之亦然.</translation>
+        <translation>此属性表示是装入主网格还是双网格. 初级MPAS网格被定义为一个球体上的点数图,模拟数据被定义在该图中的单元格区域. MPAS还定义了双网格,这自然是Delaunay对点的编码. 当此选项属实时, 主 Voronoi 图表会加载, 并且字段数据是这些区域的单元格 。 当此选项是虚假的(默认的)时,会加载Delaunay双音符,并且字段数据位于点上. 注意双网格和主网格之间的切换开关点/单元格语义. 因此,在打开User PrimaryGrid时,点数组的选择实际上会影响单元格数组,反之亦然.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48196"/>
@@ -40857,7 +40857,7 @@ Real source: Remoting/Application/Resources/proxies_fides.xml - FidesJSONReader<
         <extracomment>Real source: Remoting/Application/Resources/proxies_fides.xml - FidesFileReader
 ----------
 Real source: Remoting/Application/Resources/proxies_fides.xml - FidesJSONReader</extracomment>
-        <translation>细胞格属性</translation>
+        <translation>单元格格属性</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48670"/>
@@ -40956,7 +40956,7 @@ Real source: Remoting/Application/Resources/proxies_fides.xml - Fides</extracomm
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48865"/>
         <source>ADIOS2</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_fides.xml - Fides</extracomment>
-        <translation>自动识别系统2</translation>
+        <translation>ADIOS2</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50416"/>
@@ -41031,7 +41031,7 @@ Real source: Remoting/Application/Resources/readers_iofluentcff.xml - FLUENTCFFR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51301"/>
         <source>Read face data or not. This option is set by default to false as it computationally heavy.</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iofluentcff.xml - FLUENTCFFReaderCore</extracomment>
-        <translation>是否读取面部数据 。 此选项在计算重时默认设定为虚假 。</translation>
+        <translation>是否读取面数据 。 此选项在计算重时默认设定为虚假 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51304"/>
@@ -41065,7 +41065,7 @@ Real source: Remoting/Application/Resources/readers_iofluentcff.xml - FLUENTCFFR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51472"/>
         <source>OT Kernel Smoothing</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_openturns.xml - Remoting/Application/Resources/proxies_openturns.xml</extracomment>
-        <translation>OT 内核平滑</translation>
+        <translation>OT Kernel Smoothing</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51478"/>
@@ -41117,7 +41117,7 @@ Real source: Remoting/Application/Resources/readers_iofluentcff.xml - FLUENTCFFR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51526"/>
         <source>OT Density Map</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_openturns.xml - Remoting/Application/Resources/proxies_openturns.xml</extracomment>
-        <translation>OT 密度图</translation>
+        <translation>OT Density Map</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51532"/>
@@ -41233,7 +41233,7 @@ Real source: Remoting/Application/Resources/readers_iofluentcff.xml - FLUENTCFFR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51640"/>
         <source>Sets the first decile density line color.</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_openturns.xml - Remoting/Application/Resources/proxies_openturns.xml</extracomment>
-        <translation>设置第一个十进制密度线条颜色。</translation>
+        <translation>设置第一个十分位密度线条颜色。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51604"/>
@@ -41254,14 +41254,14 @@ Real source: Remoting/Application/Resources/readers_iofluentcff.xml - FLUENTCFFR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51679"/>
         <source>Scatter Plot Density Map Last Decile Color</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_openturns.xml - Remoting/Application/Resources/proxies_openturns.xml</extracomment>
-        <translation>散点密度图上一张十进制颜色</translation>
+        <translation>散点密度图上一张十分位颜色</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51616"/>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51658"/>
         <source>Sets the last decile density line color.</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_openturns.xml - Remoting/Application/Resources/proxies_openturns.xml</extracomment>
-        <translation>设置最后一个十进制密度线条颜色。</translation>
+        <translation>设置最后一个十分位密度线条颜色。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51622"/>
@@ -41298,7 +41298,7 @@ Real source: Remoting/Application/Resources/readers_iofluentcff.xml - FLUENTCFFR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51691"/>
         <source>Active Plot Density Map First Decile Color</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_openturns.xml - Remoting/Application/Resources/proxies_openturns.xml</extracomment>
-        <translation>活动绘图密度图 第一层十进制颜色</translation>
+        <translation>活动绘图密度图 第一层十分位颜色</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51646"/>
@@ -41312,7 +41312,7 @@ Real source: Remoting/Application/Resources/readers_iofluentcff.xml - FLUENTCFFR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51697"/>
         <source>Active Plot Density Map Last Decile Color</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_openturns.xml - Remoting/Application/Resources/proxies_openturns.xml</extracomment>
-        <translation>活动绘图密度图上一张十进制颜色</translation>
+        <translation>活动绘图密度图上一张十分位颜色</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51664"/>
@@ -41344,13 +41344,13 @@ Real source: Remoting/Application/Resources/readers_iofluentcff.xml - FLUENTCFFR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="52384"/>
         <source>Catalyst Conduit Channel Name</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSReader</extracomment>
-        <translation>催化剂管道频道名称</translation>
+        <translation>Catalyst剂管道频道名称</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="52219"/>
         <source>The IOSS Catalyst Conduit channel name when reading from IOSS Catalyst Conduit. If not specified (default), the reader will use the default Catalyst Conduit channel name.</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSReader</extracomment>
-        <translation>IOSS催化剂管道在读取IOSS催化剂管道时的频道名称. 如果未指定( 默认) , 阅读器会使用默认的催化剂管道频道名称 。</translation>
+        <translation>IOSSCatalyst剂管道在读取IOSSCatalyst剂管道时的频道名称. 如果未指定( 默认) , 阅读器会使用默认的Catalyst剂管道频道名称 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="52864"/>
@@ -41422,7 +41422,7 @@ Real source: Remoting/Application/Resources/readers_iofluentcff.xml - FLUENTCFFR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53206"/>
         <source>Control whether to remove ghost cells from the input or not.</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_ioioss.xml - IOSSWriter</extracomment>
-        <translation>控制是否从输入中移除幽灵细胞 。</translation>
+        <translation>控制是否从输入中移除幽灵单元格 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53251"/>
@@ -41434,7 +41434,7 @@ Real source: Remoting/Application/Resources/readers_iofluentcff.xml - FLUENTCFFR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="25729"/>
         <source>EnSight Reader</source>
         <extracomment>Real source: VTKExtensions/IOEnSight/Resources/readers_pv_ioensight.xml - VTKExtensions/IOEnSight/Resources/readers_pv_ioensight.xml</extracomment>
-        <translation>视觉阅读器</translation>
+        <translation>EnSight Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="25732"/>
@@ -41485,7 +41485,7 @@ Real source: VTKExtensions/IOEnSight/Resources/readers_pv_ioensight.xml - ensigh
         <location filename="../build/translationSourcesparaview_server_manager.h" line="25783"/>
         <source>EnSight Master Server Reader</source>
         <extracomment>Real source: VTKExtensions/IOEnSight/Resources/readers_pv_ioensight.xml - VTKExtensions/IOEnSight/Resources/readers_pv_ioensight.xml</extracomment>
-        <translation>EnSight 主服务器阅读器</translation>
+        <translation>EnSight Master Server Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="25786"/>
@@ -41906,7 +41906,7 @@ Real source: VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml - AMReXGridReade
 Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - SliceWithPlane
 ----------
 Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - AxisAlignedSlice</extracomment>
-        <translation>职等</translation>
+        <translation>层级</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="25993"/>
@@ -42010,7 +42010,7 @@ Real source: Remoting/Application/Resources/readers_ioveraout.xml - vtkVeraOutRe
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26428"/>
         <source>Velodyne AMR Reader</source>
         <extracomment>Real source: VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml - VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml</extracomment>
-        <translation>Velodyne AMR 阅读器</translation>
+        <translation>Velodyne AMR Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26146"/>
@@ -42064,7 +42064,7 @@ Real source: VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml - AMReXParticles
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26227"/>
         <source>FLASH AMR Particles Reader</source>
         <extracomment>Real source: VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml - VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml</extracomment>
-        <translation>FLASH AMR 粒子读取器</translation>
+        <translation>FLASH AMR Particles Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26257"/>
@@ -42079,13 +42079,13 @@ Real source: VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml - EnzoParticlesR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26275"/>
         <source>ENZO AMR Particles Reader</source>
         <extracomment>Real source: VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml - VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml</extracomment>
-        <translation>ENZO AMR 粒子读取器</translation>
+        <translation>ENZO AMR Particles Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26326"/>
         <source>Flash Reader</source>
         <extracomment>Real source: VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml - VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml</extracomment>
-        <translation>闪光阅读器</translation>
+        <translation>Flash Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26329"/>
@@ -42151,7 +42151,7 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - AVSucdSerie
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26377"/>
         <source>Enzo Reader</source>
         <extracomment>Real source: VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml - VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml</extracomment>
-        <translation>恩佐阅读器</translation>
+        <translation>Enzo Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26431"/>
@@ -42169,7 +42169,7 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - AVSucdSerie
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26479"/>
         <source>AMReX/BoxLib Grid Reader</source>
         <extracomment>Real source: VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml - VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml</extracomment>
-        <translation>AMREX/ BoxLib 网格阅读器</translation>
+        <translation>AMReX/BoxLib Grid Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26482"/>
@@ -42181,7 +42181,7 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - AVSucdSerie
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26527"/>
         <source>AMReX/BoxLib Particles Reader</source>
         <extracomment>Real source: VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml - VTKExtensions/IOAMR/Resources/readers_pv_ioamr.xml</extracomment>
-        <translation>AMREX/ BoxLib 粒子读取器</translation>
+        <translation>AMReX/BoxLib Particles Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26530"/>
@@ -42199,7 +42199,7 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - AVSucdSerie
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26680"/>
         <source>Contingency Statistics</source>
         <extracomment>Real source: VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml - VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml</extracomment>
-        <translation>应急统计</translation>
+        <translation>Contingency Statistics</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26686"/>
@@ -42430,7 +42430,7 @@ Real source: VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml - 
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26737"/>
         <source>Descriptive Statistics</source>
         <extracomment>Real source: VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml - VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml</extracomment>
-        <translation>描述性统计</translation>
+        <translation>Descriptive Statistics</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26797"/>
@@ -42448,13 +42448,13 @@ Real source: VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml - 
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26815"/>
         <source>K Means</source>
         <extracomment>Real source: VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml - VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml</extracomment>
-        <translation>K 含义</translation>
+        <translation>K Means</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26872"/>
         <source>k</source>
         <extracomment>Real source: VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml - KMeans</extracomment>
-        <translation>页:1</translation>
+        <translation>k</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26875"/>
@@ -42478,25 +42478,25 @@ Real source: VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml - 
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26887"/>
         <source>Specify the relative tolerance that will cause early termination.</source>
         <extracomment>Real source: VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml - KMeans</extracomment>
-        <translation>指定导致提前终止的相对容忍度。</translation>
+        <translation>指定导致提前终止的相对容差度。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26890"/>
         <source>Multicorrelative Statistics</source>
         <extracomment>Real source: VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml - VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml</extracomment>
-        <translation>多亲属统计</translation>
+        <translation>Multicorrelative Statistics</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26947"/>
         <source>Principal Component Analysis</source>
         <extracomment>Real source: VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml - VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml</extracomment>
-        <translation>主要构成部分分析</translation>
+        <translation>Principal Component Analysis</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27004"/>
         <source>Normalization Scheme</source>
         <extracomment>Real source: VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml - PCAStatistics</extracomment>
-        <translation>正常化计划</translation>
+        <translation>法向化计划</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27007"/>
@@ -42550,7 +42550,7 @@ Real source: VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml - 
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27052"/>
         <source>Python Calculator</source>
         <extracomment>Real source: VTKExtensions/FiltersPython/Resources/python_filters.xml - VTKExtensions/FiltersPython/Resources/python_filters.xml</extracomment>
-        <translation>Python 计算器</translation>
+        <translation>Python Calculator</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27055"/>
@@ -42655,13 +42655,13 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Calcul
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27124"/>
         <source>Annotate Attribute Data</source>
         <extracomment>Real source: VTKExtensions/FiltersPython/Resources/python_filters.xml - VTKExtensions/FiltersPython/Resources/python_filters.xml</extracomment>
-        <translation>注释属性数据</translation>
+        <translation>Annotate Attribute Data</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27127"/>
         <source>This filter can be used to add a text annotation to a Render View (or similar) using a tuple from any attribute array (point/cell/field/row etc.) from a specific rank (when running in parallel). Use **ArrayName** property to select the array association and array name. Use **ElementId* property to set the element number to extract the value to label with. When running on multiple ranks, use **ProcessId** property to select the rank of interest. The **Prefix** property can be used to specify a string that will be used as the prefix to the generated annotation text.</source>
         <extracomment>Real source: VTKExtensions/FiltersPython/Resources/python_filters.xml - AnnotateAttributeData</extracomment>
-        <translation>此过滤器可用于使用来自任何属性阵列(点/细胞/字段/row等)的Tuple从特定等级(平行运行时)向Render View(或类似)添加文本注释. 使用**ArrayName**属性来选择数组关联和数组名称. 使用 ** 元素 Id* 属性设置元素编号以提取标签的值 。 在多个级别上运行时,使用**ProcessId**财产来选择权益级别. ** Prefix** 属性可用于指定一个字符串,作为生成的注释文本的前缀.</translation>
+        <translation>此过滤器可用于使用来自任何属性阵列(点/单元格/字段/row等)的Tuple从特定等级(平行运行时)向Render View(或类似)添加文本注释. 使用**ArrayName**属性来选择数组关联和数组名称. 使用 ** 元素 Id* 属性设置元素编号以提取标签的值 。 在多个级别上运行时,使用**ProcessId**属性来选择权益级别. ** Prefix** 属性可用于指定一个字符串,作为生成的注释文本的前缀.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27130"/>
@@ -42724,7 +42724,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Annota
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27166"/>
         <source>Python Annotation</source>
         <extracomment>Real source: VTKExtensions/FiltersPython/Resources/python_filters.xml - VTKExtensions/FiltersPython/Resources/python_filters.xml</extracomment>
-        <translation>Python 注释</translation>
+        <translation>Python Annotation</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27169"/>
@@ -42772,7 +42772,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Annota
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27205"/>
         <source>Programmable Filter</source>
         <extracomment>Real source: VTKExtensions/FiltersPython/Resources/python_filters.xml - VTKExtensions/FiltersPython/Resources/python_filters.xml</extracomment>
-        <translation>可编程过滤器</translation>
+        <translation>Programmable Filter</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27208"/>
@@ -42883,7 +42883,7 @@ Real source: VTKExtensions/FiltersPython/Resources/python_sources.xml - Programm
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27268"/>
         <source>Programmable Annotation</source>
         <extracomment>Real source: VTKExtensions/FiltersPython/Resources/python_filters.xml - VTKExtensions/FiltersPython/Resources/python_filters.xml</extracomment>
-        <translation>可编程注释</translation>
+        <translation>Programmable Annotation</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27271"/>
@@ -42925,7 +42925,7 @@ Real source: VTKExtensions/FiltersPython/Resources/python_sources.xml - Programm
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27313"/>
         <source>Programmable Source</source>
         <extracomment>Real source: VTKExtensions/FiltersPython/Resources/python_sources.xml - VTKExtensions/FiltersPython/Resources/python_sources.xml</extracomment>
-        <translation>可编程源</translation>
+        <translation>Programmable Source</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27316"/>
@@ -42961,7 +42961,7 @@ Real source: VTKExtensions/FiltersPython/Resources/python_sources.xml - Programm
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27358"/>
         <source>Live Programmable Source</source>
         <extracomment>Real source: VTKExtensions/FiltersPython/Resources/python_sources.xml - VTKExtensions/FiltersPython/Resources/python_sources.xml</extracomment>
-        <translation>现场可编程源</translation>
+        <translation>Live Programmable Source</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27361"/>
@@ -43045,19 +43045,19 @@ Real source: VTKExtensions/FiltersPython/Resources/python_sources.xml - Programm
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30643"/>
         <source>Plot Over Line</source>
         <extracomment>Real source: VTKExtensions/FiltersParallelDIY2/Resources/parallel_diy_filters.xml - VTKExtensions/FiltersParallelDIY2/Resources/parallel_diy_filters.xml</extracomment>
-        <translation>横线绘图</translation>
+        <translation>Plot Over Line</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30646"/>
         <source>The Plot Over Line filter samples the dataset attributes of the input dataset at the points of a given line. The values of the point-centered variables along that line will be displayed in an XY Plot. This filter uses interpolation to determine the values at the selected point, whether or not it lies at an input point. This filter operates on any type of data and produces a polygonal output (a polyline). One can use different sampling patterns with this filter. \&quot;Sample At Cell Boundaries\&quot; gives the most accurate plots, \&quot;Sample At Segment Centers\&quot; provides one sample per probed cell, and \&quot;Sample Uniformally\&quot; samples uniformally along the input line.</source>
         <extracomment>Real source: VTKExtensions/FiltersParallelDIY2/Resources/parallel_diy_filters.xml - ProbeLine</extracomment>
-        <translation>Plot Over Line 过滤器在给定行点对输入数据集的数据集属性进行样本. 该线上以点为中心的变量的值将在 XY 绘图中显示。 这个过滤器使用插值来确定选定点的值,无论它是否位于输入点. 这种滤波器在任意类型的数据上运行,并产生多边形输出(一个多线). 用这个过滤器可以使用不同的采样模式. \"Sample At Cell Bundaries\"给出了最精确的图案,\"Sample At September Centers\"提供了每个被探测的细胞一个样本,\"Sample Unifestally\"的样本在输入线上统一.</translation>
+        <translation>Plot Over Line 过滤器在给定行点对输入数据集的数据集属性进行样本. 该线上以点为中心的变量的值将在 XY 绘图中显示。 这个过滤器使用插值来确定选定点的值,无论它是否位于输入点. 这种滤波器在任意类型的数据上运行,并产生多边形输出(一个多线). 用这个过滤器可以使用不同的采样模式. \"Sample At Cell Bundaries\"给出了最精确的图案,\"Sample At September Centers\"提供了每个被探测的单元格一个样本,\"Sample Unifestally\"的样本在输入线上统一.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30676"/>
         <source>Resample To Line</source>
         <extracomment>Real source: VTKExtensions/FiltersParallelDIY2/Resources/parallel_diy_filters.xml - VTKExtensions/FiltersParallelDIY2/Resources/parallel_diy_filters.xml</extracomment>
-        <translation>复标为行</translation>
+        <translation>Resample To Line</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30679"/>
@@ -43153,7 +43153,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - ResampleWi
 Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbeLineGenericProxy
 ----------
 Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbePoint</extracomment>
-        <translation>计算容忍度</translation>
+        <translation>计算容差度</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30724"/>
@@ -43162,7 +43162,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbeP
         <extracomment>Real source: VTKExtensions/FiltersParallelDIY2/Resources/parallel_diy_filters.xml - ResampleToLine
 ----------
 Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbeLineGenericProxy</extracomment>
-        <translation>设定是计算容忍度还是使用用户提供的值 。</translation>
+        <translation>设定是计算容差度还是使用用户提供的值 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30733"/>
@@ -43177,13 +43177,13 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - ResampleWi
 Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbeLineGenericProxy
 ----------
 Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbePoint</extracomment>
-        <translation>设定 vtkDataSet 使用的容忍度 : 查找目录</translation>
+        <translation>设定 vtkDataSet 使用的容差度 : 查找目录</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30838"/>
         <source>Intersect Fragments</source>
         <extracomment>Real source: VTKExtensions/FiltersMaterialInterface/Resources/material_interface_filters.xml - VTKExtensions/FiltersMaterialInterface/Resources/material_interface_filters.xml</extracomment>
-        <translation>间断裂</translation>
+        <translation>Intersect Fragments</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30841"/>
@@ -43220,13 +43220,13 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbeP
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30868"/>
         <source>Material Interface Filter</source>
         <extracomment>Real source: VTKExtensions/FiltersMaterialInterface/Resources/material_interface_filters.xml - VTKExtensions/FiltersMaterialInterface/Resources/material_interface_filters.xml</extracomment>
-        <translation>材料接口过滤器</translation>
+        <translation>Material Interface Filter</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30871"/>
         <source>The Material Interface filter finds voxels inside of which a material fraction (or normalized amount of material) is higher than a given threshold. As these voxels are identified surfaces enclosing adjacent voxels above the threshold are generated. The resulting volume and its surface are what we call a fragment. The filter has the ability to compute various volumetric attributes such as fragment volume, mass, center of mass as well as volume and mass weighted averages for any of the fields present. Any field selected for such computation will be also be copied into the fragment surface&apos;s point data for visualization. The filter also has the ability to generate Oriented Bounding Boxes (OBB) for each fragment. The data generated by the filter is organized in three outputs. The \&quot;geometry\&quot; output, containing the fragment surfaces. The \&quot;statistics\&quot; output, containing a point set of the centers of mass. The \&quot;obb representation\&quot; output, containing OBB representations (poly data). All computed attributes are copied into the statistics and geometry output. The obb representation output is used for validation and debugging purposes and is turned off by default. To measure the size of craters, the filter can invert a volume fraction and clip the volume fraction with a sphere and/or a plane.</source>
         <extracomment>Real source: VTKExtensions/FiltersMaterialInterface/Resources/material_interface_filters.xml - MaterialInterfaceFilter</extracomment>
-        <translation>材料接口过滤器在其中发现一个材料分量(或材料的正常量)高于给定阈值的Voxels. 由于这些阴道被识别为附着在阈值之上的相邻阴道的表面,所以产生. 所产生的体积及其表面就是我们所说的碎片。 滤波器具有计算各种体积属性的能力,如碎片体积、质量、质量中心以及所存在的任何字段的体积和质量加权平均值。 为这种计算选择的任何字段也将被复制到碎片表面的点数据中,以便可视化. 滤波器还具有为每个片段生成Oriented Bonding Boxes(OBB)的能力. 过滤器生成的数据分为三个产出。 \"几何\"输出,包含碎片表面. \“统计”输出,包含质量中心的点集。 \"obb 表示\"输出,包含OBB表示(poly data). 所有计算属性都被复制到统计和几何输出中。 obb 表示输出用于校验和调试目的,默认关闭. 为了测量陨坑的大小,过滤器可以反转一个容积分数,用球体和/或平面来剪切容积分数.</translation>
+        <translation>材料接口过滤器在其中发现一个材料分量(或材料的法向量)高于给定阈值的Voxels. 由于这些阴道被识别为附着在阈值之上的相邻阴道的表面,所以产生. 所产生的体积及其表面就是我们所说的碎片。 滤波器具有计算各种体积属性的能力,如碎片体积、质量、质量中心以及所存在的任何字段的体积和质量加权平均值。 为这种计算选择的任何字段也将被复制到碎片表面的点数据中,以便可视化. 滤波器还具有为每个片段生成Oriented Bonding Boxes(OBB)的能力. 过滤器生成的数据分为三个产出。 \"几何\"输出,包含碎片表面. \“统计”输出,包含质量中心的点集。 \"obb 表示\"输出,包含OBB表示(poly data). 所有计算属性都被复制到统计和几何输出中。 obb 表示输出用于校验和调试目的,默认关闭. 为了测量陨坑的大小,过滤器可以反转一个容积分数,用球体和/或平面来剪切容积分数.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30874"/>
@@ -43251,7 +43251,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbeP
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30892"/>
         <source>Material fraction is defined as normalized amount of material per voxel. It is expected that arrays containing material fraction data has been down converted to a unsigned char.</source>
         <extracomment>Real source: VTKExtensions/FiltersMaterialInterface/Resources/material_interface_filters.xml - MaterialInterfaceFilter</extracomment>
-        <translation>材料分量的定义是每伏牛的材料的正常量. 预计含有材料分数数据的数组已被降低为无符号字符。</translation>
+        <translation>材料分量的定义是每伏牛的材料的法向量. 预计含有材料分数数据的数组已被降低为无符号字符。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30895"/>
@@ -43263,7 +43263,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbeP
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30898"/>
         <source>Material fraction is defined as normalized amount of material per voxel. Any voxel in the input data set with a material fraction greater than this value is included in the output data set.</source>
         <extracomment>Real source: VTKExtensions/FiltersMaterialInterface/Resources/material_interface_filters.xml - MaterialInterfaceFilter</extracomment>
-        <translation>材料分量的定义是每伏牛的材料的正常量. 输入数据集中任何具有超过这个数值的材料分数的voxel都包含在输出数据集中.</translation>
+        <translation>材料分量的定义是每伏牛的材料的法向量. 输入数据集中任何具有超过这个数值的材料分数的voxel都包含在输出数据集中.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30901"/>
@@ -43309,7 +43309,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - CTHPar
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30919"/>
         <source>This property sets the type of clip geometry, and associated parameters.</source>
         <extracomment>Real source: VTKExtensions/FiltersMaterialInterface/Resources/material_interface_filters.xml - MaterialInterfaceFilter</extracomment>
-        <translation>此属性设置剪辑几何类型, 以及相关的参数 。</translation>
+        <translation>此属性设置裁剪几何类型, 以及相关的参数 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27508"/>
@@ -43345,7 +43345,7 @@ Real source: VTKExtensions/FiltersMaterialInterface/Resources/material_interface
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30940"/>
         <source>For arrays selected a volume weighted average is computed. The values of these arrays are also copied into fragment geometry cell data as the fragment surfaces are generated.</source>
         <extracomment>Real source: VTKExtensions/FiltersMaterialInterface/Resources/material_interface_filters.xml - MaterialInterfaceFilter</extracomment>
-        <translation>对于选定的数组,计算出量加权平均值。 随着碎片表面的产生,这些阵列的值也被复制成碎片几何细胞数据.</translation>
+        <translation>对于选定的数组,计算出量加权平均值。 随着碎片表面的产生,这些阵列的值也被复制成碎片几何单元格数据.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30943"/>
@@ -43357,7 +43357,7 @@ Real source: VTKExtensions/FiltersMaterialInterface/Resources/material_interface
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30949"/>
         <source>For arrays selected a mass weighted average is computed. These arrays are also copied into fragment geometry cell data as the fragment surfaces are generated.</source>
         <extracomment>Real source: VTKExtensions/FiltersMaterialInterface/Resources/material_interface_filters.xml - MaterialInterfaceFilter</extracomment>
-        <translation>对于选定的数组,则计算质量加权平均值。 随着碎片表面的产生,这些阵列也被复制成碎片几何细胞数据.</translation>
+        <translation>对于选定的数组,则计算质量加权平均值。 随着碎片表面的产生,这些阵列也被复制成碎片几何单元格数据.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30952"/>
@@ -43615,13 +43615,13 @@ Real source: Remoting/Animation/Resources/animation.xml - KeyFrameAnimationCue</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31780"/>
         <source>Key Frame Animation Cue</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - Remoting/Animation/Resources/animation.xml</extracomment>
-        <translation>密钥框架动画 Cue</translation>
+        <translation>关键帧动画 Cue</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31783"/>
         <source>Animation cue with keyframes.</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - KeyFrameAnimationCue</extracomment>
-        <translation>动画提示键框。</translation>
+        <translation>动画提示关键帧。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31795"/>
@@ -43630,7 +43630,7 @@ Real source: Remoting/Animation/Resources/animation.xml - KeyFrameAnimationCue</
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - KeyFrameAnimationCue
 ----------
 Real source: Remoting/Animation/Resources/animation.xml - CameraAnimationCue</extracomment>
-        <translation>密钥框架</translation>
+        <translation>关键帧</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31798"/>
@@ -43639,7 +43639,7 @@ Real source: Remoting/Animation/Resources/animation.xml - CameraAnimationCue</ex
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - KeyFrameAnimationCue
 ----------
 Real source: Remoting/Animation/Resources/animation.xml - CameraAnimationCue</extracomment>
-        <translation>上次添加的密钥框架索引</translation>
+        <translation>上次添加的关键帧索引</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31801"/>
@@ -43651,7 +43651,7 @@ Real source: Remoting/Animation/Resources/animation.xml - CameraAnimationCue</ex
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31804"/>
         <source>Animation cue which can be used for animating Camera using keyframes.</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - CameraAnimationCue</extracomment>
-        <translation>动画提示,可以使用键框用于动画相机.</translation>
+        <translation>动画提示,可以使用关键帧用于动画相机.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4342"/>
@@ -43684,7 +43684,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Partit
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31828"/>
         <source>This is same as KeyFrameAnimationCue except that it has a new property \&quot;UseAnimationTime\&quot; which when set overrides the keyframes all together and directly uses the animation clock time to update the animated property.</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - TimeAnimationCue</extracomment>
-        <translation>这和KeyFrame动画一样 Cue除了它有一个新的属性\"Use Animation Time\",设定时会将密钥框全部覆盖,并直接使用动画时钟时间来更新动画属性.</translation>
+        <translation>这和KeyFrame动画一样 Cue除了它有一个新的属性\"Use Animation Time\",设定时会将关键帧全部覆盖,并直接使用动画时钟时间来更新动画属性.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31831"/>
@@ -43931,7 +43931,7 @@ Real source: Remoting/Application/Resources/readers_iovpic.xml - VPICReader
 Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - UnstructuredPOPReaderCore
 ----------
 Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - UnstructuredPOPReader</extracomment>
-        <translation>弦乐</translation>
+        <translation>步长</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31942"/>
@@ -43943,7 +43943,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - Unstructure
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31951"/>
         <source>Key Frame</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - Remoting/Animation/Resources/animation.xml</extracomment>
-        <translation>密钥框架</translation>
+        <translation>关键帧</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31954"/>
@@ -43961,7 +43961,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - Unstructure
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31960"/>
         <source>Composite Key Frame</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - Remoting/Animation/Resources/animation.xml</extracomment>
-        <translation>复合密钥框架</translation>
+        <translation>复合关键帧</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31966"/>
@@ -43994,43 +43994,43 @@ Real source: Remoting/Animation/Resources/animation.xml - ExponentialKeyFrame</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31984"/>
         <source>Boolean Key Frame</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - Remoting/Animation/Resources/animation.xml</extracomment>
-        <translation>布尔键框架</translation>
+        <translation>布尔关键帧架</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31987"/>
         <source>Ramp Key Frame</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - Remoting/Animation/Resources/animation.xml</extracomment>
-        <translation>随机键框架</translation>
+        <translation>随机关键帧架</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31990"/>
         <source>Exponential Key Frame</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - Remoting/Animation/Resources/animation.xml</extracomment>
-        <translation>指示密钥框架</translation>
+        <translation>指示关键帧</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32002"/>
         <source>Sinusoid Key Frame</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - Remoting/Animation/Resources/animation.xml</extracomment>
-        <translation>偏差键框架</translation>
+        <translation>偏差关键帧架</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32014"/>
         <source>Camera Key Frame</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - Remoting/Animation/Resources/animation.xml</extracomment>
-        <translation>相机密钥框架</translation>
+        <translation>相机关键帧</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32023"/>
         <source>View Up</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - CameraKeyFrame</extracomment>
-        <translation>向上查看</translation>
+        <translation>视图向上</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32026"/>
         <source>View Angle</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - CameraKeyFrame</extracomment>
-        <translation>查看角度</translation>
+        <translation>视角</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32029"/>
@@ -44060,7 +44060,7 @@ Real source: Remoting/Animation/Resources/animation.xml - ExponentialKeyFrame</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32041"/>
         <source>Focal Point Mode</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - CameraKeyFrame</extracomment>
-        <translation>联络点模式</translation>
+        <translation>焦点模式</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32044"/>
@@ -44108,7 +44108,7 @@ Real source: Remoting/Animation/Resources/animation.xml - BMP</extracomment>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32086"/>
         <source>Representation Animation Helper</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation.xml - Remoting/Animation/Resources/animation.xml</extracomment>
-        <translation>代表动画辅助工具</translation>
+        <translation>表示动画辅助工具</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32089"/>
@@ -44163,7 +44163,7 @@ Real source: Remoting/Export/Resources/exporters.xml - VTKJSExporter
 Real source: Remoting/Animation/Resources/animation.xml - SaveAnimation
 ----------
 Real source: Remoting/Animation/Resources/animation.xml - SaveAnimationExtracts</extracomment>
-        <translation>框架字符串</translation>
+        <translation>帧步长</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31330"/>
@@ -44353,7 +44353,7 @@ Real source: Remoting/Animation/Resources/animation_oggtheora.xml - OggTheora</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32311"/>
         <source>FFMPEG</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation_ffmpeg.xml - Remoting/Animation/Resources/animation_ffmpeg.xml</extracomment>
-        <translation>实况调查团</translation>
+        <translation>FFMPEG</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32314"/>
@@ -44431,7 +44431,7 @@ Real source: Remoting/Animation/Resources/animation_oggtheora.xml - OggTheora</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32383"/>
         <source>End</source>
         <extracomment>Real source: Remoting/Animation/Resources/animation_oggtheora.xml - OggTheora</extracomment>
-        <translation>结束</translation>
+        <translation>End</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32386"/>
@@ -44546,7 +44546,7 @@ Real source: Remoting/Animation/Resources/animation_oggtheora.xml - OggTheora</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2221"/>
         <source>Set ParaView language.</source>
         <extracomment>Real source: Remoting/Settings/Resources/utilities_settings.xml - GeneralSettings</extracomment>
-        <translation>设置帕拉维尤语言 。</translation>
+        <translation>设置 ParaView 语言。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2224"/>
@@ -44667,7 +44667,7 @@ Real source: Remoting/Animation/Resources/animation_oggtheora.xml - OggTheora</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2488"/>
         <source>Scalar Bar Mode</source>
         <extracomment>Real source: Remoting/Settings/Resources/utilities_settings.xml - GeneralSettings</extracomment>
-        <translation>斯卡尔条模式</translation>
+        <translation>标量条模式</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2293"/>
@@ -44823,7 +44823,7 @@ Real source: Remoting/Animation/Resources/animation_oggtheora.xml - OggTheora</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2554"/>
         <source>Inherit Representation Properties</source>
         <extracomment>Real source: Remoting/Settings/Resources/utilities_settings.xml - GeneralSettings</extracomment>
-        <translation>继承代表属性</translation>
+        <translation>继承表示属性</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="2365"/>
@@ -44998,7 +44998,7 @@ Real source: Remoting/Application/Resources/utilities.xml - PythonStateOptions</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27376"/>
         <source>AMR Dual Clip</source>
         <extracomment>Real source: VTKExtensions/AMR/Resources/amr_filters.xml - VTKExtensions/AMR/Resources/amr_filters.xml</extracomment>
-        <translation>AMR 双剪切</translation>
+        <translation>AMR Dual Clip</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27379"/>
@@ -45034,7 +45034,7 @@ Real source: VTKExtensions/AMR/Resources/amr_filters.xml - AMRFragmentsFilter</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27397"/>
         <source>This property specifies the cell arrays from which the clip filter will compute clipped cells.</source>
         <extracomment>Real source: VTKExtensions/AMR/Resources/amr_filters.xml - AMRDualClip</extracomment>
-        <translation>此属性指定剪辑过滤器将计算剪辑单元格的单元格数组 。</translation>
+        <translation>此属性指定裁剪过滤器将计算裁剪单元格的单元格数组 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27400"/>
@@ -45076,7 +45076,7 @@ Real source: VTKExtensions/AMR/Resources/amr_filters.xml - AMRFragmentsFilter</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27406"/>
         <source>Internal Decimation</source>
         <extracomment>Real source: VTKExtensions/AMR/Resources/amr_filters.xml - AMRDualClip</extracomment>
-        <translation>内部十进制</translation>
+        <translation>内部精简</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27409"/>
@@ -45115,13 +45115,13 @@ Real source: VTKExtensions/AMR/Resources/amr_filters.xml - AMRDualContour</extra
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27424"/>
         <source>AMR Contour</source>
         <extracomment>Real source: VTKExtensions/AMR/Resources/amr_filters.xml - VTKExtensions/AMR/Resources/amr_filters.xml</extracomment>
-        <translation>AMR 轮廓</translation>
+        <translation>AMR Contour</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27427"/>
         <source>Iso surface cell array.</source>
         <extracomment>Real source: VTKExtensions/AMR/Resources/amr_filters.xml - AMRDualContour</extracomment>
-        <translation>Iso表面细胞阵列.</translation>
+        <translation>Iso表面单元格阵列.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27442"/>
@@ -45190,7 +45190,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Cylinde
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27487"/>
         <source>AMR Fragment Integration</source>
         <extracomment>Real source: VTKExtensions/AMR/Resources/amr_filters.xml - VTKExtensions/AMR/Resources/amr_filters.xml</extracomment>
-        <translation>AMR 分裂整合</translation>
+        <translation>AMR Fragment Integration</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27490"/>
@@ -45271,7 +45271,7 @@ Real source: VTKExtensions/AMR/Resources/amr_filters.xml - AMRFragmentsFilter</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27535"/>
         <source>AMR Connectivity</source>
         <extracomment>Real source: VTKExtensions/AMR/Resources/amr_filters.xml - VTKExtensions/AMR/Resources/amr_filters.xml</extracomment>
-        <translation>AMR 连接</translation>
+        <translation>AMR Connectivity</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27538"/>
@@ -45307,7 +45307,7 @@ Real source: VTKExtensions/AMR/Resources/amr_filters.xml - AMRFragmentsFilter</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27574"/>
         <source>Convert AMR dataset to Multi-block</source>
         <extracomment>Real source: VTKExtensions/AMR/Resources/amr_filters.xml - VTKExtensions/AMR/Resources/amr_filters.xml</extracomment>
-        <translation>将AMR 数据集转换为多块</translation>
+        <translation>Convert AMR dataset to Multi-block</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27577"/>
@@ -45372,13 +45372,13 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - AxisAl
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3718"/>
         <source>Specify the translation to apply to the input dataset. Shortcut: SHIFT + [x/y/z] + Left-Click to translate freely or along the selected axis.</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_utilities.xml - Transform3</extracomment>
-        <translation>指定用于输入数据集的翻译。 快捷键:SHIFT + [x/y/z] + 左键可以自由翻译或沿着选定的轴线翻译.</translation>
+        <translation>指定用于输入数据集的平移。 快捷键:SHIFT + [x/y/z] + 左键可以自由平移或沿着选定的轴线平移.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3727"/>
         <source>Specify the rotation to apply to the input dataset. Shortcut: [x/y/z] + Left-Click on a face to rotate freely or along the selected axis.</source>
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_utilities.xml - Transform3</extracomment>
-        <translation>指定用于输入数据集的旋转。 快捷键: [x/y/z] + 左键在面部自由旋转或沿着选定的轴旋转.</translation>
+        <translation>指定用于输入数据集的旋转。 快捷键: [x/y/z] + 左键在面自由旋转或沿着选定的轴旋转.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="3736"/>
@@ -45390,7 +45390,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - AxisAl
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4567"/>
         <source>Four Lines Widget Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>四行部件代表</translation>
+        <translation>四行部件表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4582"/>
@@ -45408,7 +45408,7 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - FourLinesRep
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - FourLinesWidgetRepresentation
 ----------
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - FourLinesRepresentation</extracomment>
-        <translation>第1点 世界立场</translation>
+        <translation>第1点 世界位置</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="4588"/>
@@ -45426,13 +45426,13 @@ Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - FourLinesRep
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - FourLinesWidgetRepresentation
 ----------
 Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - FourLinesRepresentation</extracomment>
-        <translation>第2点 世界立场</translation>
+        <translation>第2点 世界位置</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="6916"/>
         <source>Four Lines Representation</source>
         <extracomment>Real source: Remoting/Views/Resources/3dwidgets_remotingviews.xml - Remoting/Views/Resources/3dwidgets_remotingviews.xml</extracomment>
-        <translation>四线代表</translation>
+        <translation>四线表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7213"/>
@@ -45459,7 +45459,7 @@ Real source: Remoting/Views/Resources/utilities_remotingviews.xml - GridAxes3DAc
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7699"/>
         <source>Place the pole (origin of the axes) at the center of the bounds. If off, use the Pole property.</source>
         <extracomment>Real source: Remoting/Views/Resources/annotations_remotingviews.xml - PolarAxesRepresentation</extracomment>
-        <translation>将杆(轴的起源)置于界限的中心。 如果关闭,使用波兰财产。</translation>
+        <translation>将杆(轴的起源)置于界限的中心。 如果关闭,使用波兰属性。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7702"/>
@@ -45502,7 +45502,7 @@ Real source: Remoting/Views/Resources/utilities_remotingviews.xml - GridAxes3DAc
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7828"/>
         <source>Translate the input bounds before computing the PolarAxes parameters.</source>
         <extracomment>Real source: Remoting/Views/Resources/annotations_remotingviews.xml - PolarAxesRepresentation</extracomment>
-        <translation>在计算极轴参数之前翻译输入边框。</translation>
+        <translation>在计算极轴参数之前平移输入边框。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="7834"/>
@@ -45639,13 +45639,13 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - PlotMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="14752"/>
         <source>Plot Matrix Representation Base</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - Remoting/Views/Resources/representations_remotingviews.xml</extracomment>
-        <translation>绘图矩阵代表基地</translation>
+        <translation>绘图矩阵表示基地</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="14755"/>
         <source>RepresentationBase used by PlotMatrixView.</source>
         <extracomment>Real source: Remoting/Views/Resources/representations_remotingviews.xml - PlotMatrixRepresentationBase</extracomment>
-        <translation>代表权 PlotMatrixView 使用的基数 。</translation>
+        <translation>表示权 PlotMatrixView 使用的基数 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="15517"/>
@@ -45860,7 +45860,7 @@ Real source: Remoting/Application/Resources/writers_iocgns.xml - CGNSWriter</ext
         <extracomment>Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - ImageReader
 ----------
 Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - TableToStructuredGrid</extracomment>
-        <translation>最低指数</translation>
+        <translation>最低索引</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24274"/>
@@ -45869,7 +45869,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - TableT
         <extracomment>Real source: VTKExtensions/IOImage/Resources/readers_pv_ioimage.xml - ImageReader
 ----------
 Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - TableToStructuredGrid</extracomment>
-        <translation>此属性指定每个维度( xmin, ymin, zmin) 数据的最低指数值 。</translation>
+        <translation>此属性指定每个维度( xmin, ymin, zmin) 数据的最低索引值 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="24745"/>
@@ -45900,7 +45900,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - TableT
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26572"/>
         <source>Fit a Gaussian (i.e., normal) distribution to data.</source>
         <extracomment>Real source: VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml - DescriptiveStatistics</extracomment>
-        <translation>将一个高斯分布(即普通)与数据匹配。</translation>
+        <translation>将一个高斯分布(即法向)与数据匹配。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26575"/>
@@ -46015,7 +46015,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - TableT
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26647"/>
         <source>Generate Statistics</source>
         <extracomment>Real source: VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml - VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml</extracomment>
-        <translation>生成统计</translation>
+        <translation>Generate Statistics</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="26650"/>
@@ -46125,7 +46125,7 @@ Real source: VTKExtensions/FiltersStatistics/Resources/statistics_filters.xml - 
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27589"/>
         <source>Resample AMR</source>
         <extracomment>Real source: VTKExtensions/AMR/Resources/amr_filters.xml - VTKExtensions/AMR/Resources/amr_filters.xml</extracomment>
-        <translation>重新模拟 AMR</translation>
+        <translation>Resample AMR</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27592"/>
@@ -46207,7 +46207,7 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Re
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27643"/>
         <source>AMR Fragments Filter</source>
         <extracomment>Real source: VTKExtensions/AMR/Resources/amr_filters.xml - VTKExtensions/AMR/Resources/amr_filters.xml</extracomment>
-        <translation>AMR 碎片过滤器</translation>
+        <translation>AMR Fragments Filter</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27646"/>
@@ -46228,7 +46228,7 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Re
         <extracomment>Real source: VTKExtensions/AMR/Resources/amr_filters.xml - AMRFragmentsFilter
 ----------
 Real source: Remoting/Application/Resources/filters_filtersgeometry.xml - Remoting/Application/Resources/filters_filtersgeometry.xml</extracomment>
-        <translation>提取表面</translation>
+        <translation>Extract Surface</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27703"/>
@@ -46276,7 +46276,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeometry.xml - Remoti
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27724"/>
         <source>Converts Overlapping AMR to a composite data of cartesian grids and unstructured interfaces with no T cells.</source>
         <extracomment>Real source: VTKExtensions/AMR/Resources/amr_filters.xml - AMRInterface</extracomment>
-        <translation>将重叠AMR转换为无T细胞的笛卡尔网格和无结构接口的复合数据.</translation>
+        <translation>将重叠AMR转换为无T单元格的笛卡尔网格和无结构接口的复合数据.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27727"/>
@@ -46288,7 +46288,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeometry.xml - Remoti
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27736"/>
         <source>Clean to Grid</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>清理到网格</translation>
+        <translation>Clean to Grid</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27739"/>
@@ -46318,7 +46318,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeometry.xml - Remoti
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27757"/>
         <source>When merging nearby points and not using absolute tolerance (see ToleranceIsAbsolute property), this property specifies the tolerance for performing merging as a fraction of the length of the diagonal of the bounding box of the input data set.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - CleanUnstructuredGrid</extracomment>
-        <translation>当合并附近的点而不使用绝对的容忍度(参见容忍IsAbsolute property)时,此属性将执行合并的容忍度指定为输入数据集边框对角长度的一小部分.</translation>
+        <translation>当合并附近的点而不使用绝对的容差度(参见容差IsAbsolute property)时,此属性将执行合并的容差度指定为输入数据集边框对角长度的一小部分.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27760"/>
@@ -46327,13 +46327,13 @@ Real source: Remoting/Application/Resources/filters_filtersgeometry.xml - Remoti
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - CleanUnstructuredGrid
 ----------
 Real source: Remoting/Application/Resources/filters_filterscore.xml - CleanPolyData</extracomment>
-        <translation>绝对容忍</translation>
+        <translation>绝对容差</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27763"/>
         <source>When merging nearby points and using absolute tolerance (see ToleranceIsAbsolute property), this property specifies the tolerance for performing merging in the spatial units of the input data set.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - CleanUnstructuredGrid</extracomment>
-        <translation>当合并附近点并使用绝对容忍度(见容忍IsAbsolute property)时,该属性指定了在输入数据集空间单位中进行合并的容忍度.</translation>
+        <translation>当合并附近点并使用绝对容差度(见容差IsAbsolute property)时,该属性指定了在输入数据集空间单位中进行合并的容差度.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27769"/>
@@ -46342,7 +46342,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - CleanPolyD
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - CleanUnstructuredGrid
 ----------
 Real source: Remoting/Application/Resources/filters_filterscore.xml - CleanPolyData</extracomment>
-        <translation>这种属性决定了在进行点合并时是使用绝对还是相对的(边框的一定百分比)容忍度.</translation>
+        <translation>这种属性决定了在进行点合并时是使用绝对还是相对的(边框的一定百分比)容差度.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27772"/>
@@ -46354,19 +46354,19 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - CleanPolyD
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27778"/>
         <source>Select how to merge data located on merged points: - Take First Point (default): the point with the lowest index imposes its data on to the merged point - Average by Number: a number average is performed on all the duplicate points - Average by Spatial Density: an average by attached cell volume (i.e. for every cell the point is connected to sum cell_volume/number_cell_points) is performed on the point data</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - CleanUnstructuredGrid</extracomment>
-        <translation>选择如何合并位于合并点上的数据 : - Take First Point( 默认): 指数最低的点将其数据强加于合并点 - 平均数字: 在所有重复点上都执行一个数字平均值 - 平均空间密度: 平均按附加单元格体积(即每个单元格的点被连接到sum 单元格量/数  cell points) 在点数据上执行一个平均数</translation>
+        <translation>选择如何合并位于合并点上的数据 : - Take First Point( 默认): 索引最低的点将其数据强加于合并点 - 平均数字: 在所有重复点上都执行一个数字平均值 - 平均空间密度: 平均按附加单元格体积(即每个单元格的点被连接到sum 单元格量/数  cell points) 在点数据上执行一个平均数</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27787"/>
         <source>Clean Cells to Grid</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>清理单元格到网格</translation>
+        <translation>Clean Cells to Grid</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27790"/>
         <source>Merges degenerate cells. Assumes the input grid does not contain duplicate points. You may want to run vtkCleanUnstructuredGrid first to assert it. If duplicated cells are found they are removed in the output. The filter also handles the case, where a cell may contain degenerate nodes (i.e. one and the same node is referenced by a cell more than once).</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - CleanUnstructuredGridCells</extracomment>
-        <translation>合并退化的细胞。 假设输入网格不包含重复点. 您可能想要先运行 vtkCleanUnstructuredGrid 来维护它 。 如果发现重复的单元格,则在输出中将其删除。 过滤器也处理大小写,其中单元格可能包含退化的节点(即一个单元格不止一次引用同一个节点).</translation>
+        <translation>合并退化的单元格。 假设输入网格不包含重复点. 您可能想要先运行 vtkCleanUnstructuredGrid 来维护它 。 如果发现重复的单元格,则在输出中将其删除。 过滤器也处理大小写,其中单元格可能包含退化的节点(即一个单元格不止一次引用同一个节点).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27793"/>
@@ -46390,7 +46390,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - CleanPolyD
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27805"/>
         <source>Extract Location</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>提取位置</translation>
+        <translation>Extract Location</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27808"/>
@@ -46402,13 +46402,13 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - CleanPolyD
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27811"/>
         <source>Sample or extract cells at a point.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ExtractLocation</extracomment>
-        <translation>样本或提取细胞在一个点。</translation>
+        <translation>样本或提取单元格在一个点。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27814"/>
         <source>Sample or extracy cells at a point.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ExtractLocation</extracomment>
-        <translation>样本或外细胞在某一点.</translation>
+        <translation>样本或外单元格在某一点.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27820"/>
@@ -46438,13 +46438,13 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - CleanPolyD
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27847"/>
         <source>Surface Flow</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>表面流动</translation>
+        <translation>Surface Flow</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27850"/>
         <source>The flow integration filter integrates the dot product of a point flow vector field and surface normal. It computes the net flow across the 2D surface. It operates on any type of dataset and produces an unstructured grid output.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - IntegrateFlowThroughSurface</extracomment>
-        <translation>流量集成滤波器将点流矢量场和表面正常的点产物集成. 它计算净流穿过2D表面. 它在任何类型的数据集上运行,并产生无结构的网格输出.</translation>
+        <translation>流量集成滤波器将点流矢量场和表面法向的点产物集成. 它计算净流穿过2D表面. 它在任何类型的数据集上运行,并产生无结构的网格输出.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27853"/>
@@ -46469,7 +46469,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - CleanPolyD
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27874"/>
         <source>Iso Volume</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>伊索音量</translation>
+        <translation>Iso Volume</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27877"/>
@@ -46571,7 +46571,7 @@ Real source: Remoting/Application/Resources/filters_imaginggeneral.xml - Median<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27919"/>
         <source>Plot On Sorted Lines</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>在排序的行上绘图</translation>
+        <translation>Plot On Sorted Lines</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27922"/>
@@ -46595,19 +46595,19 @@ Real source: Remoting/Application/Resources/filters_imaginggeneral.xml - Median<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27934"/>
         <source>Convert Polyhedral Cells</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>转换多面体单元格</translation>
+        <translation>Convert Polyhedral Cells</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27937"/>
         <source>Attempt to convert polyhedral cells to simple cells (tetrahedron, pyramid, wedge or hexahedron). It will speed up downstream processing if polyhedral cells can be treated as simple cells.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ConvertPolyhedra</extracomment>
-        <translation>试图将多面体细胞转化为简单的细胞(四面体,金字塔,楔形体或六面体). 如果多面细胞能被作为简单的细胞处理,它会加快下游的加工.</translation>
+        <translation>试图将多面体单元格转化为简单的单元格(四面体,金字塔,楔形体或六面体). 如果多面单元格能被作为简单的单元格处理,它会加快下游的加工.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27940"/>
         <source>Attempt to convert polyhedral cells tp simple cells.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ConvertPolyhedra</extracomment>
-        <translation>试图转换多面细胞 Tp 简单细胞.</translation>
+        <translation>试图转换多面单元格 Tp 简单单元格.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27946"/>
@@ -46619,7 +46619,7 @@ Real source: Remoting/Application/Resources/filters_imaginggeneral.xml - Median<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27949"/>
         <source>Calculator</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>计算器</translation>
+        <translation>Calculator</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27955"/>
@@ -46670,7 +46670,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - MergeV
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27985"/>
         <source>Set whether to output results as point/cell normals. Outputting as normals is only valid with vector results. Point or cell normals are selected using AttributeMode.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Calculator</extracomment>
-        <translation>设定是否输出结果为点/ 细胞正常值 。 输出为常态只对向量结果有效. 点或单元格正常使用属性模型选择.</translation>
+        <translation>设定是否输出结果为点/ 单元格法向值 。 输出为常态只对向量结果有效. 点或单元格法向使用属性模型选择.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27988"/>
@@ -46682,7 +46682,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - MergeV
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27991"/>
         <source>Set whether to output results as point/cell texture coordinates. Point or cell texture coordinates are selected using AttributeMode. 2-component texture coordinates cannot be generated at this time.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Calculator</extracomment>
-        <translation>设定是否输出结果为点/ 细胞纹理坐标 。 点或单元格纹理坐标使用属性模型选择。 2-组件纹理坐标此时无法生成.</translation>
+        <translation>设定是否输出结果为点/ 单元格纹理坐标 。 点或单元格纹理坐标使用属性模型选择。 2-组件纹理坐标此时无法生成.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27994"/>
@@ -46721,7 +46721,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Gradie
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28009"/>
         <source>This property determines whether invalid values in the computation will be replaced with a specific value. (See the ReplacementValue property.)</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Calculator</extracomment>
-        <translation>此属性决定了计算中的无效值是否会被特定值所取代. (见重置价值财产.</translation>
+        <translation>此属性决定了计算中的无效值是否会被特定值所取代. (见重置价值属性.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28012"/>
@@ -46751,13 +46751,13 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Gradie
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28030"/>
         <source>Clip Closed Surface</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>剪切封闭表面</translation>
+        <translation>Clip Closed Surface</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28033"/>
         <source>This clip filter cuts away a portion of the input polygonal dataset using a plane to generate a new polygonal dataset.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ClipClosedSurface</extracomment>
-        <translation>这个剪辑过滤器用平面切除一部分输入多边形数据集,以生成一个新的多边形数据集.</translation>
+        <translation>这个裁剪过滤器用平面切除一部分输入多边形数据集,以生成一个新的多边形数据集.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28036"/>
@@ -46785,7 +46785,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Clip</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28054"/>
         <source>This property specifies the parameters of the clipping plane used to clip the polygonal data.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ClipClosedSurface</extracomment>
-        <translation>此属性指定用于剪辑多边形数据的剪切平面参数 。</translation>
+        <translation>此属性指定用于裁剪多边形数据的剪切平面参数 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28057"/>
@@ -46809,37 +46809,37 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Clip</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28066"/>
         <source>Generate clipping outlines in the output wherever an input face is cut by the clipping plane.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ClipClosedSurface</extracomment>
-        <translation>在输出中生成剪辑大纲,只要一个输入面被剪辑平面剪切即可.</translation>
+        <translation>在输出中生成裁剪大纲,只要一个输入面被裁剪平面剪切即可.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28069"/>
         <source>Generate Cell Origins</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ClipClosedSurface</extracomment>
-        <translation>生成单元格来源</translation>
+        <translation>生成单元格原点</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28072"/>
         <source>Generate (cell) data for coloring purposes such that the newly generated cells (including capping faces and clipping outlines) can be distinguished from the input cells.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ClipClosedSurface</extracomment>
-        <translation>为配色目的生成(细胞)数据,这样新生成的细胞(包括盖面和剪切图)就可以与输入细胞区分开来.</translation>
+        <translation>为配色目的生成(单元格)数据,这样新生成的单元格(包括盖面和剪切图)就可以与输入单元格区分开来.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28078"/>
         <source>If this flag is turned off, the clipper will return the portion of the data that lies within the clipping plane. Otherwise, the clipper will return the portion of the data that lies outside the clipping plane.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ClipClosedSurface</extracomment>
-        <translation>如果关闭此旗帜,剪辑器将返回剪辑平面内的数据部分. 否则,剪辑机会返回剪辑机外的数据部分.</translation>
+        <translation>如果关闭此旗帜,裁剪器将返回裁剪平面内的数据部分. 否则,裁剪机会返回裁剪机外的数据部分.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28081"/>
         <source>Clipping Tolerance</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ClipClosedSurface</extracomment>
-        <translation>粘贴容忍</translation>
+        <translation>粘贴容差</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28084"/>
         <source>Specify the tolerance for creating new points. A small value might incur degenerate triangles.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ClipClosedSurface</extracomment>
-        <translation>指定创建新点的容忍度。 价值小可能会造成三角退化。</translation>
+        <translation>指定创建新点的容差度。 价值小可能会造成三角退化。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28087"/>
@@ -46851,7 +46851,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Clip</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28090"/>
         <source>Specify the color for the faces from the input.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ClipClosedSurface</extracomment>
-        <translation>指定输入时的面部颜色。</translation>
+        <translation>指定输入时的面颜色。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28093"/>
@@ -46869,7 +46869,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Clip</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28099"/>
         <source>Contour</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>轮廓</translation>
+        <translation>Contour</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28102"/>
@@ -46929,7 +46929,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Generic
 Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - SliceWithPlane
 ----------
 Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - GenericContour</extracomment>
-        <translation>计算普通</translation>
+        <translation>计算法向</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28129"/>
@@ -46941,7 +46941,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Generic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28132"/>
         <source>If this property is set to 1, a scalar array containing a normal value at each point in the isosurface or isoline will be created by the contour filter; otherwise an array of normals will not be computed. This operation is fairly expensive both in terms of computation time and memory required, so if the output dataset produced by the contour filter will be processed by filters that modify the dataset&apos;s topology or geometry, it may be wise to set the value of this property to 0. Select whether to compute normals.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Contour</extracomment>
-        <translation>如果将此属性设定为 1, 则由轮廓过滤器创建含有等离子面或等离子面每个点的正常值的scalar 数组; 否则将不计算一个常态数组 。 这个操作在计算时间和所需的内存上都相当昂贵,因此如果由轮廓滤波器产生的输出数据集会被修改数据集的地形或几何的滤波器处理,将这个属性的值设定为0. 选择是否计算正常 。</translation>
+        <translation>如果将此属性设定为 1, 则由轮廓过滤器创建含有等离子面或等离子面每个点的法向值的scalar 数组; 否则将不计算一个常态数组 。 这个操作在计算时间和所需的内存上都相当昂贵,因此如果由轮廓滤波器产生的输出数据集会被修改数据集的地形或几何的滤波器处理,将这个属性的值设定为0. 选择是否计算法向 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28135"/>
@@ -47127,7 +47127,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Generic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28255"/>
         <source>Extract Component</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>提取组件</translation>
+        <translation>Extract Component</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28258"/>
@@ -47181,7 +47181,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Generic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28315"/>
         <source>Extract Subset</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>提取子集</translation>
+        <translation>Extract Subset</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28318"/>
@@ -47217,7 +47217,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Generic
 Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - UnstructuredPOPReaderCore
 ----------
 Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - UnstructuredPOPReader</extracomment>
-        <translation>VOI 网络</translation>
+        <translation>VOI</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28339"/>
@@ -47235,7 +47235,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - Unstructure
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28345"/>
         <source>This property indicates the sampling rate in the I dimension. A value greater than 1 results in subsampling; every nth index will be included in the output.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ExtractGrid</extracomment>
-        <translation>这一属性表示I维度的采样率. 一个大于1的值在子采样中产生结果;每个nn指数将包含在输出中.</translation>
+        <translation>这一属性表示I维度的采样率. 一个大于1的值在子采样中产生结果;每个nn索引将包含在输出中.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28348"/>
@@ -47247,7 +47247,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - Unstructure
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28351"/>
         <source>This property indicates the sampling rate in the J dimension. A value greater than 1 results in subsampling; every nth index will be included in the output.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ExtractGrid</extracomment>
-        <translation>这个属性表示J维度的采样率. 一个大于1的值在子采样中产生结果;每个nn指数将包含在输出中.</translation>
+        <translation>这个属性表示J维度的采样率. 一个大于1的值在子采样中产生结果;每个nn索引将包含在输出中.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28354"/>
@@ -47259,7 +47259,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - Unstructure
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28357"/>
         <source>This property indicates the sampling rate in the K dimension. A value greater than 1 results in subsampling; every nth index will be included in the output.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ExtractGrid</extracomment>
-        <translation>该属性表示K维度的采样率. 一个大于1的值在子采样中产生结果;每个nn指数将包含在输出中.</translation>
+        <translation>该属性表示K维度的采样率. 一个大于1的值在子采样中产生结果;每个nn索引将包含在输出中.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28360"/>
@@ -47277,13 +47277,13 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - Unstructure
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28366"/>
         <source>Glyph</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>格莱弗</translation>
+        <translation>Glyph</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28369"/>
         <source>The Glyph filter generates a glyph (i.e., an arrow, cone, cube, cylinder, line, sphere, or 2D glyph) at each point or cell in the input dataset. The glyphs can be oriented and scaled by the input scalar and vector arrays. If the arrays are point-centered, glyphs are placed at points in the input dataset. If the arrays are cell-centered, glyphs are placed at the center of cells in the input dataset. A transform that applies to the glyph source can be modified to change the shape of the glyph. This filter operates on any type of data set. Its output is a polygonal dataset. To use this filter, select the **Orientation Array** to orient the glyphs and the **Scale Array** to control glyph scaling if desired - each array can be set to &apos;No array&apos; if orientation or scaling is not desired. When scaling by a 3-element vector array, the **Vector Scale Mode** can be set to either &apos;Scale by Magnitude&apos;, which scales glyphs according to the vector magnitude, or &apos;Scale by Components&apos;, which treats each component as a separate scaling factor in the corresponding dimension, i.e., the first component is the scaling factor in the x-dimension, the second component scales the y-dimension, and the third component scales the z-dimension. An overall constant **Scale Factor** is applied following the scaling controlled by other properties of this filter. The **Glyph Mode** property controls which points in the input dataset are selected for glyphing since in most cases, glyphing all points in the input dataset can be both performance impeding as well as visually cluttered.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Glyph</extracomment>
-        <translation>Glyph过滤器在输入数据集的每个点或单元格产生一个glyph(即箭头,圆锥,立方体,圆柱,线,球体,或2Dglyph). 胶片可以通过输入的scalar和矢量阵列来定向和缩放. 如果数组以点为中心,glyphs会被放置在输入数据集的点上. 如果数组以细胞为中心,glyphs被放置在输入数据集中的细胞中心. 适用于glyph源的变换可以被修改以改变glyph的形状. 此过滤器在任意类型的数据集上运行 。 它的输出是一个多边形数据集. 要使用此过滤器, 请选择 ** 方向矩阵 ** 来引导 glyphs 和 ** 比例矩阵 ** 来控制 如果需要 glyph 缩放 - 如果不需要方向或缩放, 每个阵列可以设置为“ 无数组 ” 。 当以3元素矢量阵列进行缩放时,**Vector scale mode**可以被设定为“按照矢量级进行缩放”或“按组件进行缩放”,它们将每个组件作为相应维度的一个单独的缩放因子,即第一个组件是x位的缩放因子,第二个组件是y位的缩放因子,第三个组件是z位的缩放因子. 在使用此过滤器的其他属性所控制的缩放后,将采用总体恒定**比例系数**。 ** Glyph 模式** 输入数据集中指点的属性控制被选择用于glyphing,因为在大多数情况下,输入数据集中所有点的glyphy既可以是性能阻碍,也可以是视觉杂乱.</translation>
+        <translation>Glyph过滤器在输入数据集的每个点或单元格产生一个glyph(即箭头,圆锥,立方体,圆柱,线,球体,或2Dglyph). 胶片可以通过输入的scalar和矢量阵列来定向和缩放. 如果数组以点为中心,glyphs会被放置在输入数据集的点上. 如果数组以单元格为中心,glyphs被放置在输入数据集中的单元格中心. 适用于glyph源的变换可以被修改以改变glyph的形状. 此过滤器在任意类型的数据集上运行 。 它的输出是一个多边形数据集. 要使用此过滤器, 请选择 ** 方向矩阵 ** 来引导 glyphs 和 ** 比例矩阵 ** 来控制 如果需要 glyph 缩放 - 如果不需要方向或缩放, 每个阵列可以设置为“ 无数组 ” 。 当以3元素矢量阵列进行缩放时,**Vector scale mode**可以被设定为“按照矢量级进行缩放”或“按组件进行缩放”,它们将每个组件作为相应维度的一个单独的缩放因子,即第一个组件是x位的缩放因子,第二个组件是y位的缩放因子,第三个组件是z位的缩放因子. 在使用此过滤器的其他属性所控制的缩放后,将采用总体恒定**比例系数**。 ** Glyph 模式** 输入数据集中指点的属性控制被选择用于glyphing,因为在大多数情况下,输入数据集中所有点的glyphy既可以是性能阻碍,也可以是视觉杂乱.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28372"/>
@@ -47301,7 +47301,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphW
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Glyph
 ----------
 Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphWithCustomSource</extracomment>
-        <translation>生成代表输入数据集中的属性的格子.</translation>
+        <translation>生成表示输入数据集中的属性的格子.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28381"/>
@@ -47319,7 +47319,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphW
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Glyph
 ----------
 Real source: Remoting/Application/Resources/filters_filterscore.xml - TensorGlyph</extracomment>
-        <translation>此属性决定了输入数据集的点将放置哪类格莱弗.</translation>
+        <translation>此属性决定了输入数据集的点将放置哪类字形.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28411"/>
@@ -47373,7 +47373,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphW
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Glyph
 ----------
 Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphWithCustomSource</extracomment>
-        <translation>当缩放数组为矢量时选择模式 。 ** 比例尺,按矢量度计算。 ** 比例按组件** 比例尺按组件所代表的维度中的每个矢量部分,例如,x方向按组件0缩放,y方向按组件1缩放,等等。</translation>
+        <translation>当缩放数组为矢量时选择模式 。 ** 比例尺,按矢量度计算。 ** 比例按组件** 比例尺按组件所表示的维度中的每个矢量部分,例如,x方向按组件0缩放,y方向按组件1缩放,等等。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28435"/>
@@ -47413,7 +47413,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphW
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Glyph
 ----------
 Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphWithCustomSource</extracomment>
-        <translation>格莱弗变形</translation>
+        <translation>字形变形</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28468"/>
@@ -47422,7 +47422,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphW
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Glyph
 ----------
 Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphWithCustomSource</extracomment>
-        <translation>此属性中的值允许您指定转换( 翻译、 旋转和缩放) 应用到 glyph 源 。</translation>
+        <translation>此属性中的值允许您指定转换( 平移、 旋转和缩放) 应用到 glyph 源 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28471"/>
@@ -47436,7 +47436,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphW
 Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphWithCustomSource
 ----------
 Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGlyphs</extracomment>
-        <translation>格莱弗模式</translation>
+        <translation>字形模式</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28474"/>
@@ -47520,13 +47520,13 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphW
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28546"/>
         <source>Glyph With Custom Source</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>带有自定义来源的格言</translation>
+        <translation>Glyph With Custom Source</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28549"/>
         <source>The **Glyph With Custom Source** filter generates a glyph specified as the **Source** input to this filter at each point in the input dataset. The glyphs can be oriented and scaled by the input scalar and vector arrays. If the arrays are point-centered, glyphs are placed at points in the input dataset. If the arrays are cell-centered, glyphs are placed at the center of cells in the input dataset. A transform that applies to the glyph source can be modified to change the shape of the glyph. This filter operates on any type of data set. Its output is a polygonal dataset. To use this filter, select the **Orientation Array** to orient the glyphs and the **Scale Array** to control glyph scaling if desired - each array can be set to &apos;No array&apos; if orientation or scaling is not desired. When scaling by a 3-element vector array, the **Vector Scale Mode** can be set to either &apos;Scale by Magnitude&apos;, which scales glyphs according to the vector magnitude, or &apos;Scale by Components&apos;, which treats each component as a separate scaling factor in the corresponding dimension, i.e., the first component is the scaling factor in the x-dimension, the second component scales the y-dimension, and the third component scales the z-dimension. An overall constant **Scale Factor** is applied following the scaling controlled by other properties of this filter. The **Glyph Mode** property controls which points in the input dataset are selected for glyphing since in most cases, glyphing all points in the input dataset can be both performance impeding as well as visually cluttered.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphWithCustomSource</extracomment>
-        <translation>** Glyph With Custom Source** 过滤器在输入数据集的每个点上生成一个指定为**Source** 输入器的glyph. 胶片可以通过输入的scalar和矢量阵列来定向和缩放. 如果数组以点为中心,glyphs会被放置在输入数据集的点上. 如果数组以细胞为中心,glyphs被放置在输入数据集中的细胞中心. 适用于glyph源的变换可以被修改以改变glyph的形状. 此过滤器在任意类型的数据集上运行 。 它的输出是一个多边形数据集. 要使用此过滤器, 请选择 ** 方向矩阵 ** 来引导 glyphs 和 ** 比例矩阵 ** 来控制 如果需要 glyph 缩放 - 如果不需要方向或缩放, 每个阵列可以设置为“ 无数组 ” 。 当以3元素矢量阵列进行缩放时,**Vector scale mode**可以被设定为“按照矢量级进行缩放”或“按组件进行缩放”,它们将每个组件作为相应维度的一个单独的缩放因子,即第一个组件是x位的缩放因子,第二个组件是y位的缩放因子,第三个组件是z位的缩放因子. 在使用此过滤器的其他属性所控制的缩放后,将采用总体恒定**比例系数**。 ** Glyph 模式** 输入数据集中指点的属性控制被选择用于glyphing,因为在大多数情况下,输入数据集中所有点的glyphy既可以是性能阻碍,也可以是视觉杂乱.</translation>
+        <translation>** Glyph With Custom Source** 过滤器在输入数据集的每个点上生成一个指定为**Source** 输入器的glyph. 胶片可以通过输入的scalar和矢量阵列来定向和缩放. 如果数组以点为中心,glyphs会被放置在输入数据集的点上. 如果数组以单元格为中心,glyphs被放置在输入数据集中的单元格中心. 适用于glyph源的变换可以被修改以改变glyph的形状. 此过滤器在任意类型的数据集上运行 。 它的输出是一个多边形数据集. 要使用此过滤器, 请选择 ** 方向矩阵 ** 来引导 glyphs 和 ** 比例矩阵 ** 来控制 如果需要 glyph 缩放 - 如果不需要方向或缩放, 每个阵列可以设置为“ 无数组 ” 。 当以3元素矢量阵列进行缩放时,**Vector scale mode**可以被设定为“按照矢量级进行缩放”或“按组件进行缩放”,它们将每个组件作为相应维度的一个单独的缩放因子,即第一个组件是x位的缩放因子,第二个组件是y位的缩放因子,第三个组件是z位的缩放因子. 在使用此过滤器的其他属性所控制的缩放后,将采用总体恒定**比例系数**。 ** Glyph 模式** 输入数据集中指点的属性控制被选择用于glyphing,因为在大多数情况下,输入数据集中所有点的glyphy既可以是性能阻碍,也可以是视觉杂乱.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28567"/>
@@ -47538,19 +47538,19 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphW
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28570"/>
         <source>This property determines which glyph will be placed at the points in the input dataset.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - GlyphWithCustomSource</extracomment>
-        <translation>此属性将决定输入数据集的点将放置哪一个格言 。</translation>
+        <translation>此属性将决定输入数据集的点将放置哪一个字形 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28702"/>
         <source>Gradient</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>渐变</translation>
+        <translation>Gradient</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28705"/>
         <source>The Gradient filter estimates the gradient vector at each point or cell. It operates on any type of vtkDataSet, and the output is of the same type as the input. For unstructured grids, the gradient is computed with the cell derivatives. For structured grids, the gradient is computed using central differencing, except on the boundary of the dataset where forward and backward differencing is used for the boundary elements. If the dataset is a vtkImageData, the gradient computation at the boundaries can also be done with central differencing using a duplication of the boundary values, smoothing out the result (see &apos;Boundary Method&apos; property).</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Gradient</extracomment>
-        <translation>渐变过滤器估计每个点或单元格的梯度矢量。 它运行在任意类型的vtkDataSet上,输出与输入类型相同. 对于无结构网格,梯度用细胞衍生物计算. 对于结构化的网格,梯度使用中央差异法计算,但在数据集的边界上,边界要素使用前后差异法。 如果数据集是 vtkImageData,那么边界的梯度计算也可以使用边界值的重复来进行中央差异计算,平滑结果(参见"边界方法"属性).</translation>
+        <translation>渐变过滤器估计每个点或单元格的梯度矢量。 它运行在任意类型的vtkDataSet上,输出与输入类型相同. 对于无结构网格,梯度用单元格衍生物计算. 对于结构化的网格,梯度使用中央差异法计算,但在数据集的边界上,边界要素使用前后差异法。 如果数据集是 vtkImageData,那么边界的梯度计算也可以使用边界值的重复来进行中央差异计算,平滑结果(参见"边界方法"属性).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28708"/>
@@ -47661,7 +47661,7 @@ Real source: Remoting/Application/Resources/filters_imaginggeneral.xml - Gradien
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Gradient
 ----------
 Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - VortexCores</extracomment>
-        <translation>更快的缩写</translation>
+        <translation>更快的近似</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28792"/>
@@ -47793,13 +47793,13 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Arbit
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28873"/>
         <source>Linear Extrusion</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>线性切变</translation>
+        <translation>Linear Extrusion</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28876"/>
         <source>The Linear Extrusion filter creates a swept surface by translating the input dataset along a specified vector. This filter is intended to operate on 2D polygonal data. This filter operates on polygonal data and produces polygonal data output.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - LinearExtrusionFilter</extracomment>
-        <translation>Linear Extriusion 过滤器通过按照指定的向量翻译输入数据集来创建覆盖的表面. 此过滤器旨在操作于2D多边形数据. 此过滤器在多边形数据上运行,并产生多边形数据输出.</translation>
+        <translation>Linear Extriusion 过滤器通过按照指定的向量平移输入数据集来创建扫掠面. 此过滤器旨在操作于2D多边形数据. 此过滤器在多边形数据上运行,并产生多边形数据输出.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28879"/>
@@ -47808,7 +47808,7 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Arbit
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - LinearExtrusionFilter
 ----------
 Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - LinearCellExtrusionFilter</extracomment>
-        <translation>这个过滤器通过将输入沿向量翻译来创建覆盖的表面定义.</translation>
+        <translation>这个过滤器通过将输入沿向量平移来创建扫掠面定义.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28882"/>
@@ -47829,7 +47829,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Linear
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28894"/>
         <source>The value of this property determines the distance along the vector the dataset will be translated. (A scale factor of 0.5 will move the dataset half the length of the vector, and a scale factor of 2 will move it twice the vector&apos;s length.)</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - LinearExtrusionFilter</extracomment>
-        <translation>此属性的值决定了将翻译的数据集沿矢量的距离 。 (0.5的尺度因子会移动向量长度的一半的数据集,2的尺度因子会移动向量长度的两倍. )</translation>
+        <translation>此属性的值决定了将平移的数据集沿矢量的距离 。 (0.5的尺度因子会移动向量长度的一半的数据集,2的尺度因子会移动向量长度的两倍. )</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28897"/>
@@ -47847,7 +47847,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Linear
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28906"/>
         <source>The value of this property indicates whether to cap the ends of the swept surface. Capping works by placing a copy of the input dataset on either end of the swept surface, so it behaves properly if the input is a 2D surface composed of filled polygons. If the input dataset is a closed solid (e.g., a sphere), then if capping is on (i.e., this property is set to 1), two copies of the data set will be displayed on output (the second translated from the first one along the specified vector). If instead capping is off (i.e., this property is set to 0), then an input closed solid will produce no output.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - LinearExtrusionFilter</extracomment>
-        <translation>此属性的值表示是否将覆盖的表面的末端封顶 。 通过将输入数据集的副本放置在横扫的表面的任意一端,按键工作,所以如果输入是一个由填充的多边形组成的2D表面,则其行为正常. 如果输入数据集是闭合的固件(如球体),那么如果封盖在上(即此属性设定为1),则数据集的两份会在输出上显示(第二份从第一个沿指定矢量翻译). 如果封顶关闭( 即此属性设定为 0) , 那么一个输入关闭的固件不会输出 。</translation>
+        <translation>此属性的值表示是否将扫掠面的末端封顶 。 通过将输入数据集的副本放置在横扫的表面的任意一端,按键工作,所以如果输入是一个由填充的多边形组成的2D表面,则其行为正常. 如果输入数据集是闭合的实体(如球体),那么如果封盖在上(即此属性设定为1),则数据集的两份会在输出上显示(第二份从第一个沿指定矢量平移). 如果封顶关闭( 即此属性设定为 0) , 那么一个输入关闭的实体不会输出 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28909"/>
@@ -47887,19 +47887,19 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Surfac
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28915"/>
         <source>Linear Cell Extrusion</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>线性单元格突变</translation>
+        <translation>Linear Cell Extrusion</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28918"/>
         <source>The Linear Extrusion filter creates a swept surface by translating the input dataset along the cell normals or a specified vector. This filter is intended to operate on polygonal data and produces 3D unstructured grid output.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - LinearCellExtrusionFilter</extracomment>
-        <translation>线性激流滤波器通过翻译单元格正常或指定矢量的输入数据集来创建覆盖表面. 这种滤波器意在在多边形数据上运行,并产生3D无结构的网格输出.</translation>
+        <translation>线性挤出滤波器通过平移单元格法向或指定矢量的输入数据集来创建覆盖表面. 这种滤波器意在在多边形数据上运行,并产生3D无结构的网格输出.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28930"/>
         <source>This property specifies the input to the Linear Cell Extrusion filter.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - LinearCellExtrusionFilter</extracomment>
-        <translation>此属性指定了对 Linear 单元格突变过滤器的输入 。</translation>
+        <translation>此属性指定了对 Linear 单元格挤出过滤器的输入 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28939"/>
@@ -47954,7 +47954,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Surfac
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28975"/>
         <source>Clip</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>剪辑</translation>
+        <translation>Clip</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28978"/>
@@ -47978,7 +47978,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Surfac
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28999"/>
         <source>This property specifies the parameters of the clip function (an implicit description) used to clip the dataset.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Clip</extracomment>
-        <translation>此属性指定用于剪辑数据集的剪辑函数的参数(一种隐含描述).</translation>
+        <translation>此属性指定用于裁剪数据集的裁剪函数的参数(一种隐含描述).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29002"/>
@@ -47990,7 +47990,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Surfac
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29005"/>
         <source>This property specifies the parameters of the clip function (an implicit description) used to clip the hyper tree grid.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Clip</extracomment>
-        <translation>此属性指定用于剪辑超树网格的剪辑函数的参数(一种隐含描述).</translation>
+        <translation>此属性指定用于裁剪超树网格的裁剪函数的参数(一种隐含描述).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29011"/>
@@ -48029,7 +48029,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Generic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29035"/>
         <source>If clipping with scalars, this property sets the scalar value about which to clip the dataset based on the scalar array chosen. (See SelectInputScalars.) If clipping with a clip function, this property specifies an offset from the clip function to use in the clipping operation. Neither functionality is currently available in ParaView&apos;s user interface.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Clip</extracomment>
-        <translation>如果用scalars剪辑, 此属性会设置以所选择的scalar数组来剪辑数据集的scalar值 。 (见SelectInputScalars.). 如果使用剪贴功能进行剪贴,此属性指定从剪贴操作中使用的剪贴功能中抵消. ParaView的用户界面目前没有这两个功能.</translation>
+        <translation>如果用scalars裁剪, 此属性会设置以所选择的scalar数组来裁剪数据集的scalar值 。 (见SelectInputScalars.). 如果使用剪贴功能进行剪贴,此属性指定从剪贴操作中使用的剪贴功能中抵消. ParaView的用户界面目前没有这两个功能.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29038"/>
@@ -48086,7 +48086,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - ArrowSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29062"/>
         <source>If this property is set to 1 it will clip to the exact specifications for the **Box** option only, otherwise the clip will only approximate the box geometry. The exact clip is very expensive as it requires generating up to 6, if Invert == 1, or 11, if Invert = 0, plane clips. Additionally, **Crinkle clip** must be unchecked.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Clip</extracomment>
-        <translation>如果将这个属性设定为 1, 它将剪切到仅用于 ** Box ** 选项的精确规格, 否则剪辑将只大致显示框几何 。 准确的片段非常昂贵,因为它需要生成高达6,如果Invert = 1,或者11,如果Invert = 0,飞机片段. 此外,** 皱纹夹** 必须不加限制。</translation>
+        <translation>如果将这个属性设定为 1, 它将剪切到仅用于 ** Box ** 选项的精确规格, 否则裁剪将只大致显示框几何 。 准确的片段非常昂贵,因为它需要生成高达6,如果Invert = 1,或者11,如果Invert = 0,飞机片段. 此外,** 皱纹夹** 必须不加限制。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29086"/>
@@ -48131,7 +48131,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - SliceW
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29128"/>
         <source>This parameter controls whether to extract the entire cells that are sliced by the region or just extract a triangulated surface of that region.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Cut</extracomment>
-        <translation>这个参数控制是提取被区域切开的整个细胞,还是仅仅提取该区域的三角表面.</translation>
+        <translation>这个参数控制是提取被区域切开的整个单元格,还是仅仅提取该区域的三角表面.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29131"/>
@@ -48165,13 +48165,13 @@ Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Generic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29152"/>
         <source>The values in this property specify a list of current offset values. This can be used to create multiple slices with different centers. Each entry represents a new slice with its center shifted by the offset value. The &apos;Values Range&apos; information is the range based on the global bounding box, not necessarily on the current slice geometry configuration.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Cut</extracomment>
-        <translation>此属性中的值指定了当前抵消值列表 。 这可用于创建多个具有不同中心的切片. 每个条目代表一个新的切片,其中心被抵消值所转移. 'Values Range'信息是基于全局边框的距离,并不一定基于当前切片几何配置.</translation>
+        <translation>此属性中的值指定了当前抵消值列表 。 这可用于创建多个具有不同中心的切片. 每个条目表示一个新的切片,其中心被抵消值所转移. 'Values Range'信息是基于全局边框的距离,并不一定基于当前切片几何配置.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29170"/>
         <source>Threshold</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>阈值</translation>
+        <translation>Threshold</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29176"/>
@@ -48240,7 +48240,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Thresh
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29257"/>
         <source>All Scalars</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Threshold</extracomment>
-        <translation>全部斯卡尔</translation>
+        <translation>全部标量</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29263"/>
@@ -48270,7 +48270,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Thresh
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29299"/>
         <source>Slice With Plane</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>用飞机切片</translation>
+        <translation>Slice With Plane</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29302"/>
@@ -48351,7 +48351,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - AxisAl
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29350"/>
         <source>If enabled, compute the normal on each cell. Since all output cells are coplanar, the normal generated is simply the normal of the plane used to slice with. By default, computing of normals is disabled.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - SliceWithPlane</extracomment>
-        <translation>如果启用,则计算每个单元格的正常值。 由于所有的输出细胞都是同构的,所以正常生成的只是用来切片的平面的正常. 默认情况下,正常的计算被禁用.</translation>
+        <translation>如果启用,则计算每个单元格的法向值。 由于所有的输出单元格都是同构的,所以法向生成的只是用来切片的平面的法向. 默认情况下,法向的计算被禁用.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29353"/>
@@ -48404,7 +48404,7 @@ Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - AxisAl
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29479"/>
         <source>Transpose Table</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>转换表格</translation>
+        <translation>Transpose Table</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29485"/>
@@ -48498,7 +48498,7 @@ Real source: Remoting/Application/Resources/proxies_openturns.xml - OTKernelSmoo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29524"/>
         <source>Rectilinear Grid Connectivity</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>直线网格连接</translation>
+        <translation>Rectilinear Grid Connectivity</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29527"/>
@@ -48576,7 +48576,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - CTHPar
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29593"/>
         <source>Bounding Ruler</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>界标</translation>
+        <translation>Bounding Ruler</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29596"/>
@@ -48600,7 +48600,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - CTHPar
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29611"/>
         <source>Slice Along PolyLine</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>沿着多线线切片</translation>
+        <translation>Slice Along PolyLine</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29614"/>
@@ -48650,7 +48650,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - CTHPar
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29644"/>
         <source>Threshold Table</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>阈值表</translation>
+        <translation>Threshold Table</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29647"/>
@@ -48704,13 +48704,13 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - CTHPar
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29701"/>
         <source>Surface Vectors</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>表面矢量</translation>
+        <translation>Surface Vectors</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29704"/>
         <source>The Surface Vectors filter is used for 2D data sets. It constrains vectors to lie in a surface by removing components of the vectors normal to the local surface.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - SurfaceVectors</extracomment>
-        <translation>表面矢量过滤器用于2D数据集. 它通过将正常的矢量的成分移到局部表面来限制矢量沉降在表面.</translation>
+        <translation>表面矢量过滤器用于2D数据集. 它通过将法向的矢量的成分移到局部表面来限制矢量沉降在表面.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29707"/>
@@ -48735,13 +48735,13 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - CTHPar
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29731"/>
         <source>This property specifies whether the vectors will be parallel or perpendicular to the surface. If the value is set to PerpendicularScale (2), then the output will contain a scalar array with the dot product of the surface normal and the vector at each point.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - SurfaceVectors</extracomment>
-        <translation>此属性指定矢量是平行的还是与表面垂直的 。 如果将值设定为Perpondicular Scale (2),则输出将包含一个带有表面正常和矢量每个点的点产物的scalar阵列.</translation>
+        <translation>此属性指定矢量是平行的还是与表面垂直的 。 如果将值设定为Perpondicular Scale (2),则输出将包含一个带有表面法向和矢量每个点的点产物的scalar阵列.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29734"/>
         <source>Time Step Progress Bar</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>时间步进栏</translation>
+        <translation>Time Step Progress Bar</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29737"/>
@@ -48771,7 +48771,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - CTHPar
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29752"/>
         <source>Annotate Time Filter</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>注释时间过滤器</translation>
+        <translation>Annotate Time Filter</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29755"/>
@@ -48831,7 +48831,7 @@ Real source: Remoting/Application/Resources/filters_filtershybrid.xml - Temporal
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29788"/>
         <source>OME TIFF Channel Calculator</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>OME TIFF 通道计算器</translation>
+        <translation>OME TIFF Channel Calculator</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29794"/>
@@ -48995,7 +48995,7 @@ Real source: Remoting/Application/Resources/filters_filtershybrid.xml - Temporal
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29926"/>
         <source>Annotate Global Data</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>注释全球数据</translation>
+        <translation>Annotate Global Data</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29929"/>
@@ -49049,7 +49049,7 @@ Real source: Remoting/Application/Resources/filters_filtershybrid.xml - Temporal
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29968"/>
         <source>Annotate Selection</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>注释选择</translation>
+        <translation>Annotate Selection</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29971"/>
@@ -49091,7 +49091,7 @@ Real source: Remoting/Application/Resources/filters_filtershybrid.xml - Temporal
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30016"/>
         <source>Merge Vector Components</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>合并矢量组件</translation>
+        <translation>Merge Vector Components</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30019"/>
@@ -49163,13 +49163,13 @@ Real source: Remoting/Application/Resources/filters_filtershybrid.xml - Temporal
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30082"/>
         <source>PointSet To Octree Image</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>点到八角形图像</translation>
+        <translation>PointSet To Octree Image</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30085"/>
         <source>PointSetToOctreeImage can be used to convert a point set to an image with a number of points per cell target and an unsigned char octree cell array. Each bit of the unsigned char indicates if the point-set had a point close to one of the 8 corners of the cell. It can optionally also output a cell array based on an input point array. This array will have 1 or many components that represent different functions i.e. last value, min, max, count, sum, mean.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - PointSetToOctreeImage</extracomment>
-        <translation>PointSetToctreeImage可以用来将一个点集转换成一个图像,每个单元格目标有多个点,和一个没有符号的Char octree单元格阵列. 未签名字符的每个位表示点集是否有靠近单元格8角之一的点. 它也可以根据输入点阵列可选择输出一个单元格数组. 此数组将有代表不同函数的1个或许多组件,即最后一个值,分钟,最大值,计数,总和,平均值.</translation>
+        <translation>PointSetToctreeImage可以用来将一个点集转换成一个图像,每个单元格目标有多个点,和一个没有符号的Char octree单元格阵列. 未签名字符的每个位表示点集是否有靠近单元格8角之一的点. 它也可以根据输入点阵列可选择输出一个单元格数组. 此数组将有表示不同函数的1个或许多组件,即最后一个值,分钟,最大值,计数,总和,平均值.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30088"/>
@@ -49293,7 +49293,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallelverdict.xml -
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30154"/>
         <source>Octree Image to PointSet</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>十进制图像到点集</translation>
+        <translation>Octree Image to PointSet</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30157"/>
@@ -49403,7 +49403,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallelverdict.xml -
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30235"/>
         <source>Equalizer Filter</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>平衡器过滤器</translation>
+        <translation>Equalizer Filter</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30238"/>
@@ -49495,7 +49495,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallelverdict.xml -
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30415"/>
         <source>Hierarchical Fractal</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_sources.xml - VTKExtensions/FiltersGeneral/Resources/general_sources.xml</extracomment>
-        <translation>等级分形</translation>
+        <translation>Hierarchical Fractal</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30418"/>
@@ -49622,13 +49622,13 @@ Real source: Remoting/Application/Resources/utilities.xml - CatalystOptions</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30481"/>
         <source>Fast Uniform Grid</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_sources.xml - VTKExtensions/FiltersGeneral/Resources/general_sources.xml</extracomment>
-        <translation>快制服网格</translation>
+        <translation>Fast Uniform Grid</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30484"/>
         <source>The Fast Uniform Grid source can be used to create a uniform grid with scalar values derived from relatively light computations. The active scalar array is named \&quot;X\&quot;, and is set to the X coordinate for each pixel. There are two additional point data sets. The data array named \&quot;DistanceSquared\&quot; is computed as the squared distance from each pixel to the origin. The data array named \&quot;Swirl\&quot; is a vector field computed as (Y,Z,X) at each pixel.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_sources.xml - FastUniformGrid</extracomment>
-        <translation>快速统一网格源可以用来创建一个具有相对轻度计算得出的scalar值的统一网格. 活动的scalar阵列命名为\"\",并设定为每个像素的X坐标. 另有两个点数据集. 名为 \“ DistanceSquared\ ” 的数据阵列是按从每个像素到来源的平方距离计算的 。 名为 \“ swirl\” 的数据阵列是一个向量字段, 在每个像素上计算为( Y, Z, X) 。</translation>
+        <translation>快速统一网格源可以用来创建一个具有相对轻度计算得出的scalar值的统一网格. 活动的scalar阵列命名为\"\",并设定为每个像素的X坐标. 另有两个点数据集. 名为 \“ DistanceSquared\ ” 的数据阵列是按从每个像素到原点的平方距离计算的 。 名为 \“ swirl\” 的数据阵列是一个向量字段, 在每个像素上计算为( Y, Z, X) 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30487"/>
@@ -49658,7 +49658,7 @@ Real source: Remoting/Application/Resources/utilities.xml - CatalystOptions</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30502"/>
         <source>Enable/disable DistanceSquared point data scalar array.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_sources.xml - FastUniformGrid</extracomment>
-        <translation>启用/ 禁用距离方位数据分级阵列 。</translation>
+        <translation>启用/ 禁用距离方位数据标量阵列 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30505"/>
@@ -49724,7 +49724,7 @@ Real source: Remoting/Application/Resources/utilities.xml - CatalystOptions</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30541"/>
         <source>Annotate Time</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_sources.xml - VTKExtensions/FiltersGeneral/Resources/general_sources.xml</extracomment>
-        <translation>注释时间</translation>
+        <translation>Annotate Time</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30544"/>
@@ -49754,7 +49754,7 @@ Real source: Remoting/Application/Resources/utilities.xml - CatalystOptions</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30562"/>
         <source>Generate ghost cells and ghost points in a composite data set. Ghosts are exchanged between blocks / partitions of same type. Currently, vtkImageData, vtkRectilinearGrid, vtkStructuredGrid, vtkPolyData, vtkUnstructuredGrid and vtkHyperTreeGrid are supported. Those input types (exception for vtkHyperTreeGrid) can be dispatched in vtkPartitionedDataSet or vtkPartitionedDataSetCollection. Inside a collection, 2 partitioned data sets do not exchange ghosts, but partitions inside a partitioned data set do.</source>
         <extracomment>Real source: VTKExtensions/FiltersParallelDIY2/Resources/parallel_diy_filters.xml - GhostCells</extracomment>
-        <translation>在复合数据集中生成鬼细胞和鬼点. 幽灵在同类型的块/分区之间交换. 目前,支持VtkImageData,vtkRectilinearGrid,vtkStructuredGrid,vtkPolyData,vtkUnstructuredGrid和vtkHyperTreeGrid. 这些输入类型(vtkHyperTreeGrid的例外)可以在vtkPartitionedDataSet或vtkPartitionedDataSet Collection中发送. 在一个集合中,2个分区数据集并不交换鬼魂,但是一个分区数据集内部的分区是这样做的.</translation>
+        <translation>在复合数据集中生成鬼单元格和鬼点. 幽灵在同类型的块/分区之间交换. 目前,支持VtkImageData,vtkRectilinearGrid,vtkStructuredGrid,vtkPolyData,vtkUnstructuredGrid和vtkHyperTreeGrid. 这些输入类型(vtkHyperTreeGrid的例外)可以在vtkPartitionedDataSet或vtkPartitionedDataSet Collection中发送. 在一个集合中,2个分区数据集并不交换鬼魂,但是一个分区数据集内部的分区是这样做的.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32389"/>
@@ -50150,7 +50150,7 @@ Real source: Remoting/Application/Resources/internal_writers.xml - ParallelFileS
 Real source: Remoting/Application/Resources/proxies_fides.xml - FidesWriter
 ----------
 Real source: Remoting/Application/Resources/writers_ioioss.xml - IOSSWriter</extracomment>
-        <translation>时间阶梯</translation>
+        <translation>时间步长</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32845"/>
@@ -50221,7 +50221,7 @@ Real source: Remoting/Application/Resources/writers_ioxml.xml - PLY</extracommen
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32971"/>
         <source>When **NumberOfIORanks** is greater than 1 and less than the number of MPI ranks, this controls how the ranks that write to disk are determined. This also affects which ranks send data to which rank for IO. In **Contiguous** mode (default), all MPI ranks are numerically grouped into **NumberOfIORanks** groups with the first rank in each group acting as the `root` node for that group and is the one that does IO. For example, if there are 16 MPI ranks and NumberOfIORanks is set to 3 then the groups are `[0 - 5], [6 - 10], [11 - 15]` with the first rank in each group 0, 6, and 15 doing the IO. In **RoundRobin** mode, the grouping is done in round robin fashion, thus for 16 MPI ranks with NumberOfIORanks set to 3, the groups are `[0, 3, ..., 15], [1, 4, ..., 13], [2, 5, ..., 14]` with 0, 1 and 2 doing the IO.</source>
         <extracomment>Real source: Remoting/Application/Resources/internal_writers.xml - ParallelSerialWriter</extracomment>
-        <translation>当 ** NumberOfIORanks ** 大于1且低于 MPI 排名时,这控制了写到磁盘的排名是如何确定的. 这也影响到哪一个等级向IO发送数据. 在** Contigual ** 模式(默认)中,所有MPI的排名按数字分组为** NumberOfIORANKs** ,在作为该组的`根 ' 节点的每个组中排名第一,是执行IO的组。 例如,如果有16名MPI的军衔,而NumberOfIORANKs被设定为3名,则这些军衔为`[0-5]、[6-10]、[11-15]',每组第一军衔为0、6和15名。 在** Round Robin**模式下,分组采用圆形Robin方式进行,因此,对于16名MPI的排名,NumberOfIORANKs设定为3, 分组为`[0, 3,..., 15], [1, 4,..., 13], [2, 5,..., 14]', 分组为0, 1和2。</translation>
+        <translation>当 ** NumberOfIORanks ** 大于1且低于 MPI 排名时,这控制了写到磁盘的排名是如何确定的. 这也影响到哪一个等级向IO发送数据. 在** Contigual ** 模式(默认)中,所有MPI的排名按数字分组为** NumberOfIORANKs** ,在作为该组的`根 ' 节点的每个组中排名第一,是执行IO的组。 例如,如果有16名MPI的进程号,而NumberOfIORANKs被设定为3名,则这些进程号为`[0-5]、[6-10]、[11-15]',每组第一进程号为0、6和15名。 在** Round Robin**模式下,分组采用圆形Robin方式进行,因此,对于16名MPI的排名,NumberOfIORANKs设定为3, 分组为`[0, 3,..., 15], [1, 4,..., 13], [2, 5,..., 14]', 分组为0, 1和2。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="32974"/>
@@ -50306,7 +50306,7 @@ Real source: Remoting/Application/Resources/utilities.xml - NonMergingPointLocat
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - PointLocator
 ----------
 Real source: Remoting/Application/Resources/utilities.xml - IncrementalOctreePointLocator</extracomment>
-        <translation>指定基于检查/基于容忍的点插入的绝对容忍度。</translation>
+        <translation>指定基于检查/基于容差的点插入的绝对容差度。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33022"/>
@@ -50318,7 +50318,7 @@ Real source: Remoting/Application/Resources/utilities.xml - IncrementalOctreePoi
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33025"/>
         <source>A point merger using a search structure of uniform fixed-resolution bins / buckets for zero tolerance point insertion (to avoid exactly duplicate / coincident points).</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - MergePoints</extracomment>
-        <translation>点点合并使用统一固定分辨率的bin/桶的搜索结构进行零容忍点插入(以避免完全重复/巧合点).</translation>
+        <translation>点点合并使用统一固定分辨率的bin/桶的搜索结构进行零容差点插入(以避免完全重复/巧合点).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33040"/>
@@ -50372,13 +50372,13 @@ Real source: Remoting/Application/Resources/utilities.xml - IncrementalOctreeMer
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33079"/>
         <source>A point merger exploiting a fast search structure of data-aware multi-resolution octree nodes for zero-tolerance point insertion (to avoid exactly duplicate / coincident points).</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - IncrementalOctreeMergePoints</extracomment>
-        <translation>点合并利用快速搜索数据-了解多分辨率octree节点的结构进行零容忍点插入(以避免完全重复/巧合点).</translation>
+        <translation>点合并利用快速搜索数据-了解多分辨率octree节点的结构进行零容差点插入(以避免完全重复/巧合点).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33091"/>
         <source>Always specify a zero tolerance for point insertion --- merging points.</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - IncrementalOctreeMergePoints</extracomment>
-        <translation>总是指定零容忍点插入 -- -- 合并点。</translation>
+        <translation>总是指定零容差点插入 -- -- 合并点。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33100"/>
@@ -50465,13 +50465,13 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Arbit
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33139"/>
         <source>OBB Tree Cell Locator</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - Remoting/Application/Resources/utilities.xml</extracomment>
-        <translation>OBB 树细胞定位器</translation>
+        <translation>OBB 树单元格定位器</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33142"/>
         <source>Static Cell Locator</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - Remoting/Application/Resources/utilities.xml</extracomment>
-        <translation>静态细胞定位器</translation>
+        <translation>静态单元格定位器</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33154"/>
@@ -50483,7 +50483,7 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Arbit
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33160"/>
         <source>Normals</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - Planes</extracomment>
-        <translation>常规</translation>
+        <translation>法向</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33163"/>
@@ -50846,7 +50846,7 @@ Real source: Remoting/Application/Resources/utilities.xml - FilePathEncodingHelp
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33406"/>
         <source>List of proxies that provide time. TimestepValues property has a set of timesteps provided by all the sources added to this property alone.</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - TimeKeeper</extracomment>
-        <translation>提供时间的代理列表 。 TimestepValues财产有一套时间步骤,仅由该财产上添加的所有来源提供。</translation>
+        <translation>提供时间的代理列表 。 TimestepValues属性有一套时间步骤,仅由该属性上添加的所有来源提供。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33409"/>
@@ -50870,7 +50870,7 @@ Real source: Remoting/Application/Resources/utilities.xml - FilePathEncodingHelp
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33418"/>
         <source>Use this proxy to load a plugin remotely. This proxy has no properties that users can set. Only information-properties are provided that can be used to obtain various states. vtkSMPluginLoaderProxy has API that can be used to load plugins, configuration xmls etc.</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - PluginLoader</extracomment>
-        <translation>使用此代理远程加载插件 。 此代理机没有用户可以设置的属性 。 仅提供了可用于获取不同国家的信息财产。 vtkSMPlugin LoaderProxy有API,可用于加载插件,配置xmls等.</translation>
+        <translation>使用此代理远程加载插件 。 此代理机没有用户可以设置的属性 。 仅提供了可用于获取不同国家的信息属性。 vtkSMPlugin LoaderProxy有API,可用于加载插件,配置xmls等.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33421"/>
@@ -51149,7 +51149,7 @@ Real source: Remoting/Application/Resources/utilities.xml - DataMover</extracomm
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33589"/>
         <source>AssemblyOnly</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - MultiBlockInspectorHelper</extracomment>
-        <translation>只有大会</translation>
+        <translation>只有装配</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33598"/>
@@ -51374,13 +51374,13 @@ Real source: Remoting/Application/Resources/utilities.xml - GradientBackground</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33913"/>
         <source>Catalyst Options</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - Remoting/Application/Resources/utilities.xml</extracomment>
-        <translation>催化选项</translation>
+        <translation>Catalyst选项</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33916"/>
         <source>Catalyst options that affect the script execution when running in situ.</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - CatalystOptions</extracomment>
-        <translation>原地运行时影响脚本执行的催化选项.</translation>
+        <translation>原地运行时影响脚本执行的Catalyst选项.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33931"/>
@@ -51394,26 +51394,26 @@ Real source: Remoting/Application/Resources/utilities.xml - GradientBackground</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33970"/>
         <source>Enable Catalyst Live</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - CatalystOptions</extracomment>
-        <translation>启用催化活</translation>
+        <translation>启用Catalyst活</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33940"/>
         <source>Enable Catalyst Live which allows connecting to a Catalyst instrumented simulation using the ParaView GUI.</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - CatalystOptions</extracomment>
-        <translation>启用催化器 Live 可以使用 ParaView 图形界面连接到催化器的仪器模拟 。</translation>
+        <translation>启用Catalyst器 Live 可以使用 ParaView 图形界面连接到Catalyst器的仪器模拟 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33943"/>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33973"/>
         <source>Catalyst Live URL</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - CatalystOptions</extracomment>
-        <translation>催化器 Live URL</translation>
+        <translation>Catalyst器 Live URL</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33946"/>
         <source>Specify the hostname (or IP address) and port for the node on which a ParaView client will be listening for Catalyst Live connections.</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - CatalystOptions</extracomment>
-        <translation>指定一个 ParaView 客户端正在监听的催化剂Live 连接的节点的主机名(或 IP 地址) 和端口 。</translation>
+        <translation>指定一个 ParaView 客户端正在监听的Catalyst剂Live 连接的节点的主机名(或 IP 地址) 和端口 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33949"/>
@@ -51438,19 +51438,19 @@ Real source: Remoting/Application/Resources/utilities.xml - GradientBackground</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33967"/>
         <source>Catalyst Live Options</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - CatalystOptions</extracomment>
-        <translation>催化器现场选项</translation>
+        <translation>Catalyst器现场选项</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33979"/>
         <source>Catalyst Global Options</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - Remoting/Application/Resources/utilities.xml</extracomment>
-        <translation>催化全球选项</translation>
+        <translation>Catalyst全球选项</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33982"/>
         <source>A proxy used to maintain global Catalyst state. This, combined with the pipeline shape and a choice of writers and screenshots define what Catalyst will do with and produce from the data that the simulation gives to it.</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - CatalystGlobalOptions</extracomment>
-        <translation>一个用于维持全球催化剂状态的代理. 这与管道形状以及作家和截图的选择相结合,定义了催化剂与模拟提供给它的数据有什么关系和产生.</translation>
+        <translation>一个用于维持全球Catalyst剂状态的代理. 这与管道形状以及作家和截图的选择相结合,定义了Catalyst剂与模拟提供给它的数据有什么关系和产生.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33985"/>
@@ -51462,7 +51462,7 @@ Real source: Remoting/Application/Resources/utilities.xml - GradientBackground</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33988"/>
         <source>Makes the generated Catalyst Script check for Live connections.</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - CatalystGlobalOptions</extracomment>
-        <translation>使生成的催化剂脚本检查Live连接.</translation>
+        <translation>使生成的Catalyst剂脚本检查Live连接.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33991"/>
@@ -51474,7 +51474,7 @@ Real source: Remoting/Application/Resources/utilities.xml - GradientBackground</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33994"/>
         <source>Catalyst will update live connections only every N&apos;th timestep.</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - CatalystGlobalOptions</extracomment>
-        <translation>催化器只会更新实时连接 只有N'th的时间步。</translation>
+        <translation>Catalyst器只会更新实时连接 只有N'th的时间步。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33997"/>
@@ -51522,7 +51522,7 @@ Real source: Remoting/Application/Resources/utilities.xml - GradientBackground</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34018"/>
         <source>Tells Catalyst to ask for only those arrays that are currently enabled on the source rather than all of them.</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - CatalystGlobalOptions</extracomment>
-        <translation>告诉催化器只要求那些目前在源上被启用的数组,而不是所有它们.</translation>
+        <translation>告诉Catalyst器只要求那些目前在源上被启用的数组,而不是所有它们.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34021"/>
@@ -51534,7 +51534,7 @@ Real source: Remoting/Application/Resources/utilities.xml - GradientBackground</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34024"/>
         <source>Catalyst will skip this many startup cycles (possibly excepting ForceFirstOutput) before starting to write files.</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - CatalystGlobalOptions</extracomment>
-        <translation>催化器在开始写入文件之前会跳过这么多的启动周期(可能除了Force FirstOutput).</translation>
+        <translation>Catalyst器在开始写入文件之前会跳过这么多的启动周期(可能除了Force FirstOutput).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34027"/>
@@ -51546,7 +51546,7 @@ Real source: Remoting/Application/Resources/utilities.xml - GradientBackground</
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34030"/>
         <source>Tells Catalyst to always dump the first timestep it gets because it may take a long time to wait for WriteStart iterations.</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - CatalystGlobalOptions</extracomment>
-        <translation>催化器总要甩掉它的第一个步骤,因为等待WriteStart迭代可能需要很长时间.</translation>
+        <translation>Catalyst器总要甩掉它的第一个步骤,因为等待WriteStart迭代可能需要很长时间.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34033"/>
@@ -51991,7 +51991,7 @@ Real source: Remoting/Application/Resources/utilities.xml - PythonStateOptions</
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - Remoting/Application/Resources/utilities.xml
 ----------
 Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>点源</translation>
+        <translation>Point Source</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34429"/>
@@ -52063,7 +52063,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Remotin
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34498"/>
         <source>CDB</source>
         <extracomment>Real source: Remoting/Application/Resources/utilities.xml - Remoting/Application/Resources/utilities.xml</extracomment>
-        <translation>疾控中心</translation>
+        <translation>CDB</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34501"/>
@@ -52162,7 +52162,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - SplineS
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34558"/>
         <source>Molecule To Lines</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_domainschemistry.xml - Remoting/Application/Resources/filters_domainschemistry.xml</extracomment>
-        <translation>分子到线</translation>
+        <translation>Molecule To Lines</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34561"/>
@@ -52181,7 +52181,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - SplineS
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34573"/>
         <source>Convert Into Molecule</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_domainschemistry.xml - Remoting/Application/Resources/filters_domainschemistry.xml</extracomment>
-        <translation>转换成分子</translation>
+        <translation>Convert Into Molecule</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34576"/>
@@ -52212,32 +52212,32 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - SplineS
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34597"/>
         <source>Convert Lines Into Bonds</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_domainschemistry.xml - PointSetToMolecule</extracomment>
-        <translation>转换行为债券</translation>
+        <translation>转换行为键</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34600"/>
         <source>This property determines if the lines (cell of type VTK_LINE) are converted into bonds.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_domainschemistry.xml - PointSetToMolecule</extracomment>
-        <translation>此属性决定行( VTK  LINE 类型的单元格) 是否转换为债券 。</translation>
+        <translation>此属性决定行( VTK  LINE 类型的单元格) 是否转换为键 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34603"/>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34606"/>
         <source>Specify if line cells are converted into bonds.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_domainschemistry.xml - PointSetToMolecule</extracomment>
-        <translation>指定行单元格是否转换为债券。</translation>
+        <translation>指定行单元格是否转换为键。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34609"/>
         <source>Compute Molecule Bonds</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_domainschemistry.xml - Remoting/Application/Resources/filters_domainschemistry.xml</extracomment>
-        <translation>计算分子键</translation>
+        <translation>Compute Molecule Bonds</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34612"/>
         <source>Compute the bonds of a molecule. If the interatomic distance is less than the sum of the two atom&apos;s covalent radii (and a tolerance), a single bond is added. This algorithm does not consider valences, hybridization, aromaticity, or anything other than atomic separations. It will not produce anything other than single bonds.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_domainschemistry.xml - ComputeMoleculeBonds</extracomment>
-        <translation>计算一个分子的结合. 如果原子间距离小于两个原子共价弧度(和容受度)的总和,则添加一个单键. 此算法不考虑等价,杂交,芳香,或原子分离以外的其他任何因素. 它除了单一债券之外,不会产生任何其他产品。</translation>
+        <translation>计算一个分子的结合. 如果原子间距离小于两个原子共价弧度(和容受度)的总和,则添加一个单键. 此算法不考虑等价,杂交,芳香,或原子分离以外的其他任何因素. 它除了单一键之外,不会产生任何其他产品。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34615"/>
@@ -52261,13 +52261,13 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - SplineS
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34630"/>
         <source>Tolerance on covalent radius size</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_domainschemistry.xml - ComputeMoleculeBonds</extracomment>
-        <translation>对共价半径大小的容忍度</translation>
+        <translation>对共价半径大小的容差度</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34633"/>
         <source>Is Tolerance Absolute</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_domainschemistry.xml - ComputeMoleculeBonds</extracomment>
-        <translation>绝对容忍</translation>
+        <translation>绝对容差</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34636"/>
@@ -52279,19 +52279,19 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - SplineS
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34639"/>
         <source>Specify if Tolerance is absolute (addition) or relative (multiplication) to radius.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_domainschemistry.xml - ComputeMoleculeBonds</extracomment>
-        <translation>指定容忍是半径的绝对(加法)还是相对(乘法)。</translation>
+        <translation>指定容差是半径的绝对(加法)还是相对(乘法)。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34642"/>
         <source>Specify if Tolerance is absolute or relative to radius.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_domainschemistry.xml - ComputeMoleculeBonds</extracomment>
-        <translation>指定容忍是绝对的还是相对半径。</translation>
+        <translation>指定容差是绝对的还是相对半径。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34666"/>
         <source>XYZ Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iochemistry.xml - Remoting/Application/Resources/readers_iochemistry.xml</extracomment>
-        <translation>XYZ 阅读器</translation>
+        <translation>XYZ Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34669"/>
@@ -52321,7 +52321,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - SplineS
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34690"/>
         <source>Gaussian Cube Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iochemistry.xml - Remoting/Application/Resources/readers_iochemistry.xml</extracomment>
-        <translation>高斯立方体读取器</translation>
+        <translation>Gaussian Cube Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34693"/>
@@ -52351,7 +52351,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - SplineS
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34708"/>
         <source>CML Molecule Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iochemistry.xml - Remoting/Application/Resources/readers_iochemistry.xml</extracomment>
-        <translation>CML 分子读取器</translation>
+        <translation>CML Molecule Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34711"/>
@@ -52375,7 +52375,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - SplineS
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34723"/>
         <source>VASP Animation Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iochemistry.xml - Remoting/Application/Resources/readers_iochemistry.xml</extracomment>
-        <translation>VASP 动画阅读器</translation>
+        <translation>VASP Animation Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34729"/>
@@ -52408,7 +52408,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - EnsembleDat
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34747"/>
         <source>VASP Tessellation Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iochemistry.xml - Remoting/Application/Resources/readers_iochemistry.xml</extracomment>
-        <translation>VASP Tessellation 阅读器</translation>
+        <translation>VASP Tessellation Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34753"/>
@@ -52426,7 +52426,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - EnsembleDat
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34771"/>
         <source>Image Data To AMR</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersamr.xml - Remoting/Application/Resources/filters_filtersamr.xml</extracomment>
-        <translation>图像数据到 AMR</translation>
+        <translation>Image Data To AMR</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34777"/>
@@ -52456,7 +52456,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - CellDa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34789"/>
         <source>Number of levels</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersamr.xml - ImageDataToAMR</extracomment>
-        <translation>职等数目</translation>
+        <translation>层级数目</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34792"/>
@@ -52495,7 +52495,7 @@ Real source: Remoting/Application/Resources/sources_filtersamr.xml - AMRGaussian
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34807"/>
         <source>AMR GaussianPulse Source</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filtersamr.xml - Remoting/Application/Resources/sources_filtersamr.xml</extracomment>
-        <translation>AMR 高斯普尔斯源代码</translation>
+        <translation>AMR GaussianPulse Source</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34810"/>
@@ -52630,7 +52630,7 @@ Real source: Remoting/Application/Resources/sources_filtersamr.xml - AMRGaussian
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35170"/>
         <source>Append Datasets</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>附加数据集</translation>
+        <translation>Append Datasets</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35173"/>
@@ -52666,7 +52666,7 @@ Real source: Remoting/Application/Resources/sources_filtersamr.xml - AMRGaussian
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35206"/>
         <source>Append Geometry</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>附加几何</translation>
+        <translation>Append Geometry</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35209"/>
@@ -52696,7 +52696,7 @@ Real source: Remoting/Application/Resources/sources_filtersamr.xml - AMRGaussian
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35230"/>
         <source>Clean</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>干净</translation>
+        <translation>Clean</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35233"/>
@@ -52732,13 +52732,13 @@ Real source: Remoting/Application/Resources/sources_filtersamr.xml - AMRGaussian
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35257"/>
         <source>If merging nearby points (see PointMerging property) and not using absolute tolerance (see ToleranceIsAbsolute property), this property specifies the tolerance for performing merging as a fraction of the length of the diagonal of the bounding box of the input data set.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - CleanPolyData</extracomment>
-        <translation>如果合并附近的点(见PointMerging property)而不使用绝对的容忍度(见Absolute IsAbsolute property),则该属性将执行合并的容忍度指定为输入数据集边框对角长度的一小部分.</translation>
+        <translation>如果合并附近的点(见PointMerging property)而不使用绝对的容差度(见Absolute IsAbsolute property),则该属性将执行合并的容差度指定为输入数据集边框对角长度的一小部分.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35263"/>
         <source>If merging nearby points (see PointMerging property) and using absolute tolerance (see ToleranceIsAbsolute property), this property specifies the tolerance for performing merging in the spatial units of the input data set.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - CleanPolyData</extracomment>
-        <translation>如果合并附近的点(见PointMerging property)并使用绝对容忍(见Absolute IsAbsolute property),则该物业具体规定了在输入数据集空间单位中进行合并的容忍度.</translation>
+        <translation>如果合并附近的点(见PointMerging property)并使用绝对容差(见Absolute IsAbsolute property),则该物业具体规定了在输入数据集空间单位中进行合并的容差度.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35272"/>
@@ -52786,19 +52786,19 @@ Real source: Remoting/Application/Resources/sources_filtersamr.xml - AMRGaussian
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35293"/>
         <source>If this property is set to 1, then points will be merged if they are within the specified Tolerance or AbsoluteTolerance (see the Tolerance and AbsoluteTolerance properties), depending on the value of the ToleranceIsAbsolute property. (See the ToleranceIsAbsolute property.) If this property is set to 0, points will not be merged.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - CleanPolyData</extracomment>
-        <translation>如果该属性被设定为1,那么如果这些属性在指定的容忍或绝对容忍范围内(见容忍和绝对容忍属性),则视容忍IsAbsolute属性的价值而合并。 (见"宽容论"绝对财产. 如果此属性设定为 0, 则不会合并点 。</translation>
+        <translation>如果该属性被设定为1,那么如果这些属性在指定的容差或绝对容差范围内(见容差和绝对容差属性),则视容差IsAbsolute属性的价值而合并。 (见"宽容论"绝对属性. 如果此属性设定为 0, 则不会合并点 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39778"/>
         <source>The values in this property specify a list of current offset values. This can be used to create multiple slices with different centers. Each entry represents a new slice with its center shifted by the offset value.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - GenericCut</extracomment>
-        <translation>此属性中的值指定了当前抵消值列表 。 这可用于创建多个具有不同中心的切片. 每个条目代表一个新的切片,其中心被抵消值所转移.</translation>
+        <translation>此属性中的值指定了当前抵消值列表 。 这可用于创建多个具有不同中心的切片. 每个条目表示一个新的切片,其中心被抵消值所转移.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35296"/>
         <source>Connectivity</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>连接</translation>
+        <translation>Connectivity</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35299"/>
@@ -52876,13 +52876,13 @@ Real source: Remoting/Application/Resources/sources_filtersamr.xml - AMRGaussian
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35350"/>
         <source>Decimate Polyline</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>十进制多线</translation>
+        <translation>Decimate Polyline</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35353"/>
         <source>Decimate Polyline is a filter to reduce the number of lines in a polyline. The algorithm functions by evaluating an error metric for each vertex (i.e., the distance of the vertex to a line defined from the two vertices on either side of the vertex). Then, these vertices are placed into a priority queue, and those with smaller errors are deleted first. The decimation continues until the target reduction is reached. While the filter will not delete end points, it will decimate closed loops down to a single line, thereby changing topology. As this filter works on polylines, you may need to call Triangle Strips before calling this filter.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - DecimatePolyline</extracomment>
-        <translation>十进制Polyline是用于减少多线中的线数的滤波器. 该算法通过评价每个顶点的错误度量法(即顶点与从顶点两侧的两个顶点定义的线的距离)来发挥功能. 然后,这些顶点被排入优先排队,而那些错误较小的则首先被删除. 死亡人数持续到目标减少。 虽然过滤器不会删除端点,但它会将闭合的环路缩小为单行,从而改变地形. 由于此过滤器在多线上工作,您可能需要在调用此过滤器前拨打三角条形.</translation>
+        <translation>精简Polyline是用于减少多线中的线数的滤波器. 该算法通过评价每个顶点的错误度量法(即顶点与从顶点两侧的两个顶点定义的线的距离)来发挥功能. 然后,这些顶点被排入优先排队,而那些错误较小的则首先被删除. 死亡人数持续到目标减少。 虽然过滤器不会删除端点,但它会将闭合的环路缩小为单行,从而改变地形. 由于此过滤器在多线上工作,您可能需要在调用此过滤器前拨打三角条形.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35356"/>
@@ -52918,7 +52918,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - QuadricDec
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35371"/>
         <source>This property specifies the desired reduction in the total number of lines in the output dataset. For example, if the TargetReduction value is 0.9, the Decimate Polyline filter will attempt to produce an output dataset that is 10% the size of the input.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - DecimatePolyline</extracomment>
-        <translation>此属性指定要减少输出数据集中的行数总数 。 例如,如果目标还原值为0.9,十进制的Polyline滤波器将尝试生成一个输出数据集,其大小相当于输入的10%.</translation>
+        <translation>此属性指定要减少输出数据集中的行数总数 。 例如,如果目标还原值为0.9,精简的Polyline滤波器将尝试生成一个输出数据集,其大小相当于输入的10%.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35374"/>
@@ -52946,13 +52946,13 @@ Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Generic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35386"/>
         <source>Decimate</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>决定</translation>
+        <translation>Decimate</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35389"/>
         <source>The Decimate filter reduces the number of triangles in a polygonal data set. Because this filter only operates on triangles, first run the Triangulate filter on a dataset that contains polygons other than triangles.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - DecimatePro</extracomment>
-        <translation>十进制过滤器减少多边形数据集中的三角形数量. 由于这个滤波器只在三角形上运行,首先在一个包含三角形以外的多边形的数据集上运行三角形滤波器.</translation>
+        <translation>精简过滤器减少多边形数据集中的三角形数量. 由于这个滤波器只在三角形上运行,首先在一个包含三角形以外的多边形的数据集上运行三角形滤波器.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35392"/>
@@ -52970,13 +52970,13 @@ Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Generic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35401"/>
         <source>This property specifies the input to the Decimate filter.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - DecimatePro</extracomment>
-        <translation>此属性指定输入至十进制过滤器 。</translation>
+        <translation>此属性指定输入至精简过滤器 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35407"/>
         <source>This property specifies the desired reduction in the total number of polygons in the output dataset. For example, if the TargetReduction value is 0.9, the Decimate filter will attempt to produce an output dataset that is 10% the size of the input.)</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - DecimatePro</extracomment>
-        <translation>此属性指定了输出数据集中多边形总数所期望的减少. 例如,如果目标还原值为0.9,则十进制过滤器将尝试生成一个输出数据集,其大小相当于输入的10%. )</translation>
+        <translation>此属性指定了输出数据集中多边形总数所期望的减少. 例如,如果目标还原值为0.9,则精简过滤器将尝试生成一个输出数据集,其大小相当于输入的10%. )</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35413"/>
@@ -53027,7 +53027,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Surfac
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35428"/>
         <source>Delaunay 2D</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>德劳奈2D</translation>
+        <translation>Delaunay 2D</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35431"/>
@@ -53087,7 +53087,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - Delaunay3D
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Delaunay2D
 ----------
 Real source: Remoting/Application/Resources/filters_filterscore.xml - Delaunay3D</extracomment>
-        <translation>此属性指定了控制丢弃密闭点的容忍度 。 这种容积被指定为点的边框对角长度的一小部分.</translation>
+        <translation>此属性指定了控制丢弃密闭点的容差度 。 这种容积被指定为点的边框对角长度的一小部分.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35467"/>
@@ -53114,13 +53114,13 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - Delaunay3D
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35476"/>
         <source>Delaunay 3D</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>德劳奈3D</translation>
+        <translation>Delaunay 3D</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35479"/>
         <source>Delaunay3D is a filter that constructs a 3D Delaunay triangulation from a list of input points. These points may be represented by any dataset of type vtkPointSet and subclasses. The output of the filter is an unstructured grid dataset. Usually the output is a tetrahedral mesh, but if a non-zero alpha distance value is specified (called the \&quot;alpha\&quot; value), then only tetrahedra, triangles, edges, and vertices lying within the alpha radius are output. In other words, non-zero alpha values may result in arbitrary combinations of tetrahedra, triangles, lines, and vertices. (The notion of alpha value is derived from Edelsbrunner&apos;s work on \&quot;alpha shapes\&quot;.) The 3D Delaunay triangulation is defined as the triangulation that satisfies the Delaunay criterion for n-dimensional simplexes (in this case n=3 and the simplexes are tetrahedra). This criterion states that a circumsphere of each simplex in a triangulation contains only the n+1 defining points of the simplex. (See text for more information.) While in two dimensions this translates into an \&quot;optimal\&quot; triangulation, this is not true in 3D, since a measurement for optimality in 3D is not agreed on. Delaunay triangulations are used to build topological structures from unorganized (or unstructured) points. The input to this filter is a list of points specified in 3D. (If you wish to create 2D triangulations see Delaunay2D.) The output is an unstructured grid. The Delaunay triangulation can be numerically sensitive. To prevent problems, try to avoid injecting points that will result in triangles with bad aspect ratios (1000:1 or greater). In practice this means inserting points that are \&quot;widely dispersed\&quot;, and enables smooth transition of triangle sizes throughout the mesh. (You may even want to add extra points to create a better point distribution.) If numerical problems are present, you will see a warning message to this effect at the end of the triangulation process. Warning: Points arranged on a regular lattice (termed degenerate cases) can be triangulated in more than one way (at least according to the Delaunay criterion). The choice of triangulation (as implemented by this algorithm) depends on the order of the input points. The first four points will form a tetrahedron; other degenerate points (relative to this initial tetrahedron) will not break it. Points that are coincident (or nearly so) may be discarded by the algorithm. This is because the Delaunay triangulation requires unique input points. You can control the definition of coincidence with the \&quot;Tolerance\&quot; instance variable. The output of the Delaunay triangulation is supposedly a convex hull. In certain cases this implementation may not generate the convex hull. This behavior can be controlled by the Offset instance variable. Offset is a multiplier used to control the size of the initial triangulation. The larger the offset value, the more likely you will generate a convex hull; and the more likely you are to see numerical problems. The implementation of this algorithm varies from the 2D Delaunay algorithm (i.e., Delaunay2D) in an important way. When points are injected into the triangulation, the search for the enclosing tetrahedron is quite different. In the 3D case, the closest previously inserted point point is found, and then the connected tetrahedra are searched to find the containing one. (In 2D, a \&quot;walk\&quot; towards the enclosing triangle is performed.) If the triangulation is Delaunay, then an enclosing tetrahedron will be found. However, in degenerate cases an enclosing tetrahedron may not be found and the point will be rejected.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Delaunay3D</extracomment>
-        <translation>Delaunay3D是一个从输入点列表中构造3D Delaunay三角形的过滤器. 这些点可以用任何vtkPointSet和子类的数据集来表示. 滤波器的输出是一个无结构的网格数据集. 通常输出为四面体网格,但如果指定了一个非零的α距离值(称为\"α\"值),那么只有四面体,三角形,边缘,以及位于α半径内的顶点才是输出. 换句话说,非零的α值可能导致任意结合四面体,三角形,线条,和顶点. (α值的概念来源于Edelsbrunner关于\"α形状\"的著作. 3D Delaunay三角形被定义为符合n维单轴的Delaunay标准的三角形(在此情况下为n=3,单轴为四赫德拉). 这一标准规定,三角形中每个简单的x的环圈只包含x的n+1定义点. (详情见文本。 ) 虽然在两个维度上,这转化为\"优化\"的三角化,但是在3D中并非如此,因为3D中优化度的测量没有达成一致. 德劳奈三角形用于从无组织(或无结构)点建造地形结构. 此过滤器的输入是3D中指定的点列表. (如果你想创建2D三角形,参见Delaunay2D. 输出为无结构网格. 德劳奈三角形可以具有数字敏感性. 为防止出现问题,尽量避免注射点会导致带差宽比的三角形(1000:1或更高). 在实践中,这意味着插入\'广泛分散\'的点,使三角大小在整个网格上平稳过渡。 (你甚至可能想要添加额外的点数来创建更好的点数分布. ) 如果数字问题存在,您将在三角化过程结束时看到一个警告信息。 警告:在普通纹章上排列的点(分类的堕落病例)可以不止一个方式(至少根据Delaunay标准)进行三角化. 三角化(由这个算法执行)的选择取决于输入点的顺序. 前四点将形成四面体;其他退化的点(与这个初始的四面体有关)不会断裂. 重合(或几乎重合)的点可能被算法丢弃. 这是因为德劳奈三角形需要独特的输入点. 您可以用\“ 容忍” 实例变量控制巧合的定义 。 Delaunay三角形的输出据说是一个对流船体。 在某些情况下,这种实施可能不会产生对流船体。 这种行为可以由偏移实例变量控制. 偏移(Offset)是用来控制初始三角形大小的乘法. 抵消值越大,产生对流船体的可能性就越大;看到数值问题的可能性就越大。 此算法的执行与2D Delaunay算法(即Delaunay2D)在重要方面有所不同. 当点注入三角时,寻找附着的四面体是截然不同的. 在3D的情况下,找到之前插入的最接近的点,然后搜索连接的四面体以找到包含的点. (在2D中,一个\"walk\"对接的三角形). 如果三角形是Delaunay,那么就会找到一个带子的四面体。 然而,在退化的情况下,可能找不到附着的四面体,这一点将被拒绝。</translation>
+        <translation>Delaunay3D是一个从输入点列表中构造3D Delaunay三角形的过滤器. 这些点可以用任何vtkPointSet和子类的数据集来表示. 滤波器的输出是一个无结构的网格数据集. 通常输出为四面体网格,但如果指定了一个非零的α距离值(称为\"α\"值),那么只有四面体,三角形,边缘,以及位于α半径内的顶点才是输出. 换句话说,非零的α值可能导致任意结合四面体,三角形,线条,和顶点. (α值的概念来源于Edelsbrunner关于\"α形状\"的著作. 3D Delaunay三角形被定义为符合n维单轴的Delaunay标准的三角形(在此情况下为n=3,单轴为四赫德拉). 这一标准规定,三角形中每个简单的x的环圈只包含x的n+1定义点. (详情见文本。 ) 虽然在两个维度上,这转化为\"优化\"的三角化,但是在3D中并非如此,因为3D中优化度的测量没有达成一致. 德劳奈三角形用于从无组织(或无结构)点建造地形结构. 此过滤器的输入是3D中指定的点列表. (如果你想创建2D三角形,参见Delaunay2D. 输出为无结构网格. 德劳奈三角形可以具有数字敏感性. 为防止出现问题,尽量避免注射点会导致带差宽比的三角形(1000:1或更高). 在实践中,这意味着插入\'广泛分散\'的点,使三角大小在整个网格上平稳过渡。 (你甚至可能想要添加额外的点数来创建更好的点数分布. ) 如果数字问题存在,您将在三角化过程结束时看到一个警告信息。 警告:在普通纹章上排列的点(分类的堕落病例)可以不止一个方式(至少根据Delaunay标准)进行三角化. 三角化(由这个算法执行)的选择取决于输入点的顺序. 前四点将形成四面体;其他退化的点(与这个初始的四面体有关)不会断裂. 重合(或几乎重合)的点可能被算法丢弃. 这是因为德劳奈三角形需要独特的输入点. 您可以用\“ 容差” 实例变量控制巧合的定义 。 Delaunay三角形的输出据说是一个对流船体。 在某些情况下,这种实施可能不会产生对流船体。 这种行为可以由偏移实例变量控制. 偏移(Offset)是用来控制初始三角形大小的乘法. 抵消值越大,产生对流船体的可能性就越大;看到数值问题的可能性就越大。 此算法的执行与2D Delaunay算法(即Delaunay2D)在重要方面有所不同. 当点注入三角时,寻找附着的四面体是截然不同的. 在3D的情况下,找到之前插入的最接近的点,然后搜索连接的四面体以找到包含的点. (在2D中,一个\"walk\"对接的三角形). 如果三角形是Delaunay,那么就会找到一个带子的四面体。 然而,在退化的情况下,可能找不到附着的四面体,这一点将被拒绝。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35482"/>
@@ -53210,13 +53210,13 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - Delaunay3D
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35548"/>
         <source>Elevation</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>升迁</translation>
+        <translation>Elevation</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35551"/>
         <source>The Elevation filter generates point scalar values for an input dataset along a specified direction vector. The Input menu allows the user to select the data set to which this filter will be applied. Use the Scalar range entry boxes to specify the minimum and maximum scalar value to be generated. The Low Point and High Point define a line onto which each point of the data set is projected. The minimum scalar value is associated with the Low Point, and the maximum scalar value is associated with the High Point. The scalar value for each point in the data set is determined by the location along the line to which that point projects.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - ElevationFilter</extracomment>
-        <translation>Elevation 过滤器会沿着指定的方向向量生成输入数据集的点刻度值. 输入菜单允许用户选择将应用此过滤器的数据集. 使用 Scalar 范围条目框来指定要生成的最小和最大比例值 。 低点和高点定义了数据集每个点的预测线. 最低scalar值与低点相关,最高scalar值与高点相关. 数据集中每个点的刻度值由该点项目所在线上的位置决定.</translation>
+        <translation>Elevation 过滤器会沿着指定的方向向量生成输入数据集的点标量值. 输入菜单允许用户选择将应用此过滤器的数据集. 使用 Scalar 范围条目框来指定要生成的最小和最大比例值 。 低点和高点定义了数据集每个点的预测线. 最低scalar值与低点相关,最高scalar值与高点相关. 数据集中每个点的标量值由该点项目所在线上的位置决定.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35554"/>
@@ -53228,7 +53228,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - Delaunay3D
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35557"/>
         <source>Create a point array representing elevation.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - ElevationFilter</extracomment>
-        <translation>创建代表海拔的点数组 。</translation>
+        <translation>创建表示海拔的点数组 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35563"/>
@@ -53246,7 +53246,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - Delaunay3D
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35569"/>
         <source>This property determines the range into which scalars will be mapped.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - ElevationFilter</extracomment>
-        <translation>此属性决定了将映射到的刻度范围 。</translation>
+        <translation>此属性决定了将映射到的标量范围 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35572"/>
@@ -53281,7 +53281,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - Delaunay3D
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml
 ----------
 Real source: Remoting/Application/Resources/filters_filterscore.xml - FeatureEdges</extracomment>
-        <translation>特征边缘</translation>
+        <translation>Feature Edges</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35644"/>
@@ -53347,20 +53347,20 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - FeatureEdg
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35695"/>
         <source>If the value of this property is set to 1, then the extracted edges are assigned a scalar value based on the type of the edge.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - FeatureEdges</extracomment>
-        <translation>如果将这个属性的值设定为1,那么所提取的边缘会根据边缘的类型分配一个刻度值.</translation>
+        <translation>如果将这个属性的值设定为1,那么所提取的边缘会根据边缘的类型分配一个标量值.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35704"/>
         <source>The value of this property is used to define a feature edge. If the surface normal between two adjacent triangles is at least as large as this Feature Angle, a feature edge exists. (See the FeatureEdges property.)</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - FeatureEdges</extracomment>
-        <translation>此属性的值用于定义特征边缘 。 如果两个相邻三角之间表面的正常程度至少与这个地物角一样大,则存在一个地物边缘. (参见地物Edges属性.</translation>
+        <translation>此属性的值用于定义特征边缘 。 如果两个相邻三角之间表面的法向程度至少与这个地物角一样大,则存在一个地物边缘. (参见地物Edges属性.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35725"/>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35728"/>
         <source>Generate scalars from point and cell ids.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - PointAndCellIds</extracomment>
-        <translation>从点和细胞ID中生成鳞片.</translation>
+        <translation>从点和单元格ID中生成鳞片.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35737"/>
@@ -53430,7 +53430,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - FeatureEdg
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35788"/>
         <source>Append Attributes</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>附加属性</translation>
+        <translation>Append Attributes</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35791"/>
@@ -53460,7 +53460,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - FeatureEdg
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35806"/>
         <source>Append Molecule</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>附加分子</translation>
+        <translation>Append Molecule</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35809"/>
@@ -53484,7 +53484,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - FeatureEdg
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35821"/>
         <source>Field Data to Attribute</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>属性的字段数据</translation>
+        <translation>Field Data to Attribute</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35824"/>
@@ -53538,7 +53538,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - FeatureEdg
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35866"/>
         <source>Point Data to Cell Data</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>点数据到单元格数据</translation>
+        <translation>Point Data to Cell Data</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35869"/>
@@ -53595,7 +53595,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - CellDa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29173"/>
         <source>The Threshold filter extracts the portions of the input dataset whose scalars lie within the specified range. This filter operates on either point-centered or cell-centered data. It operates on any type of dataset and produces unstructured grid output. The scalar array from which to threshold the data can be selected in the &apos;Scalars&apos; menu. For a multi-components array, &apos;Selected Component&apos; menu allows you to select a specific component or magnitude if using the &apos;Selected&apos; component mode. You can also choose &apos;All&apos; or &apos;Any&apos; that will keep data if either all components or at least one satisfies the threshold. Note that multi-components arrays are not available with Hyper Tree Grid inputs. The &apos;Lower Threshold&apos; and &apos;Upper Threshold&apos; sliders determine the range of the scalars to retain in the output. The threshold method can be selected from the &apos;Threshold Method&apos; menu. The &apos;All Scalars&apos; option only applies to Point Data. When this option is on, a cell will only be passed to the output if the scalar values of all of its points lie within the chosen range. When off, a cell will be added to the output if the specified scalar value for any of its points is within the chosen range.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Threshold</extracomment>
-        <translation>阈值过滤器提取输入数据集中其分级位于指定范围内的部分。 此过滤器在以点为中心的数据或以细胞为中心的数据上运行。 它在任何类型的数据集上运行,并产生无结构的网格输出. 在“ Scalars” 菜单中可以选择用于阈值的数据的scalar 数组 。 对于一个多组件阵列,“选定组件”菜单允许您使用“选定”组件模式选择特定的组件或尺寸。 您也可以选择“ 全部” 或“ 任何” 来保存数据, 如果所有组件或至少一个组件都满足阈值的话 。 注意多元件阵列无法使用 Hyper Tree Grid 输入 。 “ 下阈值” 和“ 上阈值” 滑动器决定输出中要保留的刻度范围 。 阈值方法可以从“危险方法”菜单中选择。 All Scalars 选项仅适用于点数据 。 当此选项打开时, 只有其所有点的刻度值位于所选范围内时, 单元格才会传递给输出 。 关闭时,如果单元格中任一点的指定刻度值在选定的范围内,则单元格将被添加到输出中。</translation>
+        <translation>阈值过滤器提取输入数据集中其标量位于指定范围内的部分。 此过滤器在以点为中心的数据或以单元格为中心的数据上运行。 它在任何类型的数据集上运行,并产生无结构的网格输出. 在“ Scalars” 菜单中可以选择用于阈值的数据的scalar 数组 。 对于一个多组件阵列,“选定组件”菜单允许您使用“选定”组件模式选择特定的组件或尺寸。 您也可以选择“ 全部” 或“ 任何” 来保存数据, 如果所有组件或至少一个组件都满足阈值的话 。 注意多元件阵列无法使用 Hyper Tree Grid 输入 。 “ 下阈值” 和“ 上阈值” 滑动器决定输出中要保留的标量范围 。 阈值方法可以从“危险方法”菜单中选择。 All Scalars 选项仅适用于点数据 。 当此选项打开时, 只有其所有点的标量值位于所选范围内时, 单元格才会传递给输出 。 关闭时,如果单元格中任一点的指定标量值在选定的范围内,则单元格将被添加到输出中。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29194"/>
@@ -53645,7 +53645,7 @@ Real source: Remoting/Application/Resources/filters_filterstemporal.xml - Critic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="29290"/>
         <source>Select how to construct the result in memory: - MaskInput (default): shallow copy the input and mask all cells being thresholded - Regenerate Trees And Index Fields: generate a new tree structure but use indexed arrays on the input for cell data - New HyperTreeGrid: construct a new HyperTreeGrid from scratch representing the minimal threshold of the input</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Threshold</extracomment>
-        <translation>选择如何在内存中构造结果 : - MaskInput( 默认): 浅复制输入并遮盖所有被阈值的单元格 - 重新生成树和索引字段: 生成一个新的树状结构,但在输入的单元格数据上使用索引数组 - New HyperTreeGrid: 从零开始构建一个新的HyperTreeGrid, 代表输入的最低阈值</translation>
+        <translation>选择如何在内存中构造结果 : - MaskInput( 默认): 浅复制输入并遮盖所有被阈值的单元格 - 重新生成树和索引字段: 生成一个新的树状结构,但在输入的单元格数据上使用索引数组 - New HyperTreeGrid: 从零开始构建一个新的HyperTreeGrid, 表示输入的最低阈值</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="33790"/>
@@ -53664,7 +53664,7 @@ Real source: Remoting/Application/Resources/filters_filterstemporal.xml - Critic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34933"/>
         <source>Convert To Cell Grid</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - Remoting/Application/Resources/filters_filterscellgrid.xml</extracomment>
-        <translation>转换为单元格网格</translation>
+        <translation>Convert To Cell Grid</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34939"/>
@@ -53723,13 +53723,13 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - ResampleWi
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35917"/>
         <source>This filter generates surface tangents at the points of the input polygonal dataset based on the normals and the texture coordinates. The resulting dataset is also polygonal. The tangents are required when using a normal texture.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - SurfaceTangents</extracomment>
-        <translation>这种滤波器在输入多边形数据集的点上根据正常和纹理坐标生成表面正切. 由此产生的数据集也是多边形的. 使用正常纹理时需要切合剂.</translation>
+        <translation>这种滤波器在输入多边形数据集的点上根据法向和纹理坐标生成表面正切. 由此产生的数据集也是多边形的. 使用法向纹理时需要切合剂.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35920"/>
         <source>This filter will produce surface tangents used for normal mapping.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - SurfaceTangents</extracomment>
-        <translation>这个过滤器将产生用于正常映射的表面正切剂.</translation>
+        <translation>这个过滤器将产生用于法向映射的表面正切剂.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35923"/>
@@ -53759,13 +53759,13 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - ResampleWi
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35938"/>
         <source>Quadric Clustering</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>四方组合</translation>
+        <translation>Quadric Clustering</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35941"/>
         <source>The Quadric Clustering filter produces a reduced-resolution polygonal approximation of the input polygonal dataset. This filter is the one used by ParaView for computing LODs. It uses spatial binning to reduce the number of points in the data set; points that lie within the same spatial bin are collapsed into one representative point.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - QuadricClustering</extracomment>
-        <translation>四方集群滤波器产生输入多边形数据集的减分辨率多边形近似. 这个过滤器是ParaView用来计算LOD的. 它使用空间binning来减少数据集中的点数;位于同一个空间bin内的点被崩溃成一个代表点.</translation>
+        <translation>四方集群滤波器产生输入多边形数据集的减分辨率多边形近似. 这个过滤器是ParaView用来计算LOD的. 它使用空间binning来减少数据集中的点数;位于同一个空间bin内的点被崩溃成一个表示点.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35944"/>
@@ -53807,7 +53807,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - ResampleWi
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35965"/>
         <source>If the value of this property is set to 1, the representative point for each bin is selected from one of the input points that lies in that bin; the input point that produces the least error is chosen. If the value of this property is 0, the location of the representative point is calculated to produce the least error possible for that bin, but the point will most likely not be one of the input points.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - QuadricClustering</extracomment>
-        <translation>如果此属性的值设置为 1, 则从该 bin 中的输入点中选择每个 bin 的代表点; 选择产生最小错误的输入点 。 如果这个属性的值是0,则代表点的位置被计算出来,以产生该 bin 可能最小的错误,但该点很可能不会是输入点之一.</translation>
+        <translation>如果此属性的值设置为 1, 则从该 bin 中的输入点中选择每个 bin 的表示点; 选择产生最小错误的输入点 。 如果这个属性的值是0,则表示点的位置被计算出来,以产生该 bin 可能最小的错误,但该点很可能不会是输入点之一.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35968"/>
@@ -53861,7 +53861,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - ResampleWi
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36103"/>
         <source>Resample To Image</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>重样到图像</translation>
+        <translation>Resample To Image</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36106"/>
@@ -53909,7 +53909,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - ResampleWi
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36139"/>
         <source>Resample With Dataset</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>以数据集重现</translation>
+        <translation>Resample With Dataset</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36142"/>
@@ -53987,7 +53987,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbeP
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - ResampleWithDataset
 ----------
 Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbePoint</extracomment>
-        <translation>设定是计算容忍度还是使用用户提供的值 。 在默认情况下。</translation>
+        <translation>设定是计算容差度还是使用用户提供的值 。 在默认情况下。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36205"/>
@@ -54019,19 +54019,19 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbeP
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36232"/>
         <source>The cell locator to use for finding cells for probing.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - ResampleWithDataset</extracomment>
-        <translation>细胞定位器用于寻找细胞进行检测.</translation>
+        <translation>单元格定位器用于寻找单元格进行检测.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36286"/>
         <source>Reverse Sense</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>反向语气</translation>
+        <translation>Reverse Sense</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36289"/>
         <source>This filter reverses vertex ordering or normals for cells. In graphics 2d cells have a notion of front or back face. If you use the right hand rule and wind the vertices of a cell counter-clockwise (how your right fungers coil) then the front face is in the direction of your thumb (the normal aligns with your right thumb). If you need to reverse the normals, or change the winding order of a polydata this filter can be used.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - ReverseSense</extracomment>
-        <translation>此过滤器会反转细胞的顶点顺序或常态. 在图形中,2d细胞具有前脸或后脸的概念. 如果使用右手规则和风化细胞逆时针的顶点(如何是右转螺旋圈),则前脸朝拇指方向(通常与右拇指对齐). 如果您需要反转常态, 或改变多数据旋转顺序, 可以使用此过滤器 。</translation>
+        <translation>此过滤器会反转单元格的顶点顺序或常态. 在图形中,2d单元格具有前脸或后脸的概念. 如果使用右手规则和风化单元格逆时针的顶点(如何是右转螺旋圈),则前脸朝拇指方向(通常与右拇指对齐). 如果您需要反转常态, 或改变多数据旋转顺序, 可以使用此过滤器 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36292"/>
@@ -54067,19 +54067,19 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbeP
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36310"/>
         <source>Flag controls whether to reverse normal orientation.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - ReverseSense</extracomment>
-        <translation>旗帜控制是否逆向正常方向.</translation>
+        <translation>旗帜控制是否逆向法向方向.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36313"/>
         <source>Smooth</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>平滑</translation>
+        <translation>Smooth</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36316"/>
         <source>The Smooth filter operates on a polygonal data set by iteratively adjusting the position of the points using Laplacian smoothing. (Because this filter only adjusts point positions, the output data set is also polygonal.) This results in better-shaped cells and more evenly distributed points. The Convergence slider limits the maximum motion of any point. It is expressed as a fraction of the length of the diagonal of the bounding box of the data set. If the maximum point motion during a smoothing iteration is less than the Convergence value, the smoothing operation terminates.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - SmoothPolyDataFilter</extracomment>
-        <translation>平滑滤波器通过使用拉普拉西安平滑来迭代调整点的位置,在多边形数据集上运行. (由于这个过滤器只调整点位置,输出数据集也是多边形的. ) 这导致细胞形状较好,分布更均匀. 聚合滑动器限制任意点的最大运动. 它以数据集边框对角长度的一小部分表示. 如果平滑迭代过程中的最大点运动小于趋同值,平滑操作即告终止.</translation>
+        <translation>平滑滤波器通过使用拉普拉西安平滑来迭代调整点的位置,在多边形数据集上运行. (由于这个过滤器只调整点位置,输出数据集也是多边形的. ) 这导致单元格形状较好,分布更均匀. 聚合滑动器限制任意点的最大运动. 它以数据集边框对角长度的一小部分表示. 如果平滑迭代过程中的最大点运动小于趋同值,平滑操作即告终止.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36319"/>
@@ -54127,7 +54127,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbeP
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36343"/>
         <source>Triangle Strips</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>三角条</translation>
+        <translation>Triangle Strips</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36346"/>
@@ -54181,7 +54181,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbeP
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36373"/>
         <source>Outline Curvilinear DataSet</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>大纲曲线数据集</translation>
+        <translation>Outline Curvilinear DataSet</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36376"/>
@@ -54211,7 +54211,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbeP
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36391"/>
         <source>Tensor Glyph</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>日语格莱弗</translation>
+        <translation>Tensor Glyph</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36394"/>
@@ -54295,7 +54295,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbeP
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36460"/>
         <source>This property determines whether input scalars or computed eigenvalues at the point should be used to color the glyphs. If ThreeGlyphs is set and the eigenvalues are chosen for coloring then each glyph is colored by the corresponding eigenvalue and if not set the color corresponding to the largest eigenvalue is chosen.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - TensorGlyph</extracomment>
-        <translation>此属性决定是输入刻度还是计算出点上的 eigen 值来给刻度配色 。 如果设定了3Glyphs,选择了eigen值来进行配色,那么每个glyph就按照相应的eigen值来配色,如果不设定与最大eigen值对应的颜色则选择.</translation>
+        <translation>此属性决定是输入标量还是计算出点上的 eigen 值来给标量配色 。 如果设定了3Glyphs,选择了eigen值来进行配色,那么每个glyph就按照相应的eigen值来配色,如果不设定与最大eigen值对应的颜色则选择.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36469"/>
@@ -54346,7 +54346,7 @@ Real source: Remoting/Application/Resources/sources_filtersgeneral.xml - Axes</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36490"/>
         <source>This property determines whether or not to draw a mirror of each glyph.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - TensorGlyph</extracomment>
-        <translation>此属性决定是否绘制每个格言的镜像 。</translation>
+        <translation>此属性决定是否绘制每个字形的镜像 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36493"/>
@@ -54388,7 +54388,7 @@ Real source: Remoting/Application/Resources/sources_filtersgeneral.xml - Axes</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36523"/>
         <source>Tube</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>管头</translation>
+        <translation>Tube</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36526"/>
@@ -54418,13 +54418,13 @@ Real source: Remoting/Application/Resources/sources_filtersgeneral.xml - Axes</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36547"/>
         <source>This property indicates the name of the scalar array on which to operate. The indicated array may be used for scaling the tubes. (See the VaryRadius property.)</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - TubeFilter</extracomment>
-        <translation>此属性表示要操作的scalar 数组的名称 。 指示阵列可用于缩放管。 (见瓦里拉迪乌斯财产.</translation>
+        <translation>此属性表示要操作的scalar 数组的名称 。 指示阵列可用于缩放管。 (见瓦里拉迪乌斯属性.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36556"/>
         <source>This property indicates the name of the vector array on which to operate. The indicated array may be used for scaling and/or orienting the tubes. (See the VaryRadius property.)</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - TubeFilter</extracomment>
-        <translation>此属性表示要操作的向量数组的名称 。 指示阵列可用于放大和(或)定向管. (见瓦里拉迪乌斯财产.</translation>
+        <translation>此属性表示要操作的向量数组的名称 。 指示阵列可用于放大和(或)定向管. (见瓦里拉迪乌斯属性.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36559"/>
@@ -54481,7 +54481,7 @@ Real source: Remoting/Application/Resources/sources_filtersgeneral.xml - Axes</e
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - TubeFilter
 ----------
 Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - RibbonFilter</extracomment>
-        <translation>使用默认正常</translation>
+        <translation>使用默认法向</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36595"/>
@@ -54490,7 +54490,7 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Ribbon
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - TubeFilter
 ----------
 Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - RibbonFilter</extracomment>
-        <translation>如果将这个属性设定为 0, 而输入中没有向量数组, 那么默认的丝带正常会生成( 默认的自然属性 ); 如果设置了向量数组( 选择输入器属性) , 则从指定的数组中设定丝带正常 。 如果将此属性设定为 1, 则将使用默认的普通属性( 默认非正常属性) , 不论是否设定了 SelectInputVector 属性 。</translation>
+        <translation>如果将这个属性设定为 0, 而输入中没有向量数组, 那么默认的丝带法向会生成( 默认的自然属性 ); 如果设置了向量数组( 选择输入器属性) , 则从指定的数组中设定丝带法向 。 如果将此属性设定为 1, 则将使用默认的法向属性( 默认非法向属性) , 不论是否设定了 SelectInputVector 属性 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36598"/>
@@ -54499,7 +54499,7 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Ribbon
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - TubeFilter
 ----------
 Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - RibbonFilter</extracomment>
-        <translation>默认正常</translation>
+        <translation>默认法向</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36601"/>
@@ -54508,13 +54508,13 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Ribbon
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - TubeFilter
 ----------
 Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - RibbonFilter</extracomment>
-        <translation>此属性的值指定了当使用DefaultNormal属性被设定为1或输入中未包含矢量数组(SelectInputVectors property)时要使用的正常值.</translation>
+        <translation>此属性的值指定了当使用DefaultNormal属性被设定为1或输入中未包含矢量数组(SelectInputVectors property)时要使用的法向值.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36604"/>
         <source>Convert To MultiBlock</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>转换为多块</translation>
+        <translation>Convert To MultiBlock</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36607"/>
@@ -54535,7 +54535,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - ConvertToP
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36619"/>
         <source>Convert To PartitionedDataSetCollection</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>转换为分区数据集</translation>
+        <translation>Convert To PartitionedDataSetCollection</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36622"/>
@@ -54547,7 +54547,7 @@ Real source: Remoting/Application/Resources/filters_filterscore.xml - ConvertToP
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36634"/>
         <source>RenameArrays</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>重命名箭头</translation>
+        <translation>RenameArrays</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36637"/>
@@ -54632,13 +54632,13 @@ Real source: Remoting/Application/Resources/proxies_fides.xml - FidesJSONReader<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36730"/>
         <source>Data Object Generator</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterscore.xml - Remoting/Application/Resources/sources_filterscore.xml</extracomment>
-        <translation>数据对象生成器</translation>
+        <translation>Data Object Generator</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36733"/>
         <source>vtkDataObjectGenerator parses a string and produces dataobjects from the dataobject template names it sees in the string. For example, if the string contains \&quot;ID1\&quot; the generator will create a vtkImageData. \&quot;UF1\&quot;, \&quot;RG1\&quot;, \&quot;SG1\&quot;, \&quot;PD1\&quot;, and \&quot;UG1\&quot; will produce vtkUniformGrid, vtkRectilinearGrid, vtkStructuredGrid, vtkPolyData and vtkUnstructuredGrid respectively. \&quot;PD2\&quot; will produce an alternate vtkPolyData. You can compose composite datasets from the atomic ones listed above - \&quot;MB{}\&quot; or \&quot;HB[]\&quot;. \&quot;MB{ ID1 PD1 MB{} }\&quot; for example will create a vtkMultiBlockDataSet consisting of three blocks: image data, poly data, multiblock (empty). Hierarchical Box data sets additionally require the notion of groups, declared within \&quot;()\&quot; braces, to specify AMR depth. \&quot;HB[ (UF1)(UF1)(UF1) ]\&quot; will create a vtkHierarchicalBoxDataSet representing an octree that is three levels deep, in which the first cell in each level is refined.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterscore.xml - DataObjectGenerator</extracomment>
-        <translation>vtkData ObjectGenerator 解析一个字符串,并从它在字符串中看到的数据对象模板名称中生成数据对象. 例如,如果字符串包含\"ID1\",生成器会创建一个vtkImageData. \"UF1\",\"RG1\",\"SG1\","PD1\",和\"UG1\"将分别产生vtkUniformGrid,vtkRectilinearGrid,vtkStructuredGrid,vtkPolyData和vtkUnstructuredGrid. \"PD2\"将生成一个替代 vtkPolyData. 您可以从上面列出的原子中编译复合数据集 -\"MBQ"或\"HB[]\". \"MB{ ID1 PD1 MB{}}\" 例如将创建一个vtk MultiBlockDataSet,由三个块组成:图像数据,多数据,多块(空). 等级框数据集额外要求组合的概念,在\()\()\)括号内声明,以指定AMR深度.\" HB [(UF1)(UF1)(UF1)]\"将创建一个 vtkHierchical BoxDataSet,代表一个三层深的八角树,其中每个级别的第一个单元格被精炼.</translation>
+        <translation>vtkData ObjectGenerator 解析一个字符串,并从它在字符串中看到的数据对象模板名称中生成数据对象. 例如,如果字符串包含\"ID1\",生成器会创建一个vtkImageData. \"UF1\",\"RG1\",\"SG1\","PD1\",和\"UG1\"将分别产生vtkUniformGrid,vtkRectilinearGrid,vtkStructuredGrid,vtkPolyData和vtkUnstructuredGrid. \"PD2\"将生成一个替代 vtkPolyData. 您可以从上面列出的原子中编译复合数据集 -\"MBQ"或\"HB[]\". \"MB{ ID1 PD1 MB{}}\" 例如将创建一个vtk MultiBlockDataSet,由三个块组成:图像数据,多数据,多块(空). 等级框数据集额外要求组合的概念,在\()\()\)括号内声明,以指定AMR深度.\" HB [(UF1)(UF1)(UF1)]\"将创建一个 vtkHierchical BoxDataSet,表示一个三层深的八角树,其中每个级别的第一个单元格被精炼.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36736"/>
@@ -54668,7 +54668,7 @@ Real source: Remoting/Application/Resources/proxies_fides.xml - FidesJSONReader<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36748"/>
         <source>Convert To Point Cloud</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterspoints.xml - Remoting/Application/Resources/filters_filterspoints.xml</extracomment>
-        <translation>转换为点云</translation>
+        <translation>Convert To Point Cloud</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36751"/>
@@ -54716,31 +54716,31 @@ Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANorma
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36778"/>
         <source>PCA Normal Estimation</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterspoints.xml - Remoting/Application/Resources/filters_filterspoints.xml</extracomment>
-        <translation>PCA 正常估计</translation>
+        <translation>PCA Normal Estimation</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36781"/>
         <source>The PCANormalEstimation estimates normals of points using Principal Component Analysis. Add a PCANormals field to the output data.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANormalEstimation</extracomment>
-        <translation>PCANormal估计利用主要成分分析来估计点数的正常值. 在输出数据中添加一个 PCANormals 字段.</translation>
+        <translation>PCANormal估计利用主要成分分析来估计点数的法向值. 在输出数据中添加一个 PCANormals 字段.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36784"/>
         <source>Estimate normals using PCA.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANormalEstimation</extracomment>
-        <translation>使用五氯苯甲醚估计正常情况。</translation>
+        <translation>使用五氯苯甲醚估计法向情况。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36787"/>
         <source>Estimate normals using Principal Component Analysis.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANormalEstimation</extracomment>
-        <translation>利用主要组件分析估计正常情况。</translation>
+        <translation>利用主要组件分析估计法向情况。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36793"/>
         <source>This property specifies the input from which the normals are estimated.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANormalEstimation</extracomment>
-        <translation>此属性指定用于估算正常值的输入 。</translation>
+        <translation>此属性指定用于估算法向值的输入 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36796"/>
@@ -54776,13 +54776,13 @@ Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANorma
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36814"/>
         <source>Normal Orientation</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANormalEstimation</extracomment>
-        <translation>正常方向</translation>
+        <translation>法向方向</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36817"/>
         <source>Orientation mode of the normals.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANormalEstimation</extracomment>
-        <translation>常规的定向模式 。</translation>
+        <translation>法向的定向模式 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36820"/>
@@ -54794,13 +54794,13 @@ Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANorma
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36823"/>
         <source>Point used to orient the normals.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANormalEstimation</extracomment>
-        <translation>点用来引导正常人</translation>
+        <translation>点用来引导法向人</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36829"/>
         <source>Flip the normals.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANormalEstimation</extracomment>
-        <translation>翻转正常。</translation>
+        <translation>翻转法向。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40267"/>
@@ -54812,7 +54812,7 @@ Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANorma
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36838"/>
         <source>Extract Block</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersextraction.xml - Remoting/Application/Resources/filters_filtersextraction.xml</extracomment>
-        <translation>提取块</translation>
+        <translation>Extract Block</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36841"/>
@@ -54854,7 +54854,7 @@ Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANorma
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36886"/>
         <source>Extract AMR Blocks</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersextraction.xml - Remoting/Application/Resources/filters_filtersextraction.xml</extracomment>
-        <translation>提取 AMR 块</translation>
+        <translation>Extract AMR Blocks</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36889"/>
@@ -54891,7 +54891,7 @@ Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANorma
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36910"/>
         <source>Extract Edges</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersextraction.xml - Remoting/Application/Resources/filters_filtersextraction.xml</extracomment>
-        <translation>提取边缘</translation>
+        <translation>Extract Edges</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36913"/>
@@ -54921,13 +54921,13 @@ Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANorma
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36934"/>
         <source>Extract Cells By Region</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersextraction.xml - Remoting/Application/Resources/filters_filtersextraction.xml</extracomment>
-        <translation>按区域提取单元格</translation>
+        <translation>Extract Cells By Region</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36937"/>
         <source>This filter extracts from its input dataset all cells that are either completely inside or outside of a specified region (implicit function). On output, the filter generates an unstructured grid. To use this filter you must specify a region (implicit function). You must also specify whether to extract cells lying inside or outside of the region. An option exists to extract cells that are neither inside or outside (i.e., boundary).</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersextraction.xml - ExtractGeometry</extracomment>
-        <translation>此过滤器从其输入数据集中提取一个指定区域内外(含函数)的所有单元格. 在输出时,过滤器生成一个无结构的网格. 要使用此过滤器, 您必须指定一个区域( 隐性函数 ) 。 您必须说明是否提取位于区域内外的细胞。 存在一个选项来提取既非内外(即边界)的单元格.</translation>
+        <translation>此过滤器从其输入数据集中提取一个指定区域内外(含函数)的所有单元格. 在输出时,过滤器生成一个无结构的网格. 要使用此过滤器, 您必须指定一个区域( 隐性函数 ) 。 您必须说明是否提取位于区域内外的单元格。 存在一个选项来提取既非内外(即边界)的单元格.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36940"/>
@@ -54963,7 +54963,7 @@ Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANorma
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36967"/>
         <source>This parameter controls whether to extract cells that are inside or outside the region.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersextraction.xml - ExtractGeometry</extracomment>
-        <translation>此参数可以控制是否提取位于区域内外的细胞.</translation>
+        <translation>此参数可以控制是否提取位于区域内外的单元格.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36970"/>
@@ -54993,19 +54993,19 @@ Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANorma
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28297"/>
         <source>Extract Ghost Cells</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>提取幽灵单元格</translation>
+        <translation>Extract Ghost Cells</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28300"/>
         <source>This filter extracts the ghost cells from the input and displays them so one can inspect them visually.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ExtractGhostCells</extracomment>
-        <translation>这个过滤器从输入中提取出幽灵细胞,并显示它们,以便人们可以直观地检查它们.</translation>
+        <translation>这个过滤器从输入中提取出幽灵单元格,并显示它们,以便人们可以直观地检查它们.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28303"/>
         <source>Extract ghost cells so they can be visualized.</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - ExtractGhostCells</extracomment>
-        <translation>提取幽灵细胞,以便它们可以被直观.</translation>
+        <translation>提取幽灵单元格,以便它们可以被直观.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="28312"/>
@@ -55017,7 +55017,7 @@ Real source: Remoting/Application/Resources/filters_filterspoints.xml - PCANorma
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36988"/>
         <source>Extract Time Steps</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersextraction.xml - Remoting/Application/Resources/filters_filtersextraction.xml</extracomment>
-        <translation>提取时间步骤</translation>
+        <translation>Extract Time Steps</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36991"/>
@@ -55103,7 +55103,7 @@ Real source: Remoting/Application/Resources/writers_ioioss.xml - IOSSWriter</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37045"/>
         <source>Extract Particles Over Time</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersextraction.xml - Remoting/Application/Resources/filters_filtersextraction.xml</extracomment>
-        <translation>随时间推移提取粒子</translation>
+        <translation>Extract Particles Over Time</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37048"/>
@@ -55140,7 +55140,7 @@ Real source: Remoting/Application/Resources/writers_ioioss.xml - IOSSWriter</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37063"/>
         <source>The volumetric data to detect if particles pass through. This dataset should contain volumetric cells like hexahedrons or tetrahedrons.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersextraction.xml - ExtractParticlesOverTime</extracomment>
-        <translation>粒子通过时检测的体积数据。 该数据集应当包含六面体或四面体等体积细胞.</translation>
+        <translation>粒子通过时检测的体积数据。 该数据集应当包含六面体或四面体等体积单元格.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37066"/>
@@ -55155,32 +55155,32 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Partic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37072"/>
         <source>Specify the name of a scalar array which will be used to fetch the index of each point. This is necessary only if the particles change position (Id order) on each time step. The Id can be used to identify particles at each step and hence track them properly. If this array is set to \&quot;Global or Local IDs\&quot;, the global point ids are used if they exist. Otherwise, the point indices are used.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersextraction.xml - ExtractParticlesOverTime</extracomment>
-        <translation>指定用于获取每个点索引的scalar数组的名称。 只有当颗粒在每个时间步骤上改变位置(ID顺序)时才有必要这样做. 仪表可用于在每个步骤上识别粒子,从而适当跟踪它们。 如果此数组被设定为\“ Global 或 local IDs\”),如果存在,则使用 Global 点 ID 。 否则则使用点指数.</translation>
+        <translation>指定用于获取每个点索引的scalar数组的名称。 只有当颗粒在每个时间步骤上改变位置(ID顺序)时才有必要这样做. 仪表可用于在每个步骤上识别粒子,从而适当跟踪它们。 如果此数组被设定为\“ Global 或 local IDs\”),如果存在,则使用 Global 点 ID 。 否则则使用点索引.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37081"/>
         <source>BSP Tree Cell Locator</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Remoting/Application/Resources/filters_filtersflowpaths.xml</extracomment>
-        <translation>BSP 树细胞定位器</translation>
+        <translation>BSP 树单元格定位器</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37084"/>
         <source>Evenly Spaced Streamlines 2D</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Remoting/Application/Resources/filters_filtersflowpaths.xml</extracomment>
-        <translation>均匀间距精简 2D</translation>
+        <translation>Evenly Spaced Streamlines 2D</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37087"/>
         <source>This filter generates evenly spaced streamlines in a 2D vector field from a start position. Production of streamlines terminates if a streamline crosses the exterior boundary of the input dataset (ReasonForTermination=1), an initialization issue (ReasonForTermination=2), computing an unexpected value (ReasonForTermination=3), reached the Maximum Streamline Length input value (ReasonForTermination=4), reached the Maximum Steps input value (ReasonForTermination=5), velocity was lower than the Terminal Speed input value (ReasonForTermination=6), a streamline formed a loop (ReasonForTermination=7), and the streamline was too close to other streamlines (ReasonForTermination=8). This filter operates on a 2D dataset aligned with plane XY with point-centered vectors aligned with plane XY. The output is polygonal data containing polylines.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - EvenlySpacedStreamlines2D</extracomment>
-        <translation>此过滤器从起始位置生成2D矢量字段的均匀空间精简 。 如果精简跨越输入数据集的外部边界(ReasonForTermination=1),则精简终止;初始化问题(ReasonForTermination=2),计算出意料值(ReasonForTermination=3),达到最大精简长度输入值(ReasonForTermination=4),达到最大步骤输入值(ReasonFerTermination=5),速度低于终端速度输入值(ReasonFerTermination=6),精简形成一个循环(ReasonFerTermination=7),精简过于接近其他精简(ReasonFerTermination=8). 此过滤器在与平面XY对齐的2D数据集上运行,与平面XY对齐的以点为中心的向量. 输出是包含多线的多边形数据.</translation>
+        <translation>此过滤器从起始位置生成2D矢量字段的均匀空间流线 。 如果流线跨越输入数据集的外部边界(ReasonForTermination=1),则流线终止;初始化问题(ReasonForTermination=2),计算出意料值(ReasonForTermination=3),达到最大流线长度输入值(ReasonForTermination=4),达到最大步骤输入值(ReasonFerTermination=5),速度低于终端速度输入值(ReasonFerTermination=6),流线形成一个循环(ReasonFerTermination=7),流线过于接近其他流线(ReasonFerTermination=8). 此过滤器在与平面XY对齐的2D数据集上运行,与平面XY对齐的以点为中心的向量. 输出是包含多线的多边形数据.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37090"/>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37093"/>
         <source>Produce evenly spaced streamlines in a 2D vector field.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - EvenlySpacedStreamlines2D</extracomment>
-        <translation>在一个2D向量字段中产生均匀的空间精简。</translation>
+        <translation>在一个2D向量字段中产生均匀的空间流线。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37108"/>
@@ -55195,7 +55195,7 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Strea
 Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - ArbitrarySourceStreamTracer
 ----------
 Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - GenericStreamTracer</extracomment>
-        <translation>此属性包含用于生成精简的矢量数组的名称 。</translation>
+        <translation>此属性包含用于生成流线的矢量数组的名称 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37117"/>
@@ -55227,7 +55227,7 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Strea
 Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - ArbitrarySourceStreamTracer
 ----------
 Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - GenericStreamTracer</extracomment>
-        <translation>此属性决定了用于创建精简的集成器( 精度越来越高) 。</translation>
+        <translation>此属性决定了用于创建流线的集成器( 精度越来越高) 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37123"/>
@@ -55292,7 +55292,7 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Arbit
 Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - StreamTracer
 ----------
 Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - ArbitrarySourceStreamTracer</extracomment>
-        <translation>此属性指定了步骤的最大数量,除此之外将终止精简整合。</translation>
+        <translation>此属性指定了步骤的最大数量,除此之外将终止流线整合。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37141"/>
@@ -55305,7 +55305,7 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Arbit
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37144"/>
         <source>Specify the separating distance between streamlines expressed in IntegrationStepUnit.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - EvenlySpacedStreamlines2D</extracomment>
-        <translation>指定集成单元中表达的精简之间的分隔距离。</translation>
+        <translation>指定集成单元中表达的流线之间的分隔距离。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37147"/>
@@ -55318,7 +55318,7 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Arbit
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37150"/>
         <source>Specifies SeparatingDistanceRatio. If streamlines get closer than SeparatingDistance * SeparatingDistanceRatio to other streamlines integration stops.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - EvenlySpacedStreamlines2D</extracomment>
-        <translation>指定分离Ratio。 * 如果精简工作比分离工作更接近于其他精简工作的整合停止。</translation>
+        <translation>指定分离Ratio。 * 如果流线工作比分离工作更接近于其他流线工作的整合停止。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37153"/>
@@ -55344,7 +55344,7 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Arbit
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37165"/>
         <source>Specify the starting point (seed) of the first streamline in the global coordinate system.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - EvenlySpacedStreamlines2D</extracomment>
-        <translation>指定全球协调系统第一次精简的起点(种子)。</translation>
+        <translation>指定全球协调系统第一次流线的起点(种子)。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31090"/>
@@ -55677,7 +55677,7 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Strea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37348"/>
         <source>Streak Line</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Remoting/Application/Resources/filters_filtersflowpaths.xml</extracomment>
-        <translation>断层线</translation>
+        <translation>迹线</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31102"/>
@@ -55694,13 +55694,13 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Strea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37414"/>
         <source>Stream Tracer</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Remoting/Application/Resources/filters_filtersflowpaths.xml</extracomment>
-        <translation>流跟踪器</translation>
+        <translation>Stream Tracer</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37417"/>
         <source>The Stream Tracer filter generates streamlines in a vector field from a collection of seed points. Production of streamlines terminates if a streamline crosses the exterior boundary of the input dataset (ReasonForTermination=1). Other reasons for termination include an initialization issue (ReasonForTermination=2), computing an unexpected value (ReasonForTermination=3), reached the Maximum Streamline Length input value (ReasonForTermination=4), reached the Maximum Steps input value (ReasonForTermination=5), and velocity was lower than the Terminal Speed input value (ReasonForTermination=6). This filter operates on any type of dataset, provided it has point-centered vectors. The output is polygonal data containing polylines.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - StreamTracer</extracomment>
-        <translation>Stream Tracer 过滤器从种子点集合中生成一个矢量字段的精简. 如果精简跨越输入数据集的外部边界(ReasonForTermination=1),则制作精简终止. 终止的其他原因包括初始化问题(ReasonForTermination=2),计算出意料值(ReasonForTermination=3),达到最大精简长度输入值(ReasonFertermination=4),达到最大步骤输入值(ReasonFertermination=5),速度低于终端速度输入值(ReasonForTermination=6). 这个过滤器在任何类型的数据集上运行,前提是它具有以点为中心的向量. 输出是包含多线的多边形数据.</translation>
+        <translation>Stream Tracer 过滤器从种子点集合中生成一个矢量字段的流线. 如果流线跨越输入数据集的外部边界(ReasonForTermination=1),则制作流线终止. 终止的其他原因包括初始化问题(ReasonForTermination=2),计算出意料值(ReasonForTermination=3),达到最大流线长度输入值(ReasonFertermination=4),达到最大步骤输入值(ReasonFertermination=5),速度低于终端速度输入值(ReasonForTermination=6). 这个过滤器在任何类型的数据集上运行,前提是它具有以点为中心的向量. 输出是包含多线的多边形数据.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37420"/>
@@ -55715,7 +55715,7 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Strea
 Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - ArbitrarySourceStreamTracer
 ----------
 Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - GenericStreamTracer</extracomment>
-        <translation>在矢量字段中整合精简。</translation>
+        <translation>在矢量字段中整合流线。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37429"/>
@@ -55733,7 +55733,7 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Arbit
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - StreamTracer
 ----------
 Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - ArbitrarySourceStreamTracer</extracomment>
-        <translation>表面精简</translation>
+        <translation>表面流线</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37450"/>
@@ -55742,7 +55742,7 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Arbit
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - StreamTracer
 ----------
 Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - ArbitrarySourceStreamTracer</extracomment>
-        <translation>指定是否计算表面精简。</translation>
+        <translation>指定是否计算表面流线。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37453"/>
@@ -55767,7 +55767,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Generic
 Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - ArbitrarySourceStreamTracer
 ----------
 Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - GenericStreamTracer</extracomment>
-        <translation>此属性决定生成精简的方向 。</translation>
+        <translation>此属性决定生成流线的方向 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37468"/>
@@ -55830,7 +55830,7 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Arbit
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - StreamTracer
 ----------
 Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - ArbitrarySourceStreamTracer</extracomment>
-        <translation>最大精简长度</translation>
+        <translation>最大流线长度</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37501"/>
@@ -55839,7 +55839,7 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Arbit
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - StreamTracer
 ----------
 Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - ArbitrarySourceStreamTracer</extracomment>
-        <translation>此属性指定了最大精简长度(即物理弧长度),超过此长度的线条集成终止.</translation>
+        <translation>此属性指定了最大流线长度(即物理弧长度),超过此长度的线条集成终止.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37513"/>
@@ -55848,7 +55848,7 @@ Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Arbit
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - StreamTracer
 ----------
 Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - ArbitrarySourceStreamTracer</extracomment>
-        <translation>此属性指定了整个精简整合过程中允许的最大错误( 对于 Runge- Kutta 4-5) 。 Runge-Kutta 4-5集成器试图调整步骤大小,使估计误差小于此阈值.</translation>
+        <translation>此属性指定了整个流线整合过程中允许的最大错误( 对于 Runge- Kutta 4-5) 。 Runge-Kutta 4-5集成器试图调整步骤大小,使估计误差小于此阈值.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37522"/>
@@ -55866,7 +55866,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Generic
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - StreamTracer
 ----------
 Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - GenericStreamTracer</extracomment>
-        <translation>此属性的价值决定了如何生成精简的种子 。</translation>
+        <translation>此属性的价值决定了如何生成流线的种子 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37528"/>
@@ -55929,13 +55929,13 @@ Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Generic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37576"/>
         <source>Stream Tracer With Custom Source</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Remoting/Application/Resources/filters_filtersflowpaths.xml</extracomment>
-        <translation>自定义源代码流跟踪器</translation>
+        <translation>Stream Tracer With Custom Source</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37579"/>
         <source>The Stream Tracer With Custom Source filter generates streamlines in a vector field from a collection of seed points. Production of streamlines terminates if a streamline crosses the exterior boundary of the input dataset (ReasonForTermination=1). Other reasons for termination include an initialization issue (ReasonForTermination=2), computing an unexpected value (ReasonForTermination=3), reached the Maximum Streamline Length input value (ReasonForTermination=4), reached the Maximum Steps input value (ReasonForTermination=5), and velocity was lower than the Terminal Speed input value (ReasonForTermination=6). This filter operates on any type of dataset, provided it has point-centered vectors. The output is polygonal data containing polylines. This filter takes a Source input that provides the seed points.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - ArbitrarySourceStreamTracer</extracomment>
-        <translation>带有自定义源过滤器的流跟踪器从种子点集合中生成一个矢量字段的精简. 如果精简跨越输入数据集的外部边界(ReasonForTermination=1),则制作精简终止. 终止的其他原因包括初始化问题(ReasonForTermination=2),计算出意料值(ReasonForTermination=3),达到最大精简长度输入值(ReasonFertermination=4),达到最大步骤输入值(ReasonFertermination=5),速度低于终端速度输入值(ReasonForTermination=6). 这个过滤器在任何类型的数据集上运行,前提是它具有以点为中心的向量. 输出是包含多线的多边形数据. 此过滤器需要提供种子点的源输入 。</translation>
+        <translation>带有自定义源过滤器的流跟踪器从种子点集合中生成一个矢量字段的流线. 如果流线跨越输入数据集的外部边界(ReasonForTermination=1),则制作流线终止. 终止的其他原因包括初始化问题(ReasonForTermination=2),计算出意料值(ReasonForTermination=3),达到最大流线长度输入值(ReasonFertermination=4),达到最大步骤输入值(ReasonFertermination=5),速度低于终端速度输入值(ReasonForTermination=6). 这个过滤器在任何类型的数据集上运行,前提是它具有以点为中心的向量. 输出是包含多线的多边形数据. 此过滤器需要提供种子点的源输入 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37693"/>
@@ -55947,13 +55947,13 @@ Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Generic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37696"/>
         <source>Vortex Cores</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - Remoting/Application/Resources/filters_filtersflowpaths.xml</extracomment>
-        <translation>阀门芯片</translation>
+        <translation>Vortex Cores</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37699"/>
         <source>Compute vortex core lines using the parallel vectors method. By default, the \&quot;Higher-Order\&quot; approach of computing the parallel vector lines between the flow field&apos;s velocity and jerk is disabled in favor of computing the parallel vector lines between the velocity and acceleration. To further discriminate against spurious vortex cores, at each potential point value the Q-criterion, delta-criterion, lambda_ci, and lambda_2-criterion are checked. The Q-criterion and delta-criterion are used to prefilter cells prior to the execution of the parallel lines algorithm, and all criteria values are stored as point values on the output polylines.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersflowpaths.xml - VortexCores</extracomment>
-        <translation>使用平行向量方法计算涡流核心线. 默认情况下,用于计算流域速度和混蛋之间的平行矢量线的\"Higher-Order\"方法被禁用,有利于计算速度和加速之间的平行矢量线. 为了进一步歧视虚假的涡旋核,在每个潜在值点检查Q-criterion,delta-criterion,lambda ci,和lambda 2-criterion. Q-criterion和delta-criterion用于执行平行线程算法前预滤细胞,所有标准值都作为点值存储在输出多线上.</translation>
+        <translation>使用平行向量方法计算涡流核心线. 默认情况下,用于计算流域速度和混蛋之间的平行矢量线的\"Higher-Order\"方法被禁用,有利于计算速度和加速之间的平行矢量线. 为了进一步歧视虚假的涡旋核,在每个潜在值点检查Q-criterion,delta-criterion,lambda ci,和lambda 2-criterion. Q-criterion和delta-criterion用于执行平行线程算法前预滤单元格,所有标准值都作为点值存储在输出多线上.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37702"/>
@@ -56019,7 +56019,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Generic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37753"/>
         <source>This filter optionally adds point locations and cell centers to point and cell data, respectively. Point locations are added in an array named `PointLocations`. Cell centers are added in an array named `CellCenters`.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Coordinates</extracomment>
-        <translation>此过滤器可选择地将点位置和单元格中心分别添加点和单元格数据. 在称为`PointLocations'的阵列中增加了点位置。 细胞中心被添加在名为“细胞中心”的阵列中。</translation>
+        <translation>此过滤器可选择地将点位置和单元格中心分别添加点和单元格数据. 在称为`PointLocations'的阵列中增加了点位置。 单元格中心被添加在名为“单元格中心”的阵列中。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37756"/>
@@ -56077,7 +56077,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Generic
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - BlockIds
 ----------
 Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - OverlappingAMRLevelIds</extracomment>
-        <translation>从水平生成点刻度 。</translation>
+        <translation>从水平生成点标量 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37882"/>
@@ -56092,7 +56092,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Overlap
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37885"/>
         <source>Random Vectors</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>随机矢量</translation>
+        <translation>Random Vectors</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37891"/>
@@ -56140,7 +56140,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Overlap
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37915"/>
         <source>Cell Centers</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>单元格中心</translation>
+        <translation>Cell Centers</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37921"/>
@@ -56179,7 +56179,7 @@ Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGly
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37939"/>
         <source>Compute Derivatives</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>计算衍生工具</translation>
+        <translation>Compute Derivatives</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37945"/>
@@ -56227,13 +56227,13 @@ Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGly
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37987"/>
         <source>Validate Cells</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>校验单元格</translation>
+        <translation>Validate Cells</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37990"/>
         <source>vtkCellValidator accepts as input a dataset and adds integral cell data to it corresponding to the validity of each cell. The validity field encodes a bitfield for identifying problems that prevent a cell from standard use, including: WrongNumberOfPoints: filters assume that a cell has access to the appropriate number of points that comprise it. This assumption is often tacit, resulting in unexpected behavior when the condition is not met. This check simply confirms that the cell has the minimum number of points needed to describe it. IntersectingEdges: cells that incorrectly describe the order of their points often manifest with intersecting edges or intersecting faces. Given a tolerance, this check ensures that two edges from a two-dimensional cell are separated by at least the tolerance (discounting end-to-end connections). IntersectingFaces: cells that incorrectly describe the order of their points often manifest with intersecting edges or intersecting faces. Given a tolerance, this check ensures that two faces from a three-dimensional cell do not intersect. NoncontiguousEdges: another symptom of incorrect point ordering within a cell is the presence of noncontiguous edges where contiguous edges are otherwise expected. Given a tolerance, this check ensures that edges around the perimeter of a two-dimensional cell are contiguous. Nonconvex: many algorithms implicitly require that all input three- dimensional cells be convex. This check uses the generic convexity checkers implemented in vtkPolygon and vtkPolyhedron to test this requirement. FacesAreOrientedIncorrectly: All three-dimensional cells have an implicit expectation for the orientation of their faces. While the convention is unfortunately inconsistent across cell types, it is usually required that cell faces point outward. This check tests that the faces of a cell point in the direction required by the cell type, taking into account the cell types with nonstandard orientation requirements.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - ValidateCells</extracomment>
-        <translation>vtkCellValidator 接受一个数据集作为输入,并在其中添加与每个单元格有效性相对应的完整单元格数据. 有效性字段编码了一个比特字段,用于识别阻碍单元格标准使用的问题,包括: 错误数OfPoints:过滤器假设单元格可以访问构成它的适当数点. 这种假设往往是默认的,导致在条件未得到满足时出现意想不到的行为. 此检查仅确认单元格有描述它所需的最低点数。 交叉Edges:错误地描述其点的顺序的单元格,往往以交叉边或交叉面来表现. 有了容忍度,这个检查可以确保从二维单元格中两个边缘至少通过容忍度(折扣端到端的连接)来分离. 交叉面(IntersectingFaces):不正确地描述其点的顺序的细胞,常以交叉边或交叉面表现出来. 考虑到容忍性,这一检查确保三维细胞中的两个面孔不会交叉. 非毗连Edges:一个细胞内错误点序的另一个症状是存在非毗连的边缘,在其它情况下预计会存在毗连的边缘. 考虑到耐受性,这一检查确保二维细胞周边的边缘是毗连的. 非凸轮:许多算法暗示要求所有输入的三维细胞都是凸轮. 此检查使用 vtkPolygon 和 vtkPolyhedron 中执行的通用对流检查器来测试这一要求. 面向面孔 不正确:所有三维细胞都对面部的定向有隐含的预期. 虽然不幸的是,各细胞类型之间的常规不一致,但通常要求细胞面朝外。 这个检查测试,一个细胞点在细胞类型所需方向上的面部,考虑到具有非标准定向要求的细胞类型.</translation>
+        <translation>vtkCellValidator 接受一个数据集作为输入,并在其中添加与每个单元格有效性相对应的完整单元格数据. 有效性字段编码了一个比特字段,用于识别阻碍单元格标准使用的问题,包括: 错误数OfPoints:过滤器假设单元格可以访问构成它的适当数点. 这种假设往往是默认的,导致在条件未得到满足时出现意想不到的行为. 此检查仅确认单元格有描述它所需的最低点数。 交叉Edges:错误地描述其点的顺序的单元格,往往以交叉边或交叉面来表现. 有了容差度,这个检查可以确保从二维单元格中两个边缘至少通过容差度(折扣端到端的连接)来分离. 交叉面(IntersectingFaces):不正确地描述其点的顺序的单元格,常以交叉边或交叉面表现出来. 考虑到容差性,这一检查确保三维单元格中的两个面孔不会交叉. 非毗连Edges:一个单元格内错误点序的另一个症状是存在非毗连的边缘,在其它情况下预计会存在毗连的边缘. 考虑到耐受性,这一检查确保二维单元格周边的边缘是毗连的. 非凸轮:许多算法暗示要求所有输入的三维单元格都是凸轮. 此检查使用 vtkPolygon 和 vtkPolyhedron 中执行的通用对流检查器来测试这一要求. 面向面孔 不正确:所有三维单元格都对面的定向有隐含的预期. 虽然不幸的是,各单元格类型之间的常规不一致,但通常要求单元格面朝外。 这个检查测试,一个单元格点在单元格类型所需方向上的面,考虑到具有非标准定向要求的单元格类型.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37993"/>
@@ -56251,7 +56251,7 @@ Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGly
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38002"/>
         <source>Count Cell Faces</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>数单元格面</translation>
+        <translation>Count Cell Faces</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38005"/>
@@ -56282,7 +56282,7 @@ Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGly
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38026"/>
         <source>Count Cell Vertices</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>计算单元格参数</translation>
+        <translation>Count Cell Vertices</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38029"/>
@@ -56307,7 +56307,7 @@ Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGly
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38047"/>
         <source>Curvature</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>曲线</translation>
+        <translation>Curvature</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38053"/>
@@ -56337,7 +56337,7 @@ Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGly
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38068"/>
         <source>If this property is set to 1, the mean curvature calculation will be inverted. This is useful for meshes with inward-pointing normals.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Curvatures</extracomment>
-        <translation>如果将此属性设定为 1, 则平均曲率计算将倒转 。 这对有内向指向的正常人来说是有用的。</translation>
+        <translation>如果将此属性设定为 1, 则平均曲率计算将倒转 。 这对有内向指向的法向人来说是有用的。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38071"/>
@@ -56355,7 +56355,7 @@ Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGly
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38077"/>
         <source>Tetrahedralize</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>铁丝网</translation>
+        <translation>Tetrahedralize</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38080"/>
@@ -56409,7 +56409,7 @@ Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGly
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38122"/>
         <source>Finite Element Field Distributor</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>有限元素字段分配器</translation>
+        <translation>Finite Element Field Distributor</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38128"/>
@@ -56433,7 +56433,7 @@ Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGly
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38140"/>
         <source>Image Data to Point Set</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>到点集的图像数据</translation>
+        <translation>Image Data to Point Set</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38146"/>
@@ -56446,7 +56446,7 @@ Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGly
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38161"/>
         <source>Group Datasets</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>组数据集</translation>
+        <translation>Group Datasets</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38164"/>
@@ -56490,7 +56490,7 @@ Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGly
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38206"/>
         <source>Group Time Steps</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>分组时间步骤</translation>
+        <translation>Group Time Steps</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38209"/>
@@ -56515,7 +56515,7 @@ Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGly
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38230"/>
         <source>The Level Scalars filter uses colors to show levels of a hierarchical dataset.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - OverlappingAMRLevelIds</extracomment>
-        <translation>Level Scalars过滤器使用颜色来显示分级数据集的级别.</translation>
+        <translation>Level Scalars过滤器使用颜色来显示标量数据集的级别.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38245"/>
@@ -56540,7 +56540,7 @@ Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGly
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38323"/>
         <source>Plot Data</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>绘图数据</translation>
+        <translation>Plot Data</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38329"/>
@@ -56552,7 +56552,7 @@ Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGly
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38338"/>
         <source>Scatter Plot</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>散点绘图</translation>
+        <translation>Scatter Plot</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38341"/>
@@ -56571,7 +56571,7 @@ Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGly
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38356"/>
         <source>Interpolate to Quadrature Points</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>内插到四方点</translation>
+        <translation>Interpolate to Quadrature Points</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38359"/>
@@ -56600,7 +56600,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Quadrat
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38383"/>
         <source>Generate Quadrature Points</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>生成四方点</translation>
+        <translation>Generate Quadrature Points</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38386"/>
@@ -56620,13 +56620,13 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Quadrat
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38410"/>
         <source>Generate Quadrature Scheme Dictionary</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>生成四方方案词典</translation>
+        <translation>Generate Quadrature Scheme Dictionary</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38428"/>
         <source>Random Attributes</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>随机属性</translation>
+        <translation>Random Attributes</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38434"/>
@@ -56730,19 +56730,19 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - ParticleRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38497"/>
         <source>Rectilinear Data to Point Set</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>到点集的直线数据</translation>
+        <translation>Rectilinear Data to Point Set</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38509"/>
         <source>Shrink</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>收缩</translation>
+        <translation>Shrink</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38515"/>
         <source>This filter shrinks each input cell so they pull away from their neighbors.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - ShrinkFilter</extracomment>
-        <translation>这个过滤器会缩小每个输入细胞,这样它们就会从邻居身边拉开.</translation>
+        <translation>这个过滤器会缩小每个输入单元格,这样它们就会从邻居身边拉开.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38518"/>
@@ -56834,13 +56834,13 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - SpatioT
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38581"/>
         <source>Merge Time</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>合并时间</translation>
+        <translation>Merge Time</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38584"/>
         <source>Merge all inputs timestep list. Remove duplicate using a Tolerance, either absolute or relative. The resulting timesteps list can be an union or an intersection of the inputs ones.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - MergeTime</extracomment>
-        <translation>合并所有输入时间步列表 。 使用绝对容忍或相对容忍来删除重复。 由此产生的时间步列表可以是组合或输入的交叉.</translation>
+        <translation>合并所有输入时间步列表 。 使用绝对容差或相对容差来删除重复。 由此产生的时间步列表可以是组合或输入的交叉.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38587"/>
@@ -56855,19 +56855,19 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - SpatioT
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - MergeTime
 ----------
 Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - SynchronizeTime</extracomment>
-        <translation>相对容忍</translation>
+        <translation>相对容差</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38599"/>
         <source>Use Relative (resp. absolute) tolerance to determine if timesteps are duplicate.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - MergeTime</extracomment>
-        <translation>使用相对( resp. 绝对) 容忍度来确定时间步是否重复 。</translation>
+        <translation>使用相对( resp. 绝对) 容差度来确定时间步是否重复 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38605"/>
         <source>Tolerance used to determine if timesteps are duplicate.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - MergeTime</extracomment>
-        <translation>用于确定时间步骤是否重复的容忍。</translation>
+        <translation>用于确定时间步骤是否重复的容差。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38611"/>
@@ -56879,7 +56879,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Synchro
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38617"/>
         <source>Synchronize Time</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>同步时间</translation>
+        <translation>Synchronize Time</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38623"/>
@@ -56915,7 +56915,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Synchro
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38644"/>
         <source>Table To Points</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>表格到点</translation>
+        <translation>Table To Points</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38647"/>
@@ -57000,19 +57000,19 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - TableTo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30292"/>
         <source>Table To Structured Grid</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - VTKExtensions/FiltersGeneral/Resources/general_filters.xml</extracomment>
-        <translation>表格到结构网格</translation>
+        <translation>Table To Structured Grid</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40858"/>
         <source>Temporal Particles To Pathlines</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>时间粒子到路径线</translation>
+        <translation>Temporal Particles To Pathlines</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40864"/>
         <source>Creates polylines representing pathlines of animating particles</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ParticlePathLines</extracomment>
-        <translation>创建代表动画粒子路径的多线</translation>
+        <translation>创建表示动画粒子路径的多线</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40867"/>
@@ -57027,7 +57027,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - TableTo
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml
 ----------
 Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ParticlePathLines</extracomment>
-        <translation>遮盖点</translation>
+        <translation>Mask Points</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40885"/>
@@ -57069,7 +57069,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Partic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38701"/>
         <source>Temporal Statistics</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>时间统计</translation>
+        <translation>Temporal Statistics</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38710"/>
@@ -57135,13 +57135,13 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Partic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38749"/>
         <source>Tessellate</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>泰瑟莱特</translation>
+        <translation>Tessellate</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38752"/>
         <source>The Tessellate filter tessellates cells with nonlinear geometry and/or scalar fields into a simplicial complex with linearly interpolated field values that more closely approximate the original field. This is useful for datasets containing quadratic cells.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - TessellatorFilter</extracomment>
-        <translation>泰瑟拉特滤波器将具有非线性几何和/或scalar字段的细胞分解成具有线性内插字段值,更接近原始字段的简单复合体. 这对包含四面体单元格的数据集有用.</translation>
+        <translation>泰瑟拉特滤波器将具有非线性几何和/或scalar字段的单元格分解成具有线性内插字段值,更接近原始字段的简单复合体. 这对包含四面体单元格的数据集有用.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38755"/>
@@ -57171,7 +57171,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Partic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38770"/>
         <source>The value of this property sets the maximum dimensionality of the output tessellation. When the value of this property is 3, 3D cells produce tetrahedra, 2D cells produce triangles, and 1D cells produce line segments. When the value is 2, 3D cells will have their boundaries tessellated with triangles. When the value is 1, all cells except points produce line segments.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - TessellatorFilter</extracomment>
-        <translation>此属性的值设定输出切换的最大维度 。 当这个属性值为3时,3D细胞产生四面体,2D细胞产生三角形,1D细胞产生线段. 当值为 2, 3D 时, 3D 单元格的边框会用三角形连接 。 当值为1时,除点外的所有单元格都产生线段.</translation>
+        <translation>此属性的值设定输出切换的最大维度 。 当这个属性值为3时,3D单元格产生四面体,2D单元格产生三角形,1D单元格产生线段. 当值为 2, 3D 时, 3D 单元格的边框会用三角形连接 。 当值为1时,除点外的所有单元格都产生线段.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38773"/>
@@ -57207,13 +57207,13 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Partic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38788"/>
         <source>This property specifies the maximum number of times an edge may be subdivided. Increasing this number allows further refinement but can drastically increase the computational and storage requirements, especially when the value of the OutputDimension property is 3.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - TessellatorFilter</extracomment>
-        <translation>此属性指定了边缘可细分的最大次数 。 增加这一数字可以进一步改进,但可以大幅度提高计算和存储要求,特别是当产出分配财产的价值为3时。</translation>
+        <translation>此属性指定了边缘可细分的最大次数 。 增加这一数字可以进一步改进,但可以大幅度提高计算和存储要求,特别是当产出分配属性的价值为3时。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38794"/>
         <source>If the value of this property is set to 1, coincident vertices will be merged after tessellation has occurred. Only geometry is considered during the merge and the first vertex encountered is the one whose point attributes will be used. Any discontinuities in point fields will be lost. On the other hand, many operations, such as streamline generation, require coincident vertices to be merged. Toggle whether to merge coincident vertices.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - TessellatorFilter</extracomment>
-        <translation>如果此属性的值被设定为 1, 则在切变发生后, 重叠的顶点将被合并 。 合并期间只考虑几何,遇到的第一个顶点是将使用点属性的顶点. 点字段的任何不连续都将消失。 另一方面,许多操作,如精简生成,需要同时的顶点进行合并. 切换是否合并巧合的顶点 。</translation>
+        <translation>如果此属性的值被设定为 1, 则在细分发生后, 重叠的顶点将被合并 。 合并期间只考虑几何,遇到的第一个顶点是将使用点属性的顶点. 点字段的任何不连续都将消失。 另一方面,许多操作,如流线生成,需要同时的顶点进行合并. 切换是否合并巧合的顶点 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38797"/>
@@ -57264,7 +57264,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Transfo
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGridTransform
 ----------
 Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - TransformFilter</extracomment>
-        <translation>此属性中的值允许您指定用于输入数据集的转换(翻译、旋转和缩放) 。</translation>
+        <translation>此属性中的值允许您指定用于输入数据集的转换(平移、旋转和缩放) 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38839"/>
@@ -57312,7 +57312,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Transfo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38878"/>
         <source>Warp By Scalar</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>由 Scalar 旋转</translation>
+        <translation>Warp By Scalar</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38884"/>
@@ -57336,19 +57336,19 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Transfo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38914"/>
         <source>The scalar value at a given point is multiplied by the value of this property to determine the magnitude of the change vector for that point.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - WarpScalar</extracomment>
-        <translation>某一点的刻度值乘以此属性的值,以确定该点的变化矢量的大小.</translation>
+        <translation>某一点的标量值乘以此属性的值,以确定该点的变化矢量的大小.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38920"/>
         <source>The values of this property specify the direction along which to warp the dataset if any normals contained in the input dataset are not being used for this purpose. (See the UseNormal property.)</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - WarpScalar</extracomment>
-        <translation>该属性的值指定了如果输入数据集中的任何常态没有用于此目的,则该数据集的扭曲方向 。 (见UseNormal财产.</translation>
+        <translation>该属性的值指定了如果输入数据集中的任何常态没有用于此目的,则该数据集的扭曲方向 。 (见UseNormal属性.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38923"/>
         <source>Use Normal</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - WarpScalar</extracomment>
-        <translation>正常使用</translation>
+        <translation>法向使用</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38926"/>
@@ -57366,7 +57366,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Transfo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38932"/>
         <source>If the value of this property is 1, then the Z-coordinates from the input are considered to be the scalar values, and the displacement is along the Z axis. This is useful for creating carpet plots.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - WarpScalar</extracomment>
-        <translation>如果此属性的值为1,那么输入的Z坐标就被认为是刻度值,而移位则沿着Z轴. 这对创建地毯地块很有用.</translation>
+        <translation>如果此属性的值为1,那么输入的Z坐标就被认为是标量值,而移位则沿着Z轴. 这对创建地毯地块很有用.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38935"/>
@@ -57384,7 +57384,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Transfo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38944"/>
         <source>Warp By Vector</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>由矢量旋转</translation>
+        <translation>Warp By Vector</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38950"/>
@@ -57414,13 +57414,13 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Transfo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38983"/>
         <source>Youngs Material Interface</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>年轻人材料界面</translation>
+        <translation>Youngs Material Interface</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38986"/>
         <source>Computes linear material interfaces in 2D or 3D mixed cells produced by Eulerian or ALE simulation codes</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - YoungsMaterialInterface</extracomment>
-        <translation>计算Eulerian 或 ALE 模拟码生成的 2D 或 3D 混合细胞中的线性材料接口</translation>
+        <translation>计算Eulerian 或 ALE 模拟码生成的 2D 或 3D 混合单元格中的线性材料接口</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38989"/>
@@ -57497,7 +57497,7 @@ Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Hyper
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39046"/>
         <source>Normal Arrays</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - YoungsMaterialInterface</extracomment>
-        <translation>普通阵列</translation>
+        <translation>法向阵列</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39034"/>
@@ -57510,19 +57510,19 @@ Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Hyper
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39049"/>
         <source>Deflect Normals</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>脱光常数</translation>
+        <translation>Deflect Normals</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39052"/>
         <source>This filter deflects normal orientation along a vector attribute.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - DeflectNormals</extracomment>
-        <translation>此过滤器沿向量属性偏移正常方向 。</translation>
+        <translation>此过滤器沿向量属性偏移法向方向 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39055"/>
         <source>Deflects the normals with a given vector field.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - DeflectNormals</extracomment>
-        <translation>以给定的矢量字段忽略正常值。</translation>
+        <translation>以给定的矢量字段忽略法向值。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39070"/>
@@ -57534,37 +57534,37 @@ Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Hyper
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39076"/>
         <source>Normal deflection factor.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - DeflectNormals</extracomment>
-        <translation>正常偏移系数。</translation>
+        <translation>法向偏移系数。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39079"/>
         <source>Use User Normal</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - DeflectNormals</extracomment>
-        <translation>使用用户普通</translation>
+        <translation>使用用户法向</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39082"/>
         <source>Use a user specified normal instead of the existing point normals.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - DeflectNormals</extracomment>
-        <translation>使用指定的用户普通而非现有的点普通 。</translation>
+        <translation>使用指定的用户法向而非现有的点法向 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39085"/>
         <source>User Normal</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - DeflectNormals</extracomment>
-        <translation>用户普通</translation>
+        <translation>用户法向</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39088"/>
         <source>Specify the user constant normal.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - DeflectNormals</extracomment>
-        <translation>指定用户常数正常。</translation>
+        <translation>指定用户常数法向。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39091"/>
         <source>Animate Modes</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>动画模式</translation>
+        <translation>Animate Modes</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39097"/>
@@ -57612,7 +57612,7 @@ Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Hyper
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39148"/>
         <source>Table FFT</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>表格 FFT</translation>
+        <translation>Table FFT</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39151"/>
@@ -57675,7 +57675,7 @@ Real source: Remoting/Application/Resources/filters_selectionfftovertime.xml - F
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39187"/>
         <source>Specify if the output should be normalized. Only used if UseWelchMethod is false.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - TableFFT</extracomment>
-        <translation>指定是否应该使产出正常化。 只有在 UseWelch Method 错误的情况下才使用.</translation>
+        <translation>指定是否应该使产出法向化。 只有在 UseWelch Method 错误的情况下才使用.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39190"/>
@@ -57744,7 +57744,7 @@ Real source: Remoting/Application/Resources/filters_selectionfftovertime.xml - F
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39385"/>
         <source>Axes</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filtersgeneral.xml - Remoting/Application/Resources/sources_filtersgeneral.xml</extracomment>
-        <translation>轴</translation>
+        <translation>Axes</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39388"/>
@@ -57756,19 +57756,19 @@ Real source: Remoting/Application/Resources/filters_selectionfftovertime.xml - F
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39391"/>
         <source>Three lines representing the axes - red line along X, green line along Y, and blue line along Z</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filtersgeneral.xml - Axes</extracomment>
-        <translation>代表轴线的三条线——沿X线的红线,沿Y线的绿线,沿Z线的蓝线</translation>
+        <translation>表示轴线的三条线——沿X线的红线,沿Y线的绿线,沿Z线的蓝线</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39394"/>
         <source>Create three lines representing X, Y and Z axes</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filtersgeneral.xml - Axes</extracomment>
-        <translation>创建代表 X、 Y 和 Z 轴的三行</translation>
+        <translation>创建表示 X、 Y 和 Z 轴的三行</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39400"/>
         <source>By default the axes lines have a length of 1 (or 1 in each direction, for a total length of 2, if value of the Symmetric property is 1). Increasing or decreasing the value of this property will make the axes larger or smaller, respectively.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filtersgeneral.xml - Axes</extracomment>
-        <translation>默认情况下,轴线的长度为1(或每个方向为1,如果对称属性值为1),则总长度为2. 增加或减少这种财产的价值将使轴线分别变大或变小.</translation>
+        <translation>默认情况下,轴线的长度为1(或每个方向为1,如果对称属性值为1),则总长度为2. 增加或减少这种属性的价值将使轴线分别变大或变小.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39406"/>
@@ -57786,7 +57786,7 @@ Real source: Remoting/Application/Resources/filters_selectionfftovertime.xml - F
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39415"/>
         <source>Time Source</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filtersgeneral.xml - Remoting/Application/Resources/sources_filtersgeneral.xml</extracomment>
-        <translation>时间来源</translation>
+        <translation>Time Source</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39418"/>
@@ -57882,7 +57882,7 @@ Real source: Remoting/Application/Resources/filters_plotonintersectioncurves.xml
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39502"/>
         <source>Normal Glyphs</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_normalglyphs.xml - Remoting/Application/Resources/filters_normalglyphs.xml</extracomment>
-        <translation>普通胶片</translation>
+        <translation>法向胶片</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39505"/>
@@ -57890,7 +57890,7 @@ Real source: Remoting/Application/Resources/filters_plotonintersectioncurves.xml
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39511"/>
         <source>Filter computing surface normals.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGlyphs</extracomment>
-        <translation>滤镜计算表面正常。</translation>
+        <translation>滤镜计算表面法向。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39520"/>
@@ -57921,7 +57921,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Surfac
 Real source: Remoting/Application/Resources/filters_normalglyphs.xml - NormalGlyphs
 ----------
 Real source: Remoting/Application/Resources/filters_filtersparallel.xml - SurfaceNormals</extracomment>
-        <translation>翻转普通</translation>
+        <translation>翻转法向</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39535"/>
@@ -58002,13 +58002,13 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - ArrowSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39598"/>
         <source>Clip Generic Dataset</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Remoting/Application/Resources/filters_filtersgeneric.xml</extracomment>
-        <translation>剪切通用数据集</translation>
+        <translation>Clip Generic Dataset</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39601"/>
         <source>The Generic Clip filter cuts away a portion of the input data set using a plane, a sphere, a box, or a scalar value. The menu in the Clip Function portion of the interface allows the user to select which implicit function to use or whether to clip using a scalar value. Making this selection loads the appropriate user interface. For the implicit functions, the appropriate 3D widget (plane, sphere, or box) is also displayed. The use of these 3D widgets, including their user interface components, is discussed in section 7.4. If an implicit function is selected, the clip filter returns that portion of the input data set that lies inside the function. If Scalars is selected, then the user must specify a scalar array to clip according to. The clip filter will return the portions of the data set whose value in the selected Scalars array is larger than the Clip value. Regardless of the selection from the Clip Function menu, if the Inside Out option is checked, the opposite portions of the data set will be returned. This filter operates on all types of data sets, and it returns unstructured grid data on output.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - GenericClip</extracomment>
-        <translation>通用剪贴过滤器使用平面,球体,框,或刻度值切除一部分输入数据集. 界面的 Clip 函数部分的菜单允许用户选择使用哪个隐含的函数,或者是否使用scalar值进行剪辑. 使此选择加载适当的用户界面 。 对于隐含的函数,也显示相应的3D部件(平面,球体,或框). 第7.4节讨论了这些3D部件的使用,包括其用户界面组件。 如果选中一个隐含的函数,剪辑过滤器会返回位于函数内部的输入数据集的那部分. 如果选中了 Scalars, 那么用户必须指定一个 scalar 阵列来根据它进行剪辑 。 剪辑过滤器将返回所选 Scalars 阵列中值大于 Clip 值的数据集部分 。 无论从 Clip 函数菜单中选择什么,如果选中了内置 Out 选项, 数据集的相反部分会被返回 。 此过滤器在所有类型的数据集上运行,它返回输出时无结构的网格数据.</translation>
+        <translation>通用剪贴过滤器使用平面,球体,框,或标量值切除一部分输入数据集. 界面的 Clip 函数部分的菜单允许用户选择使用哪个隐含的函数,或者是否使用scalar值进行剪辑. 使此选择加载适当的用户界面 。 对于隐含的函数,也显示相应的3D部件(平面,球体,或框). 第7.4节讨论了这些3D部件的使用,包括其用户界面组件。 如果选中一个隐含的函数,剪辑过滤器会返回位于函数内部的输入数据集的那部分. 如果选中了 Scalars, 那么用户必须指定一个 scalar 阵列来根据它进行剪辑 。 剪辑过滤器将返回所选 Scalars 阵列中值大于 Clip 值的数据集部分 。 无论从 Clip 函数菜单中选择什么,如果选中了内置 Out 选项, 数据集的相反部分会被返回 。 此过滤器在所有类型的数据集上运行,它返回输出时无结构的网格数据.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39604"/>
@@ -58032,7 +58032,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - ArrowSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39619"/>
         <source>Set the parameters of the clip function.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - GenericClip</extracomment>
-        <translation>设定剪辑函数的参数 。</translation>
+        <translation>设定裁剪函数的参数 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39640"/>
@@ -58050,7 +58050,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - ArrowSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39655"/>
         <source>Contour Generic Dataset</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Remoting/Application/Resources/filters_filtersgeneric.xml</extracomment>
-        <translation>轮廓通用数据集</translation>
+        <translation>Contour Generic Dataset</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39658"/>
@@ -58074,7 +58074,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - ArrowSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39688"/>
         <source>Select whether to compute normals.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - GenericContour</extracomment>
-        <translation>选择是否计算正常 。</translation>
+        <translation>选择是否计算法向 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39694"/>
@@ -58086,7 +58086,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - ArrowSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39700"/>
         <source>Select whether to compute scalars.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - GenericContour</extracomment>
-        <translation>选择是否计算分级 。</translation>
+        <translation>选择是否计算标量 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39727"/>
@@ -58098,7 +58098,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - ArrowSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39742"/>
         <source>Slice Generic Dataset</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Remoting/Application/Resources/filters_filtersgeneric.xml</extracomment>
-        <translation>切片通用数据集</translation>
+        <translation>Slice Generic Dataset</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39745"/>
@@ -58140,7 +58140,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - ArrowSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39781"/>
         <source>Tessellate Generic Dataset</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Remoting/Application/Resources/filters_filtersgeneric.xml</extracomment>
-        <translation>Tessellate 通用数据集</translation>
+        <translation>Tessellate Generic Dataset</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39784"/>
@@ -58165,7 +58165,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - ArrowSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39799"/>
         <source>Extract Generic Dataset Surface</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Remoting/Application/Resources/filters_filtersgeneric.xml</extracomment>
-        <translation>提取通用数据集表面</translation>
+        <translation>Extract Generic Dataset Surface</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39802"/>
@@ -58202,7 +58202,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - ArrowSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39823"/>
         <source>Outline Generic DataSet</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Remoting/Application/Resources/filters_filtersgeneric.xml</extracomment>
-        <translation>大纲通用数据集</translation>
+        <translation>Outline Generic DataSet</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39826"/>
@@ -58238,13 +58238,13 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Outlin
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39841"/>
         <source>Stream Tracer For Generic Datasets</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - Remoting/Application/Resources/filters_filtersgeneric.xml</extracomment>
-        <translation>通用数据集流跟踪器</translation>
+        <translation>Stream Tracer For Generic Datasets</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39844"/>
         <source>The Generic Stream Tracer filter generates streamlines in a vector field from a collection of seed points. The vector field used is selected from the Vectors menu, so the input data set is required to have point-centered vectors. The Seed portion of the interface allows you to select whether the seed points for this integration lie in a point cloud or along a line. Depending on which is selected, the appropriate 3D widget (point or line widget) is displayed along with traditional user interface controls for positioning the point cloud or line within the data set. Instructions for using the 3D widgets and the corresponding manual controls can be found in section 7.4. The Max. Propagation entry box allows you to specify the maximum length of the streamlines. From the Max. Propagation menu, you can select the units to be either Time (the time a particle would travel with steady flow) or Length (in the data set&apos;s spatial coordinates). The Init. Step Len. menu and entry specify the initial step size for integration. (For non-adaptive integrators, Runge-Kutta 2 and 4, the initial step size is used throughout the integration.) The menu allows you to specify the units. Time and Length have the same meaning as for Max. Propagation. Cell Length specifies the step length as a number of cells. The Integration Direction menu determines in which direction(s) the stream trace will be generated: FORWARD, BACKWARD, or BOTH. The Integrator Type section of the interface determines which calculation to use for integration: Runge-Kutta 2, Runge-Kutta 4, or Runge-Kutta 4-5. If Runge-Kutta 4-5 is selected, controls are displayed for specifying the minimum and maximum step length and the maximum error. The controls for specifying Min. Step Len. and Max. Step Len. are the same as those for Init. Step Len. The Runge-Kutta 4-5 integrator tries to choose the step size so that the estimated error is less than the value of the Maximum Error entry. If the integration takes more than Max. Steps to complete, if the speed goes below Term. Speed, if Max. Propagation is reached, or if a boundary of the input data set is crossed, integration terminates. This filter operates on any type of data set, provided it has point-centered vectors. The output is polygonal data containing polylines.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - GenericStreamTracer</extracomment>
-        <translation>通用流跟踪过滤器从种子点集合中生成向量字段的精简。 所使用的矢量字段是从矢量菜单中选择的,因此输入数据集需要有以点为中心的矢量. 界面的种子部分允许您选择此集成的种子点是位于点云还是沿线. 根据所选位置,将显示适当的3D部件(点或线部件)以及传统的用户界面控制,以便在数据集内定位点云或线条。 关于使用3D部件和相应的手动控制的说明,可见7.4节. 马克斯 传播条目框允许您指定精简的最大长度。 从最大。 传播菜单,您可以选择时间(一个粒子在稳定流中旅行的时间)或长度(在数据集的空间坐标中)的单位。 印记 Step Len. 菜单和条目指定集成的初始步骤大小. (对于非适应性整流器,Runge-Kutta 2和4,整个集成过程中都使用初始步骤大小. ) 菜单允许您指定单位 。 时间和长度的意义与马克思相同. 宣说. 单元格长度指定步骤长度为若干单元格。 集成方向菜单将决定溪流跟踪的生成方向:FORWARD,BackWARD,或HOW. 界面的集成器类型部分决定了用于集成的计算:Runge-Kutta 2,Runge-Kutta 4,或Runge-Kutta 4-5. 如果选择了 Runge-Kutta 4-5,则显示用于指定最小和最大步长以及最大错误的控件. 用于指定 Min 、 Step Len 和 Max 的控件与 Init 的控件相同。 步连. Runge-Kutta 4-5集成器试图选择步骤大小,以便估计错误小于最大错误条目的值. 如果整合需要超过马克思. 如果速度低于期数, 步骤完成 。 速度,如果马克思。 传播被达到,或者如果输入数据集的边界被跨越,整合即告终止. 这个过滤器在任何类型的数据集上运行,前提是它具有以点为中心的向量. 输出为包含多线的多边形数据.</translation>
+        <translation>通用流跟踪过滤器从种子点集合中生成向量字段的流线。 所使用的矢量字段是从矢量菜单中选择的,因此输入数据集需要有以点为中心的矢量. 界面的种子部分允许您选择此集成的种子点是位于点云还是沿线. 根据所选位置,将显示适当的3D部件(点或线部件)以及传统的用户界面控制,以便在数据集内定位点云或线条。 关于使用3D部件和相应的手动控制的说明,可见7.4节. 马克斯 传播条目框允许您指定流线的最大长度。 从最大。 传播菜单,您可以选择时间(一个粒子在稳定流中旅行的时间)或长度(在数据集的空间坐标中)的单位。 印记 Step Len. 菜单和条目指定集成的初始步骤大小. (对于非适应性整流器,Runge-Kutta 2和4,整个集成过程中都使用初始步骤大小. ) 菜单允许您指定单位 。 时间和长度的意义与马克思相同. 宣说. 单元格长度指定步骤长度为若干单元格。 集成方向菜单将决定溪流跟踪的生成方向:FORWARD,BackWARD,或HOW. 界面的集成器类型部分决定了用于集成的计算:Runge-Kutta 2,Runge-Kutta 4,或Runge-Kutta 4-5. 如果选择了 Runge-Kutta 4-5,则显示用于指定最小和最大步长以及最大错误的控件. 用于指定 Min 、 Step Len 和 Max 的控件与 Init 的控件相同。 步连. Runge-Kutta 4-5集成器试图选择步骤大小,以便估计错误小于最大错误条目的值. 如果整合需要超过马克思. 如果速度低于期数, 步骤完成 。 速度,如果马克思。 传播被达到,或者如果输入数据集的边界被跨越,整合即告终止. 这个过滤器在任何类型的数据集上运行,前提是它具有以点为中心的向量. 输出为包含多线的多边形数据.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39856"/>
@@ -58256,7 +58256,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Outlin
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39880"/>
         <source>Specify the maximum streamline length.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneric.xml - GenericStreamTracer</extracomment>
-        <translation>指定最大精简长度。</translation>
+        <translation>指定最大流线长度。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39886"/>
@@ -58304,7 +58304,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Outlin
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39937"/>
         <source>Extract Region Surface</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeometry.xml - Remoting/Application/Resources/filters_filtersgeometry.xml</extracomment>
-        <translation>提取区域表面</translation>
+        <translation>Extract Region Surface</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39940"/>
@@ -58448,7 +58448,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeometry.xml - DataSe
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40045"/>
         <source>Image Data To Uniform Grid</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeometry.xml - Remoting/Application/Resources/filters_filtersgeometry.xml</extracomment>
-        <translation>图像数据到统一网格</translation>
+        <translation>Image Data To Uniform Grid</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40048"/>
@@ -58535,7 +58535,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbeP
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40102"/>
         <source>\&quot;Sample At Cell Boundaries\&quot; gives the most accurate plots by creating probing points at the cell borders. \&quot;Sample At Segment Centers\&quot; provides one sample per probed cell located at the middle of the line intersecting the cell. \&quot;Sample Uniformally\&quot; samples uniformally along the input line.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - ProbeLineGenericProxy</extracomment>
-        <translation>\“样板在细胞边界上”通过在细胞边界上创建检测点来给出最准确的图案。 \“Sample At Spect Centers\”提供了位于细胞交叉线中间的每个被探测细胞的一个样本。 \"Sample uniformally\" 样本统一沿输入线。</translation>
+        <translation>\“样板在单元格边界上”通过在单元格边界上创建检测点来给出最准确的图案。 \“Sample At Spect Centers\”提供了位于单元格交叉线中间的每个被探测单元格的一个样本。 \"Sample uniformally\" 样本统一沿输入线。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40108"/>
@@ -58604,13 +58604,13 @@ Real source: Remoting/Application/Resources/filters_filterstensors.xml - YieldCr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37942"/>
         <source>Cell Derivatives is a filter that computes derivatives of scalars and vectors at the center of cells. You can choose to generate different output including the scalar gradient (a vector), computed tensor vorticity (a vector), gradient of input vectors (a tensor), and strain matrix of the input vectors (a tensor); or you may choose to pass data through to the output.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - CellDerivatives</extracomment>
-        <translation>细胞衍生物(Cell Delivators)是一种在细胞中心计算鳞片和向量的衍生物的滤波器. 您可以选择生成不同的输出, 包括 scalar 梯度( 矢量) , 计算伸角涡流度( 矢量) , 输入矢量的梯度( 矢量) , 输入矢量的紧张矩阵( 矢量) ; 或者您可以选择将数据传递给输出 。</translation>
+        <translation>单元格衍生物(Cell Delivators)是一种在单元格中心计算鳞片和向量的衍生物的滤波器. 您可以选择生成不同的输出, 包括 scalar 梯度( 矢量) , 计算伸角涡流度( 矢量) , 输入矢量的梯度( 矢量) , 输入矢量的紧张矩阵( 矢量) ; 或者您可以选择将数据传递给输出 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37978"/>
         <source>This property controls how the filter works to generate vector cell data. You can choose to compute the gradient of the input scalars, or extract the vorticity of the computed vector gradient tensor. By default, the filter will take the gradient of the input scalar data.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - CellDerivatives</extracomment>
-        <translation>此属性控制过滤器如何生成矢量单元格数据 。 您可以选择计算输入刻度的梯度, 或者提取计算出的矢量梯度的涡度 。 默认情况下,过滤器将采用输入的scalar数据的梯度.</translation>
+        <translation>此属性控制过滤器如何生成矢量单元格数据 。 您可以选择计算输入标量的梯度, 或者提取计算出的矢量梯度的涡度 。 默认情况下,过滤器将采用输入的scalar数据的梯度.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38050"/>
@@ -58622,7 +58622,7 @@ Real source: Remoting/Application/Resources/filters_filterstensors.xml - YieldCr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38104"/>
         <source>The DateToNumeric filter looks at string arrays in the input data object. If they contain dates that can be converted numbers then they are converted to doubles and added as additional arrays of the same type (point/cell/field). The format string used to parse dates can be specified by the user.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - DateToNumeric</extracomment>
-        <translation>DateTonmeric过滤器查看输入数据对象中的字符串数组. 如果它们包含可以转换数字的日期,那么它们会被转换成双倍并作为同类型(点/细胞/字段)的额外数组加入. 用于解析日期的格式字符串可以由用户指定.</translation>
+        <translation>DateTonmeric过滤器查看输入数据对象中的字符串数组. 如果它们包含可以转换数字的日期,那么它们会被转换成双倍并作为同类型(点/单元格/字段)的额外数组加入. 用于解析日期的格式字符串可以由用户指定.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38143"/>
@@ -58678,13 +58678,13 @@ Real source: Remoting/Application/Resources/filters_filterstensors.xml - YieldCr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38512"/>
         <source>The Shrink filter causes the individual cells of a dataset to break apart from each other by moving each cell&apos;s points toward the centroid of the cell. The centroid of a cell is the average position of its points. This filter operates on any type of dataset and produces unstructured grid output.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - ShrinkFilter</extracomment>
-        <translation>收缩滤波器通过将每个细胞的点向细胞的中间体移动,使得一个数据集的单个细胞相互分裂. 细胞的中间体是其点的平均位置. 此过滤器在任意类型的数据集上运行,并产生无结构的网格输出.</translation>
+        <translation>收缩滤波器通过将每个单元格的点向单元格的中间体移动,使得一个数据集的单个单元格相互分裂. 单元格的中间体是其点的平均位置. 此过滤器在任意类型的数据集上运行,并产生无结构的网格输出.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38530"/>
         <source>The value of this property determines how far the points will move. A value of 0 positions the points at the centroid of the cell. A value of 1 leaves them at their original positions.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - ShrinkFilter</extracomment>
-        <translation>此属性的值决定了点会移动多远 。 值为0,位于细胞中心点。 价值为1,它们处于原来的位置。</translation>
+        <translation>此属性的值决定了点会移动多远 。 值为0,位于单元格中心点。 价值为1,它们处于原来的位置。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38554"/>
@@ -58696,7 +58696,7 @@ Real source: Remoting/Application/Resources/filters_filterstensors.xml - YieldCr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38620"/>
         <source>Synchronize time step values in the first input (Input) to time step values in the second input (Source) that are considered close enough. The outputted dataset is from the first input and the number of output time steps is also equal to the number of time steps in the first input. Time step values in the first input that are \&quot;close\&quot; to time step values in the second input are replaced with the value from the second input. Close is determined to be if the difference is less than RelativeTolerance multiplied by the time range of the first input.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - SynchronizeTime</extracomment>
-        <translation>将第一个输入(输入)中的时间步值与第二个输入(来源)中被认为足够接近的时间步值同步. 输出数据集来自第一个输入,输出时间步数也等于第一个输入的时间步数. 第一个输入中的时间步值是\"接近\"到第二个输入中的时间步值被从第二个输入中得出的值所取代. 接近被确定为如果差值小于相对容忍乘以第一个输入的时间范围.</translation>
+        <translation>将第一个输入(输入)中的时间步值与第二个输入(来源)中被认为足够接近的时间步值同步. 输出数据集来自第一个输入,输出时间步数也等于第一个输入的时间步数. 第一个输入中的时间步值是\"接近\"到第二个输入中的时间步值被从第二个输入中得出的值所取代. 接近被确定为如果差值小于相对容差乘以第一个输入的时间范围.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38692"/>
@@ -58756,13 +58756,13 @@ Real source: Remoting/Application/Resources/filters_filterstensors.xml - YieldCr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38842"/>
         <source>If off, only Vectors and Normals will be transformed. If on, all three-component data arrays (considered as 3D vectors) will be transformed. All other arrays won&apos;t be flipped and will only be copied.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - TransformFilter</extracomment>
-        <translation>如果关闭,只有矢量和正常会改变。 如果打开,所有三元数据阵列(被认为是3D向量)都会被转换. 所有其他阵列不会被翻转,只会被复制.</translation>
+        <translation>如果关闭,只有矢量和法向会改变。 如果打开,所有三元数据阵列(被认为是3D向量)都会被转换. 所有其他阵列不会被翻转,只会被复制.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38881"/>
         <source>The Warp By Scalar filter translates the points of the input dataset along a vector by a distance determined by the specified scalars. This filter operates on polygonal, curvilinear, and unstructured grid datasets containing single-component scalar arrays. Because it only changes the positions of the points, the output dataset type is the same as that of the input. Any scalars in the input dataset are copied to the output, so the data can be colored by them.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - WarpScalar</extracomment>
-        <translation>Worp By Scalar 过滤器将输入数据集的点沿矢量翻译为由指定的scalars决定的距离. 这种滤波器在多边形、曲面线和无结构的网格数据集上运行,其中包含单元件的scalar阵列. 由于它只改变点的位置,输出数据集类型与输入类型相同. 输入数据集中的任何刻度都被复制到输出中,因此数据可以被它们涂色.</translation>
+        <translation>Worp By Scalar 过滤器将输入数据集的点沿矢量平移为由指定的scalars决定的距离. 这种滤波器在多边形、曲面线和无结构的网格数据集上运行,其中包含单元件的scalar阵列. 由于它只改变点的位置,输出数据集类型与输入类型相同. 输入数据集中的任何标量都被复制到输出中,因此数据可以被它们涂色.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38941"/>
@@ -58774,7 +58774,7 @@ Real source: Remoting/Application/Resources/filters_filterstensors.xml - YieldCr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38947"/>
         <source>The Warp By Vector filter translates the points of the input dataset using a specified vector array. The vector array chosen specifies a vector per point in the input. Each point is translated along its vector by a given scale factor. This filter operates on polygonal, curvilinear, and unstructured grid datasets. Because this filter only changes the positions of the points, the output dataset type is the same as that of the input.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - WarpVector</extracomment>
-        <translation>变速矢量过滤器使用指定的矢量阵列翻译输入数据集的点. 选择的矢量数组指定输入中每个点的矢量 。 每个点都按其矢量按给定尺度因子翻译. 这种滤波器在多边形,曲面线和无结构的网格数据集上运行. 由于这个过滤器只改变点的位置,输出数据集类型与输入类型相同.</translation>
+        <translation>变速矢量过滤器使用指定的矢量阵列平移输入数据集的点. 选择的矢量数组指定输入中每个点的矢量 。 每个点都按其矢量按给定尺度因子平移. 这种滤波器在多边形,曲面线和无结构的网格数据集上运行. 由于这个过滤器只改变点的位置,输出数据集类型与输入类型相同.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39094"/>
@@ -58792,7 +58792,7 @@ Real source: Remoting/Application/Resources/filters_filterstensors.xml - YieldCr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40171"/>
         <source>Probe Location</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>勘探地点</translation>
+        <translation>Probe Location</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40174"/>
@@ -58825,7 +58825,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Remotin
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43351"/>
         <source>Plot Over Lines From Custom Source</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Remoting/Application/Resources/filters_filtersparalleldiy2.xml</extracomment>
-        <translation>从自定义来源对行进行绘图</translation>
+        <translation>Plot Over Lines From Custom Source</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43360"/>
@@ -58849,7 +58849,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Remotin
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40219"/>
         <source>Aggregate Dataset</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>汇总数据集</translation>
+        <translation>Aggregate Dataset</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40222"/>
@@ -58880,7 +58880,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Remotin
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40249"/>
         <source>Angular Periodic Filter</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>角周期过滤器</translation>
+        <translation>Angular Periodic Filter</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40252"/>
@@ -59000,7 +59000,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Remotin
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40324"/>
         <source>D3</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>D3级</translation>
+        <translation>D3</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40327"/>
@@ -59012,7 +59012,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Remotin
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40330"/>
         <source>Repartition a data set into load-balanced spatially convex regions. Create ghost cells if requested.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - D3</extracomment>
-        <translation>将数据集重新划分为负载平衡空间对流区域. 需要时创建幽灵细胞 。</translation>
+        <translation>将数据集重新划分为负载平衡空间对流区域. 需要时创建幽灵单元格 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40333"/>
@@ -59069,13 +59069,13 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Re
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40366"/>
         <source>Extract CTH Parts</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>提取 CHT 部件</translation>
+        <translation>Extract CTH Parts</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40369"/>
         <source>Extract CTH Parts is a specialized filter for visualizing the data from a CTH simulation. It first converts the selected cell-centered arrays to point-centered ones. It then contours each array at a value of 0.5. The user has the option of clipping the resulting surface(s) with a plane. This filter only operates on unstructured data. It produces polygonal output.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - CTHPart</extracomment>
-        <translation>提取CTH部件是一个专门过滤器,用于可视化来自CTH模拟的数据. 它首先将选定的以细胞为中心的数组转换为以点为中心的数组. 然后它以0.5的值对准每个阵列。 用户可以选择用平面剪切产生的表面. 此过滤器只运行在无结构的数据上 。 它产生多边形输出.</translation>
+        <translation>提取CTH部件是一个专门过滤器,用于可视化来自CTH模拟的数据. 它首先将选定的以单元格为中心的数组转换为以点为中心的数组. 然后它以0.5的值对准每个阵列。 用户可以选择用平面剪切产生的表面. 此过滤器只运行在无结构的数据上 。 它产生多边形输出.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40372"/>
@@ -59099,7 +59099,7 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Re
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40393"/>
         <source>This property specifies whether to clip the dataset, and if so, it also specifies the parameters of the plane with which to clip.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - CTHPart</extracomment>
-        <translation>此属性指定是否剪辑数据集,如果是的话,它也指定要剪辑的平面参数.</translation>
+        <translation>此属性指定是否裁剪数据集,如果是的话,它也指定要裁剪的平面参数.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40396"/>
@@ -59129,7 +59129,7 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Re
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40420"/>
         <source>When set to false, the output surfaces will not hide contours extracted from ghost cells. This results in overlapping contours but overcomes holes. Default is set to true.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - CTHPart</extracomment>
-        <translation>设定为虚假时,输出表面不会隐藏从鬼细胞中提取的轮廓. 这导致轮廓重叠,但克服了漏洞。 默认设置为真 。</translation>
+        <translation>设定为虚假时,输出表面不会隐藏从鬼单元格中提取的轮廓. 这导致轮廓重叠,但克服了漏洞。 默认设置为真 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40426"/>
@@ -59153,13 +59153,13 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Re
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40435"/>
         <source>Integrate Variables</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>整合变量</translation>
+        <translation>Integrate Variables</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40438"/>
         <source>The Integrate Attributes filter integrates all point and cell data attributes while computing the total length, area or volume. This filter does not integrate point and cell data for 0-D cells (vertex and polyvertex). If the input dataset has mixed dimensionality, only the cells of highest dimension will be used for integration. Ex: In a dataset with lines, triangles and hexahedra, the integration process will ignore contribution from lines and triangles. When the highest dimension is 1, the sum variable corresponds to the total length. Similarly, for 2-D and 3-D integration the sum variable is the total area and total volume respectively. The output of this filter is a single point and vertex. The attributes for this point and vertex will contain the integration results for the corresponding input attributes and the sum variable.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - IntegrateAttributes</extracomment>
-        <translation>集成属性过滤器在计算总长度,面积或体积的同时,将所有点和单元格数据属性集成. 这个滤波器没有整合0-D细胞(顶点和多顶点)的点和细胞数据. 如果输入数据集具有混合维度,则只有最高维度的单元格将被用于集成. 如:在一个有线,三角形和六面体的数据集中,整合过程会忽略线和三角形的贡献. 当最高的维度是1时,总和变量对应总长度. 同样,对于二维和三维结合,总和变量分别是总面积和总量。 这个过滤器的输出是一个单点和顶点. 此点和顶点的属性将包含相应的输入属性和和和变量的集成结果.</translation>
+        <translation>集成属性过滤器在计算总长度,面积或体积的同时,将所有点和单元格数据属性集成. 这个滤波器没有整合0-D单元格(顶点和多顶点)的点和单元格数据. 如果输入数据集具有混合维度,则只有最高维度的单元格将被用于集成. 如:在一个有线,三角形和六面体的数据集中,整合过程会忽略线和三角形的贡献. 当最高的维度是1时,总和变量对应总长度. 同样,对于二维和三维结合,总和变量分别是总面积和总量。 这个过滤器的输出是一个单点和顶点. 此点和顶点的属性将包含相应的输入属性和和和变量的集成结果.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40441"/>
@@ -59195,13 +59195,13 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Re
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40465"/>
         <source>Cell Data to Point Data</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>单元格数据到点数据</translation>
+        <translation>Cell Data to Point Data</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40468"/>
         <source>The Cell Data to Point Data filter averages the values of the cell attributes of the cells surrounding a point to compute point attributes. The Cell Data to Point Data filter operates on any type of data set, and the output data set is of the same type as the input.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - CellDataToPointData</extracomment>
-        <translation>细胞数据到点数据过滤器,平均计算点属性周围单元格属性的值. 细胞数据到点数据过滤器在任何类型的数据集上运行,输出数据集与输入类型相同.</translation>
+        <translation>单元格数据到点数据过滤器,平均计算点属性周围单元格属性的值. 单元格数据到点数据过滤器在任何类型的数据集上运行,输出数据集与输入类型相同.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40471"/>
@@ -59255,7 +59255,7 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Re
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40513"/>
         <source>Temporal Interpolator</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>临时内插器</translation>
+        <translation>Temporal Interpolator</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40516"/>
@@ -59388,7 +59388,7 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Re
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40600"/>
         <source>Randomized Id Strides picks points with random id increments starting at Offset (the output probably isn&apos;t a statistically random sample). Random Sampling generates a statistically random sample of the input, ignoring Offset (fast - O(sample size)). Spatially Stratified Random Sampling is a variant of random sampling that splits the points into equal sized spatial strata before randomly sampling (slow - O(N log N)). The Uniform Spatial Distribution (Bound based) samples points using random poisitions inside the bounds of the data set and a point locator. The Uniform Spatial Distribution (Surface Sampling) samples points randomly via an inverse transform on surface area of each cell (3D cells are ignored). The Uniform Spatial Distribution (Volume Sampling) samples points randomly sampled via an inverse transform on volume area of each cell (2D cells are ignored).</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - MaskPoints</extracomment>
-        <translation>随机 Id Strides从 Offset 开始用随机的 id 增量来选择点(输出可能不是统计上的随机样本). 随机抽样生成一个统计随机输入样本,忽略Offset(快速 - O(样本大小)). 空间级随机 采样是随机采样的一种变种,在随机采样之前将各点分成等大小的空间层(slow - O(N log N)). 统一空间分布(Bond)样本点,在数据集的界限内使用随机的偏差和一个点定位器. 统一空间分布(Surface Sampling)样本通过每个细胞表面的反向变换(3D细胞被忽略)随机点出. 统一空间分布(Volume Sampling)样本通过每个细胞的体积面积(2D细胞被忽略)的反向变换随机抽样.</translation>
+        <translation>随机 Id Strides从 Offset 开始用随机的 id 增量来选择点(输出可能不是统计上的随机样本). 随机抽样生成一个统计随机输入样本,忽略Offset(快速 - O(样本大小)). 空间级随机 采样是随机采样的一种变种,在随机采样之前将各点分成等大小的空间层(slow - O(N log N)). 统一空间分布(Bond)样本点,在数据集的界限内使用随机的偏差和一个点定位器. 统一空间分布(Surface Sampling)样本通过每个单元格表面的反向变换(3D单元格被忽略)随机点出. 统一空间分布(Volume Sampling)样本通过每个单元格的体积面积(2D单元格被忽略)的反向变换随机抽样.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40606"/>
@@ -59412,7 +59412,7 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Re
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40615"/>
         <source>Outline Corners</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>轮廓角</translation>
+        <translation>Outline Corners</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40618"/>
@@ -59454,7 +59454,7 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Re
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40639"/>
         <source>Outline</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>大纲</translation>
+        <translation>Outline</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40642"/>
@@ -59472,7 +59472,7 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Re
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40660"/>
         <source>This filter generates surface normals at the points of the input polygonal dataset to provide smooth shading of the dataset. The resulting dataset is also polygonal. The filter works by calculating a normal vector for each polygon in the dataset and then averaging the normals at the shared points.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - SurfaceNormals</extracomment>
-        <translation>这个过滤器在输入多边形数据集的点上生成表面常态,以提供数据集的光滑阴影. 由此产生的数据集也是多边形的. 滤波器通过计算数据集中每个多边形的正常矢量,然后在共享点平均正常.</translation>
+        <translation>这个过滤器在输入多边形数据集的点上生成表面常态,以提供数据集的光滑阴影. 由此产生的数据集也是多边形的. 滤波器通过计算数据集中每个多边形的法向矢量,然后在共享点平均法向.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40663"/>
@@ -59484,7 +59484,7 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Re
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40666"/>
         <source>Produce surface point normals.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - SurfaceNormals</extracomment>
-        <translation>产生表面点正常。</translation>
+        <translation>产生表面点法向。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40672"/>
@@ -59499,7 +59499,7 @@ Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Re
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - SurfaceRepresentationBase
 ----------
 Real source: Remoting/Application/Resources/filters_filtersparallel.xml - SurfaceNormals</extracomment>
-        <translation>此属性的值定义了特征边缘 。 如果两个相邻三角之间表面的正常程度至少与这个地物角一样大,则存在一个地物边缘. 如果拆分开始,则在这些特征边缘上重复点数. (见分地产.</translation>
+        <translation>此属性的值定义了特征边缘 。 如果两个相邻三角之间表面的法向程度至少与这个地物角一样大,则存在一个地物边缘. 如果拆分开始,则在这些特征边缘上重复点数. (见分地产.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="10537"/>
@@ -59508,19 +59508,19 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Surfac
         <extracomment>Real source: Remoting/Views/Resources/representationsinternal_remotingviews.xml - SurfaceRepresentationBase
 ----------
 Real source: Remoting/Application/Resources/filters_filtersparallel.xml - SurfaceNormals</extracomment>
-        <translation>这种财产控制着尖锐边缘的分裂. 如果锐边被分割(财产值=1),则沿这些边缘重复点数,为两组点数分别计算正常点数,以给出简洁的(递归的)表面定义.</translation>
+        <translation>这种财产控制着尖锐边缘的分裂. 如果锐边被分割(财产值=1),则沿这些边缘重复点数,为两组点数分别计算法向点数,以给出简洁的(递归的)表面定义.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40678"/>
         <source>The value of this property controls whether consistent polygon ordering is enforced. Generally the normals for a data set should either all point inward or all point outward. If the value of this property is 1, then this filter will reorder the points of cells that whose normal vectors are oriented the opposite direction from the rest of those in the data set.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - SurfaceNormals</extracomment>
-        <translation>此属性的值控制是否执行一致的多边形命令 。 一般说来,一个数据集的正常情况要么是所有向内点,要么是所有向外点。 如果此属性的值是 1, 那么此过滤器会重新排序正常向量方向与数据集中其他向量方向相反的单元格的点 。</translation>
+        <translation>此属性的值控制是否执行一致的多边形命令 。 一般说来,一个数据集的法向情况要么是所有向内点,要么是所有向外点。 如果此属性的值是 1, 那么此过滤器会重新排序法向向量方向与数据集中其他向量方向相反的单元格的点 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40702"/>
         <source>If the value of this property is 1, this filter will reverse the normal direction (and reorder the points accordingly) for all polygons in the data set; this changes front-facing polygons to back-facing ones, and vice versa. You might want to do this if your viewing position will be inside the data set instead of outside of it.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - SurfaceNormals</extracomment>
-        <translation>如果此属性的值为 1, 此过滤器将反转数据集中所有多边形的正常方向( 并相应重排各点) ; 这将前向多边形改为后向多边形, 而反之亦然 。 如果您的查看位置将位于数据集内部而不是数据集之外,您可能想要这样做 。</translation>
+        <translation>如果此属性的值为 1, 此过滤器将反转数据集中所有多边形的法向方向( 并相应重排各点) ; 这将前向多边形改为后向多边形, 而反之亦然 。 如果您的查看位置将位于数据集内部而不是数据集之外,您可能想要这样做 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40681"/>
@@ -59598,7 +59598,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Surfac
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40717"/>
         <source>Texture Map to Sphere</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>纹理映射到球体</translation>
+        <translation>Texture Map to Sphere</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40720"/>
@@ -59641,7 +59641,7 @@ Real source: Remoting/Application/Resources/filters_filterstexture.xml - Texture
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30820"/>
         <source>Remove Ghost Information</source>
         <extracomment>Real source: VTKExtensions/FiltersParallel/Resources/parallel_filters.xml - VTKExtensions/FiltersParallel/Resources/parallel_filters.xml</extracomment>
-        <translation>删除幽灵信息</translation>
+        <translation>Remove Ghost Information</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30826"/>
@@ -59654,7 +59654,7 @@ Real source: Remoting/Application/Resources/filters_filterstexture.xml - Texture
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40741"/>
         <source>Plot Global Variables Over Time</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>逐时绘制全局变量</translation>
+        <translation>Plot Global Variables Over Time</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40744"/>
@@ -59685,7 +59685,7 @@ Real source: Remoting/Application/Resources/filters_filterstexture.xml - Texture
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40765"/>
         <source>Plot Selection Over Time</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>逐时绘图选择</translation>
+        <translation>Plot Selection Over Time</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40768"/>
@@ -59731,19 +59731,19 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - PlotDa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40804"/>
         <source>Plot Data Over Time</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>通过时间绘制数据</translation>
+        <translation>Plot Data Over Time</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40834"/>
         <source>Align Image Origins</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - Remoting/Application/Resources/filters_filtersparallel.xml</extracomment>
-        <translation>对齐图像来源</translation>
+        <translation>Align Image Origins</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40837"/>
         <source>The Align Image Origins filter treats input images as parts of a whole, and sets the same origin. Each block&apos;s extent is set relative to that origin.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - AlignImageOrigin</extracomment>
-        <translation>对齐图像起源过滤器将输入图像作为整体的一部分处理,并设置相同的来源. 每个区块的范围是相对于该来源设定的.</translation>
+        <translation>对齐图像起源过滤器将输入图像作为整体的一部分处理,并设置相同的原点. 每个区块的范围是相对于该原点设定的.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40840"/>
@@ -59755,7 +59755,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - PlotDa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40843"/>
         <source>Make image origins consistent.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallel.xml - AlignImageOrigin</extracomment>
-        <translation>使图像来源一致。</translation>
+        <translation>使图像原点一致。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40849"/>
@@ -59779,7 +59779,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - PlotDa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40915"/>
         <source>Distribute Points</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallelmpi.xml - Remoting/Application/Resources/filters_filtersparallelmpi.xml</extracomment>
-        <translation>分布点</translation>
+        <translation>Distribute Points</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40918"/>
@@ -59803,7 +59803,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - PlotDa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40948"/>
         <source>Force Time</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershybrid.xml - Remoting/Application/Resources/filters_filtershybrid.xml</extracomment>
-        <translation>强制时间</translation>
+        <translation>Force Time</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40951"/>
@@ -59845,7 +59845,7 @@ Real source: Remoting/Application/Resources/filters_filtersparallel.xml - PlotDa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40972"/>
         <source>Temporal Array Operator</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershybrid.xml - Remoting/Application/Resources/filters_filtershybrid.xml</extracomment>
-        <translation>时序矩阵运算符</translation>
+        <translation>Temporal Array Operator</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40975"/>
@@ -59920,7 +59920,7 @@ Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Hyper
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41032"/>
         <source>Temporal Cache</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershybrid.xml - Remoting/Application/Resources/filters_filtershybrid.xml</extracomment>
-        <translation>临时缓存</translation>
+        <translation>Temporal Cache</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41035"/>
@@ -59967,7 +59967,7 @@ Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Hyper
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41059"/>
         <source>Temporal Shift Scale</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershybrid.xml - Remoting/Application/Resources/filters_filtershybrid.xml</extracomment>
-        <translation>时间变化缩放</translation>
+        <translation>Temporal Shift Scale</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41062"/>
@@ -59998,7 +59998,7 @@ Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Hyper
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41080"/>
         <source>Apply a translation to the data before scaling. To convert T{5,100} to T{0,1} use Preshift=-5, Scale=1/95, PostShift=0 To convert T{5,105} to T{5,10} use Preshift=-5, Scale=5/100, PostShift=5</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershybrid.xml - TemporalShiftScale</extracomment>
-        <translation>在缩放前对数据应用翻译。 要将 T{5 100} 转换为 T{0, 1} 使用 Pretiform=5, 缩放=1/95, PostShift=0 转换为 T{5, 105} 转换为 T{5, 10} 使用 Pretiform=5, 缩放=5/ 100, PostShift=5</translation>
+        <translation>在缩放前对数据应用平移。 要将 T{5 100} 转换为 T{0, 1} 使用 Pretiform=5, 缩放=1/95, PostShift=0 转换为 T{5, 105} 转换为 T{5, 10} 使用 Pretiform=5, 缩放=5/ 100, PostShift=5</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41083"/>
@@ -60052,7 +60052,7 @@ Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Hyper
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41116"/>
         <source>Temporal Snap-to-Time-Step</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershybrid.xml - Remoting/Application/Resources/filters_filtershybrid.xml</extracomment>
-        <translation>时空同步</translation>
+        <translation>Temporal Snap-to-Time-Step</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41119"/>
@@ -60083,7 +60083,7 @@ Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Hyper
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41143"/>
         <source>Generate Time Steps</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershybrid.xml - Remoting/Application/Resources/filters_filtershybrid.xml</extracomment>
-        <translation>生成时间步骤</translation>
+        <translation>Generate Time Steps</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41146"/>
@@ -60116,7 +60116,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - SpatioT
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41167"/>
         <source>Temporal Cache Source</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershybrid.xml - Remoting/Application/Resources/filters_filtershybrid.xml</extracomment>
-        <translation>临时缓存来源</translation>
+        <translation>Temporal Cache Source</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41194"/>
@@ -60128,13 +60128,13 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - SpatioT
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41197"/>
         <source>Sets up the Algorithm to act as a pipeline source rather than a filter. This is used in Catalyst.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershybrid.xml - TemporalCache</extracomment>
-        <translation>设置算法作为管道源而不是过滤器. 这在催化器中使用.</translation>
+        <translation>设置算法作为管道源而不是过滤器. 这在Catalyst器中使用.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41200"/>
         <source>Facet Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_filtershybrid.xml - Remoting/Application/Resources/readers_filtershybrid.xml</extracomment>
-        <translation>面部阅读器</translation>
+        <translation>面阅读器</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41203"/>
@@ -60164,7 +60164,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - SpatioT
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41278"/>
         <source>HyperTreeGrid Depth Limiter</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Remoting/Application/Resources/filters_filtershypertree.xml</extracomment>
-        <translation>HyperTreeGrid 深度限制器</translation>
+        <translation>HyperTreeGrid Depth Limiter</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41281"/>
@@ -60194,19 +60194,19 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - SpatioT
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41296"/>
         <source>HyperTreeGrid Evaluate Coarse</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Remoting/Application/Resources/filters_filtershypertree.xml</extracomment>
-        <translation>HyperTreeGrid 评价粗糙</translation>
+        <translation>HyperTreeGrid Evaluate Coarse</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41299"/>
         <source>This filter evaluates the value of each coarse cell from the values ​​assigned to its children according to different calculation methods (Min, Max, Sum, Average, Elder Child, etc).</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershypertree.xml - HyperTreeGridEvaluateCoarse</extracomment>
-        <translation>此过滤器根据不同的计算方法( Min, Max, Sum, perferent, older child等), 从分配给孩子的值中评价每个粗细胞的值.</translation>
+        <translation>此过滤器根据不同的计算方法( Min, Max, Sum, perferent, older child等), 从分配给孩子的值中评价每个粗单元格的值.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41302"/>
         <source>Evaluate the Value to Coarse Cells from those of children.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershypertree.xml - HyperTreeGridEvaluateCoarse</extracomment>
-        <translation>从儿童的角度评价粗细胞的价值。</translation>
+        <translation>从儿童的角度评价粗单元格的价值。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41311"/>
@@ -60230,13 +60230,13 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - SpatioT
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41320"/>
         <source>HyperTreeGrid Geometry Filter</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Remoting/Application/Resources/filters_filtershypertree.xml</extracomment>
-        <translation>HyperTreeGrid 几何过滤器</translation>
+        <translation>HyperTreeGrid Geometry Filter</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41323"/>
         <source>Generate PolyData representing the external surface of a HTG.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershypertree.xml - HyperTreeGridGeometry</extracomment>
-        <translation>生成代表 HTG 外部表面的 PolyData 。</translation>
+        <translation>生成表示 HTG 外部表面的 PolyData 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41326"/>
@@ -60248,7 +60248,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - SpatioT
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41338"/>
         <source>HyperTreeGrid To Dual Grid</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Remoting/Application/Resources/filters_filtershypertree.xml</extracomment>
-        <translation>HyperTreeGrid 到双网格</translation>
+        <translation>HyperTreeGrid To Dual Grid</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41341"/>
@@ -60276,7 +60276,7 @@ Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Hyper
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41356"/>
         <source>HyperTreeGrid To UnstructuredGrid</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Remoting/Application/Resources/filters_filtershypertree.xml</extracomment>
-        <translation>HyperTreeGrid 到无结构化Grid</translation>
+        <translation>HyperTreeGrid To UnstructuredGrid</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41359"/>
@@ -60295,7 +60295,7 @@ Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Hyper
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41374"/>
         <source>Subdivide</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Remoting/Application/Resources/filters_filtersmodeling.xml</extracomment>
-        <translation>潜离</translation>
+        <translation>Subdivide</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41377"/>
@@ -60340,7 +60340,7 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - LoopSu
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41398"/>
         <source>Loop Subdivision</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Remoting/Application/Resources/filters_filtersmodeling.xml</extracomment>
-        <translation>循环分区</translation>
+        <translation>Loop Subdivision</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41401"/>
@@ -60376,19 +60376,19 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - LoopSu
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41422"/>
         <source>Ribbon</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Remoting/Application/Resources/filters_filtersmodeling.xml</extracomment>
-        <translation>丝带</translation>
+        <translation>Ribbon</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41425"/>
         <source>The Ribbon filter creates ribbons from the lines in the input data set. This filter is useful for visualizing streamlines. Both the input and output of this filter are polygonal data. The input data set must also have at least one point-centered vector array.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - RibbonFilter</extracomment>
-        <translation>丝带滤波器从输入数据集中的线条中产生丝带. 此过滤器可用于可视化精简 。 此过滤器的输入和输出都是多边形数据. 输入数据集还必须至少有一个以点为中心的矢量阵列.</translation>
+        <translation>丝带滤波器从输入数据集中的线条中产生丝带. 此过滤器可用于可视化流线 。 此过滤器的输入和输出都是多边形数据. 输入数据集还必须至少有一个以点为中心的矢量阵列.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41428"/>
         <source>This filter generates ribbon surface from lines. It is useful for displaying streamlines.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - RibbonFilter</extracomment>
-        <translation>这个过滤器从线条产生丝带表面. 它有助于展示精简。</translation>
+        <translation>这个过滤器从线条产生丝带表面. 它有助于展示流线。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41431"/>
@@ -60412,7 +60412,7 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - LoopSu
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41455"/>
         <source>The value of this property indicates the name of the input vector array used by this filter. If the UseDefaultNormal property is set to 0, the normal vectors for the ribbons come from the specified vector array.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - RibbonFilter</extracomment>
-        <translation>此属性的值表示此过滤器使用的输入矢量阵列的名称 。 如果使用Default Normal属性设定为0,则丝带的正常矢量来自指定的矢量阵列.</translation>
+        <translation>此属性的值表示此过滤器使用的输入矢量阵列的名称 。 如果使用Default Normal属性设定为0,则丝带的法向矢量来自指定的矢量阵列.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41458"/>
@@ -60449,7 +60449,7 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Rotati
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41470"/>
         <source>The value of this property specifies the offset angle (in degrees) of the ribbon from the line normal.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - RibbonFilter</extracomment>
-        <translation>此属性的值指定了丝带与线条正常的相抵角( 度) 。</translation>
+        <translation>此属性的值指定了丝带与线条法向的相抵角( 度) 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41485"/>
@@ -60467,7 +60467,7 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Rotati
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41491"/>
         <source>Rotational Extrusion</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Remoting/Application/Resources/filters_filtersmodeling.xml</extracomment>
-        <translation>旋转突袭</translation>
+        <translation>Rotational Extrusion</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41494"/>
@@ -60479,19 +60479,19 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Rotati
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41497"/>
         <source>This filter generates a swept surface while translating the input along a circular path.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - RotationalExtrusionFilter</extracomment>
-        <translation>此过滤器在沿圆形路径翻译输入时生成一个覆盖的表面.</translation>
+        <translation>此过滤器在沿圆形路径平移输入时生成一个扫掠面.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41500"/>
         <source>Generates a swept surface using a rotational path.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - RotationalExtrusionFilter</extracomment>
-        <translation>使用旋转路径生成覆盖的表面 。</translation>
+        <translation>使用旋转路径生成扫掠面 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41506"/>
         <source>This property specifies the input to the Rotational Extrusion filter.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - RotationalExtrusionFilter</extracomment>
-        <translation>此属性指定了对旋转突变过滤器的输入 。</translation>
+        <translation>此属性指定了对旋转挤出过滤器的输入 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41512"/>
@@ -60503,7 +60503,7 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Rotati
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41518"/>
         <source>If this property is set to 1, the open ends of the swept surface will be capped with a copy of the input dataset. This works property if the input is a 2D surface composed of filled polygons. If the input dataset is a closed solid (e.g., a sphere), then either two copies of the dataset will be drawn or no surface will be drawn. No surface is drawn if either this property is set to 0 or if the two surfaces would occupy exactly the same 3D space (i.e., the Angle property&apos;s value is a multiple of 360, and the values of the Translation and DeltaRadius properties are 0).</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - RotationalExtrusionFilter</extracomment>
-        <translation>如果将此属性设定为 1,则将覆盖表面的开口端封顶,并带有输入数据集的副本. 如果输入是一个由填充的多边形组成的2D表面,则此特性有效。 如果输入数据集是一个封闭的固件(例如球体),则要么绘制两个数据集副本,要么不绘制表面. 如果此属性被设定为 0 或两个表面占用完全相同的三维空间,则不绘制表面(即角属性的值为360倍,翻译和DeltaRadius属性的值为0).</translation>
+        <translation>如果将此属性设定为 1,则将覆盖表面的开口端封顶,并带有输入数据集的副本. 如果输入是一个由填充的多边形组成的2D表面,则此特性有效。 如果输入数据集是一个封闭的实体(例如球体),则要么绘制两个数据集副本,要么不绘制表面. 如果此属性被设定为 0 或两个表面占用完全相同的三维空间,则不绘制表面(即角属性的值为360倍,平移和DeltaRadius属性的值为0).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41524"/>
@@ -60515,7 +60515,7 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Rotati
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41530"/>
         <source>The value of this property specifies the total amount of translation along the rotation axis during the sweep process. Specifying a non-zero value for this property allows you to create a corkscrew (value of DeltaRadius &gt; 0) or spring effect.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - RotationalExtrusionFilter</extracomment>
-        <translation>此属性的值指定了扫描过程中沿旋转轴的翻译总量. 指定此属性的非零值, 允许您创建一个螺旋桨( DeltaRadius &gt; 0) 或弹簧效应 。</translation>
+        <translation>此属性的值指定了扫描过程中沿旋转轴的平移总量. 指定此属性的非零值, 允许您创建一个螺旋桨( DeltaRadius &gt; 0) 或弹簧效应 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41533"/>
@@ -60545,7 +60545,7 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Rotati
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41545"/>
         <source>Volume Of Revolution</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Remoting/Application/Resources/filters_filtersmodeling.xml</extracomment>
-        <translation>革命数量</translation>
+        <translation>Volume Of Revolution</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41560"/>
@@ -60557,7 +60557,7 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Rotati
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41563"/>
         <source>The direction of the axis of revolution.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - VolumeOfRevolution</extracomment>
-        <translation>革命轴线的方向.</translation>
+        <translation>旋转轴线的方向.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41566"/>
@@ -60593,7 +60593,7 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Rotati
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41584"/>
         <source>PartitionedDataSetCollection Source</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>分区数据集集源</translation>
+        <translation>PartitionedDataSetCollection Source</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41587"/>
@@ -60623,13 +60623,13 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Rotati
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41599"/>
         <source>Arrow</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>箭头</translation>
+        <translation>Arrow</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41602"/>
         <source>The Arrow source appends a cylinder to a cone to form a 3D arrow. The length of the whole arrow is 1.0 unit. The output of the Arrow source is polygonal data. This polygonal data will not contain normals, so rendering of the arrow will be performed using flat shading. The appearance of the arrow can be improved without significantly increasing the resolution of the tip and shaft by generating normals. (Use Normals Generation filter).</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - ArrowSource</extracomment>
-        <translation>箭头源将一个圆筒附加到圆锥上,形成3D箭头. 全箭的长度为1.0单位. 箭头源的输出为多边形数据. 这种多边形数据将不包含常态,因此箭头的渲染将使用平面阴影进行. 箭头的外观可以在不通过生成常态而显著提高尖端和轴的分辨率的情况下加以改进. (使用正常生成过滤器).</translation>
+        <translation>箭头源将一个圆筒附加到圆锥上,形成3D箭头. 全箭的长度为1.0单位. 箭头源的输出为多边形数据. 这种多边形数据将不包含常态,因此箭头的渲染将使用平面阴影进行. 箭头的外观可以在不通过生成常态而显著提高尖端和轴的分辨率的情况下加以改进. (使用法向生成过滤器).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41605"/>
@@ -60683,13 +60683,13 @@ Real source: Remoting/Application/Resources/filters_filtersmodeling.xml - Rotati
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41647"/>
         <source>Unstructured Cell Types</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>无结构单元格类型</translation>
+        <translation>Unstructured Cell Types</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41650"/>
         <source>Generate cells of the specified type. If a 1D cell type is chosen then only the first value of BlocksDimension is used. If a 2D cell type is chosen then only the first and second value of BlocksDimension is used. A cell block may be divided into multiple cells (e.g. 6 pyramids will be in a cell block). Note that not all meshes generated for Lagrange cells (particularly tetrahedra) will be conformal; their boundaries will not meet exactly at block boundaries.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - UnstructuredCellTypes</extracomment>
-        <translation>生成指定类型的单元格。 如果选择1D单元格类型,则只使用Blocks Dimension的第一个值。 如果选择了2D单元格类型,则只使用Blocks Dimension的第一个值和第二个值。 一个细胞块可能分裂成多个细胞(例如6个金字塔会位于一个细胞块中). 请注意,并非所有为拉格朗格细胞(特别是四赫德拉细胞)生成的中间体都将是整齐的;它们的边界不会在区块边界上完全一致。</translation>
+        <translation>生成指定类型的单元格。 如果选择1D单元格类型,则只使用Blocks Dimension的第一个值。 如果选择了2D单元格类型,则只使用Blocks Dimension的第一个值和第二个值。 一个单元格块可能分裂成多个单元格(例如6个金字塔会位于一个单元格块中). 请注意,并非所有为拉格朗格单元格(特别是四赫德拉单元格)生成的中间体都将是整齐的;它们的边界不会在区块边界上完全一致。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41653"/>
@@ -60752,7 +60752,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Unstruc
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41680"/>
         <source>Sets the number of blocks of cells in each direction. A cell block may be divided into multiple cells (e.g. there will be 6 pyramid cells in a cell block). If a 1D cell type is chosen only the first blocks dimension will be used. If a 2D cell type is chosen the first and second blocks dimensions will be used.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - UnstructuredCellTypes</extracomment>
-        <translation>设置每个方向的单元格块数。 一个细胞块可能分为多个细胞(例如,一个细胞块中会有6个金字塔细胞). 如果选择1D单元格类型,则只使用第一个块尺寸。 如果选择了2D单元格类型,则将使用第一和第二块尺寸。</translation>
+        <translation>设置每个方向的单元格块数。 一个单元格块可能分为多个单元格(例如,一个单元格块中会有6个金字塔单元格). 如果选择1D单元格类型,则只使用第一个块尺寸。 如果选择了2D单元格类型,则将使用第一和第二块尺寸。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41683"/>
@@ -60776,7 +60776,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Unstruc
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41692"/>
         <source>When true, some quadratic Lagrange cell types will have additional nodes. Specifically, triangles will have 7 points instead of 6; tetrahedra will have 15 points instead of 10; and wedges will have 21 points instead of 18. These additional points increase the number of polynomial terms in each element so that the shape functions can span a larger space of polynomial functions.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - UnstructuredCellTypes</extracomment>
-        <translation>当属实时,一些四极拉格朗格细胞类型会具有额外的节点. 具体来说,三角形会有7分而不是6分;四面体有15分而不是10分;楔形体有21分而不是18分. 这些附加的点会增加每个元素中的多名词的数量,这样形状函数就可以跨越更大的多名函数空间.</translation>
+        <translation>当属实时,一些四极拉格朗格单元格类型会具有额外的节点. 具体来说,三角形会有7分而不是6分;四面体有15分而不是10分;楔形体有21分而不是18分. 这些附加的点会增加每个元素中的多名词的数量,这样形状函数就可以跨越更大的多名函数空间.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41695"/>
@@ -60799,7 +60799,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Unstruc
         <extracomment>Real source: VTKExtensions/Misc/Resources/misc_utilities.xml - VTKExtensions/Misc/Resources/misc_utilities.xml
 ----------
 Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>锥形</translation>
+        <translation>Cone</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41707"/>
@@ -60823,7 +60823,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Remotin
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41719"/>
         <source>This property indicates the number of divisions around the cone. The higher this number, the closer the polygonal approximation will come to representing a cone, and the more polygons it will contain.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - ConeSource</extracomment>
-        <translation>这个地产表明圆锥周围的分数. 这个数字越高,多边形近似会越接近于代表一个圆锥,它所包含的多边形就越多.</translation>
+        <translation>这个地产表明圆锥周围的分数. 这个数字越高,多边形近似会越接近于表示一个圆锥,它所包含的多边形就越多.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41725"/>
@@ -60856,7 +60856,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Cylinde
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41743"/>
         <source>Set the orientation vector of the cone. The vector does not have to be normalized. The cone will point in the direction specified.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - ConeSource</extracomment>
-        <translation>设定圆锥的方向矢量 。 矢量不必正常化. 圆锥将指向指定的方向.</translation>
+        <translation>设定圆锥的方向矢量 。 矢量不必法向化. 圆锥将指向指定的方向.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41749"/>
@@ -60868,7 +60868,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Cylinde
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41755"/>
         <source>The Box source can be used to add a box to the 3D scene. The output of the Box source is polygonal data containing both normals and texture coordinates.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - CubeSource</extracomment>
-        <translation>Box源可以用于在3D场景中添加一个框. Box源的输出是包含正常和纹理坐标的多边形数据.</translation>
+        <translation>Box源可以用于在3D场景中添加一个框. Box源的输出是包含法向和纹理坐标的多边形数据.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41758"/>
@@ -60928,7 +60928,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Cylinde
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41791"/>
         <source>The Cylinder source can be used to add a polygonal cylinder to the 3D scene. The output of the Cylinder source is polygonal data containing both normals and texture coordinates.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - CylinderSource</extracomment>
-        <translation>圆柱形源可用于在3D场景中添加一个多边形圆柱形. 圆柱源的输出是包含正常和纹理坐标的多边形数据.</translation>
+        <translation>圆柱形源可用于在3D场景中添加一个多边形圆柱形. 圆柱源的输出是包含法向和纹理坐标的多边形数据.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41794"/>
@@ -60946,7 +60946,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Cylinde
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41803"/>
         <source>This property indicates the number of divisions around the cylinder. The higher this number, the closer the polygonal approximation will come to representing a cylinder, and the more polygons it will contain.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - CylinderSource</extracomment>
-        <translation>这个属性表示圆柱周围的分割数. 这个数字越高,多边形近似会越接近于代表一个圆柱,而它所包含的多边形也就越多.</translation>
+        <translation>这个属性表示圆柱周围的分割数. 这个数字越高,多边形近似会越接近于表示一个圆柱,而它所包含的多边形也就越多.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41809"/>
@@ -60976,7 +60976,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Cylinde
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41830"/>
         <source>Disk</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>磁盘</translation>
+        <translation>Disk</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41833"/>
@@ -61068,13 +61068,13 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - DiskSou
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41866"/>
         <source>Ellipse</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>椭圆</translation>
+        <translation>Ellipse</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41869"/>
         <source>Source that creates an elliptical arc defined by a normal, a center, a major radius vector (the direction in which the ellipse is longest), and a ratio defined as the minor radius over the major radius. A starting angle and segment angle control the starting and ending points on the ellipse perimeter, enabling creation of only a section of the ellipse. The number of segments in the polyline is controlled by setting the object resolution.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - EllipseSource</extracomment>
-        <translation>来源可以创建由普通,中心,主要半径矢量(椭圆最长的方向)定义的椭圆弧,以及被定义为在主要半径上的次要半径的比例. 一个起始角和段角可以控制椭圆周边的起始点和终点,从而能够只创建一段椭圆. 聚线中的区段数通过设置对象分辨率来控制.</translation>
+        <translation>来源可以创建由法向,中心,主要半径矢量(椭圆最长的方向)定义的椭圆弧,以及被定义为在主要半径上的次要半径的比例. 一个起始角和段角可以控制椭圆周边的起始点和终点,从而能够只创建一段椭圆. 聚线中的区段数通过设置对象分辨率来控制.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41872"/>
@@ -61092,7 +61092,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - DiskSou
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41884"/>
         <source>The normal of the plane containing the ellipse.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - EllipseSource</extracomment>
-        <translation>包含椭圆的平面的正常.</translation>
+        <translation>包含椭圆的平面的法向.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41890"/>
@@ -61161,7 +61161,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Ellipse
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41923"/>
         <source>2D Glyph</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>2D 格莱弗</translation>
+        <translation>2D Glyph</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41926"/>
@@ -61179,7 +61179,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Ellipse
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41932"/>
         <source>Create a 2D glyph</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - GlyphSource2D</extracomment>
-        <translation>创建 2D 格言</translation>
+        <translation>创建 2D 字形</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41938"/>
@@ -61239,19 +61239,19 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Ellipse
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41971"/>
         <source>Hyper Tree Grid</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>超树网格</translation>
+        <translation>Hyper Tree Grid</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41974"/>
         <source>This source uses input parameters, most notably a string descriptor, to generate a vtkHyperTreeGrid instance representing the corresponding a tree-based AMR grid with arbitrary rectilinear geometry and either binary or ternary subdivision.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - HyperTreeGridSource</extracomment>
-        <translation>此源使用输入参数,最显著的是字符串描述符,生成一个 vtkHyperTreeGrid 实例,代表对应的基于树的AMR 网格,带有任意的直线几何,或二进制或三进制子分区.</translation>
+        <translation>此源使用输入参数,最显著的是字符串描述符,生成一个 vtkHyperTreeGrid 实例,表示对应的基于树的AMR 网格,带有任意的直线几何,或二进制或三进制子分区.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41977"/>
         <source>Hyper tree grid representing a tree-based AMR data set</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - HyperTreeGridSource</extracomment>
-        <translation>代表基于树的AMR数据集的超树格</translation>
+        <translation>表示基于树的AMR数据集的超树格</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41980"/>
@@ -61275,7 +61275,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - Ellipse
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41992"/>
         <source>The three values in this property specify the scale of the root cells in each dimension of the hyper tree grid.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - HyperTreeGridSource</extracomment>
-        <translation>此属性中的三个值指定了超树网格每个维度的根细胞的大小.</translation>
+        <translation>此属性中的三个值指定了超树网格每个维度的根单元格的大小.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41995"/>
@@ -61315,7 +61315,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - RandomH
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42559"/>
         <source>Line</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>行线</translation>
+        <translation>Line</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42028"/>
@@ -61369,7 +61369,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - RandomH
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42076"/>
         <source>Ruler</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>标尺</translation>
+        <translation>Ruler</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42079"/>
@@ -61393,7 +61393,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - RandomH
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42109"/>
         <source>Protractor</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>量角器</translation>
+        <translation>Protractor</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42112"/>
@@ -61423,7 +61423,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - RandomH
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42130"/>
         <source>Outline Source</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>大纲来源</translation>
+        <translation>Outline Source</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42133"/>
@@ -61453,7 +61453,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - RandomH
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42148"/>
         <source>Spline Source</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>spline 源代码</translation>
+        <translation>样条源</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42151"/>
@@ -61490,7 +61490,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - RandomH
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42178"/>
         <source>The Plane source can be used to add a polygonal parallelogram to the 3D scene. Unlike the sphere, cone, and cylinder sources, the parallelogram is exactly represented at the lowest resolution, but higher resolutions may be desired if this plane is to be used as an input to a filter. The output of the Plane source is polygonal data.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - PlaneSource</extracomment>
-        <translation>Plane源可用于在3D场景中添加一个多边形平行图. 与球体,圆锥和圆柱源不同的是,平行图完全代表了最低分辨率,但如果要将这个平面用作滤波器的输入,则可能会需要更高的分辨率. Plane源的输出是多边形数据.</translation>
+        <translation>Plane源可用于在3D场景中添加一个多边形平行图. 与球体,圆锥和圆柱源不同的是,平行图完全表示了最低分辨率,但如果要将这个平面用作滤波器的输入,则可能会需要更高的分辨率. Plane源的输出是多边形数据.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42181"/>
@@ -61502,7 +61502,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - RandomH
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42184"/>
         <source>Create a parallelogram from an origin and two points</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - PlaneSource</extracomment>
-        <translation>从一个来源和两个点创建平行图</translation>
+        <translation>从一个原点和两个点创建平行图</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42190"/>
@@ -61590,7 +61590,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PointSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42592"/>
         <source>Poly Line Source</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>聚线源</translation>
+        <translation>Poly Line Source</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42256"/>
@@ -61616,7 +61616,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PointSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42280"/>
         <source>Poly Point Source</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>聚点源</translation>
+        <translation>Poly Point Source</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42283"/>
@@ -61635,7 +61635,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PointSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42295"/>
         <source>Hyper Tree Grid (Random)</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>超树网格( Random)</translation>
+        <translation>Hyper Tree Grid (Random)</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42298"/>
@@ -61659,7 +61659,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PointSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42313"/>
         <source>The three values in this property specify the number of root cells in each dimension of the hyper tree grid.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - RandomHyperTreeGridSource</extracomment>
-        <translation>此属性中的三个值指定了超树网格每个维度的根细胞数.</translation>
+        <translation>此属性中的三个值指定了超树网格每个维度的根单元格数.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42316"/>
@@ -61689,7 +61689,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PointSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42340"/>
         <source>Spatio Temporal Harmonics Uniform Grid</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>Spatio Timor 谐音统一网格</translation>
+        <translation>Spatio Temporal Harmonics Uniform Grid</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42343"/>
@@ -61767,7 +61767,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PointSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42427"/>
         <source>The value of this property represents the number of divisions between Start Theta and End Theta around the sphere. (See the Start Theta and End Theta properties.) The theta divisions are similar to longitude lines on the earth. The higher the resolution, the closer the approximation will come to a sphere, and the more polygons there will be.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - SphereSource</extracomment>
-        <translation>此属性的值代表球体周围Start Theta和End Theta之间的分数. (见Start Theta和end Theta属性. ) 塞塔师与地球上的经纬线类似. 分辨率越高,近似值就越接近一个球体,多边形就越多.</translation>
+        <translation>此属性的值表示球体周围Start Theta和End Theta之间的分数. (见Start Theta和end Theta属性. ) 塞塔师与地球上的经纬线类似. 分辨率越高,近似值就越接近一个球体,多边形就越多.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42430"/>
@@ -61797,7 +61797,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PointSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42445"/>
         <source>The value of this property represents the number of divisions between Start Phi and End Phi on the sphere. (See the Start Phi and End Phi properties.) The phi divisions are similar to latitude lines on the earth.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - SphereSource</extracomment>
-        <translation>此属性的价值代表了球体上Start Phi和End Phi之间的分割次数. (参见Start Phi和End Phi属性. 滇支系与地球上的纬线类似.</translation>
+        <translation>此属性的价值表示了球体上Start Phi和End Phi之间的分割次数. (参见Start Phi和End Phi属性. 滇支系与地球上的纬线类似.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42448"/>
@@ -61827,7 +61827,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PointSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42460"/>
         <source>Superquadric</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - Remoting/Application/Resources/sources_filterssources.xml</extracomment>
-        <translation>超级方块</translation>
+        <translation>Superquadric</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42463"/>
@@ -61857,19 +61857,19 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PointSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42481"/>
         <source>The three values in this property are used to scale the superquadric in X, Y, and Z. The surface normals will be computed correctly even with anisotropic scaling.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - SuperquadricSource</extracomment>
-        <translation>此属性中的三个值用于缩放X,Y,和Z的超方格. 即使采用异位缩放,也会正确计算表面正常情况。</translation>
+        <translation>此属性中的三个值用于缩放X,Y,和Z的超方格. 即使采用异位缩放,也会正确计算表面法向情况。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42487"/>
         <source>The value of this property represents the number of divisions in the theta (longitudinal) direction. This value will be rounded to the nearest multiple of 8.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - SuperquadricSource</extracomment>
-        <translation>此属性的值代表着该地(纵向)方向的分区数. 此值将四舍五入到最接近的 8 倍数 。</translation>
+        <translation>此属性的值表示着该地(纵向)方向的分区数. 此值将四舍五入到最接近的 8 倍数 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42493"/>
         <source>The value of this property represents the number of divisions in the phi (latitudinal) direction. This number will be rounded to the nearest multiple of 4.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - SuperquadricSource</extracomment>
-        <translation>此属性值代表phi(纬度)方向的分割数. 此数字将四舍五入到最近的倍数 4。</translation>
+        <translation>此属性值表示phi(纬度)方向的分割数. 此数字将四舍五入到最近的倍数 4。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42496"/>
@@ -61881,7 +61881,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PointSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42499"/>
         <source>If the value of the Toroidal property is 1, this value represents the thickness of the superquadric as a value between 0 and 1. A value close to 0 leads to a thin object with a large hole, and a value near 1 leads to a thick object with a very small hole. Changing the thickness does not change the outer radius of the superquadric.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - SuperquadricSource</extracomment>
-        <translation>如果Toridal属性值为1,则该值代表超方格的厚度为0到1之间的值. 接近0的值会导致一个有大孔的薄物体,靠近1的值会导致一个有非常小孔的厚物体. 改变厚度不会改变超方体的外半径.</translation>
+        <translation>如果Toridal属性值为1,则该值表示超方格的厚度为0到1之间的值. 接近0的值会导致一个有大孔的薄物体,靠近1的值会导致一个有非常小孔的厚物体. 改变厚度不会改变超方体的外半径.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42502"/>
@@ -61893,7 +61893,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PointSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42505"/>
         <source>This property defines the roundness of the superquadric in the theta (longitudinal) direction. A value of 0 represents a rectangular shape, a value of 1 represents a circular shape, and values greater than 1 produce higher order shapes.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - SuperquadricSource</extracomment>
-        <translation>这个属性定义了超方格在theta(纵向)方向上的圆度. 0的值代表长方形,1的值代表圆形,大于1的值产生更高的顺序形状.</translation>
+        <translation>这个属性定义了超方格在theta(纵向)方向上的圆度. 0的值表示长方形,1的值表示圆形,大于1的值产生更高的顺序形状.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42508"/>
@@ -61905,13 +61905,13 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PointSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42511"/>
         <source>This property defines the roundness in the phi (latitudinal) direction. A value of 0 represents a rectangular shape, a value of 1 represents a circular shape, and values greater than 1 produce higher order shapes.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - SuperquadricSource</extracomment>
-        <translation>此属性定义了phi(纬度)方向的圆度. 0的值代表长方形,1的值代表圆形,大于1的值产生更高的顺序形状.</translation>
+        <translation>此属性定义了phi(纬度)方向的圆度. 0的值表示长方形,1的值表示圆形,大于1的值产生更高的顺序形状.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42517"/>
         <source>The value of this property represents the isotropic size of the superquadric. Note that both the Size and Thickness properties control coefficients of superquadric generation, so the value of this property may not exactly describe the size of the superquadric.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - SuperquadricSource</extracomment>
-        <translation>此属性的值代表着超方体的异构大小. 注意超方块生成的大小属性和厚度属性均控制系数,因此此属性的值可能不能准确描述超方块的大小.</translation>
+        <translation>此属性的值表示着超方体的异构大小. 注意超方块生成的大小属性和厚度属性均控制系数,因此此属性的值可能不能准确描述超方块的大小.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42520"/>
@@ -61941,7 +61941,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PointSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42679"/>
         <source>Compute Quartiles</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersstatistics.xml - Remoting/Application/Resources/filters_filtersstatistics.xml</extracomment>
-        <translation>计算等号</translation>
+        <translation>Compute Quartiles</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42685"/>
@@ -61954,7 +61954,7 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PointSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42817"/>
         <source>Crop</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_imagingcore.xml - Remoting/Application/Resources/filters_imagingcore.xml</extracomment>
-        <translation>作物</translation>
+        <translation>Crop</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42820"/>
@@ -61990,13 +61990,13 @@ Real source: Remoting/Application/Resources/sources_filterssources.xml - PointSo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42841"/>
         <source>This property gives the minimum and maximum point index (extent) in each dimension for the output dataset.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_imagingcore.xml - ImageClip</extracomment>
-        <translation>此属性给出输出数据集每个维的最小和最大点指数( 广度) 。</translation>
+        <translation>此属性给出输出数据集每个维的最小和最大点索引( 广度) 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42844"/>
         <source>Color By Array</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_imagingcore.xml - Remoting/Application/Resources/filters_imagingcore.xml</extracomment>
-        <translation>按矩阵排列的颜色</translation>
+        <translation>Color By Array</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42847"/>
@@ -62036,7 +62036,7 @@ Real source: Remoting/Application/Resources/filters_imagingcore.xml - ColorByArr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42874"/>
         <source>Image Shrink</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_imagingcore.xml - Remoting/Application/Resources/filters_imagingcore.xml</extracomment>
-        <translation>图像收缩</translation>
+        <translation>Image Shrink</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42877"/>
@@ -62084,19 +62084,19 @@ Real source: Remoting/Application/Resources/filters_imagingcore.xml - ColorByArr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42901"/>
         <source>If the value of this property is 1, an average of neighborhood scalar values will be used as the output scalar value for each output point. If its value is 0, only subsampling will be performed, and the original scalar values at the points will be retained.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_imagingcore.xml - ImageShrink</extracomment>
-        <translation>如果此属性的值为 1, 则每个输出点的输出刻度值将使用邻里平均刻度值 。 如果它的值是0,则只进行子采样,并保留各点的原始scalar值.</translation>
+        <translation>如果此属性的值为 1, 则每个输出点的输出标量值将使用邻里平均标量值 。 如果它的值是0,则只进行子采样,并保留各点的原始scalar值.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42904"/>
         <source>Wavelet</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_imagingcore.xml - Remoting/Application/Resources/sources_imagingcore.xml</extracomment>
-        <translation>浪头</translation>
+        <translation>Wavelet</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42907"/>
         <source>The Wavelet source can be used to create a uniform rectilinear grid in up to three dimensions with values varying according to the following periodic function. OS = M * G * (XM * sin(XF * x) + YM * sin(YF * y) + ZM * cos(ZF * z)) OS is the output scalar; M represents the maximum value; G represents the Gaussian; XM, YM, and ZM are the X, Y, and Z magnitude values; and XF, YF, and ZF are the X, Y, and Z frequency values. If a two-dimensional extent is specified, the resulting image will be displayed. If a three-dimensional extent is used, then the bounding box of the volume will be displayed.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_imagingcore.xml - RTAnalyticSource</extracomment>
-        <translation>Vavelet源可用于在最多三个维度内创建一个统一的直线网格,其值因以下周期函数而异. OS = M * G * (XM * sin(XF * x) + YM + sin(YF * y) + ZM * cos(ZF * z)) OS是输出的分数; M 代表最大值; G 代表高斯人; XM, YM 和 ZM 代表X, Y, 和 Z 级值; XF, YF 和 Z F 是 X, Y, 和 Z 频率值. 如果指定了二维范围,则将显示由此产生的图像。 如果使用三维范围,则将显示该卷的边框。</translation>
+        <translation>Vavelet源可用于在最多三个维度内创建一个统一的直线网格,其值因以下周期函数而异. OS = M * G * (XM * sin(XF * x) + YM + sin(YF * y) + ZM * cos(ZF * z)) OS是输出的分数; M 表示最大值; G 表示高斯人; XM, YM 和 ZM 表示X, Y, 和 Z 级值; XF, YF 和 Z F 是 X, Y, 和 Z 频率值. 如果指定了二维范围,则将显示由此产生的图像。 如果使用三维范围,则将显示该卷的边框。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42910"/>
@@ -62114,7 +62114,7 @@ Real source: Remoting/Application/Resources/filters_imagingcore.xml - ColorByArr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42919"/>
         <source>The six values in this property indicate the X, Y, and Z extent of the output data. The first two values represent the minimum and maximum X indices, the next two are the minimum and maximum Y indices, and the last two are the minimum and maximum Z indices.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_imagingcore.xml - RTAnalyticSource</extracomment>
-        <translation>此属性中的6个值表示输出数据的X,Y,和Z范围. 前两个值代表最小和最大X指数,后两个是最小和最大Y指数,后两个是最小和最大Z指数.</translation>
+        <translation>此属性中的6个值表示输出数据的X,Y,和Z范围. 前两个值表示最小和最大X指数,后两个是最小和最大Y指数,后两个是最小和最大Z指数.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42925"/>
@@ -62237,13 +62237,13 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42979"/>
         <source>This property specifies the rate at which to subsample the volume. The extent of the dataset in each dimension will be divided by this value. (See the Whole Extent property.)</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_imagingcore.xml - RTAnalyticSource</extracomment>
-        <translation>此属性指定对音量进行子样本的速率 。 每个维度的数据集范围将被这个值除以. (见全度财产。 )</translation>
+        <translation>此属性指定对音量进行子样本的速率 。 每个维度的数据集范围将被这个值除以. (见全度属性。 )</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43009"/>
         <source>Gradient Magnitude</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_imaginggeneral.xml - Remoting/Application/Resources/filters_imaginggeneral.xml</extracomment>
-        <translation>渐变宽度</translation>
+        <translation>Gradient Magnitude</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43012"/>
@@ -62279,7 +62279,7 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43033"/>
         <source>Median</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_imaginggeneral.xml - Remoting/Application/Resources/filters_imaginggeneral.xml</extracomment>
-        <translation>中间</translation>
+        <translation>Median</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43036"/>
@@ -62321,13 +62321,13 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43066"/>
         <source>Gaussian Resampling</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_imaginghybrid.xml - Remoting/Application/Resources/filters_imaginghybrid.xml</extracomment>
-        <translation>高斯复标</translation>
+        <translation>Gaussian Resampling</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43069"/>
         <source>vtkGaussianSplatter is a filter that injects input points into a structured points (volume) dataset. As each point is injected, it \&quot;splats\&quot; or distributes values to nearby voxels. Data is distributed using an elliptical, Gaussian distribution function. The distribution function is modified using scalar values (expands distribution) or normals (creates ellipsoidal distribution rather than spherical). Warning: results may be incorrect in parallel as points can&apos;t splat into other processor&apos;s cells.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_imaginghybrid.xml - GaussianSplatter</extracomment>
-        <translation>vtkGousisianSplater是一个将输入点注入结构化点(体积)数据集的过滤器. 随着每个点的注入,它\'splats\'或将值分配到附近的voxels. 数据使用椭圆,高斯分布函数进行分布. 分布函数使用scalar值(扩展分布)或普通(创建椭圆分布而非球面分布)来修改. 警告:结果可能平行不正确,因为点不能浮到其他处理器的单元格中.</translation>
+        <translation>vtkGousisianSplater是一个将输入点注入结构化点(体积)数据集的过滤器. 随着每个点的注入,它\'splats\'或将值分配到附近的voxels. 数据使用椭圆,高斯分布函数进行分布. 分布函数使用scalar值(扩展分布)或法向(创建椭圆分布而非球面分布)来修改. 警告:结果可能平行不正确,因为点不能浮到其他处理器的单元格中.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43072"/>
@@ -62429,7 +62429,7 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43132"/>
         <source>Turn on/off the generation of elliptical splats. If normal warping is on, then the input normals affect the distribution of the splat. This boolean is used in combination with the Eccentricity ivar.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_imaginghybrid.xml - GaussianSplatter</extracomment>
-        <translation>开启/关闭椭圆板的生成. 如果正常的warping是开着的,那么输入的正常会影响plat板的分布. 这种布林与Ecentrity ivar结合使用.</translation>
+        <translation>开启/关闭椭圆板的生成. 如果法向的warping是开着的,那么输入的法向会影响plat板的分布. 这种布林与Ecentrity ivar结合使用.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43135"/>
@@ -62441,7 +62441,7 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43138"/>
         <source>Control the shape of elliptical splatting. Eccentricity is the ratio of the major axis (aligned along normal) to the minor (axes) aligned along other two axes. So Eccentricity gt 1 creates needles with the long axis in the direction of the normal; Eccentricity lt 1 creates pancakes perpendicular to the normal vector.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_imaginghybrid.xml - GaussianSplatter</extracomment>
-        <translation>控制椭圆花板的形状. 偏心率是主轴(按常态排列)与依其他两轴排列的小轴(轴)的比例. 因此,Ecentrity gt 1在正常方向上用长轴产生针头;Ecentrity lt 1在正常矢量上产生煎饼垂直.</translation>
+        <translation>控制椭圆花板的形状. 偏心率是主轴(按常态排列)与依其他两轴排列的小轴(轴)的比例. 因此,Ecentrity gt 1在法向方向上用长轴产生针头;Ecentrity lt 1在法向矢量上产生煎饼垂直.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43141"/>
@@ -62495,25 +62495,25 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43165"/>
         <source>Mandelbrot</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_imagingsources.xml - Remoting/Application/Resources/sources_imagingsources.xml</extracomment>
-        <translation>曼德尔布罗特</translation>
+        <translation>Mandelbrot</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43168"/>
         <source>The Mandelbrot source can be used to add a uniform rectilinear grid with scalar values derived from the Mandelbrot set to the 3D scene. The equation used is z = z^2 + C (where z and C are complex, and C is a constant). The scalar values in the grid are the number of iterations of the equation it takes for the magnitude of the value to become greater than 2. In the equation, the initial value of z is 0. By default, the real component of C is mapped onto the X axis; the imaginary component of C is mapped onto the Y axis; and the imaginary component of the initial value is mapped onto the Z axis. If a two-dimensional extent is specified, the resulting image will be displayed. If a three-dimensional extent is used, then the bounding box of the volume will be displayed. The output of the Mandelbrot source is image (uniform rectilinear) data.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMandelbrotSource</extracomment>
-        <translation>曼德尔布罗特源可以用于添加一个统一的直线网格,其刻度值来自曼德尔布罗特设定到3D场景. 使用的方程为z=z^2 + C(其中z和C复杂,C为常数). 网格中的刻度值是值大于2的方程的重迭数. 在方程中,z的初始值为0. 默认情况下,C的真构件被映射到X轴上;C的假构件被映射到Y轴上;初始值的假构件被映射到Z轴上. 如果指定了二维范围,则将显示由此产生的图像。 如果使用三维范围,则将显示该卷的边框。 曼德尔布罗特源的输出是图像(uniform regtilinear)数据.</translation>
+        <translation>曼德尔布罗特源可以用于添加一个统一的直线网格,其标量值来自曼德尔布罗特设定到3D场景. 使用的方程为z=z^2 + C(其中z和C复杂,C为常数). 网格中的标量值是值大于2的方程的重迭数. 在方程中,z的初始值为0. 默认情况下,C的真构件被映射到X轴上;C的假构件被映射到Y轴上;初始值的假构件被映射到Z轴上. 如果指定了二维范围,则将显示由此产生的图像。 如果使用三维范围,则将显示该卷的边框。 曼德尔布罗特源的输出是图像(uniform regtilinear)数据.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43171"/>
         <source>Representation (unsigned char) of the Mandlebrot set in up to 3 dimensions</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMandelbrotSource</extracomment>
-        <translation>最多3维的Mandlebrot代表(未签名字符)</translation>
+        <translation>最多3维的Mandlebrot表示(未签名字符)</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43174"/>
         <source>Create a Mandelbrot representation</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMandelbrotSource</extracomment>
-        <translation>创建曼德尔布罗特代表</translation>
+        <translation>创建曼德尔布罗特表示</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43180"/>
@@ -62531,13 +62531,13 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43186"/>
         <source>The three values in this property allow you to specify the projection from the 4D space used by the Mandelbrot set to the axes of the 3D volume. By default, the real component of C (represented by 0) is mapped to the X axis; the imaginary component of C (represented by 1) is mapped to the Y axis; and the real component of X, the initial value (represented by 2) is mapped to the Z axis. The imaginary component of X is represented by 3. All values entered must be between 0 and 3, inclusive.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMandelbrotSource</extracomment>
-        <translation>此属性中的三个值允许您指定从曼德尔布罗特集使用的4D空间到3D卷轴的投影. 默认情况下,C(以0为代表)的实际成分被映射到X轴上;C(以1为代表)的想象成分被映射到Y轴上;X(以2为代表)的实际成分被映射到Z轴上. X的假想成分为3个. 所有输入的值必须在 0 到 3 之间, 包括 。</translation>
+        <translation>此属性中的三个值允许您指定从曼德尔布罗特集使用的4D空间到3D卷轴的投影. 默认情况下,C(以0为表示)的实际成分被映射到X轴上;C(以1为表示)的想象成分被映射到Y轴上;X(以2为表示)的实际成分被映射到Z轴上. X的假想成分为3个. 所有输入的值必须在 0 到 3 之间, 包括 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43189"/>
         <source>Origin CX</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMandelbrotSource</extracomment>
-        <translation>来源 CX</translation>
+        <translation>原点 CX</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43192"/>
@@ -62579,13 +62579,13 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43213"/>
         <source>Extract Subset With Seed</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Remoting/Application/Resources/filters_filtersparalleldiy2.xml</extracomment>
-        <translation>以种子提取子集</translation>
+        <translation>Extract Subset With Seed</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43216"/>
         <source>Extract a subset (line or plane) from a structured-grid starting with a seed point. The filter supports cases where the structured grid is split up into multiple blocks (across multiple ranks). It also handles cases were the ijk origin for each the blocks is not aligned.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - ExtractSubsetWithSeed</extracomment>
-        <translation>从种子点开始的结构网格中提取子集(线或平面). 过滤器支持结构化网格被分割成多个块(跨多个等级)的情况. 如果每个区块的ijk来源没有对齐,它也会处理案件。</translation>
+        <translation>从种子点开始的结构网格中提取子集(线或平面). 过滤器支持结构化网格被分割成多个块(跨多个等级)的情况. 如果每个区块的ijk原点没有对齐,它也会处理案件。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43219"/>
@@ -62621,13 +62621,13 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30769"/>
         <source>Generate global point and cell ids.</source>
         <extracomment>Real source: VTKExtensions/FiltersParallelDIY2/Resources/parallel_diy_filters.xml - GlobalPointAndCellIds</extracomment>
-        <translation>生成全局点和细胞ID.</translation>
+        <translation>生成全局点和单元格ID.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30781"/>
         <source>Set the tolerance to use to identify coincident points. 0 means the points should be exactly identical.</source>
         <extracomment>Real source: VTKExtensions/FiltersParallelDIY2/Resources/parallel_diy_filters.xml - GlobalPointAndCellIds</extracomment>
-        <translation>设定用于识别巧合点的容忍度 。 0表示点数应该完全相同.</translation>
+        <translation>设定用于识别巧合点的容差度 。 0表示点数应该完全相同.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30565"/>
@@ -62657,13 +62657,13 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="30607"/>
         <source>Specify if the filter must generate the ghost cells only if required by the pipeline downstream. To force at least a fixed level of ghosts, this must be set to 0 (unchecked).</source>
         <extracomment>Real source: VTKExtensions/FiltersParallelDIY2/Resources/parallel_diy_filters.xml - GhostCells</extracomment>
-        <translation>指定过滤器必须在下游管道需要时才能生成幽灵细胞。 要强制至少一个固定水平的幽灵,必须设置为0(未检查).</translation>
+        <translation>指定过滤器必须在下游管道需要时才能生成幽灵单元格。 要强制至少一个固定水平的幽灵,必须设置为0(未检查).</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35599"/>
         <source>Points Matching Transform</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>匹配变换的点</translation>
+        <translation>Points Matching Transform</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35602"/>
@@ -62729,13 +62729,13 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37780"/>
         <source>Axis-Aligned Reflect</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>轴对齐反射</translation>
+        <translation>Axis-Aligned Reflect</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37825"/>
         <source>Axis-Aligned Transform</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>轴对齐变换</translation>
+        <translation>Axis-Aligned Transform</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38119"/>
@@ -62753,7 +62753,7 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40930"/>
         <source>HyperTreeGrid Redistribute</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallelmpi.xml - Remoting/Application/Resources/filters_filtersparallelmpi.xml</extracomment>
-        <translation>HyperTreeGrid 重分配</translation>
+        <translation>HyperTreeGrid Redistribute</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40933"/>
@@ -62790,7 +62790,7 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43249"/>
         <source>Redistribute DataSet</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Remoting/Application/Resources/filters_filtersparalleldiy2.xml</extracomment>
-        <translation>重分配数据集</translation>
+        <translation>Redistribute DataSet</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43252"/>
@@ -62850,7 +62850,7 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43288"/>
         <source>Generate global Ids for all cells across partitions.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - RedistributeDataSet</extracomment>
-        <translation>生成全局 隔板上所有细胞的ID.</translation>
+        <translation>生成全局 隔板上所有单元格的ID.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43291"/>
@@ -62862,13 +62862,13 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43294"/>
         <source>Retains some helper arrays created for generating global cell Ids and ghost cells that are useful for debugging.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - RedistributeDataSet</extracomment>
-        <translation>保留一些为生成全局细胞ID和幽灵细胞而创建的用于调试的帮助器阵列.</translation>
+        <translation>保留一些为生成全局单元格ID和幽灵单元格而创建的用于调试的帮助器阵列.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43303"/>
         <source>Overlapping Cells Detector</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Remoting/Application/Resources/filters_filtersparalleldiy2.xml</extracomment>
-        <translation>重叠单元格检测器</translation>
+        <translation>Overlapping Cells Detector</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43306"/>
@@ -62880,13 +62880,13 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43309"/>
         <source>Detects overlapping cells.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - OverlappingCellsDetector</extracomment>
-        <translation>检测到细胞重叠。</translation>
+        <translation>检测到单元格重叠。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43321"/>
         <source>Cells are deflated by 0.5 * Tolerance before the cell overlaps are computed. Deflating is done by translating each cell&apos;s faces and edges, in their normal direction, by a vector of norm Tolerance.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - OverlappingCellsDetector</extracomment>
-        <translation>* 在计算单元格重叠之前可容忍性。 减充是通过将每个细胞的面部和边缘按正常方向翻译,通过规范容忍的载体来完成的.</translation>
+        <translation>* 在计算单元格重叠之前可容差性。 减充是通过将每个单元格的面部和边缘按法向方向平移,通过规范容差的载体来完成的.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43324"/>
@@ -62898,7 +62898,7 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43327"/>
         <source>Adaptive Resample To Image</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - Remoting/Application/Resources/filters_filtersparalleldiy2.xml</extracomment>
-        <translation>适应性反射到图像</translation>
+        <translation>Adaptive Resample To Image</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43333"/>
@@ -63018,7 +63018,7 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43423"/>
         <source>Compute Volume</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparallelverdict.xml - CellSize</extracomment>
-        <translation>计算音量</translation>
+        <translation>Compute Volume</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43426"/>
@@ -63048,7 +63048,7 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43549"/>
         <source>Texture Map to Cylinder</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterstexture.xml - Remoting/Application/Resources/filters_filterstexture.xml</extracomment>
-        <translation>纹理映射到圆柱形</translation>
+        <translation>Texture Map to Cylinder</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43552"/>
@@ -63097,7 +63097,7 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43597"/>
         <source>Texture Map to Plane</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterstexture.xml - Remoting/Application/Resources/filters_filterstexture.xml</extracomment>
-        <translation>纹理映射到平面图</translation>
+        <translation>Texture Map to Plane</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43600"/>
@@ -63146,19 +63146,19 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43675"/>
         <source>Mesh Quality</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersverdict.xml - Remoting/Application/Resources/filters_filtersverdict.xml</extracomment>
-        <translation>网格质量</translation>
+        <translation>Mesh Quality</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43678"/>
         <source>This filter creates a new cell array containing a geometric measure of each cell&apos;s fitness. Different quality measures can be chosen for different cell shapes. Supported shapes include linear triangles, quadrilaterals, tetrahedra, pyramids, wedges, and hexahedra. For other shapes, a value of 0 is assigned.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersverdict.xml - MeshQuality</extracomment>
-        <translation>这个滤波器创建了一个新的细胞阵列,包含每个细胞的健身量的几何测量. 不同的细胞形状可以选择不同的质量度量. 支持的形状包括线形三角形,四边形,四面体,金字塔,楔形,和六面体. 对于其他形状,指定值为 0 。</translation>
+        <translation>这个滤波器创建了一个新的单元格阵列,包含每个单元格的健身量的几何测量. 不同的单元格形状可以选择不同的质量度量. 支持的形状包括线形三角形,四边形,四面体,金字塔,楔形,和六面体. 对于其他形状,指定值为 0 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43681"/>
         <source>This filter creates a new cell array containing a geometric measure of each cell&apos;s fitness. Different quality measures can be chosen for different cell shapes.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersverdict.xml - MeshQuality</extracomment>
-        <translation>这个滤波器创建了一个新的细胞阵列,包含每个细胞的健身量的几何测量. 不同的细胞形状可以选择不同的质量度量.</translation>
+        <translation>这个滤波器创建了一个新的单元格阵列,包含每个单元格的健身量的几何测量. 不同的单元格形状可以选择不同的质量度量.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43684"/>
@@ -63218,7 +63218,7 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43714"/>
         <source>This property indicates which quality measure will be used to evaluate pyramidal quality.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersverdict.xml - MeshQuality</extracomment>
-        <translation>该财产表明将采用何种质量衡量标准来评价金字塔质量。</translation>
+        <translation>该属性表明将采用何种质量衡量标准来评价金字塔质量。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43717"/>
@@ -63254,19 +63254,19 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43732"/>
         <source>If turned on, then non-linear cells quantities will be computed by taking their linear approximate, i.e. ignoring their faces&apos; curvature in a second output array named \&quot;Quality (Linear Approx)\&quot;.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersverdict.xml - MeshQuality</extracomment>
-        <translation>如果打开,则非线性单元格数量将通过其线性近似来计算,即在名为\“质量(Linear approx)\的第二个输出阵列中忽略其面部的曲率”。</translation>
+        <translation>如果打开,则非线性单元格数量将通过其线性近似来计算,即在名为\“质量(Linear approx)\的第二个输出阵列中忽略其面的曲率”。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43735"/>
         <source>Boundary Mesh Quality</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersverdict.xml - Remoting/Application/Resources/filters_filtersverdict.xml</extracomment>
-        <translation>边界网格质量</translation>
+        <translation>Boundary Mesh Quality</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43738"/>
         <source>This filter computes metrics on the boundary faces of a volumetric mesh. The metrics that can be computed on the boundary faces of the mesh and are: (1) Distance from cell center to face center (2) Distance from cell center to face&apos;s plane (3) Angle of face&apos;s plane normal and cell center to face center vector</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersverdict.xml - BoundaryMeshQuality</extracomment>
-        <translation>这个滤波器计算一个卷状网格的边界面上的度量。 可在网格的边界面上计算出的尺度是:(1) 从细胞中心到面中心之间的距离(2) 从细胞中心到面平面的距离(3) 面部平面的角平面正常和单元格中心对面中心向量</translation>
+        <translation>这个滤波器计算一个卷状网格的边界面上的度量。 可在网格的边界面上计算出的尺度是:(1) 从单元格中心到面中心之间的距离(2) 从单元格中心到面平面的距离(3) 面部平面的角平面法向和单元格中心对面中心向量</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43741"/>
@@ -63308,26 +63308,26 @@ Real source: Remoting/Application/Resources/sources_imagingsources.xml - ImageMa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43762"/>
         <source>This property indicates whether the distance from cell center to face&apos;s plane will be computed.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersverdict.xml - BoundaryMeshQuality</extracomment>
-        <translation>这个属性表示是否计算出从细胞中心到面部平面的距离.</translation>
+        <translation>这个属性表示是否计算出从单元格中心到面平面的距离.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43765"/>
         <source>Angle Face Normal And Cell Center To Face Center Vector</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersverdict.xml - BoundaryMeshQuality</extracomment>
-        <translation>角面正常和细胞中心到面面中心矢量</translation>
+        <translation>角面法向和单元格中心到面面中心矢量</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43768"/>
         <source>This property indicates whether the angle of face&apos;s plane normal and cell center to face center vector will be computed.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersverdict.xml - BoundaryMeshQuality</extracomment>
-        <translation>这个属性表示面平面正常和细胞中心对面中心向量的角度是否会被计算.</translation>
+        <translation>这个属性表示面平面法向和单元格中心对面中心向量的角度是否会被计算.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43831"/>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44815"/>
         <source>XML PolyData Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 多边数据阅读器</translation>
+        <translation>XML PolyData Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43834"/>
@@ -63675,7 +63675,7 @@ Real source: Remoting/Application/Resources/readers_iopio.xml - PIOReader</extra
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44866"/>
         <source>XML Table Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 表格阅读器</translation>
+        <translation>XML Table Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43894"/>
@@ -63748,7 +63748,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLUnstructuredG
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44962"/>
         <source>XML Image Data Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 图像数据阅读器</translation>
+        <translation>XML Image Data Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44002"/>
@@ -63785,7 +63785,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLImageDataRead
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45013"/>
         <source>XML Structured Grid Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 结构网格阅读器</translation>
+        <translation>XML Structured Grid Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44062"/>
@@ -63822,7 +63822,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLStructuredGri
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45064"/>
         <source>XML Rectilinear Grid Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 矩形网格读取器</translation>
+        <translation>XML Rectilinear Grid Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44122"/>
@@ -63859,7 +63859,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLRectilinearGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45115"/>
         <source>XML Partitioned Polydata Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 分区多数据阅读器</translation>
+        <translation>XML Partitioned Polydata Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44182"/>
@@ -63893,7 +63893,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLPPolyDataRead
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45166"/>
         <source>XML Partitioned Unstructured Grid Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 分区无结构的网格阅读器</translation>
+        <translation>XML Partitioned Unstructured Grid Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44236"/>
@@ -63924,7 +63924,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLPPolyDataRead
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45217"/>
         <source>XML Partitioned Table Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 分区的表格阅读器</translation>
+        <translation>XML Partitioned Table Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44290"/>
@@ -63961,7 +63961,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLPPolyDataRead
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45262"/>
         <source>XML Partitioned Image Data Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 分区图像数据阅读器</translation>
+        <translation>XML Partitioned Image Data Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44335"/>
@@ -63998,7 +63998,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLPImageDataRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45313"/>
         <source>XML Partitioned Structured Grid Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 分割结构网格阅读器</translation>
+        <translation>XML Partitioned Structured Grid Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44389"/>
@@ -64029,7 +64029,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLPImageDataRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45364"/>
         <source>XML Partitioned Rectilinear Grid Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 分区的矩形网格阅读器</translation>
+        <translation>XML Partitioned Rectilinear Grid Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44443"/>
@@ -64060,7 +64060,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLPImageDataRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45442"/>
         <source>XML Hierarchical Box Data reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 分级框数据读取器</translation>
+        <translation>XML Hierarchical Box Data reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44500"/>
@@ -64136,7 +64136,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - HyperTreeGridRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45568"/>
         <source>XML Partitioned HyperTree Grid Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 分区的超透视网格阅读器</translation>
+        <translation>XML Partitioned HyperTree Grid Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44596"/>
@@ -64233,7 +64233,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLPartitionedDa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45658"/>
         <source>XML Partitioned Dataset Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 分区数据集阅读器</translation>
+        <translation>XML Partitioned Dataset Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44695"/>
@@ -64249,7 +64249,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLPartitionedDa
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45712"/>
         <source>XML Partitioned Dataset Collection Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 分区数据集收藏阅读器</translation>
+        <translation>XML Partitioned Dataset Collection Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44818"/>
@@ -64288,7 +64288,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLMultiBlockDat
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44911"/>
         <source>XML Unstructured Grid Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 无结构的网格阅读器</translation>
+        <translation>XML Unstructured Grid Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="44914"/>
@@ -64528,7 +64528,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLMultiBlockDat
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45478"/>
         <source>XML UniformGrid AMR Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 统一红色AMR 读取器</translation>
+        <translation>XML UniformGrid AMR Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45481"/>
@@ -64552,7 +64552,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLMultiBlockDat
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45532"/>
         <source>HyperTreeGrid Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>HyperTreeGrid 阅读器</translation>
+        <translation>HyperTreeGrid Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45535"/>
@@ -64600,7 +64600,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLMultiBlockDat
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45598"/>
         <source>XML MultiBlock Data Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioxml.xml - Remoting/Application/Resources/readers_ioxml.xml</extracomment>
-        <translation>XML 多块块数据读取器</translation>
+        <translation>XML MultiBlock Data Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45601"/>
@@ -64666,7 +64666,7 @@ Real source: Remoting/Application/Resources/readers_ioxml.xml - XMLPartitionedDa
         <extracomment>Real source: Remoting/Application/Resources/writers_ioxml.xml - XMLDataObjectWriterCore
 ----------
 Real source: Remoting/Application/Resources/writers_ioxml.xml - HyperTreeGridWriter</extracomment>
-        <translation>用于压缩二进制数据的压缩算法(仅应用模式). 无提供最快的写法,LZ4提供最快的压缩写法,ZLib提供均衡的性能,LZMA提供最小的压缩文件ize.</translation>
+        <translation>用于压缩二进制数据的压缩算法(仅应用模式). 无提供最快的写法,LZ4提供最快的压缩写法,ZLib提供均衡的性能,LZMA提供最小的压缩文件大小.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="45814"/>
@@ -65101,7 +65101,7 @@ Real source: Remoting/Application/Resources/writers_ioxml.xml - SerialHTGMultiBl
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46534"/>
         <source>PLY</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_ioxml.xml - Remoting/Application/Resources/writers_ioxml.xml</extracomment>
-        <translation>平时</translation>
+        <translation>PLY</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46537"/>
@@ -65148,7 +65148,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_writers.xml - PPLYWriter<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46609"/>
         <source>VTP</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_ioxml.xml - Remoting/Application/Resources/writers_ioxml.xml</extracomment>
-        <translation>自愿方案</translation>
+        <translation>VTP</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46612"/>
@@ -65160,7 +65160,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_writers.xml - PPLYWriter<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46645"/>
         <source>VTU</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_ioxml.xml - Remoting/Application/Resources/writers_ioxml.xml</extracomment>
-        <translation>VTU 维基文库</translation>
+        <translation>VTU</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46648"/>
@@ -65172,7 +65172,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_writers.xml - PPLYWriter<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46681"/>
         <source>HTG</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_ioxml.xml - Remoting/Application/Resources/writers_ioxml.xml</extracomment>
-        <translation>HTG 软件</translation>
+        <translation>HTG</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46684"/>
@@ -65184,7 +65184,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_writers.xml - PPLYWriter<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46714"/>
         <source>VTS</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_ioxml.xml - Remoting/Application/Resources/writers_ioxml.xml</extracomment>
-        <translation>志愿人员</translation>
+        <translation>VTS</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46717"/>
@@ -65196,7 +65196,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_writers.xml - PPLYWriter<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46747"/>
         <source>VTR</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_ioxml.xml - Remoting/Application/Resources/writers_ioxml.xml</extracomment>
-        <translation>VTR 软件</translation>
+        <translation>VTR</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46750"/>
@@ -65208,7 +65208,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_writers.xml - PPLYWriter<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46780"/>
         <source>VTI</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_ioxml.xml - Remoting/Application/Resources/writers_ioxml.xml</extracomment>
-        <translation>自愿倡议</translation>
+        <translation>VTI</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46783"/>
@@ -65220,7 +65220,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_writers.xml - PPLYWriter<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46813"/>
         <source>VTM</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_ioxml.xml - Remoting/Application/Resources/writers_ioxml.xml</extracomment>
-        <translation>虚拟计算机</translation>
+        <translation>VTM</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46816"/>
@@ -65232,7 +65232,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_writers.xml - PPLYWriter<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46846"/>
         <source>VTPD</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_ioxml.xml - Remoting/Application/Resources/writers_ioxml.xml</extracomment>
-        <translation>VTPD 虚拟网络</translation>
+        <translation>VTPD</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46849"/>
@@ -65244,7 +65244,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_writers.xml - PPLYWriter<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46879"/>
         <source>VTPC</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_ioxml.xml - Remoting/Application/Resources/writers_ioxml.xml</extracomment>
-        <translation>VTPC 虚拟网络</translation>
+        <translation>VTPC</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46882"/>
@@ -65256,7 +65256,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_writers.xml - PPLYWriter<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46912"/>
         <source>VTH</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_ioxml.xml - Remoting/Application/Resources/writers_ioxml.xml</extracomment>
-        <translation>自愿</translation>
+        <translation>VTH</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46915"/>
@@ -65269,7 +65269,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_writers.xml - PPLYWriter<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47182"/>
         <source>SLAC Particle Data Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ionetcdf.xml - Remoting/Application/Resources/readers_ionetcdf.xml</extracomment>
-        <translation>SLAC 粒子数据读取器</translation>
+        <translation>SLAC Particle Data Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46948"/>
@@ -65286,7 +65286,7 @@ Real source: Remoting/Application/Resources/readers_ionetcdf.xml - SLACParticleR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47206"/>
         <source>NetCDF CAM reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ionetcdf.xml - Remoting/Application/Resources/readers_ionetcdf.xml</extracomment>
-        <translation>NetCDF CAM 阅读器</translation>
+        <translation>NetCDF CAM reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="46960"/>
@@ -65382,7 +65382,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - Unstructure
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35152"/>
         <source>Polyline Length</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>多线长度</translation>
+        <translation>Polyline Length</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35200"/>
@@ -65406,19 +65406,19 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - Unstructure
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35719"/>
         <source>Point And Cell Ids</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>点和单元格编号</translation>
+        <translation>Point And Cell Ids</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35722"/>
         <source>This filter generates scalars using cell and point ids. That is, the point attribute data scalars are generated from the point ids, and the cell attribute data scalars or field data are generated from the the cell ids. Note that in the case of an input HTG, only cell IDs generation is available.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - PointAndCellIds</extracomment>
-        <translation>此过滤器使用单元格和点标识生成缩写 。 即点属性数据scalars由点标识生成,细胞属性数据scalars或字段数据由单元格标识生成. 注意在输入HTG的情况下,只有细胞ID生成可用.</translation>
+        <translation>此过滤器使用单元格和点标识生成标量 。 即点属性数据scalars由点标识生成,单元格属性数据scalars或字段数据由单元格标识生成. 注意在输入HTG的情况下,只有单元格ID生成可用.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35914"/>
         <source>Surface Tangents</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>表面切线</translation>
+        <translation>Surface Tangents</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36226"/>
@@ -65517,13 +65517,13 @@ Real source: Remoting/Application/Resources/filters_filterstemporal.xml - Critic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37750"/>
         <source>Coordinates</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>坐标</translation>
+        <translation>Coordinates</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37867"/>
         <source>Block Ids</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>块编号</translation>
+        <translation>Block Ids</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38095"/>
@@ -65541,13 +65541,13 @@ Real source: Remoting/Application/Resources/filters_filterstemporal.xml - Critic
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38224"/>
         <source>Overlapping AMR Level Ids</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>重叠 AMR 级别</translation>
+        <translation>Overlapping AMR Level Ids</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38431"/>
         <source>The Random Attributes filter creates random attributes including scalars and vectors. These attributes can be generated as point data or cell data. The generation of each component is normalized between a user-specified minimum and maximum value. This filter provides that capability to specify the data type of the attributes and the range for each of the components. Note that in the case of an input HTG, only cell random attribute generation is available.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - RandomAttributeGenerator</extracomment>
-        <translation>随机属性过滤器创建随机属性,包括scalars和向量. 这些属性可以作为点数据或单元格数据生成. 每个组件的生成在用户指定的最低值和最高值之间实现正常化。 这个过滤器提供了指定每个组件属性的数据类型和范围的能力. 注意在输入HTG的情况下,只有细胞随机属性生成.</translation>
+        <translation>随机属性过滤器创建随机属性,包括scalars和向量. 这些属性可以作为点数据或单元格数据生成. 每个组件的生成在用户指定的最低值和最高值之间实现法向化。 这个过滤器提供了指定每个组件属性的数据类型和范围的能力. 注意在输入HTG的情况下,只有单元格随机属性生成.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="13888"/>
@@ -65586,7 +65586,7 @@ Real source: Remoting/Application/Resources/writers_iohdf.xml - VTKHDFWriter</ex
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38539"/>
         <source>Spatio Temporal Harmonics</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Remoting/Application/Resources/filters_filtersgeneral.xml</extracomment>
-        <translation>气温谐波</translation>
+        <translation>时空谐波</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38743"/>
@@ -65613,7 +65613,7 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Transfo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43354"/>
         <source>The Plot Over Lines From Custom Source filter samples the dataset attributes of the input data set at the points along multiple lines given by the source dataset. The values of the point-centered variables along these lines will be displayed in an XY Plot. This filter uses interpolation to determine the values at the selected point, whether or not it lies at an input point. This filter operates on any type of data and produces polygonal output (a polyline). One can use different sampling patterns with this filter. \&quot;Sample At Cell Boundaries\&quot; gives the most accurate plots, \&quot;Sample At Segment Centers\&quot; provides one sample per probed cells, and \&quot;Sample Uniformly\&quot; samples uniformly along the input line.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersparalleldiy2.xml - ProbeCustomLines</extracomment>
-        <translation>Plot Over Lines From Custom Source过滤器按照源数据集给出的多个线条对输入数据集的数据集属性进行样本. 以这些线条为中心的变量的值将在 XY 绘图中显示。 这个过滤器使用插值来确定选定点的值,无论它是否位于输入点. 这种滤波器在任何类型的数据上运行,并产生多边形输出(一个多线). 用这个过滤器可以使用不同的采样模式. \"Sample At Cell Bundaries\"给出了最精确的图案,\"Sample At September Centers\"提供了每个被探测的细胞一个样本,\"Sample Understandly\"的样本沿着输入线统一.</translation>
+        <translation>Plot Over Lines From Custom Source过滤器按照源数据集给出的多个线条对输入数据集的数据集属性进行样本. 以这些线条为中心的变量的值将在 XY 绘图中显示。 这个过滤器使用插值来确定选定点的值,无论它是否位于输入点. 这种滤波器在任何类型的数据上运行,并产生多边形输出(一个多线). 用这个过滤器可以使用不同的采样模式. \"Sample At Cell Bundaries\"给出了最精确的图案,\"Sample At September Centers\"提供了每个被探测的单元格一个样本,\"Sample Understandly\"的样本沿着输入线统一.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="40360"/>
@@ -65673,13 +65673,13 @@ Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - Transfo
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42331"/>
         <source>The total fraction of cell volume to be masked during construction. This is a target value and the actual fraction of masked volume can vary depending on number of tree and children.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - RandomHyperTreeGridSource</extracomment>
-        <translation>构造过程中要遮掩的细胞体积总分量. 这是一个目标值,遮盖体积的实际分数会因树和孩子的数量而异.</translation>
+        <translation>构造过程中要遮掩的单元格体积总分量. 这是一个目标值,遮盖体积的实际分数会因树和孩子的数量而异.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42766"/>
         <source>Force Static Mesh</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterstemporal.xml - Remoting/Application/Resources/filters_filterstemporal.xml</extracomment>
-        <translation>强制静态网格</translation>
+        <translation>Force Static Mesh</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42769"/>
@@ -65797,7 +65797,7 @@ Real source: Remoting/Application/Resources/filters_filterstensors.xml - YieldCr
         <extracomment>Real source: Remoting/Application/Resources/filters_filterstensors.xml - TensorPrincipalInvariants
 ----------
 Real source: Remoting/Application/Resources/filters_filterstensors.xml - YieldCriteria</extracomment>
-        <translation>细胞调节器,用来计算主变量。</translation>
+        <translation>单元格调节器,用来计算主变量。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43483"/>
@@ -65824,7 +65824,7 @@ Real source: Remoting/Application/Resources/filters_filterstensors.xml - YieldCr
         <extracomment>Real source: Remoting/Application/Resources/filters_filterstensors.xml - Remoting/Application/Resources/filters_filterstensors.xml
 ----------
 Real source: Remoting/Application/Resources/filters_filterstensors.xml - YieldCriteria</extracomment>
-        <translation>适用标准</translation>
+        <translation>屈服准则</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43492"/>
@@ -66045,14 +66045,14 @@ Real source: Remoting/Application/Resources/readers_ionetcdf.xml - NetCDFCAMRead
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47044"/>
         <source>**DEPRECATED in ParaView 4.4.** No longer needed/supported.</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ionetcdf.xml - NetCDFCAMReaderCore</extracomment>
-        <translation>** 见第4.4段。 ** 不再需要/支持。</translation>
+        <translation>**在 ParaView 4.4 中已弃用。** 不再需要/支持。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47053"/>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47260"/>
         <source>NetCDF POP reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ionetcdf.xml - Remoting/Application/Resources/readers_ionetcdf.xml</extracomment>
-        <translation>净CDF 持久性有机污染物读取器</translation>
+        <translation>NetCDF POP reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47056"/>
@@ -66219,7 +66219,7 @@ Real source: Remoting/Application/Resources/readers_ionetcdf.xml - SLACReader</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47209"/>
         <source>This reader reads in unstructured grid data from a NetCDF file. The grid data is in a set of planes as quadrilateral cells. The reader creates hex cells in order to create a volumetric grid.</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ionetcdf.xml - NetCDFCAMReader</extracomment>
-        <translation>此读取器从 NetCDF 文件读取无结构的网格数据 。 网格数据以一组平面作为四方细胞. 读取器会创建十六元细胞,以创建量子网格.</translation>
+        <translation>此读取器从 NetCDF 文件读取无结构的网格数据 。 网格数据以一组平面作为四方单元格. 读取器会创建十六元单元格,以创建量子网格.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47212"/>
@@ -66267,7 +66267,7 @@ Real source: Remoting/Application/Resources/readers_ioparallelnetcdf.xml - PNetC
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47299"/>
         <source>NetCDF Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ionetcdf.xml - Remoting/Application/Resources/readers_ionetcdf.xml</extracomment>
-        <translation>NetCDF 阅读器</translation>
+        <translation>NetCDF Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47302"/>
@@ -66303,7 +66303,7 @@ Real source: Remoting/Application/Resources/readers_iofluentcff.xml - FLUENTCFFR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47353"/>
         <source>NetCDF UGRID reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ionetcdf.xml - Remoting/Application/Resources/readers_ionetcdf.xml</extracomment>
-        <translation>NetCDF UGRID 读取器</translation>
+        <translation>NetCDF UGRID reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47380"/>
@@ -66315,13 +66315,13 @@ Real source: Remoting/Application/Resources/readers_iofluentcff.xml - FLUENTCFFR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47398"/>
         <source>NetCDF MPAS reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ionetcdf.xml - Remoting/Application/Resources/readers_ionetcdf.xml</extracomment>
-        <translation>NetCDF MPAS 阅读器</translation>
+        <translation>NetCDF MPAS reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47401"/>
         <source>This reader reads unstructured grid MPAS data from a file. It creates a dual grid It assumes the grid is in the global domain. By default, it creates a spherical view of vertical layer 0. It assumes it is ocean data. It gives several options to change the view to multilayer (all vertical layers will have a thickness determined by the value in the slider), lat/lon projection or atmospheric (vertical layers go out away from the center of the sphere, instead of down towards the center as they do for ocean data). It doesn&apos;t handle data in the rectangular domain. This is not a parallel reader. It expects one .nc file of data. It can display cell or vertex-centered data, but not edge data. When converted to the dual grid, cell-centered data becomes vertex-centered and vice-versa. NOTES: When using this reader, it is important that you remember to do the following: 1. When changing a selected variable, remember to select it also in the drop down box to color by. It doesn&apos;t color by that variable automatically 2. When selecting multilayer sphere view, start with layer thickness around 100,000 3. When selecting multilayer lat/lon view, start with layer thickness around 10 4. Always click the -Z orientation after making a switch from lat/lon to sphere, from single to multilayer or changing thickness. 5. Be conservative on the number of changes you make before hitting Apply, since there may be bugs in this reader. Just make one change and then hit Apply. For problems, contact Christine Ahrens (cahrens@lanl.gov)</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ionetcdf.xml - MPASReader</extracomment>
-        <translation>此读取器从文件中读取无结构的网格 MPAS 数据 。 它创造了双网格 它假设电网属于全球域. 默认情况下,它会产生垂直层0的球形视图. 它假设它是海洋数据。 它提供了几种选择,将视图改为多层(所有垂直层的厚度都由滑动器中的数值决定),拉特/龙投影或大气(垂直层从球体中心外向,而不是像海洋数据那样向中心下向). 它不处理矩形域中的数据. 这不是一个平行的读者。 它期望一个.nc的数据文件. 它可以显示单元格或以顶点为中心的数据,但不能显示边缘数据. 当转换成双网格时,细胞中心数据会变成顶点,反之亦然. 注:在使用该读取器时,必须记住: 1. 修改选定的变量时,请记住在下移框中也选择该变量的颜色。 它的颜色不是由变量自动2。 选择多层球面视图时,先从一层厚度约10万3. 在选择多层拉特/龙视图时,先从10 4左右的层厚度开始. 在从lat/lon切换到球体,从单层到多层或改变厚度后,总是单击-Z方向. 5. 在点击应用程序前要保守更改的次数,因为这个阅读器可能存在错误。 只要做一个改变,然后点击应用。 如有问题,请洽Christine Ahrens (cahrens@lanl.gov)</translation>
+        <translation>此读取器从文件中读取无结构的网格 MPAS 数据 。 它创造了双网格 它假设电网属于全球域. 默认情况下,它会产生垂直层0的球形视图. 它假设它是海洋数据。 它提供了几种选择,将视图改为多层(所有垂直层的厚度都由滑动器中的数值决定),拉特/龙投影或大气(垂直层从球体中心外向,而不是像海洋数据那样向中心下向). 它不处理矩形域中的数据. 这不是一个平行的读者。 它期望一个.nc的数据文件. 它可以显示单元格或以顶点为中心的数据,但不能显示边缘数据. 当转换成双网格时,单元格中心数据会变成顶点,反之亦然. 注:在使用该读取器时,必须记住: 1. 修改选定的变量时,请记住在下移框中也选择该变量的颜色。 它的颜色不是由变量自动2。 选择多层球面视图时,先从一层厚度约10万3. 在选择多层拉特/龙视图时,先从10 4左右的层厚度开始. 在从lat/lon切换到球体,从单层到多层或改变厚度后,总是单击-Z方向. 5. 在点击应用程序前要保守更改的次数,因为这个阅读器可能存在错误。 只要做一个改变,然后点击应用。 如有问题,请洽Christine Ahrens (cahrens@lanl.gov)</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47404"/>
@@ -66457,7 +66457,7 @@ Real source: Remoting/Application/Resources/readers_iofluentcff.xml - FLUENTCFFR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47518"/>
         <source>SLAC Data Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ionetcdf.xml - Remoting/Application/Resources/readers_ionetcdf.xml</extracomment>
-        <translation>SLAC 数据阅读器</translation>
+        <translation>SLAC Data Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47521"/>
@@ -66578,7 +66578,7 @@ Real source: Remoting/Application/Resources/readers_iofluentcff.xml - FLUENTCFFR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47617"/>
         <source>Parallel NetCDF POP reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioparallelnetcdf.xml - Remoting/Application/Resources/readers_ioparallelnetcdf.xml</extracomment>
-        <translation>平行的 NetCDF 持久性有机污染物读取器</translation>
+        <translation>Parallel NetCDF POP reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47590"/>
@@ -66671,7 +66671,7 @@ Real source: Remoting/Application/Resources/proxies_xdmf2.xml - XdmfReader</extr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47713"/>
         <source>XDMF Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_xdmf2.xml - Remoting/Application/Resources/proxies_xdmf2.xml</extracomment>
-        <translation>XDMF 读取器</translation>
+        <translation>XDMF Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47716"/>
@@ -66851,7 +66851,7 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - ImageS
         <location filename="../build/translationSourcesparaview_server_manager.h" line="27952"/>
         <source>The Calculator filter computes a new data array or new point coordinates as a function of existing scalar or vector arrays. If point-centered arrays are used in the computation of a new data array, the resulting array will also be point-centered. Similarly, computations using cell-centered arrays will produce a new cell-centered array. If the function is computing point coordinates, the result of the function must be a three-component vector. The Calculator interface operates similarly to a scientific calculator. In creating the function to evaluate, the standard order of operations applies. Each of the calculator functions is described below. Unless otherwise noted, enclose the operand in parentheses using the ( and ) buttons. -</source>
         <extracomment>Real source: VTKExtensions/FiltersGeneral/Resources/general_filters.xml - Calculator</extracomment>
-        <translation>计算器过滤器计算出一个新的数据阵列或新点坐标,作为现有scalar或矢量阵列的一种功能. 如果在计算新的数据数组时使用以点为中心的数组,那么所产生的数组也将是以点为中心的. 同样,使用以细胞为中心的数组进行计算将产生一个新的以细胞为中心的数组. 如果函数是计算点坐标,函数的结果必须是三元向量. 计算器接口的运作类似于科学计算器. 在创建评估功能时,适用标准操作顺序. 计算器的每个功能如下所述. 除非另有说明,请用(和)按钮在括号内附上操作符。</translation>
+        <translation>计算器过滤器计算出一个新的数据阵列或新点坐标,作为现有scalar或矢量阵列的一种功能. 如果在计算新的数据数组时使用以点为中心的数组,那么所产生的数组也将是以点为中心的. 同样,使用以单元格为中心的数组进行计算将产生一个新的以单元格为中心的数组. 如果函数是计算点坐标,函数的结果必须是三元向量. 计算器接口的运作类似于科学计算器. 在创建评估功能时,适用标准操作顺序. 计算器的每个功能如下所述. 除非另有说明,请用(和)按钮在括号内附上操作符。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="31945"/>
@@ -66917,13 +66917,13 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - ImageS
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34879"/>
         <source>Cell Grid Source</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - Remoting/Application/Resources/filters_filterscellgrid.xml</extracomment>
-        <translation>单元格网格来源</translation>
+        <translation>Cell Grid Source</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34882"/>
         <source>This source creates a cell grid populated with a single cell of the specified type. If the cell&apos;s type uses a reference-element formulation, the cell should have an identity map from reference space to world-coordinates space.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGridSource</extracomment>
-        <translation>此源创建一个包含指定类型单单元格的单元格网格. 如果该细胞的类型使用参考元素配体,则该细胞应当有从参考空间到世界坐标空间的身份映射.</translation>
+        <translation>此源创建一个包含指定类型单单元格的单元格网格. 如果该单元格的类型使用参考元素配体,则该单元格应当有从参考空间到世界坐标空间的身份映射.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34885"/>
@@ -66942,13 +66942,13 @@ Real source: Remoting/Views/Resources/representations_remotingviews.xml - ImageS
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34900"/>
         <source>This filter adds arrays (if not already present) holding tuples of (cell ID, side ID) pairs which identify the sides of all the cells which do not share a boundary with a neighbor (i.e., any external surfaces as well as non-conforming internal surfaces). These arrays are grouped by the type of cells whose sides they refer to as well as the shape of the side. (For example, a group of wedge cells will have one array listing quadrilateral sides and another array listing triangular sides.) These arrays can be used to render the cell grid efficiently.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - ComputeCellGridSides</extracomment>
-        <translation>这个过滤器添加了(如果尚未存在的话)持有(细胞ID,侧式ID)对子的阵列,这些阵列可以识别所有不与邻居共享边界的细胞的侧面(即任何外部表面以及不符合要求的内部表面). 这些阵列按照它们指的侧面以及侧面形状的单元格类型分组. (例如一组楔形单元格将有一个列出四边形的阵列,另一个列出三角形的阵列. ) 这些阵列可用于高效地使单元格网格化.</translation>
+        <translation>这个过滤器添加了(如果尚未存在的话)持有(单元格ID,侧式ID)对子的阵列,这些阵列可以识别所有不与邻居共享边界的单元格的侧面(即任何外部表面以及不符合要求的内部表面). 这些阵列按照它们指的侧面以及侧面形状的单元格类型分组. (例如一组楔形单元格将有一个列出四边形的阵列,另一个列出三角形的阵列. ) 这些阵列可用于高效地使单元格网格化.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34936"/>
         <source>This filter turns an unstructured grid or partitioned dataset collection whose leaf nodes are unstructured grids with linear cells into a partitioned dataset collection of cell grids. Additionally, it uses annotations added to the field data by the IOSS reader to promote certain cell-data arrays into spatially-varying discontinuous Galerkin attributes. Note that even unstructured grids with no annotations are converted into cell grids so that the entire dataset can be rendered using the composite cell-grid representation.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - ConvertToCellGrid</extracomment>
-        <translation>这种滤波器将一个无结构的网格或分区数据集的集合,其叶节点为无结构的带线性细胞的网格,变为细胞网的分区数据集集合. 此外,它还利用ISS阅读器在现场数据中添加的说明,将某些单元格数据阵列推广到空间变化的不连续的Gallerkin属性中。 注意,即使没有说明的无结构网格也会被转换成细胞网格,这样整个数据集就可以使用复合细胞网格表示来渲染.</translation>
+        <translation>这种滤波器将一个无结构的网格或分区数据集的集合,其叶节点为无结构的带线性单元格的网格,变为单元格网的分区数据集集合. 此外,它还利用ISS阅读器在现场数据中添加的说明,将某些单元格数据阵列推广到空间变化的不连续的Gallerkin属性中。 注意,即使没有说明的无结构网格也会被转换成单元格网格,这样整个数据集就可以使用复合单元格网格表示来渲染.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="34966"/>
@@ -66984,13 +66984,13 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35038"/>
         <source>CellGrid Centers</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - Remoting/Application/Resources/filters_filterscellgrid.xml</extracomment>
-        <translation>细胞Grid中心</translation>
+        <translation>CellGrid Centers</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35041"/>
         <source>This filter adds a vertex cell at the center of each input cell. The output will have all of the attributes defined on the cell interpolated to the output vertices.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGridCenters</extracomment>
-        <translation>这个过滤器在每个输入单元格的中心添加一个顶点单元格. 输出会拥有细胞内插到输出顶点上定义的所有属性.</translation>
+        <translation>这个过滤器在每个输入单元格的中心添加一个顶点单元格. 输出会拥有单元格内插到输出顶点上定义的所有属性.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35044"/>
@@ -67003,13 +67003,13 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35056"/>
         <source>Cell Grid To Unstructured Grid</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - Remoting/Application/Resources/filters_filterscellgrid.xml</extracomment>
-        <translation>单元格网格到无结构网格</translation>
+        <translation>Cell Grid To Unstructured Grid</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35059"/>
         <source>This filter approximates a cell grid with an unstructured grid whose cells are linear approximations to cells in the cell grid. All higher-order information is discarded. All fields on the cell grid are converted into point-data on the unstructured grid; since points are shared by neighboring cells, the values at points are averaged across all cells incident to the point. Thus discontinuities at cell boundaries are eliminated by averaging.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGridToUnstructuredGrid</extracomment>
-        <translation>这种滤波器近似于无结构网格的细胞网格,其细胞与细胞网中的细胞是线性近似. 所有更高级的信息都被丢弃. 细胞网格上的所有字段都转换成无结构网格上的点数据;由于点数由相邻的细胞共享,因此点值在所有细胞事件到点时均值. 因此,通过平均值消除细胞边界上的不连续。</translation>
+        <translation>这种滤波器近似于无结构网格的单元格网格,其单元格与单元格网中的单元格是线性近似. 所有更高级的信息都被丢弃. 单元格网格上的所有字段都转换成无结构网格上的点数据;由于点数由相邻的单元格共享,因此点值在所有单元格事件到点时均值. 因此,通过平均值消除单元格边界上的不连续。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35062"/>
@@ -67022,13 +67022,13 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35080"/>
         <source>Cell Grid Transform</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - Remoting/Application/Resources/filters_filterscellgrid.xml</extracomment>
-        <translation>单元格网格转换</translation>
+        <translation>Cell Grid Transform</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35083"/>
         <source>This filter allows you to translate, rotate, and scale cell-grid data.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGridTransform</extracomment>
-        <translation>此过滤器允许您翻译、旋转和缩放单元格网格数据。</translation>
+        <translation>此过滤器允许您平移、旋转和缩放单元格网格数据。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35086"/>
@@ -67041,7 +67041,7 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35113"/>
         <source>Cell Grid Warp</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - Remoting/Application/Resources/filters_filterscellgrid.xml</extracomment>
-        <translation>单元格网格扭曲</translation>
+        <translation>Cell Grid Warp</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35116"/>
@@ -67054,7 +67054,7 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35122"/>
         <source>Deform a cell-grid&apos;s shape by a vector-valued cell-attribute.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGridWarp</extracomment>
-        <translation>通过矢量值的细胞属性来改变细胞网形状.</translation>
+        <translation>通过矢量值的单元格属性来改变单元格网形状.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35131"/>
@@ -67104,7 +67104,7 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35992"/>
         <source>Quadric Decimation</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>四方十进制</translation>
+        <translation>Quadric Decimation</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="35995"/>
@@ -67140,7 +67140,7 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36016"/>
         <source>Decide whether to activate volume preservation which greatly reduces errors in triangle normal direction. If off, volume preservation is disabled and if AttributeErrorMetric is active, these errors can be large.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - QuadricDecimation</extracomment>
-        <translation>决定是否激活可大大减少三角形正常方向错误的音量保存 。 如果关闭, 音量保存被禁用, 如果 AtprojectErrorMetric 活动, 这些错误可能很大 。</translation>
+        <translation>决定是否激活可大大减少三角形法向方向错误的音量保存 。 如果关闭, 音量保存被禁用, 如果 AtprojectErrorMetric 活动, 这些错误可能很大 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36019"/>
@@ -67188,13 +67188,13 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36040"/>
         <source>Decide whether to include data attributes in the error metric. If off, then only geometric error is used to control the decimation.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - QuadricDecimation</extracomment>
-        <translation>决定是否在错误度量中包含数据属性. 如果关闭, 那么只使用几何误差来控制毁灭 。</translation>
+        <translation>精简是否在错误度量中包含数据属性. 如果关闭, 那么只使用几何误差来控制毁灭 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36043"/>
         <source>Scalars Attribute</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - QuadricDecimation</extracomment>
-        <translation>刻度属性</translation>
+        <translation>标量属性</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36046"/>
@@ -67218,13 +67218,13 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36055"/>
         <source>Normals Attribute</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - QuadricDecimation</extracomment>
-        <translation>普通属性</translation>
+        <translation>法向属性</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36058"/>
         <source>This flag controls whether normals attributes are to be included in the error calculation.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - QuadricDecimation</extracomment>
-        <translation>此旗帜控制是否将普通属性包含在错误计算中 。</translation>
+        <translation>此旗帜控制是否将法向属性包含在错误计算中 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36061"/>
@@ -67254,13 +67254,13 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36073"/>
         <source>Scalars Weight</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - QuadricDecimation</extracomment>
-        <translation>斯卡尔斯重量</translation>
+        <translation>标量斯重量</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36076"/>
         <source>Scaling weight contribution of the scalar attribute. This value is used to weight the contribution of the scalar attribute towards the error metric.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - QuadricDecimation</extracomment>
-        <translation>放大刻度属性的重量贡献 。 此值用于加权scalar属性对错误度量表的贡献.</translation>
+        <translation>放大标量属性的重量贡献 。 此值用于加权scalar属性对错误度量表的贡献.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36079"/>
@@ -67278,13 +67278,13 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36085"/>
         <source>Normals Weight</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - QuadricDecimation</extracomment>
-        <translation>正常重量</translation>
+        <translation>法向重量</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36088"/>
         <source>Scaling weight contribution of the normal attribute. This value is used to weight the contribution of the normal attribute towards the error metric.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - QuadricDecimation</extracomment>
-        <translation>放大正常属性的重量贡献 。 此值用于加权正常属性对错误度量表的贡献.</translation>
+        <translation>放大法向属性的重量贡献 。 此值用于加权法向属性对错误度量表的贡献.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36091"/>
@@ -67314,13 +67314,13 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36703"/>
         <source>Feature Edges Region Ids</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - Remoting/Application/Resources/filters_filterscore.xml</extracomment>
-        <translation>地貌边缘区 编号</translation>
+        <translation>Feature Edges Region Ids</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36706"/>
         <source>Generates a region ids cell array. A region is defined as a collection of connected cells with a maximal angle between their normals. Grouping cells into regions is similar to Connectivity filter, while the Normal criteria is similar to Feature Edges computation. Note: Duplicated points may create unexpected regions. It is advised to run a Clean filter to remove them. Warning: FeatureEdgesRegionIds is not implemented for Distributed environment.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - FeatureEdgesRegionIds</extracomment>
-        <translation>生成区域 IDs 单元格数组。 一个区域被定义为一个连接的细胞的集合,在它们的正常之间有一个最大角度. 将单元格分组到区域类似于连通性过滤器,而正常标准类似于地物边缘计算. 注:重复的点可能会产生出乎意料的区域. 建议运行清洁过滤器以移除它们。 警告: 分布环境未执行 。</translation>
+        <translation>生成区域 IDs 单元格数组。 一个区域被定义为一个连接的单元格的集合,在它们的法向之间有一个最大角度. 将单元格分组到区域类似于连通性过滤器,而法向标准类似于地物边缘计算. 注:重复的点可能会产生出乎意料的区域. 建议运行清洁过滤器以移除它们。 警告: 分布环境未执行 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36709"/>
@@ -67344,7 +67344,7 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36721"/>
         <source>The maximum angle between two adjacent cell of a same face.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filterscore.xml - FeatureEdgesRegionIds</extracomment>
-        <translation>同一面部的两个相邻细胞之间的最大角.</translation>
+        <translation>同一面的两个相邻单元格之间的最大角.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="36724"/>
@@ -67422,7 +67422,7 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37831"/>
         <source>This filter applies an axis-aligned affine transformation (translation, scaling, and rotation) .</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - AxisAlignedTransform</extracomment>
-        <translation>此过滤器应用轴对齐的近缘转换( 翻译、 缩放和旋转) 。</translation>
+        <translation>此过滤器应用轴对齐的近缘转换( 平移、 缩放和旋转) 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37834"/>
@@ -67440,7 +67440,7 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37846"/>
         <source>This property specifies the translation vector of the transformation.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - AxisAlignedTransform</extracomment>
-        <translation>此属性指定转换的翻译矢量 。</translation>
+        <translation>此属性指定转换的平移矢量 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37852"/>
@@ -67464,7 +67464,7 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="37918"/>
         <source>The Cell Centers filter places a point at the center of each cell in the input dataset. The center computed is the parametric center of the cell, not necessarily the geometric or bounding box center. The cell attributes of the input will be associated with these newly created points of the output. You have the option of creating a vertex cell per point in the output. This is useful because vertex cells are rendered, but points are not. The points themselves could be used for placing glyphs (using the Glyph filter). The Cell Centers filter takes any type of dataset or a HyperTree Grid as input and produces a polygonal dataset as output.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - CellCenters</extracomment>
-        <translation>单元格中心过滤器在输入数据集中在每个单元格中心放置一个点. 计算中心是单元格的参数中心,不一定是几何或边框中心。 输入的单元格属性将与这些新建的输出点相关联. 您可以选择在输出中每个点创建顶点单元格。 这样做是有用的,因为顶点细胞是被渲染出来的,但点不是. 点本身可用于放置格莱弗(使用格莱弗过滤器). 细胞中心过滤器将任何类型的数据集或HyperTree Grid作为输入,并生成一个多边形数据集作为输出.</translation>
+        <translation>单元格中心过滤器在输入数据集中在每个单元格中心放置一个点. 计算中心是单元格的参数中心,不一定是几何或边框中心。 输入的单元格属性将与这些新建的输出点相关联. 您可以选择在输出中每个点创建顶点单元格。 这样做是有用的,因为顶点单元格是被渲染出来的,但点不是. 点本身可用于放置字形(使用字形过滤器). 单元格中心过滤器将任何类型的数据集或HyperTree Grid作为输入,并生成一个多边形数据集作为输出.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="38194"/>
@@ -67488,7 +67488,7 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39238"/>
         <source>Explode the input DataSet into a composite (PartitionedDataSetCollection) by extracting cells based on a cell scalar iso-value criteria. This is typically useful when the input has some material (or region) ids set on cells. Then the output is a composite, where each partition corresponds to one id. See Connectivity and FeatureEdgesRegionIds filters.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - ExplodeDataSet</extracomment>
-        <translation>将输入的DataSet通过根据细胞的scalar异位值标准提取细胞,将输入的DataSet扩展为复合体(PartitionedDataSetCollection). 当输入在单元格上设置了一些材料(或区域)ID时,这通常有用。 然后输出为复合体,每个分区对应一个ID. 参见Connectivity和FeatureEdgesRegionIds过滤器.</translation>
+        <translation>将输入的DataSet通过根据单元格的scalar异位值标准提取单元格,将输入的DataSet扩展为复合体(PartitionedDataSetCollection). 当输入在单元格上设置了一些材料(或区域)ID时,这通常有用。 然后输出为复合体,每个分区对应一个ID. 参见Connectivity和FeatureEdgesRegionIds过滤器.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39241"/>
@@ -67500,7 +67500,7 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39247"/>
         <source>Expects a DataSet with cell scalars as input.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersgeneral.xml - ExplodeDataSet</extracomment>
-        <translation>期待以单元格缩写为输入的数据集。</translation>
+        <translation>期待以单元格标量为输入的数据集。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="39256"/>
@@ -67542,7 +67542,7 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41218"/>
         <source>HyperTreeGrid Generate Fields</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtershypertree.xml - Remoting/Application/Resources/filters_filtershypertree.xml</extracomment>
-        <translation>HyperTreeGrid 生成字段</translation>
+        <translation>HyperTreeGrid Generate Fields</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="41221"/>
@@ -67644,7 +67644,7 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42010"/>
         <source>This property specifies the string used to describe the hyper tree grid. Use &apos;.&apos; for leaves, &apos;R&apos; for coarse cells, and &apos;|&apos; to separate refinement levels. Prefix root-level trees with digits in distributed server mode to select the rank where they should show up. The number of cells must match the dimension and branch factor specified above. For instance, for dimensions [3,4,1], maximum depth of 2 and branch factor of 2, you can use the string &apos;....R.|....&apos; to define a tree with a single top-level refined cell. To distribute this HTG across 2 server processes, you can use the string &apos;1...0.R.|....&apos;. The first 3 Hyper Trees will be located on MPI rank 1, and the other 3 on the rank 0.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - HyperTreeGridSource</extracomment>
-        <translation>此属性指定用于描述超树格的字符串 。 对叶子使用'.',对粗细胞使用'R',对细细胞使用'|',对精度进行分离. 使用分布式服务器模式中的位数前缀根层树,以选择它们应该显示的级别 。 单元格的数目必须与上面指定的尺寸和分支因子相符. 例如,对于维度[3,4,1],最大深度为2,分支系数为2,您可以使用字符串'.R.Q...''定义一个带有单一顶级精细单元格的树. 要将这个 HTG 分布到 2 个服务器进程, 您可以使用字符串 '1. 0. R. Q...' 。 前3名Hyper Trees将位于MPI1级,其他3名则位于0级.</translation>
+        <translation>此属性指定用于描述超树格的字符串 。 对叶子使用'.',对粗单元格使用'R',对细单元格使用'|',对精度进行分离. 使用分布式服务器模式中的位数前缀根层树,以选择它们应该显示的级别 。 单元格的数目必须与上面指定的尺寸和分支因子相符. 例如,对于维度[3,4,1],最大深度为2,分支系数为2,您可以使用字符串'.R.Q...''定义一个带有单一顶级精细单元格的树. 要将这个 HTG 分布到 2 个服务器进程, 您可以使用字符串 '1. 0. R. Q...' 。 前3名Hyper Trees将位于MPI1级,其他3名则位于0级.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42013"/>
@@ -67668,13 +67668,13 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="42022"/>
         <source>This property specifies the string used to describe the mask of the hyper tree grid. Use &apos;0&apos; for masked cells, &apos;1&apos; for unmasked ones, and &apos;|&apos; to separate refinement levels. The number of cells in the mask must match exactly the number of cells in the descriptor for each level. Refined cells &apos;R&apos; cannot be masked. Using the descriptor from the Descriptor property example, we could use the mask string &apos;010111|1110&apos; to mask 2 top-level cells and 1 cell on the next refinement level.</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_filterssources.xml - HyperTreeGridSource</extracomment>
-        <translation>此属性指定用于描述超树网格遮盖的字符串 。 对蒙面细胞使用'0',对未蒙面细胞使用'1',对未蒙面细胞使用'Q',以分离精度. 口罩中的单元格数量必须准确匹配每个关卡的描述符中的单元格数量. 精炼细胞“ R” 无法蒙蔽 。 使用描述符属性示例的描述符,我们可以使用"0101111+Q1110"的口罩字符串来遮盖下一级格和1个格.</translation>
+        <translation>此属性指定用于描述超树网格遮盖的字符串 。 对蒙面单元格使用'0',对未蒙面单元格使用'1',对未蒙面单元格使用'Q',以分离精度. 口罩中的单元格数量必须准确匹配每个关卡的描述符中的单元格数量. 精炼单元格“ R” 无法蒙蔽 。 使用描述符属性示例的描述符,我们可以使用"0101111+Q1110"的口罩字符串来遮盖下一级格和1个格.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43639"/>
         <source>Cell Quality</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersverdict.xml - Remoting/Application/Resources/filters_filtersverdict.xml</extracomment>
-        <translation>单元格质量</translation>
+        <translation>Cell Quality</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43642"/>
@@ -67686,13 +67686,13 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43645"/>
         <source>This filter creates a new cell array containing a geometric measure of each cell of a mesh. Different quality measures can be chosen for different cell shapes.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersverdict.xml - CellQuality</extracomment>
-        <translation>此过滤器创建了包含网格每个单元格几何测量值的新单元格数组。 不同的细胞形状可以选择不同的质量度量.</translation>
+        <translation>此过滤器创建了包含网格每个单元格几何测量值的新单元格数组。 不同的单元格形状可以选择不同的质量度量.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43648"/>
         <source>Evaluate geometric cell quality.</source>
         <extracomment>Real source: Remoting/Application/Resources/filters_filtersverdict.xml - CellQuality</extracomment>
-        <translation>评估几何细胞的质量。</translation>
+        <translation>评估几何单元格的质量。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43654"/>
@@ -67740,7 +67740,7 @@ Real source: Remoting/Application/Resources/filters_filterscellgrid.xml - CellGr
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43771"/>
         <source>Avmesh Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioavmesh.xml - Remoting/Application/Resources/readers_ioavmesh.xml</extracomment>
-        <translation>Avmesh 阅读器</translation>
+        <translation>Avmesh Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="43777"/>
@@ -67852,7 +67852,7 @@ Real source: Remoting/Application/Resources/writers_iocgns.xml - CGNSWriter</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47920"/>
         <source>GDAL Vector Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_gdal.xml - Remoting/Application/Resources/proxies_gdal.xml</extracomment>
-        <translation>GDAL 矢量阅读器</translation>
+        <translation>GDAL Vector Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47923"/>
@@ -67924,13 +67924,13 @@ Real source: Remoting/Application/Resources/writers_iocgns.xml - CGNSWriter</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47968"/>
         <source>Set whether feature IDs should be generated. Some GDAL primitives (e.g., a polygon with a hole in its interior) are represented by multiple VTK cells. If you wish to identify the primitive responsible for a VTK cell, turn this on. It is off by default for backwards compatibility. The array of feature IDs will be the active cell-data pedigree IDs.</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_gdal.xml - GDALVectorReader</extracomment>
-        <translation>设定是否应该生成特性标识 。 一些GDAL原始体(如内部有孔的多边形)由多个VTK细胞代表. 如果您想要识别一个 VTK 细胞的原始责任, 请打开它 。 默认为反向兼容而关闭 。 特征ID的阵列将是活动细胞数据 pedigree ID.</translation>
+        <translation>设定是否应该生成特性标识 。 一些GDAL原始体(如内部有孔的多边形)由多个VTK单元格表示. 如果您想要识别一个 VTK 单元格的原始责任, 请打开它 。 默认为反向兼容而关闭 。 特征ID的阵列将是活动单元格数据 pedigree ID.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47971"/>
         <source>GDAL Raster Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_gdal.xml - Remoting/Application/Resources/proxies_gdal.xml</extracomment>
-        <translation>GDAL 拉斯特阅读器</translation>
+        <translation>GDAL Raster Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="47974"/>
@@ -67990,7 +67990,7 @@ Real source: Remoting/Application/Resources/writers_iocgns.xml - CGNSWriter</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48019"/>
         <source>LANLX3DReader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_lanlx3d.xml - Remoting/Application/Resources/readers_lanlx3d.xml</extracomment>
-        <translation>LANLX3 雷达</translation>
+        <translation>LANLX3DReader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48025"/>
@@ -68026,7 +68026,7 @@ Real source: Remoting/Application/Resources/writers_iocgns.xml - CGNSWriter</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48043"/>
         <source>PDAL Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_pdal.xml - Remoting/Application/Resources/proxies_pdal.xml</extracomment>
-        <translation>PDAL 阅读器</translation>
+        <translation>PDAL Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48046"/>
@@ -68086,7 +68086,7 @@ Real source: Remoting/Application/Resources/writers_iocgns.xml - CGNSWriter</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48076"/>
         <source>CityGML Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_citygml.xml - Remoting/Application/Resources/proxies_citygml.xml</extracomment>
-        <translation>城市GML 阅读器</translation>
+        <translation>CityGML Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48079"/>
@@ -68110,7 +68110,7 @@ Real source: Remoting/Application/Resources/writers_iocgns.xml - CGNSWriter</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48091"/>
         <source>LOD</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_citygml.xml - CityGML Reader</extracomment>
-        <translation>爆炸物</translation>
+        <translation>LOD</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48094"/>
@@ -68268,7 +68268,7 @@ Real source: Remoting/Application/Resources/readers_iohdf.xml - HDFReader</extra
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48199"/>
         <source>VTKHDF Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iohdf.xml - Remoting/Application/Resources/readers_iohdf.xml</extracomment>
-        <translation>VTKHDF 读取器</translation>
+        <translation>VTKHDF Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48202"/>
@@ -68394,7 +68394,7 @@ Real source: Remoting/Application/Resources/writers_iohdf.xml - VTKHDF</extracom
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48337"/>
         <source>VTKHDF</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_iohdf.xml - Remoting/Application/Resources/writers_iohdf.xml</extracomment>
-        <translation>瓦努阿图</translation>
+        <translation>VTKHDF</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48340"/>
@@ -68406,7 +68406,7 @@ Real source: Remoting/Application/Resources/writers_iohdf.xml - VTKHDF</extracom
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48373"/>
         <source>ERF HDF5 data reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioerf.xml - Remoting/Application/Resources/readers_ioerf.xml</extracomment>
-        <translation>ERF HDF5 数据读取器</translation>
+        <translation>ERF HDF5 data reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48376"/>
@@ -68475,7 +68475,7 @@ Real source: Remoting/Application/Resources/writers_iohdf.xml - VTKHDF</extracom
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48430"/>
         <source>Represent the information property for transient data.</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioerf.xml - ERFReader</extracomment>
-        <translation>代表瞬间数据的信息属性。</translation>
+        <translation>表示瞬间数据的信息属性。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48436"/>
@@ -68487,7 +68487,7 @@ Real source: Remoting/Application/Resources/writers_iohdf.xml - VTKHDF</extracom
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48439"/>
         <source>SegY Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_segy.xml - Remoting/Application/Resources/proxies_segy.xml</extracomment>
-        <translation>SegY 阅读器</translation>
+        <translation>SegY Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48442"/>
@@ -68578,7 +68578,7 @@ Real source: Remoting/Application/Resources/writers_iohdf.xml - VTKHDF</extracom
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48490"/>
         <source>ADIOS2CoreImageReader</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_adios2_core.xml - Remoting/Application/Resources/proxies_adios2_core.xml</extracomment>
-        <translation>ADIOS2 核心图像读取器</translation>
+        <translation>ADIOS2CoreImageReader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48493"/>
@@ -68690,7 +68690,7 @@ Real source: Remoting/Application/Resources/readers_openpmd.xml - OpenPMDReader<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48553"/>
         <source>ADIOS2VTXReader</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_adios2_vtx.xml - Remoting/Application/Resources/proxies_adios2_vtx.xml</extracomment>
-        <translation>ADIOS2VTX 读取器</translation>
+        <translation>ADIOS2VTXReader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48556"/>
@@ -68714,7 +68714,7 @@ Real source: Remoting/Application/Resources/readers_openpmd.xml - OpenPMDReader<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48574"/>
         <source>FidesReader</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_fides.xml - Remoting/Application/Resources/proxies_fides.xml</extracomment>
-        <translation>读取器</translation>
+        <translation>FidesReader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48577"/>
@@ -68840,7 +68840,7 @@ Real source: Remoting/Application/Resources/proxies_fides.xml - FidesJSONReader<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48673"/>
         <source>FidesJSONReader</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_fides.xml - Remoting/Application/Resources/proxies_fides.xml</extracomment>
-        <translation>编辑员JSON阅读器</translation>
+        <translation>FidesJSONReader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48676"/>
@@ -68864,7 +68864,7 @@ Real source: Remoting/Application/Resources/proxies_fides.xml - FidesJSONReader<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48892"/>
         <source>OMFReader</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_omf.xml - Remoting/Application/Resources/proxies_omf.xml</extracomment>
-        <translation>OMF 阅读器</translation>
+        <translation>OMFReader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48895"/>
@@ -68964,7 +68964,7 @@ Real source: Remoting/Application/Resources/writers_iolegacy.xml - PDataSetWrite
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48958"/>
         <source>Writer to write vtkPolyData in a legacy vtk data file. This version is used when running in parallel. It gathers data to first node and saves one file.</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_iolegacy.xml - PDataSetWriterPolyData</extracomment>
-        <translation>将 vtkPolyData 写入遗产 vtk 数据文件的 Writer. 此版本在平行运行时使用. 它收集到第一个节点的数据并保存一个文件.</translation>
+        <translation>将 vtkPolyData 写入旧版 vtk 数据文件的 Writer. 此版本在平行运行时使用. 它收集到第一个节点的数据并保存一个文件.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="48961"/>
@@ -68995,7 +68995,7 @@ Real source: Remoting/Application/Resources/writers_iolegacy.xml - PDataSetWrite
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49183"/>
         <source>AVS UCD Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iogeometry.xml - Remoting/Application/Resources/readers_iogeometry.xml</extracomment>
-        <translation>AVS UCD 读取器</translation>
+        <translation>AVS UCD Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49024"/>
@@ -69050,7 +69050,7 @@ Real source: Remoting/Application/Resources/readers_iocgns.xml - CGNSReader</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49228"/>
         <source>STL Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iogeometry.xml - Remoting/Application/Resources/readers_iogeometry.xml</extracomment>
-        <translation>STL 阅读器</translation>
+        <translation>STL Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49066"/>
@@ -69250,7 +69250,7 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - ParticleRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49261"/>
         <source>BYU Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iogeometry.xml - Remoting/Application/Resources/readers_iogeometry.xml</extracomment>
-        <translation>BYU 阅读器</translation>
+        <translation>BYU Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49264"/>
@@ -69280,7 +69280,7 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - ParticleRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49279"/>
         <source>Wavefront OBJ Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iogeometry.xml - Remoting/Application/Resources/readers_iogeometry.xml</extracomment>
-        <translation>波前 OBJ 阅读器</translation>
+        <translation>Wavefront OBJ Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49282"/>
@@ -69310,7 +69310,7 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - ParticleRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49297"/>
         <source>Object File Format OFF Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iogeometry.xml - Remoting/Application/Resources/readers_iogeometry.xml</extracomment>
-        <translation>对象文件格式关闭阅读器</translation>
+        <translation>Object File Format OFF Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49300"/>
@@ -69340,7 +69340,7 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - ParticleRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49315"/>
         <source>PDB Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iogeometry.xml - Remoting/Application/Resources/readers_iogeometry.xml</extracomment>
-        <translation>PDB 阅读器</translation>
+        <translation>PDB Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49318"/>
@@ -69395,7 +69395,7 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - ParticleRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49366"/>
         <source>Fluent Case Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iogeometry.xml - Remoting/Application/Resources/readers_iogeometry.xml</extracomment>
-        <translation>流利的大小写阅读器</translation>
+        <translation>Fluent Case Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49369"/>
@@ -69414,7 +69414,7 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - ParticleRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49399"/>
         <source>proSTAR (STARCD) Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iogeometry.xml - Remoting/Application/Resources/readers_iogeometry.xml</extracomment>
-        <translation>ProSTAR (STARCD) 读取器</translation>
+        <translation>proSTAR (STARCD) Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49402"/>
@@ -69445,7 +69445,7 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - ParticleRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49423"/>
         <source>Tecplot Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iogeometry.xml - Remoting/Application/Resources/readers_iogeometry.xml</extracomment>
-        <translation>Tecplot 阅读器</translation>
+        <translation>Tecplot Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49426"/>
@@ -69475,7 +69475,7 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - ParticleRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49459"/>
         <source>WindBlade reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iogeometry.xml - Remoting/Application/Resources/readers_iogeometry.xml</extracomment>
-        <translation>风标读取器</translation>
+        <translation>WindBlade reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49462"/>
@@ -69517,13 +69517,13 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - ParticleRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49492"/>
         <source>PTS Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iogeometry.xml - Remoting/Application/Resources/readers_iogeometry.xml</extracomment>
-        <translation>PTS 阅读器</translation>
+        <translation>PTS Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49495"/>
         <source>The PTS reader reads ASCII PTS Point Cloud files containing points as well as optional intensity and color information. The default file extension is .pts. This reader produces a polydata set of a single vertex cell containing all of the points.</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iogeometry.xml - PTSReader</extracomment>
-        <translation>PTS阅读器读取ASCII PTS Point Cloud文件,其中包含点以及可选的强度和颜色信息. 默认文件扩展名为.pts. 这个读取器生成一个包含所有点的单顶点细胞的多数据组.</translation>
+        <translation>PTS阅读器读取ASCII PTS Point Cloud文件,其中包含点以及可选的强度和颜色信息. 默认文件扩展名为.pts. 这个读取器生成一个包含所有点的单顶点单元格的多数据组.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49498"/>
@@ -69595,7 +69595,7 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - ParticleRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49534"/>
         <source>Particles Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iogeometry.xml - Remoting/Application/Resources/readers_iogeometry.xml</extracomment>
-        <translation>文章阅读器</translation>
+        <translation>Particles Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49537"/>
@@ -69619,7 +69619,7 @@ Real source: Remoting/Application/Resources/readers_iogeometry.xml - ParticleRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49576"/>
         <source>glTF Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iogeometry.xml - Remoting/Application/Resources/readers_iogeometry.xml</extracomment>
-        <translation>glTF 读取器</translation>
+        <translation>glTF Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49579"/>
@@ -69731,7 +69731,7 @@ Real source: Remoting/Application/Resources/writers_iogeometry.xml - PSTLWriter<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49657"/>
         <source>Writer to write polygonal data in Wavefront OBJ format. Written files contain the geometry including lines, triangles and polygons. Normals and texture coordinates on points are also written if they exist. This version is used when running in parallel. It gathers data to first node and saves one file.</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_iogeometry.xml - POBJWriter</extracomment>
-        <translation>用Wavefront OBJ格式写入多边形数据的 Writer. 书面文件包含几何形状,包括线条,三角形和多边形. 点上的正常和纹理坐标如果存在,也会被写入. 此版本在平行运行时使用. 它收集到第一个节点的数据并保存一个文件.</translation>
+        <translation>用Wavefront OBJ格式写入多边形数据的 Writer. 书面文件包含几何形状,包括线条,三角形和多边形. 点上的法向和纹理坐标如果存在,也会被写入. 此版本在平行运行时使用. 它收集到第一个节点的数据并保存一个文件.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49687"/>
@@ -69776,7 +69776,7 @@ Real source: Remoting/Application/Resources/writers_iogeometry.xml - PSTLWriter<
         <extracomment>Real source: Remoting/Application/Resources/readers_ioply.xml - PLYReaderCore
 ----------
 Real source: Remoting/Application/Resources/readers_ioply.xml - PLYReader</extracomment>
-        <translation>面部纹理复制点</translation>
+        <translation>面纹理复制点</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49753"/>
@@ -69791,7 +69791,7 @@ Real source: Remoting/Application/Resources/readers_ioply.xml - PLYReader</extra
         <extracomment>Real source: Remoting/Application/Resources/readers_ioply.xml - PLYReaderCore
 ----------
 Real source: Remoting/Application/Resources/readers_ioply.xml - PLYReader</extracomment>
-        <translation>面质容忍</translation>
+        <translation>面质容差</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49759"/>
@@ -69803,7 +69803,7 @@ Real source: Remoting/Application/Resources/readers_ioply.xml - PLYReader</extra
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49762"/>
         <source>PLY Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioply.xml - Remoting/Application/Resources/readers_ioply.xml</extracomment>
-        <translation>PLY 阅读器</translation>
+        <translation>PLY Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49765"/>
@@ -69828,7 +69828,7 @@ Real source: Remoting/Application/Resources/readers_ioply.xml - PLYReader</extra
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49816"/>
         <source>Legacy VTK Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioparallel.xml - Remoting/Application/Resources/readers_ioparallel.xml</extracomment>
-        <translation>遗产 VTK 阅读器</translation>
+        <translation>Legacy VTK Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49801"/>
@@ -69870,7 +69870,7 @@ Real source: Remoting/Application/Resources/readers_ioparallel.xml - LegacyVTKFi
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49846"/>
         <source>Partitioned Legacy VTK Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioparallel.xml - Remoting/Application/Resources/readers_ioparallel.xml</extracomment>
-        <translation>分割的遗产 VTK 阅读器</translation>
+        <translation>Partitioned Legacy VTK Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49849"/>
@@ -69894,7 +69894,7 @@ Real source: Remoting/Application/Resources/readers_ioparallel.xml - LegacyVTKFi
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49861"/>
         <source>This property specifies the file name for the Partitioned Legacy VTK reader.</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioparallel.xml - pvtkfile</extracomment>
-        <translation>此属性指定分割的遗产阅读器的文件名 。</translation>
+        <translation>此属性指定分区式 Legacy VTK 阅读器的文件名。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="49864"/>
@@ -70115,7 +70115,7 @@ Real source: Remoting/Application/Resources/readers_ioparallel.xml - Nek5000Read
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50002"/>
         <source>Read point/face/cell-Zones?</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioparallel.xml - OpenFOAMReader</extracomment>
-        <translation>读点/面/细胞区域?</translation>
+        <translation>读点/面/单元格区域?</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50005"/>
@@ -70193,7 +70193,7 @@ Real source: Remoting/Application/Resources/readers_ioparallel.xml - Nek5000Read
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50065"/>
         <source>PLOT3D Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioparallel.xml - Remoting/Application/Resources/readers_ioparallel.xml</extracomment>
-        <translation>POT3D 读取器</translation>
+        <translation>PLOT3D Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50068"/>
@@ -70367,7 +70367,7 @@ Real source: Remoting/Application/Resources/readers_ioparallel.xml - Nek5000Read
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50173"/>
         <source>PLOT3D Meta-File Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioparallel.xml - Remoting/Application/Resources/readers_ioparallel.xml</extracomment>
-        <translation>PLOT3D 元文件阅读器</translation>
+        <translation>PLOT3D Meta-File Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50176"/>
@@ -70604,7 +70604,7 @@ Real source: Remoting/Application/Resources/readers_ioparallel.xml - Nek5000Read
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50428"/>
         <source>CSV Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioinfovis.xml - Remoting/Application/Resources/readers_ioinfovis.xml</extracomment>
-        <translation>CSV 读取器</translation>
+        <translation>CSV Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50353"/>
@@ -70776,7 +70776,7 @@ Real source: Remoting/Application/Resources/readers_ioinfovis.xml - CSVReader</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50485"/>
         <source>Tecplot Table Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iotecplottable.xml - Remoting/Application/Resources/readers_iotecplottable.xml</extracomment>
-        <translation>Tecplot 表格阅读器</translation>
+        <translation>Tecplot Table Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50488"/>
@@ -70842,13 +70842,13 @@ Real source: Remoting/Application/Resources/readers_ioinfovis.xml - CSVReader</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50524"/>
         <source>VPIC Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iovpic.xml - Remoting/Application/Resources/readers_iovpic.xml</extracomment>
-        <translation>VPIC 阅读器</translation>
+        <translation>VPIC Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50527"/>
         <source>VPIC is a 3D kinetic plasma particle-in-cell simulation. The input file (.vpc) opened by the VPIC reader is an ASCII description of the data files which are written one file per processor, per category and per time step. These are arranged in subdirectories per category (field data and hydrology data) and then in time step subdirectories. This is a distributed reader.</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iovpic.xml - VPICReader</extracomment>
-        <translation>VPIC是一种3D动等离子体在细胞中的粒子模拟. VPIC阅读器打开的输入文件(.vpc)是对数据文件的ASCII描述,数据文件是每个处理器,每个类别和每个时间步写一个文件. 这些分类按类别(实地数据和水文数据)排列,然后按时步子分类。 这是一个分布式的读者。</translation>
+        <translation>VPIC是一种3D动等离子体在单元格中的粒子模拟. VPIC阅读器打开的输入文件(.vpc)是对数据文件的ASCII描述,数据文件是每个处理器,每个类别和每个时间步写一个文件. 这些分类按类别(实地数据和水文数据)排列,然后按时步子分类。 这是一个分布式的读者。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50530"/>
@@ -70919,7 +70919,7 @@ Real source: Remoting/Application/Resources/readers_ioinfovis.xml - CSVReader</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50587"/>
         <source>VPIC data is written one file per simulation processor. This coarse map of files is used in partitioning files between visualizing processors so that each ParaView processor has its own set of files to display. Ghost cell overlap is handled within the reader. To limit the View of VPIC information the extent in the X dimension of \&quot;files\&quot; can be specified. Only the files selected will be displayed and they will be partitioned between the visualizing processors, allowing a higher resolution over a smaller area.</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iovpic.xml - VPICReader</extracomment>
-        <translation>VPIC数据每个模拟处理器写一个文件. 这种粗糙的文件映射被用于可视化处理器之间的分区文件,这样每个ParaView处理器都有自己的一组文件要显示. 鬼细胞重叠在阅读器内部处理. 为了限制VPIC信息的视图,可以指定\'files\'的X维度. 只有选中的文件才会被显示,它们会被分割到可视化处理器之间,这样就可以在一个较小的区域上得到更高的分辨率.</translation>
+        <translation>VPIC数据每个模拟处理器写一个文件. 这种粗糙的文件映射被用于可视化处理器之间的分区文件,这样每个ParaView处理器都有自己的一组文件要显示. 鬼单元格重叠在阅读器内部处理. 为了限制VPIC信息的视图,可以指定\'files\'的X维度. 只有选中的文件才会被显示,它们会被分割到可视化处理器之间,这样就可以在一个较小的区域上得到更高的分辨率.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50590"/>
@@ -70931,7 +70931,7 @@ Real source: Remoting/Application/Resources/readers_ioinfovis.xml - CSVReader</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50596"/>
         <source>VPIC data is written one file per simulation processor. This coarse map of files is used in partitioning files between visualizing processors so that each ParaView processor has its own set of files to display. Ghost cell overlap is handled within the reader. To limit the View of VPIC information the extent in the Y dimension of \&quot;files\&quot; can be specified. Only the files selected will be displayed and they will be partitioned between the visualizing processors, allowing a higher resolution over a smaller area.</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iovpic.xml - VPICReader</extracomment>
-        <translation>VPIC数据每个模拟处理器写一个文件. 这种粗糙的文件映射被用于可视化处理器之间的分区文件,这样每个ParaView处理器都有自己的一组文件要显示. 鬼细胞重叠在阅读器内部处理. 为了限制VPIC信息的视图,可以指定\'files\'的Y维度范围. 只有选中的文件才会被显示,它们会被分割到可视化处理器之间,这样就可以在一个较小的区域上得到更高的分辨率.</translation>
+        <translation>VPIC数据每个模拟处理器写一个文件. 这种粗糙的文件映射被用于可视化处理器之间的分区文件,这样每个ParaView处理器都有自己的一组文件要显示. 鬼单元格重叠在阅读器内部处理. 为了限制VPIC信息的视图,可以指定\'files\'的Y维度范围. 只有选中的文件才会被显示,它们会被分割到可视化处理器之间,这样就可以在一个较小的区域上得到更高的分辨率.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50599"/>
@@ -70943,13 +70943,13 @@ Real source: Remoting/Application/Resources/readers_ioinfovis.xml - CSVReader</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50605"/>
         <source>VPIC data is written one file per simulation processor. This coarse map of files is used in partitioning files between visualizing processors so that each ParaView processor has its own set of files to display. Ghost cell overlap is handled within the reader. To limit the View of VPIC information the extent in the Z dimension of \&quot;files\&quot; can be specified. Only the files selected will be displayed and they will be partitioned between the visualizing processors, allowing a higher resolution over a smaller area.</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iovpic.xml - VPICReader</extracomment>
-        <translation>VPIC数据每个模拟处理器写一个文件. 这种粗糙的文件映射被用于可视化处理器之间的分区文件,这样每个ParaView处理器都有自己的一组文件要显示. 鬼细胞重叠在阅读器内部处理. 为了限制VPIC信息的视图,可以指定\'files\'的Z维度. 只有选中的文件才会被显示,它们会被分割到可视化处理器之间,这样就可以在一个较小的区域上得到更高的分辨率.</translation>
+        <translation>VPIC数据每个模拟处理器写一个文件. 这种粗糙的文件映射被用于可视化处理器之间的分区文件,这样每个ParaView处理器都有自己的一组文件要显示. 鬼单元格重叠在阅读器内部处理. 为了限制VPIC信息的视图,可以指定\'files\'的Z维度. 只有选中的文件才会被显示,它们会被分割到可视化处理器之间,这样就可以在一个较小的区域上得到更高的分辨率.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50608"/>
         <source>TRUCHAS Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iotruchas.xml - Remoting/Application/Resources/readers_iotruchas.xml</extracomment>
-        <translation>TRUCHAS 阅读器</translation>
+        <translation>TRUCHAS Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50611"/>
@@ -71085,7 +71085,7 @@ Real source: Remoting/Application/Resources/readers_ioinfovis.xml - CSVReader</e
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50776"/>
         <source>HDF5 Rage Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioh5rage.xml - Remoting/Application/Resources/readers_ioh5rage.xml</extracomment>
-        <translation>HDF5 Rage 阅读器</translation>
+        <translation>HDF5 Rage Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50782"/>
@@ -71121,7 +71121,7 @@ Real source: Remoting/Application/Resources/readers_iopio.xml - PIOReader</extra
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50809"/>
         <source>PIO Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iopio.xml - Remoting/Application/Resources/readers_iopio.xml</extracomment>
-        <translation>PIO 阅读器</translation>
+        <translation>PIO Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="50812"/>
@@ -71458,13 +71458,13 @@ Real source: Remoting/Application/Resources/readers_iocgns.xml - CGNSSeriesReade
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51043"/>
         <source>Caching Mesh Points</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iocgns.xml - CGNSReader</extracomment>
-        <translation>缓存网点</translation>
+        <translation>缓存网格</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51046"/>
         <source>Toggle whether to cache mesh points. If unchecked, mesh coordinates are read at every time step. If checked, mesh coordinates are store in the cache. When loading a new iteration, the mesh coordinates will be retrieved from the cache. Changing this property may impact the loading performance.</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iocgns.xml - CGNSReader</extracomment>
-        <translation>切换是否缓存网点 。 如果不加节制,网格坐标会在每个步骤读取. 如果选中, 网格坐标会存储在缓存中 。 当加载新的迭代时, 网格坐标将从缓存中提取 。 更改此属性可能影响加载性能 。</translation>
+        <translation>切换是否缓存网格 。 如果不加节制,网格坐标会在每个步骤读取. 如果选中, 网格坐标会存储在缓存中 。 当加载新的迭代时, 网格坐标将从缓存中提取 。 更改此属性可能影响加载性能 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51049"/>
@@ -71543,7 +71543,7 @@ Real source: Remoting/Application/Resources/readers_iocgns.xml - CGNSSeriesReade
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51238"/>
         <source>CONVERGECFD CGNS Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iocgns.xml - Remoting/Application/Resources/readers_iocgns.xml</extracomment>
-        <translation>CGNS 阅读器</translation>
+        <translation>CONVERGECFD CGNS Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51088"/>
@@ -71573,13 +71573,13 @@ Real source: Remoting/Application/Resources/readers_iocgns.xml - CONVERGECFDCGNS
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51109"/>
         <source>Available mesh point variables.</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iocgns.xml - CONVERGECFDCGNSReaderCore</extracomment>
-        <translation>可用的网点变量 。</translation>
+        <translation>可用的网格变量 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51136"/>
         <source>CGNS Series Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iocgns.xml - Remoting/Application/Resources/readers_iocgns.xml</extracomment>
-        <translation>CGNS系列阅读器</translation>
+        <translation>CGNS Series Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51139"/>
@@ -71684,7 +71684,7 @@ Real source: Remoting/Application/Resources/readers_iofluentcff.xml - FLUENTCFFR
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51328"/>
         <source>Fluent CFF Case Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iofluentcff.xml - Remoting/Application/Resources/readers_iofluentcff.xml</extracomment>
-        <translation>流利的 CFF 语言 大小写阅读器</translation>
+        <translation>Fluent CFF Case Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51331"/>
@@ -71753,7 +71753,7 @@ Real source: Remoting/Application/Resources/writers_iocgns.xml - CGNSWriter</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51430"/>
         <source>CGNS</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_iocgns.xml - Remoting/Application/Resources/writers_iocgns.xml</extracomment>
-        <translation>地名委员会</translation>
+        <translation>CGNS</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51433"/>
@@ -71765,7 +71765,7 @@ Real source: Remoting/Application/Resources/writers_iocgns.xml - CGNSWriter</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51700"/>
         <source>3D Text</source>
         <extracomment>Real source: Remoting/Application/Resources/sources_renderingfreetype.xml - Remoting/Application/Resources/sources_renderingfreetype.xml</extracomment>
-        <translation>3D 文本</translation>
+        <translation>3D Text</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51703"/>
@@ -71843,7 +71843,7 @@ Real source: Remoting/Application/Resources/writers_iocgns.xml - CGNSWriter</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51742"/>
         <source>Projection Normal</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_interactionwidgets.xml - BoundedPlanePointPlacer</extracomment>
-        <translation>常规投影</translation>
+        <translation>法向投影</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51745"/>
@@ -71886,7 +71886,7 @@ Real source: Remoting/Application/Resources/writers_iocgns.xml - CGNSWriter</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51820"/>
         <source>IOSS Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioioss.xml - Remoting/Application/Resources/readers_ioioss.xml</extracomment>
-        <translation>IOSS 阅读器</translation>
+        <translation>IOSS Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51823"/>
@@ -72057,7 +72057,7 @@ Real source: Remoting/Application/Resources/readers_iofds.xml - FDSReader</extra
         <location filename="../build/translationSourcesparaview_server_manager.h" line="52261"/>
         <source>Face Blocks Id Info</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSReader</extracomment>
-        <translation>面部块 Id 信息</translation>
+        <translation>面块 Id 信息</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51898"/>
@@ -72189,14 +72189,14 @@ Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51961"/>
         <source>Face Block Field Info</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSReader</extracomment>
-        <translation>面部块字段信息</translation>
+        <translation>面块字段信息</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51958"/>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="52279"/>
         <source>Face Block Fields</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSReader</extracomment>
-        <translation>面部块字段</translation>
+        <translation>面块字段</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="51964"/>
@@ -72343,7 +72343,7 @@ Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridRea
         <extracomment>Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSReader
 ----------
 Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridReader</extracomment>
-        <translation>面部设置 Id 信息</translation>
+        <translation>面设置 Id 信息</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="52027"/>
@@ -72507,7 +72507,7 @@ Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridRea
         <extracomment>Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSReader
 ----------
 Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridReader</extracomment>
-        <translation>面部设置字段信息</translation>
+        <translation>面设置字段信息</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="52093"/>
@@ -72518,7 +72518,7 @@ Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridRea
         <extracomment>Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSReader
 ----------
 Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridReader</extracomment>
-        <translation>面部设置字段</translation>
+        <translation>面设置字段</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="52099"/>
@@ -72527,7 +72527,7 @@ Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridRea
         <extracomment>Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSReader
 ----------
 Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridReader</extracomment>
-        <translation>选择要读取的面部设置字段/ 数组 。</translation>
+        <translation>选择要读取的面设置字段/ 数组 。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="52102"/>
@@ -72995,13 +72995,13 @@ Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53119"/>
         <source>Face Set Selectors</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_ioioss.xml - IOSSWriter</extracomment>
-        <translation>面部设置选择器</translation>
+        <translation>面设置选择器</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53095"/>
         <source>Specify the face sets selectors for the data assembly chosen using **Assembly** to choose the blocks to write from the input dataset.</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_ioioss.xml - IOSSWriter</extracomment>
-        <translation>指定使用 **Assembly ** 选择从输入数据集中写入的块时选择的数据组的面部集选择器。</translation>
+        <translation>指定使用 **Assembly ** 选择从输入数据集中写入的块时选择的数据组的面集选择器。</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53110"/>
@@ -73095,7 +73095,7 @@ Real source: Remoting/Application/Resources/readers_ioioss.xml - IOSSCellGridRea
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53218"/>
         <source>If input is transformed, e.g. through clipping, new element blocks may be created. This flag can be used to indicate whether to preserve the original ids from blocks or not.</source>
         <extracomment>Real source: Remoting/Application/Resources/writers_ioioss.xml - IOSSWriter</extracomment>
-        <translation>如果输入被转换,例如通过剪辑,可以创建新的元素块. 这个旗帜可以用来表示是否从块中保留原始的ID.</translation>
+        <translation>如果输入被转换,例如通过裁剪,可以创建新的元素块. 这个旗帜可以用来表示是否从块中保留原始的ID.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53221"/>
@@ -73140,7 +73140,7 @@ Real source: Remoting/Application/Resources/writers_ioioss.xml - IOSSWriter</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53269"/>
         <source>Conduit</source>
         <extracomment>Real source: Remoting/Application/Resources/proxies_conduit.xml - Remoting/Application/Resources/proxies_conduit.xml</extracomment>
-        <translation>管道</translation>
+        <translation>Conduit</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53272"/>
@@ -73152,7 +73152,7 @@ Real source: Remoting/Application/Resources/writers_ioioss.xml - IOSSWriter</ext
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53281"/>
         <source>FDS Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_iofds.xml - Remoting/Application/Resources/readers_iofds.xml</extracomment>
-        <translation>FDS 阅读器</translation>
+        <translation>FDS Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53284"/>
@@ -73197,7 +73197,7 @@ Real source: Remoting/Application/Resources/readers_savg.xml - SAVGReader</extra
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53413"/>
         <source>SAVG Reader</source>
         <extracomment>Real source: Remoting/Application/Resources/readers_savg.xml - Remoting/Application/Resources/readers_savg.xml</extracomment>
-        <translation>SAVG 读取器</translation>
+        <translation>SAVG Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53416"/>
@@ -73222,7 +73222,7 @@ Real source: Remoting/Application/Resources/readers_savg.xml - SAVGReader</extra
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53494"/>
         <source>Unstructured NetCDF POP reader</source>
         <extracomment>Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - VTKExtensions/IOGeneral/Resources/general_readers.xml</extracomment>
-        <translation>无结构的 NetCDF 持久性有机污染物读取器</translation>
+        <translation>Unstructured NetCDF POP reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53437"/>
@@ -73267,7 +73267,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - Unstructure
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53470"/>
         <source>Phasta Reader</source>
         <extracomment>Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - VTKExtensions/IOGeneral/Resources/general_readers.xml</extracomment>
-        <translation>法斯塔阅读器</translation>
+        <translation>Phasta Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53473"/>
@@ -73303,7 +73303,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - Unstructure
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53533"/>
         <source>VRML Reader</source>
         <extracomment>Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - VTKExtensions/IOGeneral/Resources/general_readers.xml</extracomment>
-        <translation>VRML 阅读器</translation>
+        <translation>VRML Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53536"/>
@@ -73376,7 +73376,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - Unstructure
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53587"/>
         <source>BDF Reader</source>
         <extracomment>Real source: VTKExtensions/IOGeneral/Resources/general_readers.xml - VTKExtensions/IOGeneral/Resources/general_readers.xml</extracomment>
-        <translation>BDF 阅读器</translation>
+        <translation>BDF Reader</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53590"/>
@@ -73439,7 +73439,7 @@ Real source: VTKExtensions/IOGeneral/Resources/general_writers.xml - PPLYWriter<
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53644"/>
         <source>Writer to write polygonal data in Stanford University PLY format. The data can be written in either binary (little or big endian) or ASCII representation. As for PointData and CellData, vtkPLYWriter cannot handle normals or vectors. It only handles RGB PointData and CellData. This version is used when running in parallel. It gathers data to first node and saves one file.</source>
         <extracomment>Real source: VTKExtensions/IOGeneral/Resources/general_writers.xml - PPLYWriter</extracomment>
-        <translation>用斯坦福大学PLY格式写多边形数据的作家. 数据可以用二进制(小的或大的endian)或ASCII代表书写. 至于PointData和CellData,vtkPLYWriter无法处理正常或向量. 它只处理RGB PointData和CellData. 此版本在平行运行时使用. 它收集到第一个节点的数据并保存一个文件.</translation>
+        <translation>用斯坦福大学PLY格式写多边形数据的作家. 数据可以用二进制(小的或大的endian)或ASCII表示书写. 至于PointData和CellData,vtkPLYWriter无法处理正常或向量. 它只处理RGB PointData和CellData. 此版本在平行运行时使用. 它收集到第一个节点的数据并保存一个文件.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53707"/>
@@ -73536,7 +73536,7 @@ Real source: Remoting/Export/Resources/exporters.xml - WebExporter</extracomment
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53725"/>
         <source>Proxy used to connect to Catalyst CoProcessor for live-data visualization.</source>
         <extracomment>Real source: Remoting/Live/Resources/live_utilities.xml - LiveInsituLink</extracomment>
-        <translation>代理机用于连接到催化器CoProcessor用于实时数据可视化.</translation>
+        <translation>代理机用于连接到Catalyst器CoProcessor用于实时数据可视化.</translation>
     </message>
     <message>
         <location filename="../build/translationSourcesparaview_server_manager.h" line="53728"/>

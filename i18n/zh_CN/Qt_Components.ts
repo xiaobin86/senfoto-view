@@ -44,7 +44,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="66"/>
         <source>sin</source>
-        <translation>正弦</translation>
+        <translation>sin</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="82"/>
@@ -54,7 +54,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="85"/>
         <source>asin</source>
-        <translation>作为</translation>
+        <translation>asin</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="101"/>
@@ -64,7 +64,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="104"/>
         <source>sinh</source>
-        <translation>银色</translation>
+        <translation>sinh</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="120"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="123"/>
         <source>dot</source>
-        <translation>点</translation>
+        <translation>dot</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="146"/>
@@ -94,7 +94,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="168"/>
         <source>cos</source>
-        <translation>因为</translation>
+        <translation>cos</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="184"/>
@@ -104,7 +104,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="187"/>
         <source>acos</source>
-        <translation>轴</translation>
+        <translation>acos</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="203"/>
@@ -114,7 +114,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="206"/>
         <source>cosh</source>
-        <translation>缩写</translation>
+        <translation>cosh</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="222"/>
@@ -124,7 +124,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="225"/>
         <source>mag</source>
-        <translation>弹匣</translation>
+        <translation>mag</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="245"/>
@@ -144,7 +144,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="267"/>
         <source>tan</source>
-        <translation>棕褐色</translation>
+        <translation>tan</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="283"/>
@@ -154,7 +154,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="286"/>
         <source>atan</source>
-        <translation>亚安</translation>
+        <translation>atan</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="302"/>
@@ -164,7 +164,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="305"/>
         <source>tanh</source>
-        <translation>谭赫</translation>
+        <translation>tanh</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="321"/>
@@ -174,7 +174,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="324"/>
         <source>norm</source>
-        <translation>规范</translation>
+        <translation>norm</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="344"/>
@@ -184,7 +184,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="347"/>
         <source>iHat</source>
-        <translation>i 发音</translation>
+        <translation>iHat</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="363"/>
@@ -194,7 +194,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="366"/>
         <source>abs</source>
-        <translation>a 个</translation>
+        <translation>abs</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="382"/>
@@ -204,7 +204,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="385"/>
         <source>ceil</source>
-        <translation>钉子</translation>
+        <translation>ceil</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="401"/>
@@ -224,7 +224,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="423"/>
         <source>ln</source>
-        <translation>进去</translation>
+        <translation>ln</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="443"/>
@@ -234,7 +234,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="446"/>
         <source>jHat</source>
-        <translation>日发</translation>
+        <translation>jHat</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="462"/>
@@ -244,7 +244,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="465"/>
         <source>sqrt</source>
-        <translation>鼠标</translation>
+        <translation>sqrt</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="481"/>
@@ -254,7 +254,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="484"/>
         <source>floor</source>
-        <translation>楼层</translation>
+        <translation>floor</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="500"/>
@@ -264,7 +264,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="503"/>
         <source>exp</source>
-        <translation>执行</translation>
+        <translation>exp</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="519"/>
@@ -274,7 +274,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="522"/>
         <source>log10</source>
-        <translation>对数10</translation>
+        <translation>log10</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="542"/>
@@ -284,7 +284,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="545"/>
         <source>kHat</source>
-        <translation>k 发音</translation>
+        <translation>kHat</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="561"/>
@@ -334,7 +334,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="640"/>
         <source>Scalars</source>
-        <translation>斯卡尔</translation>
+        <translation>标量</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCalculatorWidget.ui" line="650"/>
@@ -372,7 +372,7 @@
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraKeyFrameWidget.ui" line="53"/>
         <source>Up Direction</source>
-        <translation>前进方向</translation>
+        <translation>上方向</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraKeyFrameWidget.ui" line="71"/>
@@ -386,7 +386,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:9pt; font-weight:600;&quot;&gt;Define Camera Parameters&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Helvetica&apos;; font-size:9pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:9pt;&quot;&gt;Using the left pane, edit the path followed by the camera&apos;s position and focal point for the keyframe being edited.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt; &lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;p, li { 白- 空格 : pre- wrap;}&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;"&gt; &lt;table border="0" style="-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;"&gt; &lt;tr&gt; &lt;td style="border: none;"&gt; &lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Helvetica'; font-size:9pt; font-weight:600;"&gt;定义相机参数&lt;/span&gt;&lt;/p&gt; &lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Helvetica'; font-size:9pt; font-weight:600;"&gt;&lt;br /&gt;&lt;/p&gt; &lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Helvetica'; font-size:9pt;"&gt;使用左窗格,编辑正在编辑的密钥框所遵循的路径,以及相机位置和焦点.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt; &lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;p, li { white-space : pre- wrap;}&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;"&gt; &lt;table border="0" style="-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;"&gt; &lt;tr&gt; &lt;td style="border: none;"&gt; &lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Helvetica'; font-size:9pt; font-weight:600;"&gt;定义相机参数&lt;/span&gt;&lt;/p&gt; &lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Helvetica'; font-size:9pt; font-weight:600;"&gt;&lt;br /&gt;&lt;/p&gt; &lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Helvetica'; font-size:9pt;"&gt;使用左窗格,编辑正在编辑的关键帧所遵循的路径,以及相机位置和焦点.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraKeyFrameWidget.ui" line="94"/>
@@ -401,22 +401,22 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraKeyFrameWidget.ui" line="185"/>
         <source>Position</source>
-        <translation>立场</translation>
+        <translation>位置</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraKeyFrameWidget.ui" line="201"/>
         <source>Focal Point</source>
-        <translation>联络点</translation>
+        <translation>焦点</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraKeyFrameWidget.ui" line="217"/>
         <source>View Up</source>
-        <translation>向上查看</translation>
+        <translation>视图向上</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraKeyFrameWidget.ui" line="233"/>
         <source>View Angle</source>
-        <translation>查看角度</translation>
+        <translation>视角</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraKeyFrameWidget.ui" line="240"/>
@@ -790,7 +790,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/Components/Resources/UI/pqMultiBlockInspectorWidget.ui" line="158"/>
         <source>State Legend:</source>
-        <translation>州图例:</translation>
+        <translation>状态图例：</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqMultiBlockInspectorWidget.ui" line="186"/>
@@ -800,37 +800,37 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/Components/Resources/UI/pqMultiBlockInspectorWidget.ui" line="216"/>
         <source>At least one property is inherited from the representation.</source>
-        <translation>至少从代表处继承一项财产。</translation>
+        <translation>至少从表示处继承一项财产。</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqMultiBlockInspectorWidget.ui" line="246"/>
         <source>At least one property is inherited from block(s).</source>
-        <translation>至少一项财产从区块继承。</translation>
+        <translation>至少一项属性从区块继承。</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqMultiBlockInspectorWidget.ui" line="276"/>
         <source>At least one property is inherited from block(s) and the representation.</source>
-        <translation>至少从区块和代表中继承一项财产。</translation>
+        <translation>至少从区块和表示中继承一项财产。</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqMultiBlockInspectorWidget.ui" line="306"/>
         <source>At least one property is set in block(s).</source>
-        <translation>至少将一个财产设置在区块中。</translation>
+        <translation>至少将一个属性设置在区块中。</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqMultiBlockInspectorWidget.ui" line="336"/>
         <source>At least one property is set in block(s) and inherited from the representation.</source>
-        <translation>至少有一项财产被划为区块,从代表处继承。</translation>
+        <translation>至少有一项财产被划为区块,从表示处继承。</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqMultiBlockInspectorWidget.ui" line="366"/>
         <source>At least one property is set in block(s) and inherited from block(s).</source>
-        <translation>至少有一项财产被设定为区块,并从区块继承.</translation>
+        <translation>至少有一项属性被设定为区块,并从区块继承.</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqMultiBlockInspectorWidget.ui" line="396"/>
         <source>At least one property is set in block(s) and inherited from block(s) and the representation.</source>
-        <translation>至少一项财产以区块形式设置,从区块和代表形式继承。</translation>
+        <translation>至少一项财产以区块形式设置,从区块和表示形式继承。</translation>
     </message>
 </context>
 <context>
@@ -853,12 +853,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/Components/Resources/UI/pqOrbitCreatorDialog.ui" line="44"/>
         <source>Normal</source>
-        <translation>常规</translation>
+        <translation>法向</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqOrbitCreatorDialog.ui" line="60"/>
         <source>Origin</source>
-        <translation>来源</translation>
+        <translation>原点</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqOrbitCreatorDialog.ui" line="94"/>
@@ -889,7 +889,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../Qt/Components/pqDisplayRepresentationWidget.cxx" line="46"/>
         <source>Change representation type</source>
-        <translation>更改代表类型</translation>
+        <translation>更改表示类型</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqDisplayColorWidget.cxx" line="132"/>
@@ -948,12 +948,12 @@ Click Apply or show the data to refresh.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqProxyInformationWidget.ui" line="229"/>
         <source>Assembly</source>
-        <translation>大会</translation>
+        <translation>装配</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqProxyInformationWidget.ui" line="272"/>
         <source>Assembly shown here</source>
-        <translation>在此显示大会</translation>
+        <translation>在此显示装配</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqProxyInformationWidget.ui" line="286"/>
@@ -1112,7 +1112,7 @@ Click Apply or show the data to refresh.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqProxyWidgetDialog.ui" line="136"/>
         <source>&amp;OK</source>
-        <translation>K级(&amp;O)</translation>
+        <translation>确定(&amp;O)</translation>
     </message>
 </context>
 <context>
@@ -1120,7 +1120,7 @@ Click Apply or show the data to refresh.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqPythonAnimationCue.ui" line="16"/>
         <source>Edit Python Animation Track</source>
-        <translation>编辑 Python 动画音轨</translation>
+        <translation>编辑 Python 动画轨道</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqPythonAnimationCue.ui" line="22"/>
@@ -1352,7 +1352,7 @@ Click Apply or show the data to refresh.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqRescaleScalarRangeToDataOverTimeDialog.ui" line="116"/>
         <source>Ok</source>
-        <translation>还好</translation>
+        <translation>确定</translation>
     </message>
 </context>
 <context>
@@ -1445,7 +1445,7 @@ Click Apply or show the data to refresh.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqSelectReaderDialog.ui" line="76"/>
         <source>OK</source>
-        <translation>确定</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqSelectReaderDialog.ui" line="83"/>
@@ -1504,7 +1504,7 @@ Click Apply or show the data to refresh.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqXYChartViewBoundsPropertyWidget.ui" line="29"/>
         <source>X</source>
-        <translation>页:1</translation>
+        <translation>X</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqXYChartViewBoundsPropertyWidget.ui" line="42"/>
@@ -1525,7 +1525,7 @@ Click Apply or show the data to refresh.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqAboutDialog.ui" line="29"/>
         <source>About ParaView</source>
-        <translation>关于帕拉维尤</translation>
+        <translation>关于ParaView</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqAboutDialog.ui" line="52"/>
@@ -1552,7 +1552,7 @@ Click Apply or show the data to refresh.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqAboutDialog.ui" line="154"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://www.kitware.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:palette(link);&quot;&gt;www.kitware.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href="http://www.kitware.com/"&gt;&lt;span style=" text-decoration: underline; color:palette(link);"&gt;www.kitware.com (中文(简体) ).&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href="http://www.kitware.com/"&gt;&lt;span style=" text-decoration: underline; color:palette(link);"&gt;www.kitware.com.&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqAboutDialog.ui" line="164"/>
@@ -1562,7 +1562,7 @@ Click Apply or show the data to refresh.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqAboutDialog.ui" line="177"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://www.paraview.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:palette(link);&quot;&gt;www.paraview.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href="http://www.paraview.org/"&gt;&lt;span style=" text-decoration: underline; color:palette(link);"&gt;页:1&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href="http://www.paraview.org/"&gt;&lt;span style=" text-decoration: underline; color:palette(link);"&gt;www.paraview.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqAboutDialog.ui" line="195"/>
@@ -1730,7 +1730,7 @@ Click Apply or show the data to refresh.</source>
         <location filename="../Qt/Components/pqAboutDialog.cxx" line="149"/>
         <location filename="../Qt/Components/pqAboutDialog.cxx" line="222"/>
         <source>SMP Max Number of Threads</source>
-        <translation>SMP 最大线索数</translation>
+        <translation>SMP 最大线程数</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqAboutDialog.cxx" line="158"/>
@@ -1897,7 +1897,7 @@ Connection Information:
     <message>
         <location filename="../Qt/Components/pqAnimationTrackEditor.cxx" line="78"/>
         <source>Cannot edit track: python is not supported</source>
-        <translation>无法编辑音轨: 不支持 python</translation>
+        <translation>无法编辑轨道：不支持 Python</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqAnimationTrackEditor.cxx" line="92"/>
@@ -1917,7 +1917,7 @@ Connection Information:
     <message>
         <location filename="../Qt/Components/pqAnimationTrackEditor.cxx" line="122"/>
         <source>Animation Keyframes</source>
-        <translation>动画键框</translation>
+        <translation>动画关键帧</translation>
     </message>
 </context>
 <context>
@@ -2023,7 +2023,7 @@ Connection Information:
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraDialog.ui" line="486"/>
         <source>Focal Point</source>
-        <translation>联络点</translation>
+        <translation>焦点</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraDialog.ui" line="542"/>
@@ -2048,12 +2048,12 @@ Connection Information:
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraDialog.ui" line="518"/>
         <source>View Angle</source>
-        <translation>查看角度</translation>
+        <translation>视角</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraDialog.ui" line="502"/>
         <source>View Up</source>
-        <translation>向上查看</translation>
+        <translation>视图向上</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraDialog.ui" line="589"/>
@@ -2068,7 +2068,7 @@ Connection Information:
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraDialog.ui" line="470"/>
         <source>Position</source>
-        <translation>立场</translation>
+        <translation>位置</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraDialog.ui" line="599"/>
@@ -2126,7 +2126,7 @@ Connection Information:
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraDialog.ui" line="802"/>
         <source>X</source>
-        <translation>页:1</translation>
+        <translation>X</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCameraDialog.ui" line="699"/>
@@ -2228,7 +2228,7 @@ p, li { white-space: pre-wrap; }
 &lt;tr&gt;
 &lt;td style=&quot;border: none;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Select &lt;span style=&quot; font-weight:600;&quot;&gt;INPUT0&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt; &lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;p, li { 白- 空格 : pre- wrap;}&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Helvetica'; font-size:9pt; font-weight:400; font-style:normal;"&gt; &lt;table style="-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;"&gt; &lt;tr&gt; &lt;td style="border: none;"&gt; &lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;选择&lt;span style=" font-weight:600;"&gt;插图0&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt; &lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;p, li { white-space : pre- wrap;}&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Helvetica'; font-size:9pt; font-weight:400; font-style:normal;"&gt; &lt;table style="-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;"&gt; &lt;tr&gt; &lt;td style="border: none;"&gt; &lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;选择&lt;span style=" font-weight:600;"&gt;插图0&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqChangeInputDialog.cxx" line="171"/>
@@ -2365,7 +2365,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqComparativeVisPanel.ui" line="36"/>
         <source>x</source>
-        <translation>页:1</translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqComparativeVisPanel.ui" line="66"/>
@@ -2418,7 +2418,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/pqComparativeVisPanel.cxx" line="89"/>
         <source>unrecognized-property</source>
-        <translation>未确认财产</translation>
+        <translation>未确认属性</translation>
     </message>
 </context>
 <context>
@@ -2464,7 +2464,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqContourControls.ui" line="61"/>
         <source>Compute Normals</source>
-        <translation>计算普通</translation>
+        <translation>计算法向</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqContourControls.ui" line="71"/>
@@ -2531,7 +2531,7 @@ However number of values in both entires must match.</source>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterDefinitionWizard.ui" line="609"/>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterDefinitionWizard.ui" line="721"/>
         <source>Property</source>
-        <translation>财产</translation>
+        <translation>属性</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterDefinitionWizard.ui" line="312"/>
@@ -2617,7 +2617,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterDefinitionWizard.ui" line="758"/>
         <source>Select an object from the pipeline layout on the left. Then, select the property from that object to expose. Give the property a name and add it to the list.</source>
-        <translation>从左侧的管道布局中选择对象。 然后从对象中选择要曝光的属性. 给财产一个名字,并添加到列表中.</translation>
+        <translation>从左侧的管道布局中选择对象。 然后从对象中选择要曝光的属性. 给属性一个名字,并添加到列表中.</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterDefinitionWizard.ui" line="835"/>
@@ -2632,7 +2632,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterDefinitionWizard.ui" line="874"/>
         <source>&amp;Finish</source>
-        <translation>猪(&amp;F)</translation>
+        <translation>完成(&amp;F)</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterDefinitionWizard.ui" line="884"/>
@@ -2820,7 +2820,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/pqDisplayRepresentationWidget.cxx" line="161"/>
         <source>Representation</source>
-        <translation>代表权</translation>
+        <translation>表示权</translation>
     </message>
 </context>
 <context>
@@ -2955,7 +2955,7 @@ However number of values in both entires must match.</source>
         <location filename="../Qt/Components/pqExpressionsDialog.cxx" line="487"/>
         <location filename="../Qt/Components/pqExpressionsDialog.cxx" line="527"/>
         <source>ParaView Expressions</source>
-        <translation>帕拉维尤表达式</translation>
+        <translation>ParaView表达式</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqExpressionsDialog.cxx" line="487"/>
@@ -2994,7 +2994,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/pqExpressionsWidget.cxx" line="84"/>
         <source>Saved! </source>
-        <translation>救出来了!</translation>
+        <translation>已保存！</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqExpressionsWidget.cxx" line="84"/>
@@ -3025,7 +3025,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/pqFindDataSelectionDisplayFrame.cxx" line="148"/>
         <source>not available</source>
-        <translation>不详</translation>
+        <translation>不可用</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqFindDataSelectionDisplayFrame.cxx" line="166"/>
@@ -3220,12 +3220,12 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="63"/>
         <source>New</source>
-        <translation>新设</translation>
+        <translation>新建</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="60"/>
         <source>Add a new keyframe before selected</source>
-        <translation>在选中键框前添加新键框</translation>
+        <translation>在选中的关键帧前添加</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="73"/>
@@ -3235,7 +3235,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="70"/>
         <source>Delete selected keyframe</source>
-        <translation>删除选中的密钥框</translation>
+        <translation>删除选中的关键帧</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="83"/>
@@ -3245,12 +3245,12 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="80"/>
         <source>Delete all keyframe</source>
-        <translation>删除全部密钥框架</translation>
+        <translation>删除所有关键帧</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="90"/>
         <source>Import key frames from a .pvkfc file.</source>
-        <translation>从 .pvkfc 文件导入密钥帧 。</translation>
+        <translation>从 .pvkfc 文件导入关键帧。</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="93"/>
@@ -3260,7 +3260,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="100"/>
         <source>Export key frames to a .pvkfc file.</source>
-        <translation>导出密钥框架到 .pvkfc 文件 。</translation>
+        <translation>导出关键帧到 .pvkfc 文件。</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="103"/>
@@ -3270,12 +3270,12 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="157"/>
         <source>Create Orbit</source>
-        <translation>创建轨道</translation>
+        <translation>创建环绕</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="154"/>
         <source>Create an orbit path for selected keyframe, starting with current camera.</source>
-        <translation>从当前相机开始为选定的密钥框架创建轨道路径 。</translation>
+        <translation>从当前相机开始为选定的关键帧创建轨道路径 。</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="123"/>
@@ -3285,7 +3285,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="120"/>
         <source>Apply selected keyframe configuration to the current view camera</source>
-        <translation>在当前视图相机中应用选中的密钥框架配置</translation>
+        <translation>在当前视图相机中应用选中的关键帧配置</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="133"/>
@@ -3295,17 +3295,17 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="130"/>
         <source>Use current camera for selected keyframe</source>
-        <translation>对选中的密钥框使用当前相机</translation>
+        <translation>对选中的关键帧使用当前相机</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="143"/>
         <source>Spline Interpolation</source>
-        <translation>Spline 内插</translation>
+        <translation>样条插值</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameEditor.ui" line="140"/>
         <source>Use spline interpolation for this cue</source>
-        <translation>使用线性插值来显示此提示</translation>
+        <translation>对此提示使用样条插值</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqKeyFrameEditor.cxx" line="466"/>
@@ -3331,17 +3331,17 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/pqKeyFrameEditor.cxx" line="543"/>
         <source>Edit Keyframes</source>
-        <translation>编辑密钥框架</translation>
+        <translation>编辑关键帧</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqKeyFrameEditor.cxx" line="839"/>
         <source>Load Custom KeyFrames Configuration</source>
-        <translation>装入自定义密钥框配置</translation>
+        <translation>加载自定义关键帧配置</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqKeyFrameEditor.cxx" line="945"/>
         <source>Save Current KeyFrames Configuration</source>
-        <translation>保存当前密钥框架配置</translation>
+        <translation>保存当前关键帧配置</translation>
     </message>
 </context>
 <context>
@@ -3349,7 +3349,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/pqKeyFrameEditor.cxx" line="54"/>
         <source>Key Frame Interpolation</source>
-        <translation>密钥框架内插</translation>
+        <translation>关键帧插值</translation>
     </message>
 </context>
 <context>
@@ -3368,7 +3368,7 @@ However number of values in both entires must match.</source>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameTypeWidget.ui" line="46"/>
         <location filename="../Qt/Components/pqKeyFrameTypeWidget.cxx" line="32"/>
         <source>Exponential</source>
-        <translation>标志</translation>
+        <translation>指数</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameTypeWidget.ui" line="58"/>
@@ -3379,12 +3379,12 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameTypeWidget.ui" line="65"/>
         <source>Base</source>
-        <translation>基础</translation>
+        <translation>基数</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameTypeWidget.ui" line="72"/>
         <source>Start Power</source>
-        <translation>启动电源</translation>
+        <translation>起始幂</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameTypeWidget.ui" line="79"/>
@@ -3394,7 +3394,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameTypeWidget.ui" line="86"/>
         <source>End Power</source>
-        <translation>结束功率</translation>
+        <translation>结束幂</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameTypeWidget.ui" line="93"/>
@@ -3406,12 +3406,12 @@ However number of values in both entires must match.</source>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameTypeWidget.ui" line="119"/>
         <location filename="../Qt/Components/pqKeyFrameTypeWidget.cxx" line="34"/>
         <source>Sinusoid</source>
-        <translation>阴性</translation>
+        <translation>正弦</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameTypeWidget.ui" line="131"/>
         <source>Offset</source>
-        <translation>折换</translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameTypeWidget.ui" line="138"/>
@@ -3421,12 +3421,12 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqKeyFrameTypeWidget.ui" line="145"/>
         <source>Phase</source>
-        <translation>阶段</translation>
+        <translation>相位</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqKeyFrameTypeWidget.cxx" line="30"/>
         <source>Ramp</source>
-        <translation>倾斜</translation>
+        <translation>斜坡</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqKeyFrameTypeWidget.cxx" line="35"/>
@@ -3571,7 +3571,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/pqLinksEditor.cxx" line="260"/>
         <source>Representations</source>
-        <translation>代表</translation>
+        <translation>表示</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqLinksEditor.cxx" line="262"/>
@@ -3627,23 +3627,23 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/pqLiveInsituManager.cxx" line="205"/>
         <source>Catalyst Server Port</source>
-        <translation>催化服务器端口</translation>
+        <translation>Catalyst服务器端口</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqLiveInsituManager.cxx" line="206"/>
         <source>Enter the port number to accept connections
 from Catalyst on:</source>
-        <translation>输入接受催化剂连接的端口号 :</translation>
+        <translation>输入接受Catalyst剂连接的端口号 :</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqLiveInsituManager.cxx" line="253"/>
         <source>Catalyst Disconnected</source>
-        <translation>催化剂断开</translation>
+        <translation>Catalyst剂断开</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqLiveInsituManager.cxx" line="254"/>
         <source>Connection to Catalyst Co-Processor has been terminated involuntarily. This implies either a communication error, or that the Catalyst co-processor has terminated. The Catalyst session will now be cleaned up. You can start a new one if you want to monitor for additional Catalyst connection requests.</source>
-        <translation>已非自愿终止与催化器的连接。 这意味着要么是通信错误,要么是催化剂共处理器已经终止. 催化会议现在将清理干净。 如果您想要监视额外的催化连接请求, 您可以启动一个新的连接 。</translation>
+        <translation>已非自愿终止与Catalyst器的连接。 这意味着要么是通信错误,要么是Catalyst剂共处理器已经终止. Catalyst会议现在将清理干净。 如果您想要监视额外的Catalyst连接请求, 您可以启动一个新的连接 。</translation>
     </message>
 </context>
 <context>
@@ -3661,7 +3661,7 @@ from Catalyst on:</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqLockViewSizeCustomDialog.ui" line="41"/>
         <source>x</source>
-        <translation>页:1</translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqLockViewSizeCustomDialog.cxx" line="25"/>
@@ -3694,7 +3694,7 @@ from Catalyst on:</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqLogViewerDialog.ui" line="101"/>
         <source>Rank</source>
-        <translation>军衔</translation>
+        <translation>进程号</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqLogViewerDialog.ui" line="114"/>
@@ -3820,27 +3820,27 @@ from Catalyst on:</source>
     <message>
         <location filename="../Qt/Components/pqLogViewerDialog.cxx" line="409"/>
         <source>OFF</source>
-        <translation>关闭</translation>
+        <translation>OFF</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqLogViewerDialog.cxx" line="410"/>
         <source>ERROR</source>
-        <translation>错误</translation>
+        <translation>ERROR</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqLogViewerDialog.cxx" line="411"/>
         <source>WARNING</source>
-        <translation>警告</translation>
+        <translation>WARNING</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqLogViewerDialog.cxx" line="412"/>
         <source>INFO</source>
-        <translation>新闻组织</translation>
+        <translation>信息</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqLogViewerDialog.cxx" line="413"/>
         <source>TRACE</source>
-        <translation>TRACE 目标</translation>
+        <translation>TRACE</translation>
     </message>
 </context>
 <context>
@@ -3880,12 +3880,12 @@ from Catalyst on:</source>
     <message>
         <location filename="../Qt/Components/pqMemoryInspectorPanel.cxx" line="1590"/>
         <source>OS:</source>
-        <translation>操作员:</translation>
+        <translation>操作系统：</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqMemoryInspectorPanel.cxx" line="1591"/>
         <source>CPU:</source>
-        <translation>CPU : (中文(简体) ).</translation>
+        <translation>CPU :.</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqMemoryInspectorPanel.cxx" line="1592"/>
@@ -3967,7 +3967,7 @@ from Catalyst on:</source>
     <message>
         <location filename="../Qt/Components/pqMultiBlockPropertiesStateWidget.cxx" line="205"/>
         <source>inherited from the representation</source>
-        <translation>从代表处继承</translation>
+        <translation>从表示处继承</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqMultiBlockPropertiesStateWidget.cxx" line="207"/>
@@ -3977,7 +3977,7 @@ from Catalyst on:</source>
     <message>
         <location filename="../Qt/Components/pqMultiBlockPropertiesStateWidget.cxx" line="209"/>
         <source>inherited from block(s) and the representation</source>
-        <translation>从块和代表中继承</translation>
+        <translation>从块和表示中继承</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqMultiBlockPropertiesStateWidget.cxx" line="210"/>
@@ -3987,7 +3987,7 @@ from Catalyst on:</source>
     <message>
         <location filename="../Qt/Components/pqMultiBlockPropertiesStateWidget.cxx" line="212"/>
         <source>set in block(s) and inherited from the representation</source>
-        <translation>从代表处继承</translation>
+        <translation>从表示处继承</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqMultiBlockPropertiesStateWidget.cxx" line="214"/>
@@ -3997,12 +3997,12 @@ from Catalyst on:</source>
     <message>
         <location filename="../Qt/Components/pqMultiBlockPropertiesStateWidget.cxx" line="216"/>
         <source>set in block(s) and inherited from block(s) and the representation</source>
-        <translation>从区块和代表中继承</translation>
+        <translation>从区块和表示中继承</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqMultiBlockPropertiesStateWidget.cxx" line="233"/>
         <source>Reset to value(s) inherited from block/representation</source>
-        <translation>重置为从块/ 代表中继承的值</translation>
+        <translation>重置为从块/ 表示中继承的值</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqMultiBlockPropertiesStateWidget.cxx" line="373"/>
@@ -4104,7 +4104,7 @@ from Catalyst on:</source>
     <message>
         <location filename="../Qt/Components/pqPipelineTimeKeyFrameEditor.cxx" line="104"/>
         <source>Edit Keyframes</source>
-        <translation>编辑密钥框架</translation>
+        <translation>编辑关键帧</translation>
     </message>
 </context>
 <context>
@@ -4204,7 +4204,7 @@ Local plugins are automatically searched for in %2.</source>
     <message>
         <location filename="../Qt/Components/pqPluginDialog.cxx" line="268"/>
         <source>Property</source>
-        <translation>财产</translation>
+        <translation>属性</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqPluginDialog.cxx" line="335"/>
@@ -4286,7 +4286,7 @@ Local plugins are automatically searched for in %2.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqPresetDialog.ui" line="98"/>
         <source>Opacities</source>
-        <translation>坐标</translation>
+        <translation>不透明度</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqPresetDialog.ui" line="114"/>
@@ -4398,7 +4398,7 @@ in default mode</source>
         <location filename="../Qt/Components/pqPresetDialog.cxx" line="895"/>
         <location filename="../Qt/Components/pqPresetDialog.cxx" line="935"/>
         <source>ParaView Color/Opacity Presets</source>
-        <translation>ParaView 颜色/ 和平预设</translation>
+        <translation>ParaView 颜色/不透明度预设</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqPresetDialog.cxx" line="895"/>
@@ -4472,7 +4472,7 @@ in default mode</source>
     <message>
         <location filename="../Qt/Components/pqPropertyWidget.cxx" line="127"/>
         <source>Property Changed</source>
-        <translation>财产已更改</translation>
+        <translation>属性已更改</translation>
     </message>
 </context>
 <context>
@@ -4673,7 +4673,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqRemoteCommandDialogForm.ui" line="181"/>
         <source>FE_URL</source>
-        <translation>法语   URL</translation>
+        <translation>FE_URL</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqRemoteCommandDialogForm.ui" line="191"/>
@@ -4683,7 +4683,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqRemoteCommandDialogForm.ui" line="198"/>
         <source>SSH_EXEC</source>
-        <translation>SSH EXEC (英语).</translation>
+        <translation>SSH_EXEC</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqRemoteCommandDialogForm.ui" line="207"/>
@@ -4699,7 +4699,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqRemoteCommandDialogForm.ui" line="255"/>
         <source>TERM_EXEC</source>
-        <translation>TERM EXEC 运算</translation>
+        <translation>TERM_EXEC</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqRemoteCommandDialogForm.ui" line="264"/>
@@ -4709,7 +4709,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqRemoteCommandDialogForm.ui" line="312"/>
         <source>TERM_OPTS</source>
-        <translation>温度( P)</translation>
+        <translation>TERM_OPTS</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqRemoteCommandDialogForm.ui" line="319"/>
@@ -4719,7 +4719,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqRemoteCommandDialogForm.ui" line="329"/>
         <source>PV_HOST</source>
-        <translation>PV 历史</translation>
+        <translation>PV_HOST</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqRemoteCommandDialogForm.ui" line="342"/>
@@ -4880,7 +4880,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/Components/pqSelectionInputWidget.cxx" line="185"/>
         <source>ID</source>
-        <translation>身份证</translation>
+        <translation>ID</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqSelectionInputWidget.cxx" line="202"/>
@@ -4910,7 +4910,7 @@ Are you sure you want to continue?</source>
         <location filename="../Qt/Components/pqSelectionInputWidget.cxx" line="234"/>
         <location filename="../Qt/Components/pqSelectionInputWidget.cxx" line="253"/>
         <source>Index</source>
-        <translation>指数</translation>
+        <translation>索引</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqSelectionInputWidget.cxx" line="233"/>
@@ -4920,7 +4920,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/Components/pqSelectionInputWidget.cxx" line="253"/>
         <source>Level</source>
-        <translation>职等</translation>
+        <translation>层级</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqSelectionInputWidget.cxx" line="253"/>
@@ -5119,7 +5119,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqServerConnectDialog.ui" line="281"/>
         <source>Host</source>
-        <translation>东道主</translation>
+        <translation>主机</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqServerConnectDialog.ui" line="288"/>
@@ -5242,7 +5242,7 @@ p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Helvetica&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Enter list of URLs to obtain the servers configurations from, using the syntax:&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;&amp;lt;type&amp;gt; &amp;lt;url&amp;gt; &amp;lt;userfriendly name&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt; &lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;p, li { 白- 空格 : pre- wrap;}&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Helvetica'; font-size:9pt; font-weight:400; font-style:normal;"&gt; &lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;输入要获取服务器配置的 URL 列表, 使用语法 :&lt;/p&gt; &lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-weight:600;"&gt;&amp;lt; 类型 &amp;gt; &amp;lt;url&amp;gt; &amp;lt; 用户友好名称&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt; &lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;p, li { white-space : pre- wrap;}&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Helvetica'; font-size:9pt; font-weight:400; font-style:normal;"&gt; &lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;输入要获取服务器配置的 URL 列表, 使用语法 :&lt;/p&gt; &lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-weight:600;"&gt;&amp;lt; 类型 &amp;gt; &amp;lt;url&amp;gt; &amp;lt; 用户友好名称&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqServerConnectDialog.cxx" line="46"/>
@@ -5764,7 +5764,7 @@ Waiting %2 seconds for connection to server.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqPropertiesPanel.ui" line="73"/>
         <source>Ctrl+H</source>
-        <translation>缩写+H</translation>
+        <translation>Ctrl+H</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqPropertiesPanel.ui" line="132"/>

@@ -6,7 +6,7 @@
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Client/LidarViewMainWindow.ui" line="17"/>
         <source>SenFoToView</source>
-        <translation>SenFotoView 图像</translation>
+        <translation>SenFoToView</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Client/LidarViewMainWindow.ui" line="48"/>
@@ -164,7 +164,7 @@
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/Components/Resources/UI/lqAboutDialog.ui" line="126"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://www.kitware.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:palette(link);&quot;&gt;www.kitware.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href="http://www.kitware.com/"&gt;&lt;span style=" text-decoration: underline; color:palette(link);"&gt;www.kitware.com (中文(简体) ).&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href="http://www.kitware.com/"&gt;&lt;span style=" text-decoration: underline; color:palette(link);"&gt;www.kitware.com.&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/Components/Resources/UI/lqAboutDialog.ui" line="136"/>
@@ -174,7 +174,7 @@
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/Components/Resources/UI/lqAboutDialog.ui" line="149"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://lidarview.kitware.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:palette(link);&quot;&gt;lidarview.kitware.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href="https://lidarview.kitware.com/"&gt;&lt;span style=" text-decoration: underline; color:palette(link);"&gt;lidarview.kitware.com (中文(简体) ).&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href="https://lidarview.kitware.com/"&gt;&lt;span style=" text-decoration: underline; color:palette(link);"&gt;lidarview.kitware.com.&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/Components/Resources/UI/lqAboutDialog.ui" line="167"/>
@@ -351,7 +351,7 @@
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/ApplicationComponents/Resources/UI/lqEditMenuBuilder.ui" line="28"/>
         <source>Ctrl+G</source>
-        <translation>缩略语+G</translation>
+        <translation>Ctrl+G</translation>
     </message>
 </context>
 <context>
@@ -379,7 +379,7 @@
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/ApplicationComponents/Resources/UI/lqFileMenuBuilder.ui" line="23"/>
         <source>Ctrl+P</source>
-        <translation>缩写+P</translation>
+        <translation>Ctrl+P</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/ApplicationComponents/Resources/UI/lqFileMenuBuilder.ui" line="32"/>
@@ -394,7 +394,7 @@
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/ApplicationComponents/Resources/UI/lqFileMenuBuilder.ui" line="44"/>
         <source>Ctrl+S</source>
-        <translation>缩写+S</translation>
+        <translation>Ctrl+S</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/ApplicationComponents/Resources/UI/lqFileMenuBuilder.ui" line="53"/>
@@ -703,7 +703,7 @@ To apply filters and processing pipelines (including PCL wrapping, SLAM and othe
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/ApplicationComponents/Resources/UI/lqWelcomeDialog.ui" line="156"/>
         <source>The &quot;Advanced Mode&quot; integrates both the &quot;Lidar Viewer&quot; and &quot;Point Cloud Tool&quot; modes, along with additional ParaView tools. It represents the most comprehensive LidarView interface.</source>
-        <translation>“高级模式”集成了“雷达查看器”和“点云工具”两种模式，并加入额外的 ParaView 工具，代表最完整的 LidarView 界面。</translation>
+        <translation>“高级模式”集成了“雷达查看器”和“点云工具”两种模式，并加入额外的 ParaView 工具，表示最完整的 LidarView 界面。</translation>
     </message>
     <message>
         <location filename="../mnt/d/work/senfoto-view/lidarview/Application/Qt/ApplicationComponents/Resources/UI/lqWelcomeDialog.ui" line="191"/>

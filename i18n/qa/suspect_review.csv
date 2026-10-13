@@ -1,0 +1,657 @@
+file,context,source,translation
+Clients_ParaView-XMLs.ts,ServerManagerXML,Brownian Points,棕色点
+Clients_ParaView-XMLs.ts,ServerManagerXML,Cylinder Source,圆柱源
+Clients_ParaView-XMLs.ts,ServerManagerXML,Generate Process Ids,生成进程编号
+Clients_ParaView-XMLs.ts,ServerManagerXML,Generate Spatio Temporal Harmonics,生成时空谐波
+Clients_ParaView-XMLs.ts,ServerManagerXML,Hyper Tree Grid Geometry,超树格几何
+Clients_ParaView-XMLs.ts,ServerManagerXML,Ids,编号
+Clients_ParaView-XMLs.ts,ServerManagerXML,Integrate Attributes,集成属性
+Clients_ParaView-XMLs.ts,ServerManagerXML,Integrate Flow Through Surface,整合地表流动
+Clients_ParaView-XMLs.ts,ServerManagerXML,Non Overlapping Level Id Scalars,不重叠等级
+Clients_ParaView-XMLs.ts,ServerManagerXML,Overlapping Level Id Scalars,重叠等级
+Clients_ParaView-XMLs.ts,ServerManagerXML,Partitioned Data Set Collection Source,分区数据集收藏源
+Clients_ParaView-XMLs.ts,ServerManagerXML,Point Interpolation,点内插
+Clients_ParaView-XMLs.ts,ServerManagerXML,Quadrature Point Interpolator,四方点内插器
+Clients_ParaView-XMLs.ts,ServerManagerXML,Spatio Temporal Harmonics,气温谐波
+Clients_ParaView-XMLs.ts,ServerManagerXML,Spatio Temporal Harmonics Source,气温谐波源
+Clients_ParaView.ts,pqClientMainWindow,Collaboration Panel,协作面板
+LidarView.ts,lqHelpMenuBuilder,Professional Support,专业支持
+LidarView.ts,lqMainControlsToolbar,Apply changes to parameters automatically,自动应用参数更改
+LidarView.ts,lqMainControlsToolbar,Select which laser lines are displayed in the point cloud,选择点云中显示的激光线
+Qt_ApplicationComponents.ts,AnnulusPropertyWidget,Along Camera Axis,相机轴
+Qt_ApplicationComponents.ts,AnnulusPropertyWidget,Outline Translation,大纲翻译
+Qt_ApplicationComponents.ts,BackgroundEditorWidget,Single color,单色
+Qt_ApplicationComponents.ts,BoxPropertyWidget,Interactivity Controls,交互控制
+Qt_ApplicationComponents.ts,BoxPropertyWidget,Take account of block visibility,考虑块可见度
+Qt_ApplicationComponents.ts,CameraManipulatorWidget,Middle Button,中键
+Qt_ApplicationComponents.ts,CameraManipulatorWidget,Right Button,右键
+Qt_ApplicationComponents.ts,ColorMapEditor,Selected Properties,选中属性
+Qt_ApplicationComponents.ts,ColorOpacityEditorWidget,Invert the transfer functions,倒转传输函数
+Qt_ApplicationComponents.ts,ConePropertyWidget,Along Camera Axis,相机轴
+Qt_ApplicationComponents.ts,ConePropertyWidget,Outline Translation,大纲翻译
+Qt_ApplicationComponents.ts,CoordinateFramePropertyWidget,Align to the world coordinate Y axis.,向世界协调Y轴.
+Qt_ApplicationComponents.ts,CylinderPropertyWidget,Along Camera Axis,相机轴
+Qt_ApplicationComponents.ts,CylinderPropertyWidget,Outline Translation,大纲翻译
+Qt_ApplicationComponents.ts,DisplaySizedImplicitPlanePropertyWidget,Reset the camera to look along the normal.,重置相机以照常.
+Qt_ApplicationComponents.ts,DisplaySizedImplicitPlanePropertyWidget,Show the outline of the data the intersection edges of the plane with the outline.,显示数据大纲 平面与大纲的交叉边缘.
+Qt_ApplicationComponents.ts,HandlePropertyWidget,Center on Selection,选择中心
+Qt_ApplicationComponents.ts,ImageCompressorWidget,Configure the compressor using default settings tailored to a selected connection type.,使用特定连接类型的默认设置配置压缩机。
+Qt_ApplicationComponents.ts,ImplicitPlanePropertyWidget,Reset the camera to look along the normal.,重置相机以照常.
+Qt_ApplicationComponents.ts,LightPropertyWidget,Light Position,浅位置
+Qt_ApplicationComponents.ts,OMETransferFunctionsPropertyWidgetPage,Invert the transfer functions,倒转传输函数
+Qt_ApplicationComponents.ts,SelectionEditor,Activate Combined Selections,激活组合选择
+Qt_ApplicationComponents.ts,SelectionEditor,The dataset for which selections are saved,保存选择的数据集
+Qt_ApplicationComponents.ts,SeriesEditorPropertyWidget,Line Thickness,行宽
+Qt_ApplicationComponents.ts,SplinePropertyWidget,"<html><head/><body><p>Use <span style="" font-weight:600;"">P</span> to place selected point on mesh or <span style="" font-weight:600;"">Ctrl+P</span> to snap the selected point to closest mesh point. Use <span style="" font-weight:600;"">1 </span>/ <span style="" font-weight:600;"">Ctrl+1</span> for first point and <span style="" font-weight:600;"">2 </span>/ <span style="" font-weight:600;"">Ctrl+2</span> for the last point.<br/><span style="" font-weight:600;"">Click</span> to select a point, <span style="" font-weight:600;"">Shift+Click</span> to remove a point, <span style="" font-weight:600;"">Ctrl+Click</span> to insert a point on the line, <span style="" font-weight:600;"">Alt+Click</span> to add a point after the selected extremity.</p></body></html>","<html><head/><body><p>使用<span style="" font-weight:600;"">P</span>将选定的点放置在网格上或<span style="" font-weight:600;"">缩写+P</span>将选定的点按到最接近网点。 使用<span style="" font-weight:600;"">1 </span>/ <span style="" font-weight:600;"">缩写+1</span>第一点和<span style="" font-weight:600;"">2 </span>/ <span style="" font-weight:600;"">缩写+2</span>最后一点。<br/><span style="" font-weight:600;"">单击</span>选择一个点,<span style="" font-weight:600;"">移动+ 单击</span>要删除一个点,<span style="" font-weight:600;"">缩略语+ 单击</span>在线上插入一个点,<span style="" font-weight:600;"">备选案文+ 单击</span>以在选定的极点后添加点。</p></body></html>"
+Qt_ApplicationComponents.ts,TextLocationWidget,Bottom Right Corner,右下角处
+Qt_ApplicationComponents.ts,TextLocationWidget,Coordinates of the bottom left corner of the text object,文本对象左下角坐标
+Qt_ApplicationComponents.ts,TextLocationWidget,Coordinates of the lower left corner of the text object,文本对象左下角坐标
+Qt_ApplicationComponents.ts,TextLocationWidget,Top Left Corner,左上角
+Qt_ApplicationComponents.ts,TextLocationWidget,Top Right Corner,右上角
+Qt_ApplicationComponents.ts,TimeManagerWidget,Number of frames,框数
+Qt_ApplicationComponents.ts,pqAnimationShortcutWidget,Animation Keyframes,动画键框
+Qt_ApplicationComponents.ts,pqAxesToolbar,Center Axes Controls,中轴控件
+Qt_ApplicationComponents.ts,pqColorAnnotationsPropertyWidget,Could not determine discrete values to use for annotations,无法确定用于注释的离散值
+Qt_ApplicationComponents.ts,pqColorAnnotationsWidget,Could not determine discrete values,无法确定离散值
+Qt_ApplicationComponents.ts,pqColorOpacityEditorWidget,Invert transfer function,反转函数
+Qt_ApplicationComponents.ts,pqHelpMenu,Professional Support,专业支助
+Qt_ApplicationComponents.ts,pqHelpMenu,Professional Training,专业培训
+Qt_ApplicationComponents.ts,pqLightToolbar,Light controls,光控
+Qt_ApplicationComponents.ts,pqMacrosMenu,Delete Macro(s),删除宏
+Qt_ApplicationComponents.ts,pqMainControlsToolbar,Apply changes to parameters automatically,自动对参数应用更改
+Qt_ApplicationComponents.ts,pqPipelineBrowserContextMenu,&Hide All,页:1(&H)
+Qt_ApplicationComponents.ts,pqResetDefaultSettingsReaction,Following backup files have been generated:,已生成备份文件 :
+Qt_ApplicationComponents.ts,pqScalarBarVisibilityReaction,Number of annotations warning,注释警告次数
+Qt_ApplicationComponents.ts,pqTimelineView,Interpolate cameras,内插相机
+Qt_ApplicationComponents.ts,pqToolsMenu,Link with Selection,链接选择
+Qt_Components.ts,CalculatorWidget,Absolute value function,绝对值函数
+Qt_Components.ts,CalculatorWidget,Arcsine trigonometric function: Units are in radians and not in degrees,弧心三角函数:单位为弧度而非度
+Qt_Components.ts,CalculatorWidget,Cosine trigonometric function: Units are in radians and not in degrees,余弦三角函数:单位为弧度而非度
+Qt_Components.ts,CalculatorWidget,Exponential function,指示函数
+Qt_Components.ts,CalculatorWidget,Hyperbolic cosine trigonometric function: Units are in radians and not in degrees,双曲余弦三角函数:单位为弧度而非度
+Qt_Components.ts,CalculatorWidget,Hyperbolic sine trigonometric function: Units are in radians and not in degrees,双曲正弦三角函数:单位为弧度而非度
+Qt_Components.ts,CalculatorWidget,Hyperbolic tangent trigonometric function: Units are in radians and not in degrees,双曲正弦三角函数:单位为弧度而非度
+Qt_Components.ts,CalculatorWidget,Left parenthesis,左括号
+Qt_Components.ts,CalculatorWidget,Multiplication operator,乘法运算符
+Qt_Components.ts,CalculatorWidget,Right parenthesis,右括号
+Qt_Components.ts,CalculatorWidget,Tangent trigonometric function: Units are in radians and not in degrees,直方三角函数:单位为弧度而非度
+Qt_Components.ts,CalculatorWidget,Vector magnitude,矢量级
+Qt_Components.ts,CalculatorWidget,cosh,缩写
+Qt_Components.ts,CameraKeyFrameWidget,Position Control Points,位置控制点
+Qt_Components.ts,FindDataCurrentSelectionFrame,Invert the selection,反转选择
+Qt_Components.ts,MultiBlockInspectorWidget,Extract Blocks,提取块
+Qt_Components.ts,PythonCalculatorWidget,Show Only Arrays Matching Array Association,只显示匹配阵列关联
+Qt_Components.ts,PythonCalculatorWidget,"When checked, only arrays matching the current Array Association are listed in the Array picker.","选中时, 仅列出匹配当前阵列关联的阵列 。"
+Qt_Components.ts,ScalarValueListPropertyWidget,Restore default values of the property,恢复属性的默认值
+Qt_Components.ts,pqAboutDialog,"<html><head/><body><p><a href=""http://www.paraview.org/""><span style="" text-decoration: underline; color:palette(link);"">www.paraview.org</span></a></p></body></html>","<html><head/><body><p><a href=""http://www.paraview.org/""><span style="" text-decoration: underline; color:palette(link);"">页:1</span></a></p></body></html>"
+Qt_Components.ts,pqAboutDialog,Connection Information,连接信息
+Qt_Components.ts,pqAboutDialog,Number of Processes,进程数量
+Qt_Components.ts,pqAnimationTrackEditor,Animation Keyframes,动画键框
+Qt_Components.ts,pqComparativeCueWidget,Update Parameter Values,更新参数值
+Qt_Components.ts,pqComparativeParameterRangeDialog,Controls the direction in which the parameter is varied.,控制参数变化的方向。
+Qt_Components.ts,pqComparativeParameterRangeDialog,Vary horizontally first,横向第一
+Qt_Components.ts,pqCustomFilterManager,Displays the list of registered custom filter definitions.,显示已注册的自定义列表。
+Qt_Components.ts,pqFindDataSelectionDisplayFrame,not available,不详
+Qt_Components.ts,pqHelpWindow,Home,页 次
+Qt_Components.ts,pqHelpWindow,Online Documentation,在线文档
+Qt_Components.ts,pqLogViewerDialog,Rank of process to log,程序等级
+Qt_Components.ts,pqMultiBlockPropertiesStateWidget,Properties are,属性是
+Qt_Components.ts,pqMultiBlockPropertiesStateWidget,inherited from block(s),从块中继承
+Qt_Components.ts,pqMultiBlockPropertiesStateWidget,inherited from block(s) and the representation,从块和代表中继承
+Qt_Components.ts,pqMultiBlockPropertiesStateWidget,inherited from the representation,从代表处继承
+Qt_Components.ts,pqMultiBlockPropertiesStateWidget,set in block(s) and inherited from block(s) and the representation,从区块和代表中继承
+Qt_Components.ts,pqMultiBlockPropertiesStateWidget,set in block(s) and inherited from the representation,从代表处继承
+Qt_Components.ts,pqProxyAction,Not supported in parallel,不平行支持
+Qt_Components.ts,pqProxyAction,Supported only in parallel,仅平行支持
+Qt_Components.ts,pqSelectionInputWidget,Block Selection,块选择
+Qt_Components.ts,pqSelectionInputWidget,Pedigree Domain,区域
+Qt_Components.ts,pqSelectionInputWidget,Threshold Selection,阈值选择
+Qt_Components.ts,pqServerConnectDialog,Authenticate Connection,认证连接
+Qt_Components.ts,pqSetBreakpointDialog,Breakpoint time is invalid or it is smaller than current time,断点时间无效或小于当前时间
+Qt_Components.ts,pqTabWidget,Bring popped out window back to the frame,把窗外的窗子拿回来
+Qt_Core.ts,pqPluginManager,Decline,缩写
+Qt_Core.ts,pqRenderView,create a block selection,创建块选择
+Qt_Core.ts,pqRenderView,create a surface points selection,创建表面点选择
+ServerManager-XMLs.ts,ServerManagerXML,3D arrow with a long cylindrical shaft and a cone for the tip,长圆柱形箭头和圆锥形箭头
+ServerManager-XMLs.ts,ServerManagerXML,A point in space.,空间点
+ServerManager-XMLs.ts,ServerManagerXML,Active Global Id,活动全球编号
+ServerManager-XMLs.ts,ServerManagerXML,Add Feature Ids,添加特性编号
+ServerManager-XMLs.ts,ServerManagerXML,Add a field array by name to be converted.,要转换的字段数组。
+ServerManager-XMLs.ts,ServerManagerXML,Animate Vibrations,动画
+ServerManager-XMLs.ts,ServerManagerXML,Animated Domain Name,动画域名
+ServerManager-XMLs.ts,ServerManagerXML,Animation Time Shortest Accurate Precision,动画时间最短精度
+ServerManager-XMLs.ts,ServerManagerXML,Anisotropy Rotation,异构旋转
+ServerManager-XMLs.ts,ServerManagerXML,Annotation Value,注释值
+ServerManager-XMLs.ts,ServerManagerXML,Annotations Initialized,说明
+ServerManager-XMLs.ts,ServerManagerXML,Antialiasing Options,解析选项
+ServerManager-XMLs.ts,ServerManagerXML,Apply Displacements,应用移位
+ServerManager-XMLs.ts,ServerManagerXML,Array Magnitude Exceptions,比例例外
+ServerManager-XMLs.ts,ServerManagerXML,Atomic Numbers,原子数
+ServerManager-XMLs.ts,ServerManagerXML,Automatic Annotations,自动说明
+ServerManager-XMLs.ts,ServerManagerXML,Axis Direction,轴向
+ServerManager-XMLs.ts,ServerManagerXML,Axis Display Properties,轴显示属性
+ServerManager-XMLs.ts,ServerManagerXML,Axis Precision,轴精度
+ServerManager-XMLs.ts,ServerManagerXML,Back Light Elevation,后光升华
+ServerManager-XMLs.ts,ServerManagerXML,Backface Representation,背面代表
+ServerManager-XMLs.ts,ServerManagerXML,Background Properties,背景属性
+ServerManager-XMLs.ts,ServerManagerXML,Block Coloring,块颜色
+ServerManager-XMLs.ts,ServerManagerXML,Block Colors Distinct Values,块颜色区分值
+ServerManager-XMLs.ts,ServerManagerXML,Block Lookup Tables,块搜索表
+ServerManager-XMLs.ts,ServerManagerXML,Block Selection Source,块选择源
+ServerManager-XMLs.ts,ServerManagerXML,Block Selectors Selection Source,块选择器选择源
+ServerManager-XMLs.ts,ServerManagerXML,Block Visibilities,块形状
+ServerManager-XMLs.ts,ServerManagerXML,Blocks Dimensions,块尺寸
+ServerManager-XMLs.ts,ServerManagerXML,Bottom Axis Label Properties,底轴标签属性
+ServerManager-XMLs.ts,ServerManagerXML,Bottom Axis Range Minimum,最小轴距
+ServerManager-XMLs.ts,ServerManagerXML,Bottom Axis Title Properties,底轴标题属性
+ServerManager-XMLs.ts,ServerManagerXML,Boundary Correction,边界校正
+ServerManager-XMLs.ts,ServerManagerXML,Bounded Volume Source,边界量源
+ServerManager-XMLs.ts,ServerManagerXML,Bounding Box,边框
+ServerManager-XMLs.ts,ServerManagerXML,Bounding Planes,撞机
+ServerManager-XMLs.ts,ServerManagerXML,Bounding Triangulation,边界三角
+ServerManager-XMLs.ts,ServerManagerXML,Bounds bounds of the widget representation.,部件表示的界限 。
+ServerManager-XMLs.ts,ServerManagerXML,Box Chart Representation,方框图
+ServerManager-XMLs.ts,ServerManagerXML,Box Parameters,框参数
+ServerManager-XMLs.ts,ServerManagerXML,Box Representation,代表
+ServerManager-XMLs.ts,ServerManagerXML,Cache Geometry For Animation,动画缓存几何
+ServerManager-XMLs.ts,ServerManagerXML,Caching Mesh Points,缓存网点
+ServerManager-XMLs.ts,ServerManagerXML,Camera Focal Distance,相机焦距
+ServerManager-XMLs.ts,ServerManagerXML,Camera Phi Divisions,摄影师
+ServerManager-XMLs.ts,ServerManagerXML,Catalyst Live Trigger,触发器
+ServerManager-XMLs.ts,ServerManagerXML,Cell Ids,单元格编号
+ServerManager-XMLs.ts,ServerManagerXML,Center of rotation for the interactor.,交互器旋转中心.
+ServerManager-XMLs.ts,ServerManagerXML,Channel Visibilities,频道功能
+ServerManager-XMLs.ts,ServerManagerXML,Chart Logo Representation,图表标志
+ServerManager-XMLs.ts,ServerManagerXML,Choose arrays whose entries will be used to form observations for statistical analysis.,选择将用来形成统计分析观测结果的数组。
+ServerManager-XMLs.ts,ServerManagerXML,Circumferential Resolution,循环分辨率
+ServerManager-XMLs.ts,ServerManagerXML,Clip with decimation.,被毁灭了
+ServerManager-XMLs.ts,ServerManagerXML,Clipping Plane,剪贴图
+ServerManager-XMLs.ts,ServerManagerXML,Closed Loop Maximum Distance,关闭最大距离
+ServerManager-XMLs.ts,ServerManagerXML,Color Discretization,颜色解析
+ServerManager-XMLs.ts,ServerManagerXML,Color for the axes and the arcs.,色为轴与弧.
+ServerManager-XMLs.ts,ServerManagerXML,Color of the light.,色光现.
+ServerManager-XMLs.ts,ServerManagerXML,Color used when coloring the grid wireframe,网格线框的颜色
+ServerManager-XMLs.ts,ServerManagerXML,Column Major Ordering,列主顺序
+ServerManager-XMLs.ts,ServerManagerXML,Component Selection,组件选择
+ServerManager-XMLs.ts,ServerManagerXML,Composite Multi Slice Representation,复合多切片代表
+ServerManager-XMLs.ts,ServerManagerXML,Composite Orthographic Slice Representation,复合整形切片
+ServerManager-XMLs.ts,ServerManagerXML,Compute Array Magnitude,计算矩阵
+ServerManager-XMLs.ts,ServerManagerXML,Compute the curvature at each point.,每点计算曲率.
+ServerManager-XMLs.ts,ServerManagerXML,Compute the median scalar values in a specified neighborhood for image/volume datasets.,计算图像/卷数据集在指定区域中的中值。
+ServerManager-XMLs.ts,ServerManagerXML,Computes tensor principal values and directions.,计算亮度主值和方向。
+ServerManager-XMLs.ts,ServerManagerXML,Container for a set of material specifications.,一套材料规格的容器。
+ServerManager-XMLs.ts,ServerManagerXML,Contour Approximation Number Of Points,轮廓近似数
+ServerManager-XMLs.ts,ServerManagerXML,Contour Values,轮廓值
+ServerManager-XMLs.ts,ServerManagerXML,Contour Widget Representation,轮廓部件代表
+ServerManager-XMLs.ts,ServerManagerXML,Controls the coloring of the connected regions.,控制连接区域的颜色。
+ServerManager-XMLs.ts,ServerManagerXML,Controls the extraction of connected surfaces.,控制连接表面的提取.
+ServerManager-XMLs.ts,ServerManagerXML,Controls whether the locator resolution is computed automatically or not.,控制定位分辨率是否自动计算。
+ServerManager-XMLs.ts,ServerManagerXML,Controls which particular data sets to read from a file that contains many data sets inside a composite data set collection.,控制从一个包含多个数据集的文件中读取的特定数据集。
+ServerManager-XMLs.ts,ServerManagerXML,Coordinate Frame Representation,坐标框架代表
+ServerManager-XMLs.ts,ServerManagerXML,Coordinate Frame Widget Representation,坐标框架部件代表
+ServerManager-XMLs.ts,ServerManagerXML,Create Frequency Column,创建频率列
+ServerManager-XMLs.ts,ServerManagerXML,Create a hyper tree grid,创建超树格
+ServerManager-XMLs.ts,ServerManagerXML,Create a point cloud,创建点云
+ServerManager-XMLs.ts,ServerManagerXML,Create a protractor,创建导线
+ServerManager-XMLs.ts,ServerManagerXML,Create an elliptical arc,创建椭圆弧
+ServerManager-XMLs.ts,ServerManagerXML,Create an outline from the bounds,从边框创建大纲
+ServerManager-XMLs.ts,ServerManagerXML,Creates polylines representing pathlines of animating particles,创建代表动画粒子路径的多线
+ServerManager-XMLs.ts,ServerManagerXML,Cropping Parameters,裁剪参数
+ServerManager-XMLs.ts,ServerManagerXML,Cull Backface,后脸
+ServerManager-XMLs.ts,ServerManagerXML,Cylinder Parameters,圆柱参数
+ServerManager-XMLs.ts,ServerManagerXML,Cylinder Source,圆柱源
+ServerManager-XMLs.ts,ServerManagerXML,Data Histogram Number Of Bins,数据直方图
+ServerManager-XMLs.ts,ServerManagerXML,Decimation Distance Strategy,小数距离战略
+ServerManager-XMLs.ts,ServerManagerXML,Default Number Of Levels,默认等级数
+ServerManager-XMLs.ts,ServerManagerXML,Defines a top level directory where data extracts are placed under.,定义数据提取所在的顶级目录。
+ServerManager-XMLs.ts,ServerManagerXML,Deformation Attribute,变形属性
+ServerManager-XMLs.ts,ServerManagerXML,Delimeter,缩略语
+ServerManager-XMLs.ts,ServerManagerXML,Destination Mesh,目标网
+ServerManager-XMLs.ts,ServerManagerXML,Destination Projection,目标预测
+ServerManager-XMLs.ts,ServerManagerXML,Determine which time step to snap to.,确定哪一个时间点
+ServerManager-XMLs.ts,ServerManagerXML,Directional Line,方向线
+ServerManager-XMLs.ts,ServerManagerXML,Discrete Time Step Interval,间断时间步
+ServerManager-XMLs.ts,ServerManagerXML,Displacement Magnitude,流离失所
+ServerManager-XMLs.ts,ServerManagerXML,Displacement Preapplied,预先应用
+ServerManager-XMLs.ts,ServerManagerXML,Display Sized Implicit Plane Representation,显示缩放隐形图
+ServerManager-XMLs.ts,ServerManagerXML,Display Sized Implicit Plane Widget Representation,显示缩放的隐形图件
+ServerManager-XMLs.ts,ServerManagerXML,Distance Widget Representation,远程部件代表
+ServerManager-XMLs.ts,ServerManagerXML,Double Array,双排
+ServerManager-XMLs.ts,ServerManagerXML,Double Pointed,双点
+ServerManager-XMLs.ts,ServerManagerXML,Double Precision,双精度
+ServerManager-XMLs.ts,ServerManagerXML,Draw Nan Annotation,绘制南注
+ServerManager-XMLs.ts,ServerManagerXML,Duplicate Points For Face Texture,面部纹理复制点
+ServerManager-XMLs.ts,ServerManagerXML,Element Blocks,元素块
+ServerManager-XMLs.ts,ServerManagerXML,Ellipitical Eccentricity,椭圆偏心
+ServerManager-XMLs.ts,ServerManagerXML,Elliptical Splats,椭圆板
+ServerManager-XMLs.ts,ServerManagerXML,Enable Synchronizable Actors,启用同步演员
+ServerManager-XMLs.ts,ServerManagerXML,Enable the use of shader replacements.,启用阴影替换 。
+ServerManager-XMLs.ts,ServerManagerXML,Enable/disable a radial line segment that joins the center of the outer sphere and the handle.,启用/禁用连接外球和手柄中心的光圈线段.
+ServerManager-XMLs.ts,ServerManagerXML,Environment East,东环境
+ServerManager-XMLs.ts,ServerManagerXML,Environment Information Helper,环境信息助手
+ServerManager-XMLs.ts,ServerManagerXML,Environment variable,环境变量
+ServerManager-XMLs.ts,ServerManagerXML,Equalizer Points,均匀点
+ServerManager-XMLs.ts,ServerManagerXML,Evaluate metrics on the boundary faces of a volumetric mesh.,量子网面上的测量值。
+ServerManager-XMLs.ts,ServerManagerXML,Evens the number of partitions across ranks,平均分数
+ServerManager-XMLs.ts,ServerManagerXML,Expects a DataSet with cell scalars as input.,期待以单元格缩写为输入的数据集。
+ServerManager-XMLs.ts,ServerManagerXML,Extensive Computation,广泛计算
+ServerManager-XMLs.ts,ServerManagerXML,Extract only intersected,提取仅交叉
+ServerManager-XMLs.ts,ServerManagerXML,Extraction Side,采掘边
+ServerManager-XMLs.ts,ServerManagerXML,Face Texture Tolerance,面质容忍
+ServerManager-XMLs.ts,ServerManagerXML,Fast Hyper Tree Grid Representation,快超树网格代表
+ServerManager-XMLs.ts,ServerManagerXML,Faster Approximation,更快的缩写
+ServerManager-XMLs.ts,ServerManagerXML,Feature Edges Representation,特征边缘代表
+ServerManager-XMLs.ts,ServerManagerXML,File Dimensionality,文件尺寸
+ServerManager-XMLs.ts,ServerManagerXML,Fill Light Elevation,装入光梯
+ServerManager-XMLs.ts,ServerManagerXML,First time step,第一步
+ServerManager-XMLs.ts,ServerManagerXML,Flagpole Properties,旗杆属性
+ServerManager-XMLs.ts,ServerManagerXML,Float Volume Arrays,浮点数组
+ServerManager-XMLs.ts,ServerManagerXML,Four Lines Representation,四线代表
+ServerManager-XMLs.ts,ServerManagerXML,Four Lines Widget Representation,四行部件代表
+ServerManager-XMLs.ts,ServerManagerXML,Fragment Identification,识别碎片
+ServerManager-XMLs.ts,ServerManagerXML,Fragment Integration,分块整合
+ServerManager-XMLs.ts,ServerManagerXML,Full Notation High Exponent,全注高标注
+ServerManager-XMLs.ts,ServerManagerXML,Full Notation Low Exponent,全注低标注
+ServerManager-XMLs.ts,ServerManagerXML,Fully Trace Camera Adjustments,全程相机调整
+ServerManager-XMLs.ts,ServerManagerXML,Gather On All Ranks,统统集合
+ServerManager-XMLs.ts,ServerManagerXML,Gaussian Exponent Factor,高斯指数
+ServerManager-XMLs.ts,ServerManagerXML,Generate Cell Ids,生成单元格编号
+ServerManager-XMLs.ts,ServerManagerXML,Generate Cinema Specification,生成电影规格
+ServerManager-XMLs.ts,ServerManagerXML,Generate Cylinder Automatically,自动生成圆柱
+ServerManager-XMLs.ts,ServerManagerXML,Generate File Id,生成文件编号
+ServerManager-XMLs.ts,ServerManagerXML,Generate Global Cell Ids,生成全球单元格编号
+ServerManager-XMLs.ts,ServerManagerXML,Generate Point Ids,生成点编号
+ServerManager-XMLs.ts,ServerManagerXML,Generate Process Ids,生成进程编号
+ServerManager-XMLs.ts,ServerManagerXML,Generate Region Ids,生成区域编号
+ServerManager-XMLs.ts,ServerManagerXML,Generates a bounding box.,生成边框.
+ServerManager-XMLs.ts,ServerManagerXML,Generation of the cell connectivity.,生成细胞连接.
+ServerManager-XMLs.ts,ServerManagerXML,Geometry Representation,几何表示
+ServerManager-XMLs.ts,ServerManagerXML,Geometry Slice Representation,几何切片表示
+ServerManager-XMLs.ts,ServerManagerXML,Get the polar axes transformed bounds.,让极地轴改变界限
+ServerManager-XMLs.ts,ServerManagerXML,Gradient Background,渐变背景
+ServerManager-XMLs.ts,ServerManagerXML,Grid Axes Representation,网格轴代表
+ServerManager-XMLs.ts,ServerManagerXML,Group Numeric Vector Field Components,组数矢量字段组件
+ServerManager-XMLs.ts,ServerManagerXML,Grow Selection Remove Intermediate Layers,增长选择删除中间层
+ServerManager-XMLs.ts,ServerManagerXML,Handle Representation,处理代表
+ServerManager-XMLs.ts,ServerManagerXML,Handle Widget Representation,处理部件代表
+ServerManager-XMLs.ts,ServerManagerXML,Hard Contrast Threshold,硬对比阈值
+ServerManager-XMLs.ts,ServerManagerXML,Hidden Representations,隐藏代表
+ServerManager-XMLs.ts,ServerManagerXML,Hierarchical fractal,等级分形
+ServerManager-XMLs.ts,ServerManagerXML,High LIC Contrast Enhancement Factor,高比比增强系数
+ServerManager-XMLs.ts,ServerManagerXML,High Res Line Source,高架线源
+ServerManager-XMLs.ts,ServerManagerXML,Histogram Chart Representation,直方图
+ServerManager-XMLs.ts,ServerManagerXML,Horizontal Label Number,水平标签编号
+ServerManager-XMLs.ts,ServerManagerXML,How should quantile boundaries be defined?,如何界定量化边界?
+ServerManager-XMLs.ts,ServerManagerXML,Hyper Tree Grid Representation,超树格代表
+ServerManager-XMLs.ts,ServerManagerXML,"If this flag is turned off, the clipper will return the portion of the data that lies within the clipping plane. Otherwise, the clipper will return the portion of the data that lies outside the clipping plane.","如果关闭此旗帜,剪辑器将返回剪辑平面内的数据部分. 否则,剪辑机会返回剪辑机外的数据部分."
+ServerManager-XMLs.ts,ServerManagerXML,Image Chart Representation,图片图表
+ServerManager-XMLs.ts,ServerManagerXML,Implicit Annulus Representation,隐性代表
+ServerManager-XMLs.ts,ServerManagerXML,Implicit Cone Representation,隐形锥体代表
+ServerManager-XMLs.ts,ServerManagerXML,Implicit Cylinder Representation,隐形圆柱形代表
+ServerManager-XMLs.ts,ServerManagerXML,Implicit Cylinder Widget Representation,隐形圆柱形部件
+ServerManager-XMLs.ts,ServerManagerXML,Implicit Plane Representation,隐性代表制
+ServerManager-XMLs.ts,ServerManagerXML,Implicit Plane Widget Representation,隐形图件代表
+ServerManager-XMLs.ts,ServerManagerXML,Impulse BackgroundValue,冲动背景值
+ServerManager-XMLs.ts,ServerManagerXML,Impulse Noise Probability,噪音可能性
+ServerManager-XMLs.ts,ServerManagerXML,Impulse Probability,强制概率
+ServerManager-XMLs.ts,ServerManagerXML,Incremental Octree Point Locator,递增点定位器
+ServerManager-XMLs.ts,ServerManagerXML,Indexed Opacities,指数化
+ServerManager-XMLs.ts,ServerManagerXML,Indicate that point scalars are to be generated.,说明将生成点标。
+ServerManager-XMLs.ts,ServerManagerXML,Indicate that point vectors are to be generated.,显示要生成点向量 。
+ServerManager-XMLs.ts,ServerManagerXML,Inherit Representation Properties,继承代表属性
+ServerManager-XMLs.ts,ServerManagerXML,Initial Step Length,初始步长
+ServerManager-XMLs.ts,ServerManagerXML,Integrate Fragments,整合碎片
+ServerManager-XMLs.ts,ServerManagerXML,Integration Parameters,整合参数
+ServerManager-XMLs.ts,ServerManagerXML,Integration Strategy,融合战略
+ServerManager-XMLs.ts,ServerManagerXML,Interior Lines Color,内线颜色
+ServerManager-XMLs.ts,ServerManagerXML,Interior Lines Visibility,内线可见度
+ServerManager-XMLs.ts,ServerManagerXML,Interior Lines Width,内线宽度
+ServerManager-XMLs.ts,ServerManagerXML,Interpolate Attributes,内插属性
+ServerManager-XMLs.ts,ServerManagerXML,Interpolate Textures,内插纹理
+ServerManager-XMLs.ts,ServerManagerXML,Intersect With,与
+ServerManager-XMLs.ts,ServerManagerXML,Intersection Normal,间断
+ServerManager-XMLs.ts,ServerManagerXML,Invoke to clear verbosity elevations.,开始清除动词高度
+ServerManager-XMLs.ts,ServerManagerXML,Is Tolerance Absolute,绝对容忍
+ServerManager-XMLs.ts,ServerManagerXML,Isosurface Values,表面值
+ServerManager-XMLs.ts,ServerManagerXML,Key Light Elevation,密钥光梯
+ServerManager-XMLs.ts,ServerManagerXML,Key Light Intensity,键光强度
+ServerManager-XMLs.ts,ServerManagerXML,Label Representation,标签代表
+ServerManager-XMLs.ts,ServerManagerXML,Label Unique Edges Only,仅标签
+ServerManager-XMLs.ts,ServerManagerXML,Layer Thickness,层厚度
+ServerManager-XMLs.ts,ServerManagerXML,Light Position,浅位置
+ServerManager-XMLs.ts,ServerManagerXML,Light Representation,轻型代表
+ServerManager-XMLs.ts,ServerManagerXML,Light Widget Representation,亮部件代表
+ServerManager-XMLs.ts,ServerManagerXML,Line Parameters,行参数
+ServerManager-XMLs.ts,ServerManagerXML,Line Representation,代表性
+ServerManager-XMLs.ts,ServerManagerXML,Line Source Widget Representation,线源部件表示符
+ServerManager-XMLs.ts,ServerManagerXML,Line Thickness,行宽
+ServerManager-XMLs.ts,ServerManagerXML,Linear Approximation,线性近似
+ServerManager-XMLs.ts,ServerManagerXML,Location Parameters,地点参数
+ServerManager-XMLs.ts,ServerManagerXML,Location Selection Source,选择来源
+ServerManager-XMLs.ts,ServerManagerXML,Logo Representation,标志代表
+ServerManager-XMLs.ts,ServerManagerXML,Logo Source Representation,数据源代表
+ServerManager-XMLs.ts,ServerManagerXML,Lower Threshold,下限
+ServerManager-XMLs.ts,ServerManagerXML,Make the arrow tip point inwards.,使箭尖向内.
+ServerManager-XMLs.ts,ServerManagerXML,Material Library,资料库
+ServerManager-XMLs.ts,ServerManagerXML,Max Number Of Points,最大点数
+ServerManager-XMLs.ts,ServerManagerXML,Max number of points per leaf,每叶最大点数
+ServerManager-XMLs.ts,ServerManagerXML,Maximum Number Of Levels,最高等级数
+ServerManager-XMLs.ts,ServerManagerXML,Maximum Number Of Periods,最大周期数
+ServerManager-XMLs.ts,ServerManagerXML,Maximum Number Of Steps,最大步骤数
+ServerManager-XMLs.ts,ServerManagerXML,Maximum Number of Blocks,最大块数
+ServerManager-XMLs.ts,ServerManagerXML,Maximum Number of Iterations,最多重复次数
+ServerManager-XMLs.ts,ServerManagerXML,Maximum Number of Points,最大点数
+ServerManager-XMLs.ts,ServerManagerXML,Maximum Number of Subdivisions,最大分区数
+ServerManager-XMLs.ts,ServerManagerXML,Maximum Step Length,最大步长
+ServerManager-XMLs.ts,ServerManagerXML,Mesh Static Over Time,时空静态
+ServerManager-XMLs.ts,ServerManagerXML,Minimum Step Length,最小步长
+ServerManager-XMLs.ts,ServerManagerXML,Molecule Representation,分子代表制
+ServerManager-XMLs.ts,ServerManagerXML,Multi Components Mapping,多部件绘图
+ServerManager-XMLs.ts,ServerManagerXML,Multiprocess Communication,多进程通信
+ServerManager-XMLs.ts,ServerManagerXML,Near Plane Distance Info,近距离信息
+ServerManager-XMLs.ts,ServerManagerXML,Null Points Strategy,核点战略
+ServerManager-XMLs.ts,ServerManagerXML,Number Of Arcs,弧数
+ServerManager-XMLs.ts,ServerManagerXML,Number Of Axes,轴数
+ServerManager-XMLs.ts,ServerManagerXML,Number Of Domains Information,域数 :
+ServerManager-XMLs.ts,ServerManagerXML,Number Of Layers,层数
+ServerManager-XMLs.ts,ServerManagerXML,Number Of Partitions,分区数
+ServerManager-XMLs.ts,ServerManagerXML,Number Of Periods,期间数
+ServerManager-XMLs.ts,ServerManagerXML,Number Of Points,点数
+ServerManager-XMLs.ts,ServerManagerXML,Number Of Points Per Bucket,每桶点数
+ServerManager-XMLs.ts,ServerManagerXML,Number Of Radial Axes,放射轴数
+ServerManager-XMLs.ts,ServerManagerXML,Number Of Table Values,表数值
+ServerManager-XMLs.ts,ServerManagerXML,Number Of Ticks,次数
+ServerManager-XMLs.ts,ServerManagerXML,Number of Bins,宾数
+ServerManager-XMLs.ts,ServerManagerXML,Number of Dimensions,尺寸数
+ServerManager-XMLs.ts,ServerManagerXML,Number of Intervals,间隔次数
+ServerManager-XMLs.ts,ServerManagerXML,Number of Iterations,重复次数
+ServerManager-XMLs.ts,ServerManagerXML,Number of Sides,侧数
+ServerManager-XMLs.ts,ServerManagerXML,Number of Subdivisions,分区数目
+ServerManager-XMLs.ts,ServerManagerXML,Number of functions.,功能数.
+ServerManager-XMLs.ts,ServerManagerXML,Number of header lines,标题行数
+ServerManager-XMLs.ts,ServerManagerXML,Number of line segments in the polyline defining the ellipse edge.,定义椭圆边缘的多线段数。
+ServerManager-XMLs.ts,ServerManagerXML,Number of points per bucket,每桶积分数
+ServerManager-XMLs.ts,ServerManagerXML,Only Report Selection Statistics,仅报告选择统计
+ServerManager-XMLs.ts,ServerManagerXML,Orientation Axes,方向轴
+ServerManager-XMLs.ts,ServerManagerXML,Orientation Axes Interactivity,方向轴交互
+ServerManager-XMLs.ts,ServerManagerXML,Orientation Point,方向点
+ServerManager-XMLs.ts,ServerManagerXML,Orientation Vectors,方向矢量
+ServerManager-XMLs.ts,ServerManagerXML,Outline Translation,大纲翻译
+ServerManager-XMLs.ts,ServerManagerXML,Output Points Precision,输出点精度
+ServerManager-XMLs.ts,ServerManagerXML,Padding Amount,数量
+ServerManager-XMLs.ts,ServerManagerXML,Parallel Coordinates Representation,平行坐标代表
+ServerManager-XMLs.ts,ServerManagerXML,Parametric Function,参数函数
+ServerManager-XMLs.ts,ServerManagerXML,Partitions Values,分区值
+ServerManager-XMLs.ts,ServerManagerXML,Pass Through Cell Ids,通过单元格编号
+ServerManager-XMLs.ts,ServerManagerXML,Pass Through Point Ids,通过点编号
+ServerManager-XMLs.ts,ServerManagerXML,Performs the Fast Fourier Transform on the columns of a table.,在表格的列上执行快速变形。
+ServerManager-XMLs.ts,ServerManagerXML,Phi Roundness,菲圆
+ServerManager-XMLs.ts,ServerManagerXML,Piece Distribution,块分布
+ServerManager-XMLs.ts,ServerManagerXML,Pipeline Connection,管道连接
+ServerManager-XMLs.ts,ServerManagerXML,Placement of the text inside of the window.,将文字放在窗口内。
+ServerManager-XMLs.ts,ServerManagerXML,Plane Bounds,飞机
+ServerManager-XMLs.ts,ServerManagerXML,Plot Matrix Representation,绘图矩阵
+ServerManager-XMLs.ts,ServerManagerXML,Point Cloud Parameters,点云参数
+ServerManager-XMLs.ts,ServerManagerXML,Point Gaussian,高斯点
+ServerManager-XMLs.ts,ServerManagerXML,Point Gaussian Representation,高斯山代表点
+ServerManager-XMLs.ts,ServerManagerXML,Point Ids,点编号
+ServerManager-XMLs.ts,ServerManagerXML,Point Label Justification,点标签说明
+ServerManager-XMLs.ts,ServerManagerXML,Point Number,点数
+ServerManager-XMLs.ts,ServerManagerXML,Point Parameters,点参数
+ServerManager-XMLs.ts,ServerManagerXML,Point Tensors,点数
+ServerManager-XMLs.ts,ServerManagerXML,Point Variables,点变量
+ServerManager-XMLs.ts,ServerManagerXML,Point tensors from which to compute principal invariants.,要计算主变量的分数。
+ServerManager-XMLs.ts,ServerManagerXML,Point to voxel splatter.,指伏牛溅.
+ServerManager-XMLs.ts,ServerManagerXML,Polar Axes Representation,极轴代表
+ServerManager-XMLs.ts,ServerManagerXML,Polar Exponent Offset,极值偏移
+ServerManager-XMLs.ts,ServerManagerXML,Poly Line Representation,多元线代表
+ServerManager-XMLs.ts,ServerManagerXML,Poly Line Widget Representation,复线部件代表
+ServerManager-XMLs.ts,ServerManagerXML,Poly-line Parameters,多线参数
+ServerManager-XMLs.ts,ServerManagerXML,Polygonal Surface Contour Line Interpolator,多边形表面轮廓线
+ServerManager-XMLs.ts,ServerManagerXML,Port Number,端口编号
+ServerManager-XMLs.ts,ServerManagerXML,Potentially running out of memory,内存可能耗尽
+ServerManager-XMLs.ts,ServerManagerXML,Preserve Intermediate Functions,保留中级职能
+ServerManager-XMLs.ts,ServerManagerXML,Preserve Original Ids,保留原始编号
+ServerManager-XMLs.ts,ServerManagerXML,Press this to write the movie,按这个写电影
+ServerManager-XMLs.ts,ServerManagerXML,Progress Bar Source Representation,进步栏来源说明
+ServerManager-XMLs.ts,ServerManagerXML,Progress Bar Widget Representation,进步栏部件代表
+ServerManager-XMLs.ts,ServerManagerXML,Progressive Passes,递进传
+ServerManager-XMLs.ts,ServerManagerXML,Projection Axes,投影轴
+ServerManager-XMLs.ts,ServerManagerXML,Projection Position,投影位置
+ServerManager-XMLs.ts,ServerManagerXML,Propagate regionIds into the ghosts.,向鬼区推进
+ServerManager-XMLs.ts,ServerManagerXML,Proportionally Distribute Maximum Number Of Points,按比例分配最大点数
+ServerManager-XMLs.ts,ServerManagerXML,Protractor Representation,代理
+ServerManager-XMLs.ts,ServerManagerXML,Quadrature Scheme Def,四方方案
+ServerManager-XMLs.ts,ServerManagerXML,Quadric Coefficients,四方系数
+ServerManager-XMLs.ts,ServerManagerXML,Real Number Precision,实数精度
+ServerManager-XMLs.ts,ServerManagerXML,Rectilinear Grid Representation,直线网格代表
+ServerManager-XMLs.ts,ServerManagerXML,Reduce the number of lines in a polyline.,减少多线的线路数。
+ServerManager-XMLs.ts,ServerManagerXML,Reduce the number of points.,减分数.
+ServerManager-XMLs.ts,ServerManagerXML,Reflection Plane,反射图
+ServerManager-XMLs.ts,ServerManagerXML,Region Ids Name,区域编号
+ServerManager-XMLs.ts,ServerManagerXML,Render Bonds,债券
+ServerManager-XMLs.ts,ServerManagerXML,Replacement Value,替换值
+ServerManager-XMLs.ts,ServerManagerXML,Replacement Value Option,替换值选项
+ServerManager-XMLs.ts,ServerManagerXML,Representation for a frustum,基金会代表
+ServerManager-XMLs.ts,ServerManagerXML,Representation for poly line source.,代表多线源.
+ServerManager-XMLs.ts,ServerManagerXML,Representation for rendering Overlapping AMR as volume.,表示将重叠AMR作为量。
+ServerManager-XMLs.ts,ServerManagerXML,Representation for showing an outline for AMR dataset that is streaming capable.,显示能够流畅的AMR数据集大纲。
+ServerManager-XMLs.ts,ServerManagerXML,Represented Attributes,表示属性
+ServerManager-XMLs.ts,ServerManagerXML,Resolve Blocks,解析块
+ServerManager-XMLs.ts,ServerManagerXML,Right Axis Label Notation,右轴标记
+ServerManager-XMLs.ts,ServerManagerXML,Road Surface Arrays,路面阵列
+ServerManager-XMLs.ts,ServerManagerXML,Ruler Source Representation,标尺来源
+ServerManager-XMLs.ts,ServerManagerXML,Sample data attributes at the points in a point cloud.,标点云中点的数据属性.
+ServerManager-XMLs.ts,ServerManagerXML,Sample data values at the points in a point cloud.,点云中点的样本数据值.
+ServerManager-XMLs.ts,ServerManagerXML,Sampling Bounds,取样
+ServerManager-XMLs.ts,ServerManagerXML,Sampling Dimensions,取样方面
+ServerManager-XMLs.ts,ServerManagerXML,Save Batch Id,保存批次编号
+ServerManager-XMLs.ts,ServerManagerXML,Scaling weight contribution of the tensors attribute. This value is used to weight the contribution of the tensors attribute towards the error metric.,放大角属性的重量贡献。 此值用于加权变位器属性对错误度量表的贡献.
+ServerManager-XMLs.ts,ServerManagerXML,Scaling weight contribution of the texture coordinates attribute. This value is used to weight the contribution of the texture coordinates attribute towards the error metric.,放大纹理坐标属性的重量贡献 。 此值用于加权纹理坐标属性对误差度量的贡献.
+ServerManager-XMLs.ts,ServerManagerXML,Scatter Plot Axis Color,散点轴颜色
+ServerManager-XMLs.ts,ServerManagerXML,Scatter Plot Axis Label Notation,散射轴标签标记
+ServerManager-XMLs.ts,ServerManagerXML,Scatter Plot Axis Label Precision,散射轴标签精度
+ServerManager-XMLs.ts,ServerManagerXML,Scatter Plot Background Color,散点背景颜色
+ServerManager-XMLs.ts,ServerManagerXML,Scatter Plot Density Map First Decile Color,散射密度图( L)
+ServerManager-XMLs.ts,ServerManagerXML,Scatter Plot Selected Row Column Color,显示选中列的颜色
+ServerManager-XMLs.ts,ServerManagerXML,ScatterPlot Axis Label Properties,散点轴标签属性
+ServerManager-XMLs.ts,ServerManagerXML,Select Volume Weighted Arrays,选择量重矩阵
+ServerManager-XMLs.ts,ServerManagerXML,Select the component of the selection.,选择选择的组件。
+ServerManager-XMLs.ts,ServerManagerXML,Select which assembly is used when specifying selectors to choose blocks to extract.,选择选择要提取的块时使用的组件。
+ServerManager-XMLs.ts,ServerManagerXML,Select which properties to save in trace,选择要保存的属性
+ServerManager-XMLs.ts,ServerManagerXML,Selection Only,仅选择
+ServerManager-XMLs.ts,ServerManagerXML,Selection Qualifiers,选择资格
+ServerManager-XMLs.ts,ServerManagerXML,Selection Representation,甄选代表
+ServerManager-XMLs.ts,ServerManagerXML,Separating Distance,分隔距离
+ServerManager-XMLs.ts,ServerManagerXML,Separating Distance Ratio,隔离距离比
+ServerManager-XMLs.ts,ServerManagerXML,Sequential Processing,顺序处理
+ServerManager-XMLs.ts,ServerManagerXML,Set if the count of the values for each cell id of the point array will be computed.,设定是否计算点数组中每个单元格的值。
+ServerManager-XMLs.ts,ServerManagerXML,Set the angle of the cone.,设锥角.
+ServerManager-XMLs.ts,ServerManagerXML,Set the anisotropy rotation coefficient of the surface.,设置表面的异位旋转系数。
+ServerManager-XMLs.ts,ServerManagerXML,Set the axis range minimum for the Right axis.,设置右轴最小轴范围。
+ServerManager-XMLs.ts,ServerManagerXML,Set the bounding box for the domain,设置域的边框
+ServerManager-XMLs.ts,ServerManagerXML,Set the center of the cylinder.,设圆柱中央.
+ServerManager-XMLs.ts,ServerManagerXML,Set the color to use when a data value is above the range of the color map.,设定数据值高于颜色图范围的颜色。
+ServerManager-XMLs.ts,ServerManagerXML,Set the color to use when a data value is below the range of the color map.,设定数据值低于颜色图范围的颜色。
+ServerManager-XMLs.ts,ServerManagerXML,Set the emissive texture.,设使发纹.
+ServerManager-XMLs.ts,ServerManagerXML,Set the index of refraction of the base layer.,设置基层折射指数。
+ServerManager-XMLs.ts,ServerManagerXML,Set the justification of the title text with respect to the color legend.,设置标题文本对颜色图例的解释 。
+ServerManager-XMLs.ts,ServerManagerXML,Set the method for balancing partitions,设置分区平衡方法
+ServerManager-XMLs.ts,ServerManagerXML,Set the minimum range with respect to the displayed representations.,设定显示的表示的最小范围 。
+ServerManager-XMLs.ts,ServerManagerXML,Set the number of frames in which to play the animation.,设定播放动画的帧数 。
+ServerManager-XMLs.ts,ServerManagerXML,Set the number of points in circumferential direction.,设置偏心方向的点数 。
+ServerManager-XMLs.ts,ServerManagerXML,Set the number of points that define each round corner.,设定定义每个圆角的点数。
+ServerManager-XMLs.ts,ServerManagerXML,Set the number of subdivisions for recursive coordinate bisection.,设置递归坐标双节的分区数 。
+ServerManager-XMLs.ts,ServerManagerXML,Set the number of ticks and labels for the horizontal axis.,设置水平轴的勾和标签数。
+ServerManager-XMLs.ts,ServerManagerXML,Set the number of ticks and labels for the vertical axis.,设置垂直轴的勾和标签数。
+ServerManager-XMLs.ts,ServerManagerXML,Set the path traced recursion depth at which to start Russian roulette termination.,设定可追溯到的路径 。
+ServerManager-XMLs.ts,ServerManagerXML,Set the polyline to slice along.,设定多线 。
+ServerManager-XMLs.ts,ServerManagerXML,Set the roughness of the coat layer.,设粗衣层.
+ServerManager-XMLs.ts,ServerManagerXML,Set the strength of the coat layer.,设衣层之力.
+ServerManager-XMLs.ts,ServerManagerXML,Set the thickness of the border.,设置边框厚度.
+ServerManager-XMLs.ts,ServerManagerXML,Set the thickness ratio between major and minor ticks of last radial axis.,设定上一个射线轴的主比和小比。
+ServerManager-XMLs.ts,ServerManagerXML,Set the value of the lower threshold.,设定下限值 。
+ServerManager-XMLs.ts,ServerManagerXML,Set the value of the upper threshold.,设置上限值 。
+ServerManager-XMLs.ts,ServerManagerXML,Set the value that will replace data outside the lower and upper threshold bounds.,设定在下限和上限界限外替换数据的值。
+ServerManager-XMLs.ts,ServerManagerXML,Set the visibility of the representation.,设定代表的知名度.
+ServerManager-XMLs.ts,ServerManagerXML,Set whether or not the filter has to replace the values that are inside the lower and upper threshold bounds,设定过滤器是否必须替换下限和上限界限内的值
+ServerManager-XMLs.ts,ServerManagerXML,Set whether or not the filter has to replace the values that are outside the lower and upper threshold bounds,设定过滤器是否必须替换下限和上限界限以外的值
+ServerManager-XMLs.ts,ServerManagerXML,Setting TerminationTime to a positive value will cause particles to terminate when the time is reached. The units of time should be consistent with the primary time variable.,将终止时间设定为正值将会导致粒子在到达时终止。 时间单位应与主时间变量一致.
+ServerManager-XMLs.ts,ServerManagerXML,Shader Replacements,阴影替换
+ServerManager-XMLs.ts,ServerManagerXML,Shaft Radius,半径
+ServerManager-XMLs.ts,ServerManagerXML,Should mipmaps be used for textures. Mipmaps are espcially useful when working with large detailed textures or situations where you might be viewing a texture map from far away.,"应使用缩写来表达纹理 。 在处理大细纹理时,或者在您可能从远处查看纹理图的情况下,Mipmaps非常有用。"
+ServerManager-XMLs.ts,ServerManagerXML,Sides Strategy,战略
+ServerManager-XMLs.ts,ServerManagerXML,Single Function Only,单函数
+ServerManager-XMLs.ts,ServerManagerXML,Single Interface Layer,单界面层
+ServerManager-XMLs.ts,ServerManagerXML,Single Midpoint Layer,单点层
+ServerManager-XMLs.ts,ServerManagerXML,Single Sided,单身
+ServerManager-XMLs.ts,ServerManagerXML,Slice Representation,切片代表
+ServerManager-XMLs.ts,ServerManagerXML,Slider Widget Representation,滑动部件代表
+ServerManager-XMLs.ts,ServerManagerXML,Source Points,源点
+ServerManager-XMLs.ts,ServerManagerXML,Source Projection,源预测
+ServerManager-XMLs.ts,ServerManagerXML,Spatio Temporal Harmonics,气温谐波
+ServerManager-XMLs.ts,ServerManagerXML,Special Directories,特别目录
+ServerManager-XMLs.ts,ServerManagerXML,Specifies the offset array from which we interpolate values to quadrature points.,指定将数值插到四极点的偏移数组。
+ServerManager-XMLs.ts,ServerManagerXML,Specify the dataset that will be used to save selections for.,指定用于保存选择的数据集。
+ServerManager-XMLs.ts,ServerManagerXML,Specify the displacement vectors array,指定移位矢量阵列
+ServerManager-XMLs.ts,ServerManagerXML,Specify the maximum number of iterations in which cluster centers are moved before the algorithm terminates.,指定在算法终止前移动集群中心的最大迭代数。
+ServerManager-XMLs.ts,ServerManagerXML,Specify the number of clusters.,指定组数。
+ServerManager-XMLs.ts,ServerManagerXML,Specify the number of layers of connected elements to include in the selection.,指定选择中要包含的连接元素的层数。
+ServerManager-XMLs.ts,ServerManagerXML,"Specify whether to read variables from the single layer, from midpoint layers or from interface layers.",指定从单层、中层或界面层读取变量。
+ServerManager-XMLs.ts,ServerManagerXML,Sphere Representation,球形代表
+ServerManager-XMLs.ts,ServerManagerXML,Sphere Widget Representation,球形部件代表
+ServerManager-XMLs.ts,ServerManagerXML,Spherical Coordinates,球形坐标
+ServerManager-XMLs.ts,ServerManagerXML,Spline Representation,组合代表
+ServerManager-XMLs.ts,ServerManagerXML,Spread Sheet Representation,分页显示
+ServerManager-XMLs.ts,ServerManagerXML,Statistics Algorithm,统计算法
+ServerManager-XMLs.ts,ServerManagerXML,Streamline Parameters,简化参数
+ServerManager-XMLs.ts,ServerManagerXML,Structured Grid Volume Representation,结构网格量代表
+ServerManager-XMLs.ts,ServerManagerXML,Subdivision Level,分区级
+ServerManager-XMLs.ts,ServerManagerXML,Suppress Rendering,禁制
+ServerManager-XMLs.ts,ServerManagerXML,Surface Representation,地面代表
+ServerManager-XMLs.ts,ServerManagerXML,Surface Streamlines,表面精简
+ServerManager-XMLs.ts,ServerManagerXML,Synchronize Only,只同步
+ServerManager-XMLs.ts,ServerManagerXML,Tensors Weight,日记重
+ServerManager-XMLs.ts,ServerManagerXML,Text Representation,文字说明
+ServerManager-XMLs.ts,ServerManagerXML,Text that is used as a prefix to the field value,用作字段值前缀的文本
+ServerManager-XMLs.ts,ServerManagerXML,Texture Coordinates,纹理坐标
+ServerManager-XMLs.ts,ServerManagerXML,The Equalizer Filter implements an algorithm that selectively corrects the signal amplitude depending on the frequency characteristics.,"平衡器滤镜执行一个算法,根据频率特性有选择地修正信号振幅."
+ServerManager-XMLs.ts,ServerManagerXML,The Intersect Fragments filter perform geometric intersections on sets of fragments.,间断裂滤波器在碎片组上进行几何交叉.
+ServerManager-XMLs.ts,ServerManagerXML,The Poly Line Source creates a poly line from an arbitrary number of specified points.,聚线源从任意的指定点数创建多线.
+ServerManager-XMLs.ts,ServerManagerXML,"The Python expression evaluated during execution. FieldData arrays are directly available through their name. Set of potentially available variables [inputs, points, t_value, t_steps, t_range, t_index, FieldData, PointData, CellData] (i.e.: \""Momentum: (%f, %f, %f)\"" % (XMOM[t_index,0], YMOM[t_index,0], ZMOM[t_index,0]) ) Additional variables, using the fmt library's syntax, are {timevalue}, {timerange}, {timesteps} and {timeindex}. These variables are always available, and their default values are 0, [], [] and 0 respectively.","执行期间评价的Python表达式. FieldData数组直接通过其名称提供. 一组潜在的变量[输入,点数,t 值,t 值,t 步数,t 值,t index, FieldData, PointData, CellData] (即:\""运动:(%f,%f,%f)\""%(XMOM[t index,0],YMOM[t index,0],ZMOM[t index,0]) 使用fmt库语法的额外变量是{时值},{时程},{timesteps}和{timeindex}. 这些变量总是可用的,其默认值分别为0,[],[]和0."
+ServerManager-XMLs.ts,ServerManagerXML,The center of the annulus.,废品的中心
+ServerManager-XMLs.ts,ServerManagerXML,The center of the cylinder. The center is located along the cylinder axis.,圆柱中央. 中心位于圆柱轴沿线.
+ServerManager-XMLs.ts,ServerManagerXML,The center of the ellipse.,椭圆中心.
+ServerManager-XMLs.ts,ServerManagerXML,"The compression algorithm used to compress binary data (appended mode only). None offers fastest write, LZ4 offers fastest compressed write, ZLib offers balanced performance, LZMA offers smallest compressed filesize.","用于压缩二进制数据的压缩算法(仅应用模式). 无提供最快的写法,LZ4提供最快的压缩写法,ZLib提供均衡的性能,LZMA提供最小的压缩文件ize."
+ServerManager-XMLs.ts,ServerManagerXML,"The compression algorithm used to compress binary data (appended mode only). None offers fastest write, LZ4 offers the fastest compressed write, ZLib offers balanced performance, LZMA offers smallest compressed filesize.","用于压缩二进制数据的压缩算法(仅应用模式). 无提供最快的写法,LZ4提供最快的压缩写法,ZLib提供平衡性能,LZMA提供最小的压缩文件化."
+ServerManager-XMLs.ts,ServerManagerXML,The data source that provides the structure to be interpolated on.,提供要插图的结构的数据源.
+ServerManager-XMLs.ts,ServerManagerXML,The direction of the axis of revolution.,革命轴线的方向.
+ServerManager-XMLs.ts,ServerManagerXML,The inner radius of the annulus.,废品的内半径
+ServerManager-XMLs.ts,ServerManagerXML,The line that contains the column names.,包含列名的行.
+ServerManager-XMLs.ts,ServerManagerXML,The list of locations that will be added to the selection produced by the selection source.,将添加到选择源产生的选择中的位置列表 。
+ServerManager-XMLs.ts,ServerManagerXML,The list of thresholds that will be added to the selection produced by the selection source.,选择源产生的选择中将添加的阈值列表 。
+ServerManager-XMLs.ts,ServerManagerXML,The minimum energy to use when determining the dimensionality of the new space into which the assessment will project tuples.,在确定评估将投射槽的新空间的维度时所使用的最低能量。
+ServerManager-XMLs.ts,ServerManagerXML,The number of lines that form the header.,构成标题的行数 。
+ServerManager-XMLs.ts,ServerManagerXML,The orientation of the frustum.,节节的走向.
+ServerManager-XMLs.ts,ServerManagerXML,The outer radius of the annulus.,废品的外半径
+ServerManager-XMLs.ts,ServerManagerXML,The property indicates whether decomposed mesh or reconstructed mesh should be read,地产表示分解的网格或重建的网格应读作
+ServerManager-XMLs.ts,ServerManagerXML,The radius of the gaussian blur for each point.,每个点的半径模糊
+ServerManager-XMLs.ts,ServerManagerXML,The scalar value at a given point is multiplied by the value of this property to determine the magnitude of the change vector for that point.,"某一点的刻度值乘以此属性的值,以确定该点的变化矢量的大小."
+ServerManager-XMLs.ts,ServerManagerXML,The value of this property contains the name of the array from which to generate the critical time values.,此属性的值包含生成关键时间值的数组名称 。
+ServerManager-XMLs.ts,ServerManagerXML,The value of this property determines the dataset type for the output of the programmable source.,此属性的值决定了可编程源输出的数据集类型.
+ServerManager-XMLs.ts,ServerManagerXML,The value of this property determines whether the results of this computation should be used as point coordinates or as a new array.,此属性的值决定了该计算结果应用作点坐标还是用作新数组.
+ServerManager-XMLs.ts,ServerManagerXML,The value of this property indicates the amount by which to shrink along each axis.,此属性的值表示沿着每个轴缩小的量 。
+ServerManager-XMLs.ts,ServerManagerXML,The value of this property indicates the maximum number of points in the output dataset.,此属性的值表示输出数据集中的最大点数.
+ServerManager-XMLs.ts,ServerManagerXML,The value of this property indicates the number of faces around the circumference of the tube.,此属性的值表示环管周围的面孔数.
+ServerManager-XMLs.ts,ServerManagerXML,The value of this property is the volume fraction value for the surface.,此属性的值是表面的容积分值.
+ServerManager-XMLs.ts,ServerManagerXML,The value of this property sets the size of the corners as a percentage of the length of the corresponding bounding box edge.,此属性的值将角的大小设定为相应的边框边缘长度的百分比.
+ServerManager-XMLs.ts,ServerManagerXML,The value of this property specifies the array component from which the histogram should be computed.,此属性的值指定了用于计算直方图的数组组件 。
+ServerManager-XMLs.ts,ServerManagerXML,The value of this property specifies the lower bound of the thresholding operation.,此属性的值指定了阈值操作的下限 。
+ServerManager-XMLs.ts,ServerManagerXML,The value of this property specifies the maximum number of levels in the hyper tree grid.,此属性的值指定了超树格的最大关卡数 。
+ServerManager-XMLs.ts,ServerManagerXML,The value of this property specifies the upper bound of the thresholding operation.,此属性的值指定了阈值操作的上限 。
+ServerManager-XMLs.ts,ServerManagerXML,The value of this property will be used as a multiplier for scaling the glyphs before adding them to the output.,此属性的值在添加到输出前将作为放大格子的乘数.
+ServerManager-XMLs.ts,ServerManagerXML,The values of this property set the direction of the axis around which the rotation is done.,此属性的值设定了旋转的轴方向 。
+ServerManager-XMLs.ts,ServerManagerXML,The values of this property specify the upper and lower bounds of the thresholding operation.,此属性的值指定了阈值操作的上下界限.
+ServerManager-XMLs.ts,ServerManagerXML,The world coordinate position of the anchor point of the text billboard.,文字公告牌的锚点世界协调位置.
+ServerManager-XMLs.ts,ServerManagerXML,The world coordinate position of the base of the flagpole.,旗杆底部的世界协调位置.
+ServerManager-XMLs.ts,ServerManagerXML,The world coordinate position of the top of the flagpole.,旗杆顶部的世界协调位置.
+ServerManager-XMLs.ts,ServerManagerXML,This filter applies transformation to the polygons.,此过滤器适用于多边形。
+ServerManager-XMLs.ts,ServerManagerXML,"This filter generates scalars using cell and point ids. That is, the point attribute data scalars are generated from the point ids, and the cell attribute data scalars or field data are generated from the the cell ids. Note that in the case of an input HTG, only cell IDs generation is available.","此过滤器使用单元格和点标识生成缩写 。 即点属性数据scalars由点标识生成,细胞属性数据scalars或字段数据由单元格标识生成. 注意在输入HTG的情况下,只有细胞ID生成可用."
+ServerManager-XMLs.ts,ServerManagerXML,This filter uses a greedy algorithm to convert triangles into triangle strips,此过滤器使用一个贪婪的算法将三角形转换成三角形条形
+ServerManager-XMLs.ts,ServerManagerXML,This flag indicates if the sub-table must be effectively transposed or not.,此旗表示子表是否必须有效移植.
+ServerManager-XMLs.ts,ServerManagerXML,This is simply an int that changes whenever a new assembly is built by the reader. This can be used to determine if the assembly should be fetched from the reader whenever the reader is updated.,"只要读者建造新装配, 这可以用来确定当读者更新时是否应从读者那里获取集合."
+ServerManager-XMLs.ts,ServerManagerXML,This property contains the string that is parsed to determine the structured of the output data object to produce.,此属性包含用于确定输出数据对象结构的解析字符串。
+ServerManager-XMLs.ts,ServerManagerXML,This property controls the coordinates of the end point.,此属性控制终点坐标 。
+ServerManager-XMLs.ts,ServerManagerXML,This property controls the coordinates of the first endpoint of the line.,此属性控制线首端点的坐标.
+ServerManager-XMLs.ts,ServerManagerXML,This property controls the coordinates of the second endpoint of the line.,此属性控制了线条第二端点的坐标.
+ServerManager-XMLs.ts,ServerManagerXML,This property controls the coordinates of the start point.,此属性控制起始点坐标 。
+ServerManager-XMLs.ts,ServerManagerXML,This property controls the maximum field error allowed at any edge midpoint in the output tessellation. The field error is measured as the difference between a field value at the midpoint of an output edge and the value of the corresponding field in the original nonlinear geometry.,此属性控制输出中点任意边缘允许的最大字段错误 。 字段误差作为输出边缘中点的字段值与原非线性几何学中相应字段值的差值来测量.
+ServerManager-XMLs.ts,ServerManagerXML,This property defines the target points of lines for transformation.,此属性定义了转换线的目标点.
+ServerManager-XMLs.ts,ServerManagerXML,This property determines in which direction(s) a streamline is generated.,此属性决定生成精简的方向 。
+ServerManager-XMLs.ts,ServerManagerXML,This property determines which integration strategy to use for the data integration.,此属性决定了用于数据整合的集成策略.
+ServerManager-XMLs.ts,ServerManagerXML,This property indicates the component of the array to be used for Y-axis of the volume 2D transfer function.,此属性表示用于卷2D传输函数的Y轴的数组组件.
+ServerManager-XMLs.ts,ServerManagerXML,This property indicates the component of the array to be used for scaling.,此属性表示用于缩放的数组组件 。
+ServerManager-XMLs.ts,ServerManagerXML,This property indicates the name of the array from which to obtain the annotation value.,此属性表示要获取注释值的数组名称 。
+ServerManager-XMLs.ts,ServerManagerXML,This property indicates whether the data is two- or three-dimensional.,此属性表示数据是二维还是三维.
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies how many levels of refinement should be included in this hierarchical dataset.,此属性指定了该分级数据集应包含多少级的改进.
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies how the samples should be blended,此属性指定如何混合样本
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the 3D coordinates for the center of the rotation.,此属性指定旋转中心的3D坐标 。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the 3D coordinates of the center of the point cloud.,此属性指定点云中心3D坐标 。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the axis of rotation,此属性指定旋转轴
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the cell arrays from which the analysis will determine fragment mass,此属性指定分析将确定片段质量的单元格数组
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the cell arrays from which the analysis will determine fragments,此属性指定分析将确定碎片的单元格数组
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the cell arrays from which the analysis will determine mass weighted average values,此属性指定分析将确定质量加权平均值的单元格数组
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the coordinate value at the center of the cylinder.,此属性指定圆柱中心坐标值 。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the dataset whose geometry will be used in determining positions to probe.,该属性指定了用于确定探测位置的几何数据集。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the desired level of resolution that will be visible.,该属性指定了可见的预期分辨率。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the expression which defines the relation between the input selections.,此属性指定定义输入选择间关系的表达式 。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the input from which the selection is extracted.,此属性指定选择的提取输入 。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the maximum length of the random point vectors generated.,此属性指定随机点向量的最大长度 。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the meta file name,此属性指定元文件名
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the minimum length of the random point vectors generated.,此属性指定随机点向量的最小长度 。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the number of iteration,此属性指定重复次数
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the number of pieces into which to divide the line.,此属性指定要分割行的块数 。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the number of points in the point cloud.,此属性指定点云中的点数 。
+ServerManager-XMLs.ts,ServerManagerXML,"This property specifies the radius of the point cloud, measured from the value of the Center property.","这个属性指定点云的半径,从中心属性的值计量."
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the radius of the widest part of the tip of the arrow (the cone).,此属性指定箭头(圆锥)最宽部分的半径.
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the rotation angle of the transformation. The rotation direction is set according to the right hand rule with respect to the rotation axis.,此属性指定转换的旋转角度 。 旋转方向按照关于旋转轴的右手规则设置。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the rotation axis of the transformation.,此属性指定了转换的旋转轴 。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the scaling vector of the transformation.,此属性指定转换的缩放矢量 。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the seed that will be used for generating a uniform distribution of glyph points when a Uniform Spatial Distribution is used.,此属性指定了在使用统一空间分布时用于生成甘油点统一分布的种子.
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the timestep index to use in the first part of the comparison computation,此属性指定用于比较计算第一部分的时间步索引
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the timestep index to use in the second part of the comparison computation,此属性指定用于比较计算第二部分的时间步索引
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the translation vector of the transformation.,此属性指定转换的翻译矢量 。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the values at which to compute density lines and also the number of such values.,此属性指定了计算密度线的值以及此类值的数量。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies the values at which to compute the isosurface.,此属性指定了计算异地值的值 。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies whether floating points values are in double precision.,此属性指定浮点值是否为双精度 。
+ServerManager-XMLs.ts,ServerManagerXML,This property specifies which column to use for thresholding.,此属性指定用于阈值的列 。
+ServerManager-XMLs.ts,ServerManagerXML,This value specifies the lower threshold.,此值指定下限 。
+ServerManager-XMLs.ts,ServerManagerXML,This value specifies the upper threshold.,此值指定了上限 。
+ServerManager-XMLs.ts,ServerManagerXML,Threshold Criterion,阈值标准
+ServerManager-XMLs.ts,ServerManagerXML,Threshold Selection Source,阈值选择源
+ServerManager-XMLs.ts,ServerManagerXML,Threshold table rows.,阈表行.
+ServerManager-XMLs.ts,ServerManagerXML,Timestep Values,时序值
+ServerManager-XMLs.ts,ServerManagerXML,Title Justification,标题
+ServerManager-XMLs.ts,ServerManagerXML,Translucent Rendering Options,透明渲染选项
+ServerManager-XMLs.ts,ServerManagerXML,Transparent Background,透明背景
+ServerManager-XMLs.ts,ServerManagerXML,Turns on filtering of particles by location,打开按位置过滤粒子
+ServerManager-XMLs.ts,ServerManagerXML,Two Dimensional Geometry,二维几何
+ServerManager-XMLs.ts,ServerManagerXML,Upper Threshold,上限
+ServerManager-XMLs.ts,ServerManagerXML,Used to begin writing of the animation,曾经开始写动画
+ServerManager-XMLs.ts,ServerManagerXML,Used to help in animation representation properties.,曾帮助动画表现属性.
+ServerManager-XMLs.ts,ServerManagerXML,Variables of Interest,利息变量
+ServerManager-XMLs.ts,ServerManagerXML,Vertical Justification,垂直说明
+ServerManager-XMLs.ts,ServerManagerXML,Vertical Label Number,垂直标签编号
+ServerManager-XMLs.ts,ServerManagerXML,Visibility of the representation.,显显代表.
+ServerManager-XMLs.ts,ServerManagerXML,Volume Fraction Value,卷分数
+ServerManager-XMLs.ts,ServerManagerXML,Volume Preservation,量保全
+ServerManager-XMLs.ts,ServerManagerXML,Volume Representation,人数
+ServerManager-XMLs.ts,ServerManagerXML,Volumetric Scattering Blending,卷曲搅拌
+ServerManager-XMLs.ts,ServerManagerXML,Warp point scalars into a spatial elevation plot.,曲点分解成空间高地图
+ServerManager-XMLs.ts,ServerManagerXML,Whether or not to extract a surface from this data,是否从此数据提取表面
+ServerManager-XMLs.ts,ServerManagerXML,Whether the extracted surface should be watertight or not,提取的表层是否应当水密
+ServerManager-XMLs.ts,ServerManagerXML,Whole Extent,范围
+ServerManager-XMLs.ts,ServerManagerXML,XY Chart Representation,XY 图示
+ServerManager-XMLs.ts,ServerManagerXML,Youngs material interface reconstruction,青年物质界面重建
+ServerManager-XMLs.ts,ServerManagerXML,Zone Sections,区段
+ServerManager-XMLs.ts,ServerManagerXML,id,编号

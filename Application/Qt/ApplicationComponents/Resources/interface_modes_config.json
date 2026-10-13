@@ -31,6 +31,8 @@
         "separator",
         "actionDelete_All",
         "separator",
+        "actionEditSettings",
+        "separator",
         "actionSetMainWindowTitle"
       ],
       "menuHelp": [
