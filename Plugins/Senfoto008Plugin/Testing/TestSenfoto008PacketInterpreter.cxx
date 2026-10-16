@@ -14,7 +14,7 @@
 //        校验解析出的点云字段与时间戳正确性。
 // 作者：acelan
 // 新建时间：2026-08-28
-// 修改时间：2026-09-01
+// 修改时间：2026-10-17
 // ============================================================
 
 #include "vtkSenfoto008PacketInterpreter.h"
@@ -102,6 +102,22 @@ std::vector<unsigned char> Build96LinePacket(const std::array<std::uint16_t, 8>&
 
   // Tail is left as zeros.
   return packet;
+}
+
+// Packet timestamp: offset 20, 6 bytes seconds LE + 4 bytes microseconds LE
+// (matches senfoto008::GetPacketTimestamp).
+void SetPacketTimestamp(std::vector<unsigned char>& packet, std::uint64_t seconds,
+  std::uint32_t microseconds)
+{
+  unsigned char* ts = packet.data() + 20;
+  for (int i = 0; i < 6; ++i)
+  {
+    ts[i] = static_cast<unsigned char>((seconds >> (8 * i)) & 0xFF);
+  }
+  ts[6] = static_cast<unsigned char>(microseconds & 0xFF);
+  ts[7] = static_cast<unsigned char>((microseconds >> 8) & 0xFF);
+  ts[8] = static_cast<unsigned char>((microseconds >> 16) & 0xFF);
+  ts[9] = static_cast<unsigned char>((microseconds >> 24) & 0xFF);
 }
 
 bool CheckAzimuthCorrectionApplied(vtkPolyData* frame, double expectedRawAzimuthDeg)
@@ -242,6 +258,48 @@ int main(int vtkNotUsed(argc), char* vtkNotUsed(argv)[])
   if (!run96LineTest(false, 35000, 350.0, CheckAllAzimuthEqual))
   {
     return 1;
+  }
+
+  // ---------------------------------------------------------------------------
+  // RPM / Frequency: 3 revolutions, 10 packets each (az 0..359.9 deg),
+  // 10 ms per packet  =>  ~1 revolution / 100 ms  =>  RPM ~600, FPS ~10.
+  // ---------------------------------------------------------------------------
+  {
+    vtkNew<vtkSenfoto008PacketInterpreter> rpmInterp;
+    rpmInterp->Initialize();
+
+    std::uint64_t sec = 1000;
+    std::uint32_t micros = 0;
+    for (int rev = 0; rev < 3; ++rev)
+    {
+      for (int i = 0; i < 10; ++i)
+      {
+        const std::uint16_t azUnits =
+          static_cast<std::uint16_t>(std::lround(i * 35990.0 / 9.0)); // 0 .. 359.90 deg
+        auto p = Build48LinePacket(azUnits);
+        SetPacketTimestamp(p, sec, micros);
+        rpmInterp->ProcessPacket(p.data(), static_cast<unsigned int>(p.size()));
+        micros += 10000; // +10 ms
+        if (micros >= 1000000)
+        {
+          micros -= 1000000;
+          ++sec;
+        }
+      }
+    }
+
+    const double rpm = rpmInterp->GetRpm();
+    const double fps = rpmInterp->GetFrequency();
+    if (!(rpm > 400.0 && rpm < 800.0))
+    {
+      std::cerr << "RPM out of range: " << rpm << std::endl;
+      return 1;
+    }
+    if (!(fps > 5.0 && fps < 15.0))
+    {
+      std::cerr << "FPS out of range: " << fps << std::endl;
+      return 1;
+    }
   }
 
   return 0;
