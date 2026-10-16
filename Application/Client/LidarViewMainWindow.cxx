@@ -49,6 +49,7 @@ typedef pqPythonDebugLeaksView DebugLeaksViewType;
 #include <QList>
 #include <QMessageBox>
 #include <QMimeData>
+#include <QSettings>
 #include <QSpinBox>
 #include <QToolBar>
 
@@ -59,6 +60,7 @@ typedef pqPythonDebugLeaksView DebugLeaksViewType;
 #include "lqLaserSelectionReaction.h"
 #include "lqOpenLidarReaction.h"
 #include "lqPointCloudAutoRepresentationBehavior.h"
+#include "lqRPMTextReaction.h"
 #include "lqRecentlyUsedPcapLoader.h"
 #include "lqStreamPCAPRecorder.h"
 #include "lqTrailingFrameReaction.h"
@@ -212,6 +214,11 @@ LidarViewMainWindow::LidarViewMainWindow()
   QAction* actionLaserSelection = new QAction(tr("Laser Selection"), this);
   this->Internals->menuTools->addAction(actionLaserSelection);
   new lqLaserSelectionReaction(actionLaserSelection);
+  QAction* actionShowRPM = new QAction(tr("Show RPM"), this);
+  actionShowRPM->setCheckable(true);
+  actionShowRPM->setChecked(QSettings().value("LidarView/ShowRPM", true).toBool());
+  this->Internals->menuTools->addAction(actionShowRPM);
+  new lqRPMTextReaction(actionShowRPM);
   pqParaViewMenuBuilders::buildMacrosMenu(*this->Internals->menuMacros);
   lqLidarViewMenuBuilders::buildHelpMenu(*this->Internals->menuHelpBase);
 
