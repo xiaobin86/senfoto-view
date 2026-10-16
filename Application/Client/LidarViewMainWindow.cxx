@@ -60,6 +60,7 @@ typedef pqPythonDebugLeaksView DebugLeaksViewType;
 #include "lqOpenLidarReaction.h"
 #include "lqPointCloudAutoRepresentationBehavior.h"
 #include "lqRecentlyUsedPcapLoader.h"
+#include "lqSenfotoNetworkConfigReaction.h"
 #include "lqStreamPCAPRecorder.h"
 #include "lqTrailingFrameReaction.h"
 #include "lqViewFrameActionsImplementation.h"
@@ -212,6 +213,9 @@ LidarViewMainWindow::LidarViewMainWindow()
   QAction* actionLaserSelection = new QAction(tr("Laser Selection"), this);
   this->Internals->menuTools->addAction(actionLaserSelection);
   new lqLaserSelectionReaction(actionLaserSelection);
+  QAction* actionSenfotoNetworkConfig = new QAction(tr("Sensor IP Config"), this);
+  this->Internals->menuTools->addAction(actionSenfotoNetworkConfig);
+  new lqSenfotoNetworkConfigReaction(actionSenfotoNetworkConfig);
   pqParaViewMenuBuilders::buildMacrosMenu(*this->Internals->menuMacros);
   lqLidarViewMenuBuilders::buildHelpMenu(*this->Internals->menuHelpBase);
 
