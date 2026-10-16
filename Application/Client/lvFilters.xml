@@ -49,6 +49,10 @@
     <Proxy group="filters" name="EnvironmentAnnotation" />
   </Category>
 
+  <Category name="Sensor" menu_label="&amp;Sensor" preserve_order="1">
+    <Proxy group="filters" name="RPMText" />
+  </Category>
+
   <!-- This section list all filters that can be available in ParaView and their icons -->
   <Proxy group="filters" name="AggregatePointsFromTrajectoryOnline" />
   <Proxy group="filters" name="AnnotateAttributeData" />
@@ -120,6 +124,7 @@
   <Proxy group="filters" name="PythonAnnotation" />
   <Proxy group="filters" name="PythonCalculator"  icon=":/lvResources/Icons/python_logo_124.png" />
   <Proxy group="filters" name="ReflectionFilter" />
+  <Proxy group="filters" name="RPMText" />
   <Proxy group="filters" name="RenameArrays" />
   <Proxy group="filters" name="RotationalExtrusionFilter" />
   <Proxy group="filters" name="ScatterPlot"/>
