@@ -37,6 +37,7 @@
 #include <pqActiveObjects.h>
 #include <pqApplicationCore.h>
 #include <pqCoreUtilities.h>
+#include <pqDataRepresentation.h>
 #include <pqFileDialog.h>
 #include <pqObjectBuilder.h>
 #include <pqPipelineSource.h>
@@ -76,6 +77,26 @@ void InitAndDisplaySource(pqPipelineSource* source, vtkSMProxy* prototype, bool 
 bool IsRadialDenoiseAutoAttachEnabled()
 {
   return QSettings().value("LidarView/AutoAttachRadialDenoise", true).toBool();
+}
+
+// Set the visibility of a source's representation in the active view.
+// Used to keep only the denoise layer visible by default (see AutoAttachRadialDenoise).
+void SetPipelineSourceVisible(pqPipelineSource* source, bool visible)
+{
+  if (!source)
+  {
+    return;
+  }
+  pqView* view = pqActiveObjects::instance().activeView();
+  if (!view)
+  {
+    return;
+  }
+  pqDataRepresentation* representation = source->getRepresentation(view);
+  if (representation)
+  {
+    representation->setVisible(visible);
+  }
 }
 
 void AutoAttachLaserSelection(pqPipelineSource* source)
@@ -119,6 +140,15 @@ void AutoAttachRadialDenoise(pqPipelineSource* source)
   }
   filter->getProxy()->UpdateVTKObjects();
   ::InitAndDisplaySource(filter, filter->getProxy(), true);
+
+  // Only keep the denoise layer visible by default: hide the upstream reader/stream
+  // and the laser-selection layers so they do not render on top of the denoised output.
+  // Only applied to Senfoto008 (AutoAttachRadialDenoise is only called for that source).
+  ::SetPipelineSourceVisible(source, false);
+  if (input != source)
+  {
+    ::SetPipelineSourceVisible(input, false);
+  }
 }
 
 // Keep sending signals to the qt app when loading heavy file
