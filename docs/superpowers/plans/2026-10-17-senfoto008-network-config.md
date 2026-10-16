@@ -10,6 +10,13 @@
 
 **Spec:** `docs/superpowers/specs/2026-10-17-senfoto008-network-config-design.md`
 
+> **执行时修订（2026-10-17，实际环境为 Qt6）**：
+> - 校验正则用 `QRegularExpression`（+`QRegularExpression::anchoredPattern`），**不用** `QRegExp`（Qt6 已移除）。
+> - `lqComponents` 需 `vtk_module_link(... PRIVATE Qt::Network)`（`QHostAddress`/`QUdpSocket` 属 QtNetwork）；头文件对 `QHostAddress` 仅前置声明，避免污染消费者。
+> - 模块以 `QT_NO_KEYWORDS` 编译 → 用 `Q_SLOTS`/`Q_SIGNALS`，不用 `slots`/`signals`。
+> - `.ui` 的 acelan 头注释须放在 `<?xml ...?>` **声明之后**、`<ui>` 之前。
+> - 本构建 `BUILD_TESTING=OFF`，故 `Qt/Components/CMakeLists.txt` 用 `enable_testing()` + 无条件 `add_subdirectory(Testing/Cxx)`（对齐 Senfoto008 插件测试的构建方式）。
+
 ## Global Constraints
 
 - 协议：UDP 目的端口 **8091**；写 `0xfc 0x60` + 雷达IP(4)+PC IP(4)+MAC(6)+端口(2 小端) = 18B；读 `0xfc 0x62 0x00 0x01`；应答头 `0xfc 0x62 0x00 0x02`。
