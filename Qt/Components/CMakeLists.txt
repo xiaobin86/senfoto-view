@@ -6,6 +6,7 @@ set(classes
   lqLidarStateDialog
   lqSelectLidarFrameDialog
   lqSenfotoNetworkConfig
+  lqSenfotoNetworkConfigDialog
   lqSenfotoPasswordDialog
   lqStreamPCAPRecorder
   lqStreamRecordController
@@ -18,6 +19,7 @@ set(ui_files
   Resources/UI/lqLaserSelectionDialog.ui
   Resources/UI/lqLidarConfigurationDialog.ui
   Resources/UI/lqSelectLidarFrameDialog.ui
+  Resources/UI/lqSenfotoNetworkConfigDialog.ui
   Resources/UI/lqSenfotoPasswordDialog.ui
   Resources/UI/lqStreamRecordDialog.ui
 )
