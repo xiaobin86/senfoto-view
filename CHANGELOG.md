@@ -5,6 +5,19 @@
 
 ---
 
+## 2026-10-16 批次：雷达点云默认 1 像素 + 去噪上游图层默认隐藏
+
+- `909056c2` feat(ui): 雷达点云默认点大小改为 1（属性框默认值同步）
+  - `lqPointCloudAutoRepresentationBehavior` 新增 `representationAdded` 槽 `onRepresentationAdded`，对每个新建表示判定其来源
+  - 所有 `<Sensor>LidarReader` / `<Sensor>LidarStream` 源（含派生图层 `LaserSelection` / `RadialDistanceDenoise`）的表示 `PointSize` 设为 1；沿 `pqPipelineFilter` 上游回溯判定雷达来源
+  - 效果：雷达点云默认 1 像素，Display 属性框 `Point Size` 默认显示 1；PLY 与非雷达数据不受影响
+  - 备注：不改动上游 superbuild/ParaView（ParaView 表示层 `PointSize` 默认仍为 2.0），仅由 fork 内行为覆盖
+- `758f5b61` feat(ui): 去噪后默认隐藏上游雷达/框选图层，仅显示去噪结果
+  - `AutoAttachRadialDenoise` 追加 `RadialDistanceDenoise` 后，隐藏上游 reader/stream 与 `LaserSelection` 图层（新增辅助 `SetPipelineSourceVisible`）
+  - 效果：默认只渲染去噪结果，避免上游点云叠加显示
+
+---
+
 ## 2026-10-13 批次：汉化修正（专有名词/术语/错误机器翻译）+ 规范文档 + TrailingFrame 输入端口修复
 
 - fix(i18n): 修正 zh_CN 大规模机器翻译错误（约 1700 条）
