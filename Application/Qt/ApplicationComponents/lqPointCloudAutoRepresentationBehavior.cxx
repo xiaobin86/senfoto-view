@@ -14,12 +14,14 @@
 =========================================================================*/
 
 // ============================================================
-// 功能：加载 PLY 点云时自动追加 Vertex Glyph filter 并切换到
+// 功能：1) 加载 PLY 点云时自动追加 Vertex Glyph filter 并切换到
 //       Points representation，使无 cell 的 PLY 可直接用标准 Points 显示。
+//       2) 所有雷达/Lidar 数据源（<Sensor>LidarReader / <Sensor>LidarStream，
+//       含其派生图层）的表示默认点大小设为 1 像素，属性框默认值也显示 1。
 //       对所有界面模式生效。
 // 作者：acelan
 // 新建时间：2026-08-31
-// 修改时间：2026-10-09
+// 修改时间：2026-10-16
 // ============================================================
 
 #include "lqPointCloudAutoRepresentationBehavior.h"
@@ -32,9 +34,13 @@
 
 #include <pqActiveObjects.h>
 #include <pqApplicationCore.h>
+#include <pqDataRepresentation.h>
 #include <pqObjectBuilder.h>
+#include <pqOutputPort.h>
+#include <pqPipelineFilter.h>
 #include <pqPipelineSource.h>
 #include <pqProxy.h>
+#include <pqRepresentation.h>
 #include <pqServerManagerModel.h>
 #include <pqView.h>
 
@@ -57,6 +63,11 @@ lqPointCloudAutoRepresentationBehavior::lqPointCloudAutoRepresentationBehavior(Q
     this,
     &lqPointCloudAutoRepresentationBehavior::onSourceAdded,
     Qt::QueuedConnection);
+  QObject::connect(smmodel,
+    &pqServerManagerModel::representationAdded,
+    this,
+    &lqPointCloudAutoRepresentationBehavior::onRepresentationAdded,
+    Qt::QueuedConnection);
 }
 
 //-----------------------------------------------------------------------------
@@ -73,6 +84,44 @@ bool lqPointCloudAutoRepresentationBehavior::NeedsVertexGlyph(pqPipelineSource* 
   }
   const char* xmlName = proxy->GetXMLName();
   return xmlName && std::strcmp(xmlName, PLY_READER) == 0;
+}
+
+//-----------------------------------------------------------------------------
+bool lqPointCloudAutoRepresentationBehavior::IsLidarPointCloudSource(pqPipelineSource* source)
+{
+  if (!source)
+  {
+    return false;
+  }
+
+  vtkSMProxy* proxy = source->getProxy();
+  if (proxy)
+  {
+    const char* xmlName = proxy->GetXMLName();
+    if (xmlName &&
+      (std::strstr(xmlName, "LidarReader") != nullptr ||
+        std::strstr(xmlName, "LidarStream") != nullptr))
+    {
+      return true;
+    }
+  }
+
+  // Filters auto-attached to a lidar source (e.g. LaserSelection,
+  // RadialDistanceDenoise) are not lidar proxies themselves; walk upstream so
+  // their point clouds are covered too.
+  pqPipelineFilter* filter = qobject_cast<pqPipelineFilter*>(source);
+  if (filter)
+  {
+    for (pqOutputPort* port : filter->getInputs())
+    {
+      if (port && IsLidarPointCloudSource(port->getSource()))
+      {
+        return true;
+      }
+    }
+  }
+
+  return false;
 }
 
 //-----------------------------------------------------------------------------
@@ -146,4 +195,30 @@ void lqPointCloudAutoRepresentationBehavior::onSourceAdded(pqPipelineSource* sou
   }
 
   pqActiveObjects::instance().setActiveSource(filter);
+}
+
+//-----------------------------------------------------------------------------
+void lqPointCloudAutoRepresentationBehavior::onRepresentationAdded(
+  pqRepresentation* representation)
+{
+  pqDataRepresentation* dataRepresentation = qobject_cast<pqDataRepresentation*>(representation);
+  if (!dataRepresentation || !IsLidarPointCloudSource(dataRepresentation->getInput()))
+  {
+    return;
+  }
+
+  vtkSMProxy* reprProxy = dataRepresentation->getProxy();
+  if (!reprProxy)
+  {
+    return;
+  }
+
+  vtkSMProperty* sizeProp = reprProxy->GetProperty("PointSize");
+  if (!sizeProp)
+  {
+    return;
+  }
+
+  vtkSMPropertyHelper(sizeProp).Set(1.0);
+  reprProxy->UpdateVTKObjects();
 }
