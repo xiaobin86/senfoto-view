@@ -54,3 +54,7 @@ Thumbs.db
 # Local sample data (large PCAP files, not tracked)
 /Examples/TestData/
 docs/.obsidian
+
+# Agent session state (OhMyOpenCode) #
+######################################
+.omo/
