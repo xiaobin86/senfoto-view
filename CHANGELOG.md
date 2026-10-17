@@ -5,6 +5,14 @@
 
 ---
 
+## 2026-10-17 批次：实现文档（多语言 / RPM / 雷达网络配置）
+
+- `docs`: 新增 `docs/senfotoview-i18n-implementation.md`（从 Qt 翻译引擎 → catalog/`.qm` → lupdate/lconvert → ParaView 运行时装载 → 本 fork 流水线的底层实现 + 新增字符串端到端 checklist）
+- `docs`: 新增 `docs/senfoto008-rpm-implementation.md`（实时 RPM：解释器内联计算 + 复用上游 `RPMText` + 自动挂载/Tools 开关）
+- `docs`: 新增 `docs/senfoto008-network-config-implementation.md`（雷达 IP/端口：私有协议 `0xfc60/0xfc62` + 密码框 + 配置对话框 + Tools 入口）
+
+---
+
 ## 2026-10-17 批次：Senfoto008 实时 RPM + 雷达 IP/端口配置
 
 - `15e98594` Merge `feat/senfoto008-rpm`：Senfoto008 解释器**内联**计算 RPM/FPS（方位角/时间极值），基类 `SplitFrame()` 自动写 field data；复用上游 `RPMText` 过滤器显示，打开 Senfoto008 源时自动挂载；Tools「显示 RPM」开关
