@@ -23,6 +23,7 @@ set(classes
   lqSaveLidarFrameReaction
   lqSaveLidarStateReaction
   lqSavePcapReaction
+  lqSenfotoNetworkConfigReaction
   lqSensorListWidget
   lqSensorReaderWidget
   lqSensorStreamWidget

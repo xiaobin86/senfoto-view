@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  功能：Senfoto008 雷达 IP / 端口配置对话框。
+  作者：acelan
+  新建时间：2026-10-17
+  修改时间：2026-10-17
+-->
+<ui version="4.0">
+ <class>lqSenfotoNetworkConfigDialog</class>
+ <widget class="QDialog" name="lqSenfotoNetworkConfigDialog">
+  <property name="windowTitle">
+   <string>雷达 IP 配置</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelTarget">
+       <property name="text">
+        <string>当前雷达IP(目标)：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEditTargetIp"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelLidar">
+       <property name="text">
+        <string>雷达IP：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEditLidarIp"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="labelPc">
+       <property name="text">
+        <string>主机IP：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineEditPcIp"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="labelMac">
+       <property name="text">
+        <string>MAC地址：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="lineEditMac"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="labelPort">
+       <property name="text">
+        <string>端口：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="lineEditPort"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item>
+      <widget class="QPushButton" name="pushButtonGet">
+       <property name="text">
+        <string>读取</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonSet">
+       <property name="text">
+        <string>设置</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonClose">
+       <property name="text">
+        <string>关闭</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -62,6 +62,7 @@ typedef pqPythonDebugLeaksView DebugLeaksViewType;
 #include "lqPointCloudAutoRepresentationBehavior.h"
 #include "lqRPMTextReaction.h"
 #include "lqRecentlyUsedPcapLoader.h"
+#include "lqSenfotoNetworkConfigReaction.h"
 #include "lqStreamPCAPRecorder.h"
 #include "lqTrailingFrameReaction.h"
 #include "lqViewFrameActionsImplementation.h"
@@ -219,6 +220,9 @@ LidarViewMainWindow::LidarViewMainWindow()
   actionShowRPM->setChecked(QSettings().value("LidarView/ShowRPM", true).toBool());
   this->Internals->menuTools->addAction(actionShowRPM);
   new lqRPMTextReaction(actionShowRPM);
+  QAction* actionSenfotoNetworkConfig = new QAction(tr("Sensor IP Config"), this);
+  this->Internals->menuTools->addAction(actionSenfotoNetworkConfig);
+  new lqSenfotoNetworkConfigReaction(actionSenfotoNetworkConfig);
   pqParaViewMenuBuilders::buildMacrosMenu(*this->Internals->menuMacros);
   lqLidarViewMenuBuilders::buildHelpMenu(*this->Internals->menuHelpBase);
 
