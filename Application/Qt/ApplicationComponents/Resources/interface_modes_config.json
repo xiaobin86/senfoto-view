@@ -7,7 +7,6 @@
       "hide": [
         "menuSources",
         "menuFilters",
-        "menuTools",
         "menuMacros"
       ],
       "menuFile": [
