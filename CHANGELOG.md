@@ -5,6 +5,22 @@
 
 ---
 
+## 2026-10-17 批次：Senfoto008 实时 RPM + 雷达 IP/端口配置
+
+- `15e98594` Merge `feat/senfoto008-rpm`：Senfoto008 解释器**内联**计算 RPM/FPS（方位角/时间极值），基类 `SplitFrame()` 自动写 field data；复用上游 `RPMText` 过滤器显示，打开 Senfoto008 源时自动挂载；Tools「显示 RPM」开关
+  - `b775a073` feat(senfoto008): 内联 RPM/FPS 计算 + 单元测试（约 600 RPM 用例）
+  - `760f3f75` feat(ui): `RPMText` 加入 Filters→Sensor 菜单
+  - `da745e31` feat(ui): 自动挂载 `RPMText` + `lqRPMTextReaction` Tools 开关
+- `bce35d62` Merge `feat/senfoto008-network-config`：新增雷达网络配置（雷达IP / PC IP / MAC / 端口）
+  - `9da71a53` feat(senfoto008): `lqSenfotoNetworkConfig` 协议封装（UDP `0xfc60` 写 / `0xfc62` 读，8091）+ 单测
+  - `f2e39605` / `f69b3536` feat(senfoto008): 密码框 + 配置对话框
+  - `77b87968` feat(ui): Tools「雷达 IP 配置」入口（仅 Senfoto008 源可用）
+- `b8cfdcb1` feat(ui): lidarViewer 模式显示 Tools 菜单
+- `4b9f240d` i18n(zh_CN): 新增菜单项中文翻译（Show RPM / Sensor IP Config）
+- `4085c184` docs(agents): 新增功能必须同步补 zh_CN 翻译（长期约定）
+
+---
+
 ## 2026-10-17 批次：忽略 agent 会话状态目录
 
 - `c8967f0f` chore(git): `.gitignore` 忽略 `.omo/`（OhMyOpenCode 会话状态目录）
