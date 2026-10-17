@@ -128,6 +128,14 @@
         <source>Laser Selection</source>
         <translation>激光线选择</translation>
     </message>
+    <message>
+        <source>Show RPM</source>
+        <translation>显示 RPM</translation>
+    </message>
+    <message>
+        <source>Sensor IP Config</source>
+        <translation>雷达 IP 配置</translation>
+    </message>
 </context>
 <context>
     <name>lqAboutDialog</name>
