@@ -168,3 +168,7 @@ LidarView 是**基于 ParaView 的自定义客户端**（ParaView-based custom a
 6. **术语统一**：见 `docs/senfotoview-i18n-plan.md` §6。
 7. **机器翻译必须用带专有名词遮蔽的 `i18n/translate_zh.py`**；改完跑 `python3 i18n/qa_zh.py 'i18n/zh_CN/*.ts'`
    复核（其 `PROPER_NOUN`/`SHORTCUT`/`SUSPECT` 即守则检测）。
+8. **新增功能必须同步补中文翻译（必做）**：凡新增用户可见字符串（`tr("...")`、`.ui` 文本、XML `label` 等），
+   必须在同一批次内把 zh_CN 译文加入 `i18n/zh_CN/<Catalog>.ts`（客户端字符串通常在 `LidarView.ts`），
+   并执行 `./i18n/build-zh-cn.sh` 重建并投放 `.qm`；**不允许只留英文**。`.ui` 里的硬编码中文可直接显示，
+   但走 `tr()` 的字符串必须有 `.ts` 条目。
