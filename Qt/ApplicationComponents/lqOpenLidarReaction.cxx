@@ -79,6 +79,27 @@ bool IsRadialDenoiseAutoAttachEnabled()
   return QSettings().value("LidarView/AutoAttachRadialDenoise", true).toBool();
 }
 
+bool IsRPMTextAutoAttachEnabled()
+{
+  return QSettings().value("LidarView/AutoAttachRPMText", true).toBool();
+}
+
+void AutoAttachRPMText(pqPipelineSource* source)
+{
+  if (!source)
+  {
+    return;
+  }
+  pqObjectBuilder* builder = pqApplicationCore::instance()->getObjectBuilder();
+  pqPipelineSource* filter = builder->createFilter("filters", "RPMText", source);
+  if (!filter)
+  {
+    return;
+  }
+  filter->getProxy()->UpdateVTKObjects();
+  ::InitAndDisplaySource(filter, filter->getProxy(), true);
+}
+
 // Set the visibility of a source's representation in the active view.
 // Used to keep only the denoise layer visible by default (see AutoAttachRadialDenoise).
 void SetPipelineSourceVisible(pqPipelineSource* source, bool visible)
@@ -265,6 +286,10 @@ bool lqOpenLidarReaction::openLidarPcap(const QString& filename,
     {
       AutoAttachRadialDenoise(source);
     }
+    if (QString(prototype->GetXMLName()).startsWith("Senfoto008") && IsRPMTextAutoAttachEnabled())
+    {
+      AutoAttachRPMText(source);
+    }
     lqRecentlyUsedPcapLoader::addPcapFileToRecentResources(server, filename, prototype);
   }
 
@@ -311,6 +336,10 @@ bool lqOpenLidarReaction::openLidarStream()
   if (QString(prototype->GetXMLName()).startsWith("Senfoto008") && IsRadialDenoiseAutoAttachEnabled())
   {
     AutoAttachRadialDenoise(source);
+  }
+  if (QString(prototype->GetXMLName()).startsWith("Senfoto008") && IsRPMTextAutoAttachEnabled())
+  {
+    AutoAttachRPMText(source);
   }
   return true;
 }

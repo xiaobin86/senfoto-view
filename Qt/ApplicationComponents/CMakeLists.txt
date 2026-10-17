@@ -17,6 +17,7 @@ set(classes
   lqOpenLidarReaction
   lqPythonShellReaction
   lqRecentlyUsedPcapLoader
+  lqRPMTextReaction
   lqRulerReaction
   lqRulersToolbar
   lqSaveLidarFrameReaction
