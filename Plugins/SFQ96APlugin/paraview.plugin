@@ -1,0 +1,7 @@
+NAME
+  SFQ96APlugin
+DESCRIPTION
+  A SFQ96A interpreter plugin
+REQUIRES_MODULES
+  VTK::CommonCore
+  LidarView::IOLidar

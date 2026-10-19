@@ -8,7 +8,7 @@
 
 <ServerManagerConfiguration>
   <ProxyGroup name="lidar_interpreters">
-    <Proxy name="Senfoto008"
+    <Proxy name="SF-Q96"
            base_proxygroup="internal_interpreter"
            base_proxyname="BaseInterpreter">
 

@@ -41,11 +41,16 @@ pqPipelineSource* FindRPMTextConsumer(pqPipelineSource* source)
   return nullptr;
 }
 
-bool IsActiveSenfoto008()
+bool IsRpmCapableReader(const QString& xmlName)
+{
+  return xmlName.startsWith("Senfoto008") || xmlName.startsWith("SFQ96A");
+}
+
+bool IsActiveRpmCapableSource()
 {
   pqPipelineSource* source = pqActiveObjects::instance().activeSource();
   return source && source->getProxy() &&
-    QString(source->getProxy()->GetXMLName()).startsWith("Senfoto008");
+    IsRpmCapableReader(source->getProxy()->GetXMLName());
 }
 }
 
@@ -63,7 +68,7 @@ lqRPMTextReaction::lqRPMTextReaction(QAction* parent)
 //-----------------------------------------------------------------------------
 void lqRPMTextReaction::updateEnableState()
 {
-  this->parentAction()->setEnabled(::IsActiveSenfoto008());
+  this->parentAction()->setEnabled(::IsActiveRpmCapableSource());
 }
 
 //-----------------------------------------------------------------------------
@@ -71,7 +76,7 @@ void lqRPMTextReaction::onTriggered()
 {
   pqPipelineSource* source = pqActiveObjects::instance().activeSource();
   if (!source || !source->getProxy() ||
-    !QString(source->getProxy()->GetXMLName()).startsWith("Senfoto008"))
+    !IsRpmCapableReader(source->getProxy()->GetXMLName()))
   {
     return;
   }

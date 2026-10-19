@@ -218,6 +218,13 @@ lqLidarConfigurationDialog::lqLidarConfigurationDialog(QWidget* parentObject,
   auto interpreters = imProxy->GetAvailableInterpreters();
   for (auto& interpreter : interpreters)
   {
+    // The configuration dialog exposes only the SenFoToView sensors.
+    const QString interpreterName = QString::fromUtf8(interpreter);
+    if (interpreterName != QLatin1String("SF-Q96") && interpreterName != QLatin1String("SF-Q96A"))
+    {
+      continue;
+    }
+
     const char* lidarProxyName =
       imProxy->GetLidarProxyName(interpreter, vtkSMInterpretersManagerProxy::LIDAR);
     if (!lidarProxyName || strlen(lidarProxyName) == 0)

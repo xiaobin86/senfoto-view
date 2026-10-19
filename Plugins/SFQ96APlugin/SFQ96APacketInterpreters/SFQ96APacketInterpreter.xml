@@ -1,0 +1,10 @@
+<ServerManagerConfiguration>
+  <ProxyGroup name="internal_interpreter">
+    <SourceProxy name="SFQ96APacketInterpreter"
+                 class="vtkSFQ96APacketInterpreter"
+                 label="SFQ96A Packet Interpreter"
+                 base_proxygroup="internal_interpreter"
+                 base_proxyname="CommonLidarPacketInterpreter">
+    </SourceProxy>
+  </ProxyGroup>
+</ServerManagerConfiguration>

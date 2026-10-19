@@ -18,7 +18,7 @@
 //        与结构体（包类型、帧头、点字段布局等）。
 // 作者：acelan
 // 新建时间：2026-08-28
-// 修改时间：2026-08-28
+// 修改时间：2026-10-19
 // ============================================================
 
 #ifndef Senfoto008PacketFormat_h
@@ -49,6 +49,10 @@ constexpr std::size_t HEADER_TIMESTAMP_OFFSET = 20;
 constexpr std::size_t HEADER_TIMESTAMP_SIZE = 10;
 constexpr std::size_t HEADER_LIDAR_TYPE_OFFSET = 31;
 constexpr std::size_t HEADER_LIDAR_MODEL_OFFSET = 32;
+// RPM field: bytes at offset 4 (high) and 5 (low); concatenated and read as a
+// hexadecimal value (i.e. big-endian 16-bit) to give revolutions per minute.
+constexpr std::size_t HEADER_RPM_HIGH_OFFSET = 4;
+constexpr std::size_t HEADER_RPM_LOW_OFFSET = 5;
 
 // Header magic: bytes 00 00 53 46.
 constexpr std::uint8_t HEADER_MAGIC[HEADER_MAGIC_SIZE] = { 0x00, 0x00, 0x53, 0x46 };
@@ -175,17 +179,35 @@ inline std::uint8_t GetChannelIntensity(
 }
 
 //-----------------------------------------------------------------------------
+inline std::uint16_t GetRpmRaw(const unsigned char* data)
+{
+  return static_cast<std::uint16_t>(
+    (static_cast<std::uint16_t>(data[HEADER_RPM_HIGH_OFFSET]) << 8) |
+    static_cast<std::uint16_t>(data[HEADER_RPM_LOW_OFFSET]));
+}
+
+//-----------------------------------------------------------------------------
+inline double GetRpm(const unsigned char* data)
+{
+  return static_cast<double>(GetRpmRaw(data));
+}
+
+// Timestamp tick duration: the 10-byte counter runs at 200 MHz (5 ns/tick).
+// Verified against pcap capture elapsed time: consecutive MSOP packets 440 us
+// apart differ by 88000 ticks => 88000 / 440e-6 = 2.0e8 ticks/s.
+constexpr double TIMESTAMP_TICK_SECONDS = 5e-9;
+
+//-----------------------------------------------------------------------------
 inline double GetPacketTimestamp(const unsigned char* data)
 {
-  // 6 bytes seconds + 4 bytes microseconds, both little-endian.
+  // 10-byte big-endian tick counter (5 ns per tick), see TIMESTAMP_TICK_SECONDS.
   const unsigned char* ts = data + HEADER_TIMESTAMP_OFFSET;
-  const std::uint64_t seconds = static_cast<std::uint64_t>(ReadUInt16LE(ts)) |
-    (static_cast<std::uint64_t>(ts[2]) << 16) |
-    (static_cast<std::uint64_t>(ts[3]) << 24) |
-    (static_cast<std::uint64_t>(ts[4]) << 32) |
-    (static_cast<std::uint64_t>(ts[5]) << 40);
-  const std::uint32_t microseconds = ReadUInt32LE(ts + 6);
-  return static_cast<double>(seconds) + static_cast<double>(microseconds) * 1e-6;
+  double ticks = 0.0;
+  for (std::size_t i = 0; i < HEADER_TIMESTAMP_SIZE; ++i)
+  {
+    ticks = ticks * 256.0 + static_cast<double>(ts[i]);
+  }
+  return ticks * TIMESTAMP_TICK_SECONDS;
 }
 
 } // namespace senfoto008

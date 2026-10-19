@@ -1,0 +1,11 @@
+NAME
+  SFQ96APlugin::SFQ96APacketInterpreters
+LIBRARY_NAME
+  SFQ96APacketInterpreters
+DEPENDS
+  LidarView::IOLidar
+  VTK::CommonCore
+PRIVATE_DEPENDS
+  SFQ96APlugin::SFQ96ASDK
+  VTK::CommonDataModel
+  VTK::CommonTransforms

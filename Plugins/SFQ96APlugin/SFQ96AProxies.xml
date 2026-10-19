@@ -1,0 +1,19 @@
+<ServerManagerConfiguration>
+  <ProxyGroup name="lidar_interpreters">
+    <Proxy name="SF-Q96A"
+           base_proxygroup="internal_interpreter"
+           base_proxyname="BaseInterpreter">
+
+      <StringVectorProperty name="LidarReader"
+                            number_of_elements="1"
+                            override="1"
+                            default_values="SFQ96ALidarReader"
+                            information_only="1" />
+      <StringVectorProperty name="LidarStream"
+                            number_of_elements="1"
+                            override="1"
+                            default_values="SFQ96ALidarStream"
+                            information_only="1" />
+    </Proxy>
+  </ProxyGroup>
+</ServerManagerConfiguration>

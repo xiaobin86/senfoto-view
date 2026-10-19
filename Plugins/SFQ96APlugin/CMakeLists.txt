@@ -1,0 +1,16 @@
+paraview_add_plugin(SFQ96APlugin
+  REQUIRED_ON_CLIENT
+  REQUIRED_ON_SERVER
+  VERSION "1.0"
+  MODULES
+    SFQ96APlugin::SFQ96AIO
+    SFQ96APlugin::SFQ96APacketInterpreters
+    SFQ96APlugin::SFQ96ASDK
+  MODULE_FILES
+    "${CMAKE_CURRENT_SOURCE_DIR}/SFQ96AIO/vtk.module"
+    "${CMAKE_CURRENT_SOURCE_DIR}/SFQ96APacketInterpreters/vtk.module"
+    "${CMAKE_CURRENT_SOURCE_DIR}/SFQ96ASDK/vtk.module"
+  SERVER_MANAGER_XML
+    "${CMAKE_CURRENT_SOURCE_DIR}/SFQ96AProxies.xml"
+)
+

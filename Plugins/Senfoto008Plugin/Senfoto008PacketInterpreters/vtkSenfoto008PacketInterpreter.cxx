@@ -18,7 +18,7 @@
 //        将原始 UDP/MSOP 包解码为点云（位置/强度/时间戳等）。
 // 作者：acelan
 // 新建时间：2026-08-28
-// 修改时间：2026-10-17
+// 修改时间：2026-10-19
 // ============================================================
 
 #include "vtkSenfoto008PacketInterpreter.h"
@@ -46,6 +46,10 @@ namespace
 // 传感器跳过了接缝盲区，用"标称块间隔"替换实测差值，避免异常跳变传入
 // 逐激光方位角插值（SF008 实测每圈在 0° 附近有一次 ~10° 的包内跳变）。
 constexpr int AZ_JUMP_THRESHOLD = 100; // 1°，0.01° 单位
+
+// 旋转雷达单帧不可能超过此秒数；更大的时间戳差值来自传感器每圈的
+// 时间戳抖动（接缝处），会污染 FPS 估计，直接丢弃该帧的 FPS 更新。
+constexpr double MAX_FRAME_PERIOD_S = 1.0;
 constexpr int NOMINAL_PAIR_DIFF = 40;  // 相邻块对标称差 0.4°；块对内两块共享 az（差 0）
 
 // Replicates SenFoTo reference ComputeCorrectedValues azimuth correction for the
@@ -141,9 +145,7 @@ public:
   bool HasPreLastBlockAz = false;
   bool WarnedUnknownModel = false;
 
-  int AzMinCentiDeg = 0, AzMaxCentiDeg = 0; bool HasAz = false;
-  unsigned int TMinUs = 0, TMaxUs = 0; bool HasT = false;
-  unsigned int LastFrameTsUs = 0; bool HasLastFrameTs = false;
+  double LastFrameTimestamp = 0.0; bool HasLastFrameTs = false;
 };
 
 //-----------------------------------------------------------------------------
@@ -171,8 +173,6 @@ void vtkSenfoto008PacketInterpreter::Initialize()
   internals->PreLastBlockAz = 0.0;
   internals->HasPreLastBlockAz = false;
   internals->WarnedUnknownModel = false;
-  internals->HasAz = false;
-  internals->HasT = false;
   internals->HasLastFrameTs = false;
   Superclass::Initialize();
 }
@@ -256,34 +256,12 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
   // 块级拆帧（借鉴 Airy SplitStrategyByAngle，粒度从包细化到块，0.2°）。
   // 预扫描 8 个块的方位角：回绕处之后的块属于新一圈。
   const double packetTimestamp = senfoto008::GetPacketTimestamp(data);
-  const unsigned int tsUs = static_cast<unsigned int>(packetTimestamp * 1e6);
-  if (!internals->HasT)
-  {
-    internals->TMinUs = internals->TMaxUs = tsUs;
-    internals->HasT = true;
-  }
-  else
-  {
-    internals->TMinUs = std::min(internals->TMinUs, tsUs);
-    internals->TMaxUs = std::max(internals->TMaxUs, tsUs);
-  }
 
   double blockAzimuths[senfoto008::DATA_BLOCKS] = {};
   int wrapIdx = -1;
   for (std::size_t b = 0; b < senfoto008::DATA_BLOCKS; ++b)
   {
     blockAzimuths[b] = senfoto008::GetBlockAzimuth(data, b);
-    const int azCentiDeg = static_cast<int>(std::lround(blockAzimuths[b] * 100.0));
-    if (!internals->HasAz)
-    {
-      internals->AzMinCentiDeg = internals->AzMaxCentiDeg = azCentiDeg;
-      internals->HasAz = true;
-    }
-    else
-    {
-      internals->AzMinCentiDeg = std::min(internals->AzMinCentiDeg, azCentiDeg);
-      internals->AzMaxCentiDeg = std::max(internals->AzMaxCentiDeg, azCentiDeg);
-    }
     if (wrapIdx < 0 && this->CheckBlockWrap(blockAzimuths[b]))
     {
       wrapIdx = static_cast<int>(b);
@@ -291,17 +269,17 @@ void vtkSenfoto008PacketInterpreter::ProcessPacket(
   }
   if (wrapIdx >= 0 && this->CurrentFrame && this->CurrentFrame->GetNumberOfPoints() > 0)
   {
-    const double revolutionSpan = (internals->AzMaxCentiDeg - internals->AzMinCentiDeg) / 36000.0;
-    const double elapsedMinutes = (internals->TMaxUs - internals->TMinUs) / 60e6;
-    this->Rpm = (elapsedMinutes > 1e-12 && revolutionSpan > 0.0) ? (revolutionSpan / elapsedMinutes) : 0.0;
-    if (internals->HasLastFrameTs && tsUs != internals->LastFrameTsUs)
+    this->Rpm = senfoto008::GetRpm(data);
+    if (internals->HasLastFrameTs)
     {
-      this->Frequency = 1.0 / ((tsUs - internals->LastFrameTsUs) * 1e-6);
+      const double period = packetTimestamp - internals->LastFrameTimestamp;
+      if (period > 0.0 && period < MAX_FRAME_PERIOD_S)
+      {
+        this->Frequency = 1.0 / period;
+      }
     }
-    internals->LastFrameTsUs = tsUs;
+    internals->LastFrameTimestamp = packetTimestamp;
     internals->HasLastFrameTs = true;
-    internals->HasAz = false;
-    internals->HasT = false;
     Superclass::SplitFrame();
   }
   // wrapIdx > 0 时，本包前 wrapIdx 个块在物理上属于上一圈。帧索引以包为粒度，

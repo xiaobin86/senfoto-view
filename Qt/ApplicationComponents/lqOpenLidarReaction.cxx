@@ -84,6 +84,11 @@ bool IsRPMTextAutoAttachEnabled()
   return QSettings().value("LidarView/AutoAttachRPMText", true).toBool();
 }
 
+bool IsRpmCapableReader(const QString& xmlName)
+{
+  return xmlName.startsWith("Senfoto008") || xmlName.startsWith("SFQ96A");
+}
+
 void AutoAttachRPMText(pqPipelineSource* source)
 {
   if (!source)
@@ -286,7 +291,7 @@ bool lqOpenLidarReaction::openLidarPcap(const QString& filename,
     {
       AutoAttachRadialDenoise(source);
     }
-    if (QString(prototype->GetXMLName()).startsWith("Senfoto008") && IsRPMTextAutoAttachEnabled())
+    if (::IsRpmCapableReader(prototype->GetXMLName()) && IsRPMTextAutoAttachEnabled())
     {
       AutoAttachRPMText(source);
     }
@@ -337,7 +342,7 @@ bool lqOpenLidarReaction::openLidarStream()
   {
     AutoAttachRadialDenoise(source);
   }
-  if (QString(prototype->GetXMLName()).startsWith("Senfoto008") && IsRPMTextAutoAttachEnabled())
+  if (::IsRpmCapableReader(prototype->GetXMLName()) && IsRPMTextAutoAttachEnabled())
   {
     AutoAttachRPMText(source);
   }
