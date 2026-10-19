@@ -5,6 +5,19 @@
 
 ---
 
+## 2026-10-19 批次：SF-Q96 / SF-Q96A 传感器 + Senfoto008 RPM/时间戳修正
+
+- `f4bb526f` feat(senfotoview): 新增 SF-Q96/SF-Q96A 传感器；修正 Senfoto008 RPM 与时间戳
+  - Senfoto008 解释器显示名 `Senfoto008` → `SF-Q96`（`Senfoto008Proxies.xml` 的 `lidar_interpreters` Proxy name）
+  - 新增 `Plugins/SFQ96APlugin`（由 RoboSense/RS96 整份复制；锁定 Airy、无型号下拉），注册为选择项 `SF-Q96A`
+  - `lqLidarConfigurationDialog`：解释器选择列表白名单，仅显示 `SF-Q96`/`SF-Q96A`。因其它雷达插件为上游 submodule，按约定不改其 `*Proxies.xml`
+  - Senfoto008 RPM：改为直读包头**偏移 4–5（大端）**；删除原"方位角/时间极值"推算
+  - Senfoto008 时间戳：改为 **10 字节大端、200 MHz（5 ns/tick）**计数器解码；修复 FPS 异常（旧代码按 6B 秒 LE + 4B 微秒 LE 解码得 ~2.77e14 s，×1e6 溢出 32 位）
+  - SF-Q96A RPM：从 **DIFOP（UDP 7788）偏移 373（2B 大端）**读取；自动挂载 `RPMText` 并把 Tools「显示 RPM」扩展到 SF-Q96A
+  - `docs`: `senfoto008-protocol.md` 更新 RPM 偏移 4–5 + 新增「§12 包时间戳」
+
+---
+
 ## 2026-10-17 批次：实现文档（多语言 / RPM / 雷达网络配置）
 
 - `docs`: 新增 `docs/senfotoview-i18n-implementation.md`（从 Qt 翻译引擎 → catalog/`.qm` → lupdate/lconvert → ParaView 运行时装载 → 本 fork 流水线的底层实现 + 新增字符串端到端 checklist）
