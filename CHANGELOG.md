@@ -5,6 +5,16 @@
 
 ---
 
+## 2026-10-20 批次：Airy 请求绕过系统代理 + 调试日志
+
+- `a7f9639c` fix(airy): Airy 局域网请求绕过系统代理；HTTP 调试日志增强
+  - 三处 `QNetworkAccessManager` 均设置 `QNetworkProxy::NoProxy` —— 修复 Windows 上系统代理/梯子把发往 `192.168.x` 的请求劫持（浏览器正常但程序超时的典型现象）
+  - 日志增加：系统代理解析结果（type/host/port）、HTTP 状态码、`errorCode`/`errorString`、失败时响应片段
+  - 日志增加：刷新目标 IP、`/device_data.json` 设备信息读取结果
+  - 行为补充：改 IP 后回读验证失败视为"已下发"并提示（设备切换地址会断开连接）
+
+---
+
 ## 2026-10-20 批次：SF-Q96A 雷达硬件参数对话框 + 菜单/布局调整
 
 - `b5674f0c` feat(ui): Airy/SF-Q96A 硬件参数对话框；菜单与布局调整
