@@ -5,6 +5,16 @@
 
 ---
 
+## 2026-10-19 批次：帮助菜单精简 + 关于对话框文案
+
+- `09a5b3ac` feat(ui): Help 菜单只保留 About；About 对话框去掉 kitware.com 链接并替换为未感科技中英文介绍
+  - `lqHelpMenuBuilder.ui`：帮助菜单精简为仅 `About...`
+  - `lqLidarViewMenuBuilders::buildHelpMenu`：移除 How To SLAM / Professional Support / Website / Release Notes / Community / ParaView Guide·Tutorial·Website / Bug Report 等项
+  - `LidarViewMainWindow`：对菜单栏实际显示的 `menuHelp` 兜底，仅保留 About
+  - `lqAboutDialog.{ui,cxx}`：删除 `www.kitware.com` 与 `lidarview.kitware.com` 链接；Tab 改为「关于未感科技 / About Senfoto」，内容替换为未感科技中英文两段介绍
+
+---
+
 ## 2026-10-19 批次：SF-Q96 / SF-Q96A 传感器 + Senfoto008 RPM/时间戳修正
 
 - `f4bb526f` feat(senfotoview): 新增 SF-Q96/SF-Q96A 传感器；修正 Senfoto008 RPM 与时间戳
