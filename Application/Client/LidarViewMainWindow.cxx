@@ -53,6 +53,7 @@ typedef pqPythonDebugLeaksView DebugLeaksViewType;
 #include <QSpinBox>
 #include <QToolBar>
 
+#include "lqAboutDialogReaction.h"
 #include "lqCommandLineOptionsBehavior.h"
 #include "lqLidarViewManager.h"
 #include "lqLidarViewMenuBuilders.h"
@@ -225,6 +226,12 @@ LidarViewMainWindow::LidarViewMainWindow()
   new lqSenfotoNetworkConfigReaction(actionSenfotoNetworkConfig);
   pqParaViewMenuBuilders::buildMacrosMenu(*this->Internals->menuMacros);
   lqLidarViewMenuBuilders::buildHelpMenu(*this->Internals->menuHelpBase);
+
+  // The menu bar shows "menuHelp": expose only the About entry there as well.
+  this->Internals->menuHelp->clear();
+  QAction* actionAbout = new QAction(tr("About"), this);
+  this->Internals->menuHelp->addAction(actionAbout);
+  new lqAboutDialogReaction(actionAbout);
 
   // Setup the context menu for the pipeline browser.
   pqParaViewMenuBuilders::buildPipelineBrowserContextMenu(

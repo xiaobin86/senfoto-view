@@ -127,40 +127,16 @@ void lqLidarViewMenuBuilders::buildHelpMenu(QMenu& menu)
   // Since the UI file tends to change the name of the menu.
   menu.setObjectName(objectName);
 
-  new pqDesktopServicesReaction(
-    QUrl("https://gitlab.kitware.com/keu-computervision/slam/-/blob/master/paraview_wrapping/"
-         "Plugin/doc/How_to_SLAM_with_LidarView.md"),
-    ui.actionHowToSLAM);
-  new pqDesktopServicesReaction(
-    QUrl("https://www.kitware.com/what-we-offer"), ui.actionProfessionalSupport);
-
-  new pqDesktopServicesReaction(QUrl("https://lidarview.kitware.com/"), ui.actionWebSite);
-  new pqDesktopServicesReaction(
-    QUrl("https://gitlab.kitware.com/LidarView/lidarview/-/releases"), ui.actionReleaseNotes);
-  new pqDesktopServicesReaction(
-    QUrl("https://discourse.paraview.org/c/lidar/15"), ui.actionCommunitySupport);
-
-  QString paraviewVersionString = QString("%1.%2.%3")
-                                    .arg(vtkSMProxyManager::GetVersionMajor())
-                                    .arg(vtkSMProxyManager::GetVersionMinor())
-                                    .arg(vtkSMProxyManager::GetVersionPatch());
-
-  // Remote ParaView Guide
-  QString guideURL = QString("https://docs.paraview.org/en/v%1/").arg(paraviewVersionString);
-  new pqDesktopServicesReaction(QUrl(guideURL), ui.actionParaViewGuide);
-  QString classroomTutorialsURL =
-    QString("https://docs.paraview.org/en/v%1/Tutorials/ClassroomTutorials/index.html")
-      .arg(paraviewVersionString);
-  new pqDesktopServicesReaction(QUrl(classroomTutorialsURL), ui.actionParaViewTutorial);
-  new pqDesktopServicesReaction(QUrl("https://www.paraview.org/"), ui.actionParaViewWebSite);
-
-  QString bugReportURL = QString("https://gitlab.kitware.com/LidarView/lidarview/-/issues/"
-                                 "new?issue[title]=Bug&issue[description]="
-                                 "OS: %1\nLidarView Version: %2\n\nDescription:\n")
-                           .arg(QSysInfo::prettyProductName())
-                           .arg(LIDARVIEW_VERSION_FULL);
-  new pqDesktopServicesReaction(QUrl(bugReportURL), ui.actionBugReport);
-  new lqAboutDialogReaction(ui.actionAboutLidarView);
+  // Keep only the "About" entry in the Help menu.
+  QAction* aboutAction = ui.actionAboutLidarView;
+  for (QAction* action : menu.actions())
+  {
+    if (action != aboutAction)
+    {
+      menu.removeAction(action);
+    }
+  }
+  new lqAboutDialogReaction(aboutAction);
 }
 
 //-----------------------------------------------------------------------------

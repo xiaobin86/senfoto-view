@@ -154,24 +154,12 @@ void lqAboutDialog::AddInformationPanel()
 {
   auto text = QString(" \
     <h1>%1</h1><br/> \
-    Copyright (c) 2013-2017, Velodyne Lidar,<br/> \
-    Copyright (c) 2016-2020, Kitware<br/> \
-    Provided by <a href=\"Your web site\">Your nice company name</a>, coded by <a href=\"https://www.kitware.com/\">Kitware</a>.<br/><br/> \
-    Kitware is a leading provider of open-source software solutions for scientific computing and computer Vision. <br /> <br /> \
-    We are the developers of LidarView, providing real-time interactive visualization of live captured 3D LiDAR \
-    data from Lidar sensors, replay of this data and apply many types of algorithm on it to extract meaningful \
-    information from it. <br /> <br /> \
-    We apply our computer vision expertise to create customized solutions using 3D algorithm and machine learning to provide \
-    solutions in many applications such as detection and tracking of people, traffic signs, lane markings, vehicles, \
-    industrial machinery from within LidarView ( and in ROS or custom application), using combinations of point cloud and \
-    extra sensors (camera, IMU, GPS...). <br /> \
-    We also provide Lidar-based SLAM algorithms for localizing the sensor at any time, and building high fidelity maps. <br /> <br /> \
-    We work with customers to create tailored solutions using proven open-source technologies, avoiding vendor lock-in and \
-    leveraging our world-leading experience in visualization, computer vision, high-performance computing, and test-driven \
-    high-quality software process. <br /> <br /> \
-    Have a look at <a href=\"https://www.kitware.com/our-expertise/ \">our expertise</a> to see other open-source tools \
-    that we develop, and for more information, please contact us: \
-     <a href=\"mailto:kitware@kitware.fr?subject=Contact+about+LidarView\">kitware@kitware.fr</a> \
+    <p>未感科技成立于2018年，总部位于宁波江北，拥有北京研发中心。企业一直深耕激光雷达赛道，\
+    具备激光雷达全架构产品和算法研发能力，是机器人、汽车和工业激光感知硬件与感知计算解决方案提供商。</p> \
+    <p>Founded in 2018, Senfoto is headquartered in Jiangbei, Ningbo, and has an R&amp;D center in Beijing. \
+    The company has long been dedicated to the LiDAR field, with R&amp;D capabilities covering the full \
+    architecture of LiDAR products and algorithms. It is a provider of perception hardware and \
+    perception-computing solutions for robotics, automotive and industrial laser sensing.</p> \
   ").arg(QApplication::applicationName());
 
   this->Ui->MoreInfoPanel->setText(text);
