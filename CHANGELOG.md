@@ -5,6 +5,20 @@
 
 ---
 
+## 2026-10-20 批次：SF-Q96A 雷达硬件参数对话框 + 菜单/布局调整
+
+- `b5674f0c` feat(ui): Airy/SF-Q96A 硬件参数对话框；菜单与布局调整
+  - 新增 `lqAiryHardwareConfig`：Airy Web API 客户端 —— `GET /setting_data.json`（全部参数）、`GET /device_data.json`（编号/MAC/固件/型号）、`POST /Parameter_Setting.html`（`save_param=Save`）；带 8s 超时
+  - 新增 `lqAiryHardwareConfigDialog`：设备信息（编号/线束/MAC/主板·底板·APP·电机固件，禁用输入）；常用参数两列（主机IP|雷达IP、掩码|网关、MSOP|DIFOP）；回波模式 4 单选（Strongest/First/Last/Dual）；IP 旁刷新图标；⚙ 内联展开其余参数（下拉/数字框/文本框，字段名可读）；应用/取消/确定；IPv4 与端口校验
+  - 提交语义：**用刷新时的旧 IP** 下发；改 IP 后设备断连导致超时属正常，**用新 IP 回读验证**判定成功；IP 保存为「上次成功使用」，仅成功后更新
+  - 新增 `lqAiryHardwareConfigReaction`：编辑菜单「雷达硬件参数设置 / LiDAR Hardware Parameters」（SF-Q96A 启用；Senfoto008 仍走原对话框）
+  - 菜单：显示 RPM / 雷达 IP 配置移入**编辑**菜单；**隐藏 Tools 与 Filters**；管线浏览器默认显示；Enable multi sensors 默认不勾选；LaserSelection 存在时隐藏原始 frame 源；RPM Info 不再成为活动源
+  - i18n：新增中文字符串（`Qt_Components.ts`、`LidarView.ts`、`ServerManager-XMLs.ts`）
+  - docs：新增 `docs/senfotoview-packaging-implementation.md`（三平台打包方案）
+  - 同批包含工作区中并行的小改动：`LidarGridView.xml` 网格默认 scale 10→1、`i18n/qa_zh.py`/`translate_zh.py` 与两处 `.ts` 译文修正
+
+---
+
 ## 2026-10-19 批次：帮助菜单精简 + 关于对话框文案
 
 - `09a5b3ac` feat(ui): Help 菜单只保留 About；About 对话框去掉 kitware.com 链接并替换为未感科技中英文介绍
