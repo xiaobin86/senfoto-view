@@ -15,6 +15,9 @@
 #include <QJsonObject>
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
+#include <QNetworkProxy>
+#include <QNetworkProxyFactory>
+#include <QNetworkProxyQuery>
 #include <QNetworkRequest>
 #include <QStringList>
 #include <QUdpSocket>
@@ -27,8 +30,13 @@ namespace
 bool ExecRequest(QNetworkAccessManager& nam, const QNetworkRequest& request,
   const QByteArray& body, QByteArray& output, QString& error)
 {
+  const QList<QNetworkProxy> systemProxies =
+    QNetworkProxyFactory::systemProxyForQuery(QNetworkProxyQuery(request.url()));
   qDebug() << "[AiryHTTP] sending" << (body.isEmpty() ? "GET" : "POST")
-           << request.url().toString() << "body" << body.size();
+           << request.url().toString() << "body" << body.size()
+           << "systemProxy(type/host/port)" << (systemProxies.isEmpty() ? -1 : int(systemProxies[0].type()))
+           << (systemProxies.isEmpty() ? QString() : systemProxies[0].hostName())
+           << (systemProxies.isEmpty() ? -1 : systemProxies[0].port());
 
   QEventLoop loop;
   QNetworkReply* reply = body.isEmpty() ? nam.get(request) : nam.post(request, body);
@@ -45,10 +53,16 @@ bool ExecRequest(QNetworkAccessManager& nam, const QNetworkRequest& request,
 
   const QNetworkReply::NetworkError replyError = reply->error();
   output = reply->readAll();
-  qDebug() << "[AiryHTTP]" << (body.isEmpty() ? "GET" : "POST") << request.url().toString()
-           << "status" << reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt()
+  const int httpStatus = reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
+  qDebug() << "[AiryHTTP] reply" << (body.isEmpty() ? "GET" : "POST") << request.url().toString()
+           << "httpStatus" << httpStatus
            << "bytes" << output.size()
-           << (replyError == QNetworkReply::NoError ? "" : reply->errorString().toUtf8().constData());
+           << "errorCode" << int(replyError)
+           << "error" << reply->errorString();
+  if (replyError != QNetworkReply::NoError || (httpStatus != 0 && httpStatus != 200))
+  {
+    qDebug() << "[AiryHTTP] body-snippet" << output.left(200);
+  }
   if (replyError != QNetworkReply::NoError)
   {
     error = reply->errorString();
@@ -87,6 +101,8 @@ QUrl lqAiryHardwareConfig::SaveUrl(const QString& lidarIp)
 bool lqAiryHardwareConfig::fetch(const QString& lidarIp, QVariantMap& values, QString& error)
 {
   QNetworkAccessManager nam;
+  // Talk to the LiDAR directly: never route LAN traffic through a system proxy.
+  nam.setProxy(QNetworkProxy(QNetworkProxy::NoProxy));
   const QNetworkRequest request(SettingsUrl(lidarIp));
   QByteArray body;
   if (!ExecRequest(nam, request, QByteArray(), body, error))
@@ -126,6 +142,8 @@ bool lqAiryHardwareConfig::apply(const QString& lidarIp, const QVariantMap& valu
   query.addQueryItem(QStringLiteral("save_param"), QStringLiteral("Save"));
 
   QNetworkAccessManager nam;
+  // Talk to the LiDAR directly: never route LAN traffic through a system proxy.
+  nam.setProxy(QNetworkProxy(QNetworkProxy::NoProxy));
   QNetworkRequest request(SaveUrl(lidarIp));
   request.setHeader(QNetworkRequest::ContentTypeHeader,
     QStringLiteral("application/x-www-form-urlencoded"));
@@ -171,6 +189,8 @@ bool lqAiryHardwareConfig::fetchDeviceInfo(
   const QString& lidarIp, DeviceInfo& info, QString& error)
 {
   QNetworkAccessManager nam;
+  // Talk to the LiDAR directly: never route LAN traffic through a system proxy.
+  nam.setProxy(QNetworkProxy(QNetworkProxy::NoProxy));
   const QNetworkRequest request(DeviceDataUrl(lidarIp));
   QByteArray body;
   if (!ExecRequest(nam, request, QByteArray(), body, error))

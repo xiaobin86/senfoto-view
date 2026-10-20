@@ -6192,5 +6192,9 @@ Waiting %2 seconds for connection to server.</source>
         <source>DIFOP Port</source>
         <translation>DIFOP 端口</translation>
     </message>
+    <message>
+        <source>New IP sent. The device disconnects while switching its address and may take a few seconds to come back; use Refresh afterwards to confirm.</source>
+        <translation>新 IP 已下发。设备切换地址时会断开连接，可能需要几秒恢复；之后请点刷新确认。</translation>
+    </message>
 </context>
 </TS>

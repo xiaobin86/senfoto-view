@@ -363,6 +363,7 @@ void lqAiryHardwareConfigDialog::onFetch()
     ? QSettings().value("LidarView/AiryConfigIp", "192.168.1.200").toString()
     : typedIp;
 
+  qDebug() << "[AiryFetch] target ip=" << this->LastTargetIp;
   lqAiryHardwareConfig config;
   QVariantMap values;
   QString error;
@@ -392,7 +393,9 @@ void lqAiryHardwareConfigDialog::onFetch()
 
   lqAiryHardwareConfig::DeviceInfo info;
   QString deviceError;
-  if (config.fetchDeviceInfo(this->LastTargetIp, info, deviceError))
+  const bool deviceOk = config.fetchDeviceInfo(this->LastTargetIp, info, deviceError);
+  qDebug() << "[AiryFetch] device info" << (deviceOk ? "ok" : "failed") << deviceError;
+  if (deviceOk)
   {
     this->SerialEdit->setText(info.serial);
     this->LinesEdit->setText(QString::number(info.lines));
@@ -478,7 +481,7 @@ void lqAiryHardwareConfigDialog::onApply()
   const QString newIp = this->SrcIpEdit->text().trimmed();
   if (!ok && !newIp.isEmpty())
   {
-    for (int attempt = 0; attempt < 4 && !ok; ++attempt)
+    for (int attempt = 0; attempt < 6 && !ok; ++attempt)
     {
       if (attempt > 0)
       {
@@ -494,10 +497,19 @@ void lqAiryHardwareConfigDialog::onApply()
     }
   }
 
-  if (!ok)
+  // Changing the device address inherently drops the connection before any
+  // reply, so an unverified POST is treated as "sent" rather than an error.
+  const bool ipChangeUnverified = !ok && !newIp.isEmpty() && newIp != target;
+  if (!ok && !ipChangeUnverified)
   {
     QMessageBox::warning(this, tr("Apply"), error);
     return;
+  }
+  if (ipChangeUnverified)
+  {
+    QMessageBox::information(this, tr("Apply"),
+      tr("New IP sent. The device disconnects while switching its address and may take a few "
+         "seconds to come back; use Refresh afterwards to confirm."));
   }
   // Only after a successful apply, adopt the new device IP for next time.
   if (!newIp.isEmpty())
