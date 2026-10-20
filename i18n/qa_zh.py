@@ -3,7 +3,7 @@
 # 功能：汉化校对辅助 —— 自动筛查 i18n/zh_CN/*.ts 的可疑译文并导出审核清单。
 # 作者：acelan
 # 新建时间：2026-10-09
-# 修改时间：2026-10-13
+# 修改时间：2026-10-20
 # ============================================================
 import argparse
 import csv
@@ -36,7 +36,18 @@ SUSPECT = {
     "缩写": "快捷键被翻译（如 Ctrl+P→缩写+P）",
     "缩略语": "快捷键被翻译（如 Ctrl+G→缩略语+G）",
     "导弹": "F5 等功能键被误译（如 F5→F5 导弹）",
+    "安塞尔": "Cancel 加速键被剥离后音译（应为「取消」）",
+    "江户": "Redo 加速键被剥离后误译（应为「重做」）",
+    "阿克语": "Back 加速键被剥离后音译（应为「后退」）",
+    "x 端口": "Export 加速键被剥离后误译（应为「导出」）",
+    "易发性": "Alphabetical 加速键被剥离后误译（应为「按字母顺序」）",
+    "百分点": "Recent 加速键被剥离后误译（应为「最近」）",
 }
+
+try:
+    from translate_zh import GLOSSARY
+except Exception:
+    GLOSSARY = {}
 
 # 专有名词：必须原样保留英文，不翻译/不音译
 PROPER_NOUNS = ["ParaView", "LidarView", "SenFoToView", "Kitware", "VTK", "Qt", "Python"]
@@ -58,6 +69,12 @@ def flags_for(src, tr):
         if ("&" + m.group(1).upper()) not in tr.upper():
             out.append("ACCEL")
             break
+    m = ACCEL_RE.search(src)
+    if m and GLOSSARY and src.count("&") == 1:
+        key = (src[:m.start()] + src[m.start() + 1:]).strip()
+        expect = GLOSSARY.get(key)
+        if expect and expect not in tr:
+            out.append("ACCEL_GLOSSARY:" + expect)
     if not CJK_RE.search(tr) and "SAME_AS_SOURCE" not in out:
         out.append("NO_CJK")
     for bad in SUSPECT:

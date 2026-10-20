@@ -1107,7 +1107,7 @@ Click Apply or show the data to refresh.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqProxyWidgetDialog.ui" line="123"/>
         <source>&amp;Cancel</source>
-        <translation>安塞尔(&amp;C)</translation>
+        <translation>取消(&amp;C)</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqProxyWidgetDialog.ui" line="136"/>
@@ -2622,12 +2622,12 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterDefinitionWizard.ui" line="835"/>
         <source>&lt; &amp;Back</source>
-        <translation>&lt; 阿克语(&amp;B)</translation>
+        <translation>&lt; 后退(&amp;B)</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterDefinitionWizard.ui" line="845"/>
         <source>&amp;Next &gt;</source>
-        <translation>链接 &gt;(&amp;N)</translation>
+        <translation>下一步 &gt;(&amp;N)</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterDefinitionWizard.ui" line="874"/>
@@ -2655,7 +2655,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterManager.ui" line="60"/>
         <source>&amp;Close</source>
-        <translation>输(&amp;C)</translation>
+        <translation>关闭(&amp;C)</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterManager.ui" line="70"/>
@@ -2665,7 +2665,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterManager.ui" line="73"/>
         <source>&amp;Remove</source>
-        <translation>移动(&amp;R)</translation>
+        <translation>移除(&amp;R)</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterManager.ui" line="80"/>
@@ -2675,7 +2675,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterManager.ui" line="83"/>
         <source>&amp;Export</source>
-        <translation>x 端口(&amp;E)</translation>
+        <translation>导出(&amp;E)</translation>
     </message>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterManager.ui" line="90"/>
@@ -2685,7 +2685,7 @@ However number of values in both entires must match.</source>
     <message>
         <location filename="../Qt/Components/Resources/UI/pqCustomFilterManager.ui" line="93"/>
         <source>&amp;Import</source>
-        <translation>移动(&amp;I)</translation>
+        <translation>导入(&amp;I)</translation>
     </message>
     <message>
         <location filename="../Qt/Components/pqCustomFilterManager.cxx" line="207"/>
@@ -5840,6 +5840,357 @@ Waiting %2 seconds for connection to server.</source>
         <location filename="../Qt/Components/Resources/UI/pqPropertiesPanel.ui" line="454"/>
         <source>Save current view settings values as default</source>
         <translation>将当前视图设置值保存为默认值</translation>
+    </message>
+</context>
+<context>
+    <name>lqAiryHardwareConfigDialog</name>
+    <message>
+        <source>LiDAR Hardware Parameters</source>
+        <translation>雷达硬件参数设置</translation>
+    </message>
+    <message>
+        <source>LiDAR IP:</source>
+        <translation>雷达 IP：</translation>
+    </message>
+    <message>
+        <source>Get Config</source>
+        <translation>获取配置</translation>
+    </message>
+    <message>
+        <source>Apply</source>
+        <translation>设置</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>关闭</translation>
+    </message>
+    <message>
+        <source>Please get the configuration first.</source>
+        <translation>请先获取配置。</translation>
+    </message>
+    <message>
+        <source>Settings applied.</source>
+        <translation>设置已下发。</translation>
+    </message>
+    <message>
+        <source>Common Parameters</source>
+        <translation>常用参数</translation>
+    </message>
+    <message>
+        <source>Host (PC) IP:</source>
+        <translation>主机(PC)IP：</translation>
+    </message>
+    <message>
+        <source>Subnet Mask:</source>
+        <translation>子网掩码：</translation>
+    </message>
+    <message>
+        <source>Gateway:</source>
+        <translation>网关：</translation>
+    </message>
+    <message>
+        <source>MSOP Port:</source>
+        <translation>MSOP 端口：</translation>
+    </message>
+    <message>
+        <source>DIFOP Port:</source>
+        <translation>DIFOP 端口：</translation>
+    </message>
+    <message>
+        <source>Return Mode:</source>
+        <translation>回波模式：</translation>
+    </message>
+    <message>
+        <source>Strongest</source>
+        <translation>最强</translation>
+    </message>
+    <message>
+        <source>First</source>
+        <translation>首次</translation>
+    </message>
+    <message>
+        <source>Last</source>
+        <translation>最后</translation>
+    </message>
+    <message>
+        <source>Dual</source>
+        <translation>双回波</translation>
+    </message>
+    <message>
+        <source>Device IP Address:</source>
+        <translation>设备(雷达)IP 地址：</translation>
+    </message>
+    <message>
+        <source>Device IP Mask:</source>
+        <translation>子网掩码：</translation>
+    </message>
+    <message>
+        <source>Device IP Gateway:</source>
+        <translation>网关：</translation>
+    </message>
+    <message>
+        <source>Destination IP Address:</source>
+        <translation>目标(PC)IP 地址：</translation>
+    </message>
+    <message>
+        <source>MSOP Port Number(1025~65535):</source>
+        <translation>MSOP 端口(1025~65535)：</translation>
+    </message>
+    <message>
+        <source>DIFOP Port Number(1025~65535):</source>
+        <translation>DIFOP 端口(1025~65535)：</translation>
+    </message>
+    <message>
+        <source>FOV Setting(0~360):</source>
+        <translation>视场角设置(0~360)：</translation>
+    </message>
+    <message>
+        <source>Time Synchronization Source:</source>
+        <translation>时间同步源：</translation>
+    </message>
+    <message>
+        <source>PTP Domain Number(0~127):</source>
+        <translation>PTP 域号(0~127)：</translation>
+    </message>
+    <message>
+        <source>Respond To PeerDelayRequest:</source>
+        <translation>响应 PeerDelay 请求：</translation>
+    </message>
+    <message>
+        <source>No Leap Second:</source>
+        <translation>无闰秒：</translation>
+    </message>
+    <message>
+        <source>Sync Timeout(1~255s):</source>
+        <translation>同步超时(1~255s)：</translation>
+    </message>
+    <message>
+        <source>Unlock To Lock Threshold(1~255ms):</source>
+        <translation>失锁→锁定阈值(1~255ms)：</translation>
+    </message>
+    <message>
+        <source>Lock To Unlock Threshold(1~255ms):</source>
+        <translation>锁定→失锁阈值(1~255ms)：</translation>
+    </message>
+    <message>
+        <source>Reflectivity Enhancement:</source>
+        <translation>反射率增强：</translation>
+    </message>
+    <message>
+        <source>Trail Filter Level:</source>
+        <translation>拖尾滤波等级：</translation>
+    </message>
+    <message>
+        <source>Operation Mode:</source>
+        <translation>工作模式：</translation>
+    </message>
+    <message>
+        <source>Phase Lock Setting(0~360):</source>
+        <translation>相位锁定设置(0~360)：</translation>
+    </message>
+    <message>
+        <source>Rotation Speed:</source>
+        <translation>转速：</translation>
+    </message>
+    <message>
+        <source>GPS Baud Rate:</source>
+        <translation>GPS 波特率：</translation>
+    </message>
+    <message>
+        <source>Motor Reversal:</source>
+        <translation>电机反转：</translation>
+    </message>
+    <message>
+        <source>Side Installation Mode:</source>
+        <translation>侧装模式：</translation>
+    </message>
+    <message>
+        <source>Imu Ctrl:</source>
+        <translation>IMU 使能：</translation>
+    </message>
+    <message>
+        <source>Imu Port Number(1025~65535):</source>
+        <translation>IMU 端口(1025~65535)：</translation>
+    </message>
+    <message>
+        <source>Imu Output Rate:</source>
+        <translation>IMU 输出率：</translation>
+    </message>
+    <message>
+        <source>Accel Range:</source>
+        <translation>加速度量程：</translation>
+    </message>
+    <message>
+        <source>Gyro Range:</source>
+        <translation>陀螺量程：</translation>
+    </message>
+    <message>
+        <source>Imu LPF Config(0~255):</source>
+        <translation>IMU 低通滤波(0~255)：</translation>
+    </message>
+    <message>
+        <source>Restore Default:</source>
+        <translation>恢复出厂：</translation>
+    </message>
+    <message>
+        <source>MSOP Vlan:</source>
+        <translation>MSOP VLAN：</translation>
+    </message>
+    <message>
+        <source>DIFOP Vlan:</source>
+        <translation>DIFOP VLAN：</translation>
+    </message>
+    <message>
+        <source>PTP Vlan:</source>
+        <translation>PTP VLAN：</translation>
+    </message>
+    <message>
+        <source>Trail Filter Near Enhancement:</source>
+        <translation>近距离拖尾滤波增强：</translation>
+    </message>
+    <message>
+        <source>Trail Special Mode:</source>
+        <translation>拖尾特殊模式：</translation>
+    </message>
+    <message>
+        <source>Rain/Blockage Detection Distance:</source>
+        <translation>雨/遮挡检测距离：</translation>
+    </message>
+    <message>
+        <source>Rain Detection Sensitivity:</source>
+        <translation>雨检测灵敏度：</translation>
+    </message>
+    <message>
+        <source>Blockage Detection Sensitivity:</source>
+        <translation>遮挡检测灵敏度：</translation>
+    </message>
+    <message>
+        <source>Frame Start Angle(0~360):</source>
+        <translation>帧起始角(0~360)：</translation>
+    </message>
+    <message>
+        <source>Dead Zone 10cm Enable:</source>
+        <translation>10cm 盲区使能：</translation>
+    </message>
+    <message>
+        <source>Channel 81 85 89 93 Enable:</source>
+        <translation>通道 81/85/89/93 使能：</translation>
+    </message>
+    <message>
+        <source>Gap Filling Enable:</source>
+        <translation>补点使能：</translation>
+    </message>
+    <message>
+        <source>Ranging Mode:</source>
+        <translation>测距模式：</translation>
+    </message>
+    <message>
+        <source>Rain Fog Switch:</source>
+        <translation>雨雾模式开关：</translation>
+    </message>
+    <message>
+        <source>Number Of Lines:</source>
+        <translation>线数：</translation>
+    </message>
+    <message>
+        <source>Trigger Mode:</source>
+        <translation>触发模式：</translation>
+    </message>
+    <message>
+        <source>First Group:</source>
+        <translation>第一组：</translation>
+    </message>
+    <message>
+        <source>Secondary MSOP Port:</source>
+        <translation>备用 MSOP 端口：</translation>
+    </message>
+    <message>
+        <source>Device Info</source>
+        <translation>设备信息</translation>
+    </message>
+    <message>
+        <source>Serial Number:</source>
+        <translation>雷达编号：</translation>
+    </message>
+    <message>
+        <source>MAC Address:</source>
+        <translation>MAC 地址：</translation>
+    </message>
+    <message>
+        <source>Mainboard Firmware:</source>
+        <translation>主板固件版本：</translation>
+    </message>
+    <message>
+        <source>Baseboard Firmware:</source>
+        <translation>底板固件版本：</translation>
+    </message>
+    <message>
+        <source>APP Firmware:</source>
+        <translation>APP 固件版本：</translation>
+    </message>
+    <message>
+        <source>Motor Firmware:</source>
+        <translation>电机固件版本：</translation>
+    </message>
+    <message>
+        <source>Temperature (C):</source>
+        <translation>温度(℃)：</translation>
+    </message>
+    <message>
+        <source>Mainboard Voltage (V):</source>
+        <translation>主板电压(V)：</translation>
+    </message>
+    <message>
+        <source>Advanced Settings</source>
+        <translation>高级设置</translation>
+    </message>
+    <message>
+        <source>Advanced Settings...</source>
+        <translation>高级设置...</translation>
+    </message>
+    <message>
+        <source>More settings</source>
+        <translation>更多设置</translation>
+    </message>
+    <message>
+        <source>Unable to create the configuration proxy.</source>
+        <translation>无法创建配置代理。</translation>
+    </message>
+    <message>
+        <source>Please refresh the configuration first.</source>
+        <translation>请先刷新配置。</translation>
+    </message>
+    <message>
+        <source>Revert</source>
+        <translation>还原</translation>
+    </message>
+    <message>
+        <source>Invalid value(s): %1</source>
+        <translation>无效的值：%1</translation>
+    </message>
+    <message>
+        <source>LiDAR IP</source>
+        <translation>雷达 IP</translation>
+    </message>
+    <message>
+        <source>Subnet Mask</source>
+        <translation>子网掩码</translation>
+    </message>
+    <message>
+        <source>Gateway</source>
+        <translation>网关</translation>
+    </message>
+    <message>
+        <source>Host (PC) IP</source>
+        <translation>主机(PC)IP</translation>
+    </message>
+    <message>
+        <source>MSOP Port</source>
+        <translation>MSOP 端口</translation>
+    </message>
+    <message>
+        <source>DIFOP Port</source>
+        <translation>DIFOP 端口</translation>
     </message>
 </context>
 </TS>

@@ -59,7 +59,7 @@
     <message>
         <location filename="../Qt/Python/pqPythonEditorActions.cxx" line="56"/>
         <source>Save &amp;As...</source>
-        <translation>保存 s...(&amp;A)</translation>
+        <translation>另存为(&amp;A)...</translation>
     </message>
     <message>
         <location filename="../Qt/Python/pqPythonEditorActions.cxx" line="58"/>
@@ -69,7 +69,7 @@
     <message>
         <location filename="../Qt/Python/pqPythonEditorActions.cxx" line="61"/>
         <source>Save As &amp;Macro...</source>
-        <translation>另存为 acro...(&amp;M)</translation>
+        <translation>另存为宏(&amp;M)...</translation>
     </message>
     <message>
         <location filename="../Qt/Python/pqPythonEditorActions.cxx" line="63"/>
@@ -79,7 +79,7 @@
     <message>
         <location filename="../Qt/Python/pqPythonEditorActions.cxx" line="66"/>
         <source>Save As &amp;Script...</source>
-        <translation>另存为 cript...(&amp;S)</translation>
+        <translation>另存为脚本(&amp;S)...</translation>
     </message>
     <message>
         <location filename="../Qt/Python/pqPythonEditorActions.cxx" line="68"/>

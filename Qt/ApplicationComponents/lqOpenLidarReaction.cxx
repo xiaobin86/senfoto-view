@@ -103,6 +103,10 @@ void AutoAttachRPMText(pqPipelineSource* source)
   }
   filter->getProxy()->UpdateVTKObjects();
   ::InitAndDisplaySource(filter, filter->getProxy(), true);
+
+  // Keep the lidar source as the active/selected item: the RPM info filter is
+  // display-only and should not become the pipeline selection.
+  pqActiveObjects::instance().setActiveSource(source);
 }
 
 // Set the visibility of a source's representation in the active view.
@@ -139,6 +143,9 @@ void AutoAttachLaserSelection(pqPipelineSource* source)
   }
   filter->getProxy()->UpdateVTKObjects();
   ::InitAndDisplaySource(filter, filter->getProxy(), true);
+
+  // Hide the default (raw frame) source so only the selection layer renders.
+  ::SetPipelineSourceVisible(source, false);
 }
 
 void AutoAttachRadialDenoise(pqPipelineSource* source)

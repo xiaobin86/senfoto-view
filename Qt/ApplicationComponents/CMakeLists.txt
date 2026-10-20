@@ -24,6 +24,7 @@ set(classes
   lqSaveLidarStateReaction
   lqSavePcapReaction
   lqSenfotoNetworkConfigReaction
+  lqAiryHardwareConfigReaction
   lqSensorListWidget
   lqSensorReaderWidget
   lqSensorStreamWidget

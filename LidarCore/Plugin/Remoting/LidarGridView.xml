@@ -50,7 +50,7 @@
       <DoubleVectorProperty name="Scale"
                             command="SetGridScale"
                             number_of_elements="1"
-                            default_values="10">
+                            default_values="1">
         <DoubleRangeDomain name="range" min="0"/>
         <Documentation>
           Set the scale/size between two lines.

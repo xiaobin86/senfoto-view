@@ -4291,7 +4291,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="22"/>
         <source>&amp;Undo</source>
-        <translation>无(&amp;U)</translation>
+        <translation>撤销(&amp;U)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="25"/>
@@ -4301,7 +4301,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="37"/>
         <source>&amp;Redo</source>
-        <translation>江户(&amp;R)</translation>
+        <translation>重做(&amp;R)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="40"/>
@@ -4343,7 +4343,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="87"/>
         <source>Change &amp;Input...</source>
-        <translation>更改 nput...(&amp;I)</translation>
+        <translation>更改输入(&amp;I)...</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="90"/>
@@ -4371,7 +4371,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="119"/>
         <source>&amp;Copy Screenshot to Clipboard</source>
-        <translation>opy 屏幕截图到剪贴板(&amp;C)</translation>
+        <translation>复制屏幕截图到剪贴板(&amp;C)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="122"/>
@@ -4381,7 +4381,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="131"/>
         <source>&amp;Copy</source>
-        <translation>声音(&amp;C)</translation>
+        <translation>复制(&amp;C)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="134"/>
@@ -4391,7 +4391,7 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="143"/>
         <source>&amp;Paste</source>
-        <translation>图像(&amp;P)</translation>
+        <translation>粘贴(&amp;P)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqEditMenuBuilder.ui" line="146"/>
@@ -5331,12 +5331,12 @@ Are you sure you want to continue?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqMainControlsToolbar.ui" line="78"/>
         <source>&amp;Undo</source>
-        <translation>无(&amp;U)</translation>
+        <translation>撤销(&amp;U)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqMainControlsToolbar.ui" line="87"/>
         <source>&amp;Redo</source>
-        <translation>江户(&amp;R)</translation>
+        <translation>重做(&amp;R)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/Resources/UI/pqMainControlsToolbar.ui" line="99"/>
@@ -5483,7 +5483,7 @@ Do you want to open this file as a state file?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqParaViewMenuBuilders.cxx" line="424"/>
         <source>&amp;Open</source>
-        <translation>笔(&amp;O)</translation>
+        <translation>打开(&amp;O)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqParaViewMenuBuilders.cxx" line="427"/>
@@ -5494,7 +5494,7 @@ Do you want to open this file as a state file?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqParaViewMenuBuilders.cxx" line="441"/>
         <source>&amp;Show All</source>
-        <translation>怎么样(&amp;S)</translation>
+        <translation>显示全部(&amp;S)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqParaViewMenuBuilders.cxx" line="443"/>
@@ -5504,7 +5504,7 @@ Do you want to open this file as a state file?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqParaViewMenuBuilders.cxx" line="454"/>
         <source>&amp;Hide All</source>
-        <translation>首页(&amp;H)</translation>
+        <translation>隐藏全部(&amp;H)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqParaViewMenuBuilders.cxx" line="456"/>
@@ -5514,7 +5514,7 @@ Do you want to open this file as a state file?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqParaViewMenuBuilders.cxx" line="466"/>
         <source>&amp;Copy</source>
-        <translation>声音(&amp;C)</translation>
+        <translation>复制(&amp;C)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqParaViewMenuBuilders.cxx" line="469"/>
@@ -5524,7 +5524,7 @@ Do you want to open this file as a state file?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqParaViewMenuBuilders.cxx" line="479"/>
         <source>&amp;Paste</source>
-        <translation>图像(&amp;P)</translation>
+        <translation>粘贴(&amp;P)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqParaViewMenuBuilders.cxx" line="482"/>
@@ -5546,7 +5546,7 @@ Do you want to open this file as a state file?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqParaViewMenuBuilders.cxx" line="508"/>
         <source>Change &amp;Input...</source>
-        <translation>更改 nput...(&amp;I)</translation>
+        <translation>更改输入(&amp;I)...</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqParaViewMenuBuilders.cxx" line="510"/>
@@ -5610,7 +5610,7 @@ Do you want to open this file as a state file?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqParaViewMenuBuilders.cxx" line="589"/>
         <source>&amp;Create Custom Filter...</source>
-        <translation>重置自定义过滤器...(&amp;C)</translation>
+        <translation>创建自定义过滤器(&amp;C)...</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqParaViewMenuBuilders.cxx" line="595"/>
@@ -5673,7 +5673,7 @@ Do you want to open this file as a state file?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqProxyGroupMenuManager.cxx" line="606"/>
         <source>&amp;Recent</source>
-        <translation>百分点(&amp;R)</translation>
+        <translation>最近(&amp;R)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqProxyGroupMenuManager.cxx" line="626"/>
@@ -5698,7 +5698,7 @@ Do you want to open this file as a state file?</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqProxyGroupMenuManager.cxx" line="622"/>
         <source>&amp;Alphabetical</source>
-        <translation>易发性(&amp;A)</translation>
+        <translation>按字母顺序(&amp;A)</translation>
     </message>
 </context>
 <context>
@@ -6784,7 +6784,7 @@ Otherwise, generate NumberOfFrames time entries.</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqUndoRedoReaction.cxx" line="91"/>
         <source>&amp;Undo</source>
-        <translation>无(&amp;U)</translation>
+        <translation>撤销(&amp;U)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqUndoRedoReaction.cxx" line="93"/>
@@ -6800,7 +6800,7 @@ Otherwise, generate NumberOfFrames time entries.</source>
     <message>
         <location filename="../Qt/ApplicationComponents/pqUndoRedoReaction.cxx" line="97"/>
         <source>&amp;Redo</source>
-        <translation>江户(&amp;R)</translation>
+        <translation>重做(&amp;R)</translation>
     </message>
     <message>
         <location filename="../Qt/ApplicationComponents/pqUndoRedoReaction.cxx" line="99"/>

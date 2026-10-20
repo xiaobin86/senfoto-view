@@ -1,13 +1,15 @@
 {
   "lidarViewer": {
     "dockWidgets": [
-      "lidarPlayerDock"
+      "lidarPlayerDock",
+      "pipelineBrowserDock"
     ],
     "menus": {
       "hide": [
         "menuSources",
         "menuFilters",
-        "menuMacros"
+        "menuMacros",
+        "menuTools"
       ],
       "menuFile": [
         "actionOpenPcap",
@@ -22,6 +24,8 @@
         "actionFileExit"
       ],
       "menuEdit": [
+        "actionShowRPM",
+        "actionSenfotoNetworkConfig",
         "actionUpdateConfiguration",
         "actionShowMeasurementGrid",
         "separator",
@@ -111,7 +115,10 @@
       "displayPropertiesDock"
     ],
     "menus": {
-      "hide": [],
+      "hide": [
+        "menuTools",
+        "menuFilters"
+      ],
       "menuFile": [
         "actionFileOpen",
         "menuRecentFiles",
@@ -129,6 +136,8 @@
         "actionFileExit"
       ],
       "menuEdit": [
+        "actionShowRPM",
+        "actionSenfotoNetworkConfig",
         "actionShowMeasurementGrid",
         "separator",
         "actionEditUndo",
@@ -219,7 +228,10 @@
       "displayPropertiesDock"
     ],
     "menus": {
-      "hide": [],
+      "hide": [
+        "menuTools",
+        "menuFilters"
+      ],
       "menuFile": [
         "menuOpen",
         "menuRecentFiles",
@@ -242,6 +254,8 @@
         "actionFileExit"
       ],
       "menuEdit": [
+        "actionShowRPM",
+        "actionSenfotoNetworkConfig",
         "actionShowMeasurementGrid",
         "separator",
         "actionEditUndo",

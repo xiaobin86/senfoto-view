@@ -74227,5 +74227,257 @@ Real source: Remoting/Export/Resources/exporters.xml - WebExporter</extracomment
 Real source: Remoting/Export/Resources/exporters.xml - WebExporter</extracomment>
         <translation>写入纹理</translation>
     </message>
+    <message>
+        <source>Device IP Address</source>
+        <translation>设备(雷达)IP 地址</translation>
+    </message>
+    <message>
+        <source>Device IP Mask</source>
+        <translation>子网掩码</translation>
+    </message>
+    <message>
+        <source>Device IP Gateway</source>
+        <translation>网关</translation>
+    </message>
+    <message>
+        <source>Destination IP Address</source>
+        <translation>目标(PC)IP 地址</translation>
+    </message>
+    <message>
+        <source>MSOP Port</source>
+        <translation>MSOP 端口</translation>
+    </message>
+    <message>
+        <source>DIFOP Port</source>
+        <translation>DIFOP 端口</translation>
+    </message>
+    <message>
+        <source>Return Mode</source>
+        <translation>回波模式</translation>
+    </message>
+    <message>
+        <source>FOV Start (deg)</source>
+        <translation>视场起始角(°)</translation>
+    </message>
+    <message>
+        <source>FOV End (deg)</source>
+        <translation>视场结束角(°)</translation>
+    </message>
+    <message>
+        <source>Time Sync Source</source>
+        <translation>时间同步源</translation>
+    </message>
+    <message>
+        <source>PTP Domain Number</source>
+        <translation>PTP 域号</translation>
+    </message>
+    <message>
+        <source>Respond To PeerDelayRequest</source>
+        <translation>响应 PeerDelay 请求</translation>
+    </message>
+    <message>
+        <source>No Leap Second</source>
+        <translation>无闰秒</translation>
+    </message>
+    <message>
+        <source>Sync Timeout (s)</source>
+        <translation>同步超时(s)</translation>
+    </message>
+    <message>
+        <source>Unlock To Lock Threshold (ms)</source>
+        <translation>失锁→锁定阈值(ms)</translation>
+    </message>
+    <message>
+        <source>Lock To Unlock Threshold (ms)</source>
+        <translation>锁定→失锁阈值(ms)</translation>
+    </message>
+    <message>
+        <source>Reflectivity Enhancement</source>
+        <translation>反射率增强</translation>
+    </message>
+    <message>
+        <source>Trail Filter Level</source>
+        <translation>拖尾滤波等级</translation>
+    </message>
+    <message>
+        <source>Operation Mode</source>
+        <translation>工作模式</translation>
+    </message>
+    <message>
+        <source>Phase Lock Setting (deg)</source>
+        <translation>相位锁定设置(°)</translation>
+    </message>
+    <message>
+        <source>Rotation Speed</source>
+        <translation>转速</translation>
+    </message>
+    <message>
+        <source>GPS Baud Rate</source>
+        <translation>GPS 波特率</translation>
+    </message>
+    <message>
+        <source>Motor Reversal</source>
+        <translation>电机转向</translation>
+    </message>
+    <message>
+        <source>Side Installation Mode</source>
+        <translation>侧装模式</translation>
+    </message>
+    <message>
+        <source>Imu Ctrl</source>
+        <translation>IMU 使能</translation>
+    </message>
+    <message>
+        <source>Imu Port</source>
+        <translation>IMU 端口</translation>
+    </message>
+    <message>
+        <source>Imu Output Rate</source>
+        <translation>IMU 输出率</translation>
+    </message>
+    <message>
+        <source>Accel Range</source>
+        <translation>加速度量程</translation>
+    </message>
+    <message>
+        <source>Gyro Range</source>
+        <translation>陀螺量程</translation>
+    </message>
+    <message>
+        <source>Imu LPF Config</source>
+        <translation>IMU 低通滤波</translation>
+    </message>
+    <message>
+        <source>Restore Default</source>
+        <translation>恢复出厂</translation>
+    </message>
+    <message>
+        <source>MSOP Vlan</source>
+        <translation>MSOP VLAN</translation>
+    </message>
+    <message>
+        <source>DIFOP Vlan</source>
+        <translation>DIFOP VLAN</translation>
+    </message>
+    <message>
+        <source>PTP Vlan</source>
+        <translation>PTP VLAN</translation>
+    </message>
+    <message>
+        <source>Trail Filter Near Enhancement</source>
+        <translation>近距离拖尾滤波增强</translation>
+    </message>
+    <message>
+        <source>Trail Special Mode</source>
+        <translation>拖尾特殊模式</translation>
+    </message>
+    <message>
+        <source>Rain/Blockage Detection Distance</source>
+        <translation>雨/遮挡检测距离</translation>
+    </message>
+    <message>
+        <source>Rain Detection Sensitivity</source>
+        <translation>雨检测灵敏度</translation>
+    </message>
+    <message>
+        <source>Blockage Detection Sensitivity</source>
+        <translation>遮挡检测灵敏度</translation>
+    </message>
+    <message>
+        <source>Frame Start Angle (deg)</source>
+        <translation>帧起始角(°)</translation>
+    </message>
+    <message>
+        <source>Dead Zone 10cm Enable</source>
+        <translation>10cm 盲区使能</translation>
+    </message>
+    <message>
+        <source>Channel 81 85 89 93 Enable</source>
+        <translation>通道 81/85/89/93 使能</translation>
+    </message>
+    <message>
+        <source>Gap Filling Enable</source>
+        <translation>补点使能</translation>
+    </message>
+    <message>
+        <source>Ranging Mode</source>
+        <translation>测距模式</translation>
+    </message>
+    <message>
+        <source>Rain Fog Switch</source>
+        <translation>雨雾开关</translation>
+    </message>
+    <message>
+        <source>Number Of Lines</source>
+        <translation>线数</translation>
+    </message>
+    <message>
+        <source>Strongest</source>
+        <translation>最强</translation>
+    </message>
+    <message>
+        <source>First</source>
+        <translation>首次</translation>
+    </message>
+    <message>
+        <source>Last</source>
+        <translation>最后</translation>
+    </message>
+    <message>
+        <source>Dual</source>
+        <translation>双回波</translation>
+    </message>
+    <message>
+        <source>OFF</source>
+        <translation>关闭</translation>
+    </message>
+    <message>
+        <source>ON</source>
+        <translation>开启</translation>
+    </message>
+    <message>
+        <source>Standby</source>
+        <translation>待机</translation>
+    </message>
+    <message>
+        <source>High-Performance</source>
+        <translation>高性能</translation>
+    </message>
+    <message>
+        <source>FORWARD</source>
+        <translation>正转</translation>
+    </message>
+    <message>
+        <source>REVERSE</source>
+        <translation>反转</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>关</translation>
+    </message>
+    <message>
+        <source>On</source>
+        <translation>开</translation>
+    </message>
+    <message>
+        <source>high</source>
+        <translation>高</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>中</translation>
+    </message>
+    <message>
+        <source>low</source>
+        <translation>低</translation>
+    </message>
+    <message>
+        <source>RainFog</source>
+        <translation>雨雾</translation>
+    </message>
+    <message>
+        <source>Balance</source>
+        <translation>平衡</translation>
+    </message>
 </context>
 </TS>

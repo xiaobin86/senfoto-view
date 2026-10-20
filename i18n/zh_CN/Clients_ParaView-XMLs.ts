@@ -7,7 +7,7 @@
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="7"/>
         <source>&amp;Common</source>
         <extracomment>Real source: Clients/ParaView/ParaViewFilters.xml - Clients/ParaView/ParaViewFilters.xml</extracomment>
-        <translation>自动(&amp;C)</translation>
+        <translation>常用(&amp;C)</translation>
     </message>
     <message>
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="10"/>
@@ -133,7 +133,7 @@
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="283"/>
         <source>&amp;Data Analysis</source>
         <extracomment>Real source: Clients/ParaView/ParaViewFilters.xml - Clients/ParaView/ParaViewFilters.xml</extracomment>
-        <translation>分析(&amp;D)</translation>
+        <translation>数据分析(&amp;D)</translation>
     </message>
     <message>
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="292"/>
@@ -376,7 +376,7 @@
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="436"/>
         <source>&amp;Temporal</source>
         <extracomment>Real source: Clients/ParaView/ParaViewFilters.xml - Clients/ParaView/ParaViewFilters.xml</extracomment>
-        <translation>时间(&amp;T)</translation>
+        <translation>时域(&amp;T)</translation>
     </message>
     <message>
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="439"/>
@@ -613,7 +613,7 @@
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="424"/>
         <source>&amp;Quadrature Points</source>
         <extracomment>Real source: Clients/ParaView/ParaViewFilters.xml - Clients/ParaView/ParaViewFilters.xml</extracomment>
-        <translation>二次点(&amp;Q)</translation>
+        <translation>积分点(&amp;Q)</translation>
     </message>
     <message>
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="427"/>
@@ -1731,7 +1731,7 @@
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="103"/>
         <source>H&amp;yper Tree Grid</source>
         <extracomment>Real source: Clients/ParaView/ParaViewFilters.xml - Clients/ParaView/ParaViewFilters.xml</extracomment>
-        <translation>树网(&amp;Y)</translation>
+        <translation>Hyper Tree Grid(&amp;Y)</translation>
     </message>
     <message>
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="133"/>
@@ -1752,13 +1752,13 @@
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="151"/>
         <source>C&amp;osmoTools</source>
         <extracomment>Real source: Clients/ParaView/ParaViewFilters.xml - Clients/ParaView/ParaViewFilters.xml</extracomment>
-        <translation>烟雾工具(&amp;O)</translation>
+        <translation>CosmoTools(&amp;O)</translation>
     </message>
     <message>
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="169"/>
         <source>CT&amp;H</source>
         <extracomment>Real source: Clients/ParaView/ParaViewFilters.xml - Clients/ParaView/ParaViewFilters.xml</extracomment>
-        <translation>CT 翻译(&amp;H)</translation>
+        <translation>CTH(&amp;H)</translation>
     </message>
     <message>
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="187"/>
@@ -1770,7 +1770,7 @@
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="205"/>
         <source>&amp;EAM</source>
         <extracomment>Real source: Clients/ParaView/ParaViewFilters.xml - Clients/ParaView/ParaViewFilters.xml</extracomment>
-        <translation>上午(&amp;E)</translation>
+        <translation>EAM(&amp;E)</translation>
     </message>
     <message>
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="208"/>
@@ -1842,7 +1842,7 @@
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="376"/>
         <source>Materia&amp;l Analysis</source>
         <extracomment>Real source: Clients/ParaView/ParaViewFilters.xml - Clients/ParaView/ParaViewFilters.xml</extracomment>
-        <translation>Materia 分析(&amp;L)</translation>
+        <translation>材料分析(&amp;L)</translation>
     </message>
     <message>
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="442"/>
@@ -2152,7 +2152,7 @@
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="1567"/>
         <source>&amp;Data Objects</source>
         <extracomment>Real source: Clients/ParaView/ParaViewSources.xml - Clients/ParaView/ParaViewSources.xml</extracomment>
-        <translation>对象(&amp;D)</translation>
+        <translation>数据对象(&amp;D)</translation>
     </message>
     <message>
         <location filename="../build/Clients/ParaView/translationSourcesparaviewClientXMLs.h" line="1570"/>

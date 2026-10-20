@@ -7,6 +7,8 @@ set(classes
   lqSelectLidarFrameDialog
   lqSenfotoNetworkConfig
   lqSenfotoNetworkConfigDialog
+  lqAiryHardwareConfig
+  lqAiryHardwareConfigDialog
   lqSenfotoPasswordDialog
   lqStreamPCAPRecorder
   lqStreamRecordController

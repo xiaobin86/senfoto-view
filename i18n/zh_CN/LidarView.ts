@@ -136,6 +136,10 @@
         <source>Sensor IP Config</source>
         <translation>雷达 IP 配置</translation>
     </message>
+    <message>
+        <source>LiDAR Hardware Parameters</source>
+        <translation>雷达硬件参数设置</translation>
+    </message>
 </context>
 <context>
     <name>lqAboutDialog</name>

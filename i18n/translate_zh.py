@@ -4,7 +4,7 @@
 #       保护 %1 占位符、<html> 标签、字面 \n 与 & 加速键。
 # 作者：acelan
 # 新建时间：2026-10-09
-# 修改时间：2026-10-09
+# 修改时间：2026-10-20
 # ============================================================
 import argparse
 import glob
@@ -45,6 +45,11 @@ GLOSSARY = {
     "Sample series:": "采样序列：", "Sample": "采样", "Abort": "中止",
     "Protractor": "量角器", "sin": "正弦", "Sine": "正弦", "Reset Camera": "重置相机",
     "Reposition protractor to view": "重新放置量角器到视图",
+    "Copy": "复制", "Paste": "粘贴", "Undo": "撤销", "Redo": "重做", "Next": "下一步",
+    "Back": "后退", "Previous": "上一步", "Import": "导入", "Export": "导出",
+    "Show All": "显示全部", "Hide All": "隐藏全部", "Recent": "最近",
+    "Alphabetical": "按字母顺序", "Common": "常用", "Data Analysis": "数据分析",
+    "Temporal": "时域", "Quadrature Points": "积分点", "Data Objects": "数据对象",
 }
 TERM_FIX = {"推进器": "量角器", "罪恶": "正弦", "线性三角": "正弦三角函数",
             "帕拉维尤": "ParaView", "维塔克语Name": "VTK"}
@@ -140,13 +145,16 @@ def argos(text):
         return None
 
 
+def strip_accel(text):
+    """去掉单个加速键的 '&'，但保留其字母（否则 "&Cancel" 会变成 "ancel"）。"""
+    m = re.search(r'&([A-Za-z])', text)
+    if m and text.count('&') == 1:
+        return text[:m.start()] + text[m.start() + 1:], m.group(1).upper()
+    return text, None
+
+
 def preprocess(src):
-    accel = None
-    text = src
-    m = re.search(r'&([A-Za-z])', src)
-    if m and src.count('&') == 1 and len(src) <= 60:
-        accel = m.group(1).upper()
-        text = src[:m.start()] + src[m.end():]
+    text, accel = strip_accel(src) if len(src) <= 60 else (src, None)
     text = text.replace('\n', ' ')
     text, repl = _mask_proper(text)
     return text, (accel, repl)
@@ -199,7 +207,7 @@ def translate_unique(sources):
         pre, meta = preprocess(s)
         o = mt_src(pre)
         val = postprocess(o, meta) if o is not None else None
-        base = GLOSSARY.get(s.strip())
+        base = GLOSSARY.get(strip_accel(s.strip())[0].strip())
         if base:
             val = base + (("(&%s)" % meta[0]) if meta[0] else "")
         with _lock:

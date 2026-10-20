@@ -63,6 +63,7 @@ typedef pqPythonDebugLeaksView DebugLeaksViewType;
 #include "lqPointCloudAutoRepresentationBehavior.h"
 #include "lqRPMTextReaction.h"
 #include "lqRecentlyUsedPcapLoader.h"
+#include "lqAiryHardwareConfigReaction.h"
 #include "lqSenfotoNetworkConfigReaction.h"
 #include "lqStreamPCAPRecorder.h"
 #include "lqTrailingFrameReaction.h"
@@ -216,14 +217,19 @@ LidarViewMainWindow::LidarViewMainWindow()
   QAction* actionLaserSelection = new QAction(tr("Laser Selection"), this);
   this->Internals->menuTools->addAction(actionLaserSelection);
   new lqLaserSelectionReaction(actionLaserSelection);
-  QAction* actionShowRPM = new QAction(tr("Show RPM"), this);
+  QAction* actionShowRPM = new QAction(tr("Show RPM"), this->Internals->menuEditBase);
+  actionShowRPM->setObjectName("actionShowRPM");
   actionShowRPM->setCheckable(true);
   actionShowRPM->setChecked(QSettings().value("LidarView/ShowRPM", true).toBool());
-  this->Internals->menuTools->addAction(actionShowRPM);
+  this->Internals->menuEditBase->addAction(actionShowRPM);
   new lqRPMTextReaction(actionShowRPM);
-  QAction* actionSenfotoNetworkConfig = new QAction(tr("Sensor IP Config"), this);
-  this->Internals->menuTools->addAction(actionSenfotoNetworkConfig);
-  new lqSenfotoNetworkConfigReaction(actionSenfotoNetworkConfig);
+  QAction* actionSenfotoNetworkConfig = new QAction(tr("LiDAR Hardware Parameters"), this->Internals->menuEditBase);
+  actionSenfotoNetworkConfig->setObjectName("actionSenfotoNetworkConfig");
+  this->Internals->menuEditBase->addAction(actionSenfotoNetworkConfig);
+  new lqAiryHardwareConfigReaction(actionSenfotoNetworkConfig);
+  // The Tools and Filters menus are hidden; their remaining entries are not exposed.
+  this->Internals->menuTools->menuAction()->setVisible(false);
+  this->Internals->menuFilters->menuAction()->setVisible(false);
   pqParaViewMenuBuilders::buildMacrosMenu(*this->Internals->menuMacros);
   lqLidarViewMenuBuilders::buildHelpMenu(*this->Internals->menuHelpBase);
 
