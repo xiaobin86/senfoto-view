@@ -134,19 +134,64 @@ bool lqAiryHardwareConfig::apply(const QString& lidarIp, const QVariantMap& valu
     parameters.insert(it.key(), it.value());
   }
 
+  // Replicate the browser's "General Setting" form submission exactly: fixed
+  // field order plus the hidden/button fields (tabs-two, save_param, mode2).
+  static const char* const kFields[] = {
+    "tabs-two", "SrcIp", "SrcMask", "SrcGateWay", "DstIp", "MPort", "DPort", "ReMode", "FovS",
+    "FovE", "SynSrc", "PDomNum", "RTPdelay", "NoLeap", "SyTOut", "UToL", "LToU", "OpM",
+    "PhaLockSet", "GPSBRate", "ImuCtrl", "IPort", "ImuOutR", "AccRg", "GyroRg", "Lpf",
+    "ResDefault", "save_param", "RefEn", "TFilLvl", "BlkRnDis", "Rn", "Blk", "FSAgl",
+    "DZ10cm", "C81858993", "GapFill", "RanM", "RnFgSwt", "L48", "mode2"
+  };
   QUrlQuery query;
-  for (auto it = parameters.constBegin(); it != parameters.constEnd(); ++it)
+  for (const char* field : kFields)
   {
-    query.addQueryItem(it.key(), it.value().toString());
+    const QString key = QLatin1String(field);
+    QString value;
+    if (key == QLatin1String("tabs-two"))
+    {
+      value = QStringLiteral("on");
+    }
+    else if (key == QLatin1String("save_param"))
+    {
+      value = QStringLiteral("Save");
+    }
+    else if (key == QLatin1String("mode2"))
+    {
+      value = QStringLiteral("Mode2");
+    }
+    else
+    {
+      value = parameters.value(key).toString();
+    }
+    if (!value.isEmpty())
+    {
+      query.addQueryItem(key, value);
+    }
   }
-  query.addQueryItem(QStringLiteral("save_param"), QStringLiteral("Save"));
 
   QNetworkAccessManager nam;
   // Talk to the LiDAR directly: never route LAN traffic through a system proxy.
   nam.setProxy(QNetworkProxy(QNetworkProxy::NoProxy));
   QNetworkRequest request(SaveUrl(lidarIp));
+
+  // Match the browser request observed in the capture exactly.
   request.setHeader(QNetworkRequest::ContentTypeHeader,
     QStringLiteral("application/x-www-form-urlencoded"));
+  request.setRawHeader("User-Agent",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0");
+  request.setRawHeader("Accept",
+    "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,"
+    "image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7");
+  request.setRawHeader("Accept-Language", "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6");
+  request.setRawHeader("Accept-Encoding", "gzip, deflate");
+  request.setRawHeader("Origin", QStringLiteral("http://%1").arg(lidarIp).toUtf8());
+  request.setRawHeader("Referer",
+    QStringLiteral("http://%1/Parameter_Setting.html").arg(lidarIp).toUtf8());
+  request.setRawHeader("Upgrade-Insecure-Requests", "1");
+  request.setRawHeader("Cache-Control", "max-age=0");
+  request.setRawHeader("Connection", "keep-alive");
   QByteArray response;
   return ExecRequest(
     nam, request, query.toString(QUrl::FullyEncoded).toLatin1(), response, error);

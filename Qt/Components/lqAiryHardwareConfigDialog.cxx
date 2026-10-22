@@ -476,45 +476,54 @@ void lqAiryHardwareConfigDialog::onApply()
   QString error;
   bool ok = config.apply(target, values, error);
 
-  // Changing the device IP makes it drop the connection before replying, so a
-  // timeout is expected. Verify by reaching the device at the new address.
   const QString newIp = this->SrcIpEdit->text().trimmed();
-  if (!ok && !newIp.isEmpty())
+  const bool ipChanged = !newIp.isEmpty() && newIp != target;
+  const QString verifyIp = ipChanged ? newIp : target;
+
+  // Verify by reading the device back and comparing the submitted values.
+  QVariantMap current;
+  QString verifyError;
+  bool reachable = config.fetch(verifyIp, current, verifyError);
+  for (int attempt = 0; !reachable && attempt < 5; ++attempt)
   {
-    for (int attempt = 0; attempt < 6 && !ok; ++attempt)
-    {
-      if (attempt > 0)
-      {
-        QThread::msleep(2000);
-      }
-      QVariantMap probe;
-      QString probeError;
-      if (config.fetch(newIp, probe, probeError))
-      {
-        ok = true;
-        qDebug() << "[AiryApply] verified at new ip" << newIp;
-      }
-    }
+    QThread::msleep(2000);
+    reachable = config.fetch(verifyIp, current, verifyError);
   }
 
-  // Changing the device address inherently drops the connection before any
-  // reply, so an unverified POST is treated as "sent" rather than an error.
-  const bool ipChangeUnverified = !ok && !newIp.isEmpty() && newIp != target;
-  if (!ok && !ipChangeUnverified)
+  if (!reachable)
   {
-    QMessageBox::warning(this, tr("Apply"), error);
+    if (ipChanged)
+    {
+      QMessageBox::information(this, tr("Apply"),
+        tr("New IP sent. The device disconnects while switching its address; use Refresh to confirm."));
+    }
+    else
+    {
+      QMessageBox::warning(this, tr("Apply"), error);
+    }
     return;
   }
-  if (ipChangeUnverified)
+
+  QStringList mismatched;
+  for (const QString& key :
+    { "SrcIp", "DstIp", "MPort", "DPort", "ReMode", "FovS", "FovE", "OpM", "RotaSpe" })
   {
-    QMessageBox::information(this, tr("Apply"),
-      tr("New IP sent. The device disconnects while switching its address and may take a few "
-         "seconds to come back; use Refresh afterwards to confirm."));
+    if (values.contains(key) && current.value(key).toString() != values.value(key).toString())
+    {
+      mismatched << key;
+    }
   }
-  // Only after a successful apply, adopt the new device IP for next time.
+  if (!mismatched.isEmpty())
+  {
+    QMessageBox::warning(this, tr("Apply"),
+      tr("Not applied: %1").arg(mismatched.join(QStringLiteral(", "))));
+    return;
+  }
+
   if (!newIp.isEmpty())
   {
     QSettings().setValue("LidarView/AiryConfigIp", newIp);
   }
   QMessageBox::information(this, tr("Apply"), tr("Settings applied."));
+
 }
