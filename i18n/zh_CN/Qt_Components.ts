@@ -6204,5 +6204,29 @@ Waiting %2 seconds for connection to server.</source>
         <source>Cannot read the configuration back (%1); the change may not have been applied.</source>
         <translation>无法回读配置（%1）；修改可能未生效。</translation>
     </message>
+    <message>
+        <source>Time Synchronization</source>
+        <translation>时间同步</translation>
+    </message>
+    <message>
+        <source>Time Sync Source:</source>
+        <translation>时间同步源：</translation>
+    </message>
+    <message>
+        <source>PTP Domain Number:</source>
+        <translation>PTP 域号：</translation>
+    </message>
+    <message>
+        <source>Sync Timeout (s):</source>
+        <translation>同步超时(s)：</translation>
+    </message>
+    <message>
+        <source>Unlock To Lock (ms):</source>
+        <translation>失锁→锁定阈值(ms)：</translation>
+    </message>
+    <message>
+        <source>Lock To Unlock (ms):</source>
+        <translation>锁定→失锁阈值(ms)：</translation>
+    </message>
 </context>
 </TS>

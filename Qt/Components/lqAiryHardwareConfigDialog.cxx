@@ -29,6 +29,7 @@
 #include <QSettings>
 #include <QSpinBox>
 #include <QStyle>
+#include <QTcpSocket>
 #include <QThread>
 #include <QTimer>
 #include <QToolButton>
@@ -39,7 +40,7 @@
 namespace
 {
 const QSet<QString> FixedKeys = { "SrcIp", "SrcMask", "SrcGateWay", "DstIp", "MPort", "DPort",
-  "ReMode" };
+  "ReMode", "SynSrc", "PDomNum", "RTPdelay", "NoLeap", "SyTOut", "UToL", "LToU" };
 
 struct FieldSpec
 {
@@ -275,6 +276,44 @@ lqAiryHardwareConfigDialog::lqAiryHardwareConfigDialog(QWidget* parent)
   grid->addLayout(modeRow, 3, 0, 1, 2);
   layout->addWidget(common);
 
+  addSectionTitle(layout, tr("Time Synchronization"));
+  auto* sync = new QWidget(this);
+  auto* syncGrid = new QGridLayout(sync);
+  this->SynSrcCombo = new QComboBox(sync);
+  this->SynSrcCombo->addItem("GPS", 0);
+  this->SynSrcCombo->addItem("PTP-E2E", 1);
+  this->SynSrcCombo->addItem("PTP-P2P", 2);
+  this->SynSrcCombo->addItem("PTP-GPTP", 3);
+  this->SynSrcCombo->addItem("PTP-E2E-L2", 4);
+  this->PDomNumSpin = new QSpinBox(sync);
+  this->PDomNumSpin->setRange(0, 127);
+  this->RTPdelayCombo = new QComboBox(sync);
+  this->RTPdelayCombo->addItem("OFF", 0);
+  this->RTPdelayCombo->addItem("ON", 1);
+  this->NoLeapCombo = new QComboBox(sync);
+  this->NoLeapCombo->addItem("OFF", 0);
+  this->NoLeapCombo->addItem("ON", 1);
+  this->SyTOutSpin = new QSpinBox(sync);
+  this->SyTOutSpin->setRange(1, 255);
+  this->UToLSpin = new QSpinBox(sync);
+  this->UToLSpin->setRange(1, 255);
+  this->LToUSpin = new QSpinBox(sync);
+  this->LToUSpin->setRange(1, 255);
+  auto addSyncRow = [&](int row, int column, const QString& label, QWidget* widget) {
+    auto* cell = new QHBoxLayout;
+    cell->addWidget(new QLabel(label, sync));
+    cell->addWidget(widget);
+    syncGrid->addLayout(cell, row, column);
+  };
+  addSyncRow(0, 0, tr("Time Sync Source:"), this->SynSrcCombo);
+  addSyncRow(0, 1, tr("PTP Domain Number:"), this->PDomNumSpin);
+  addSyncRow(1, 0, tr("Respond To PeerDelayRequest:"), this->RTPdelayCombo);
+  addSyncRow(1, 1, tr("No Leap Second:"), this->NoLeapCombo);
+  addSyncRow(2, 0, tr("Sync Timeout (s):"), this->SyTOutSpin);
+  addSyncRow(2, 1, tr("Unlock To Lock (ms):"), this->UToLSpin);
+  addSyncRow(3, 0, tr("Lock To Unlock (ms):"), this->LToUSpin);
+  layout->addWidget(sync);
+
   // "More settings" form is kept in code but not exposed.
   this->OtherScroll = new QScrollArea(this);
   this->OtherScroll->setWidgetResizable(true);
@@ -386,6 +425,18 @@ void lqAiryHardwareConfigDialog::onFetch()
   assign(this->DstIpEdit, "DstIp");
   assign(this->MPortEdit, "MPort");
   assign(this->DPortEdit, "DPort");
+  auto setCombo = [&values](QComboBox* combo, const char* key) {
+    const int index = combo->findData(values.value(QLatin1String(key)).toInt());
+    combo->setCurrentIndex(index >= 0 ? index : 0);
+  };
+  setCombo(this->SynSrcCombo, "SynSrc");
+  setCombo(this->RTPdelayCombo, "RTPdelay");
+  setCombo(this->NoLeapCombo, "NoLeap");
+  this->PDomNumSpin->setValue(values.value("PDomNum").toInt());
+  this->SyTOutSpin->setValue(values.value("SyTOut").toInt());
+  this->UToLSpin->setValue(values.value("UToL").toInt());
+  this->LToUSpin->setValue(values.value("LToU").toInt());
+
   if (auto* button = this->ReturnModeGroup->button(values.value("ReMode").toInt()))
   {
     button->setChecked(true);
@@ -441,6 +492,14 @@ void lqAiryHardwareConfigDialog::onApply()
   values.insert(QStringLiteral("DstIp"), this->DstIpEdit->text().trimmed());
   values.insert(QStringLiteral("MPort"), this->MPortEdit->text().trimmed());
   values.insert(QStringLiteral("DPort"), this->DPortEdit->text().trimmed());
+  values.insert(QStringLiteral("SynSrc"), QString::number(this->SynSrcCombo->currentData().toInt()));
+  values.insert(QStringLiteral("PDomNum"), QString::number(this->PDomNumSpin->value()));
+  values.insert(QStringLiteral("RTPdelay"), QString::number(this->RTPdelayCombo->currentData().toInt()));
+  values.insert(QStringLiteral("NoLeap"), QString::number(this->NoLeapCombo->currentData().toInt()));
+  values.insert(QStringLiteral("SyTOut"), QString::number(this->SyTOutSpin->value()));
+  values.insert(QStringLiteral("UToL"), QString::number(this->UToLSpin->value()));
+  values.insert(QStringLiteral("LToU"), QString::number(this->LToUSpin->value()));
+
   if (int mode = this->ReturnModeGroup->checkedId(); mode >= 0)
   {
     values.insert(QStringLiteral("ReMode"), QString::number(mode));
@@ -484,8 +543,21 @@ void lqAiryHardwareConfigDialog::onApply()
   // Verify by reading the device back and comparing the submitted values.
   QVariantMap current;
   QString verifyError;
+  // Wait a moment for the device to settle, then probe quickly: an unreachable
+  // new IP must not block on the OS connect timeout (tens of seconds).
   QThread::msleep(1000);
-  const bool reachable = config.fetch(verifyIp, current, verifyError);
+  QTcpSocket probe;
+  probe.connectToHost(verifyIp, 80);
+  bool reachable = probe.waitForConnected(2000);
+  probe.abort();
+  if (!reachable)
+  {
+    verifyError = QStringLiteral("no route / device not responding");
+  }
+  else
+  {
+    reachable = config.fetch(verifyIp, current, verifyError);
+  }
 
   if (!reachable)
   {

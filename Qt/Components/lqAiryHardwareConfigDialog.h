@@ -17,6 +17,8 @@
 #include <QString>
 
 class QButtonGroup;
+class QComboBox;
+class QSpinBox;
 class QFormLayout;
 class QLineEdit;
 class QScrollArea;
@@ -46,6 +48,14 @@ private:
   QLineEdit* MPortEdit = nullptr;
   QLineEdit* DPortEdit = nullptr;
   QButtonGroup* ReturnModeGroup = nullptr;
+
+  QComboBox* SynSrcCombo = nullptr;
+  QSpinBox* PDomNumSpin = nullptr;
+  QComboBox* RTPdelayCombo = nullptr;
+  QComboBox* NoLeapCombo = nullptr;
+  QSpinBox* SyTOutSpin = nullptr;
+  QSpinBox* UToLSpin = nullptr;
+  QSpinBox* LToUSpin = nullptr;
 
   QLineEdit* SerialEdit = nullptr;
   QLineEdit* LinesEdit = nullptr;
