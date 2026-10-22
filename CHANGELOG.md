@@ -5,6 +5,14 @@
 
 ---
 
+## 2026-10-22 批次：记录 Airy/lwIP HTTP 坑位
+
+- `e0f43294` docs: 新增 `docs/airy-http-lwip-notes.md`；并在 `AGENTS.md` 增加"雷达 Web API HTTP 坑位（必守）"
+  - 核心：lwIP 对 header 名**大小写敏感**；Qt 在 **Windows** 会把自定义头名规范化为小写 → `QNetworkAccessManager::post()` 被设备丢弃（Ubuntu 正常）
+  - 约定：**带 body 的请求必须用 `QTcpSocket` 裸发**（首字母大写头、发后保持 ~1s 再优雅 FIN）；保存端点/字段集/无响应判定/NoProxy 等一并写入长期记忆
+
+---
+
 ## 2026-10-22 批次：时间同步选项上移 + 验证前快速连通探测
 
 - `0323f7c9` feat(airy): 时间同步选项放到通用页；验证前 2s 连通探测
