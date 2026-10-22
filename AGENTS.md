@@ -172,3 +172,24 @@ LidarView 是**基于 ParaView 的自定义客户端**（ParaView-based custom a
    必须在同一批次内把 zh_CN 译文加入 `i18n/zh_CN/<Catalog>.ts`（客户端字符串通常在 `LidarView.ts`），
    并执行 `./i18n/build-zh-cn.sh` 重建并投放 `.qm`；**不允许只留英文**。`.ui` 里的硬编码中文可直接显示，
    但走 `tr()` 的字符串必须有 `.ts` 条目。
+
+## 雷达 Web API（Airy / SF-Q96A）HTTP 坑位（必守）
+
+> 详细定位过程/证据见 `docs/airy-http-lwip-notes.md`。**这个坑不要再踩。**
+
+1. **设备端是 lwIP httpd**（响应 `HTTP/1.0`），对 **HTTP header 名大小写敏感**。
+2. **Qt 在 Windows 上会把自定义 header 名规范化为小写**。用 `QNetworkAccessManager::post()`
+   发出的 `content-length` / `content-type` 设备认不出 → **直接断开、配置不生效**
+   （Ubuntu 正常，因为 Qt 那边保留大小写）。
+3. **任何带 body 的请求必须用 `QTcpSocket` 裸发原始 HTTP 报文**：header 名首字母大写、
+   顺序照浏览器；发送后保持约 1s 再 `disconnectFromHost()`（优雅 FIN，避免 RST 被 lwIP 丢弃）。
+   **禁止**对这些请求使用 `QNetworkAccessManager::post()`。
+4. 保存端点 = `POST /Parameter_Setting.html`（`/cgi-bin/param_setting.cgi` **不存在**，
+   只在 HTML 注释 `saved from url=(...)cgi-bin/param_setting.cgi` 里出现，属误导）。
+5. 保存 body 必须是**通用页 41 字段固定顺序**，含 `tabs-two=on`、`save_param=Save`、
+   `mode2=Mode2`；**不要多发**额外字段（`MVEn/DVEn/PVEn`、`RotaSpe`、`MotorR`、`MSideEn`、
+   `msop_vlan` 等）。
+6. 设备对 POST **从不回包**（浏览器亦然）；成功与否用「1s 后回读 `setting_data.json` 比对」判定。
+7. Windows 上**系统代理/梯子**会劫持 `192.168.x` → 必须 `QNetworkProxy::NoProxy`。
+8. `GET /setting_data.json`（可写参数）与 `GET /device_data.json`（只读身份）可继续用 QNAM。
+9. 改 IP 后设备立刻切网断开 → 验证前对**新 IP 做 ~2s 短超时探测**，避免卡系统 TCP 超时。
