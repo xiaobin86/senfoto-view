@@ -5,6 +5,16 @@
 
 ---
 
+## 2026-10-22 批次：Airy 请求过程日志细化
+
+- `66b554a6` chore(airy): 细化 HTTP 步骤日志；去掉客户端超时
+  - 每个请求打印：`GET/POST <url>` + 字段数 → `OK(<bytes>)` / `FAILED(<原因>)` / `no reply(<原因>)`
+  - Qt 网络错误映射为明确原因（连接被拒 / 主机不可达 / 找不到主机 / 连接被关闭 / 代理错误）
+  - 移除自建 3s abort 超时，交由系统/Qt 报告真实错误
+  - 说明：设备对 `POST /Parameter_Setting.html` **从不回包**（浏览器抓包亦然），故 "Connection closed" 属正常，以 1s 后回读比对为准
+
+---
+
 ## 2026-10-22 批次：Airy 应用后校验改为 1s 单次
 
 - `755786fe` fix(airy): 应用后等 1s 只回读一次（不重试）；IP 输入维持 IPv4-only
