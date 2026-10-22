@@ -9,8 +9,8 @@
 
 - `6707671b` fix(airy): POST 之后保持 500ms 再销毁连接
   - 现象：同一份代码 **Ubuntu 可改、Windows 不能**（body 已与浏览器抓包一致）
-  - 推断：Windows 上立即销毁  可能以 **RST** 关闭，lwIP 会丢弃尚未处理完的请求
-  - 处理：POST 返回后 ，让设备在连接仍打开时完成写入
+  - 推断：Windows 上立即销毁 `QNetworkAccessManager` 可能以 **RST** 关闭，lwIP 会丢弃尚未处理完的请求
+  - 处理：POST 返回后 `msleep(500)`，让设备在连接仍打开时完成写入
 
 ---
 
