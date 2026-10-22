@@ -470,6 +470,7 @@ void lqAiryHardwareConfigDialog::onApply()
            << "DstIp=" << values.value("DstIp").toString()
            << "MPort=" << values.value("MPort").toString()
            << "DPort=" << values.value("DPort").toString()
+           << "ReMode=" << values.value("ReMode").toString()
            << "fields=" << values.size();
 
   lqAiryHardwareConfig config;

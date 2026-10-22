@@ -9,6 +9,7 @@
 
 #include <QElapsedTimer>
 #include <QDebug>
+#include <QTcpSocket>
 #include <QThread>
 #include <QEventLoop>
 #include <QTimer>
@@ -197,41 +198,53 @@ bool lqAiryHardwareConfig::apply(const QString& lidarIp, const QVariantMap& valu
     }
   }
 
-  QNetworkAccessManager nam;
-  // Talk to the LiDAR directly: never route LAN traffic through a system proxy.
-  nam.setProxy(QNetworkProxy(QNetworkProxy::NoProxy));
-  QNetworkRequest request(SaveUrl(lidarIp));
+  // Qt normalises custom header names to lower case on some platforms; lwIP
+  // (the device's HTTP server) appears to be case sensitive, so send the raw
+  // request ourselves with the exact browser casing.
+  const QByteArray body = query.toString(QUrl::FullyEncoded).toLatin1();
+  const QByteArray host = lidarIp.toUtf8();
 
-  // Match the browser request observed in the capture exactly.
-  request.setHeader(QNetworkRequest::ContentTypeHeader,
-    QStringLiteral("application/x-www-form-urlencoded"));
-  request.setRawHeader("User-Agent",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0");
-  request.setRawHeader("Accept",
-    "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,"
-    "image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7");
-  request.setRawHeader("Accept-Language", "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6");
-  request.setRawHeader("Accept-Encoding", "gzip, deflate");
-  request.setRawHeader("Origin", QStringLiteral("http://%1").arg(lidarIp).toUtf8());
-  request.setRawHeader("Referer",
-    QStringLiteral("http://%1/Parameter_Setting.html").arg(lidarIp).toUtf8());
-  request.setRawHeader("Upgrade-Insecure-Requests", "1");
-  request.setRawHeader("Cache-Control", "max-age=0");
-  request.setRawHeader("Connection", "keep-alive");
-  qDebug() << "[AiryHTTP]" << 
-    QStringLiteral("POST %1 (%2 fields)").arg(SaveUrl(lidarIp).toString()).arg(query.queryItems().size());
-  QByteArray response;
-  const bool posted =
-    ExecRequest(nam, request, query.toString(QUrl::FullyEncoded).toLatin1(), response, error);
-  qDebug() << "[AiryHTTP]"
-           << (posted ? QStringLiteral("  replied (%1 bytes)").arg(response.size())
-                      : QStringLiteral("  no reply: %1").arg(error));
-  // The device applies the parameters while receiving; give it a moment before
-  // the manager (and its socket) is destroyed. On Windows an immediate close can
-  // be an RST, which makes lwIP drop the still-unprocessed request.
-  QThread::msleep(500);
-  return posted;
+  QTcpSocket socket;
+  socket.connectToHost(lidarIp, 80);
+  if (!socket.waitForConnected(5000))
+  {
+    error = socket.errorString();
+    qDebug() << "[AiryHTTP] connect failed:" << error;
+    return false;
+  }
+
+  QByteArray raw;
+  raw += "POST /Parameter_Setting.html HTTP/1.1\r\n";
+  raw += "Host: " + host + "\r\n";
+  raw += "Content-Type: application/x-www-form-urlencoded\r\n";
+  raw += "Content-Length: " + QByteArray::number(body.size()) + "\r\n";
+  raw += "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+         "(KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0\r\n";
+  raw += "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,"
+         "image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\n";
+  raw += "Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6\r\n";
+  raw += "Accept-Encoding: gzip, deflate\r\n";
+  raw += "Origin: http://" + host + "\r\n";
+  raw += "Referer: http://" + host + "/Parameter_Setting.html\r\n";
+  raw += "Upgrade-Insecure-Requests: 1\r\n";
+  raw += "Cache-Control: max-age=0\r\n";
+  raw += "Connection: keep-alive\r\n";
+  raw += "\r\n";
+  raw += body;
+
+  qDebug() << "[AiryHTTP] raw POST bytes" << raw.size() << "head:"
+           << QString::fromLatin1(raw.left(200));
+  socket.write(raw);
+  socket.flush();
+  socket.waitForBytesWritten(3000);
+  qDebug() << "[AiryHTTP] POST sent, bytesToWrite" << socket.bytesToWrite();
+
+  // Give the device time to consume and apply while the connection stays open.
+  QThread::msleep(1000);
+  socket.disconnectFromHost();
+  socket.waitForDisconnected(1000);
+  qDebug() << "[AiryHTTP] POST connection closed (FIN)";
+  return true;
 }
 
 namespace
