@@ -6200,5 +6200,9 @@ Waiting %2 seconds for connection to server.</source>
         <source>Not applied: %1</source>
         <translation>未生效：%1</translation>
     </message>
+    <message>
+        <source>Cannot read the configuration back (%1); the change may not have been applied.</source>
+        <translation>无法回读配置（%1）；修改可能未生效。</translation>
+    </message>
 </context>
 </TS>

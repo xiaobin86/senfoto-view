@@ -495,7 +495,9 @@ void lqAiryHardwareConfigDialog::onApply()
     }
     else
     {
-      QMessageBox::warning(this, tr("Apply"), error);
+      QMessageBox::warning(this, tr("Apply"),
+        tr("Cannot read the configuration back (%1); the change may not have been applied.")
+          .arg(verifyError));
     }
     return;
   }

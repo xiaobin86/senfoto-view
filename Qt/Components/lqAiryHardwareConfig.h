@@ -44,6 +44,7 @@ public:
   /// Listen on the DIFOP port for one packet and parse device information.
   bool fetchDeviceInfo(const QString& lidarIp, DeviceInfo& info, QString& error);
 
+
   /// GET /setting_data.json and return all parameters.
   bool fetch(const QString& lidarIp, QVariantMap& values, QString& error);
   /// Merge the given values over the current device values and POST them.

@@ -27,6 +27,33 @@
 
 namespace
 {
+QString DescribeNetworkError(QNetworkReply::NetworkError code, const QString& fallback)
+{
+  switch (code)
+  {
+    case QNetworkReply::ConnectionRefusedError:
+      return QStringLiteral("Connection refused (nothing listening on that address/port)");
+    case QNetworkReply::RemoteHostClosedError:
+      return QStringLiteral("Connection closed by the device");
+    case QNetworkReply::HostNotFoundError:
+      return QStringLiteral("Host not found (wrong IP?)");
+    case QNetworkReply::TimeoutError:
+      return QStringLiteral("Network timeout");
+    case QNetworkReply::OperationCanceledError:
+      return QStringLiteral("Operation canceled");
+    case QNetworkReply::NetworkSessionFailedError:
+    case QNetworkReply::TemporaryNetworkFailureError:
+      return QStringLiteral("Network unreachable (no route to that subnet?)");
+    case QNetworkReply::ProxyConnectionRefusedError:
+    case QNetworkReply::ProxyConnectionClosedError:
+    case QNetworkReply::ProxyNotFoundError:
+    case QNetworkReply::ProxyTimeoutError:
+      return QStringLiteral("Proxy error (check system proxy settings)");
+    default:
+      return fallback;
+  }
+}
+
 bool ExecRequest(QNetworkAccessManager& nam, const QNetworkRequest& request,
   const QByteArray& body, QByteArray& output, QString& error)
 {
@@ -42,17 +69,14 @@ bool ExecRequest(QNetworkAccessManager& nam, const QNetworkRequest& request,
   QNetworkReply* reply = body.isEmpty() ? nam.get(request) : nam.post(request, body);
   QObject::connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
 
-  // QNetworkReply has no default timeout; abort unresponsive requests.
-  QTimer timer;
-  timer.setSingleShot(true);
-  QObject::connect(&timer, &QTimer::timeout, reply, &QNetworkReply::abort);
-  timer.start(8000);
-
   loop.exec();
-  timer.stop();
 
   const QNetworkReply::NetworkError replyError = reply->error();
   output = reply->readAll();
+  if (replyError != QNetworkReply::NoError)
+  {
+    error = DescribeNetworkError(replyError, reply->errorString());
+  }
   const int httpStatus = reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
   qDebug() << "[AiryHTTP] reply" << (body.isEmpty() ? "GET" : "POST") << request.url().toString()
            << "httpStatus" << httpStatus
@@ -65,7 +89,6 @@ bool ExecRequest(QNetworkAccessManager& nam, const QNetworkRequest& request,
   }
   if (replyError != QNetworkReply::NoError)
   {
-    error = reply->errorString();
     reply->deleteLater();
     return false;
   }
@@ -100,6 +123,7 @@ QUrl lqAiryHardwareConfig::SaveUrl(const QString& lidarIp)
 //-----------------------------------------------------------------------------
 bool lqAiryHardwareConfig::fetch(const QString& lidarIp, QVariantMap& values, QString& error)
 {
+  qDebug() << "[AiryHTTP]" << QStringLiteral("GET %1").arg(SettingsUrl(lidarIp).toString());
   QNetworkAccessManager nam;
   // Talk to the LiDAR directly: never route LAN traffic through a system proxy.
   nam.setProxy(QNetworkProxy(QNetworkProxy::NoProxy));
@@ -107,8 +131,10 @@ bool lqAiryHardwareConfig::fetch(const QString& lidarIp, QVariantMap& values, QS
   QByteArray body;
   if (!ExecRequest(nam, request, QByteArray(), body, error))
   {
+    qDebug() << "[AiryHTTP]" << QStringLiteral("  FAILED: %1").arg(error);
     return false;
   }
+  qDebug() << "[AiryHTTP]" << QStringLiteral("  OK (%1 bytes)").arg(body.size());
   const QJsonDocument document = QJsonDocument::fromJson(body);
   if (!document.isObject())
   {
@@ -192,9 +218,15 @@ bool lqAiryHardwareConfig::apply(const QString& lidarIp, const QVariantMap& valu
   request.setRawHeader("Upgrade-Insecure-Requests", "1");
   request.setRawHeader("Cache-Control", "max-age=0");
   request.setRawHeader("Connection", "keep-alive");
+  qDebug() << "[AiryHTTP]" << 
+    QStringLiteral("POST %1 (%2 fields)").arg(SaveUrl(lidarIp).toString()).arg(query.queryItems().size());
   QByteArray response;
-  return ExecRequest(
-    nam, request, query.toString(QUrl::FullyEncoded).toLatin1(), response, error);
+  const bool posted =
+    ExecRequest(nam, request, query.toString(QUrl::FullyEncoded).toLatin1(), response, error);
+  qDebug() << "[AiryHTTP]"
+           << (posted ? QStringLiteral("  replied (%1 bytes)").arg(response.size())
+                      : QStringLiteral("  no reply: %1").arg(error));
+  return posted;
 }
 
 namespace
@@ -240,8 +272,10 @@ bool lqAiryHardwareConfig::fetchDeviceInfo(
   QByteArray body;
   if (!ExecRequest(nam, request, QByteArray(), body, error))
   {
+    qDebug() << "[AiryHTTP]" << QStringLiteral("  FAILED: %1").arg(error);
     return false;
   }
+  qDebug() << "[AiryHTTP]" << QStringLiteral("  OK (%1 bytes)").arg(body.size());
   const QJsonDocument document = QJsonDocument::fromJson(body);
   if (!document.isObject())
   {
