@@ -5,6 +5,17 @@
 
 ---
 
+## 2026-10-22 批次：Airy 保存请求改用裸 TCP 发送
+
+- `47853b90` fix(airy): 保存 POST 改用裸 TCP socket，头名按浏览器大小写发送
+  - 依据：`/home/acelan/test11111.pcap` 抓到的 app 实际 POST —— Qt 在 Windows 上把自定义头名**全部小写**（`host`/`content-type`/`content-length`…），而设备 httpd 是 **lwIP**（响应 `HTTP/1.0`），疑似**大小写敏感** → 丢弃请求；Ubuntu 上 Qt 保留大小写所以能成功
+  - 处理：`apply()` 不再用 `QNetworkAccessManager`，改为 `QTcpSocket` 直接写原始报文：`Host/Content-Type/Content-Length/User-Agent/Accept/Accept-Language/Accept-Encoding/Origin/Referer/Upgrade-Insecure-Requests/Cache-Control/Connection` 严格首字母大写、顺序与浏览器一致，body 不变（41 字段 / 433B）
+  - 发送后保持 1s 再 `disconnectFromHost()`（优雅 FIN，避免 RST）
+  - 新增日志：`raw POST bytes <n> head: ...`、`POST sent/closed`、`[AiryApply] ReMode=<值>`
+  - GET 仍使用 QNAM（一直正常）
+
+---
+
 ## 2026-10-22 批次：Airy 保存后保持连接
 
 - `6707671b` fix(airy): POST 之后保持 500ms 再销毁连接
