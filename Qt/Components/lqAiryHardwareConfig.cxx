@@ -9,6 +9,7 @@
 
 #include <QElapsedTimer>
 #include <QDebug>
+#include <QThread>
 #include <QEventLoop>
 #include <QTimer>
 #include <QJsonDocument>
@@ -226,6 +227,10 @@ bool lqAiryHardwareConfig::apply(const QString& lidarIp, const QVariantMap& valu
   qDebug() << "[AiryHTTP]"
            << (posted ? QStringLiteral("  replied (%1 bytes)").arg(response.size())
                       : QStringLiteral("  no reply: %1").arg(error));
+  // The device applies the parameters while receiving; give it a moment before
+  // the manager (and its socket) is destroyed. On Windows an immediate close can
+  // be an RST, which makes lwIP drop the still-unprocessed request.
+  QThread::msleep(500);
   return posted;
 }
 
