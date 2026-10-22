@@ -5,6 +5,17 @@
 
 ---
 
+## 2026-10-22 批次：Airy 保存请求按浏览器抓包精确复刻
+
+- `1eabbaf4` fix(airy): 复刻浏览器 Save 请求（请求头 + 表单体）
+  - **依据**：`261021.pcap`（Windows）与 `200to202.pcap`（Ubuntu）中浏览器对 `POST /Parameter_Setting.html` 的请求 —— 两者**完全一致**，证明不存在平台差异；此前"Ubuntu 能改/Windows 不能"是**我们报文错误 + 假成功提示**造成的错觉
+  - **请求体**：改为浏览器的 **41 字段固定顺序**，补上 `tabs-two=on`、`save_param=Save`、`mode2=Mode2`；去掉设备不接受的额外字段（`MVEn/DVEn/PVEn`、`RotaSpe`、`MotorR`、`MSideEn`、`msop_vlan` 等）
+  - **请求头**：严格按抓包设置 `User-Agent / Accept / Accept-Language / Accept-Encoding / Origin / Referer / Upgrade-Insecure-Requests / Cache-Control / Connection`（`Host`、`Content-Length` 由 Qt 自动生成）
+  - **结果校验**：应用后回读 `setting_data.json` 并逐项比对提交值，不一致直接报「未生效：<字段>」，不再有假成功
+  - 备注：`/cgi-bin/param_setting.cgi` 仅出现在 HTML 的"saved from"注释中，实测 404，非真实端点
+
+---
+
 ## 2026-10-20 批次：Airy 请求绕过系统代理 + 调试日志
 
 - `a7f9639c` fix(airy): Airy 局域网请求绕过系统代理；HTTP 调试日志增强
