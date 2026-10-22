@@ -483,12 +483,8 @@ void lqAiryHardwareConfigDialog::onApply()
   // Verify by reading the device back and comparing the submitted values.
   QVariantMap current;
   QString verifyError;
-  bool reachable = config.fetch(verifyIp, current, verifyError);
-  for (int attempt = 0; !reachable && attempt < 5; ++attempt)
-  {
-    QThread::msleep(2000);
-    reachable = config.fetch(verifyIp, current, verifyError);
-  }
+  QThread::msleep(1000);
+  const bool reachable = config.fetch(verifyIp, current, verifyError);
 
   if (!reachable)
   {
